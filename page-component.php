@@ -7,200 +7,302 @@ Template Name: トップページ
 
 <?php get_template_part('template-parts/header'); ?>
 <main>
-    <div class="popup">
-        <div class="popup__body">
-            <button class="popup__close">
-                <img src="images/icon/close.png" alt="">
-            </button>
-            <form method="get" class="popup__content">
-                <div class="popup__head">
-                    <h2 class="popup__title">CATEGORY</h2>
-                    <p class="popup__subTitle">カテゴリーで絞り込む</p>
-                </div>
-                <!-- <div class="popup__tag-list-inner" data-simplebar data-simplebar-auto-hide="false"> -->
-                <ul class="popup__tag-list">
-                    <li>
-                        <input type="checkbox" name="works-cat[]" value="category" id="category01">
-                        <label for="category01">カテゴリ</label>
-                    </li>
-                    <li>
-                        <input type="checkbox" name="works-cat[]" value="category" id="category02">
-                        <label for="category02">カテゴリカテゴリカテゴリ</label>
-                    </li>
-                    <li>
-                        <input type="checkbox" name="works-cat[]" value="category" id="category03">
-                        <label for="category03">カテゴリカテゴリ</label>
-                    </li>
-                    <li>
-                        <input type="checkbox" name="works-cat[]" value="category" id="category04">
-                        <label for="category04">カテゴリ</label>
-                    </li>
-                    <li>
-                        <input type="checkbox" name="works-cat[]" value="category" id="category05">
-                        <label for="category05">カテゴリカテゴリカテゴリ</label>
-                    </li>
-                    <li>
-                        <input type="checkbox" name="works-cat[]" value="category" id="category06">
-                        <label for="category06">カテゴリカテゴリ</label>
-                    </li>
-                    <li>
-                        <input type="checkbox" name="works-cat[]" value="category" id="category07">
-                        <label for="category07">カテゴリ</label>
-                    </li>
-                    <li>
-                        <input type="checkbox" name="works-cat[]" value="category" id="category08">
-                        <label for="category08">カテゴリカテゴリカテゴリ</label>
-                    </li>
-                    <li>
-                        <input type="checkbox" name="works-cat[]" value="category" id="category09">
-                        <label for="category09">カテゴリ</label>
-                    </li>
-                    <li>
-                        <input type="checkbox" name="works-cat[]" value="category" id="category05">
-                        <label for="category05">カテゴリカテゴリカテゴリ</label>
-                    </li>
-                    <li>
-                        <input type="checkbox" name="works-cat[]" value="category" id="category06">
-                        <label for="category06">カテゴリカテゴリ</label>
-                    </li>
-                    <li>
-                        <input type="checkbox" name="works-cat[]" value="category" id="category07">
-                        <label for="category07">カテゴリ</label>
-                    </li>
-                    <li>
-                        <input type="checkbox" name="works-cat[]" value="category" id="category08">
-                        <label for="category08">カテゴリカテゴリカテゴリ</label>
-                    </li>
-                    <li>
-                        <input type="checkbox" name="works-cat[]" value="category" id="category09">
-                        <label for="category09">カテゴリ</label>
-                    </li>
-                </ul>
-                <!-- </div> -->
-                <button class="btn popup__btn" type="submit">
-                    <span class="btn__text popup__btn-text">絞り込む</span>
-                    <span class="btn__icon popup__btn-icon">
-                        <svg width="19" height="19" viewBox="0 0 19 19" fill="none"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                d="M17.5222 19L10.8722 12.35C10.3444 12.7722 9.7375 13.1065 9.05139 13.3528C8.36528 13.5991 7.63519 13.7222 6.86111 13.7222C4.94352 13.7222 3.3206 13.0581 1.99236 11.7299C0.66412 10.4016 0 8.7787 0 6.86111C0 4.94352 0.66412 3.3206 1.99236 1.99236C3.3206 0.66412 4.94352 0 6.86111 0C8.7787 0 10.4016 0.66412 11.7299 1.99236C13.0581 3.3206 13.7222 4.94352 13.7222 6.86111C13.7222 7.63519 13.5991 8.36528 13.3528 9.05139C13.1065 9.7375 12.7722 10.3444 12.35 10.8722L19 17.5222L17.5222 19ZM6.86111 11.6111C8.18056 11.6111 9.30208 11.1493 10.2257 10.2257C11.1493 9.30208 11.6111 8.18056 11.6111 6.86111C11.6111 5.54167 11.1493 4.42014 10.2257 3.49653C9.30208 2.57292 8.18056 2.11111 6.86111 2.11111C5.54167 2.11111 4.42014 2.57292 3.49653 3.49653C2.57292 4.42014 2.11111 5.54167 2.11111 6.86111C2.11111 8.18056 2.57292 9.30208 3.49653 10.2257C4.42014 11.1493 5.54167 11.6111 6.86111 11.6111Z"
-                                fill="#0068B6" />
-                        </svg>
-                    </span>
-                </button>
-            </form>
-        </div>
-    </div>
     <?php get_template_part('template-parts/components/page-head', null, [
-        'title_en' => 'WORKS',
-        'title_jp' => '制作実績',
+        'title_en' => 'COMPONENT',
+        'title_jp' => 'コンポーネント一覧',
     ]); ?>
-    <div class="page-works section">
-        <button class="page-works__popup-btn popup__open">
-            <span class="page-works__popup-btn-text">カテゴリで絞り込む</span>
-            <span class="page-works__popup-btn-icon">
-                <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path
-                        d="M17.5222 19L10.8722 12.35C10.3444 12.7722 9.7375 13.1065 9.05139 13.3528C8.36528 13.5991 7.63519 13.7222 6.86111 13.7222C4.94352 13.7222 3.3206 13.0581 1.99236 11.7299C0.66412 10.4016 0 8.7787 0 6.86111C0 4.94352 0.66412 3.3206 1.99236 1.99236C3.3206 0.66412 4.94352 0 6.86111 0C8.7787 0 10.4016 0.66412 11.7299 1.99236C13.0581 3.3206 13.7222 4.94352 13.7222 6.86111C13.7222 7.63519 13.5991 8.36528 13.3528 9.05139C13.1065 9.7375 12.7722 10.3444 12.35 10.8722L19 17.5222L17.5222 19ZM6.86111 11.6111C8.18056 11.6111 9.30208 11.1493 10.2257 10.2257C11.1493 9.30208 11.6111 8.18056 11.6111 6.86111C11.6111 5.54167 11.1493 4.42014 10.2257 3.49653C9.30208 2.57292 8.18056 2.11111 6.86111 2.11111C5.54167 2.11111 4.42014 2.57292 3.49653 3.49653C2.57292 4.42014 2.11111 5.54167 2.11111 6.86111C2.11111 8.18056 2.57292 9.30208 3.49653 10.2257C4.42014 11.1493 5.54167 11.6111 6.86111 11.6111Z"
-                        fill="#282828" />
-                </svg>
-            </span>
-        </button>
-        <ul class="page-works__list card__list card__list--works">
-            <li>
-                <div class="img"></div>
-                <p class="date">2024年</p>
-                <h3 class="title">企業名や案件名が入ります</h3>
-                <p class="expert">
-                    ダミーテキストが入ります。ダミーテキストが入ります。ダミーテキストが入ります。ダミーテキストが入ります。ダミーテキストが入ります。ダミーテキストが入ります。ダミーテキストが入ります。ダミーテキストが入ります。
-                </p>
-                <div class="meta">
-                    <p class="cat">
-                        <span>カテゴリ</span>
-                    </p>
+    <style>
+        .component-box-wrapper {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            padding-block: 4rem;
+        }
+
+        .component-box {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            padding-block: 2rem;
+            z-index: 1;
+
+        }
+
+        .component-box::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 105%;
+            height: 100%;
+            border: 1px solid #000;
+            z-index: -1;
+        }
+
+        .component-box>p {
+            font-size: 1.5rem;
+            font-weight: 700;
+            line-height: 1.6;
+            letter-spacing: .1em;
+        }
+    </style>
+    <div class="page section">
+        <div class="component-box-wrapper">
+            <div class="component-box">
+                <p>ttl-01</p>
+                <div class="component-box-item">
+                    <h2 class="ttl-01">見出しが入ります</h2>
                 </div>
-            </li>
-            <li>
-                <div class="img"></div>
-                <p class="date">2024年</p>
-                <h3 class="title">企業名や案件名が入ります</h3>
-                <p class="expert">
-                    ダミーテキストが入ります。ダミーテキストが入ります。ダミーテキストが入ります。ダミーテキストが入ります。ダミーテキストが入ります。ダミーテキストが入ります。ダミーテキストが入ります。ダミーテキストが入ります。
-                </p>
-                <div class="meta">
-                    <p class="cat">
-                        <span>カテゴリ</span>
-                        <span>カテゴリ</span>
-                    </p>
+            </div>
+            <div class="component-box">
+                <p>ttl-02</p>
+                <div class="component-box-item">
+                    <h2 class="mt24 ttl-02 ttl-02--triangle">mt24の余白</h2>
                 </div>
-            </li>
-            <li>
-                <div class="img"></div>
-                <p class="date">2024年</p>
-                <h3 class="title">企業名や案件名が入ります</h3>
-                <p class="expert">
-                    ダミーテキストが入ります。ダミーテキストが入ります。ダミーテキストが入ります。ダミーテキストが入ります。ダミーテキストが入ります。ダミーテキストが入ります。ダミーテキストが入ります。ダミーテキストが入ります。
-                </p>
-                <div class="meta">
-                    <p class="cat">
-                        <span>カテゴリ</span>
-                    </p>
+                <div class="component-box-item">
+                    <h2 class="mt32 ttl-02 ttl-02--round">mt32の余白</h2>
                 </div>
-            </li>
-            <li>
-                <div class="img"></div>
-                <p class="date">2024年</p>
-                <h3 class="title">企業名や案件名が入ります</h3>
-                <p class="expert">
-                    ダミーテキストが入ります。ダミーテキストが入ります。ダミーテキストが入ります。ダミーテキストが入ります。ダミーテキストが入ります。ダミーテキストが入ります。ダミーテキストが入ります。ダミーテキストが入ります。
-                </p>
-                <div class="meta">
-                    <p class="cat">
-                        <span>カテゴリ</span>
-                    </p>
+                <div class="component-box-item">
+                    <h2 class="mt40 ttl-02 ttl-02--triangle">mt40の余白</h2>
                 </div>
-            </li>
-            <li>
-                <div class="img"></div>
-                <p class="date">2024年</p>
-                <h3 class="title">企業名や案件名が入ります</h3>
-                <p class="expert">
-                    ダミーテキストが入ります。ダミーテキストが入ります。ダミーテキストが入ります。ダミーテキストが入ります。ダミーテキストが入ります。ダミーテキストが入ります。ダミーテキストが入ります。ダミーテキストが入ります。
-                </p>
-                <div class="meta">
-                    <p class="cat">
-                        <span>カテゴリ</span>
-                        <span>カテゴリ</span>
-                    </p>
+            </div>
+            <div class="component-box">
+                <p>txt-01</p>
+                <div class="component-box-item">
+                    <div class="txt-01">
+                        <p>ダミーテキストが入ります。ダミーテキストが入ります。ダミーテキストが入ります。ダミーテキストが入ります。ダミーテキストが入ります。ダミーテキストが入ります。ダミーテキストが入ります。ダミーテキストが入ります。ダミーテキストが入ります。</p>
+                    </div>
                 </div>
-            </li>
-            <li>
-                <div class="img"></div>
-                <p class="date">2024年</p>
-                <h3 class="title">企業名や案件名が入ります</h3>
-                <p class="expert">
-                    ダミーテキストが入ります。ダミーテキストが入ります。ダミーテキストが入ります。ダミーテキストが入ります。ダミーテキストが入ります。ダミーテキストが入ります。ダミーテキストが入ります。ダミーテキストが入ります。
-                </p>
-                <div class="meta">
-                    <p class="cat">
-                        <span>カテゴリ</span>
-                    </p>
+                <div class="component-box-item">
+                    <div class="txt-01 txt-01--with-img">
+                        <p>ダミーテキストが入ります。ダミーテキストが入ります。ダミーテキストが入ります。ダミーテキストが入ります。ダミーテキストが入ります。ダミーテキストが入ります。ダミーテキストが入ります。ダミーテキストが入ります。ダミーテキストが入ります。</p>
+                        <div class="txt-01-img"></div>
+                    </div>
                 </div>
-            </li>
-        </ul>
-    </div>
-    <div class="pagenavi">
-        <div class="wp-pagenavi">
-            <a class="previouspostslink" rel="prev" href="#"></a>
-            <span class="current">1</span>
-            <a class="page smaller" title="Page 3" href="#">2</a>
-            <a class="page smaller" title="Page 3" href="#">3</a>
-            <span class="extend">...</span>
-            <a class="page larger" title="Page 5" href="#">00</a>
-            <a class="nextpostslink" rel="next" href="#"></a>
+            </div>
+            <div class="component-box">
+                <p>btn-02</p>
+                <div class="component-box-item">
+                    <a href="#" class="btn-02">
+                        <span class="btn__text">見出しが入ります</span>
+                        <span class="btn__icon">
+                            <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="16" cy="16" r="16" fill="#0068B6" />
+                                <g clip-path="url(#clip0_817_15493)">
+                                    <path d="M18.0934 22.6183L16.8418 21.3305L21.3772 16.7951H6.99475V15.0139H21.3772L16.8418 10.4785L18.0934 9.19067L24.8073 15.9045L18.0934 22.6183Z" fill="white" />
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_817_15493">
+                                        <rect width="19" height="19" fill="white" transform="translate(6.401 6.40002)" />
+                                    </clipPath>
+                                </defs>
+                            </svg>
+
+                        </span>
+                    </a>
+                </div>
+            </div>
+            <div class="component-box">
+                <p>btn-list-01</p>
+                <div class="component-box-item">
+                    <div class="btn-list-01">
+                        <a href="#" class="btn-02">
+                            <span class="btn__text">印刷</span>
+                            <span class="btn__icon">
+                                <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="16" cy="16" r="16" fill="#0068B6" />
+                                    <g clip-path="url(#clip0_817_15493)">
+                                        <path d="M18.0934 22.6183L16.8418 21.3305L21.3772 16.7951H6.99475V15.0139H21.3772L16.8418 10.4785L18.0934 9.19067L24.8073 15.9045L18.0934 22.6183Z" fill="white" />
+                                    </g>
+                                    <defs>
+                                        <clipPath id="clip0_817_15493">
+                                            <rect width="19" height="19" fill="white" transform="translate(6.401 6.40002)" />
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+
+                            </span>
+                        </a>
+                        <a href="#" class="btn-02">
+                            <span class="btn__text">デジタル</span>
+                            <span class="btn__icon">
+                                <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="16" cy="16" r="16" fill="#0068B6" />
+                                    <g clip-path="url(#clip0_817_15493)">
+                                        <path d="M18.0934 22.6183L16.8418 21.3305L21.3772 16.7951H6.99475V15.0139H21.3772L16.8418 10.4785L18.0934 9.19067L24.8073 15.9045L18.0934 22.6183Z" fill="white" />
+                                    </g>
+                                    <defs>
+                                        <clipPath id="clip0_817_15493">
+                                            <rect width="19" height="19" fill="white" transform="translate(6.401 6.40002)" />
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+
+                            </span>
+                        </a>
+                        <a href="#" class="btn-02">
+                            <span class="btn__text btn__text--newspaper">彦根経済新聞</span>
+                            <span class="btn__icon">
+                                <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="16" cy="16" r="16" fill="#0068B6" />
+                                    <g clip-path="url(#clip0_817_15493)">
+                                        <path d="M18.0934 22.6183L16.8418 21.3305L21.3772 16.7951H6.99475V15.0139H21.3772L16.8418 10.4785L18.0934 9.19067L24.8073 15.9045L18.0934 22.6183Z" fill="white" />
+                                    </g>
+                                    <defs>
+                                        <clipPath id="clip0_817_15493">
+                                            <rect width="19" height="19" fill="white" transform="translate(6.401 6.40002)" />
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+
+                            </span>
+                        </a>
+                        <a href="#" class="btn-02">
+                            <span class="btn__text btn__text--branding">ブランディング</span>
+                            <span class="btn__icon">
+                                <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="16" cy="16" r="16" fill="#0068B6" />
+                                    <g clip-path="url(#clip0_817_15493)">
+                                        <path d="M18.0934 22.6183L16.8418 21.3305L21.3772 16.7951H6.99475V15.0139H21.3772L16.8418 10.4785L18.0934 9.19067L24.8073 15.9045L18.0934 22.6183Z" fill="white" />
+                                    </g>
+                                    <defs>
+                                        <clipPath id="clip0_817_15493">
+                                            <rect width="19" height="19" fill="white" transform="translate(6.401 6.40002)" />
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+
+                            </span>
+                        </a>
+                        <a href="#" class="btn-02">
+                            <span class="btn__text btn__text--promotion">プロモーション</span>
+                            <span class="btn__icon">
+                                <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="16" cy="16" r="16" fill="#0068B6" />
+                                    <g clip-path="url(#clip0_817_15493)">
+                                        <path d="M18.0934 22.6183L16.8418 21.3305L21.3772 16.7951H6.99475V15.0139H21.3772L16.8418 10.4785L18.0934 9.19067L24.8073 15.9045L18.0934 22.6183Z" fill="white" />
+                                    </g>
+                                    <defs>
+                                        <clipPath id="clip0_817_15493">
+                                            <rect width="19" height="19" fill="white" transform="translate(6.401 6.40002)" />
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+
+                            </span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="component-box">
+                <p>link-01-component</p>
+                <div class="component-box-item">
+                    <div class="link-01-component">
+                        <div class="link-01-head">
+                            <h3 class="link-01-title">SERVICE</h3>
+                            <a href="#" class="link-01-link">
+                                <span class="link-01-link-icon">
+                                    <svg viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <circle cx="14" cy="14" r="13.5" stroke="#0068B6" />
+                                        <path d="M15.9384 19.94L14.8317 18.8013L18.842 14.7911H6.12488V13.2161H18.842L14.8317 9.20586L15.9384 8.06714L21.8749 14.0036L15.9384 19.94Z" fill="#0068B6" />
+                                    </svg>
+                                </span>
+                                <span class="link-01-link-text">サービストップへ戻る</span>
+                            </a>
+                        </div>
+                        <div class="btn-list-01">
+                            <a href="#" class="btn-02">
+                                <span class="btn__text">印刷</span>
+                                <span class="btn__icon">
+                                    <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <circle cx="16" cy="16" r="16" fill="#0068B6" />
+                                        <g clip-path="url(#clip0_817_15493)">
+                                            <path d="M18.0934 22.6183L16.8418 21.3305L21.3772 16.7951H6.99475V15.0139H21.3772L16.8418 10.4785L18.0934 9.19067L24.8073 15.9045L18.0934 22.6183Z" fill="white" />
+                                        </g>
+                                        <defs>
+                                            <clipPath id="clip0_817_15493">
+                                                <rect width="19" height="19" fill="white" transform="translate(6.401 6.40002)" />
+                                            </clipPath>
+                                        </defs>
+                                    </svg>
+
+                                </span>
+                            </a>
+                            <a href="#" class="btn-02">
+                                <span class="btn__text">デジタル</span>
+                                <span class="btn__icon">
+                                    <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <circle cx="16" cy="16" r="16" fill="#0068B6" />
+                                        <g clip-path="url(#clip0_817_15493)">
+                                            <path d="M18.0934 22.6183L16.8418 21.3305L21.3772 16.7951H6.99475V15.0139H21.3772L16.8418 10.4785L18.0934 9.19067L24.8073 15.9045L18.0934 22.6183Z" fill="white" />
+                                        </g>
+                                        <defs>
+                                            <clipPath id="clip0_817_15493">
+                                                <rect width="19" height="19" fill="white" transform="translate(6.401 6.40002)" />
+                                            </clipPath>
+                                        </defs>
+                                    </svg>
+
+                                </span>
+                            </a>
+                            <a href="#" class="btn-02">
+                                <span class="btn__text btn__text--newspaper">彦根経済新聞</span>
+                                <span class="btn__icon">
+                                    <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <circle cx="16" cy="16" r="16" fill="#0068B6" />
+                                        <g clip-path="url(#clip0_817_15493)">
+                                            <path d="M18.0934 22.6183L16.8418 21.3305L21.3772 16.7951H6.99475V15.0139H21.3772L16.8418 10.4785L18.0934 9.19067L24.8073 15.9045L18.0934 22.6183Z" fill="white" />
+                                        </g>
+                                        <defs>
+                                            <clipPath id="clip0_817_15493">
+                                                <rect width="19" height="19" fill="white" transform="translate(6.401 6.40002)" />
+                                            </clipPath>
+                                        </defs>
+                                    </svg>
+
+                                </span>
+                            </a>
+                            <a href="#" class="btn-02">
+                                <span class="btn__text btn__text--branding">ブランディング</span>
+                                <span class="btn__icon">
+                                    <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <circle cx="16" cy="16" r="16" fill="#0068B6" />
+                                        <g clip-path="url(#clip0_817_15493)">
+                                            <path d="M18.0934 22.6183L16.8418 21.3305L21.3772 16.7951H6.99475V15.0139H21.3772L16.8418 10.4785L18.0934 9.19067L24.8073 15.9045L18.0934 22.6183Z" fill="white" />
+                                        </g>
+                                        <defs>
+                                            <clipPath id="clip0_817_15493">
+                                                <rect width="19" height="19" fill="white" transform="translate(6.401 6.40002)" />
+                                            </clipPath>
+                                        </defs>
+                                    </svg>
+
+                                </span>
+                            </a>
+                            <a href="#" class="btn-02">
+                                <span class="btn__text btn__text--promotion">プロモーション</span>
+                                <span class="btn__icon">
+                                    <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <circle cx="16" cy="16" r="16" fill="#0068B6" />
+                                        <g clip-path="url(#clip0_817_15493)">
+                                            <path d="M18.0934 22.6183L16.8418 21.3305L21.3772 16.7951H6.99475V15.0139H21.3772L16.8418 10.4785L18.0934 9.19067L24.8073 15.9045L18.0934 22.6183Z" fill="white" />
+                                        </g>
+                                        <defs>
+                                            <clipPath id="clip0_817_15493">
+                                                <rect width="19" height="19" fill="white" transform="translate(6.401 6.40002)" />
+                                            </clipPath>
+                                        </defs>
+                                    </svg>
+
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </main>
-<?php get_template_part('template-parts/cta'); ?>
-
 <?php get_template_part('template-parts/footer'); ?>

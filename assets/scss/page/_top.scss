@@ -850,7 +850,7 @@
 .top-works {
     margin-top: 10rem;
     padding-block: rem(160) rem(158);
-    background: var(--light-gray) url(/images/works_bg.png) no-repeat top left / 100% 100%;
+    background: var(--light-gray) url(../images/pc/works_bg.webp) no-repeat top left / 100% 100%;
 
     &__inner {
         max-width: rem(1200);
@@ -869,7 +869,7 @@
         margin-top: 7.5rem;
         padding-block: rem(88) rem(93);
 
-        background: var(--light-gray) url(/images/works_bg-sp.png) no-repeat top left / 100% 100%;
+        background: var(--light-gray) url(../images/sp/works_bg-sp.webp) no-repeat top left / 100% 100%;
         
         &__inner {
             width: calc(100% - rem(48));
@@ -964,7 +964,7 @@
     max-width: rem(732);
     margin-top: 10rem;
     margin-inline: auto;
-    background: url(/images/gide-bnr.png) no-repeat center center/cover;
+    background: url(../images/pc/gide-bnr.webp) no-repeat center center/cover;
     padding: rem(50) rem(24) rem(46);
 
     &__text {
@@ -986,7 +986,7 @@
 
     @include mq(tb) {
         margin-top: 7.5rem;
-        background: url(/images/gide-bnr-sp.png) no-repeat center center/cover;
+        background: url(../images/sp/gide-bnr-sp.webp) no-repeat center center/cover;
     }
 
     @include mq(sp) {

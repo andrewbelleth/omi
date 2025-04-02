@@ -4,7 +4,7 @@
     &__head {
         width: 100%;
         height: rem(420);
-        background: $light-gray url(/images/page_bg.png) no-repeat center center/cover;
+        background: $light-gray url(../images/pc/page_bg.webp) no-repeat center center/cover;
         display: flex;
         flex-direction: column;
         justify-content: flex-end;
@@ -318,7 +318,7 @@
                     display: block;
                     width: rem(12);
                     height: rem(12);
-                    background: url(/images/icon/chevron-right-blue.svg) no-repeat center center/cover;
+                    background: url(../images/common/chevron-right-blue.svg) no-repeat center center/cover;
                     margin-right: rem(8);
                     margin-top: rem(2);
                 }

@@ -118,8 +118,11 @@ Template Name: フッター
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 <script src="<?php echo esc_url(get_theme_file_uri('/assets/js/script.js')); ?>"></script>
 
-<script>
-  window.onload = function() {
+<?php
+if (is_front_page()) {
+?>
+  <script>
+    window.onload = function() {
     const spinner = document.getElementById('loading');
     setTimeout(function() {
       spinner.classList.add('loaded');
@@ -171,6 +174,9 @@ Template Name: フッター
     ScrollAnime();
   });
 </script>
+<?php
+}
+?>
 
 <?php wp_footer(); ?>
 </body>

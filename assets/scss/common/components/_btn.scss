@@ -17,7 +17,7 @@
     transition: .3s;
 
     
-    &__text {
+    .btn__text {
         margin-inline: auto;
         width: fit-content;
         text-align: center;
@@ -27,7 +27,7 @@
         font-weight: 700;
     }
     
-    &__icon {
+    .btn__icon {
         background: $white;
         width: 2.375rem;
         height: 2.375rem;
@@ -120,7 +120,7 @@
             width: rem(280 + 20);
         }
         
-        &__text {
+        .btn__text {
             font-size: 0.9375rem;
         }
         

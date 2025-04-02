@@ -2,7 +2,7 @@
 
 .cta {
     position: relative;
-    background: $light-gray url(/images/cta_btg-pc.png) no-repeat center center/cover;
+    background: $light-gray url(../images/pc/cta_btg-pc.webp) no-repeat center center/cover;
     max-width: rem(1200);
     width: calc(100% - rem(80));
     margin-block: rem(160) rem(-156);
@@ -64,7 +64,7 @@
     }
 
     @include mq(sp) {
-        background: $light-gray url(/images/cta_btg-sp.png) no-repeat center center/cover;
+        background: $light-gray url(../images/sp/cta_btg-sp.webp) no-repeat center center/cover;
 
         &__inner {
             flex-direction: column;
@@ -167,7 +167,7 @@
                     display: block;
                     width: 1.1875rem;
                     height: 1.1875rem;
-                    background: url(/images/icon/external-link-alt.svg) no-repeat center center/cover;
+                    background: url(../images/common/external-link-alt.svg) no-repeat center center/cover;
                 }
 
                 &:hover {

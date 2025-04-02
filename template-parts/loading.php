@@ -1,7 +1,7 @@
 <div class="loading" id="loading">
     <div class="loading__svg">
         <svg id="svg-animation" viewBox="0 0 270 160" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <image xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="images/handwritinglogo.svg"
+            <image xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="<?php echo get_template_directory_uri(); ?>/assets/images/common/handwritinglogo.svg"
                 mask="url(#clipmask)"></image>
             <mask id="clipmask" maskUnits="objectBoundingBox">
                 <path class="st0"
