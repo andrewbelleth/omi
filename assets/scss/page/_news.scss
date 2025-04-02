@@ -1,0 +1,120 @@
+@use "../global" as *;
+
+.post__list {
+    border-block: 1px solid $gray;
+
+    li {
+        +li {
+            border-top: 1px solid $gray;
+        }
+
+        a {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: flex-start;
+            gap: .5rem 1.5rem;
+            padding: 1.5rem 1.5rem 1.5rem 1rem;
+
+            .date {
+                width: 5.75rem;
+                display: -webkit-box;
+                -webkit-box-orient: vertical;
+                color: $dark-gray;
+                text-overflow: ellipsis;
+                font-size: 0.9375rem;
+                font-weight: 400;
+                line-height: 170%;
+                letter-spacing: 0.1em;
+            }
+
+            .cat {
+                background: $light-blue;
+                display: flex;
+                padding-bottom: rem(1);
+                margin-top: rem(2);
+                width: 6.6875rem;
+                justify-content: center;
+                align-items: center;
+                color: $blue;
+                text-overflow: ellipsis;
+                font-size: 0.875rem;
+                font-weight: 700;
+                line-height: 170%;
+                letter-spacing: 0.1em;
+            }
+
+            .title {
+                position: relative;
+                flex: 1;
+                overflow: hidden;
+                color: $black;
+                text-overflow: ellipsis;
+                font-size: 0.9375rem;
+                font-weight: 400;
+                line-height: 180%;
+                letter-spacing: 0.05em;
+                display: -webkit-box;
+                -webkit-box-orient: vertical;
+                -webkit-line-clamp: 2;
+                overflow: hidden;
+                padding-right: 2.5rem;
+            }
+            
+            .icon {
+                display: block;
+                width: 1rem;
+                height: 1rem;
+                margin-top: rem(6);
+                position: absolute;
+                top: 0;
+                right: 0;
+                overflow: hidden;
+
+                &::before {
+                    content: '';
+                    width: 100%;
+                    height: 100%;
+                    display: block;
+                    background: url(/images/icon/arrow-right-blue.svg) no-repeat center center/cover;
+                }
+            }
+
+            &:hover {
+                .icon {
+                    &::before {
+                        animation: forward .9s cubic-bezier(.215,.61,.355,1) forwards;
+                    }
+                }
+            }
+        }
+    }
+
+    @include mq(tb) {
+        li {
+            a {
+                gap: rem(8) rem(12);
+                padding: rem(24) 0;
+
+                .date {
+                    width: 5.375rem;
+                    font-size: rem(14);
+                }
+                .cat {
+                    font-size: .75rem;
+                    width: fit-content;
+                    padding-inline: 1em;
+                    margin-block: rem(1.5);
+                }
+                .title {
+                    flex: 1 0 100%;
+                    font-size: rem(14);
+                }
+                
+                .icon {
+                    top: 50%;
+                    transform: translateY(-50%);
+                }
+            }
+        }
+    }
+}

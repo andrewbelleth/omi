@@ -1,0 +1,37 @@
+// breackpoint
+$breakpoints: (
+    "mdpc": 1280px,
+    "pc": 1024px,
+    "tb": 768px,
+    "sp": 640px
+);
+
+$baseFontSize: 16;
+
+@function rem($pixels) {
+    @return $pixels / $baseFontSize * 1rem;
+}
+
+@function em($pixels, $fontSize: $baseFontSize) {
+    @return $pixels / $fontSize * 1em;
+}
+
+@mixin mq($breakpoint) {
+    @if map-has-key($breakpoints, $breakpoint) {
+        @if ($breakpoint =="widePc") {
+            @media (min-width: map-get($breakpoints, $breakpoint)) {
+                @content;
+            }
+        }
+
+        @else {
+            @media (max-width: map-get($breakpoints, $breakpoint)) {
+                @content;
+            }
+        }
+    }
+
+    @else {
+        @error "Breakpoint `#{$breakpoint}` not found in $breakpoints";
+    }
+}

@@ -1,0 +1,55 @@
+@use '../../global/' as *;
+
+.section {
+    max-width: rem(1120);
+    width: calc(100% - rem(80));
+    margin-top: 10rem;
+    margin-inline: auto;
+
+    &__title {
+        display: flex;
+        flex-direction: column;
+        height: rem(119);
+
+        &--en {
+            display: block;
+            font-size: rem(88);
+            font-weight: 500;
+            letter-spacing: .1em;
+            font-family: $font-hind;
+            line-height: 1;
+        }
+        
+        &--jp {
+            display: block;
+            font-size: rem(18);
+            font-weight: 700;
+            line-height: 1.7;
+            padding-left: rem(4);
+            letter-spacing: .05em;
+            margin-top: auto;
+        }
+    }
+    
+    @include mq(tb) {
+        margin-top: 7.5rem;
+        width: calc(100% - rem(48));
+
+        &__head {
+            display: contents;
+        }
+
+        &__title {
+            height: rem(74);
+            margin-bottom: rem(40);
+
+            &--en {
+                font-size: rem(48);
+            }
+            &--jp {
+                padding-left: rem(2);
+                font-size: rem(14);
+            }
+        }
+    }
+}

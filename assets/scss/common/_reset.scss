@@ -1,0 +1,27 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul,
+li {
+    text-decoration: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+a,
+img,
+span {
+    display: inline-block;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    vertical-align: top;
+    display: inline-block !important;
+}

@@ -1,0 +1,484 @@
+@use "../global" as *;
+
+
+.single {
+    max-width: rem(1120);
+    width: calc(100% - rem(80));
+    margin-inline: auto;
+
+    @include mq(tb) {
+        width: calc(100% - rem(48));
+    }
+}
+
+.article {
+    width: 100%;
+
+    &__meta {
+        display: flex;
+        align-items: center;
+        gap: .75rem;
+        padding-top: rem(48);
+    }
+
+    &__date {
+        color: $blue;
+        font-size: 0.875rem;
+        font-weight: 700;
+        line-height: 170%;
+        letter-spacing: 0.05em;
+    }
+
+    &__cat {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: .5rem;
+
+        a {
+            background: $light-blue;
+            color: $blue;
+            font-feature-settings: 'pwid' on, 'palt' on;
+            text-overflow: ellipsis;
+            font-size: 0.875rem;
+            font-weight: 700;
+            line-height: 170%;
+            letter-spacing: 0.1em;
+            min-width: 6.6875rem;
+            padding: 0rem 1rem 0.0625rem 1rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+
+    &__title {
+        font-feature-settings: 'pwid' on, 'palt' on;
+        font-size: 2.875rem;
+        font-weight: 700;
+        line-height: 160%;
+        letter-spacing: 0.1em;
+        margin-top: 1rem;
+    }
+
+    &__thumbnail {
+        position: relative;
+        width: 100%;
+        background: #d9d9d9;
+        margin-top: 3rem;
+
+        &::before {
+            content: '';
+            width: 100%;
+            padding-top: 56.25%;
+            display: block;
+        }
+
+        img {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            object-fit: cover;
+        }
+    }
+
+    &__text {
+        margin-top: rem(80);
+
+        h1, h2 {
+            color: $blue;
+            font-size: 2.25rem;
+            font-weight: 700;
+            line-height: 160%;
+            letter-spacing: 0.1em;
+            padding-bottom: 1.5rem;
+            border-bottom: 1px solid $blue;
+        }
+
+        h3 {
+            font-size: 1.75rem;
+            font-weight: 700;
+            line-height: 170%;
+            letter-spacing: 0.1em;
+        }
+
+        h4 {
+            font-size: 1.25rem;
+            font-weight: 700;
+            line-height: 170%;
+            letter-spacing: 0.1em;
+        }
+
+        p {
+            font-feature-settings: 'pwid' on, 'palt' on;
+            font-size: 0.9375rem;
+            font-weight: 400;
+            line-height: 180%;
+            letter-spacing: 0.05em;
+        }
+
+        a {
+            color: $blue;
+            font-feature-settings: 'pwid' on, 'palt' on;
+            font-size: 0.9375rem;
+            font-weight: 500;
+            line-height: 180%;
+            letter-spacing: 0.05em;
+            text-decoration: underline 1px;
+            text-decoration-color: $blue;
+            text-underline-offset: .1em;
+        }
+
+        ul,
+        ol {
+            padding: 2rem;
+            background: $light-blue;
+
+            li {
+                font-feature-settings: 'pwid' on, 'palt' on;
+                font-size: 0.9375rem;
+                font-weight: 400;
+                line-height: 180%;
+                letter-spacing: 0.05em;
+                display: flex;
+
+                &::before {
+                    content: "・";
+                    display: inline-block;
+                    margin-inline: .25rem;
+                }
+            }
+        }
+
+        figure {
+            position: relative;
+            max-width: rem(798);
+            width: 100%;
+            background: #d9d9d9;
+            margin-inline: auto;
+
+            &::before {
+                content: '';
+                display: block;
+                width: 100%;
+                padding-top: 55.8897243108%;
+            }
+
+            img {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                top: 0;
+                left: 0;
+                object-fit: cover;
+            }
+        }
+
+        * {
+
+            +h1,
+            +h2 {
+                margin-top: rem(80);
+            }
+            +h3 {
+                margin-top: rem(64);
+            }
+            +h4 {
+                margin-top: rem(48);
+            }
+
+            +p,
+            +a {
+                margin-top: rem(32);
+            }
+
+            +figure,
+            +ul,
+            +ol {
+                margin-top: 2.5rem;
+            }
+        }
+
+    }
+
+    &__tag-list {
+        margin-top: 3rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 1rem;
+        padding-inline: 1.5rem;
+
+        li a {
+            display: block;
+            background: $light-blue;
+            padding: 0.1875rem 1rem 0.25rem 1rem;
+            color: $blue;
+            font-feature-settings: 'pwid' on, 'palt' on;
+            font-size: 0.875rem;
+            font-weight: 700;
+            line-height: 170%;
+            letter-spacing: 0.1em;
+        }
+    }
+
+    &__gallery {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 4rem 2rem;
+        margin-top: 3rem;
+
+        &-item {
+            &:nth-of-type(1) {
+                width: 100%;
+            }
+
+            position: relative;
+            width: calc(50% - 1rem);
+            background: #d9d9d9;
+
+            &::before {
+                content: '';
+                width: 100%;
+                padding-top: 56.25%;
+                display: block;
+            }
+
+            img {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                top: 0;
+                left: 0;
+                object-fit: cover;
+            }
+        }
+    }
+
+    &__btn {
+        width: 100%;
+        padding: 1rem;
+        margin-top: 6rem;
+        border-radius: 6.25rem;
+        background: $white;
+        box-shadow: 0px 0px 16px 0px rgba(40, 40, 40, 0.25);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+        transition: .3s;
+
+        &-text {
+            color: $black;
+            font-size: 1.125rem;
+            font-weight: 700;
+            line-height: 170%;
+            letter-spacing: 0.1em;
+        }
+
+        &-icon {
+            width: 1.1875rem;
+            height: 1.1875rem;
+
+            svg {
+                width: 100%;
+                height: 100%;
+            }
+        }
+
+        &:hover {
+            background: #7A7A7A;
+
+            .article__btn {
+                &-text {
+                    color: $white;
+                }
+
+                &-icon {
+                    svg {
+                        path {
+                            fill: $white;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    &--works {
+        .article {
+            &__thumbnail {
+                margin-top: 0;
+            }
+
+            &__title {
+                font-size: 2.5rem;
+                line-height: 160%;
+                margin-top: 3.5rem;
+                text-align: center;
+            }
+
+            &__text {
+                margin-top: rem(96);
+
+                p {
+                    font-size: 0.9375rem;
+                    font-weight: 400;
+                    line-height: 170%;
+                    letter-spacing: 0.1em;
+                }
+
+                * {
+                    +p {
+                        margin-top: 1.5rem;
+                    }
+                }
+            }
+        }
+    }
+
+    .btn {
+        margin-top: 7.5rem;
+        margin-inline: auto;
+    }
+
+    @include mq(tb) {
+        &__meta {
+            padding-top: rem(32);
+        }
+        &__cat {
+            span {
+                width: fit-content;
+                padding: 0rem 0.75rem 0.0625rem 0.75rem;
+            }
+        }
+
+        &__title {
+            font-size: rem(26);
+            margin-top: 0.75rem;
+        }
+
+        &__thumbnail {
+            width: 100vw;
+            margin-inline: calc(50% - 50vw);
+            margin-top: 2rem;
+        }
+
+        &__text {
+            margin-top: rem(64);
+
+            h1,h2 {
+                font-size: 1.375rem;
+            }
+
+            h3 {
+                font-size: 1.25rem;
+            }
+
+            h4 {
+                font-size: 1.0625rem;
+            }
+
+            p {
+                font-size: 0.875rem;
+            }
+
+            a {
+                font-size: 0.875rem;
+            }
+
+            ul,
+            ol {
+                padding: 1.5rem;
+
+                li {
+                    font-size: 0.875rem;
+                }
+            }
+
+
+            * {
+
+                +h1,
+                +h2 {
+                    margin-top: rem(64);
+                }
+                
+                +h3,
+                +h4 {
+                    margin-top: rem(40);
+                }
+
+                +p,
+                +a {
+                    margin-top: rem(24);
+                }
+
+                +figure,
+                +ul,
+                +ol {
+                    margin-top: 2.5rem;
+                }
+            }
+        }
+
+        .btn {
+            margin-top: 5rem;
+        }
+
+        &__tag-list {
+            margin-top: 2rem;
+            gap: .5rem;
+            padding-inline: 0;
+    
+            li a {
+                padding: 0.125rem 0.5rem;
+                font-size: 0.75rem;
+            }
+        }
+    
+        &__gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1.5rem 2rem;
+            margin-top: 1.5rem;
+    
+            &-item {
+                &:nth-of-type(1) {
+                    width: 100%;
+                }
+    
+                width: 100%;
+            }
+        }
+    
+        &__btn {
+            margin-top: 4rem;
+            &-text {
+                font-size: 1rem;
+            }
+        }
+
+        &--works {
+            .article {
+
+                &__title {
+                    font-size: 1.375rem;
+                    margin-top: 2.5rem;
+                }
+    
+                &__text {
+                    margin-top: 3.5rem;
+    
+                    p {
+                        font-size: 0.875rem;
+                    }
+                }
+            }
+        }
+
+    }
+}

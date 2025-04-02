@@ -1,0 +1,293 @@
+@use '../../global/' as *;
+
+#header {
+    &.UpMove {
+        animation: UpAnime 0.5s forwards;
+    }
+    &.DownMove {
+        animation: DownAnime 0.5s forwards;
+    }
+}
+
+.loading {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    transition: all .5s;
+    z-index: 9999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    background: $blue;
+
+    &__svg {
+        width: 270px;
+
+        .st0 {
+            fill-opacity: 0;
+            transition: fill-opacity .5s;
+            fill: none;
+            stroke: #fff;
+            stroke-width: 2;
+        }
+
+        .done .st0 {
+            fill: #fff;
+            fill-opacity: 1;
+            stroke: none;
+        }
+
+        @include mq(tb) {
+            width: rem(145);
+        }
+    }
+
+    &.loaded {
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+
+.inview {
+    opacity: 0;
+
+    ._image {
+        position: relative;
+
+        ._cover {
+            opacity: 0;
+            animation: topSlideMv .65s cubic-bezier(.73, 0, .83, 1) 0.3s forwards;
+            animation-play-state: paused;
+        }
+
+        &::before {
+            content: "";
+            display: block;
+            transform: scaleX(0);
+            opacity: 0;
+            background: $blue;
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 2;
+            transform-origin: center top;
+            animation: imgCoverBf .65s cubic-bezier(.73, 0, .83, 1) 0.3s forwards;
+            -webkit-animation-play-state: paused;
+            animation-play-state: paused;
+        }
+
+        &::after {
+            content: "";
+            display: block;
+            transform: scaleX(0);
+            background: $blue;
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 2;
+            transform-origin: center bottom;
+            animation: imgCoverAf .65s cubic-bezier(.73, 0, .83, 1) 0.3s forwards;
+            -webkit-animation-play-state: paused;
+            animation-play-state: paused;
+        }
+    }
+
+    &.active {
+        animation-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
+        animation-duration: 1.5s;
+        animation-name: fadeUp;
+        animation-fill-mode: forwards;
+
+        ._image {
+            position: relative;
+            ._cover {
+                position: relative;
+                animation-play-state: running;
+            }
+
+            &::before,
+            &::after {
+                animation-play-state: running;
+            }
+        }
+    }
+}
+
+.page-top {
+    position: fixed;
+    width: 5.25rem;
+    height: 5.25rem;
+    border-radius: 50%;
+    background: $white;
+    border: 3px solid $blue;
+    right: 3rem;
+    bottom: 48px;
+    z-index: 98;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 5.169px 20.677px rgba(40, 40, 40, 0.15);
+
+    svg {
+        width: 2.375rem;
+        height: 2.375rem;
+    }
+    
+    
+    &.infooter {
+        position: absolute;
+    }
+
+    @include mq(pc) {
+        right: 2.5rem;
+        bottom: 24px;
+    }
+    
+    @include mq(tb) {
+        width: 52px;
+        height: 52px;
+        border: 2px solid $blue;
+        right: 1.5rem;
+
+        svg {
+            width: 1.375rem;
+            height: 1.375rem;
+        }
+    }
+}
+
+@keyframes fadeUp {
+    0% {
+        opacity: 0;
+        transform: translateY(rem(20))
+    }
+
+    to {
+        opacity: 1;
+        transform: none
+    }
+}
+
+@keyframes topSlideMv {
+    0% {
+        opacity: 0%;
+    }
+
+    46.84% {
+        opacity: 0%;
+    }
+
+    46.85%,
+    to {
+        opacity: 100%;
+    }
+}
+
+@keyframes imgCoverBf {
+
+    0%,
+    46.84% {
+        opacity: 0;
+        transform: scaleY(0)
+    }
+
+    46.85% {
+        opacity: 100%;
+        transform: scale(1)
+    }
+
+    65.85% {
+        opacity: 100%;
+        transform: scale(1)
+    }
+
+    to {
+        opacity: 100%;
+        transform: scaleY(0)
+    }
+}
+
+@keyframes imgCoverAf {
+    0% {
+        opacity: 100%;
+        transform: scaleY(0)
+    }
+
+    46.84% {
+        opacity: 100%;
+        transform: scale(1)
+    }
+
+    46.85%,
+    to {
+        opacity: 0
+    }
+}
+
+@keyframes imgCoverAf {
+    0% {
+        opacity: 100%;
+        transform: scaleY(0)
+    }
+
+    46.84% {
+        opacity: 100%;
+        transform: scale(1)
+    }
+
+    46.85%,
+    to {
+        opacity: 0
+    }
+}
+
+@keyframes forward {
+	0% {
+		-webkit-transform: translate(0);
+		transform: translate(0)
+	}
+
+	30% {
+		-webkit-transform: translate(110%);
+		transform: translate(110%)
+	}
+
+	30.1% {
+		-webkit-transform: translate(-110%);
+		transform: translate(-110%)
+	}
+
+	to {
+		-webkit-transform: translate(0);
+		transform: translate(0)
+	}
+}
+
+@keyframes UpAnime {
+	from {
+		opacity: 1;
+		transform: translateY(0);
+	}
+	to {
+		opacity: 0;
+		transform: translateY(-100px);
+	}
+}
+
+@keyframes DownAnime {
+	from {
+		opacity: 0;
+		transform: translateY(-100px);
+	}
+	to {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
