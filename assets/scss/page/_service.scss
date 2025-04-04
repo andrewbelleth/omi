@@ -1,0 +1,42 @@
+@use "../global" as *; 
+
+.page__service-box {
+    display: flex;
+    flex-direction: column;
+    gap: rem(40);
+
+    .page__service-box-title {
+        font-size: rem(54);
+        font-weight: 700;
+        line-height: 1.6;
+        letter-spacing: 0.1em;
+        font-feature-settings: "palt";
+    }
+
+    .page__service-box-text {
+        display: flex;
+        flex-direction: column;
+        gap: rem(16);
+
+        p {
+            font-size: rem(15);
+            font-weight: 500;
+            line-height: 2.2;
+            letter-spacing: 0.05em;
+            font-feature-settings: "palt";
+        }
+    }
+
+    @include mq(tb) {
+        gap: rem(24);
+        .page__service-box-title {
+            font-size: rem(32);
+        }
+
+        .page__service-box-text {
+            p {
+                font-size: rem(14);
+            }
+        }
+    }
+}

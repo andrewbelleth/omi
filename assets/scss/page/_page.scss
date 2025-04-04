@@ -164,6 +164,7 @@
                         &-text {
                             color: $white;
                         }
+
                         &-icon {
                             svg {
                                 path {
@@ -264,6 +265,7 @@
             &.section {
                 margin-top: rem(96);
             }
+
             &__popup-btn {
                 &-text {
                     font-size: 1rem;
@@ -290,61 +292,59 @@
     }
 }
 
+.page-wrapper {
+    display: flex;
+    flex-direction: column;
+
+    &.page-wrapper-gap120 {
+        gap: rem(120);
+    }    
+}
+
 .breadcrumb {
     width: fit-content;
     margin-left: auto;
+    display: flex;
+    gap: rem(10);
 
-    ul {
+
+
+    >span {
+        font-size: 0.875rem;
+        font-weight: 500;
+        line-height: 170%;
+        letter-spacing: 0.1em;
+    }
+
+    >span+span {
         display: flex;
-        gap: rem(10);
+        align-items: center;
 
-        li {
-
-            a,
-            span {
-                color: $black;
-                font-size: 0.875rem;
-                font-weight: 500;
-                line-height: 170%;
-                letter-spacing: 0.1em;
-            }
-
-            +li {
-                display: flex;
-                align-items: center;
-
-                &::before {
-                    content: '';
-                    display: block;
-                    width: rem(12);
-                    height: rem(12);
-                    background: url(../images/common/chevron-right-blue.svg) no-repeat center center/cover;
-                    margin-right: rem(8);
-                    margin-top: rem(2);
-                }
-            }
+        &::before {
+            content: '';
+            display: block;
+            width: rem(12);
+            height: rem(12);
+            background: url(../images/common/chevron-right-blue.svg) no-repeat center center/cover;
+            margin-right: rem(8);
+            margin-top: rem(2);
         }
     }
 
     @include mq(tb) {
-        ul {
-            gap: 4px;
+        gap: 4px;
 
-            li {
 
-                a,
-                span {
-                    font-size: 12px;
-                }
+        >span {
+            font-size: 12px;
+        }
 
-                +li {
-                    &::before {
-                        width: 10px;
-                        height: 10px;
-                        margin-right: 4px;
-                        margin-top: 1px;
-                    }
-                }
+        +span {
+            &::before {
+                width: 10px;
+                height: 10px;
+                margin-right: 4px;
+                margin-top: 1px;
             }
         }
     }
@@ -420,3 +420,4 @@
         }
     }
 }
+

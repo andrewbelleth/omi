@@ -8,37 +8,35 @@ Template Name: トップページ
 <?php get_template_part('template-parts/header'); ?>
 
 <?php get_template_part('template-parts/loading'); ?>
-
-<main>
-    <div class="mv">
-        <div class="mv__media">
-            <video src="<?php echo get_template_directory_uri(); ?>/assets/video/drone.mov" autoplay muted playsinline loop></video>
-        </div>
-        <div class="mv__body">
-            <div class="mv__logo">
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/pc/mv_logo.webp" alt="omi printing">
+<div class="wrapper">
+    <div class="mv-wrapper">
+        <div class="mv">
+            <div class="mv__media">
+                <video src="<?php echo get_template_directory_uri(); ?>/assets/video/drone.mov" autoplay muted playsinline loop></video>
             </div>
-            <h1 class="mv__title">
-                <picture>
-                    <source srcset="<?php echo get_template_directory_uri(); ?>/assets/images/sp/mv_title-sp.pwebpng" alt="印刷会社だけど、印刷だけじゃない" media="(max-width: 768px)">
-                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/pc/mv_title.svg" alt="印刷会社だけど、印刷だけじゃない">
-                </picture>
-            </h1>
+            <div class="mv__body">
+                <div class="mv__logo">
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/pc/mv_logo.webp" alt="omi printing">
+                </div>
+                <h1 class="mv__title">
+                    <picture>
+                        <source srcset="<?php echo get_template_directory_uri(); ?>/assets/images/sp/mv_title-sp.pwebpng" alt="印刷会社だけど、印刷だけじゃない" media="(max-width: 768px)">
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/pc/mv_title.svg" alt="印刷会社だけど、印刷だけじゃない">
+                    </picture>
+                </h1>
+            </div>
         </div>
-    </div>
-    <div class="top-slider inview" id="top-slider">
-        <div class="top-slider__item">
-            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/pc/sample_slider_img01.webp" alt="画像01">
-        </div>
-        <div class="top-slider__item">
-            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/pc/sample_slider_img02.webp" alt="画像02">
-        </div>
-        <div class="top-slider__item">
-            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/pc/sample_slider_img03.webp" alt="画像03">
-        </div>
-        <div class="top-slider__item">
-            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/pc/sample_slider_img04.webp" alt="画像04">
-        </div>
+        <?php
+        $args = array(
+            'slider_array' => array(
+                'img_01' => 'sample_slider_img01.webp',
+                'img_02' => 'sample_slider_img02.webp',
+                'img_03' => 'sample_slider_img03.webp',
+                'img_04' => 'sample_slider_img04.webp',
+            ),
+        );
+        ?>
+        <?php get_template_part('template-parts/components/top-slider', null, $args); ?>
     </div>
     <div class="top-news section">
         <div class="top-news__head section__head">
@@ -107,26 +105,19 @@ Template Name: トップページ
             </li>
         </ul>
     </div>
-    <div class="top-gallery inview" id="top-gallery">
-        <div class="top-gallery__item">
-            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/pc/sample_gallery01.webp" alt="">
-        </div>
-        <div class="top-gallery__item">
-            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/pc/sample_gallery02.webp" alt="">
-        </div>
-        <div class="top-gallery__item">
-            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/pc/sample_gallery03.webp" alt="">
-        </div>
-        <div class="top-gallery__item">
-            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/pc/sample_gallery01.webp" alt="">
-        </div>
-        <div class="top-gallery__item">
-            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/pc/sample_gallery02.webp" alt="">
-        </div>
-        <div class="top-gallery__item">
-            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/pc/sample_gallery03.webp" alt="">
-        </div>
-    </div>
+    <?php
+    $args = array(
+        'slider_array' => array(
+            'img_01' => 'sample_gallery01.webp',
+            'img_02' => 'sample_gallery02.webp',
+            'img_03' => 'sample_gallery03.webp',
+            'img_04' => 'sample_gallery01.webp',
+            'img_05' => 'sample_gallery02.webp',
+            'img_06' => 'sample_gallery03.webp',
+        ),
+    );
+    ?>
+    <?php get_template_part('template-parts/components/gallery', null, $args); ?>
     <div class="top-about section">
         <div class="top-about__head section__head inview">
             <h2 class="section__title">
@@ -523,7 +514,5 @@ Template Name: トップページ
         <div class="top-instagram__body inview"></div>
     </div>
     <?php get_template_part('template-parts/guide'); ?>
-</main>
-<?php get_template_part('template-parts/cta'); ?>
-
-<?php get_template_part('template-parts/footer'); ?>
+    <?php get_template_part('template-parts/footer'); ?>
+</div>

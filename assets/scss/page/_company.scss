@@ -1,0 +1,155 @@
+@use "../global" as *; 
+
+.page-company {
+    .top-message {
+        display: flex;
+        flex-direction: column;
+        gap: rem(48);
+
+        .top-message__title {
+            display: flex;
+            flex-direction: column;
+            gap: rem(16);
+
+            .top-message__title-en {
+                font-size: rem(24);
+                font-weight: 600;
+                line-height: 1;
+                letter-spacing: 0.1em;
+                color: $blue;
+                font-family: $font-hind;
+            }
+
+            .top-message__title-jp {
+                font-size: rem(48);
+                font-weight: 700;
+                line-height: 1.8;
+                letter-spacing: 0.1em;
+            }
+        }
+
+        .top-message__media {
+            display: flex;
+            gap: rem(56);
+            
+            .top-message__media-img {
+                max-width: 42%;
+                width: rem(468);
+            }
+
+            .top-message__media-body {
+                padding-top: rem(3);
+                flex: 1;
+                display: flex;
+                flex-direction: column;
+                gap: rem(32);
+
+                .top-message__media-text {
+                    display: flex;
+                    flex-direction: column;
+                    gap: rem(16);
+
+                    p {
+                        font-size: rem(15);
+                        font-weight: 400;
+                        line-height: 2;
+                        letter-spacing: 0.05em;
+                    }
+                }
+
+                .top-message__media-user {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-end;
+                    gap: rem(6);
+                    
+                    .top-message__media-user-role {
+                        font-size: rem(13);
+                        font-weight: 400;
+                        line-height: 1.5;
+                        letter-spacing: 0.1em;
+                    }
+
+                    .top-message__media-user-name {
+                        width: rem(150);
+                    }
+                    
+                }
+            }
+            
+        }
+
+        @include mq(pc) {
+            .top-message__title {
+                .top-message__title-jp {
+                    font-size: rem(40);
+                }
+            }
+        }
+        @include mq(tb) {
+            gap: rem(32);
+
+            .top-message__title {
+                .top-message__title-en {
+                    font-size: rem(18);
+                }
+    
+                .top-message__title-jp {
+                    font-size: rem(28);
+                    line-height: 1.165;
+                }
+
+
+            }
+
+            .top-message__media {
+                display: flex;
+                flex-direction: column;
+                gap: rem(32);
+                
+                .top-message__media-img {
+                    max-width: inherit;
+                    width: rem(327);
+                    margin-inline: auto;
+                }
+    
+                .top-message__media-body {
+                    padding-top: rem(0);
+                    flex: none;
+                    width: 100%;
+                    gap: rem(16);
+    
+                    .top-message__media-text {
+                        p {
+                            font-size: rem(14);
+                            line-height: 1.9;
+                        }
+                    }
+    
+                    .top-message__media-user {
+                        .top-message__media-user-role {
+                            font-size: rem(12);
+                            line-height: 1.5;
+                        }
+    
+                        .top-message__media-user-name {
+                            width: rem(132);
+                        }
+                        
+                    }
+                }
+                
+            }
+        }
+    }
+
+    .gallery {
+        &__item {
+            &::before {
+                padding-top: 76.6666666667%;
+            }
+        }
+    }
+
+    
+}
