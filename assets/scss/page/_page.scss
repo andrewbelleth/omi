@@ -51,80 +51,6 @@
         }
     }
 
-    &-news {
-        display: flex;
-        flex-wrap: wrap;
-        gap: rem(120);
-
-        &__side {
-            position: sticky;
-            top: rem(100);
-            align-self: flex-start;
-            width: rem(240);
-
-            h3 {
-                display: flex;
-                align-items: center;
-                padding: 0 3.25rem;
-                background: $blue;
-                height: rem(59);
-                color: $white;
-                font-size: 1.125rem;
-                font-weight: 700;
-                line-height: 170%;
-                letter-spacing: 0.1em;
-            }
-
-            ul {
-                width: 100%;
-
-                li {
-                    position: relative;
-
-                    a {
-                        display: flex;
-                        align-items: center;
-                        padding: 1rem 1.5rem 1rem 3.25rem;
-                        height: rem(59);
-                        color: $gray;
-                        font-size: 1rem;
-                        font-weight: 500;
-                        line-height: 170%;
-                        letter-spacing: 0.1em;
-                        border-bottom: 1px solid $gray;
-                        transition: .3s;
-
-                        &::before {
-                            content: '';
-                            display: block;
-                            width: 0.75rem;
-                            height: 0.75rem;
-                            border-radius: 50%;
-                            background: $blue;
-                            position: absolute;
-                            top: auto;
-                            left: 1.5rem;
-                            opacity: 0;
-                            transition: .3s;
-                        }
-
-                        &:hover {
-                            color: $black;
-
-                            &::before {
-                                opacity: 1;
-                            }
-                        }
-                    }
-                }
-            }
-        }
-
-        &__list {
-            flex: 1;
-        }
-    }
-
     &-works {
         &__popup {
             &-btn {
@@ -178,12 +104,6 @@
         }
     }
 
-    @include mq(pc) {
-        &-news {
-            gap: rem(48);
-        }
-    }
-
     @include mq(tb) {
         &__head {
             height: rem(361);
@@ -214,50 +134,8 @@
         }
 
         &-news {
-            flex-direction: column;
-            gap: rem(72);
-
             &.section {
                 margin-top: 6rem;
-            }
-
-            &__side {
-                position: relative;
-                top: auto;
-                width: 100%;
-
-                h3 {
-                    display: none;
-                }
-
-                ul {
-                    display: flex;
-                    flex-wrap: wrap;
-                    gap: rem(15) rem(13);
-
-                    li {
-                        width: calc(100% / 3 - rem(26 / 3));
-
-                        a {
-                            height: inherit;
-                            border-radius: 6.25rem;
-                            border: 1px solid $gray;
-                            font-size: rem(14);
-                            line-height: 150%;
-                            padding: rem(8.5 - 1) rem(24) rem(10.5 - 1);
-                            justify-content: center;
-
-                            &::before {
-                                display: none;
-                            }
-
-                            &:hover {
-                                background: $blue;
-                                color: $white;
-                            }
-                        }
-                    }
-                }
             }
         }
 
@@ -274,22 +152,6 @@
         }
     }
 
-    @include mq(sp) {
-        &-news {
-            &__side {
-                ul {
-                    li {
-                        width: calc(100% / 2 - rem(13 / 2));
-
-                        a {
-                            // padding: rem(6) rem(24) rem(8);
-                            padding: rem(8.5 - 1) rem(24) rem(10.5 - 1);
-                        }
-                    }
-                }
-            }
-        }
-    }
 }
 
 .page-wrapper {

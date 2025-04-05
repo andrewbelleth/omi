@@ -12,8 +12,8 @@ Template Name: トップページ
         'title_jp' => 'お知らせ',
     ]); ?>
     <div class="page-wrapper">
-        <div class="page-news section">
-            <div class="page-news__side">
+        <div class="page-news section section__col">
+            <div class="page-news__side section__side section__side--news">
                 <h3>カテゴリ</h3>
                 <ul>
                     <li><a href="">全て</a></li>
@@ -24,7 +24,7 @@ Template Name: トップページ
                     <li><a href="">コラム</a></li>
                 </ul>
             </div>
-            <ul class="page-news__list post__list">
+            <ul class="page-news__list post__list section__main">
                 <?php
                 // メインループ
                 if (have_posts()) : while (have_posts()) : the_post();

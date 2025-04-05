@@ -33,23 +33,23 @@ if (! defined('ABSPATH')) exit;
     </div>
 
     <div class="page-company">
-    <?php
-    $args = array(
-        'slider_array' => array(
-            'img_01' => 'company-gallery01.webp',
-            'img_02' => 'company-gallery02.webp',
-            'img_03' => 'company-gallery03.webp',
-            'img_04' => 'company-gallery04.webp',
-            'img_05' => 'company-gallery05.webp',
-            'img_06' => 'company-gallery06.webp',
-            'img_07' => 'company-gallery07.webp',
-            'img_08' => 'company-gallery08.webp',
-        ),
-    );
-    ?>
-    <?php get_template_part('template-parts/components/gallery', null, $args); ?>
+        <?php
+        $args = array(
+            'slider_array' => array(
+                'img_01' => 'company-gallery01.webp',
+                'img_02' => 'company-gallery02.webp',
+                'img_03' => 'company-gallery03.webp',
+                'img_04' => 'company-gallery04.webp',
+                'img_05' => 'company-gallery05.webp',
+                'img_06' => 'company-gallery06.webp',
+                'img_07' => 'company-gallery07.webp',
+                'img_08' => 'company-gallery08.webp',
+            ),
+        );
+        ?>
+        <?php get_template_part('template-parts/components/gallery', null, $args); ?>
     </div>
-    
+
     <div class="page-company">
         <div class="company-about section">
             <div class="company-about__head section__head">
@@ -58,80 +58,57 @@ if (! defined('ABSPATH')) exit;
                     <span class="section__title--jp">会社概要</span>
                 </h2>
             </div>
-            <div class="company-about__body">
-                <div class="dictional-list">
-                    <dl class="dictional-list__item">
-                        <dt class="dictional-list__item-title">
-                            <h3 class="dictional-list__item-title-en">社名</h3>
-                        </dt>
-                        <dd class="dictional-list__item-content">
-                            <p class="txt txt-regular">近江印刷株式会社</p>
-                        </dd>
-                    </dl>
-                    <dl class="dictional-list__item">
-                        <dt class="dictional-list__item-title">
-                            <h3 class="dictional-list__item-title-en">代表者</h3>
-                        </dt>
-                        <dd class="dictional-list__item-content">
-                            <p class="txt txt-regular">代表取締役　里西 一郎</p>
-                        </dd>
-                    </dl>
-                    <dl class="dictional-list__item">
-                        <dt class="dictional-list__item-title">
-                            <h3 class="dictional-list__item-title-en">本社</h3>
-                        </dt>
-                        <dd class="dictional-list__item-content">
-                            <p class="txt txt-regular">〒529-1302<br>滋賀県愛知郡愛荘町川原771-1<br>TEL:　0749-42-8400（代）　　　FAX:　0749-42-6700（代）</p>
-                        </dd>
-                    </dl>
-                    <dl class="dictional-list__item">
-                        <dt class="dictional-list__item-title">
-                            <h3 class="dictional-list__item-title-en">創業</h3>
-                        </dt>
-                        <dd class="dictional-list__item-content">
-                            <p class="txt txt-regular">昭和33年11月</p>
-                        </dd>
-                    </dl>
-                    <dl class="dictional-list__item">
-                        <dt class="dictional-list__item-title">
-                            <h3 class="dictional-list__item-title-en">資本金</h3>
-                        </dt>
-                        <dd class="dictional-list__item-content">
-                            <p class="txt txt-regular">3,000万円</p>
-                        </dd>
-                    </dl>
-                    <dl class="dictional-list__item">
-                        <dt class="dictional-list__item-title">
-                            <h3 class="dictional-list__item-title-en">社員数</h3>
-                        </dt>
-                        <dd class="dictional-list__item-content">
-                            <p class="txt txt-regular">62名（2024年9月現在）</p>
-                        </dd>
-                    </dl>
-                    <dl class="dictional-list__item">
-                        <dt class="dictional-list__item-title">
-                            <h3 class="dictional-list__item-title-en">事業内容</h3>
-                        </dt>
-                        <dd class="dictional-list__item-content">
-                            <p class="txt txt-regular">印刷事業（企画、デザイン、各種印刷、製本加工 等）<br>デジタル事業（Webサイト構築、バナー制作、動画撮影・制作、SNS運用 等）<br>彦根経済新聞の発行<br>ブランディング事業<br>プロモーション事業（販売促進支援 等）</p>
-                        </dd>
-                    </dl>
-                    <dl class="dictional-list__item">
-                        <dt class="dictional-list__item-title">
-                            <h3 class="dictional-list__item-title-en">工場敷地</h3>
-                        </dt>
-                        <dd class="dictional-list__item-content">
-                            <p class="txt txt-regular">11,500㎡</p>
-                        </dd>
-                    </dl>
-                    <dl class="dictional-list__item">
-                        <dt class="dictional-list__item-title">
-                            <h3 class="dictional-list__item-title-en">建物</h3>
-                        </dt>
-                        <dd class="dictional-list__item-content">
-                            <p class="txt txt-regular">関西みらい銀行　愛知川支店<br>京都銀行　彦根支店<br>滋賀銀行　愛知川支店</p>
-                        </dd>
-                    </dl>
+            <div class="info-list">
+                <div class="info-item">
+                    <h3 class="info-heading">社名</h3>
+                    <p class="info-content">近江印刷株式会社</p>
+                </div>
+                <div class="info-item">
+                    <h3 class="info-heading">代表者</h3>
+                    <p class="info-content">代表取締役　里西 一郎</p>
+                </div>
+                <div class="info-item">
+                    <h3 class="info-heading">本社</h3>
+                <p class="info-content">〒529-1302 滋賀県愛知郡愛荘町川原771-1<br>
+                    <span class="mobile">TEL: 0749-42-8400（代）　　　FAX: 0749-42-6700（代）</span>
+                    <span class="desktop">TEL: 0749-42-8400（代） FAX: 0749-42-6700（代）</span>
+                </p>
+                </div>
+                <div class="info-item">
+                    <h3 class="info-heading">創業</h3>
+                    <p class="info-content">昭和33年11月</p>
+                </div>
+                <div class="info-item">
+                    <h3 class="info-heading">資本金</h3>
+                    <p class="info-content">3,000万円</p>
+                </div>
+                <div class="info-item">
+                    <h3 class="info-heading">社員数</h3>
+                    <p class="info-content">62名（2024年9月現在）</p>
+                </div>
+                <div class="info-item">
+                    <h3 class="info-heading">事業内容</h3>
+                    <div class="info-content">
+                        <ol>
+                            <li>印刷事業（企画、デザイン、各種印刷、製本加工 等）</li>
+                            <li>デジタル事業（Webサイト構築、バナー制作、動画撮影・制作、SNS運用 等）</li>
+                            <li>彦根経済新聞の発行</li>
+                            <li>ブランディング事業</li>
+                            <li>プロモーション事業（販売促進支援 等）</li>
+                        </ol>
+                    </div>
+                </div>
+                <div class="info-item">
+                    <h3 class="info-heading">工場敷地</h3>
+                    <p class="info-content">11,500㎡</p>
+                </div>
+                <div class="info-item">
+                    <h3 class="info-heading">建物</h3>
+                    <p class="info-content">6,700㎡</p>
+                </div>
+                <div class="info-item">
+                    <h3 class="info-heading">取扱金融機関</h3>
+                    <p class="info-content">関西みらい銀行　愛知川支店<br>京都銀行　彦根支店<br>滋賀銀行　愛知川支店</p>
                 </div>
             </div>
         </div>

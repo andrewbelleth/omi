@@ -6,7 +6,7 @@ Template Name: トップページ
 ?>
 
 <?php get_template_part('template-parts/header'); ?>
-<main>
+<div class="wrapper">
     <div class="popup">
         <div class="popup__body">
             <button class="popup__close">
@@ -188,19 +188,18 @@ Template Name: トップページ
                 </div>
             </li>
         </ul>
-    </div>
-    <div class="pagenavi">
-        <div class="wp-pagenavi">
-            <a class="previouspostslink" rel="prev" href="#"></a>
-            <span class="current">1</span>
-            <a class="page smaller" title="Page 3" href="#">2</a>
-            <a class="page smaller" title="Page 3" href="#">3</a>
-            <span class="extend">...</span>
-            <a class="page larger" title="Page 5" href="#">00</a>
-            <a class="nextpostslink" rel="next" href="#"></a>
+        <div class="pagenavi">
+            <div class="wp-pagenavi">
+                <a class="previouspostslink" rel="prev" href="#"></a>
+                <span class="current">1</span>
+                <a class="page smaller" title="Page 3" href="#">2</a>
+                <a class="page smaller" title="Page 3" href="#">3</a>
+                <span class="extend">...</span>
+                <a class="page larger" title="Page 5" href="#">00</a>
+                <a class="nextpostslink" rel="next" href="#"></a>
+            </div>
         </div>
     </div>
-</main>
-<?php get_template_part('template-parts/cta'); ?>
 
-<?php get_template_part('template-parts/footer'); ?>
+    <?php get_template_part('template-parts/footer'); ?>
+</div>
