@@ -2,7 +2,10 @@
 function mytheme_enqueue_styles()
 {
   // wp_enqueue_style('ress', 'https://unpkg.com/ress/dist/ress.min.css', array(), '1.0.0');
-  wp_enqueue_style('css', get_theme_file_uri('/assets/css/style.css'));
+  wp_enqueue_style(
+    'css',
+    get_theme_file_uri('/assets/css/style.css'),array(),filemtime(get_theme_file_path('/assets/css/style.css')));
+
   if (!wp_script_is('jquery', 'enqueued')) {
     wp_enqueue_script('jquery');
   }
@@ -144,34 +147,34 @@ add_filter('wpcf7_validate_text', 'custom_wpcf7_validation_error_message', 10, 2
 
 function custom_wpcf7_validation_error_email($result, $tag)
 {
-    if ('your-email' == $tag->name) {
-        if (empty($_POST[$tag->name])) {
-            $result->invalidate($tag, 'メールアドレスを入力してください。');
-        }
+  if ('your-email' == $tag->name) {
+    if (empty($_POST[$tag->name])) {
+      $result->invalidate($tag, 'メールアドレスを入力してください。');
     }
-        return $result;
+  }
+  return $result;
 }
 add_filter('wpcf7_validate_email', 'custom_wpcf7_validation_error_email', 10, 2);
 
 function custom_wpcf7_validation_error_tel($result, $tag)
 {
-    if ('your-tel' == $tag->name) {
-        if (empty($_POST[$tag->name])) {
-            $result->invalidate($tag, '電話番号を入力してください。');
-        }
+  if ('your-tel' == $tag->name) {
+    if (empty($_POST[$tag->name])) {
+      $result->invalidate($tag, '電話番号を入力してください。');
     }
-        return $result;
+  }
+  return $result;
 }
 add_filter('wpcf7_validate_tel', 'custom_wpcf7_validation_error_tel', 10, 2);
 
 function custom_wpcf7_validation_error_textarea($result, $tag)
 {
-    if ('your-message' == $tag->name) {
-        if (empty($_POST[$tag->name])) {
-            $result->invalidate($tag, 'お問い合わせ内容・お悩みごとを入力してください。');
-        }
+  if ('your-message' == $tag->name) {
+    if (empty($_POST[$tag->name])) {
+      $result->invalidate($tag, 'お問い合わせ内容・お悩みごとを入力してください。');
     }
-        return $result;
+  }
+  return $result;
 }
 add_filter('wpcf7_validate_textarea', 'custom_wpcf7_validation_error_textarea', 10, 2);
 
