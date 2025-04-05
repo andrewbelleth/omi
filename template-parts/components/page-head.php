@@ -15,6 +15,12 @@ $breadcrumb = $args['breadcrumb'];
                 <li><a href="<?php echo home_url(); ?>">TOP</a></li>
                 <li><span><?php echo $breadcrumb; ?></span></li>
             </ul>
+            <?php
+            if(function_exists('bcn_display'))
+            {
+              bcn_display();
+            }
+            ?>
         </div>
     </div>
 </div>

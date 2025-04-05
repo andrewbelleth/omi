@@ -177,3 +177,17 @@ function custom_wpcf7_validation_error_textarea($result, $tag)
   return $result;
 }
 add_filter('wpcf7_validate_textarea', 'custom_wpcf7_validation_error_textarea', 10, 2);
+
+function bcn_add($bcnObj) {
+	// デフォルト投稿のアーカイブかどうか
+	if (is_post_type_archive('post')) {
+        	// 新規のtrailオブジェクトを末尾に追加する
+		$bcnObj->add(new bcn_breadcrumb('お知らせ', null, array('archive', 'post-clumn-archive', 'current-item')));
+		// trailオブジェクト0とtrailオブジェクト1の中身を入れ替える
+		$trail_tmp = clone $bcnObj->trail[1];
+		$bcnObj->trail[1] = clone $bcnObj->trail[0];
+		$bcnObj->trail[0] = $trail_tmp;
+	}
+	return $bcnObj;
+}
+add_action('bcn_after_fill', 'bcn_add');

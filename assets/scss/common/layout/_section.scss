@@ -1,9 +1,19 @@
 @use '../../global/' as *;
 
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: rem(160);
+
+    @include mq(tb) {
+        gap: rem(120);
+    }
+}
+
 .section {
     max-width: rem(1120);
     width: calc(100% - rem(80));
-    margin-top: 10rem;
+    // margin-top: 10rem;
     margin-inline: auto;
 
     &__title {
@@ -19,7 +29,7 @@
             font-family: $font-hind;
             line-height: 1;
         }
-        
+
         &--jp {
             display: block;
             font-size: rem(18);
@@ -30,9 +40,9 @@
             margin-top: auto;
         }
     }
-    
+
     @include mq(tb) {
-        margin-top: 7.5rem;
+        // margin-top: 7.5rem;
         width: calc(100% - rem(48));
 
         &__head {
@@ -46,10 +56,166 @@
             &--en {
                 font-size: rem(48);
             }
+
             &--jp {
                 padding-left: rem(2);
                 font-size: rem(14);
             }
         }
     }
+}
+
+.section__col {
+    display: flex;
+    flex-wrap: wrap;
+    gap: rem(120);
+
+    @include mq(pc) {
+        gap: rem(48);
+    }
+
+    @include mq(tb) {
+        flex-direction: column;
+        gap: rem(72);
+    }
+}
+
+.section__side {
+    position: sticky;
+    top: rem(100);
+    align-self: flex-start;
+    width: rem(240);
+
+    h3 {
+        display: flex;
+        align-items: center;
+        padding: 0 3.25rem;
+        background: $blue;
+        height: rem(59);
+        color: $white;
+        font-size: 1.125rem;
+        font-weight: 700;
+        line-height: 170%;
+        letter-spacing: 0.1em;
+    }
+
+    ul {
+        width: 100%;
+
+        li {
+            position: relative;
+
+            a {
+                display: flex;
+                align-items: center;
+                padding-block: rem(16);
+                padding-inline: rem(52) rem(24);
+                color: $gray;
+                font-size: rem(15);
+                font-weight: 500;
+                line-height: calc(23 / 15);
+                letter-spacing: 0.1em;
+                border-bottom: 1px solid $gray;
+                transition: .3s;
+
+                &::before {
+                    content: '';
+                    display: block;
+                    width: rem(12);
+                    height: rem(12);
+                    border-radius: 50%;
+                    background: $blue;
+                    position: absolute;
+                    top: auto;
+                    left: rem(24);
+                    opacity: 0;
+                    transition: .3s;
+                }
+
+                &.active {
+                    color: $black;
+
+                    &::before {
+                        opacity: 1;
+                    }
+                }
+
+                &:hover {
+                    color: $black;
+
+                    &::before {
+                        opacity: 1;
+                    }
+                }
+            }
+        }
+    }
+
+    &.section__side--news {
+        ul {
+            li {
+                a {
+                    font-size: rem(16);
+                    line-height: calc(24 / 16);
+                }
+            }
+        }
+    }
+
+    @include mq(tb) {
+        position: relative;
+        top: 0;
+        width: 100%;
+
+        h3 {
+            display: none;
+        }
+
+        ul {
+            display: flex;
+            flex-wrap: wrap;
+            gap: rem(15) rem(13);
+
+            li {
+                width: calc(100% / 3 - rem(26 / 3));
+
+                a {
+                    height: inherit;
+                    border-radius: 6.25rem;
+                    border: 1px solid $gray;
+                    font-size: rem(14);
+                    line-height: calc(18 / 14);
+                    letter-spacing: 0.05em;
+                    padding: rem(14) rem(12);
+                    justify-content: center;
+
+                    &::before {
+                        display: none;
+                    }
+
+                    &:hover {
+                        background: $blue;
+                        color: $white;
+                    }
+
+                    &.active {
+                        background: $blue;
+                        color: $white;
+                    }
+                }
+            }
+        }
+    }
+
+    @include mq(sp) {
+        ul {
+            li {
+                width: calc(100% / 2 - rem(13 / 2));
+            }
+        }
+    }
+}
+
+.section__main {
+    flex: 1;
 }

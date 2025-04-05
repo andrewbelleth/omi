@@ -1,5 +1,21 @@
 @use '../../global/' as *;
 
+.mobile {
+    display: block;
+
+    @include mq(tb) {
+        display: none;
+    }
+}
+
+.desktop {
+    display: none;
+
+    @include mq(tb) {
+        display: block;
+    }
+}
+
 .mt24 {
     margin-top: rem(24);
 }
@@ -80,8 +96,35 @@
     }
 }
 
+.txt {
+    p {
+        font-size: rem(15);
+        font-weight: 400;
+        line-height: 1.8;
+        letter-spacing: .05em;
+        color: $black;
+    }
+
+    &.txt--mt32 {
+        margin-top: rem(32);
+    }
+
+    .marker {
+        background: linear-gradient(to bottom, transparent 0 4.4%, $yellow 4.4% calc(100% - 4.4%), transparent 100%);
+    }
+
+    @include mq(tb) {
+        p {
+            font-size: rem(14);
+        }
+
+        &.txt--mt32 {
+            margin-top: rem(20);
+        }
+    }
+}
+
 .txt-01 {
-    padding-top: rem(8);
     padding-left: rem(21);
 
     p {
@@ -132,6 +175,22 @@
             }
         }
             
+    }
+}
+
+
+.btn-list {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: rem(24);
+
+    @include mq(tb) {
+        flex-direction: column;
+        gap: rem(16);
+        align-items: center;
+        justify-content: center;
     }
 }
 
@@ -313,5 +372,101 @@
                 
             }
         }
+    }
+}
+
+.img-list {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    gap: rem(24);
+    width: 100%;
+
+    &.img-list--mt32 {
+        margin-top: rem(32);
+    }
+
+    &.img-list--3column {
+        gap: rem(23);
+
+        .img-list__item {
+            width: calc(100% / 3 - rem(23 * 2 / 3));
+        }
+    }
+
+    &__item {
+        width: calc(100% / 2 - rem(24 / 2));
+        display: flex;
+        flex-direction: column;
+        gap: rem(8);
+
+        .img-list__item-img {
+            width: 100%;
+            display: block;
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+
+
+        .img-list__item-ttl {
+            font-size: rem(15);
+            font-weight: 700;
+            line-height: 1.5;
+            letter-spacing: .05em;
+            color: $black;
+            text-align: center;
+        }
+    }
+
+    // レスポンシブ対応
+    @include mq(tb) {
+        flex-direction: column;
+        gap: rem(16);
+
+        &.img-list--mt32 {
+            margin-top: rem(24);
+        }
+
+        &.img-list--3column {
+            gap: rem(20);
+
+            .img-list__item {
+                width: 100%;
+            }
+        }
+
+        &__item {
+            width: 100%;
+        }
+    }
+}
+
+.pt24pl21 {
+    padding-top: rem(24);
+    padding-left: rem(21);
+
+    @include mq(tb) {
+        padding-top: rem(20);
+        padding-left: rem(20);
+    }
+}
+
+.light-blue-box-wrap {
+    &.light-blue-box-wrap--mt40 {
+        margin-top: rem(40);
+    }
+}
+
+.light-blue-box {
+    background-color: $light-blue;
+    padding: rem(28) rem(40);
+
+
+    @include mq(tb) {
+        padding: rem(28) rem(24);
     }
 }
