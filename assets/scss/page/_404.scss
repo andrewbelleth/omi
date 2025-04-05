@@ -21,6 +21,10 @@
   .btn{
     margin-top: rem(80);
   }
+  .page-thanks__text-blue{
+    color: var(--blue);
+    font-weight: 500;
+  }
   @include mq(sp) {
     margin-block: rem(80);
     h2 {
