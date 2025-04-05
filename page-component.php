@@ -53,20 +53,20 @@ Template Name: トップページ
     <div class="page section">
         <div class="section__col">
             <div class="section__side">
-                <ul>
-                    <li><a href="" class="active">全て</a></li>
-                    <li><a href="">お知らせ</a></li>
-                    <li><a href="">求人</a></li>
+                <ul id="sidemenu">
+                    <li><a data-slug="" href="<?php echo home_url('/component'); ?>" class="active">全て</a></li>
+                    <li><a data-slug="ttl-01" href="<?php echo home_url('/component/#ttl-01'); ?>">ttl-01</a></li>
+                    <li><a data-slug="ttl-02" href="<?php echo home_url('/component/#ttl-02'); ?>">ttl-02</a></li>
                 </ul>
             </div>
             <div class="component-box-wrapper section__main">
-                <div class="component-box">
+                <div class="component-box" id="ttl-01">
                     <p>ttl-01</p>
                     <div class="component-box-item">
                         <h2 class="ttl-01">見出しが入ります</h2>
                     </div>
                 </div>
-                <div class="component-box">
+                <div class="component-box" id="ttl-02">
                     <p>ttl-02</p>
                     <div class="component-box-item">
                         <h2 class="mt24 ttl-02 ttl-02--triangle">mt24の余白</h2>
