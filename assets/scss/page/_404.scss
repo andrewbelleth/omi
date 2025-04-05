@@ -1,0 +1,47 @@
+@use "../global" as *;
+
+.short-page {
+  margin-block: rem(160);
+  h2 {
+    font-size: rem(36);
+    color: var(--blue);
+    font-weight: 700;
+    line-height: calc(54 / 36);
+    margin-bottom: rem(40);
+  }
+  p{
+    color: var(--black);
+    font-size: rem(16);
+    font-feature-settings: 'pwid' on, 'palt' on;
+    font-weight: 400;
+    line-height: calc(27 / 16);
+    letter-spacing: lts-em(0.75,16);
+    text-align: center;
+  }
+  .btn{
+    margin-top: rem(80);
+  }
+  @include mq(sp) {
+    margin-block: rem(80);
+    h2 {
+        font-size: rem(24);
+        line-height: calc(36 / 24);
+        margin-bottom: rem(32);
+      }
+      p{
+        font-size: rem(14);
+        line-height: calc(25 / 14);
+        letter-spacing: lts-em(0.7,14);
+      }
+      .btn{
+        margin-top: rem(56);
+      }
+  }
+}
+
+.u-column-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}

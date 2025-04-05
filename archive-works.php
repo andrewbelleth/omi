@@ -1,7 +1,7 @@
 <?php
 if (! defined('ABSPATH')) exit;
 /* 
-Template Name: トップページ
+Template Name: 実績一覧ページ
 */
 ?>
 

@@ -1,7 +1,7 @@
 <?php
 if (! defined('ABSPATH')) exit;
 /* 
-Template Name: トップページ
+Template Name: プラポリページ
 */
 ?>
 
@@ -10,7 +10,6 @@ Template Name: トップページ
     <?php get_template_part('template-parts/components/page-head', null, [
         'title_en' => 'NEWS',
         'title_jp' => 'お知らせ',
-        'breadcrumb' => 'お知らせ',
     ]); ?>
     <div class="page-news section">
         <div class="page-news__side">

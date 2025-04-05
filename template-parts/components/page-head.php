@@ -1,6 +1,7 @@
 <?php
 $title_en = $args['title_en'];
 $title_jp = $args['title_jp'];
+$breadcrumb = $args['breadcrumb'];
 ?>
 
 <div class="page__head">
@@ -12,7 +13,7 @@ $title_jp = $args['title_jp'];
         <div class="breadcrumb">
             <ul>
                 <li><a href="<?php echo home_url(); ?>">TOP</a></li>
-                <li><span>お知らせ</span></li>
+                <li><span><?php echo $breadcrumb; ?></span></li>
             </ul>
         </div>
     </div>
