@@ -1,77 +1,89 @@
 @use "../global" as *;
 
 html {
-    scroll-behavior: smooth;
-    font-size: clamp(14px, calc(16 / (1440 / 100) * 1vw), 16px);
-    
-    @media screen and (min-width: 1921px) {
-        font-size: 20px;
-    }
+  scroll-behavior: smooth;
+  font-size: clamp(14px, calc(16 / (1440 / 100) * 1vw), 16px);
 
-    @include mq(pc) {
-        font-size: calc(16 / (1024 / 100) * 1vw);
-    }
+  @media screen and (min-width: 1921px) {
+    font-size: 20px;
+  }
 
-    @include mq(tb) {
-        font-size: calc(16 / (768 / 100) * 1vw);
-    }
+  @include mq(pc) {
+    font-size: calc(16 / (1024 / 100) * 1vw);
+  }
 
-    @include mq(sp) {
-        font-size: min(calc(16 / (375 / 100) * 1vw), 16px);
-    }
+  @include mq(tb) {
+    font-size: calc(16 / (768 / 100) * 1vw);
+  }
+
+  @include mq(sp) {
+    font-size: min(calc(16 / (375 / 100) * 1vw), 16px);
+  }
 }
 
 body {
-    position: relative;
-    color: $black;
-    font-family: $font-noto-sans-jp;
-    font-weight: 400;
-    font-size: 1rem;
-    line-height: normal;
-    display: flex;
-    flex-direction: column;
-    overflow-x: hidden;
+  position: relative;
+  color: $black;
+  font-family: $font-noto-sans-jp;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: normal;
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden;
     font-feature-settings: "palt";
 }
 
 a {
-    color: $black;
+  color: $black;
 }
 
+.sp-only {
+  display: none;
+  @media (max-width: 640px) {
+    display: block;
+  }
+}
+.pc-only {
+  display: block;
+  @media (max-width: 640px) {
+    display: none;
+  }
+}
 
 @keyframes fadein {
-    0% {
-        opacity: 0;
-        transform: translateY(rem(30));
-    }
+  0% {
+    opacity: 0;
+    transform: translateY(rem(30));
+  }
 
-    100% {
-        opacity: 1;
-        transform: translateY(0px);
-    }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
 }
 
 %fadein {
-    opacity: 0;
-    transform: translateY(rem(30));
-    animation-name: fadein;
-    animation-duration: .4s;
-    animation-timing-function: ease-out;
-    animation-fill-mode: forwards;
+  opacity: 0;
+  transform: translateY(rem(30));
+  animation-name: fadein;
+  animation-duration: 0.4s;
+  animation-timing-function: ease-out;
+  animation-fill-mode: forwards;
 }
 
 .fadein {
-    opacity: 0;
-    transition: all 1s;
-    transform: translateY(rem(150));
+  opacity: 0;
+  transition: all 1s;
+  transform: translateY(rem(150));
 
-    @include mq(tb) {
-        transform: translateY(rem(80));
-    }
+  @include mq(tb) {
+    transform: translateY(rem(80));
+  }
 }
 
 .active {
-    opacity: 1;
-    visibility: visible;
-    transform: translateY(0);
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
 }
