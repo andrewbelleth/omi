@@ -391,3 +391,30 @@ $(function () {
   });
 
 });
+
+function activateMenuByHash() {
+  const hash = window.location.hash.replace('#', '');
+  const menuItems = document.querySelectorAll('#sidemenu li a');
+
+  let matched = false;
+
+  menuItems.forEach(item => {
+    const slug = item.getAttribute('data-slug');
+    if (slug === hash) {
+      item.classList.add('active');
+      matched = true;
+    } else {
+      item.classList.remove('active');
+    }
+  });
+
+  if (!matched && menuItems.length > 0) {
+    menuItems[0].classList.add('active');
+  }
+}
+
+// 初期表示時
+document.addEventListener('DOMContentLoaded', activateMenuByHash);
+
+// フラグメントが変化したとき
+window.addEventListener('hashchange', activateMenuByHash);
