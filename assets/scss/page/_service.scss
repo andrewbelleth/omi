@@ -1,59 +1,110 @@
-@use "../global" as *; 
+@use "../global" as *;
 
 .page__service-box {
+  display: flex;
+  flex-direction: column;
+  gap: rem(40);
+
+  .page__service-box-title {
+    font-size: rem(54);
+    font-weight: 700;
+    line-height: 1.6;
+    letter-spacing: 0.1em;
+    font-feature-settings: "palt";
+  }
+
+  .page__service-box-text {
     display: flex;
     flex-direction: column;
-    gap: rem(40);
+    gap: rem(16);
 
+    p {
+      font-size: rem(15);
+      font-weight: 500;
+      line-height: 2.2;
+      letter-spacing: 0.05em;
+      font-feature-settings: "palt";
+    }
+  }
+
+  @include mq(tb) {
+    gap: rem(24);
     .page__service-box-title {
-        font-size: rem(54);
-        font-weight: 700;
-        line-height: 1.6;
-        letter-spacing: 0.1em;
-        font-feature-settings: "palt";
+      font-size: rem(32);
     }
 
     .page__service-box-text {
-        display: flex;
-        flex-direction: column;
-        gap: rem(16);
-
-        p {
-            font-size: rem(15);
-            font-weight: 500;
-            line-height: 2.2;
-            letter-spacing: 0.05em;
-            font-feature-settings: "palt";
-        }
+      p {
+        font-size: rem(14);
+      }
     }
-
-    @include mq(tb) {
-        gap: rem(24);
-        .page__service-box-title {
-            font-size: rem(32);
-        }
-
-        .page__service-box-text {
-            p {
-                font-size: rem(14);
-            }
-        }
-    }
+  }
 }
 
-.page-printing{
-    @include mq(sp) {
-       .type-products{
-       /*  .img-list--2column {
+.page-printing {
+  @include mq(sp) {
+    .type-products {
+      /*  .img-list--2column {
             gap: rem(16);
             li{
                 width: 100%;
             }
         } */
-        .mt32{
-            margin-top: rem(40);
-        }
-       }
+      .mt32 {
+        margin-top: rem(40);
+      }
     }
-
+  }
+}
+.page-processing {
+  .light-blue-box {
+    h3 {
+      font-size: rem(17);
+      font-weight: 700;
+      line-height: calc(30 / 17);
+      letter-spacing: lts-em(0.85, 17);
+    }
+    p {
+        font-size: rem(15);
+        line-height: calc(27 / 15);
+        letter-spacing: lts-em(0.75, 15);
+      }
+  }
+  .light-blue-box-inner {
+    display: flex;
+    gap: rem(40);
+    margin-top: rem(16);
+  }
+  .occasionally {
+    .light-blue-box-flex{
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        gap: rem(10);
+        margin-top: rem(16);
+        li{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: rem(4);
+            background: $white;
+            padding-block: rem(8) rem(12);
+            img{
+                width: rem(62);
+                height: rem(62);
+            }
+            p{
+                font-size: rem(13);
+                line-height: calc(18 / 13);
+                letter-spacing: lts-em(0.65, 13);
+            }
+        }
+    }
+  }
+  @include mq(tb) {
+    .light-blue-box-inner {
+      gap: rem(0);
+      margin-top: rem(12);
+      flex-direction: column;
+    }
+  }
 }

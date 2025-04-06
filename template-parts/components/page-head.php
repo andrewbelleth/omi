@@ -15,7 +15,7 @@ $breadcrumb = $args['breadcrumb'];
                 <li><a href="<?php echo home_url(); ?>">TOP</a></li>
                 <?php if (is_page('printing')): ?>
                     <li><a href="<?php echo home_url('/service'); ?>">サービス</a></li>
-                <?php elseif (is_page('products')): ?>
+                <?php elseif (is_page(['products','processing'])): ?>
                     <li><a href="<?php echo home_url('/service'); ?>">サービス</a></li>
                     <li><a href="<?php echo home_url('/printing'); ?>">印刷</a></li>
                 <?php endif; ?>
