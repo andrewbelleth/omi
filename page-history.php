@@ -94,7 +94,7 @@ if (! defined('ABSPATH')) exit;
                     <div class="history-item__date-dot"></div>
                     <div class="history-item__date-text">昭和60年</div>
                 </div>
-                <p class="history-item__description">近江印刷株式会社に法人改組。彦根市南河瀬町892ｰ2番地にビジネスフォーム工場を新設。組版の電子化を導入。 第2代目社長に里西良之就任。</p>
+                <p class="history-item__description">近江印刷株式会社に法人改組。彦根市南河瀬町892ｰ2番地にビジネスフォーム工場を新設。組版の電子化を導入。<br class="mobile">第2代目社長に里西良之就任。</p>
             </div>
         </div>
 

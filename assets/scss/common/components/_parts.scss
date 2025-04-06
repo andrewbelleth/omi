@@ -16,6 +16,14 @@
     }
 }
 
+.mt10 {
+    margin-top: rem(10);
+}
+
+.mt12 {
+    margin-top: rem(12);
+}
+
 .mt24 {
     margin-top: rem(24);
 }
@@ -41,8 +49,59 @@
         margin-top: rem(96);
     }
 }
+
+
 .mt40 {
     margin-top: rem(40);
+}
+
+.pt24pl21 {
+    padding-top: rem(24);
+    padding-left: rem(21);
+
+    @include mq(tb) {
+        padding-top: rem(20);
+        padding-left: rem(20);
+    }
+}
+
+.pt16--pt20 {
+    padding-top: rem(16);
+    @include mq(tb) {
+        padding-top: rem(20);
+    }
+}
+
+.pl21--sp20 {
+    padding-left: rem(21);
+    @include mq(tb) {
+        padding-left: rem(20);
+    }
+}
+
+
+.number-list {
+    list-style: number;
+    padding-left: rem(20);
+}
+
+.disc-list {
+    li {
+        &::before {
+            content: '・';
+            display: inline-block;
+            padding-inline: rem(6);
+        }
+    }
+}
+
+.col {
+    display: flex;
+    flex-direction: column;
+
+    &.col-gap4 {
+        gap: rem(4);
+    }
 }
 
 .ttl-01 {
@@ -72,6 +131,11 @@
     display: flex;
     align-items: center;
     gap: rem(8);
+
+    &.ttl-02--fsz16 {
+        font-size: rem(16);
+        line-height: calc(29 / 16);
+    }
 
     &.ttl-02--triangle::before {
         content: '';
@@ -113,8 +177,22 @@
     }
 }
 
+.ttl-04 {
+    font-size: rem(17);
+    font-weight: 700;
+    line-height: 1.8;
+    letter-spacing: .05em;
+    color: $black;
+
+    &.ttl-04--fsz18 {
+        font-size: rem(18);
+        line-height: 1.7;
+        letter-spacing: 0em;
+    }
+}
+
 .txt {
-    p {
+    p, li {
         font-size: rem(15);
         font-weight: 400;
         line-height: 1.8;
@@ -122,8 +200,20 @@
         color: $black;
     }
 
+    &.txt--blue {
+        p, li {
+            color: $blue;
+        }
+    }
+
     &.txt--mt32 {
         margin-top: rem(32);
+    }
+
+    &.txt--fw500 {
+        p, li {
+            font-weight: 500;
+        }
     }
 
     .marker {
@@ -131,7 +221,7 @@
     }
 
     @include mq(tb) {
-        p {
+        p, li {
             font-size: rem(14);
         }
 
@@ -141,10 +231,12 @@
     }
 }
 
+
 .txt-01 {
+    padding-top: rem(8);
     padding-left: rem(21);
 
-    p {
+    p, li {
         font-size: rem(15);
         font-weight: 400;
         line-height: 1.8;
@@ -156,8 +248,9 @@
         display: flex;
         align-items: flex-start;
         gap: rem(20);
+        padding-top: 0;
 
-        p {
+        p, li {
             flex: 1;
         }
 
@@ -174,7 +267,7 @@
         padding-top: rem(10);
         padding-left: rem(20);
         
-        p {
+        p, li {
             font-size: rem(14);
         }
 
@@ -182,7 +275,7 @@
             flex-direction: column;
             gap: rem(16);
 
-            p {
+            p, li {
                 flex: none;
                 width: 100%;
             }
@@ -194,7 +287,6 @@
             
     }
 }
-
 
 .btn-list {
     display: flex;
@@ -415,7 +507,7 @@
         width: calc(100% / 2 - rem(24 / 2));
         display: flex;
         flex-direction: column;
-        gap: rem(8);
+        text-align: center;
 
         .img-list__item-img {
             width: 100%;
@@ -462,16 +554,6 @@
     }
 }
 
-.pt24pl21 {
-    padding-top: rem(24);
-    padding-left: rem(21);
-
-    @include mq(tb) {
-        padding-top: rem(20);
-        padding-left: rem(20);
-    }
-}
-
 .light-blue-box-wrap {
     &.light-blue-box-wrap--mt40 {
         margin-top: rem(40);
@@ -481,7 +563,6 @@
 .light-blue-box {
     background-color: $light-blue;
     padding: rem(28) rem(40);
-
 
     @include mq(tb) {
         padding: rem(28) rem(24);
@@ -540,3 +621,14 @@
     margin-inline: auto;
 }
 
+.omito-logo {
+    padding-bottom: rem(4);
+    img {
+        width: rem(199);
+    }
+}
+
+.component-box-item {
+    margin-top: rem(-136);
+    padding-top: rem(136);
+}

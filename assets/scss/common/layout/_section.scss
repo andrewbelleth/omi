@@ -1,12 +1,19 @@
 @use '../../global/' as *;
 
 .wrapper {
-    display: flex;
-    flex-direction: column;
-    gap: rem(160);
+    // display: flex;
+    // flex-direction: column;
+    // gap: rem(160);
+
+    > *+* {
+        margin-top: rem(160);
+    }
 
     @include mq(tb) {
-        gap: rem(120);
+        // gap: rem(120);
+        > *+* {
+            margin-top: rem(120);
+        }
     }
 }
 .wrapper-136 {
@@ -228,175 +235,4 @@
 
 .section__main {
     flex: 1;
-}
-
-.history-follow {
-    position: relative;
-
-    &::before {
-        content: '';
-        display: block;
-        width: rem(2);
-        height: calc(100% - rem(17));
-        background: $blue;
-        position: absolute;
-        top: rem(17);
-        left: calc(rem(222) + rem(72) + rem(16 / 2));
-        background-image: url(../images/pc/flow-line.svg);
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: top center;
-        transform: translateX(-50%);
-        z-index: -1;
-    }
-
-    @include mq(tb) {
-        display: flex;
-        flex-direction: column;
-        gap: rem(48);
-
-        &::before {
-            width: rem(1);
-            height: 100%;
-            top: 0;
-            left: rem(16/2);
-            background-image: url(../images/sp/flow-line.svg);
-        }
-    }
-}
-
-.history-item {
-    display: flex;
-    justify-content: flex-end;
-    gap: rem(72);
-    width: 100%;
-
-    &__year {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding-top: rem(24);
-        width: rem(222);
-
-        &-number {
-            font-family: $font-hind;
-            font-weight: 600;
-            font-size: rem(104);
-            line-height: 1;
-            letter-spacing: 0.05em;
-            color: $blue;
-            opacity: 0.2;
-        }
-    }
-
-    &__content {
-        display: flex;
-        flex-direction: column;
-        gap: rem(8);
-        flex: 1;
-    }
-    
-    &__date {
-        display: flex;
-        align-items: center;
-        gap: rem(32);
-        width: 100%;
-        padding-top: rem(48);
-
-        &-dot {
-            width: rem(16);
-            height: rem(16);
-            background-color: $blue;
-            border-radius: 50%;
-        }
-
-        &-text {
-            font-weight: 700;
-            font-size: rem(18);
-            line-height: calc(32 / 18);
-            letter-spacing: 0.05em;
-            color: $blue;
-        }
-    }
-
-    &__description {
-        font-weight: 400;
-        font-size: rem(15);
-        line-height: 1.8;
-        letter-spacing: 0.05em;
-        color: $black;
-        padding-left: rem(48);
-    }
-
-    &__img-list {
-        padding-left: rem(48);
-        display: flex;
-        flex-wrap: wrap;
-        gap: rem(20);
-        margin-top: rem(20);
-
-    }
-
-    &__img {
-        width: calc(100% / 2 - rem(20 / 2));
-        aspect-ratio: 378 / 210;
-        background-color: $light-gray;
-    }
-    
-    
-
-    @include mq(tb) {
-        flex-direction: column;
-        gap: rem(0);
-
-        &__year {
-            align-items: flex-start;
-            padding-top: rem(0);
-            width: fit-content;
-            padding-left: rem(36);
-            margin-bottom: rem(-4);
-    
-            &-number {
-                font-size: rem(64);
-            }
-        }
-    
-        &__content {
-            display: flex;
-            flex-direction: column;
-            flex: none;
-            width: 100%;
-        }
-        
-        &__date {
-            gap: rem(20);
-            padding-top: rem(0);
-    
-            &-text {
-                font-size: rem(17);
-                line-height: calc(31 / 17);
-            }
-        }
-    
-        &__description {
-            font-size: rem(14);
-            padding-left: rem(36);
-            line-break: anywhere;
-        }
-    
-        &__img-list {
-            padding-left: rem(48);
-            display: flex;
-            flex-wrap: wrap;
-            gap: rem(20);
-            margin-top: rem(20);
-    
-        }
-    
-        &__img {
-            width: calc(100% / 2 - rem(20 / 2));
-            aspect-ratio: 378 / 210;
-            background-color: $light-gray;
-        }
-    }
 }
