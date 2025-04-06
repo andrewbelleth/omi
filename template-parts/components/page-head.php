@@ -1,6 +1,7 @@
 <?php
 $title_en = $args['title_en'];
 $title_jp = $args['title_jp'];
+$breadcrumb = $args['breadcrumb'];
 ?>
 
 <div class="page__head">
@@ -11,9 +12,8 @@ $title_jp = $args['title_jp'];
         </h2>
         <div class="breadcrumb">
             <?php
-            if(function_exists('bcn_display'))
-            {
-              bcn_display();
+            if (function_exists('bcn_display')) {
+                bcn_display();
             }
             ?>
         </div>

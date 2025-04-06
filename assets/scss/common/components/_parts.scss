@@ -31,6 +31,12 @@
 .mt32 {
     margin-top: rem(32);
 }
+.mt32--sp20{
+    margin-top: rem(32);
+    @include mq(tb) {
+        margin-top: rem(20);
+    }
+}
 .mt32--sp24{
     margin-top: rem(32);
     @include mq(tb) {
@@ -618,7 +624,14 @@
 }
 .wrapper-1120{
     max-width: min(90%, rem(1120));
+    width: 100%;
     margin-inline: auto;
+}
+.br-1050{
+    display: none;
+    @media (max-width: 1050px) {
+        display: block;
+    }
 }
 
 .omito-logo {
