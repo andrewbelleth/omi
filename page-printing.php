@@ -72,32 +72,32 @@ Template Name: 印刷ページ
                             <p>商品のパンフレット、チラシ、販促ツールと同時にパッケージの制作も承っております。形状や材質は様々。ヒアリングを基に、最も良いパッケージが仕上がるようデザインからご提案させていただきます。</p>
                         </div>
                     </div>
-                </section>
-                <section class="component-box-item type-products" id="type-products">
-                    <h2 class="ttl-01">取扱品目</h2>
-                    <div class="txt m32">
-                        <p>
-                            ポスター、チラシ、パンフレット、広報誌などの商業印刷物から、帳票、封筒、名刺などの事務用印刷物、シール、看板、のぼり、各種ノベルティなどの特殊印刷まで、幅広く対応しています。自社工場に取り揃えた豊富な設備により、様々な加工で印刷物に付加価値を与えることも可能です。お客さまの用途に適した印刷物を制作いたします。
-                        </p>
-                    </div>
-                    <ul class="img-list img-list--2column-sp1 mt32--sp24">
-                        <li><img src="<?php echo get_template_directory_uri(); ?>/assets/images/printing/printing-img05.webp" alt="広報誌から事務用品印刷物まで幅広く対応" width="368" height="220" loading="lazy"></li>
-                        <li><img src="<?php echo get_template_directory_uri(); ?>/assets/images/printing/printing-img06.webp" alt="広報誌から事務用品印刷物まで幅広く対応" width="368" height="220" loading="lazy"></li>
-                    </ul>
-                    <div class="component-box-btn mt32--sp40">
-                        <a href="<?php echo esc_url(home_url('/service/printing/products')); ?>" class="btn inview">
-                            <span class="btn__text">取扱品目を詳しく見る</span>
-                            <span class="btn__icon">
-                                <svg viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <g clip-path="url(#clip0_40_1378)">
-                                        <path
-                                            d="M13.6814 18.9216L12.2322 17.4304L17.4836 12.1789H0.830322V10.1164H17.4836L12.2322 4.86497L13.6814 3.37378L21.4553 11.1477L13.6814 18.9216Z"
-                                            fill="#0068B6" />
-                                    </g>
-                                </svg>
-                            </span>
-                        </a>
-                    </div>
+                </div>
+            </section>
+            <section class="component-box-item type-products" id="type-products">
+                <h2 class="ttl-01">取扱品目</h2>
+                <div class="txt m32">
+                    <p>
+                        ポスター、チラシ、パンフレット、広報誌などの商業印刷物から、帳票、封筒、名刺などの事務用印刷物、シール、看板、のぼり、各種ノベルティなどの特殊印刷まで、幅広く対応しています。自社工場に取り揃えた豊富な設備により、様々な加工で印刷物に付加価値を与えることも可能です。お客さまの用途に適した印刷物を制作いたします。
+                    </p>
+                </div>
+                <ul class="img-list img-list--2column-sp1 mt32--sp24">
+                    <li><img src="<?php echo get_template_directory_uri(); ?>/assets/images/printing/printing-img05.webp" alt="広報誌から事務用品印刷物まで幅広く対応" width="368" height="220" loading="lazy"></li>
+                    <li><img src="<?php echo get_template_directory_uri(); ?>/assets/images/printing/printing-img06.webp" alt="広報誌から事務用品印刷物まで幅広く対応" width="368" height="220" loading="lazy"></li>
+                </ul>
+                <div class="component-box-btn mt32--sp40">
+                    <a href="<?php echo esc_url(home_url('/service/printing/products')); ?>" class="btn inview">
+                        <span class="btn__text">取扱品目を詳しく見る</span>
+                        <span class="btn__icon">
+                            <svg viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_40_1378)">
+                                    <path
+                                        d="M13.6814 18.9216L12.2322 17.4304L17.4836 12.1789H0.830322V10.1164H17.4836L12.2322 4.86497L13.6814 3.37378L21.4553 11.1477L13.6814 18.9216Z"
+                                        fill="#0068B6" />
+                                </g>
+                            </svg>
+                        </span>
+                    </a>
                 </div>
             </section>
             <section class="component-box-item type-agency" id="type-agency">
