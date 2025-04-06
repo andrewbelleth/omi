@@ -107,7 +107,7 @@
     @include mq(tb) {
         &__head {
             height: rem(361);
-            background: $light-gray url(/images/page_bg-sp.png) no-repeat center center/cover;
+            background: $light-gray url(../images/sp/page_bg-sp.webp) no-repeat center center/cover;
 
             &-inner {
                 width: calc(100% - rem(48));
@@ -196,18 +196,20 @@
 
     @include mq(tb) {
         gap: 4px;
+        align-items: flex-start;
 
 
         >span {
             font-size: 12px;
+            line-height: calc(20 / 12);
         }
 
-        +span {
+        span+span {
             &::before {
                 width: 10px;
-                height: 10px;
+                height: 11px;
                 margin-right: 4px;
-                margin-top: 1px;
+                margin-top: 0;
             }
         }
     }
