@@ -1,18 +1,18 @@
 @use '../../global/' as *;
 
 .mobile {
-    display: block;
-
-    @include mq(tb) {
-        display: none;
-    }
-}
-
-.desktop {
     display: none;
 
     @include mq(tb) {
         display: block;
+    }
+}
+
+.desktop {
+    display: block;
+
+    @include mq(tb) {
+        display: none;
     }
 }
 
