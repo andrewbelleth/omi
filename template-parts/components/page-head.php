@@ -1,6 +1,7 @@
 <?php
 $title_en = $args['title_en'];
 $title_jp = $args['title_jp'];
+$breadcrumb = $args['breadcrumb'];
 ?>
 
 <div class="page__head">
@@ -12,15 +13,17 @@ $title_jp = $args['title_jp'];
         <div class="breadcrumb">
             <ul>
                 <li><a href="<?php echo home_url(); ?>">TOP</a></li>
-                <?php if(is_page('printing', 'product','processing','agency')): ?>
+                <?php if (is_page('printing')): ?>
                     <li><a href="<?php echo home_url('/service'); ?>">サービス</a></li>
+                <?php elseif (is_page('products')): ?>
+                    <li><a href="<?php echo home_url('/service'); ?>">サービス</a></li>
+                    <li><a href="<?php echo home_url('/printing'); ?>">印刷</a></li>
                 <?php endif; ?>
                 <li><span><?php echo $breadcrumb; ?></span></li>
             </ul>
             <?php
-            if(function_exists('bcn_display'))
-            {
-              bcn_display();
+            if (function_exists('bcn_display')) {
+                bcn_display();
             }
             ?>
         </div>

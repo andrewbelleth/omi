@@ -1,16 +1,16 @@
 <?php
 if (! defined('ABSPATH')) exit;
 /* 
-Template Name: 印刷ページ
+Template Name: 取り扱い品目ページ
 */
 ?>
 
 <?php get_template_part('template-parts/header'); ?>
-<div class="page-printing">
+<div class="page-products">
     <?php get_template_part('template-parts/components/page-head', null, [
-        'title_en' => 'PRINTING',
-        'title_jp' => '印刷',
-        'breadcrumb' => '印刷',
+        'title_en' => 'PRODUCTS',
+        'title_jp' => '取り扱い品目',
+        'breadcrumb' => '取り扱い品目',
     ]); ?>
     <div class="page-wrapper wrapper mt160--sp96">
         <div class=" section section__col">
@@ -81,7 +81,7 @@ Template Name: 印刷ページ
                         <li><img src="<?php echo get_template_directory_uri(); ?>/assets/images/printing/printing-img06.webp" alt="広報誌から事務用品印刷物まで幅広く対応" width="368" height="220" loading="lazy"></li>
                     </ul>
                     <div class="component-box-btn mt32--sp40">
-                        <a href="<?php echo esc_url(home_url('/service/printing/products')); ?>" class="btn inview">
+                        <a href="<?php echo esc_url(home_url('/products')); ?>" class="btn inview">
                             <span class="btn__text">取扱品目を詳しく見る</span>
                             <span class="btn__icon">
                                 <svg viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
