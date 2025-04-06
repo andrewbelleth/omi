@@ -41,7 +41,7 @@ Template Name: フッター
             <h3><a href="<?php echo home_url(); ?>/service">サービス</a></h3>
             <ul>
               <li>
-                <a href="<?php echo home_url(); ?>/service#print">印刷</a>
+                <a href="<?php echo home_url(); ?>/service#printing">印刷</a>
                 <ul>
                   <li><a href="<?php echo home_url(); ?>/service#print">取扱品目</a></li>
                   <li><a href="<?php echo home_url(); ?>/service#print">加工</a></li>

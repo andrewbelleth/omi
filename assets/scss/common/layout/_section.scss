@@ -9,6 +9,16 @@
         gap: rem(120);
     }
 }
+.wrapper-136 {
+    display: flex;
+    flex-direction: column;
+    gap: rem(136);
+
+    @include mq(tb) {
+        gap: rem(88);
+    }
+   
+}
 
 .section {
     max-width: rem(1120);

@@ -7,6 +7,7 @@ if (! defined('ABSPATH')) exit;
     <?php get_template_part('template-parts/components/page-head', null, [
         'title_en' => 'SERVICE',
         'title_jp' => 'サービス',
+        'breadcrumb' => 'サービス'
     ]); ?>
     <div class="page-wrapper page-wrapper-gap120">
         <div class="page__service-box section">
@@ -24,7 +25,7 @@ if (! defined('ABSPATH')) exit;
                 <h3 class="link-01-title">SERVICE</h3>
             </div>
             <div class="btn-list-01">
-                <a href="#" class="btn-02">
+                <a href="<?php echo esc_url(home_url('/printing')); ?>" class="btn-02">
                     <span class="btn__text">印刷</span>
                     <span class="btn__icon">
                         <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">

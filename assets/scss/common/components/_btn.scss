@@ -4,7 +4,8 @@
 .btn {
     position: relative;
     left: 0;
-    width: rem(280);
+    min-width: rem(280);
+    width: fit-content;
     height: rem(60);
     display: flex;
     align-items: center;

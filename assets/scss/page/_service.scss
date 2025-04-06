@@ -40,3 +40,20 @@
         }
     }
 }
+
+.page-printing{
+    @include mq(sp) {
+       .type-products{
+       /*  .img-list--2column {
+            gap: rem(16);
+            li{
+                width: 100%;
+            }
+        } */
+        .mt32{
+            margin-top: rem(40);
+        }
+       }
+    }
+
+}

@@ -997,6 +997,7 @@
             gap: 0;
             justify-content: space-between;
             margin-top: 1rem;
+            min-width: auto;
 
             &__icon {
                 width: rem(25);

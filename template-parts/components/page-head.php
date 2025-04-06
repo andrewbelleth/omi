@@ -13,6 +13,9 @@ $breadcrumb = $args['breadcrumb'];
         <div class="breadcrumb">
             <ul>
                 <li><a href="<?php echo home_url(); ?>">TOP</a></li>
+                <?php if(is_page('printing', 'product','processing','agency')): ?>
+                    <li><a href="<?php echo home_url('/service'); ?>">サービス</a></li>
+                <?php endif; ?>
                 <li><span><?php echo $breadcrumb; ?></span></li>
             </ul>
             <?php
