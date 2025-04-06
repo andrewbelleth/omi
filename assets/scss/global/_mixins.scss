@@ -15,6 +15,9 @@ $baseFontSize: 16;
 @function em($pixels, $fontSize: $baseFontSize) {
     @return $pixels / $fontSize * 1em;
 }
+@function lts-em($letter-spacing-px, $font-size-px) {
+    @return #{$letter-spacing-px / $font-size-px}em;
+  }
 
 @mixin mq($breakpoint) {
     @if map-has-key($breakpoints, $breakpoint) {

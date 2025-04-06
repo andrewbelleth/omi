@@ -38,9 +38,10 @@ a {
   color: $black;
 }
 
-.sp-only {
+
+.tab-only {
   display: none;
-  @media (max-width: 640px) {
+  @media (641px < width < 768px) {
     display: block;
   }
 }
@@ -48,6 +49,17 @@ a {
   display: block;
   @media (max-width: 640px) {
     display: none;
+  }
+}
+.sp-only {
+  display: none;
+  @media (max-width: 640px) {
+    display: block;
+  }
+}
+.u-tb-br {
+  @media (width < 768px) {
+    display: block;
   }
 }
 

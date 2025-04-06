@@ -5,15 +5,19 @@ if (! defined('ABSPATH')) exit;
 <?php get_template_part('template-parts/header'); ?>
 <main>
     <?php get_template_part('template-parts/components/page-head', null, [
-        'title_en' => '404 NOT FOUND',
-        'title_jp' => null,
-        'breadcrumb' => '404 NOT FOUND',
+        'title_en' => 'CONTACT',
+        'title_jp' => 'お問い合わせ',
+        'breadcrumb' => 'お問い合わせ',
     ]); ?>
-    <div class="container page-404">
+    <div class="container page-thanks">
         <div class="page short-page">
             <div class="page__body u-column-center">
-                <h2 class="page-404__title">ご指定のページは<br class="sp-only">見つかりません</h2>
-                <p class="page-404__text">指定のURLが一時的にアクセスできないか、<br class="sp-only">削除された可能性があります。</p>
+                <h2 class="page-thanks__title">送信完了しました</h2>
+                <p class="page-thanks__text">お問い合わせいただき、ありがとうございます。<br>
+                    担当者より3営業日以内に<br class="sp-only">ご連絡させていただきます。<br>
+                    <br>
+                    万が一連絡が入らない場合は、お手数ですが<br class="sp-only">「<span class="page-thanks__text-blue">0749-42-8400 近江印刷株式会社 営業部</span>」まで<br class="u-tb-br">ご連絡をお願いいたします。</span>
+                </p>
                 <a href="<?php echo esc_url(home_url('/')); ?>" class="btn">
                     <span class="btn__text">TOPに戻る</span>
                     <span class="btn__icon">
