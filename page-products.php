@@ -16,73 +16,43 @@ Template Name: 取り扱い品目ページ
         <div class=" section section__col">
             <div class="page-printing__side section__side">
                 <ul>
-                    <li><a data-slug="type-printing" href="<?php echo home_url('/printing/#type-printing'); ?>">印刷の種類</a></li>
-                    <li><a data-slug="type-products" href="<?php echo home_url('/printing/#type-products'); ?>">取り扱い品目</a></li>
-                    <li><a data-slug="processing" href="<?php echo home_url('/printing/#processing'); ?>">加工・製本</a></li>
-                    <li><a data-slug="type-agency" href="<?php echo home_url('/printing/#type-agency'); ?>">業務代行</a></li>
+                    <li><a data-slug="magazine" href="<?php echo home_url('/service/printing/products/#magazine'); ?>">広報誌・定期刊行物</a></li>
+                    <li><a data-slug="flyer" href="<?php echo home_url('/service/printing/products/#flyer'); ?>">チラシ・ポスター</a></li>
+                    <li><a data-slug="catalog" href="<?php echo home_url('/service/printing/products/#catalog'); ?>">カタログ</a></li>
+                    <li><a data-slug="booklet" href="<?php echo home_url('/service/printing/products/#booklet'); ?>">冊子</a></li>
+                    <li><a data-slug="slip" href="<?php echo home_url('/service/printing/products/#slip'); ?>">伝票・帳票</a></li>
+                    <li><a data-slug="envelope" href="<?php echo home_url('/service/printing/products/#envelope'); ?>">名刺・封筒・はがき・挨拶状</a></li>
+                    <li><a data-slug="ricebag" href="<?php echo home_url('/service/printing/products/#ricebag'); ?>">米袋</a></li>
+                    <li><a data-slug="promotion" href="<?php echo home_url('/service/printing/products/#promotion'); ?>">販促</a></li>
                 </ul>
             </div>
             <div class="section__main wrapper-136">
-                <div class="component-box-item" id="type-printing">
+                <div class="component-box-item">
                     <div class="txt">
-                        <p>企画デザインから印刷、加工、製本、納品までを一貫して自社完結できるトータルシステムを完備し、高品質、短納期、低価格をモットーに事業展開しております。
-                            ポスター、チラシ、パンフレット、広報誌などの商業印刷物から、帳票、封筒、名刺などの事務用印刷物、シール、看板、のぼり、各種ノベルティなどの特殊印刷まで、幅広く対応しています。
-                            また、全国各地、複数箇所への配送も承っております。</p>
-                    </div>
-                    <ul class="img-list img-list--2column mt32--sp24">
-                        <li><img src="<?php echo get_template_directory_uri(); ?>/assets/images/printing/printing-img01.webp" alt="商業印刷物制作の様子" width="368" height="220" loading="lazy"></li>
-                        <li><img src="<?php echo get_template_directory_uri(); ?>/assets/images/printing/printing-img02.webp" alt="商業印刷物制作の様子" width="368" height="220" loading="lazy"></li>
-                        <li><img src="<?php echo get_template_directory_uri(); ?>/assets/images/printing/printing-img03.webp" alt="商業印刷物制作の様子" width="368" height="220" loading="lazy"></li>
-                        <li><img src="<?php echo get_template_directory_uri(); ?>/assets/images/printing/printing-img04.webp" alt="商業印刷物制作の様子" width="368" height="220" loading="lazy"></li>
-                    </ul>
-                </div>
-                <section class="component-box-item type-item" id="type-item">
-                    <h2 class="ttl-01">印刷の種類</h2>
-                    <div class="component-item-column-g10 mt32--sp24">
-                        <h3 class="ttl-02 ttl-02--triangle">オフセット印刷</h3>
-                        <div class="txt-01">
-                            <p>オフセット印刷とは、シアン・マゼンタ・イエロー・ブラック各色の版を出力し印刷を行う方式です。一枚の紙に4つの色を刷り重ねていくことで最終的な仕上がり色を再現します。大量に印刷することでコストを大幅に下げることが特徴です。<br>当社は高生産性・高品質を誇る印刷機MEGA Jprintを2台完備し、ロール紙を使用することにより、大量印刷、多頁物印刷も短納期・低コストでのご提供を可能としています。</p>
-                        </div>
-                    </div>
-                    <div class="component-item-column-g10 mt32--sp24">
-                        <h3 class="ttl-02 ttl-02--triangle">オンデマンド印刷</h3>
-                        <div class="txt-01">
-                            <p>オンデマンド印刷は、データから直接印刷する高速デジタル印刷機による印刷方式です。従来のオフセット印刷のような版を必要としないため、作業工程が少なく、印刷に掛かる時間とコストを大幅に短縮することができ、小ロット・多品種に対応しています。<br>住所やバーコードなど、印刷内容の一部を変えるバリアブル印刷（可変印刷）にも対応できます。</p>
-                        </div>
-                    </div>
-                    <div class="component-item-column-g10 mt32--sp24">
-                        <h3 class="ttl-02 ttl-02--triangle">伝票・ビジネスフォーム印刷</h3>
-                        <div class="txt-01">
-                            <p>ビジネスフォーム印刷機、伝票製本設備を各種完備。制作から納品までワンストップの社内生産体制により、短納期・低コストを実現しております。裏カーボン、増感・減感加工、ナンバリングやミシン、穴あけなどの加工も可能です。</p>
-                        </div>
-                    </div>
-                    <div class="component-item-column-g10 mt32--sp24">
-                        <h3 class="ttl-02 ttl-02--triangle">シール印刷</h3>
-                        <div class="txt-01">
-                            <p>商品ラベル、製造内容シール、各種表示ステッカー、目隠しシール、訂正シールなど、用途や貼付場所などによって、様々な形、材質、加工のシールを制作させていただいております。</p>
-                        </div>
-                    </div>
-                    <div class="component-item-column-g10 mt32--sp24">
-                        <h3 class="ttl-02 ttl-02--triangle">パッケージ印刷</h3>
-                        <div class="txt-01">
-                            <p>商品のパンフレット、チラシ、販促ツールと同時にパッケージの制作も承っております。形状や材質は様々。ヒアリングを基に、最も良いパッケージが仕上がるようデザインからご提案させていただきます。</p>
-                        </div>
-                    </div>
-                </section>
-                <section class="component-box-item type-products" id="type-products">
-                    <h2 class="ttl-01">取扱品目</h2>
-                    <div class="txt m32">
                         <p>
-                            ポスター、チラシ、パンフレット、広報誌などの商業印刷物から、帳票、封筒、名刺などの事務用印刷物、シール、看板、のぼり、各種ノベルティなどの特殊印刷まで、幅広く対応しています。自社工場に取り揃えた豊富な設備により、様々な加工で印刷物に付加価値を与えることも可能です。お客さまの用途に適した印刷物を制作いたします。
+                            お客様の「伝えたい」を大切に。より効果的な「伝わる」表現へ。<br>
+                            創業時より、ポスター、パンフレット、冊子など印刷に関わるグラフィックはもちろん、様々な媒体にデザインを施してまいりました。<br>
+                            お客様の「伝えたい」想いにしっかり向き合い、効果的な表現で「伝わる」グラフィックデザインをご提供いたします。
+                        </p>
+                    </div>
+                </div>
+
+                <section class="component-box-item type-products" id="magazine">
+                    <h2 class="ttl-01">広報誌・定期刊行物</h2>
+                    <div class="txt mt32--sp20">
+                        <p>
+                            広報誌・定期刊行物は当社がもっとも得意とする製品のひとつです。県内の市町村から直接、または他府県の同業様より下請けとして、多数の広報誌をお任せいただいています。高品質な印刷はもちろん、タイトなスケジュールや、付属印刷物の印刷・挟み込み作業、多数箇所区分け・発送など、様々なご要望にも柔軟に対応可能です。<br>
+                            また、ホームページ掲載用データを、PDFよりも読みやすく多機能なWebBookにする事も併せてご提案させていただきます。<br>
+                            お見積りはお気軽にお問い合わせください。
                         </p>
                     </div>
                     <ul class="img-list img-list--2column-sp1 mt32--sp24">
-                        <li><img src="<?php echo get_template_directory_uri(); ?>/assets/images/printing/printing-img05.webp" alt="広報誌から事務用品印刷物まで幅広く対応" width="368" height="220" loading="lazy"></li>
-                        <li><img src="<?php echo get_template_directory_uri(); ?>/assets/images/printing/printing-img06.webp" alt="広報誌から事務用品印刷物まで幅広く対応" width="368" height="220" loading="lazy"></li>
+                        <li><img src="<?php echo get_template_directory_uri(); ?>/assets/images/products/products-img01.webp" alt="広報誌・定期刊行物についてのイメージ画像" width="368" height="220" loading="lazy"></li>
+                        <li><img src="<?php echo get_template_directory_uri(); ?>/assets/images/products/products-img02.webp" alt="広報誌・定期刊行物についてのイメージ画像" width="368" height="220" loading="lazy"></li>
                     </ul>
                     <div class="component-box-btn mt32--sp40">
                         <a href="<?php echo esc_url(home_url('/products')); ?>" class="btn inview">
-                            <span class="btn__text">取扱品目を詳しく見る</span>
+                            <span class="btn__text">WebBookについて</span>
                             <span class="btn__icon">
                                 <svg viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <g clip-path="url(#clip0_40_1378)">
@@ -95,22 +65,50 @@ Template Name: 取り扱い品目ページ
                         </a>
                     </div>
                 </section>
-                <section class="component-box-item type-processing" id="type-processing">
-                    <h2 class="ttl-01">加工・製本</h2>
-                    <div class="txt m32">
+                <section class="component-box-item type-products" id="flyer">
+                    <h2 class="ttl-01">チラシ・ポスター</h2>
+                    <div class="txt mt32--sp20">
                         <p>
-                            当社の自社工場設備と信頼ある協力会社との連携により、印刷物に付加価値をプラスした高品質な製品をご提供します。<br>
-                            加工が必要な場合には、加工位置や向きを示す仕上がり見本をご準備ください。
+                            長年の経験で培った印刷物の企画・デザイン力を活かし、お客様の販売促進をサポートします。<br>
+                            徹底したヒアリングを基に、お客様のコンセプトに沿った企画提案から、効果的なマーケティング戦略まで、トータルでお手伝いします。<br>
+                            さらに、動画広告やWEBコンテンツとの連携により、紙媒体にとどまらない多角的なアプローチで、エンドユーザーに次のアクションを促し、効率的な販売促進をご提案いたします。
                         </p>
                     </div>
                     <ul class="img-list img-list--2column-sp1 mt32--sp24">
-                        <li><img src="<?php echo get_template_directory_uri(); ?>/assets/images/printing/printing-img07.webp" alt="加工位置の変更で印刷物への付加価値を付けた製品" width="368" height="220" loading="lazy"></li>
-                        <li><img src="<?php echo get_template_directory_uri(); ?>/assets/images/printing/printing-img08.webp" alt="加工位置の変更で印刷物への付加価値を付けた製品" width="368" height="220" loading="lazy"></li>
+                        <li><img src="<?php echo get_template_directory_uri(); ?>/assets/images/products/products-img03.webp" alt="印刷物の企画デザイン力を活かしたチラシポスター制作のイメージ画像" width="368" height="220" loading="lazy"></li>
+                        <li><img src="<?php echo get_template_directory_uri(); ?>/assets/images/products/products-img04.webp" alt="印刷物の企画デザイン力を活かしたチラシポスター制作のイメージ画像" width="368" height="220" loading="lazy"></li>
+                    </ul>
+                    <div class="component-box-btn mt32--sp40">
+                        <a href="<?php echo esc_url(home_url('/')); ?>" class="btn inview">
+                            <span class="btn__text">プロモーションについて</span>
+                            <span class="btn__icon">
+                                <svg viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_40_1378)">
+                                        <path
+                                            d="M13.6814 18.9216L12.2322 17.4304L17.4836 12.1789H0.830322V10.1164H17.4836L12.2322 4.86497L13.6814 3.37378L21.4553 11.1477L13.6814 18.9216Z"
+                                            fill="#0068B6" />
+                                    </g>
+                                </svg>
+                            </span>
+                        </a>
+                    </div>
+                </section>
+                <section class="component-box-item catalog" id="catalog">
+                    <h2 class="ttl-01">カタログ</h2>
+                    <div class="txt mt32--sp20">
+                        <p>
+                            美しさだけでは伝わらない、戦略的視点で訴求力の高いデザインを提供します。企画者から制作者、カメラマンまで、お客様のコンセプトを深く理解し、結果を出せる商品に仕上げます。<br>
+                            デジタルコンテンツを活用することで、ブランド力を強化し、内容を充実させた価値あるカタログを提案いたします。商品カタログから学校や塾、飲食店のブランドパンフレットまで、幅広い制作実績を誇っています。
+                        </p>
+                    </div>
+                    <ul class="img-list img-list--2column-sp1 mt32--sp24">
+                        <li><img src="<?php echo get_template_directory_uri(); ?>/assets/images/products/products-img05.webp" alt="戦略的視点で訴求力の高いデザインのカタログ製作のイメージ画像" width="368" height="220" loading="lazy"></li>
+                        <li><img src="<?php echo get_template_directory_uri(); ?>/assets/images/products/products-img06.webp" alt="戦略的視点で訴求力の高いデザインのカタログ製作のイメージ画像" width="368" height="220" loading="lazy"></li>
                     </ul>
                     <div class="component-box-btn mt32--sp40">
                         <div class="btn-list">
-                            <a href="<?php echo esc_url(home_url('/processing')); ?>" class="btn inview">
-                                <span class="btn__text">加工について詳しく見る</span>
+                            <a href="<?php echo esc_url(home_url('/')); ?>" class="btn inview">
+                                <span class="btn__text">デジタルについて</span>
                                 <span class="btn__icon">
                                     <svg viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <g clip-path="url(#clip0_40_1378)">
@@ -121,8 +119,8 @@ Template Name: 取り扱い品目ページ
                                     </svg>
                                 </span>
                             </a>
-                            <a href="<?php echo esc_url(home_url('/bookbinding')); ?>" class="btn inview">
-                                <span class="btn__text">製本について詳しく見る</span>
+                            <a href="<?php echo esc_url(home_url('/')); ?>" class="btn inview">
+                                <span class="btn__text">製本について</span>
                                 <span class="btn__icon">
                                     <svg viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <g clip-path="url(#clip0_40_1378)">
@@ -136,61 +134,166 @@ Template Name: 取り扱い品目ページ
                         </div>
                     </div>
                 </section>
-                <section class="component-box-item type-agency" id="type-agency">
-                    <h2 class="ttl-01">業務代行</h2>
-                    <div class="txt mt32--sp24">
+                <section class="component-box-item booklet" id="booklet">
+                    <h2 class="ttl-01">冊子</h2>
+                    <div class="txt mt32--sp20">
                         <p>
-                            当社の自社工場設備と信頼ある協力会社との連携により、印刷物に付加価値をプラスした高品質な製品をご提供します。<br>
-                            加工が必要な場合には、加工位置や向きを示す仕上がり見本をご準備ください。
+                            ガイドブック、ハンドブック、テキスト、報告書、年報、社史、郷土史、自分史等様々な仕様・用途の冊子の制作を承ります。折りページ、ミシン入りページなどを含む冊子や、ページ数・サイズ・加工など細やかな対応が可能です。<br>
+                            また、冊子の種類によってはWebBookへの展開もご提案させていただいております。動画や画像スライドの配置、リンクの貼込など、紙面の表現をさらに広げたWebBookは、オフラインとオンラインの相互利用による訴求力のUPが期待できます。
                         </p>
                     </div>
-                    <div class="component-item-column-g8 mt32--sp24">
-                        <h3 class="ttl-02 ttl-02--triangle">区分け業務</h3>
-                        <div class="txt-01 txt-01--with-img">
-                            <p>
-                                数ヵ所から数百ヵ所の区分け作業も、熟練のスタッフが迅速かつ的確に作業します。<br>
-                                広報誌の地区別区分け、タウンメールの郵便番号区分け、学生向け配布物の学校別区分けなども対応可能です。
-                            </p>
-                            <div class="txt-01-img">
-                                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/printing/printing-img09.webp" alt="広報誌、タウンメールの区分け業務" width="220" height="138" loading="lazy">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="component-item-column-g8 mt32--sp24">
-                        <h3 class="ttl-02 ttl-02--triangle">封入封緘業務</h3>
-                        <div class="txt-01 txt-01--with-img">
-                            <p>
-                                複数の印刷物をひとつの封筒に入れ（封入）、フタを糊付けする（封緘）作業です。機械ではできない変則的な組み合わせの封入作業なども、熟練のスタッフが丁寧に正確に行います。封筒への宛名印字、宛名ラベル貼り作業も合わせて承ります。
-                            </p>
-                            <div class="txt-01-img">
-                                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/printing/printing-img10.webp" alt="宛名印字、宛名ラベル貼り付け等封入封緘業務" width="220" height="138" loading="lazy">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="component-item-column-g8 mt32--sp24">
-                        <h3 class="ttl-02 ttl-02--triangle">挟み込み業務</h3>
-                        <div class="txt-01 txt-01--with-img">
-                            <p>
-                                冊子に、別口のチラシや封筒などの印刷物を挟み込む作業です。<br>
-                                広報誌の区分けの内、一部の地区向けに特定のチラシを挟み込むなどの複雑なオーダーにも柔軟に対応できます。
-                            </p>
-                            <div class="txt-01-img">
-                                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/printing/printing-img11.webp" alt="冊子、別口にチラシ挟み込み" width="220" height="138" loading="lazy">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="component-item-column-g8 mt32--sp24">
-                        <h3 class="ttl-02 ttl-02--triangle">業務代行</h3>
-                        <div class="txt-01 txt-01--with-img">
-                            <p>
-                                一括、または複数ヵ所への発送作業も代行させていただきます。複数の配送業者と取引があるため、日にち指定、時間指定などお客様のニーズにお応えします。
-                            </p>
-                            <div class="txt-01-img">
-                                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/printing/printing-img12.webp" alt="複数の配送業者へ発送業務代行" width="220" height="138" loading="lazy">
-                            </div>
+                    <ul class="img-list img-list--2column-sp1 mt32--sp24">
+                        <li><img src="<?php echo get_template_directory_uri(); ?>/assets/images/products/products-img07.webp" alt="webbookを使用しオフラインオンライン相互利用で訴求力の高い冊子の製作のイメージ画像" width="368" height="220" loading="lazy"></li>
+                        <li><img src="<?php echo get_template_directory_uri(); ?>/assets/images/products/products-img08.webp" alt="webbookを使用しオフラインオンライン相互利用で訴求力の高い冊子の製作のイメージ画像" width="368" height="220" loading="lazy"></li>
+                    </ul>
+                    <div class="component-box-btn mt32--sp40">
+                        <div class="btn-list">
+                            <a href="<?php echo esc_url(home_url('/')); ?>" class="btn inview">
+                                <span class="btn__text">加工について</span>
+                                <span class="btn__icon">
+                                    <svg viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <g clip-path="url(#clip0_40_1378)">
+                                            <path
+                                                d="M13.6814 18.9216L12.2322 17.4304L17.4836 12.1789H0.830322V10.1164H17.4836L12.2322 4.86497L13.6814 3.37378L21.4553 11.1477L13.6814 18.9216Z"
+                                                fill="#0068B6" />
+                                        </g>
+                                    </svg>
+                                </span>
+                            </a>
+                            <a href="<?php echo esc_url(home_url('/')); ?>" class="btn inview">
+                                <span class="btn__text">製本について</span>
+                                <span class="btn__icon">
+                                    <svg viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <g clip-path="url(#clip0_40_1378)">
+                                            <path
+                                                d="M13.6814 18.9216L12.2322 17.4304L17.4836 12.1789H0.830322V10.1164H17.4836L12.2322 4.86497L13.6814 3.37378L21.4553 11.1477L13.6814 18.9216Z"
+                                                fill="#0068B6" />
+                                        </g>
+                                    </svg>
+                                </span>
+                            </a>
                         </div>
                     </div>
                 </section>
+                <section class="component-box-item slip" id="slip">
+                    <h2 class="ttl-01">伝票・帳票</h2>
+                    <div class="txt mt32--sp20">
+                        <p>
+                            請求書や納品書など様々な用途に使用される多種多様の伝票・帳票類の制作もお任せください。連続帳票、単票（カット紙）、OCR伝票、ラベル・タックフォーム、圧着はがきなど、数々の制作実績とノウハウがあります。裏カーボン加工や減感加工、ミシン折りやパンチ処理など、印刷と同時にオプション加工をほどこすことが可能です。
+                        </p>
+                    </div>
+                    <ul class="img-list img-list--2column-sp1 mt32--sp24">
+                        <li><img src="<?php echo get_template_directory_uri(); ?>/assets/images/products/products-img09.webp" alt="多種多様の伝票・帳票の製作のイメージ画像" width="368" height="220" loading="lazy"></li>
+                        <li><img src="<?php echo get_template_directory_uri(); ?>/assets/images/products/products-img10.webp" alt="多種多様の伝票・帳票の製作のイメージ画像" width="368" height="220" loading="lazy"></li>
+                    </ul>
+                    <div class="component-box-btn mt32--sp40">
+                        <div class="btn-list">
+                            <a href="<?php echo esc_url(home_url('/')); ?>" class="btn inview">
+                                <span class="btn__text">パンフレットの<br class="br-1050">ダウンロードはこちら</span>
+                                <span class="btn__icon">
+                                    <svg viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <g clip-path="url(#clip0_40_1378)">
+                                            <path
+                                                d="M13.6814 18.9216L12.2322 17.4304L17.4836 12.1789H0.830322V10.1164H17.4836L12.2322 4.86497L13.6814 3.37378L21.4553 11.1477L13.6814 18.9216Z"
+                                                fill="#0068B6" />
+                                        </g>
+                                    </svg>
+                                </span>
+                            </a>
+                            <a href="<?php echo esc_url(home_url('/')); ?>" class="btn inview">
+                                <span class="btn__text">WebBookで<br class="br-1050">パンフレットを見る</span>
+                                <span class="btn__icon">
+                                    <svg viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <g clip-path="url(#clip0_40_1378)">
+                                            <path
+                                                d="M13.6814 18.9216L12.2322 17.4304L17.4836 12.1789H0.830322V10.1164H17.4836L12.2322 4.86497L13.6814 3.37378L21.4553 11.1477L13.6814 18.9216Z"
+                                                fill="#0068B6" />
+                                        </g>
+                                    </svg>
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                </section>
+                <section class="component-box-item type-products" id="envelope">
+                    <h2 class="ttl-01">名刺・封筒・はがき・挨拶状</h2>
+                    <div class="txt mt32--sp20">
+                        <p>
+                            名刺はデザインや紙質のご提案が可能です。デザイン統一、リニューアルなどでの複数名分一括発注もお任せください。封筒は、定型封筒から別注封筒までお取り扱いしております。各種はがき、挨拶状なども短納期で制作が可能。多数実績のある当社におまかせいただければ、文章校正も安心です。
+                        </p>
+                    </div>
+                    <ul class="img-list img-list--2column-sp1 mt32--sp24">
+                        <li><img src="<?php echo get_template_directory_uri(); ?>/assets/images/products/products-img11.webp" alt="名刺・封筒・はがき・挨拶状の製作のイメージ画像" width="368" height="220" loading="lazy"></li>
+                        <li><img src="<?php echo get_template_directory_uri(); ?>/assets/images/products/products-img12.webp" alt="名刺・封筒・はがき・挨拶状の製作のイメージ画像" width="368" height="220" loading="lazy"></li>
+                    </ul>
+                    <div class="component-box-btn mt32--sp40">
+                        <a href="<?php echo esc_url(home_url('/works')); ?>" class="btn inview">
+                            <span class="btn__text">製作事例はこちら</span>
+                            <span class="btn__icon">
+                                <svg viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_40_1378)">
+                                        <path
+                                            d="M13.6814 18.9216L12.2322 17.4304L17.4836 12.1789H0.830322V10.1164H17.4836L12.2322 4.86497L13.6814 3.37378L21.4553 11.1477L13.6814 18.9216Z"
+                                            fill="#0068B6" />
+                                    </g>
+                                </svg>
+                            </span>
+                        </a>
+                    </div>
+                </section>
+                <section class="component-box-item ricebag" id="ricebag">
+                    <h2 class="ttl-01">米袋</h2>
+                    <div class="txt mt32--sp20">
+                        <p>
+                            ダミーテキストが入ります。ダミーテキストが入ります。ダミーテキストが入ります。ダミーテキストが入ります。ダミーテキストが入ります。ダミーテキストが入ります。ダミーテキストが入ります。ダミーテキストが入ります。ダミーテキストが入ります。ダミーテキストが入ります。ダミーテキストが入ります。
+                        </p>
+                    </div>
+                    <ul class="img-list img-list--2column-sp1 mt32--sp24">
+                        <li><img src="<?php echo get_template_directory_uri(); ?>/assets/images/products/products-img13.webp" alt="米袋の製作のイメージ画像" width="368" height="220" loading="lazy"></li>
+                        <li><img src="<?php echo get_template_directory_uri(); ?>/assets/images/products/products-img14.webp" alt="米袋の製作のイメージ画像" width="368" height="220" loading="lazy"></li>
+                    </ul>
+                    <div class="component-box-btn mt32--sp40">
+                        <a href="<?php echo esc_url(home_url('/')); ?>" class="btn inview">
+                            <span class="btn__text">こちら</span>
+                            <span class="btn__icon">
+                                <svg viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_40_1378)">
+                                        <path
+                                            d="M13.6814 18.9216L12.2322 17.4304L17.4836 12.1789H0.830322V10.1164H17.4836L12.2322 4.86497L13.6814 3.37378L21.4553 11.1477L13.6814 18.9216Z"
+                                            fill="#0068B6" />
+                                    </g>
+                                </svg>
+                            </span>
+                        </a>
+                    </div>
+                </section>
+                <section class="component-box-item promotion" id="promotion">
+                    <h2 class="ttl-01">販促</h2>
+                    <div class="txt mt32--sp20">
+                        <p>
+                            ダミーテキストが入ります。ダミーテキストが入ります。ダミーテキストが入ります。ダミーテキストが入ります。ダミーテキストが入ります。ダミーテキストが入ります。ダミーテキストが入ります。ダミーテキストが入ります。ダミーテキストが入ります。ダミーテキストが入ります。ダミーテキストが入ります。
+                        </p>
+                    </div>
+                    <ul class="img-list img-list--2column-sp1 mt32--sp24">
+                        <li><img src="<?php echo get_template_directory_uri(); ?>/assets/images/products/products-img15.webp" alt="販促品の製作のイメージ画像" width="368" height="220" loading="lazy"></li>
+                        <li><img src="<?php echo get_template_directory_uri(); ?>/assets/images/products/products-img16.webp" alt="販促品の製作のイメージ画像" width="368" height="220" loading="lazy"></li>
+                    </ul>
+                    <div class="component-box-btn mt32--sp40">
+                        <a href="<?php echo esc_url(home_url('/')); ?>" class="btn inview">
+                            <span class="btn__text">こちら</span>
+                            <span class="btn__icon">
+                                <svg viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_40_1378)">
+                                        <path
+                                            d="M13.6814 18.9216L12.2322 17.4304L17.4836 12.1789H0.830322V10.1164H17.4836L12.2322 4.86497L13.6814 3.37378L21.4553 11.1477L13.6814 18.9216Z"
+                                            fill="#0068B6" />
+                                    </g>
+                                </svg>
+                            </span>
+                        </a>
+                    </div>
+                </section>
+
             </div><!-- / -->
         </div>
         <?php get_template_part('template-parts/guide'); ?>
@@ -212,7 +315,7 @@ Template Name: 取り扱い品目ページ
                     </div>
                     <div class="btn-list-01">
                         <a href="#" class="btn-02">
-                            <span class="btn__text">デジタル</span>
+                            <span class="btn__text">印刷</span>
                             <span class="btn__icon">
                                 <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <circle cx="16" cy="16" r="16" fill="#0068B6" />
@@ -229,7 +332,7 @@ Template Name: 取り扱い品目ページ
                             </span>
                         </a>
                         <a href="#" class="btn-02">
-                            <span class="btn__text">彦根経済新聞</span>
+                            <span class="btn__text">加工</span>
                             <span class="btn__icon">
                                 <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <circle cx="16" cy="16" r="16" fill="#0068B6" />
@@ -246,7 +349,7 @@ Template Name: 取り扱い品目ページ
                             </span>
                         </a>
                         <a href="#" class="btn-02">
-                            <span class="btn__text btn__text--newspaper">ブランディング</span>
+                            <span class="btn__text btn__text--newspaper">製本</span>
                             <span class="btn__icon">
                                 <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <circle cx="16" cy="16" r="16" fill="#0068B6" />
@@ -262,23 +365,7 @@ Template Name: 取り扱い品目ページ
 
                             </span>
                         </a>
-                        <a href="#" class="btn-02">
-                            <span class="btn__text btn__text--branding">プロモーション</span>
-                            <span class="btn__icon">
-                                <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <circle cx="16" cy="16" r="16" fill="#0068B6" />
-                                    <g clip-path="url(#clip0_817_15493)">
-                                        <path d="M18.0934 22.6183L16.8418 21.3305L21.3772 16.7951H6.99475V15.0139H21.3772L16.8418 10.4785L18.0934 9.19067L24.8073 15.9045L18.0934 22.6183Z" fill="white" />
-                                    </g>
-                                    <defs>
-                                        <clipPath id="clip0_817_15493">
-                                            <rect width="19" height="19" fill="white" transform="translate(6.401 6.40002)" />
-                                        </clipPath>
-                                    </defs>
-                                </svg>
-
-                            </span>
-                        </a>
+                       
 
                     </div>
                 </div>
