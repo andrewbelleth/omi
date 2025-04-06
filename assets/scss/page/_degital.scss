@@ -1,0 +1,65 @@
+@use "../global" as *;
+
+.degital-btn-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: rem(13);
+    padding-top: rem(20);
+    padding-left: rem(21);
+
+    .btn-02 {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 0;
+        height: auto;
+        padding: rem(16) rem(20) rem(16) rem(16);
+        width: calc(50% - rem(13 / 2));
+
+        &--rikueru {
+            .btn__img {
+                margin-right: rem(17);
+            }
+        }
+
+        &--douga {
+            .btn__img {
+                margin-right: rem(20);
+            }
+        }
+
+        &--sukketosan {
+            .btn__img {
+                margin-right: rem(13);
+            }
+        }
+
+        .btn__img {
+            width: rem(113);
+            flex-shrink: 0;
+        }
+
+        .btn__body {
+            margin-right: auto;
+            width: fit-content;
+            display: flex;
+            flex-direction: column;
+
+            .btn__text {
+                font-size: rem(20);
+                font-weight: 700;
+                line-height: calc(36 / 20);
+                letter-spacing: 0.05em;
+                color: $blue;
+            }
+
+            .btn__description {
+                font-size: rem(13);
+                font-weight: 400;
+                line-height: 1.8;
+                letter-spacing: 0.05em;
+                margin-top: rem(6);
+            }
+        }
+    }
+}
