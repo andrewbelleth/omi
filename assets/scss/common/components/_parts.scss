@@ -18,6 +18,9 @@
 .mt8{
     margin-top: rem(8);
 }
+.mt16{
+    margin-top: rem(16);
+}
 .mt20--sp24{
     margin-top: rem(20);
     @include mq(tb) {
@@ -625,7 +628,7 @@
    
     p{
         font-size: rem(15);
-        font-weight: 400;
+        font-weight: 700;
         line-height: calc(22.5 / 15);
         letter-spacing: lts-em(0.75,15);
         color: $black;
@@ -686,4 +689,8 @@
 .component-box-item {
     margin-top: rem(-136);
     padding-top: rem(136);
+    @include mq(tb) {
+        margin-top: rem(-88);
+        padding-top: rem(88);
+    }
 }

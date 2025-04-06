@@ -68,8 +68,18 @@
         font-size: rem(15);
         line-height: calc(27 / 15);
         letter-spacing: lts-em(0.75, 15);
+        
       }
+    
   }
+ /*  .light-blue-box-flex{
+    p{
+      display: inline-grid;
+      place-items: center;
+      height: 100%;
+      text-align: center;
+    }
+  } */
   .light-blue-box-inner {
     display: flex;
     gap: rem(40);
@@ -96,15 +106,46 @@
                 font-size: rem(13);
                 line-height: calc(18 / 13);
                 letter-spacing: lts-em(0.65, 13);
+                display: inline-grid;
+                place-items: center;
+                height: 100%;
+                text-align: center;
+            }
+            span{
+              font-size: rem(11);
+              line-height: calc(18 / 11);
+              letter-spacing: lts-em(0.55, 11);
             }
         }
     }
   }
   @include mq(tb) {
+    .page__head-inner{
+      width: 100%;
+      padding-left: rem(24);
+      .page__title--en {
+        letter-spacing: lts-em(2.7, 54);
+      }
+    }
     .light-blue-box-inner {
       gap: rem(0);
       margin-top: rem(12);
       flex-direction: column;
+    }
+    .occasionally {
+      .light-blue-box{
+        width: calc(100% + rem(48));
+        margin-left: rem(-24);
+        p{
+          font-size: rem(12);
+          line-height: calc(21 / 12);
+          letter-spacing: lts-em(0.6, 12);
+        }
+      }
+      .light-blue-box-flex{
+          grid-template-columns: repeat(3, 1fr);
+          margin-top: rem(20);
+      }
     }
   }
 }

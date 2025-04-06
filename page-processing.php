@@ -6,7 +6,7 @@ Template Name: 加工ページ
 ?>
 
 <?php get_template_part('template-parts/header'); ?>
-<div class="page-processing">
+<div class="wrapper">
     <?php get_template_part('template-parts/components/page-head', null, [
         'title_en' => 'PROCESSING',
         'title_jp' => '加工',
@@ -29,7 +29,7 @@ Template Name: 加工ページ
                 </ul>
             </div>
             <div class="section__main wrapper-136">
-                <div class="component-box-item">
+                <div class="">
                     <div class="txt">
                         <p>
                             自社工場に取り揃えた設備と、信頼のおける協力会社との盤石な体制により、印刷物に付加価値を与えます。<br>
@@ -65,7 +65,7 @@ Template Name: 加工ページ
                             <li>
                                 <img src="<?php echo get_template_directory_uri(); ?>/assets/images/processings/processings-icon01.webp" alt="折り加工の二つ折についてのイメージ画像" width="62" height="62" loading="lazy">
                                 <p>二つ折</p>
-                            </li>       
+                            </li>
                             <li>
                                 <img src="<?php echo get_template_directory_uri(); ?>/assets/images/processings/processings-icon02.webp" alt="折り加工の片袖折についてのイメージ画像" width="62" height="62" loading="lazy">
                                 <p>片袖折</p>
@@ -83,58 +83,78 @@ Template Name: 加工ページ
                                 <p>三つ折</p>
                             </li>
                             <li>
-                                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/processings/processings-icon05.webp" alt="折り加工の三つ折についてのイメージ画像" width="62" height="62" loading="lazy">
-                                <p>三つ折</p>
+                                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/processings/processings-icon06.webp" alt="折り加工の四つ折についてのイメージ画像" width="62" height="62" loading="lazy">
+                                <p>四つ折</p>
                             </li>
                             <li>
-                                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/processings/processings-icon05.webp" alt="折り加工の三つ折についてのイメージ画像" width="62" height="62" loading="lazy">
-                                <p>三つ折</p>
+                                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/processings/processings-icon07.webp" alt="折り加工の五つ折についてのイメージ画像" width="62" height="62" loading="lazy">
+                                <p>五つ折</p>
                             </li>
                             <li>
-                                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/processings/processings-icon05.webp" alt="折り加工の三つ折についてのイメージ画像" width="62" height="62" loading="lazy">
-                                <p>三つ折</p>
+                                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/processings/processings-icon08.webp" alt="折り加工の六つ折についてのイメージ画像" width="62" height="62" loading="lazy">
+                                <p>六つ折</p>
                             </li>
                             <li>
-                                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/processings/processings-icon05.webp" alt="折り加工の三つ折についてのイメージ画像" width="62" height="62" loading="lazy">
-                                <p>三つ折</p>
+                                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/processings/processings-icon09.webp" alt="折り加工の七つ折についてのイメージ画像" width="62" height="62" loading="lazy">
+                                <p>七つ折</p>
                             </li>
                             <li>
-                                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/processings/processings-icon05.webp" alt="折り加工の三つ折についてのイメージ画像" width="62" height="62" loading="lazy">
-                                <p>三つ折</p>
+                                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/processings/processings-icon10.webp" alt="折り加工の蛇腹折り+二つ折についてのイメージ画像" width="62" height="62" loading="lazy">
+                                <p>蛇腹折り+<br class="sp-only">二つ折</p>
                             </li>
                             <li>
-                                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/processings/processings-icon05.webp" alt="折り加工の三つ折についてのイメージ画像" width="62" height="62" loading="lazy">
-                                <p>三つ折</p>
+                                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/processings/processings-icon11.webp" alt="折り加工のクロス8頁折についてのイメージ画像" width="62" height="62" loading="lazy">
+                                <p>クロス8頁折</p>
                             </li>
                             <li>
-                                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/processings/processings-icon05.webp" alt="折り加工の三つ折についてのイメージ画像" width="62" height="62" loading="lazy">
-                                <p>三つ折</p>
+                                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/processings/processings-icon12.webp" alt="折り加工の巻三つ折+クロス二つ折についてのイメージ画像" width="62" height="62" loading="lazy">
+                                <p>巻三つ折・<br>
+                                    クロス二つ折<br>
+                                    <span>（変形12頁）</span>
+                                </p>
                             </li>
                             <li>
-                                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/processings/processings-icon05.webp" alt="折り加工の三つ折についてのイメージ画像" width="62" height="62" loading="lazy">
-                                <p>三つ折</p>
+                                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/processings/processings-icon13.webp" alt="折り加工の外三つ折+クロス二つ折についてのイメージ画像" width="62" height="62" loading="lazy">
+                                <p>外三つ折<br>
+                                    クロス二つ折<br>
+                                    <span>（変形12頁）</span>
+                                </p>
                             </li>
                             <li>
-                                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/processings/processings-icon05.webp" alt="折り加工の三つ折についてのイメージ画像" width="62" height="62" loading="lazy">
-                                <p>三つ折</p>
+                                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/processings/processings-icon14.webp" alt="折り加工の巻四つ折+クロス二つ折についてのイメージ画像" width="62" height="62" loading="lazy">
+                                <p>巻四つ折･<br>
+                                    クロス二つ折<br>
+                                    <span>（変形16頁）</span>
+                                </p>
                             </li>
                             <li>
-                                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/processings/processings-icon05.webp" alt="折り加工の三つ折についてのイメージ画像" width="62" height="62" loading="lazy">
-                                <p>三つ折</p>
+                                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/processings/processings-icon15.webp" alt="折り加工のクロス16頁折についてのイメージ画像" width="62" height="62" loading="lazy">
+                                <p>クロス16頁折</p>
                             </li>
                             <li>
-                                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/processings/processings-icon05.webp" alt="折り加工の三つ折についてのイメージ画像" width="62" height="62" loading="lazy">
-                                <p>三つ折</p>
+                                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/processings/processings-icon16.webp" alt="折り加工の巻巻四つ折+クロス二つ折についてのイメージ画像" width="62" height="62" loading="lazy">
+                                <p>巻巻四つ折･<br>
+                                    クロス二つ折<br>
+                                    <span>（変形16頁）</span>
+                                </p>
                             </li>
                             <li>
-                                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/processings/processings-icon05.webp" alt="折り加工の三つ折についてのイメージ画像" width="62" height="62" loading="lazy">
-                                <p>三つ折</p>
+                                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/processings/processings-icon17.webp" alt="折り加工の外三つ折+クロス巻四つ折についてのイメージ画像" width="62" height="62" loading="lazy">
+                                <p>外三つ折･<br>
+                                    クロス巻四つ折<br>
+                                    <span>（24頁）</span>
+                                </p>
                             </li>
                             <li>
-                                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/processings/processings-icon05.webp" alt="折り加工の三つ折についてのイメージ画像" width="62" height="62" loading="lazy">
-                                <p>三つ折</p>
+                                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/processings/processings-icon18.webp" alt="折り加工の巻巻四つ折+ダブルクロス折についてのイメージ画像" width="62" height="62" loading="lazy">
+                                <p>巻巻四つ折･<br>
+                                    ダブルクロス折<br>
+                                    <span>（変形32頁）</span>
+                                </p>
                             </li>
+
                         </ul>
+                        <p class="mt16">
                             ※上記以外の折り方にも対応可能です。一度ご相談ください。
                         </p>
                     </div>
@@ -349,80 +369,76 @@ Template Name: 加工ページ
 
             </div><!-- / -->
         </div>
-        <?php get_template_part('template-parts/guide'); ?>
+    </div>
+    <div class="component-box section">
 
-        <div class="component-box wrapper-1120">
-            <div class="component-box-item">
-                <div class="link-01-component">
-                    <div class="link-01-head">
-                        <h3 class="link-01-title">SERVICE</h3>
-                        <a href="<?php echo esc_url(home_url('/service')); ?>" class="link-01-link">
-                            <span class="link-01-link-icon">
-                                <svg viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <circle cx="14" cy="14" r="13.5" stroke="#0068B6" />
-                                    <path d="M15.9384 19.94L14.8317 18.8013L18.842 14.7911H6.12488V13.2161H18.842L14.8317 9.20586L15.9384 8.06714L21.8749 14.0036L15.9384 19.94Z" fill="#0068B6" />
-                                </svg>
-                            </span>
-                            <span class="link-01-link-text">サービストップへ戻る</span>
-                        </a>
-                    </div>
-                    <div class="btn-list-01">
-                        <a href="<?php echo home_url('/service/printing/'); ?>" class="btn-02">
-                            <span class="btn__text">印刷</span>
-                            <span class="btn__icon">
-                                <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <circle cx="16" cy="16" r="16" fill="#0068B6" />
-                                    <g clip-path="url(#clip0_817_15493)">
-                                        <path d="M18.0934 22.6183L16.8418 21.3305L21.3772 16.7951H6.99475V15.0139H21.3772L16.8418 10.4785L18.0934 9.19067L24.8073 15.9045L18.0934 22.6183Z" fill="white" />
-                                    </g>
-                                    <defs>
-                                        <clipPath id="clip0_817_15493">
-                                            <rect width="19" height="19" fill="white" transform="translate(6.401 6.40002)" />
-                                        </clipPath>
-                                    </defs>
-                                </svg>
-                            </span>
-                        </a>
-                        <a href="<?php echo home_url('/service/processing/'); ?>" class="btn-02">
-                            <span class="btn__text">取扱品目</span>
-                            <span class="btn__icon">
-                                <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <circle cx="16" cy="16" r="16" fill="#0068B6" />
-                                    <g clip-path="url(#clip0_817_15493)">
-                                        <path d="M18.0934 22.6183L16.8418 21.3305L21.3772 16.7951H6.99475V15.0139H21.3772L16.8418 10.4785L18.0934 9.19067L24.8073 15.9045L18.0934 22.6183Z" fill="white" />
-                                    </g>
-                                    <defs>
-                                        <clipPath id="clip0_817_15493">
-                                            <rect width="19" height="19" fill="white" transform="translate(6.401 6.40002)" />
-                                        </clipPath>
-                                    </defs>
-                                </svg>
-                            </span>
-                        </a>
-                        <a href="#" class="btn-02">
-                            <span class="btn__text btn__text--newspaper">製本</span>
-                            <span class="btn__icon">
-                                <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <circle cx="16" cy="16" r="16" fill="#0068B6" />
-                                    <g clip-path="url(#clip0_817_15493)">
-                                        <path d="M18.0934 22.6183L16.8418 21.3305L21.3772 16.7951H6.99475V15.0139H21.3772L16.8418 10.4785L18.0934 9.19067L24.8073 15.9045L18.0934 22.6183Z" fill="white" />
-                                    </g>
-                                    <defs>
-                                        <clipPath id="clip0_817_15493">
-                                            <rect width="19" height="19" fill="white" transform="translate(6.401 6.40002)" />
-                                        </clipPath>
-                                    </defs>
-                                </svg>
+        <div class="link-01-component">
+            <div class="link-01-head">
+                <h3 class="link-01-title">SERVICE</h3>
+                <a href="<?php echo esc_url(home_url('/service')); ?>" class="link-01-link">
+                    <span class="link-01-link-icon">
+                        <svg viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="14" cy="14" r="13.5" stroke="#0068B6" />
+                            <path d="M15.9384 19.94L14.8317 18.8013L18.842 14.7911H6.12488V13.2161H18.842L14.8317 9.20586L15.9384 8.06714L21.8749 14.0036L15.9384 19.94Z" fill="#0068B6" />
+                        </svg>
+                    </span>
+                    <span class="link-01-link-text">サービストップへ戻る</span>
+                </a>
+            </div>
+            <div class="btn-list-01">
+                <a href="<?php echo home_url('/service/printing/'); ?>" class="btn-02">
+                    <span class="btn__text">印刷</span>
+                    <span class="btn__icon">
+                        <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="16" cy="16" r="16" fill="#0068B6" />
+                            <g clip-path="url(#clip0_817_15493)">
+                                <path d="M18.0934 22.6183L16.8418 21.3305L21.3772 16.7951H6.99475V15.0139H21.3772L16.8418 10.4785L18.0934 9.19067L24.8073 15.9045L18.0934 22.6183Z" fill="white" />
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_817_15493">
+                                    <rect width="19" height="19" fill="white" transform="translate(6.401 6.40002)" />
+                                </clipPath>
+                            </defs>
+                        </svg>
+                    </span>
+                </a>
+                <a href="<?php echo home_url('/service/processing/'); ?>" class="btn-02">
+                    <span class="btn__text">取扱品目</span>
+                    <span class="btn__icon">
+                        <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="16" cy="16" r="16" fill="#0068B6" />
+                            <g clip-path="url(#clip0_817_15493)">
+                                <path d="M18.0934 22.6183L16.8418 21.3305L21.3772 16.7951H6.99475V15.0139H21.3772L16.8418 10.4785L18.0934 9.19067L24.8073 15.9045L18.0934 22.6183Z" fill="white" />
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_817_15493">
+                                    <rect width="19" height="19" fill="white" transform="translate(6.401 6.40002)" />
+                                </clipPath>
+                            </defs>
+                        </svg>
+                    </span>
+                </a>
+                <a href="#" class="btn-02">
+                    <span class="btn__text btn__text--newspaper">製本</span>
+                    <span class="btn__icon">
+                        <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="16" cy="16" r="16" fill="#0068B6" />
+                            <g clip-path="url(#clip0_817_15493)">
+                                <path d="M18.0934 22.6183L16.8418 21.3305L21.3772 16.7951H6.99475V15.0139H21.3772L16.8418 10.4785L18.0934 9.19067L24.8073 15.9045L18.0934 22.6183Z" fill="white" />
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_817_15493">
+                                    <rect width="19" height="19" fill="white" transform="translate(6.401 6.40002)" />
+                                </clipPath>
+                            </defs>
+                        </svg>
 
-                            </span>
-                        </a>
-
-
-                    </div>
-                </div>
+                    </span>
+                </a>
             </div>
         </div>
-
     </div>
+
+
     <?php get_template_part('template-parts/footer'); ?>
 </div>
