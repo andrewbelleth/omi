@@ -11,7 +11,7 @@ Template Name: 加工ページ
         'title_en' => 'PROCESSING',
         'title_jp' => '加工',
     ]); ?>
-    <div class="page-wrapper wrapper mt160--sp96">
+    <div class="page-wrapper mt160--sp96">
         <div class=" section section__col">
             <div class="page-printing__side section__side">
                 <ul>
@@ -394,7 +394,7 @@ Template Name: 加工ページ
                                 <path d="M18.0934 22.6183L16.8418 21.3305L21.3772 16.7951H6.99475V15.0139H21.3772L16.8418 10.4785L18.0934 9.19067L24.8073 15.9045L18.0934 22.6183Z" fill="white" />
                             </g>
                             <defs>
-                                <clipPath id="clip0_817_15493">
+                                <clipPath id="clip0_817_15493-1">
                                     <rect width="19" height="19" fill="white" transform="translate(6.401 6.40002)" />
                                 </clipPath>
                             </defs>
@@ -410,14 +410,14 @@ Template Name: 加工ページ
                                 <path d="M18.0934 22.6183L16.8418 21.3305L21.3772 16.7951H6.99475V15.0139H21.3772L16.8418 10.4785L18.0934 9.19067L24.8073 15.9045L18.0934 22.6183Z" fill="white" />
                             </g>
                             <defs>
-                                <clipPath id="clip0_817_15493">
+                                <clipPath id="clip0_817_15493-2">
                                     <rect width="19" height="19" fill="white" transform="translate(6.401 6.40002)" />
                                 </clipPath>
                             </defs>
                         </svg>
                     </span>
                 </a>
-                <a href="#" class="btn-02">
+                <a href="<?php echo esc_url(home_url('/service/printing/bookbinding')); ?>" class="btn-02">
                     <span class="btn__text btn__text--newspaper">製本</span>
                     <span class="btn__icon">
                         <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -426,12 +426,11 @@ Template Name: 加工ページ
                                 <path d="M18.0934 22.6183L16.8418 21.3305L21.3772 16.7951H6.99475V15.0139H21.3772L16.8418 10.4785L18.0934 9.19067L24.8073 15.9045L18.0934 22.6183Z" fill="white" />
                             </g>
                             <defs>
-                                <clipPath id="clip0_817_15493">
+                                <clipPath id="clip0_817_15493-3">
                                     <rect width="19" height="19" fill="white" transform="translate(6.401 6.40002)" />
                                 </clipPath>
                             </defs>
                         </svg>
-
                     </span>
                 </a>
             </div>

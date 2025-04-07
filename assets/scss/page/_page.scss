@@ -300,3 +300,28 @@ body:has(.common-contant) {
     }
   }
 }
+
+.page-ing {
+  .img-list--3column-sp1 {
+    gap: rem(80) rem(40);
+    li {
+      width: calc((100% - rem(80)) / 3);
+    }
+    img {
+      aspect-ratio: 347/245;
+      object-fit: cover;
+    }
+    p {
+      text-align: left;
+      margin-top: rem(16);
+    }
+  }
+  @include mq(tb) {
+    .img-list--3column-sp1 {
+      gap: rem(48);
+      li {
+        width: 100%;
+      }
+    }
+  }
+}

@@ -7,7 +7,6 @@ if (! defined('ABSPATH')) exit;
     <?php get_template_part('template-parts/components/page-head', null, [
         'title_en' => 'CONTACT',
         'title_jp' => 'お問い合わせ',
-        'breadcrumb' => 'お問い合わせ',
     ]); ?>
     <div class="container page-thanks">
         <div class="page short-page">
@@ -16,7 +15,7 @@ if (! defined('ABSPATH')) exit;
                 <p class="page-thanks__text">お問い合わせいただき、ありがとうございます。<br>
                     担当者より3営業日以内に<br class="sp-only">ご連絡させていただきます。<br>
                     <br>
-                    万が一連絡が入らない場合は、お手数ですが<br class="sp-only">「<span class="page-thanks__text-blue">0749-42-8400 近江印刷株式会社 営業部</span>」まで<br class="u-tb-br">ご連絡をお願いいたします。</span>
+                    万が一連絡が入らない場合は、お手数ですが<br class="sp-only">「<span class="page-thanks__text-blue">0749-42-8400 近江印刷株式会社 営業部</span>」まで<br class="u-tb-br">ご連絡をお願いいたします。
                 </p>
                 <a href="<?php echo esc_url(home_url('/')); ?>" class="btn">
                     <span class="btn__text">TOPに戻る</span>
@@ -34,6 +33,6 @@ if (! defined('ABSPATH')) exit;
 
         </div>
     </div>
-</main>
+</div>
 
 <?php get_template_part('template-parts/footer'); ?>
