@@ -65,6 +65,18 @@
         margin-top: rem(40);
     }
 }
+.mt48--sp40{
+    margin-top: rem(48);
+    @include mq(tb) {
+        margin-top: rem(40);
+    }
+}
+.mt56--sp40{
+    margin-top: rem(56);
+    @include mq(tb) {
+        margin-top: rem(40);
+    }
+}
 .mt160--sp96{
     margin-top: rem(160);
     @include mq(tb) {

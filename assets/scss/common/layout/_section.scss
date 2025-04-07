@@ -26,6 +26,16 @@
     }
    
 }
+.wrapper-152 {
+    display: flex;
+    flex-direction: column;
+    gap: rem(152);
+
+    @include mq(tb) {
+        gap: rem(120);
+    }
+   
+}
 
 .section {
     max-width: rem(1120);
