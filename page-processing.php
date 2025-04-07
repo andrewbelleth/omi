@@ -10,7 +10,6 @@ Template Name: 加工ページ
     <?php get_template_part('template-parts/components/page-head', null, [
         'title_en' => 'PROCESSING',
         'title_jp' => '加工',
-        'breadcrumb' => '加工',
     ]); ?>
     <div class="page-wrapper wrapper mt160--sp96">
         <div class=" section section__col">

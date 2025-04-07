@@ -610,8 +610,17 @@
     li {
         width: calc(100% / 2 - rem(24 / 2));
     }
+    p{
+        font-size: rem(15);
+        font-weight: 700;
+        line-height: calc(22.5 / 15);
+        letter-spacing: lts-em(0.75,15);
+        color: $black;
+        text-align: center;
+        margin-top: rem(8);
+    }
     @include mq(tb) {
-        gap: rem(8);
+        gap: rem(16);
         flex-direction: row;
         li {
            /*  width: calc(100% / 2 - rem(8 / 2)); */
