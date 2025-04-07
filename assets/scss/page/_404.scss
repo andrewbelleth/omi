@@ -1,7 +1,6 @@
 @use "../global" as *;
 
 .short-page {
-  margin-block: rem(160);
   h2 {
     font-size: rem(36);
     color: var(--blue);
@@ -26,7 +25,6 @@
     font-weight: 500;
   }
   @include mq(sp) {
-    margin-block: rem(80);
     h2 {
         font-size: rem(24);
         line-height: calc(36 / 24);

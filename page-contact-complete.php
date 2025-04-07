@@ -3,7 +3,7 @@ if (! defined('ABSPATH')) exit;
 ?>
 
 <?php get_template_part('template-parts/header'); ?>
-<main>
+<div class="common-contant wrapper">
     <?php get_template_part('template-parts/components/page-head', null, [
         'title_en' => 'CONTACT',
         'title_jp' => 'お問い合わせ',
