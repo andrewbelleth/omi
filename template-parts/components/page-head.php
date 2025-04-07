@@ -1,7 +1,6 @@
 <?php
 $title_en = $args['title_en'];
 $title_jp = $args['title_jp'];
-$breadcrumb = $args['breadcrumb'];
 ?>
 
 <div class="page__head">
