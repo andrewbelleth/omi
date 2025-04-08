@@ -351,9 +351,9 @@ body:has(.common-contant) {
   .btn-list {
     justify-content: center;
   }
-  .img-list--4column{
+  .img-list--4column {
     gap: rem(24);
-    li{
+    li {
       width: calc((100% - rem(72)) / 4);
     }
   }
@@ -373,19 +373,283 @@ body:has(.common-contant) {
         font-size: rem(14);
         letter-spacing: lts-em(0.7, 14);
         + p {
-            margin-top: rem(12);
-          }
+          margin-top: rem(12);
+        }
       }
     }
     .project__img-wrapper {
       max-width: 100%;
     }
-    .img-list--4column{
-        gap: rem(15);
-        flex-direction: row;
-        li{
-          width: calc((100% - rem(15)) / 2);
-        }
+    .img-list--4column {
+      gap: rem(15);
+      flex-direction: row;
+      li {
+        width: calc((100% - rem(15)) / 2);
       }
+    }
   }
 }
+.page-privacypolicy {
+  .page-wrapper {
+    h3 {
+      font-size: rem(15);
+      line-height: 180%;
+      letter-spacing: lts-em(0.75, 15);
+      display: flex;
+      align-items: center;
+      gap: rem(8);
+      font-weight: 700;
+      span {
+        display: block;
+      }
+    }
+    p,
+    li {
+      display: flex;
+      align-items: flex-start;
+      gap: rem(8);
+      span {
+        display: block;
+      }
+    }
+    .link-01-link {
+      color: $blue;
+      text-decoration: underline;
+      text-decoration-style: solid;
+      text-decoration-skip-ink: none;
+      text-decoration-thickness: auto;
+      text-underline-offset: auto;
+      text-underline-position: from-font;
+      font-weight: 500;
+      &:hover {
+        text-decoration: none;
+      }
+    }
+    .tar {
+      text-align: right;
+      justify-content: flex-end;
+    }
+    .text-flex {
+      display: flex;
+      align-items: flex-start;
+      gap: rem(16);
+      span {
+        display: block;
+        min-width: rem(78);
+        font-weight: 500;
+        + span {
+          flex: 1;
+          font-weight: 400;
+        }
+      }
+    }
+    .light-blue-box {
+      padding: rem(32) rem(48);
+      h2 {
+        font-weight: 700;
+      }
+    }
+  }
+  @include mq(tb) {
+    .page__head-inner {
+      width: 100%;
+      padding-left: rem(24);
+      .page__title--en {
+        font-size: rem(40);
+        letter-spacing: lts-em(2, 40);
+      }
+    }
+    .section__side {
+      ul {
+        gap: rem(12);
+        li {
+          max-width: calc(50% - rem(6.5));
+          width: 100%;
+          a {
+            font-size: rem(14);
+            line-height: 125%;
+            letter-spacing: lts-em(0.7, 14);
+            width: 100%;
+            padding-block: 0;
+            height: rem(48);
+            white-space: nowrap;
+          }
+        }
+      }
+    }
+    .component-box-item {
+      margin-top: rem(-64);
+      padding-top: rem(64);
+    }
+    .wrapper-136 {
+      gap: rem(64);
+    }
+    .page-wrapper {
+      p,
+      li {
+        font-size: rem(14);
+        line-height: 180%;
+        letter-spacing: lts-em(0.7, 14);
+      }
+
+      .text-flex {
+        flex-direction: column;
+        gap: rem(0);
+        span {
+          min-width: auto;
+        }
+      }
+      .text-flex.mt12 {
+        margin-top: rem(16);
+      }
+      .light-blue-box {
+        padding: rem(32) rem(24);
+      }
+    }
+    .sp-br {
+      display: block;
+      padding-left: rem(40);
+      font-weight: 400 !important;
+    }
+  }
+}
+.page-recruit {
+  .breadcrumb{
+    margin-top: rem(48);
+  }
+  .page__head-inner {
+    margin-top: rem(72);
+    z-index: 0;
+  }
+  .page-wrapper {
+    margin-top: rem(56);
+    position: relative;
+    z-index: 1;
+  }
+  .recruit {
+    background: $white;
+  }
+  .txt{
+    p{
+      font-size: rem(18);
+      line-height: 220%;
+      letter-spacing: lts-em(1.8, 18);
+    }
+  }
+  .recruit-btn {
+    margin-top: rem(103);
+
+    .btn-list {
+      gap: rem(20);
+      display: flex;
+      align-items: stretch;
+      justify-content: space-between;
+      width: 100%;
+    }
+    .btn {
+      border: 1px solid $gray;
+      width: calc(50% - rem(10));
+      min-width: auto;
+      aspect-ratio: 550/158;
+      height: auto;
+      padding: rem(48) rem(40);
+      border-radius: rem(8);
+      justify-content: space-between;
+      transition: 0.6s;
+      position: static;
+      @media (hover: hover) and (pointer: fine) {
+        &:hover {
+          background-size: 120%;
+          transition: 0.6s;
+          position: static;
+          padding: rem(48) rem(40);
+          color: $white;
+          .btn__icon {
+            scale: 1.1;
+          }
+        }
+      }
+    }
+    .btn--recruit {
+      background: url(../images/recruit/recruit__btn-bg01.webp) no-repeat center
+        center/110%;
+    }
+    .btn--career {
+      background: url(../images/recruit/recruit__btn-bg02.webp) no-repeat center
+        center/110%;
+    }
+    .btn__text {
+      font-size: rem(22);
+      line-height: 170%;
+      letter-spacing: lts-em(3.3, 22);
+      text-shadow: 0px 0px 16px rgba(40, 40, 40, 0.5);
+      margin: 0;
+      text-align: left;
+    }
+    .btn__icon{
+      width: rem(32);
+      height: rem(32);
+    }
+  }
+  .section__item{
+    padding-top: rem(160);
+    margin-top: 0;
+    background: $white;
+    z-index: 1;
+    position: relative;
+  }
+  @include mq(tb) {
+    .breadcrumb{
+      margin-top: rem(22);
+    }
+    .page__head-inner {
+      margin-top: rem(56);
+    }
+    .page-wrapper {
+      margin-top: rem(36);
+    }
+    .txt{
+      p{
+        font-size: rem(15);
+        line-height: 200%;
+        letter-spacing: lts-em(0.75, 15);
+      }
+    }
+    .recruit-btn {
+      margin-top: rem(56);
+  
+      .btn-list {
+        gap: rem(32);
+       flex-direction: column;
+      }
+      .btn {
+        width: 100%;
+        aspect-ratio: 327/120;
+        padding: rem(36) rem(24);
+      }
+      .btn--recruit {
+        background: url(../images/recruit/sp-recruit__btn-bg01.webp) no-repeat center
+          center/cover;
+      }
+      .btn--career {
+        background: url(../images/recruit/sp-recruit__btn-bg02.webp) no-repeat center
+          center/cover;
+      }
+      .btn__text {
+        font-size: rem(16);
+        line-height: 180%;
+        letter-spacing: lts-em(1.6, 16);
+        text-shadow: 0px 0px 12px rgba(40, 40, 40, 0.50);
+      }
+      .btn__icon{
+        width: rem(29);
+        height: rem(29);
+      }
+    }
+    
+    .section__item{
+      padding-top: rem(120);
+    }
+  }
+}
+
