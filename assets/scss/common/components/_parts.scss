@@ -43,6 +43,12 @@
         padding-left: 0;
     }
 }
+.pt160--sp96{
+    padding-top: rem(160);
+    @include mq(tb) {
+        padding-top: rem(96);
+    }
+}
 .mt4 {
     margin-top: rem(4);
 }
@@ -782,3 +788,8 @@
         padding-top: rem(88);
     }
 }
+
+.pallax-fixed{
+    position: sticky;
+    top: 10%;
+  } 

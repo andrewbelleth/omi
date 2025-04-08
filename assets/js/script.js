@@ -418,3 +418,15 @@ document.addEventListener('DOMContentLoaded', activateMenuByHash);
 
 // フラグメントが変化したとき
 window.addEventListener('hashchange', activateMenuByHash);
+
+//パララックス
+jQuery(window).on('load resize', function() {
+  var windowWidth = window.innerWidth;
+  var elements = jQuery('.pallax-fixed');
+  
+  if (windowWidth >= 768) {
+    Stickyfill.add(elements.get());
+  } else {
+    Stickyfill.remove(elements.get());
+  }
+});

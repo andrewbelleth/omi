@@ -6,7 +6,7 @@ Template Name: プライバシーポリシーページ
 ?>
 
 <?php get_template_part('template-parts/header'); ?>
-<div class="wrapper">
+
     <?php get_template_part('template-parts/components/page-head', null, [
         'title_en' => 'PRIVACY POLICY',
         'title_jp' => '個人情報保護方針',
@@ -179,7 +179,7 @@ Template Name: プライバシーポリシーページ
                         <p class="">・振込手数料は請求者のご負担となります</p>
                     </div>
                 </section>
-                <section class="light-blue-box" id="">
+                <section class="light-blue-box">
                     <div class="txt">
                         <h2>個人情報の取り扱いに関するお問い合わせは、<br class="pc-only">
                         下記の「個人情報問い合わせ窓口」までご連絡ください</h2>
@@ -205,4 +205,3 @@ Template Name: プライバシーポリシーページ
         </div>
     </div>
     <?php get_template_part('template-parts/footer'); ?>
-</div>

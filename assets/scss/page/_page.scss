@@ -506,10 +506,150 @@ body:has(.common-contant) {
         padding: rem(32) rem(24);
       }
     }
-    .sp-br{
+    .sp-br {
       display: block;
       padding-left: rem(40);
       font-weight: 400 !important;
     }
   }
 }
+.page-recruit {
+  .breadcrumb{
+    margin-top: rem(48);
+  }
+  .page__head-inner {
+    margin-top: rem(72);
+    z-index: 0;
+  }
+  .page-wrapper {
+    margin-top: rem(56);
+    position: relative;
+    z-index: 1;
+  }
+  .recruit {
+    background: $white;
+  }
+  .txt{
+    p{
+      font-size: rem(18);
+      line-height: 220%;
+      letter-spacing: lts-em(1.8, 18);
+    }
+  }
+  .recruit-btn {
+    margin-top: rem(103);
+
+    .btn-list {
+      gap: rem(20);
+      display: flex;
+      align-items: stretch;
+      justify-content: space-between;
+      width: 100%;
+    }
+    .btn {
+      border: 1px solid $gray;
+      width: calc(50% - rem(10));
+      min-width: auto;
+      aspect-ratio: 550/158;
+      height: auto;
+      padding: rem(48) rem(40);
+      border-radius: rem(8);
+      justify-content: space-between;
+      transition: 0.6s;
+      position: static;
+      @media (hover: hover) and (pointer: fine) {
+        &:hover {
+          background-size: 120%;
+          transition: 0.6s;
+          position: static;
+          padding: rem(48) rem(40);
+          color: $white;
+          .btn__icon {
+            scale: 1.1;
+          }
+        }
+      }
+    }
+    .btn--recruit {
+      background: url(../images/recruit/recruit__btn-bg01.webp) no-repeat center
+        center/110%;
+    }
+    .btn--career {
+      background: url(../images/recruit/recruit__btn-bg02.webp) no-repeat center
+        center/110%;
+    }
+    .btn__text {
+      font-size: rem(22);
+      line-height: 170%;
+      letter-spacing: lts-em(3.3, 22);
+      text-shadow: 0px 0px 16px rgba(40, 40, 40, 0.5);
+      margin: 0;
+      text-align: left;
+    }
+    .btn__icon{
+      width: rem(32);
+      height: rem(32);
+    }
+  }
+  .section__item{
+    padding-top: rem(160);
+    margin-top: 0;
+    background: $white;
+    z-index: 1;
+    position: relative;
+  }
+  @include mq(tb) {
+    .breadcrumb{
+      margin-top: rem(22);
+    }
+    .page__head-inner {
+      margin-top: rem(56);
+    }
+    .page-wrapper {
+      margin-top: rem(36);
+    }
+    .txt{
+      p{
+        font-size: rem(15);
+        line-height: 200%;
+        letter-spacing: lts-em(0.75, 15);
+      }
+    }
+    .recruit-btn {
+      margin-top: rem(56);
+  
+      .btn-list {
+        gap: rem(32);
+       flex-direction: column;
+      }
+      .btn {
+        width: 100%;
+        aspect-ratio: 327/120;
+        padding: rem(36) rem(24);
+      }
+      .btn--recruit {
+        background: url(../images/recruit/sp-recruit__btn-bg01.webp) no-repeat center
+          center/cover;
+      }
+      .btn--career {
+        background: url(../images/recruit/sp-recruit__btn-bg02.webp) no-repeat center
+          center/cover;
+      }
+      .btn__text {
+        font-size: rem(16);
+        line-height: 180%;
+        letter-spacing: lts-em(1.6, 16);
+        text-shadow: 0px 0px 12px rgba(40, 40, 40, 0.50);
+      }
+      .btn__icon{
+        width: rem(29);
+        height: rem(29);
+      }
+    }
+    
+    .section__item{
+      padding-top: rem(120);
+    }
+  }
+}
+
