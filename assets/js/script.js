@@ -431,45 +431,6 @@ window.addEventListener('hashchange', activateMenuByHash);
   }
 }); */
 
-/* gsap.registerPlugin(ScrollTrigger);
-
-(() => {
-  const initPallax = () => {
-    const target = document.querySelector('.js-pallax-target');
-    const img = document.querySelector('.js-pallax-img');
-    if (!target || !img) return;
-
-    // パララックスエフェクト
-    gsap.set(img, {
-      yPercent: 0
-    });
-
-    gsap.to(img, {
-      yPercent: -30,
-      scrollTrigger: {
-        trigger: target,
-        start: '80% bottom',  // 画面外から動かし始める
-        end: () => `+=${target.offsetHeight}`,
-        scrub: true,
-        ease: 'none',
-        markers: true
-      }
-    });
-
-    // ピン留めしてrecruitを上から通す
-    ScrollTrigger.create({
-      trigger: target,
-      start: 'top 12%', // 画面の10%の位置に達したら
-      end: () => `+=${target.offsetHeight}`, // 要素の高さ分だけピン
-      pin: true,
-      ease: 'none',
-      pinSpacing: false, // recruitがぴったり上にくるように
-      //markers: true,
-    });
-  };
-
-  window.addEventListener('load', initPallax);
-})(); */
 gsap.registerPlugin(ScrollTrigger);
 
 (() => {
@@ -479,7 +440,7 @@ gsap.registerPlugin(ScrollTrigger);
     const img = document.querySelector('.js-pallax-img');       // 中の画像
     if (!target || !img) return;
 
-    // ✅ パララックス（画像がゆっくり動く）
+    // パララックス（画像がゆっくり動く）
     gsap.fromTo(
       img,
       { yPercent: 0 },
@@ -496,7 +457,7 @@ gsap.registerPlugin(ScrollTrigger);
       }
     );
 
-    // ✅ ピン（画像が固定されて、その後 recruitがかぶる）
+    // ピン（画像が固定されて、その後 recruitがかぶる）
     ScrollTrigger.create({
       trigger: target,
       start: 'top 14%%', // トップが画面の10%にきたら
