@@ -65,6 +65,12 @@
 .mt24 {
     margin-top: rem(24);
 }
+.mt24--sp32{
+    margin-top: rem(24);
+    @include mq(tb) {
+        margin-top: rem(32);
+    }
+}
 
 .mt32 {
     margin-top: rem(32);
@@ -121,19 +127,37 @@
     }
 }
 
-.pt16--pt20 {
+.pt16--sp20 {
     padding-top: rem(16);
     @include mq(tb) {
         padding-top: rem(20);
     }
 }
 
+.pt24 {
+    padding-top: rem(24);
+}
+
+.pt24--sp20 {
+    padding-top: rem(24);
+    @include mq(tb) {
+        padding-top: rem(20);
+    }
+}
+
+.pl21--sp0 {
+    padding-left: rem(21);
+    @include mq(tb) {
+        padding-left: 0;
+    }
+}
 .pl21--sp20 {
     padding-left: rem(21);
     @include mq(tb) {
         padding-left: rem(20);
     }
 }
+
 
 
 .number-list {
@@ -143,8 +167,14 @@
 
 .disc-list {
     li {
+        position: relative;
+        padding-left: rem(19.7);
+
         &::before {
             content: '・';
+            position: absolute;
+            top: 0;
+            left: 0;
             display: inline-block;
             padding-inline: rem(6);
         }
@@ -185,7 +215,7 @@
     color: $black;
     width: 100%;
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     gap: rem(8);
 
     &.ttl-02--fsz16 {
@@ -197,12 +227,13 @@
         content: '';
         width: rem(13);
         height: rem(15);
+        flex-shrink: 0;
         display: block;
         background-image: url(../images/common/polygon-right-blue.svg);
         background-size: contain;
         background-repeat: no-repeat;
         background-position: center;
-        margin-top: rem(2);
+        margin-top: rem(2 + 7.5);
     }
 
     &.ttl-02--round::before {
@@ -213,7 +244,7 @@
         display: block;
         background-color: $blue;
         border-radius: 50%;
-        margin-top: rem(2);
+        margin-top: rem(2 + 7.5);
     }
 
     @include mq(tb) {
@@ -222,13 +253,13 @@
         &.ttl-02--triangle::before {
             width: rem(12);
             height: rem(14);
-            margin-top: 0;
+            margin-top: rem(9);
         }
     
         &.ttl-02--round::before {
             width: rem(12);
             height: rem(12);
-            margin-top: 0;
+            margin-top: rem(9);
         }
     }
 }
@@ -724,8 +755,22 @@
 
 .omito-logo {
     padding-bottom: rem(4);
+    padding-top: 1.25rem;
+    padding-left: 1.25rem;
     img {
         width: rem(199);
+    }
+
+    @include mq(tb) {
+        padding-bottom: rem(8);
+        padding-top: 1.5rem;
+        padding-left: 0;
+        display: flex;
+        align-items: center;
+        img {
+            width: rem(199);
+            margin-inline: auto;
+        }
     }
 }
 
