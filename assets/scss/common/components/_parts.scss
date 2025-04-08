@@ -18,6 +18,12 @@
 .mt8{
     margin-top: rem(8);
 }
+.mt8--sp12{
+    margin-top: rem(8);
+    @include mq(tb) {
+        margin-top: rem(12);
+    }
+}
 .mt16{
     margin-top: rem(16);
 }
@@ -31,6 +37,15 @@
     margin-top: rem(20);
     padding-left: rem(20);
 }
+.pl22--sp0{
+    padding-left: rem(22);
+    @include mq(tb) {
+        padding-left: 0;
+    }
+}
+.mt4 {
+    margin-top: rem(4);
+}
 
 .mt10 {
     margin-top: rem(10);
@@ -39,6 +54,13 @@
 .mt12 {
     margin-top: rem(12);
 }
+.mt12--sp16{
+    margin-top: rem(12);
+    @include mq(tb) {
+        margin-top: rem(16);
+    }
+}
+
 
 .mt24 {
     margin-top: rem(24);
