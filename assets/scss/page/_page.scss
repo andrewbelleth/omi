@@ -519,12 +519,13 @@ body:has(.common-contant) {
   }
   .page__head-inner {
     margin-top: rem(72);
-    z-index: 0;
+   /*  z-index: 0; */
   }
   .page-wrapper {
+    
     margin-top: rem(56);
-    position: relative;
-    z-index: 1;
+   /*  position: relative;
+    z-index: 1; */
   }
   .recruit {
     background: $white;
@@ -550,7 +551,8 @@ body:has(.common-contant) {
       border: 1px solid $gray;
       width: calc(50% - rem(10));
       min-width: auto;
-      aspect-ratio: 550/158;
+      /* aspect-ratio: 550/158; */
+      max-height: rem(172);
       height: auto;
       padding: rem(48) rem(40);
       border-radius: rem(8);
@@ -559,7 +561,7 @@ body:has(.common-contant) {
       position: static;
       @media (hover: hover) and (pointer: fine) {
         &:hover {
-          background-size: 120%;
+          background-size: 110% 110%;
           transition: 0.6s;
           position: static;
           padding: rem(48) rem(40);
@@ -572,11 +574,11 @@ body:has(.common-contant) {
     }
     .btn--recruit {
       background: url(../images/recruit/recruit__btn-bg01.webp) no-repeat center
-        center/110%;
+        center/100% 100%;
     }
     .btn--career {
       background: url(../images/recruit/recruit__btn-bg02.webp) no-repeat center
-        center/110%;
+        center/100% 100%;
     }
     .btn__text {
       font-size: rem(22);

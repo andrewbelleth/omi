@@ -420,7 +420,7 @@ document.addEventListener('DOMContentLoaded', activateMenuByHash);
 window.addEventListener('hashchange', activateMenuByHash);
 
 //パララックス
-jQuery(window).on('load resize', function() {
+/* jQuery(window).on('load resize', function() {
   var windowWidth = window.innerWidth;
   var elements = jQuery('.pallax-fixed');
   
@@ -429,4 +429,85 @@ jQuery(window).on('load resize', function() {
   } else {
     Stickyfill.remove(elements.get());
   }
-});
+}); */
+
+/* gsap.registerPlugin(ScrollTrigger);
+
+(() => {
+  const initPallax = () => {
+    const target = document.querySelector('.js-pallax-target');
+    const img = document.querySelector('.js-pallax-img');
+    if (!target || !img) return;
+
+    // パララックスエフェクト
+    gsap.set(img, {
+      yPercent: 0
+    });
+
+    gsap.to(img, {
+      yPercent: -30,
+      scrollTrigger: {
+        trigger: target,
+        start: '80% bottom',  // 画面外から動かし始める
+        end: () => `+=${target.offsetHeight}`,
+        scrub: true,
+        ease: 'none',
+        markers: true
+      }
+    });
+
+    // ピン留めしてrecruitを上から通す
+    ScrollTrigger.create({
+      trigger: target,
+      start: 'top 12%', // 画面の10%の位置に達したら
+      end: () => `+=${target.offsetHeight}`, // 要素の高さ分だけピン
+      pin: true,
+      ease: 'none',
+      pinSpacing: false, // recruitがぴったり上にくるように
+      //markers: true,
+    });
+  };
+
+  window.addEventListener('load', initPallax);
+})(); */
+gsap.registerPlugin(ScrollTrigger);
+
+(() => {
+  const initParallax = () => {
+    const target = document.querySelector('.js-pallax-target'); // ラッパー
+    const bg = document.querySelector('.pallax-bg');       // 背景画像
+    const img = document.querySelector('.js-pallax-img');       // 中の画像
+    if (!target || !img) return;
+
+    // ✅ パララックス（画像がゆっくり動く）
+    gsap.fromTo(
+      img,
+      { yPercent: 0 },
+      {
+        yPercent: -30,
+        scrollTrigger: {
+          trigger: bg,
+          start: 'center 80%', // 画面下に入ったらスタート
+          end: 'bottom top',  // 画面上から出るまで
+          scrub: 0.7,
+          ease: 'none',
+          // markers: true,
+        }
+      }
+    );
+
+    // ✅ ピン（画像が固定されて、その後 recruitがかぶる）
+    ScrollTrigger.create({
+      trigger: target,
+      start: 'top 14%%', // トップが画面の10%にきたら
+    /*  end: () => `+=${target.offsetHeight}`, */ // 最後までスクロールし終わったら終了
+    end: 'bottom top',  
+    pin: true,
+      pinSpacing: false, // recruitがピッタリかぶる
+      ease: 'none',
+       markers: true
+    });
+  };
+
+  window.addEventListener('load', initParallax);
+})();

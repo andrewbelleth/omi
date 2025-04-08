@@ -788,8 +788,22 @@
         padding-top: rem(88);
     }
 }
-
+/* 
 .pallax-fixed{
     position: sticky;
     top: 10%;
-  } 
+  }  */
+
+  .js-pallax-target {
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+  }
+
+  .pallax-bg {
+    display: block;
+  }
+  .recruit {
+    position: relative;
+    z-index: 2;
+  }
