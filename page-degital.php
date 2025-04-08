@@ -31,13 +31,13 @@ Template Name: 印刷ページ
             <section class="component-box-item" id="omito">
                 <h2 class="ttl-01 ">OMITO</h2>
                 <h3 class="ttl-02 ttl-02--triangle mt32--sp24">印刷だけじゃない！をテーマに、<br class="mobile">デジタルコンテンツに特化した事業を立ち上げました</h3>
-                <div class="omito-logo pt24pl21">
+                <div class="omito-logo">
                     <img src="<?php echo get_template_directory_uri(); ?>/assets/images/degital/omito-logo.png" alt="OMITO" width="199" height="54" loading="lazy">
                 </div>
                 <div class="txt-01">
                     <p>デジタル領域について、詳しく知りたい方はOMITOをチェック！</p>
                 </div>
-                <div class="component-box-btn pt24pl21">
+                <div class="component-box-btn mt24--sp32 pl21--sp0">
                     <a href="<?php echo esc_url(home_url('/omito')); ?>" class="btn inview">
                         <span class="btn__text">OMITO</span>
                         <span class="btn__icon">
@@ -134,7 +134,7 @@ Template Name: 印刷ページ
                 <div class="txt-01">
                     <p>デジタルデバイスの普及やインターネット環境の整備、SNSや動画投稿サイトなどの利用拡大によって、動画コンテンツは私たちにとってより身近なものとなりました。<br>1分間の動画の情報量は、一般的なWebサイトにおける3600ページ分（約180万文字）といわれています。動画コンテンツを活用したプロモーション活動を行うことで、紙媒体では伝えきれなかった情報や商品・サービスの魅力を、ターゲットに届けることができます。</p>
                 </div>
-                <div class="light-blue-box-wrap pt24pl21">
+                <div class="light-blue-box-wrap pt24 pl21--sp20">
                     <div class="light-blue-box">
                         <h4 class="ttl-04 ttl-04--fsz18">動画の活用シチュエーション</h4>
                         <div class="col col-gap4 mt12">
@@ -166,11 +166,11 @@ Template Name: 印刷ページ
                 </div>
                 <h3 class="ttl-02 ttl-02--triangle mt32--sp24">動画の制作実績</h3>
 
-                <ul class="img-list img-list--2column-sp1 mt32--sp24">
+                <ul class="img-list img-list--2column-sp1 pt24--sp20 pl21--sp20">
                     <li><img src="<?php echo get_template_directory_uri(); ?>/assets/images/degital/degital-01.png" alt="広報誌から事務用品印刷物まで幅広く対応" width="368" height="220" loading="lazy"></li>
                     <li><img src="<?php echo get_template_directory_uri(); ?>/assets/images/degital/degital-02.png" alt="広報誌から事務用品印刷物まで幅広く対応" width="368" height="220" loading="lazy"></li>
                 </ul>
-                <div class="component-box-btn mt32--sp40">
+                <div class="component-box-btn mt32 pl21--sp0">
                     <a href="<?php echo esc_url(home_url('/works')); ?>" class="btn inview">
                         <span class="btn__text">制作実績を見る</span>
                         <span class="btn__icon">
@@ -219,7 +219,7 @@ Template Name: 印刷ページ
                 </div>
 
 
-                <div class="light-blue-box-wrap pt24pl21">
+                <div class="light-blue-box-wrap pt24 pl21--sp20">
                     <div class="light-blue-box">
                         <h4 class="ttl-04 ttl-04--fsz18">ご提供サービス</h4>
                         <div class="txt txt--blue txt--fw500 mt12">
@@ -229,11 +229,11 @@ Template Name: 印刷ページ
                 </div>
                 <h3 class="ttl-02 ttl-02--triangle mt32--sp24">Webサイトの制作実績</h3>
 
-                <ul class="img-list img-list--2column-sp1 mt32--sp24">
+                <ul class="img-list img-list--2column-sp1 pt24--sp20 pl21--sp20">
                     <li><img src="<?php echo get_template_directory_uri(); ?>/assets/images/degital/degital-03.png" alt="広報誌から事務用品印刷物まで幅広く対応" width="368" height="220" loading="lazy"></li>
                     <li><img src="<?php echo get_template_directory_uri(); ?>/assets/images/degital/degital-04.png" alt="広報誌から事務用品印刷物まで幅広く対応" width="368" height="220" loading="lazy"></li>
                 </ul>
-                <div class="component-box-btn mt32--sp40">
+                <div class="component-box-btn mt32 pl21--sp0">
                     <a href="<?php echo esc_url(home_url('/works')); ?>" class="btn inview">
                         <span class="btn__text">制作実績を見る</span>
                         <span class="btn__icon">
@@ -267,7 +267,7 @@ Template Name: 印刷ページ
                     <p>広告を配信して終了ではなく、広告の効果を分析し、配信した結果をレポート形式でご説明いたします。継続的な改善を行うことで、コストパフォーマンスを最大化することができます。<br>お客様のビジネスの成功を、Web広告で加速させませんか？</p>
                 </div>
 
-                <div class="light-blue-box-wrap pt24pl21">
+                <div class="light-blue-box-wrap pt24 pl21--sp20">
                     <div class="light-blue-box">
                         <h4 class="ttl-04 ttl-04--fsz18">ご提供サービス</h4>
                         <div class="txt txt--blue txt--fw500 mt12">
@@ -277,11 +277,11 @@ Template Name: 印刷ページ
                 </div>
                 <h3 class="ttl-02 ttl-02--triangle mt32--sp24">Web広告の制作実績</h3>
 
-                <ul class="img-list img-list--2column-sp1 mt32--sp24">
+                <ul class="img-list img-list--2column-sp1 pt24--sp20 pl21--sp20">
                     <li><img src="<?php echo get_template_directory_uri(); ?>/assets/images/degital/degital-05.png" alt="広報誌から事務用品印刷物まで幅広く対応" width="368" height="220" loading="lazy"></li>
                     <li><img src="<?php echo get_template_directory_uri(); ?>/assets/images/degital/degital-06.png" alt="広報誌から事務用品印刷物まで幅広く対応" width="368" height="220" loading="lazy"></li>
                 </ul>
-                <div class="component-box-btn mt32--sp40">
+                <div class="component-box-btn mt32 pl21--sp0">
                     <a href="<?php echo esc_url(home_url('/works')); ?>" class="btn inview">
                         <span class="btn__text">制作実績を見る</span>
                         <span class="btn__icon">
@@ -305,7 +305,7 @@ Template Name: 印刷ページ
                 </div>
 
                 <h3 class="ttl-02 ttl-02--triangle mt32--sp24">使い方・作り方を動画で見る</h3>
-                <div class="img-list pt16--pt20 pl21--sp20">
+                <div class="img-list pt16--sp20 pl21--sp20">
                     <div class="img-list__item">
                         <div class="img-list__item-img">
                             <img src="http://omi.local/wp-content/themes/omi/assets/images/degital/degital-07.png" alt="画像の説明3">
@@ -325,7 +325,7 @@ Template Name: 印刷ページ
                 </div>
 
                 <h3 class="ttl-02 ttl-02--triangle mt32--sp24">WebBookの制作実績</h3>
-                <div class="img-list pt16--pt20 pl21--sp20">
+                <div class="img-list pt16--sp20 pl21--sp20">
                     <div class="img-list__item">
                         <div class="img-list__item-img">
                             <img src="http://omi.local/wp-content/themes/omi/assets/images/degital/degital-09.png" alt="画像の説明3">
@@ -338,7 +338,7 @@ Template Name: 印刷ページ
                     </div>
                 </div>
 
-                <div class="component-box-btn mt32--sp40 pl21--sp20">
+                <div class="component-box-btn mt32 pl21--sp0">
                     <a href="<?php echo esc_url(home_url('/works')); ?>" class="btn inview">
                         <span class="btn__text">制作実績を見る</span>
                         <span class="btn__icon">
