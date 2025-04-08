@@ -21,6 +21,12 @@
 .mt16{
     margin-top: rem(16);
 }
+.mt16--sp10{
+    margin-top: rem(16);
+    @include mq(tb) {
+        margin-top: rem(10);
+    }
+}
 .mt20--sp24{
     margin-top: rem(20);
     @include mq(tb) {
@@ -40,6 +46,10 @@
     margin-top: rem(12);
 }
 
+.mt20 {
+    margin-top: rem(20);
+}
+
 .mt24 {
     margin-top: rem(24);
 }
@@ -49,9 +59,21 @@
         margin-top: rem(32);
     }
 }
+.mt24--sp16{
+    margin-top: rem(24);
+    @include mq(tb) {
+        margin-top: rem(16);
+    }
+}
 
 .mt32 {
     margin-top: rem(32);
+}
+.mt32--sp10{
+    margin-top: rem(32);
+    @include mq(tb) {
+        margin-top: rem(10);
+    }
 }
 .mt32--sp20{
     margin-top: rem(32);
@@ -105,6 +127,13 @@
     }
 }
 
+.pi40--sp24 {
+    padding-inline: rem(40);
+    @include mq(tb) {
+        padding-inline: rem(24);
+    }
+}
+
 .pt16--sp20 {
     padding-top: rem(16);
     @include mq(tb) {
@@ -133,6 +162,13 @@
     padding-left: rem(21);
     @include mq(tb) {
         padding-left: rem(20);
+    }
+}
+
+.gap20--sp16 {
+    gap: rem(20) !important;
+    @include mq(tb) {
+        gap: rem(16) !important;
     }
 }
 
@@ -228,6 +264,12 @@
     @include mq(tb) {
         font-size: rem(17);
 
+        &.ttl-02--fsz16 {
+            font-size: rem(15);
+            line-height: calc(27 / 15);
+        }
+    
+
         &.ttl-02--triangle::before {
             width: rem(12);
             height: rem(14);
@@ -288,6 +330,7 @@
     @include mq(tb) {
         p, li {
             font-size: rem(14);
+            letter-spacing: .045em;
         }
 
         &.txt--mt32 {
@@ -629,8 +672,86 @@
     background-color: $light-blue;
     padding: rem(28) rem(40);
 
+    .light-blue-box-flex {
+        position: relative;
+        display: flex;
+        align-items: flex-start;
+        gap: rem(64);
+        padding-bottom: rem(4);
+
+        &::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 1px;
+            height: 100%;
+            background-color: $white;
+        }
+
+        .light-blue-box-flex__item {
+            flex: 1;
+
+            .light-blue-box-flex__item-title {
+                width: 100%;
+                font-size: rem(17);
+                font-weight: 700;
+                line-height: calc(29 / 17);
+                letter-spacing: 0;
+                background: $blue;
+                color: $white;
+                padding-inline: rem(16);
+            }
+
+            .light-blue-box-flex__item-body {
+                display: flex;
+                align-items: flex-start;
+                gap: rem(30);
+                padding-left: rem(12);
+
+                ul {
+                    display: flex;
+                    flex-direction: column;
+
+                    li {
+                        padding-left: rem(18);
+                        &::before {
+                            color: $blue;
+                            padding-inline: rem(5);
+                        }
+                        p {
+                            color: $blue;
+                            font-weight: 500;
+                        }                        
+                    }
+                }
+            }
+        }
+    }
+
     @include mq(tb) {
         padding: rem(28) rem(24);
+
+        .light-blue-box-flex {
+            flex-direction: column;
+            gap: rem(16);
+            padding-bottom: rem(0);
+    
+            &::before {
+                display: none;
+            }
+    
+            .light-blue-box-flex__item {
+                width: 100%;
+                flex: none;
+    
+                .light-blue-box-flex__item-title {
+                    font-size: rem(16);
+                    line-height: calc(35 / 16);
+                }
+            }
+        }
     }
 }
 
