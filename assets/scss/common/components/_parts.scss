@@ -33,6 +33,12 @@
         margin-top: rem(10);
     }
 }
+.mt16--sp12{
+    margin-top: rem(16);
+    @include mq(tb) {
+        margin-top: rem(12);
+    }
+}
 .mt20--sp24{
     margin-top: rem(20);
     @include mq(tb) {
@@ -144,6 +150,19 @@
 .mt40 {
     margin-top: rem(40);
 }
+.mt40--sp24{
+    margin-top: rem(40);
+    @include mq(tb) {
+        margin-top: rem(24);
+    }
+}
+.mt64--sp48{
+    margin-top: rem(64);
+    @include mq(tb) {
+        margin-top: rem(48);
+    }
+}
+
 
 .pt24pl21 {
     padding-top: rem(24);
@@ -311,6 +330,22 @@
         }
     }
 }
+.ttl-03 {
+    display: block;
+    width: 100%;
+    font-size: rem(28);
+    font-weight: 700;
+    line-height: 160%;
+    letter-spacing: lts-em(2.8,28);
+    color: $blue;
+    padding-bottom: rem(28);
+   
+    @include mq(tb) {
+        font-size: rem(20);
+        padding-bottom: rem(24);
+        letter-spacing: lts-em(2,20);
+    }
+}
 
 .ttl-04 {
     font-size: rem(17);
@@ -323,6 +358,19 @@
         font-size: rem(18);
         line-height: 1.7;
         letter-spacing: 0em;
+    }
+}
+.ttl-05 {
+    font-size: rem(16);
+    font-weight: 500;
+    line-height: 180%;
+    letter-spacing: lts-em(0.8,16);
+    color: $black;
+
+    @include mq(tb) {
+        font-size: rem(14);
+        line-height: 180%;
+        letter-spacing: lts-em(0.75,14);
     }
 }
 
@@ -909,22 +957,12 @@
         padding-top: rem(88);
     }
 }
-/* 
-.pallax-fixed{
-    position: sticky;
-    top: 10%;
-  }  */
 
-  .js-pallax-target {
-    position: relative;
-    z-index: 1;
-    overflow: hidden;
-  }
 
-  .pallax-bg {
-    display: block;
-  }
   .recruit {
     position: relative;
     z-index: 2;
+  }
+  .tar{
+    text-align: right;
   }

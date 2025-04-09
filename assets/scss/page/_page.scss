@@ -514,24 +514,23 @@ body:has(.common-contant) {
   }
 }
 .page-recruit {
-  .breadcrumb{
+  .breadcrumb {
     margin-top: rem(48);
   }
   .page__head-inner {
     margin-top: rem(72);
-   /*  z-index: 0; */
+    /*  z-index: 0; */
   }
   .page-wrapper {
-    
     margin-top: rem(56);
-   /*  position: relative;
+    /*  position: relative;
     z-index: 1; */
   }
   .recruit {
     background: $white;
   }
-  .txt{
-    p{
+  .txt {
+    p {
       font-size: rem(18);
       line-height: 220%;
       letter-spacing: lts-em(1.8, 18);
@@ -588,12 +587,12 @@ body:has(.common-contant) {
       margin: 0;
       text-align: left;
     }
-    .btn__icon{
+    .btn__icon {
       width: rem(32);
       height: rem(32);
     }
   }
-  .section__item{
+  .section__item {
     padding-top: rem(160);
     margin-top: 0;
     background: $white;
@@ -601,7 +600,7 @@ body:has(.common-contant) {
     position: relative;
   }
   @include mq(tb) {
-    .breadcrumb{
+    .breadcrumb {
       margin-top: rem(22);
     }
     .page__head-inner {
@@ -610,8 +609,8 @@ body:has(.common-contant) {
     .page-wrapper {
       margin-top: rem(36);
     }
-    .txt{
-      p{
+    .txt {
+      p {
         font-size: rem(15);
         line-height: 200%;
         letter-spacing: lts-em(0.75, 15);
@@ -619,10 +618,10 @@ body:has(.common-contant) {
     }
     .recruit-btn {
       margin-top: rem(56);
-  
+
       .btn-list {
         gap: rem(32);
-       flex-direction: column;
+        flex-direction: column;
       }
       .btn {
         width: 100%;
@@ -630,28 +629,109 @@ body:has(.common-contant) {
         padding: rem(36) rem(24);
       }
       .btn--recruit {
-        background: url(../images/recruit/sp-recruit__btn-bg01.webp) no-repeat center
-          center/cover;
+        background: url(../images/recruit/sp-recruit__btn-bg01.webp) no-repeat
+          center center/cover;
       }
       .btn--career {
-        background: url(../images/recruit/sp-recruit__btn-bg02.webp) no-repeat center
-          center/cover;
+        background: url(../images/recruit/sp-recruit__btn-bg02.webp) no-repeat
+          center center/cover;
       }
       .btn__text {
         font-size: rem(16);
         line-height: 180%;
         letter-spacing: lts-em(1.6, 16);
-        text-shadow: 0px 0px 12px rgba(40, 40, 40, 0.50);
+        text-shadow: 0px 0px 12px rgba(40, 40, 40, 0.5);
       }
-      .btn__icon{
+      .btn__icon {
         width: rem(29);
         height: rem(29);
       }
     }
-    
-    .section__item{
+
+    .section__item {
       padding-top: rem(120);
     }
   }
 }
 
+.page-facility {
+  .section__col{
+    gap: rem(160);
+  }
+  .facility-list {
+    display: flex;
+    flex-direction: column;
+    border-top: 1px solid var(--light-gray);
+    border-bottom: 1px solid var(--light-gray);
+    li {
+      display: flex;
+      flex: 1;
+      align-items: center;
+      justify-content: space-between;
+      padding: rem(12) rem(20);
+      gap: rem(20);
+      font-size: rem(14);
+      line-height: 160%;
+      letter-spacing: lts-em(0.7, 14);
+      font-feature-settings: 'pwid' on, 'palt' on;
+      span {
+        width: rem(86);
+        min-width: fit-content;
+        display: block;
+        text-align: right;
+      }
+      &:nth-child(odd) {
+        background: $light-gray;
+      }
+    }
+  }
+  .component-box-item {
+    margin-top: rem(-96);
+    padding-top: rem(96);
+  }
+
+  @include mq(tb) {
+    .section__col{
+      gap: rem(48);
+    }
+    .section__side {
+      ul {
+        gap: rem(12);
+        li {
+          max-width: calc(50% - rem(6.5));
+          width: 100%;
+          a {
+            font-size: rem(14);
+            line-height: 125%;
+            letter-spacing: lts-em(0.7, 14);
+            width: 100%;
+            padding-block: 0;
+            height: rem(48);
+            white-space: nowrap;
+          }
+        }
+      }
+    }
+    .facility-list {
+      width: calc(100% + rem(24) * 2);
+      margin-left: rem(-24);
+      li {
+        padding: rem(11) rem(24);
+        gap: rem(20);
+        font-size: rem(13);
+        letter-spacing: lts-em(0.65, 13);
+        span {
+          width: rem(44);
+         /*  font-size: rem(14); */
+          min-width: 44px;
+          white-space: nowrap;
+        }
+      }
+    }
+    .component-box-item {
+      margin-top: rem(-64);
+      padding-top: rem(64);
+    }
+
+  }
+}

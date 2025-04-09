@@ -26,7 +26,15 @@
     @include mq(tb) {
         gap: rem(88);
     }
+}
+.wrapper-94--64 {
+    display: flex;
+    flex-direction: column;
+    gap: rem(94);
 
+    @include mq(tb) {
+        gap: rem(64);
+    }
 }
 
 .wrapper-152 {
