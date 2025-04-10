@@ -461,14 +461,81 @@ gsap.registerPlugin(ScrollTrigger);
     ScrollTrigger.create({
       trigger: target,
       start: 'top 14%%', // トップが画面の10%にきたら
-    /*  end: () => `+=${target.offsetHeight}`, */ // 最後までスクロールし終わったら終了
-    end: 'bottom top',  
-    pin: true,
+      /*  end: () => `+=${target.offsetHeight}`, */ // 最後までスクロールし終わったら終了
+      end: 'bottom top',
+      pin: true,
       pinSpacing: false, // recruitがピッタリかぶる
       ease: 'none',
-       markers: true
+      markers: true
     });
   };
 
   window.addEventListener('load', initParallax);
 })();
+
+const shuffleNumberCounter = (target) => {
+  const targetNum = Number(target.getAttribute('data-num'))
+  if (!targetNum) {
+    return
+  }
+
+  const duration = 2000 // 1秒間
+  const startTime = performance.now()
+
+  const animate = (currentTime) => {
+    const elapsed = currentTime - startTime
+    const progress = Math.min(elapsed / duration, 1)
+
+    // イージング関数を使用してアニメーションを滑らかにする
+    const easeProgress = 1 - Math.pow(1 - progress, 3)
+    const currentNum = Math.floor(targetNum * easeProgress)
+
+    if (Number.isInteger(targetNum)) {
+      target.innerHTML = currentNum.toLocaleString()
+    } else {
+      target.innerHTML = `${currentNum.toLocaleString()}.${Math.floor(Math.random() * 9)}`
+    }
+
+    if (progress < 1) {
+      requestAnimationFrame(animate)
+    } else {
+      // 最終的な値を設定
+      target.innerHTML = targetNum.toLocaleString()
+    }
+  }
+
+  requestAnimationFrame(animate)
+}
+
+document.addEventListener('DOMContentLoaded', function () {
+  const solutions = document.querySelectorAll('.js-count');
+  const targets = document.querySelectorAll('.js-count-num');
+  let animatedElements = new Set();
+
+  function isElementInViewport(el) {
+    const rect = el.getBoundingClientRect();
+    const windowHeight = window.innerHeight || document.documentElement.clientHeight;
+    return (rect.top <= windowHeight * 0.8 && rect.bottom >= 0);
+  }
+  function startAnimation() {
+    targets.forEach((target, index) => {
+      shuffleNumberCounter(target)
+    }
+    );
+  }
+  function handleScroll() {
+    solutions.forEach((solution, index) => {
+      if (!animatedElements.has(solution) && isElementInViewport(solution)) {
+        startAnimation();
+        animatedElements.add(solution);
+      }
+    });
+
+    // すべての要素がアニメーション済みの場合、スクロールイベントを削除
+    if (animatedElements.size === solutions.length) {
+      window.removeEventListener('scroll', handleScroll);
+    }
+  }
+  window.addEventListener('scroll', handleScroll);
+  handleScroll();
+});
