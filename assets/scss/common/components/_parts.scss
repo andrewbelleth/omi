@@ -156,10 +156,22 @@
         margin-top: rem(24);
     }
 }
+.mt64--sp40{
+    margin-top: rem(64);
+    @include mq(tb) {
+        margin-top: rem(40);
+    }
+}
 .mt64--sp48{
     margin-top: rem(64);
     @include mq(tb) {
         margin-top: rem(48);
+    }
+}
+.mt128--sp72{
+    margin-top: rem(128);
+    @include mq(tb) {
+        margin-top: rem(72);
     }
 }
 
@@ -965,4 +977,7 @@
   }
   .tar{
     text-align: right;
+  }
+  .jcc{
+    justify-content: center;
   }
