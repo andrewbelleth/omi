@@ -130,6 +130,22 @@
     margin-top: rem(20);
 }
 
+.mt20--sp24 {
+    margin-top: rem(20);
+
+    @include mq(tb) {
+        margin-top: rem(12);
+    }
+}
+
+.mt20--sp24 {
+    margin-top: rem(20);
+
+    @include mq(tb) {
+        margin-top: rem(24);
+    }
+}
+
 .mt20--sp16 {
     margin-top: rem(20);
 
@@ -333,6 +349,39 @@
     margin-top: rem(40);
 }
 
+.mt40--sp24 {
+    margin-top: rem(40);
+
+    @include mq(tb) {
+        margin-top: rem(24);
+    }
+}
+
+.mt64--sp40 {
+    margin-top: rem(64);
+
+    @include mq(tb) {
+        margin-top: rem(40);
+    }
+}
+
+.mt64--sp48 {
+    margin-top: rem(64);
+
+    @include mq(tb) {
+        margin-top: rem(48);
+    }
+}
+
+.mt128--sp72 {
+    margin-top: rem(128);
+
+    @include mq(tb) {
+        margin-top: rem(72);
+    }
+}
+
+
 .pt24pl21 {
     padding-top: rem(24);
     padding-left: rem(21);
@@ -458,8 +507,8 @@
 
     .sppl20 {
         padding-left: rem(20);
-    }    
-    
+    }
+
 }
 
 .gap20--sp16 {
@@ -615,6 +664,23 @@
     }
 }
 
+.ttl-03 {
+    display: block;
+    width: 100%;
+    font-size: rem(28);
+    font-weight: 700;
+    line-height: 160%;
+    letter-spacing: lts-em(2.8, 28);
+    color: $blue;
+    padding-bottom: rem(28);
+
+    @include mq(tb) {
+        font-size: rem(20);
+        padding-bottom: rem(24);
+        letter-spacing: lts-em(2, 20);
+    }
+}
+
 .ttl-04 {
     font-size: rem(17);
     font-weight: 700;
@@ -626,6 +692,20 @@
         font-size: rem(18);
         line-height: 1.7;
         letter-spacing: 0em;
+    }
+}
+
+.ttl-05 {
+    font-size: rem(16);
+    font-weight: 500;
+    line-height: 180%;
+    letter-spacing: lts-em(0.8, 16);
+    color: $black;
+
+    @include mq(tb) {
+        font-size: rem(14);
+        line-height: 180%;
+        letter-spacing: lts-em(0.75, 14);
     }
 }
 
@@ -1200,11 +1280,6 @@
     }
 }
 
-/* .img-list--3column-sp1.mt20pl20{
-    li {
-        width: calc(100% / 3 - rem(46 / 3));
-    }
-} */
 
 .component-item-column-g10 {
     display: flex;
@@ -1277,7 +1352,8 @@
         @include mq(tb) {
             flex-direction: column;
             gap: rem(16);
-            .btn {  
+
+            .btn {
                 width: inherit;
                 min-width: 17.5rem;
             }
@@ -1295,11 +1371,6 @@
     }
 }
 
-/* 
-.pallax-fixed{
-    position: sticky;
-    top: 10%;
-  }  */
 
 .js-pallax-target {
     position: relative;
@@ -1314,4 +1385,18 @@
 .recruit {
     position: relative;
     z-index: 2;
+}
+
+
+.recruit {
+    position: relative;
+    z-index: 2;
+}
+
+.tar {
+    text-align: right;
+}
+
+.jcc {
+    justify-content: center;
 }
