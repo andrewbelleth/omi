@@ -18,10 +18,22 @@
 .mt8{
     margin-top: rem(8);
 }
+.mt2--sp6{
+    margin-top: rem(2);
+    @include mq(tb) {
+        margin-top: rem(6);
+    }
+}
 .mt8--sp12{
     margin-top: rem(8);
     @include mq(tb) {
         margin-top: rem(12);
+    }
+}
+.mt8--sp20{
+    margin-top: rem(8);
+    @include mq(tb) {
+        margin-top: rem(20);
     }
 }
 .mt16{
@@ -55,11 +67,29 @@
         padding-left: 0;
     }
 }
+.pl21--sp0{
+    padding-left: rem(21);
+    @include mq(tb) {
+        padding-left: 0;
+    }
+}
 .pt160--sp96{
     padding-top: rem(160);
     @include mq(tb) {
         padding-top: rem(96);
     }
+}
+.pt8--sp0{
+    padding-top: rem(8);
+    @include mq(tb) {
+        padding-top: 0;
+    }
+}
+.pt20{
+    padding-top: rem(20);
+}
+.pl20{
+    padding-left: rem(20);
 }
 .mt4 {
     margin-top: rem(4);
@@ -71,6 +101,18 @@
 
 .mt12 {
     margin-top: rem(12);
+}
+.mt12--sp8{
+    margin-top: rem(12);
+    @include mq(tb) {
+        margin-top: rem(8);
+    }
+}
+.mt12--sp14{
+    margin-top: rem(12);
+    @include mq(tb) {
+        margin-top: rem(14);
+    }
 }
 .mt12--sp16{
     margin-top: rem(12);
@@ -125,6 +167,24 @@
     margin-top: rem(32);
     @include mq(tb) {
         margin-top: rem(40);
+    }
+}
+.mt32--sp36{
+    margin-top: rem(32);
+    @include mq(tb) {
+        margin-top: rem(36);
+    }
+}
+.mt40--sp20{
+    margin-top: rem(40);
+    @include mq(tb) {
+        margin-top: rem(20);
+    }
+}
+.mt40--sp24{
+    margin-top: rem(40);
+    @include mq(tb) {
+        margin-top: rem(24);
     }
 }
 .mt48--sp40{
@@ -210,6 +270,12 @@
         padding-top: rem(20);
     }
 }
+.pt8--sp10{
+    padding-top: rem(8);
+    @include mq(tb) {
+        padding-top: rem(10);
+    }
+}
 
 .pl21--sp0 {
     padding-left: rem(21);
@@ -222,6 +288,9 @@
     @include mq(tb) {
         padding-left: rem(20);
     }
+}
+.pl21--sp20{
+    padding-left: rem(21);
 }
 
 .gap20--sp16 {
@@ -895,6 +964,7 @@
         color: $black;
         text-align: center;
         margin-top: rem(8);
+       
     }
     @include mq(tb) {
         gap: rem(20);
@@ -981,3 +1051,88 @@
   .jcc{
     justify-content: center;
   }
+  .fw-400{
+    font-weight: 400;
+  }
+  .fw700{
+    font-weight: 700;
+  }
+
+  .fz13{
+    font-size: rem(13);
+    /* line-height: calc(21 / 13);
+    letter-spacing: lts-em(0.65, 13); */
+  }
+  @mixin fz13--sp12{
+    font-size: rem(13);
+    @include mq(tb) {
+        font-size: rem(12);
+    }
+  }
+  .fz22--sp16{
+    font-size: rem(22);
+    @include mq(tb) {
+        font-size: rem(16);
+    }
+  }
+  @mixin fz10{
+    font-size: rem(10);
+    font-weight: 400;
+    line-height: 140%;
+    letter-spacing: lts-em(0.5, 10);
+  }
+  @mixin fz12{
+    font-size: rem(12);
+    font-weight: 600;
+    line-height: 180%;
+  }
+  @mixin fz12-blue{
+    font-size: rem(12);
+    font-weight: 500;
+    line-height: 170%;
+    letter-spacing: lts-em(1.2, 12);
+  }
+
+  .link-blue{
+    color: $blue;
+    text-decoration: underline;
+    font-weight: 500;
+    &:hover{
+        text-decoration: none;
+    }
+  }
+  .db {
+    display: block;
+  }
+  .mr7{
+    margin-right: rem(7);
+  }
+  .mr8{
+    margin-right: rem(8);
+  }
+  .g12{
+    gap: rem(12);
+  }
+  .blue-circle{
+    color: $blue;
+  }
+  .white-tag{
+    padding-inline: rem(16);
+    background: $white;
+    color: $blue;
+    border-radius: rem(100);
+    @include mq(tb) {
+        padding-inline: rem(10);
+    }
+  }
+  .u-flex{
+    display: flex;
+  }
+  .u-flex-aic{
+    display: flex;
+    align-items: center;
+  }
+  .txt-blue{
+    color: $blue;
+  }
+

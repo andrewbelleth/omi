@@ -99,6 +99,47 @@ Template Name: 印刷ページ
                 </a>
             </div>
         </section>
+        <section class="component-box-item type-processing" id="type-processing">
+            <h2 class="ttl-01">加工・製本</h2>
+            <div class="txt m32">
+                <p>
+                当社の自社工場設備と信頼ある協力会社との連携により、印刷物に付加価値をプラスした高品質な製品をご提供します。<br>
+                加工が必要な場合には、加工位置や向きを示す仕上がり見本をご準備ください。
+                </p>
+            </div>
+            <ul class="img-list img-list--2column-sp1 mt32--sp24">
+                <li><img src="<?php echo get_template_directory_uri(); ?>/assets/images/printing/printing-img07.webp" alt="加工が必要な場合でも高品質な製品を提供" width="368" height="220" loading="lazy"></li>
+                <li><img src="<?php echo get_template_directory_uri(); ?>/assets/images/printing/printing-img08.webp" alt="加工が必要な場合でも高品質な製品を提供" width="368" height="220" loading="lazy"></li>
+            </ul>
+            <div class="component-box-btn mt32--sp40">
+            <div class="btn-list">
+                        <a href="<?php echo esc_url(home_url('/service/printing/processing')); ?>" class="btn inview">
+                            <span class="btn__text">加工について詳しく見る</span>
+                            <span class="btn__icon">
+                                <svg viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_40_1378)">
+                                        <path
+                                            d="M13.6814 18.9216L12.2322 17.4304L17.4836 12.1789H0.830322V10.1164H17.4836L12.2322 4.86497L13.6814 3.37378L21.4553 11.1477L13.6814 18.9216Z"
+                                            fill="#0068B6" />
+                                    </g>
+                                </svg>
+                            </span>
+                        </a>
+                        <a href="<?php echo esc_url(home_url('/service/printing/bookbinding')); ?>" class="btn inview">
+                            <span class="btn__text">製本について詳しく見る</span>
+                            <span class="btn__icon">
+                                <svg viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_40_1378)">
+                                        <path
+                                            d="M13.6814 18.9216L12.2322 17.4304L17.4836 12.1789H0.830322V10.1164H17.4836L12.2322 4.86497L13.6814 3.37378L21.4553 11.1477L13.6814 18.9216Z"
+                                            fill="#0068B6" />
+                                    </g>
+                                </svg>
+                            </span>
+                        </a>
+                    </div>
+            </div>
+        </section>
         <section class="component-box-item type-agency" id="type-agency">
             <h2 class="ttl-01">業務代行</h2>
             <div class="txt mt32--sp24">
