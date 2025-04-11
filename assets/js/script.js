@@ -529,3 +529,18 @@ document.addEventListener('DOMContentLoaded', function () {
   window.addEventListener('scroll', handleScroll);
   handleScroll();
 });
+
+document.addEventListener('DOMContentLoaded', function () {
+  const activationButton = document.querySelector('.js-activation-button');
+  const activationCheckBox = document.querySelector('.js-activation-check');
+
+  activationButton.disabled = true;
+
+  activationCheckBox.addEventListener('change', function () {
+    if (this.checked) {
+      activationButton.disabled = false;
+    } else {
+      activationButton.disabled = true;
+    }
+  });
+});

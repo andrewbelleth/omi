@@ -12,8 +12,8 @@ if (! defined('ABSPATH')) exit;
 </div>
 <div class="page__head-inner">
     <h2 class="page__title">
-        <span class="page__title--en">RECRUIT</span>
-        <span class="page__title--jp">リクルート</span>
+        <span class="page__title--en">COMPANY</span>
+        <span class="page__title--jp">会社概要</span>
     </h2>
 </div>
 <div class="page-wrapper">
@@ -50,6 +50,7 @@ if (! defined('ABSPATH')) exit;
             </div>
         </div>
     
+        <div class="mt160--sp120">
         <?php
         $args = array(
             'slider_array' => array(
@@ -65,8 +66,9 @@ if (! defined('ABSPATH')) exit;
         );
         ?>
         <?php get_template_part('template-parts/components/gallery', null, $args); ?>
+        </div>
     
-        <div class="company-about section">
+        <div class="company-about section mt160--sp120">
             <div class="company-about__head section__head">
                 <h2 class="section__title">
                     <span class="section__title--en">ABOUT</span>
@@ -128,9 +130,10 @@ if (! defined('ABSPATH')) exit;
             </div>
         </div>
     
-        <div class="component-box-item section">
-            <div class="link-01-component">
-                <div class="link-01-head">
+        <div class="mt160--sp120 mb160--sp120">
+            <div class="component-box-item section">
+                <div class="link-01-component">
+                    <div class="link-01-head">
                     <h3 class="link-01-title">COMPANY</h3>
                 </div>
                 <div class="btn-list-01">

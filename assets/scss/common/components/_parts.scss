@@ -8,6 +8,15 @@
     }
 }
 
+.mobile-sp {
+    display: none;
+
+    @include mq(sp) {
+        display: block;
+    }
+}
+
+
 .desktop {
     display: block;
 
@@ -18,6 +27,10 @@
 
 .colorBlue {
     color: $blue;
+}
+
+.bgLightBlue {
+    background-color: $light-blue !important;
 }
 
 .fsz13 {
@@ -53,6 +66,15 @@
     }
 }
 
+.fsz15--sp13 {
+    font-size: rem(15);
+    line-height: 1.8;
+    letter-spacing: .05em;
+
+    @include mq(tb) {
+        font-size: rem(13);
+    }
+}
 
 .fsz18 {
     font-size: rem(18);
@@ -111,6 +133,14 @@
 
     @include mq(tb) {
         margin-top: rem(12);
+    }
+}
+
+.mt12--sp8 {
+    margin-top: rem(12);
+
+    @include mq(tb) {
+        margin-top: rem(8);
     }
 }
 
@@ -336,6 +366,30 @@
     }
 }
 
+.mt64--sp40 {
+    margin-top: rem(64);
+
+    @include mq(tb) {
+        margin-top: rem(40);
+    }
+}
+
+.mt72--sp64 {
+    margin-top: rem(72);
+
+    @include mq(tb) {
+        margin-top: rem(64);
+    }
+}
+
+.mt80--sp64 {
+    margin-top: rem(80);
+
+    @include mq(tb) {
+        margin-top: rem(64);
+    }
+}
+
 .mt160--sp96 {
     margin-top: rem(160);
 
@@ -381,6 +435,21 @@
     }
 }
 
+.mt160--sp120 {
+    margin-top: rem(160);
+
+    @include mq(tb) {
+        margin-top: rem(120);
+    }
+}
+
+.mb160--sp120 {
+    margin-bottom: rem(160);
+
+    @include mq(tb) {
+        margin-bottom: rem(120);
+    }
+}
 
 .pt24pl21 {
     padding-top: rem(24);
@@ -519,6 +588,14 @@
     }
 }
 
+.w146--sp100p {
+    width: rem(146);
+
+    @include mq(tb) {
+        width: 100%;
+    }
+}
+
 .w245--sp238 {
     width: rem(245);
 
@@ -543,6 +620,14 @@
     }
 }
 
+.minw146--spauto {
+    min-width: rem(146) !important;
+
+    @include mq(tb) {
+        min-width: auto !important;
+    }
+}
+
 .ltsp0--sp10 {
     letter-spacing: 0 !important;
 
@@ -551,8 +636,9 @@
     }
 }
 
-
-
+.dib {
+    display: inline-block;
+}
 
 .number-list {
     list-style: number;
@@ -707,6 +793,10 @@
         line-height: 180%;
         letter-spacing: lts-em(0.75, 14);
     }
+}
+
+.tac {
+    text-align: center;
 }
 
 .txt {

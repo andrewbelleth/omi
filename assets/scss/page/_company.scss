@@ -1,6 +1,11 @@
 @use "../global" as *; 
 
 .page-company {
+    .company {
+        position: relative;
+        z-index: 1;
+        background: $white;
+    }
     .top-message {
         display: flex;
         flex-direction: column;
