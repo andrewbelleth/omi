@@ -1082,6 +1082,13 @@ body:has(.common-contant) {
         color: $blue;
       }
     }
+    @media (769px <= width < 1050px) {
+      li {
+        a {
+          font-size: rem(30);
+        }
+      }
+    }
   }
   .marker {
     display: inline;

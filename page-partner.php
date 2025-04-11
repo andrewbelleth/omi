@@ -172,14 +172,14 @@ Template Name: 外部パートナーページ
                     </dd>
                 </div>
                 <div class="faq-content__item-wrapper">
-                            <dt>
-                                仕事内容
-                            </dt>
-                        </div><!-- /.dev2 -->
-                        <dd>
-                            ①Webサイトのデザイン<br>
-                            ②Webサイトのコーディング・保守
-                        </dd>
+                    <dt>
+                        仕事内容
+                    </dt>
+
+                    <dd>
+                        ①Webサイトのデザイン<br>
+                        ②Webサイトのコーディング・保守
+                    </dd>
                 </div>
                 <div class="faq-content__item-wrapper">
                     <dt>

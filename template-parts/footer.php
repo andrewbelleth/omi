@@ -60,7 +60,7 @@ Template Name: フッター
                   <li><a href="<?php echo esc_url(home_url('/service/printing/bookbinding')); ?>">製本</a></li>
                 </ul>
               </li>
-              <li><a href="<?php echo esc_url(home_url('/service/digital')); ?>">デジタル</a></li>
+              <li><a href="<?php echo esc_url(home_url('/service/degital')); ?>">デジタル</a></li>
               <li><a href="<?php echo esc_url(home_url('/service/newspaper')); ?>">彦根経済新聞</a></li>
               <li><a href="<?php echo esc_url(home_url('/service/branding')); ?>">ブランディング</a></li>
               <li><a href="<?php echo esc_url(home_url('/service/promotion')); ?>">プロモーション</a></li>
@@ -70,10 +70,10 @@ Template Name: フッター
             <h3><a href="<?php echo esc_url(home_url('/works')); ?>">制作実績</a></h3>
             <h3><a href="<?php echo esc_url(home_url('/company')); ?>">会社概要</a></h3>
             <ul>
-              <li><a href="">設備概要</a></li>
-              <li><a href="">会社沿革</a></li>
-              <li><a href="">私たちの取り組み</a></li>
-              <li><a href="">社外報ing</a></li>
+              <li><a href="<?php echo esc_url(home_url('/company/facility')); ?>">設備概要</a></li>
+              <li><a href="<?php echo esc_url(home_url('/company/history')); ?>">会社沿革</a></li>
+              <li><a href="<?php echo esc_url(home_url('/company/project')); ?>">私たちの取り組み</a></li>
+              <li><a href="<?php echo esc_url(home_url('/company/ing')); ?>">社外報ing</a></li>
             </ul>
           </div>
           <div class="footer__nav-item">
