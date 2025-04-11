@@ -1,6 +1,11 @@
 @use "../global" as *; 
 
 .page-company {
+    .company {
+        position: relative;
+        z-index: 1;
+        background: $white;
+    }
     .top-message {
         display: flex;
         flex-direction: column;
@@ -253,4 +258,74 @@
         }
     }
 
+}
+
+.info-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    border-top: 1px solid #D5D5D5;
+    flex: 1;
+}
+
+.info-item {
+    display: flex;
+    padding: rem(24) rem(16);
+    border-bottom: 1px solid #D5D5D5;
+    gap: rem(40);
+
+    @include mq(tb) {
+        flex-direction: column;
+        gap: rem(8);
+        padding: rem(20) rem(0);
+    }
+}
+
+.info-heading {
+    font-weight: 700;
+    font-size: rem(15);
+    line-height: 1.8;
+    letter-spacing: 0.1em;
+    color: #7A7A7A;
+    min-width: rem(200);
+    
+    @include mq(pc) {
+        min-width: rem(120);
+    }
+    
+    @include mq(tb) {
+        min-width: auto;
+        font-size: rem(14);
+    }
+}
+
+.info-content {
+    font-weight: 400;
+    font-size: rem(15);
+    line-height: 1.8;
+    letter-spacing: 0.05em;
+    flex: 1;
+
+    .info-content--small {
+        font-size: rem(15);
+    }
+
+    a {
+        display: inline-block;
+        color: $blue;
+        text-decoration: underline;
+    }
+
+    ol {
+        list-style: decimal;
+        padding-left: rem(20);
+    }
+
+    @include mq(tb) {
+        font-size: rem(14);
+
+        ol {
+            padding-left: rem(16);
+        }
+    }
 }

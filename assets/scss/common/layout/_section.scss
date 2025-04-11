@@ -218,6 +218,7 @@
 
             li {
                 width: calc(100% / 3 - rem(26 / 3));
+                height: rem(48);
 
                 a {
                     height: inherit;
@@ -226,9 +227,11 @@
                     font-size: rem(14);
                     line-height: calc(18 / 14);
                     letter-spacing: 0.05em;
-                    padding: rem(14) 0;
+                    padding: 0;
+                    align-items: center;
                     justify-content: center;
                     text-align: center;
+
 
                     &::before {
                         display: none;
@@ -259,184 +262,9 @@
 
 .section__main {
     flex: 1;
-}
-
-.page-features {
-    .feature__txt {
-        font-size: rem(18);
-        line-height: 2.2;
-        letter-spacing: 0.1em;
-        color: $black;
-    }
-
-    .feature__contents {
-        display: flex;
-        flex-direction: column;
-        gap: rem(160);
-        margin-top: rem(120);
-    }
-
-    .feature__item {
-        display: flex;
-        gap: rem(48);
-        align-items: flex-start;
-
-        .feature__item-image {
-            width: rem(510);
-            flex-shrink: 0;
-        }
-
-        .feature__item-content {
-            width: calc(100% - rem(510 + 48));
-            padding-top: rem(48);
-        }
-
-        .feature__item-title {
-            position: relative;
-            display: flex;
-            flex-direction: column;
-            gap: rem(12);
-            margin-bottom: rem(44);
-
-            .feature__item-title-text {
-                display: inline-flex;
-                width: fit-content;
-                background-color: $blue;
-                padding: rem(8) rem(24);
-                color: $white;
-                font-size: rem(36);
-                font-weight: 700;
-                line-height: 1.7;
-                letter-spacing: 0.1em;
-                white-space: nowrap;
-
-                &.desktop {
-                    display: inline-flex;
-                }
-
-                &.mobile {
-                    display: none;
-                }
-
-                @include mq(tb) {
-                    &.desktop {
-                        display: none;
-                    }
-
-                    &.mobile {
-                        display: inline-flex;
-                    }
-                }
-            }
-        }
-
-        .feature__item-text {
-            font-size: rem(15);
-            line-height: 2;
-            letter-spacing: 0.05em;
-            color: $black;
-        }
-
-        &.feature__item--01,
-        &.feature__item--03,
-        &.feature__item--05 {
-            .feature__item-title {
-                left: rem(-116);
-            }
-        }
-
-        &.feature__item--02,
-        &.feature__item--04 {
-            flex-direction: row-reverse;
-
-            .feature__item-title {
-                left: rem(0);
-            }
-        }
-    }
-
-    @include mq(pc) {
-        .feature__item {
-            .feature__item-image {
-                width: rem(440);
-            }
-
-            .feature__item-content {
-                width: calc(100% - rem(440 + 48));
-            }
-
-            .feature__item-title {
-                .feature__item-title-text {
-                    font-size: rem(28);
-                }
-            }
-
-            &.feature__item--01,
-            &.feature__item--03,
-            &.feature__item--05 {
-                .feature__item-title {
-                    left: rem(-70);
-                }
-            }
-        }
-    }
 
     @include mq(tb) {
-        .feature__section {
-            max-width: rem(520);
-            width: 100%;
-        }
-
-        .feature__txt {
-            font-size: rem(15);
-            line-height: 2;
-            letter-spacing: 0.05em;
-        }
-
-        .feature__contents {
-            margin-top: rem(72);
-            gap: rem(88);
-        }
-
-        .feature__item {
-            flex-direction: column !important;
-            gap: 0;
-
-            .feature__item-image {
-                width: rem(327);
-                margin-left: auto;
-                margin-right: 0;
-                order: 2;
-            }
-
-            .feature__item-content {
-                display: contents;
-            }
-
-            .feature__item-title {
-                position: relative;
-                order: 1;
-                margin-left: rem(24);
-                position: static;
-                gap: rem(8);
-                margin-bottom: rem(-24);
-                z-index: 1;
-
-                .feature__item-title-text {
-                    padding: rem(3) rem(12);
-                    font-size: rem(20);
-                }
-            }
-
-            .feature__item-texts {
-                order: 3;
-                padding-inline: rem(24);
-                margin-top: rem(32);
-            }
-
-            .feature__item-text {
-                font-size: rem(14);
-            }
-        }
+        flex: none;
+        width: 100%;
     }
 }

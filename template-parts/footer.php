@@ -4,10 +4,18 @@ if (! defined('ABSPATH')) exit;
 Template Name: フッター
 */
 ?>
-    <div class="section__item">
-  <?php get_template_part('template-parts/cta'); ?>
+<?php if(is_page('recruit')): ?>
+<div class="section__item pallax-fixed">
+  <?php else: ?>
+    <div class="section__item <?php if (is_page('contact')) { echo 'mt0'; } ?>">
+  <?php endif; ?>
+  <?php 
+  if (!is_page('contact')) {
+    get_template_part('template-parts/cta'); 
+  }
+  ?>
   <footer class="footer">
-    <div class="footer__inner">
+    <div class="footer__inner <?php if (is_page('contact')) { echo 'pt80--sp56'; } ?>">
       <div class="footer__logo">
         <div class="footer__logo-img">
           <img src="<?php echo get_template_directory_uri(); ?>/assets/images/pc/logo.webp" alt="omi printing">

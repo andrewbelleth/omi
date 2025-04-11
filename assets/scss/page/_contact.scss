@@ -1,0 +1,627 @@
+@use "../global" as *;
+
+.contact-top {
+    &__inner {
+        max-width: rem(960);
+        width: calc(100% - rem(48));
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__text {
+        font-size: rem(15);
+        line-height: 1.8;
+        letter-spacing: 0.05em;
+    }
+
+    &__tel {
+        width: 100%;
+        background-color: $light-gray;
+        border-radius: rem(16);
+        padding: rem(48) rem(64) rem(48) rem(68);
+
+        @include mq(tb) {
+            padding: rem(35) rem(24) rem(29);
+        }
+    }
+
+    &__tel-inner {
+        display: flex;
+        align-items: center;
+        gap: rem(56);
+
+        @include mq(tb) {
+            flex-direction: column;
+            gap: rem(24);
+        }
+    }
+
+    &__tel-header {
+        display: flex;
+        flex-direction: column;
+        gap: rem(22);
+
+        @include mq(tb) {
+            display: contents;
+        }
+    }
+
+    &__tel-title {
+        font-size: rem(32);
+        font-weight: 700;
+        line-height: 1.5;
+        letter-spacing: 0.1em;
+
+        @include mq(tb) {
+            font-size: rem(20);
+        }
+    }
+
+    &__tel-time {
+        font-size: rem(15);
+        line-height: 1.8;
+        letter-spacing: 0.05em;
+
+        @include mq(tb) {
+            font-size: rem(13);
+            text-align: center;
+        }
+    }
+
+    &__tel-body {
+        flex: 1;
+    }
+
+    &__tel-text {
+        font-size: rem(15);
+        line-height: 1.8;
+        letter-spacing: 0.05em;
+
+        @include mq(tb) {
+            font-size: rem(13);
+            text-align: center;
+        }
+    }
+
+    &__tel-number {
+        display: flex;
+        align-items: center;
+        gap: rem(7);
+
+        @include mq(tb) {
+            gap: rem(3.8);
+            justify-content: center;
+            padding-right: rem(6.2);
+        }
+
+        @include mq(sp) {
+            justify-content: normal;
+            padding-right: 0;
+        }
+
+    }
+
+    &__tel-icon {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        svg {
+            width: rem(66);
+            height: rem(66);
+
+            @include mq(tb) {
+                width: rem(35);
+                height: rem(35);
+            }
+        }
+    }
+
+    &__tel-num {
+        font-family: $font-montserrat;
+        font-size: rem(60);
+        font-weight: 700;
+        line-height: calc(96 / 60);
+        color: $blue;
+
+        @include mq(tb) {
+            font-size: rem(32);
+            line-height: calc(51 / 32);
+        }
+    }
+
+    &__tel-departments {
+        li {
+            font-size: rem(14);
+            line-height: 2;
+            letter-spacing: 0.05em;
+
+            @include mq(tb) {
+                font-size: rem(13);
+            }
+        }
+
+        @include mq(tb) {
+            margin-top: rem(24);
+
+            .disc-list {
+                display: flex;
+                flex-direction: column;
+                gap: rem(8);
+            }
+        }
+    }
+}
+
+.contact-form {
+    background: $light-gray;
+    padding-block: rem(80);
+
+    @include mq(tb) {
+        padding: rem(64) rem(24) rem(80);
+    }
+
+    &__inner {
+        max-width: rem(960);
+        width: 100%;
+        margin: 0 auto;
+    }
+}
+
+.contact__form {
+    display: flex;
+    flex-direction: column;
+    gap: rem(40);
+
+    @include mq(tb) {
+        gap: rem(32);
+    }
+
+    &-item {
+        display: flex;
+        flex-direction: column;
+        gap: rem(16);
+
+        @include mq(tb) {
+            gap: rem(10);
+        }
+
+        &-label {
+            display: flex;
+            align-items: center;
+            gap: rem(10);
+            font-size: rem(15);
+            font-weight: 500;
+            line-height: 1.8;
+            letter-spacing: 0.05em;
+
+            @include mq(tb) {
+                gap: rem(8);
+                font-size: rem(14);
+            }
+
+            .hissu {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                padding: rem(0) rem(6) rem(2);
+                margin-top: rem(2);
+                font-size: rem(10);
+                font-weight: 500;
+                line-height: calc(13 / 10);
+                letter-spacing: 0.05em;
+                border: 1px solid $red;
+                color: $red;
+
+                @include mq(tb) {
+                    font-size: rem(10);
+                }
+            }
+        }
+
+        &-input {
+            .wpcf7-form-control-wrap {
+                width: 100%;
+            }
+
+            input[type="text"],
+            input[type="tel"],
+            input[type="email"],
+            select,
+            textarea {
+                width: 100%;
+                padding: rem(20) rem(32);
+                background-color: $white;
+                border-radius: rem(10);
+                font-size: 16px;
+                line-height: 1.8;
+                letter-spacing: 0.05em;
+
+                &::placeholder {
+                    color: #A9A9A9;
+                    font-size: rem(15);
+                }
+
+                @include mq(tb) {
+                    padding: rem(28.2/2) rem(16);
+
+                    &::placeholder {
+                        font-size: rem(14);
+                    }
+                }
+            }
+
+            textarea {
+                height: rem(280);
+                resize: none;
+
+                @include mq(tb) {
+                    height: rem(212);
+                }
+            }
+
+            select {
+                appearance: none;
+                background-image: url("../images/icon-select.svg");
+                background-repeat: no-repeat;
+                background-position: right rem(32) center;
+                padding-right: rem(56);
+
+                @include mq(tb) {
+                    padding-right: rem(44);
+                }
+            }
+
+            .wpcf7-radio {
+                display: flex;
+                flex-wrap: wrap;
+                gap: rem(8) rem(32);
+
+                .wpcf7-list-item {
+                    display: flex;
+                    align-items: center;
+                    margin: 0;
+
+                    @include mq(tb) {
+                        align-items: flex-start;
+                    }
+
+                    label {
+                        display: flex;
+                        align-items: center;
+                        gap: rem(8);
+                        cursor: pointer;
+
+                        @include mq(tb) {
+                            align-items: flex-start;
+                        }
+                    }
+
+                    input[type="radio"] {
+                        appearance: none;
+                        width: rem(20);
+                        height: rem(20);
+                        border: 1px solid $gray;
+                        border-radius: 50%;
+                        position: relative;
+                        margin: 0;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+
+                        @include mq(tb) {
+                            width: rem(15);
+                            height: rem(15);
+                            margin-top: rem(6);
+                            flex-shrink: 0;
+                        }
+
+                        &:checked {
+                            border-color: $blue;
+
+                            &::after {
+                                content: '';
+                                position: absolute;
+                                width: rem(12);
+                                height: rem(12);
+                                background-color: $blue;
+                                border-radius: 50%;
+
+                                @include mq(tb) {
+                                    width: rem(11);
+                                    height: rem(11);
+                                }
+                            }
+                        }
+                    }
+
+                    .wpcf7-list-item-label {
+                        font-size: rem(15);
+                        line-height: 1.8;
+                        letter-spacing: 0.05em;
+
+                        @include mq(tb) {
+                            font-size: rem(14);
+                        }
+                    }
+                }
+
+                @include mq(tb) {
+                    flex-direction: column;
+                }
+            }
+        }
+    }
+
+    &-submit {
+        position: relative;
+        display: flex;
+
+        &-btn {
+            margin: 0 auto;
+
+            &:has(.js-activation-button:disabled) {
+                background: $gray !important;
+                width: rem(280) !important;
+
+                .btn__text {
+                    color: $white !important;
+                }
+
+                .btn__icon {
+                    path {
+                        fill: $gray !important;
+                    }
+                }
+
+                &:hover {
+                    left: 0;
+                    padding-inline: 2rem 1rem;
+                }
+            }
+        }
+
+        &-back {
+            background: $gray;
+            min-width: rem(232) !important;
+            padding-inline: rem(16) rem(32);
+
+            .btn__icon {
+                path {
+                    fill: $gray !important;
+                }
+            }
+
+            .btn__text {
+                color: $white !important;
+            }
+
+            &:hover {
+                padding-inline: 2.00875rem rem(40);
+                .btn__text {
+                    color: $gray !important;
+                }
+            }
+        }
+
+        .wpcf7-submit {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: rem(280);
+            height: rem(60);
+        }
+    }
+}
+
+.js-activation-button {
+    &:disabled {
+        pointer-events: none;
+    }
+}
+
+
+.contact-confirm {
+    &__inner {
+        max-width: rem(960);
+        width: calc(100% - rem(48));
+        margin: 0 auto;
+    }
+
+    &__btn-list {
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        justify-content: center;
+        gap: rem(32);
+
+        .btn {
+            margin: 0;
+        }
+
+        @include mq(tb) {
+            flex-direction: column-reverse;
+            gap: rem(28);
+        }
+    }
+
+    .info-list {
+        display: flex;
+        flex-wrap: wrap;
+        border-color: #EEF1F4;
+    }
+
+    .info-item {
+        padding: rem(32) rem(24);
+        gap: rem(48);
+        border-color: #EEF1F4;
+    }
+
+    .info-heading {
+        color: $dark-gray;
+    }
+
+    @include mq(tb) {
+        .info-list {
+            padding-top: rem(4);
+        }
+
+        .info-item {
+            padding: rem(24) 0;
+            gap: rem(12);
+            border-color: #EEF1F4;
+        }
+    }
+}
+
+.active-policy {
+    &-inner {
+        padding: rem(40) rem(48);
+        background-color: $white;
+        border-radius: rem(10);
+
+        @include mq(tb) {
+            padding: rem(32) rem(24);
+        }
+    }
+
+    &-title {
+        font-size: rem(20);
+        font-weight: 700;
+        line-height: 1.4;
+        letter-spacing: 0.05em;
+        text-align: center;
+        color: $blue;
+    }
+
+    &-text {
+        font-size: rem(15);
+        line-height: 1.8;
+        letter-spacing: 0.05em;
+        text-align: center;
+
+        @include mq(tb) {
+            font-size: rem(13);
+        }
+    }
+
+    &-scroll {
+        height: rem(403);
+        border: 1px solid $gray;
+        background: $white;
+
+        @include mq(tb) {
+            height: rem(276);
+        }
+
+        &-inner {
+            height: 100%;
+            overflow-y: auto;
+            padding: rem(40);
+
+            @include mq(tb) {
+                padding: rem(16) rem(12);
+            }
+        }
+
+        * {
+            font-size: rem(15);
+            line-height: 1.8;
+            letter-spacing: 0.05em;
+
+            @include mq(tb) {
+                font-size: rem(11.5);
+            }
+        }
+    }
+
+    &-check {
+        margin-top: rem(32);
+        display: flex;
+        justify-content: center;
+
+        @include mq(tb) {
+            margin-top: rem(24);
+        }
+
+        label {
+            display: flex;
+            align-items: center;
+            gap: rem(8);
+            cursor: pointer;
+        }
+
+        input[type="checkbox"] {
+            appearance: none;
+            width: rem(22);
+            height: rem(22);
+            border: 1px solid $gray;
+            border-radius: rem(3);
+            position: relative;
+            margin: 0;
+
+            &:checked {
+                background-color: $blue;
+                border-color: $blue;
+
+                &::after {
+                    content: '';
+                    position: absolute;
+                    top: 45%;
+                    left: 50%;
+                    transform: translate(-50%, -50%) rotate(-45deg);
+                    width: rem(12);
+                    height: rem(6);
+                    border-left: 2px solid $white;
+                    border-bottom: 2px solid $white;
+                }
+            }
+
+            @include mq(tb) {
+                width: rem(16);
+                height: rem(16);
+            }
+        }
+
+        &-text {
+            font-size: rem(15);
+            line-height: calc(27 / 15);
+            letter-spacing: 0.05em;
+
+            @include mq(tb) {
+                font-size: rem(14);
+            }
+        }
+    }
+
+    &-check-link {
+        position: relative;
+        display: flex;
+        align-items: center;
+        gap: rem(6.36);
+        width: fit-content;
+        margin-inline: auto;
+        color: $blue;
+        text-decoration: underline;
+        font-size: rem(13);
+        line-height: calc(22 / 13);
+        letter-spacing: 0;
+        font-weight: 500;
+
+        &::after {
+            content: '';
+            display: inline-block;
+            width: rem(12);
+            height: rem(12);
+            background-image: url("../images/common/extend-blue.svg");
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+    }
+
+    &-btn {
+        margin-inline: auto;
+    }
+}
