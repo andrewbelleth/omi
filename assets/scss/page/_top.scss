@@ -74,7 +74,8 @@
 
 .top-news {
     display: flex;
-    gap: rem(88);
+    gap: rem(96);
+    max-width: rem(1200);
 
     &__head {
         width: rem(280);
@@ -150,25 +151,29 @@
 }
 
 .top-about {
-    max-width: rem(1200);
+    position: relative;
+    // max-width: rem(1200);
+    max-width: rem(1174);
 
     &__media {
         margin-top: rem(64);
         width: 100vw;
         margin-inline: calc(50% - 50vw);
         display: flex;
-        padding-right: rem(80);
-        gap: rem(72);
+        padding-right: rem(106);
+        gap: rem(80);
     }
 
     &__gallery {
         position: relative;
-        width: 48.8888888vw;
+        // width: 48.8888888vw;
+        width: 46.5277777778vw;
         font-size: min(calc(16 / (1440 / 100) * 1vw), 16px);
         height: em(714);
+
         &-inner {
             position: relative;
-            max-width: em(704);
+            max-width: em(670);
             height: 100%;
             margin-left: auto;
         }
@@ -178,9 +183,10 @@
         position: absolute;
 
         &--01 {
-            top: em(208);
-            left: em(58);
-            width: em(190);
+            top: em(35);
+            // left: em(58);
+            right: em(-36);
+            width: em(204);
             z-index: 2;
         }
 
@@ -200,8 +206,9 @@
     }
 
     &__body {
-        flex: 1;
-        padding-top: rem(16);
+        // flex: 1;
+        width: rem(584);
+        padding-top: rem(44);
     }
 
     &__title {
@@ -246,8 +253,8 @@
 
         &__img {
             &--01 {
-                top: 8em;
-                left: 1em;
+                top: 5em;
+                right: 0;
                 width: 8em;
             }
 
@@ -276,22 +283,23 @@
             flex-direction: column;
             gap: rem(32);
             padding: 0;
-            margin-top: 2.5rem;
+            // margin-top: 2.5rem;
+            margin-top: rem(55);
         }
 
         &__gallery {
             position: relative;
-            width: 80vw;
+            width: 100vw;
             height: auto;
             // height: 23em;
-            margin-inline: calc(50% - 40vw);
+            margin-inline: calc(50% - 50vw);
             font-size: calc(16 / (375 / 100) * 1vw);
 
             &::before {
                 content: '';
                 display: block;
                 width: 100%;
-                padding-top: 98.13333333%;
+                padding-top: 96.5333333333%;
             }
 
             &-inner {
@@ -311,11 +319,14 @@
             }
 
             &--01 {
-                width: em(110);
-                width: 29.3333333333%;
-                top: em(179);
-                top: 48.6413043478%;
+                width: em(132);
+                width: 35.2%;
+                // top: em(179);
+                top: em(-39);
+                top: -10.4%;
                 left: em(0);
+                left: auto;
+                right: 9.6%;
             }
 
             &--02 {
@@ -323,8 +334,9 @@
                 height: em(306);
                 width: 72%;
                 top: 0;
-                right: em(52);
-                right: 13.8666666667%;
+                right: em(15.5);
+                right: auto;
+                left: 4.1333333333%;
 
                 ._image {
                     width: 100%;
@@ -342,13 +354,14 @@
                 left: auto;
                 right: 0;
                 width: em(175);
-                width: 46.6666666667%;
+                width: 50.1333333333%;
             }
         }
 
         &__body {
             max-width: 80%;
             margin-inline: auto;
+            padding-top: 0;
         }
 
         &__title {
@@ -958,7 +971,7 @@
     max-width: rem(732);
     width: 100%;
     margin-inline: auto;
-    background: url(../images/pc/gide-bnr.webp) no-repeat center center/cover;
+    background: url(../images/pc/gide-bnr.png) no-repeat center center/cover;
     padding: rem(50) rem(24) rem(46);
 
     &__text {
@@ -979,7 +992,7 @@
     }
 
     @include mq(tb) {
-        background: url(../images/sp/gide-bnr-sp.webp) no-repeat center center/cover;
+        background: url(../images/sp/gide-bnr-sp.png) no-repeat center center/cover;
     }
 
     @include mq(sp) {

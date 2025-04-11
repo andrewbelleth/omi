@@ -4,8 +4,8 @@
 .btn {
     position: relative;
     left: 0;
-    min-width: rem(280);
-    width: fit-content;
+    width: rem(280);
+    min-width: fit-content;
     height: rem(60);
     display: flex;
     align-items: center;
@@ -17,7 +17,7 @@
     box-shadow: 0px 0px 16px 0px rgba(40, 40, 40, 0.25);
     transition: .3s;
 
-    
+
     .btn__text {
         margin-inline: auto;
         width: fit-content;
@@ -27,7 +27,7 @@
         line-height: 1.7;
         font-weight: 700;
     }
-    
+
     .btn__icon {
         background: $white;
         width: 2.375rem;
@@ -38,10 +38,11 @@
         justify-content: center;
         border-radius: 50%;
         transition: .3s;
-        
+
         svg {
             width: rem(22);
             height: rem(22);
+
             path {
                 transition: .3s;
             }
@@ -58,8 +59,20 @@
         left: rem(-20);
     }
 
+    &--onlyspanimation {
+        &:hover {
+            position: relative;
+            background: $white;
+            color: $blue;
+            padding-inline: 2rem 1rem;
+            gap: 1rem;
+            width: rem(280);
+            left: rem(0);
+        }
+    }
+
     &--white {
-        background: $white;   
+        background: $white;
         color: $black;
         box-shadow: 0px 0px 16px 0px rgba(40, 40, 40, 0.15);
 
@@ -68,7 +81,7 @@
         }
 
         &:hover {
-            background: $blue;   
+            background: $blue;
             color: $white;
         }
     }
@@ -76,6 +89,7 @@
     &--right {
         left: auto;
         right: 0;
+
         &:hover {
             left: auto;
             right: rem(-20);
@@ -85,6 +99,7 @@
     &--reverce {
         padding-inline: 1rem 2rem;
         left: auto;
+
         &:hover {
             left: auto;
         }
@@ -97,7 +112,7 @@
         left: auto;
         right: 0;
 
-        
+
         .btn__text {
             letter-spacing: 0.025em;
         }
@@ -108,7 +123,7 @@
             right: rem(-20);
         }
     }
-    
+
     @include mq(tb) {
         margin-inline: auto;
         box-shadow: 0px 0px 12px 0px rgba(40, 40, 40, 0.15);
@@ -120,25 +135,34 @@
             padding-inline: rem(32) rem(32 - 7.86);
             width: rem(280 + 20);
         }
-        
+
+        &--onlyspanimation {
+            &:hover {
+                left: auto;
+                padding-inline: rem(32) rem(32 - 7.86);
+                width: rem(280 + 20);
+            }
+        }
+
         .btn__text {
             font-size: 0.9375rem;
         }
-        
+
 
         &--right {
             left: auto;
             right: auto;
+
             &:hover {
                 left: auto;
                 right: auto;
             }
         }
-    
+
         &.cta__btn {
             height: auto;
             padding: 0.6875rem 1rem 0.75rem 1.875rem;
-            
+
             .btn__text {
                 font-size: 0.875rem;
                 line-height: 1.4;
@@ -154,6 +178,7 @@
         &--reverce {
             padding-inline: 1rem 2rem;
             left: auto;
+
             &:hover {
                 left: auto;
             }
@@ -167,7 +192,7 @@
             transform: translateX(-50%);
             margin-inline: 0;
             right: auto;
-            
+
             &:hover {
                 width: rem(340);
                 right: auto;
@@ -178,6 +203,7 @@
     @media screen and (max-width: 440px) {
         &.cta__btn {
             width: rem(280);
+
             &:hover {
                 width: rem(300);
             }

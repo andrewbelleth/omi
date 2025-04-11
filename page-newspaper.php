@@ -327,7 +327,7 @@ Template Name: 印刷ページ
                     <p>彦根エリアの方からの情報提供も大歓迎です。<br>公式SNSでも情報提供を受け付けていますので、お気軽にご連絡ください。</p>
                 </div>
                 <div class="component-box-btn component-box-btn--col3 mt24 pl21--sp0">
-                    <a href="<?php echo esc_url(home_url('/service/printing/products')); ?>" class="btn inview">
+                    <a href="<?php echo esc_url(home_url('/service/printing/products')); ?>" class="btn btn--onlyspanimation inview">
                         <span class="btn__text">公式Facebook</span>
                         <span class="btn__icon">
                             <svg viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -339,7 +339,7 @@ Template Name: 印刷ページ
                             </svg>
                         </span>
                     </a>
-                    <a href="<?php echo esc_url(home_url('/service/printing/products')); ?>" class="btn inview">
+                    <a href="<?php echo esc_url(home_url('/service/printing/products')); ?>" class="btn btn--onlyspanimation inview">
                         <span class="btn__text">公式Instagram</span>
                         <span class="btn__icon">
                             <svg viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -351,7 +351,7 @@ Template Name: 印刷ページ
                             </svg>
                         </span>
                     </a>
-                    <a href="<?php echo esc_url(home_url('/service/printing/products')); ?>" class="btn inview">
+                    <a href="<?php echo esc_url(home_url('/service/printing/products')); ?>" class="btn btn--onlyspanimation inview">
                         <span class="btn__text">公式X</span>
                         <span class="btn__icon">
                             <svg viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">

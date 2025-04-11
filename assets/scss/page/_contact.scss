@@ -384,7 +384,7 @@
 
         &-back {
             background: $gray;
-            min-width: rem(232) !important;
+            width: rem(232) !important;
             padding-inline: rem(16) rem(32);
 
             .btn__icon {
@@ -399,6 +399,7 @@
 
             &:hover {
                 padding-inline: 2.00875rem rem(40);
+                width: rem(232 + 40) !important;
                 .btn__text {
                     color: $gray !important;
                 }
