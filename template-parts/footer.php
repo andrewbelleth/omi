@@ -27,8 +27,12 @@ Template Name: フッター
       <div class="footer__main">
         <div class="footer__address">
           <dl>
-            <dt>本社・工場</dt>
+            <dt>本社</dt>
             <dd>529-1302 滋賀県愛知郡愛荘町川原771-1<br>TEL:0749-42-8400(代) FAX:0749-42-6700(代)</dd>
+          </dl>
+          <dl>
+            <dt>彦根支店</dt>
+            <dd>521-1113 滋賀県彦根市稲部町100-4</dd>
           </dl>
           <dl>
             <dt>甲賀支店</dt>
@@ -45,27 +49,26 @@ Template Name: フッター
         </div>
         <nav class="footer__nav">
           <div class="footer__nav-item">
-            <h3><a href="<?php echo home_url(); ?>/feature">近江印刷の特徴</a></h3>
-            <h3><a href="<?php echo home_url(); ?>/service">サービス</a></h3>
+            <h3><a href="<?php echo esc_url(home_url('/feature')); ?>">近江印刷の特徴</a></h3>
+            <h3><a href="<?php echo esc_url(home_url('/service')); ?>">サービス</a></h3>
             <ul>
               <li>
-                <a href="<?php echo home_url(); ?>/service#printing">印刷</a>
+                <a href="<?php echo esc_url(home_url('/service/printing')); ?>">印刷</a>
                 <ul>
-                  <li><a href="<?php echo home_url(); ?>/service#print">取扱品目</a></li>
-                  <li><a href="<?php echo home_url(); ?>/service#print">加工</a></li>
-                  <li><a href="<?php echo home_url(); ?>/service#print">製本</a></li>
+                  <li><a href="<?php echo esc_url(home_url('/service/printing/product')); ?>">取扱品目</a></li>
+                  <li><a href="<?php echo esc_url(home_url('/service/printing/processing')); ?>">加工</a></li>
+                  <li><a href="<?php echo esc_url(home_url('/service/printing/bookbinding')); ?>">製本</a></li>
                 </ul>
               </li>
-              <li><a href="<?php echo home_url(); ?>/service#digital">デジタル</a></li>
-              <li><a href="<?php echo home_url(); ?>/service#pr">PRセンター</a></li>
-              <li><a href="<?php echo home_url(); ?>/service#pr">彦根経済新聞</a></li>
-              <li><a href="<?php echo home_url(); ?>/service#branding">ブランディング</a></li>
-              <li><a href="<?php echo home_url(); ?>/service#promotion">プロモーション</a></li>
+              <li><a href="<?php echo esc_url(home_url('/service/digital')); ?>">デジタル</a></li>
+              <li><a href="<?php echo esc_url(home_url('/service/newspaper')); ?>">彦根経済新聞</a></li>
+              <li><a href="<?php echo esc_url(home_url('/service/branding')); ?>">ブランディング</a></li>
+              <li><a href="<?php echo esc_url(home_url('/service/promotion')); ?>">プロモーション</a></li>
             </ul>
           </div>
           <div class="footer__nav-item">
-            <h3><a href="<?php echo home_url(); ?>/works">制作実績</a></h3>
-            <h3><a href="<?php echo home_url(); ?>/company">会社概要</a></h3>
+            <h3><a href="<?php echo esc_url(home_url('/works')); ?>">制作実績</a></h3>
+            <h3><a href="<?php echo esc_url(home_url('/company')); ?>">会社概要</a></h3>
             <ul>
               <li><a href="">設備概要</a></li>
               <li><a href="">会社沿革</a></li>
@@ -74,11 +77,11 @@ Template Name: フッター
             </ul>
           </div>
           <div class="footer__nav-item">
-            <h3><a href="<?php echo home_url(); ?>/news">お知らせ</a></h3>
-            <h3><a href="<?php echo home_url(); ?>/recruit">リクルート</a></h3>
-            <h3><a href="<?php echo home_url(); ?>/partner">外部パートナー募集</a></h3>
-            <h3><a href="<?php echo home_url(); ?>/contact">入稿ガイド</a></h3>
-            <h3><a href="<?php echo home_url(); ?>/contact">お問い合わせ</a></h3>
+            <h3><a href="<?php echo esc_url(home_url('/news')); ?>">お知らせ</a></h3>
+            <h3><a href="<?php echo esc_url(home_url('/recruit')); ?>">リクルート</a></h3>
+            <h3><a href="<?php echo esc_url(home_url('/partner')); ?>">外部パートナー募集</a></h3>
+            <h3><a href="<?php echo esc_url(home_url('/guide')); ?>">入稿ガイド</a></h3>
+            <h3><a href="<?php echo esc_url(home_url('/contact')); ?>">お問い合わせ</a></h3>
           </div>
         </nav>
       </div>
@@ -94,7 +97,7 @@ Template Name: フッター
     </div>
     <div class="footer__copy">
       <div class="footer__copy-inner">
-        <a href="<?php echo home_url(); ?>/privacy">個人情報保護方針</a>
+        <a href="<?php echo esc_url(home_url('/privacy')); ?>">個人情報保護方針</a>
         <p>©omi-printing. All rights reserved.</p>
       </div>
     </div>
