@@ -348,6 +348,9 @@ body:has(.common-contant) {
   .project__img-wrapper {
     max-width: min(90%, rem(960));
     margin-inline: auto;
+    a{
+      pointer-events: none;
+    }
   }
   .btn-list {
     justify-content: center;
@@ -380,6 +383,9 @@ body:has(.common-contant) {
     }
     .project__img-wrapper {
       max-width: 100%;
+      a{
+        pointer-events: auto;
+      }
     }
     .img-list--4column {
       gap: rem(15);
@@ -959,12 +965,7 @@ body:has(.common-contant) {
     display: flex;
     gap: rem(10);
     width: 100%;
-    overflow-x: auto;
-    scrollbar-width: none; /* Firefox */
-    -ms-overflow-style: none; /* IE and Edge */
-    &::-webkit-scrollbar {
-      display: none; /* Chrome, Safari, Opera */
-    }
+   
     li {
       flex-shrink: 0;
       width: rem(181);
@@ -1142,10 +1143,28 @@ body:has(.common-contant) {
       }
     }
 
-    .swatch-list__wrapper {
-      overflow: scroll;
-      display: none;
+    .swatch-list{
+      overflow-x: scroll;
+width: 100%;
+scrollbar-width: auto; 
     }
+    .swatch-list__wrapper{
+      width: 95%;
+      margin-inline: rem(20);
+    }
+    /* Chrome / Safari用のスクロールバー装飾 */
+.swatch-list::-webkit-scrollbar {
+  height: 8px;                     /* スクロールバーの高さ */
+}
+
+.swatch-list::-webkit-scrollbar-thumb {
+  background-color: #0068B6;         /* スクロールバーのつまみ色 */
+  border-radius: rem(100);
+}
+
+.swatch-list::-webkit-scrollbar-track {
+  background-color: #EEF1F4;      /* スクロールバーのトラック背景 */
+}
     .preparation-list {
       gap: rem(20);
       li {
@@ -1170,9 +1189,8 @@ body:has(.common-contant) {
     }
 
     .swatch-list {
-      padding: rem(24) rem(0) rem(8) rem(20);
+      padding: rem(24) rem(20) rem(24) rem(0);
       display: flex;
-      overflow-x: auto;
       li {
         flex-shrink: 0;
         width: rem(181);
