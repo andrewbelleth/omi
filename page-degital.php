@@ -373,8 +373,8 @@ Template Name: 印刷ページ
                 </a>
             </div>
             <div class="btn-list-01">
-                <a href="#" class="btn-02">
-                    <span class="btn__text">デジタル</span>
+                <a href="<?php echo esc_url(home_url('/service/printing')); ?>" class="btn-02">
+                    <span class="btn__text">印刷</span>
                     <span class="btn__icon">
                         <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <circle cx="16" cy="16" r="16" fill="#0068B6" />
@@ -390,7 +390,7 @@ Template Name: 印刷ページ
 
                     </span>
                 </a>
-                <a href="#" class="btn-02">
+                <a href="<?php echo esc_url(home_url('/service/newspaper')); ?>" class="btn-02">
                     <span class="btn__text">彦根経済新聞</span>
                     <span class="btn__icon">
                         <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -407,7 +407,7 @@ Template Name: 印刷ページ
 
                     </span>
                 </a>
-                <a href="#" class="btn-02">
+                <a href="<?php echo esc_url(home_url('/service/branding')); ?>" class="btn-02">
                     <span class="btn__text btn__text--newspaper">ブランディング</span>
                     <span class="btn__icon">
                         <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -424,7 +424,7 @@ Template Name: 印刷ページ
 
                     </span>
                 </a>
-                <a href="#" class="btn-02">
+                <a href="<?php echo esc_url(home_url('/service/promotion')); ?>" class="btn-02">
                     <span class="btn__text btn__text--branding">プロモーション</span>
                     <span class="btn__icon">
                         <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">

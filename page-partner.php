@@ -71,7 +71,7 @@ Template Name: 外部パートナーページ
                         応募要項
                     </dt>
                     <dd>
-                        <a class="link-underline" href="<?php echo home_url('/company/partner/#entry-sheet'); ?>">下記</a>よりエントリーシートをダウンロードしていただき、ポートフォリオとともにメールか郵送で当社までご送付ください。<br>
+                        <a class="link-underline" href="<?php echo home_url('/partner/#entry-sheet'); ?>">下記</a>よりエントリーシートをダウンロードしていただき、ポートフォリオとともにメールか郵送で当社までご送付ください。<br>
                         追って担当者よりご連絡いたします。<br>
                         ご不明点等がございましたら、お問い合わせフォームかお電話にて、外部スタッフ募集係までご連絡ください。<br class="sp-only">（TEL 0749-42-8400月～金曜日、9:00〜17:00、当社休業日は除く）
                     </dd>
@@ -175,6 +175,16 @@ Template Name: 外部パートナーページ
                     <dt>
                         仕事内容
                     </dt>
+
+                    <dd>
+                        ①Webサイトのデザイン<br>
+                        ②Webサイトのコーディング・保守
+                    </dd>
+                </div>
+                <div class="faq-content__item-wrapper">
+                    <dt>
+                        仕事内容
+                    </dt>
                 </div><!-- /.dev2 -->
                 <dd>
                     ①Webサイトのデザイン<br>
@@ -257,33 +267,40 @@ Template Name: 外部パートナーページ
                     TEL：0749-42-8400　FAX：0749-42-6700　メール：info@omi-in.co.jp<br>
                     対応受付時間　AM9:00～PM5:00（当社休業日を除く）
                 </div>
-            </div>
-            <div class="active-policy-check">
-                <label>
-                    <span class="wpcf7-form-control-wrap" data-name="privacy">
-                        <span class="wpcf7-form-control wpcf7-acceptance">
-                            <span class="wpcf7-list-item">
-                                <input class="js-activation-check" type="checkbox" name="privacy" value="1" aria-invalid="false">
-                            </span>
-                        </span>
-                    </span>
-                    <span class="active-policy-check-text">個人情報の取り扱いについて同意する</span>
-                </label>
-            </div>
-            <a href="<?php echo home_url('/privacypolicy/'); ?>" class="active-policy-check-link mt12--sp8">個人情報保護方針</a>
-        </div>
-        <a href="" class="active-policy-btn btn mt64--sp48">
-            <span class="btn__text js-activation-button">エントリーシートを<br class="mobile">ダウンロードする</span>
-            <span class="btn__icon">
-                <svg viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <g clip-path="url(#clip0_40_1378)">
-                        <path
-                            d="M13.6814 18.9216L12.2322 17.4304L17.4836 12.1789H0.830322V10.1164H17.4836L12.2322 4.86497L13.6814 3.37378L21.4553 11.1477L13.6814 18.9216Z"
-                            fill="#0068B6" />
-                    </g>
-                </svg>
-            </span>
-        </a>
+                <div class="faq-content__item-wrapper">
+                    <dt>
+                        歓迎スキル
+                    </dt>
+                    <dd>
+                        ①AdobeXD、Figma、After Effects、Premiere Proを使える方<br>
+                        ②Webサイトの改善、SEO対策、システム管理の経験
+                    </dd>
+                </div>
+                <div class="faq-content__item-wrapper">
+                    <dt>
+                        求める人物像
+                    </dt>
+                    <dd>
+                        <p><span>・&nbsp;</span>明るくてポジティブ、アクティブな方</p>
+                        <p><span>・&nbsp;</span>さまざまなことに柔軟に対応できる方</p>
+                        <p><span>・&nbsp;</span>キャリアアップを目指している方</p>
+                        <p><span>・&nbsp;</span>失敗を恐れず、常に新しいことに挑戦したい方</p>
+                        <p><span>・&nbsp;</span>学ぶ気持ちを忘れない方</p>
+                        <p><span>・&nbsp;</span>作ったら終わりではなく、サイトリリース後の保守・運用にも末永くお付き合いいただける方</p>
+                    </dd>
+                </div>
+                <div class="faq-content__item-wrapper">
+                    <dt>
+                        主な制作物
+                    </dt>
+                    <dd>
+                        Webサイト制作（コーポレートサイト・ECサイト・LPページなど）、リニューアル、SNS集客、写真・動画制作
+                    </dd>
+                </div>
+            </dl>
+        </details><!-- /.faq-item -->
+        <!-- 取り扱い -->
+        <div class="ttl-03" id="entry-sheet">取り扱いのコンテンツ</div><!-- / -->
     </div>
 
 </div>

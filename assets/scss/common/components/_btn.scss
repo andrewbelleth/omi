@@ -55,7 +55,8 @@
         color: $blue;
         padding-inline: rem(40) rem(40 - 7.86);
         gap: rem(30);
-        width: rem(280 + 40);
+        /* width: rem(280 + 40); */
+        width: max-content;
         left: rem(-20);
     }
 

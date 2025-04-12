@@ -13,7 +13,9 @@ Template Name: projectページ
 <div class="section wrapper-152">
     <section class="sdgs project">
         <div class="project__img-wrapper">
+        <a href="<?php echo get_template_directory_uri(); ?>/assets/images/project/project-img01.webp" data-lightbox="project-img01">
             <img src="<?php echo get_template_directory_uri(); ?>/assets/images/project/project-img01.webp" alt="SDGsの画像" width="960" height="489" loading="lazy">
+        </a>
         </div>
         <h2 class="sdgs__head mt56--sp40">
             近江印刷株式会社は<br class="sp-only">次世代に向けた<br>
@@ -56,7 +58,9 @@ Template Name: projectページ
     </section><!-- /.sdgs -->
     <section class="mlgs project">
         <div class="project__img-wrapper">
+        <a href="<?php echo get_template_directory_uri(); ?>/assets/images/project/project-img02.webp" data-lightbox="project-img02">
             <img src="<?php echo get_template_directory_uri(); ?>/assets/images/project/project-img02.webp" alt="マザーレイクゴールズについての説明画像" width="960" height="723" loading="lazy">
+        </a>
         </div>
         <h2 class="mlgs__head mt56--sp40">
             近江印刷株式会社は<br>
@@ -82,7 +86,9 @@ Template Name: projectページ
     </section><!-- /.sdgs -->
     <section class="smaile project">
         <div class="project__img-wrapper">
+        <a href="<?php echo get_template_directory_uri(); ?>/assets/images/project/project-img03.webp" data-lightbox="project-img03">
             <img src="<?php echo get_template_directory_uri(); ?>/assets/images/project/project-img03.webp" alt="すまいるあくしょんについての画像" width="960" height="763" loading="lazy">
+        </a>
         </div>
         <h2 class="smaile__head mt56--sp40">
             近江印刷株式会社は<br>
