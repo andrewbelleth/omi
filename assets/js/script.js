@@ -530,17 +530,62 @@ document.addEventListener('DOMContentLoaded', function () {
   handleScroll();
 });
 
-document.addEventListener('DOMContentLoaded', function () {
-  const activationButton = document.querySelector('.js-activation-button');
-  const activationCheckBox = document.querySelector('.js-activation-check');
+// document.addEventListener('DOMContentLoaded', function () {
+//   const activationButton = document.querySelector('.js-activation-button');
+//   const activationCheckBox = document.querySelector('.js-activation-check');
 
-  activationButton.disabled = true;
+//   activationButton.disabled = true;
 
-  activationCheckBox.addEventListener('change', function () {
-    if (this.checked) {
-      activationButton.disabled = false;
-    } else {
-      activationButton.disabled = true;
-    }
-  });
-});
+//   activationCheckBox.addEventListener('change', function () {
+//     if (this.checked) {
+//       activationButton.disabled = false;
+//     } else {
+//       activationButton.disabled = true;
+//     }
+//   });
+// });
+
+class StickyScroll {
+  constructor() {
+    this.els = document.querySelectorAll('.js-sticky');
+    if(!this.els.length) return
+    this.init();
+  }
+  init() {
+    this.initSmoothScrolling();
+    this.scroll();
+  }
+  scroll() {
+    const texts = document.querySelectorAll('.js-sticky-text');
+    const images = document.querySelectorAll('.js-sticky-img');
+
+    texts.forEach((text, index) => {
+      gsap.timeline({
+        scrollTrigger: {
+          trigger: text,
+          start: 'top center',
+          end: 'bottom center',
+          scrub: 1,
+          // markers: true,
+        },
+      })
+      .to(images[index], {
+        opacity: 1,
+      });
+    });
+
+  }
+  initSmoothScrolling() {
+    const lenis = new Lenis({ lerp: 0.2, smoothWheel: true });
+    lenis.on('scroll', () => ScrollTrigger.update());
+
+    const scrollFn = (time) => {
+      lenis.raf(time);
+      requestAnimationFrame(scrollFn);
+    };
+
+    requestAnimationFrame(scrollFn);
+  }
+}
+
+new StickyScroll();

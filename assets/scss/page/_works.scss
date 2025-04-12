@@ -112,6 +112,11 @@
         li {
             width: calc(100% / 3 - rem(64 / 3));
 
+            a {
+                display: block; 
+                width: 100%;
+            }
+
             .date {
                 color: $dark-gray;
                 font-feature-settings: 'pwid' on, 'palt' on;

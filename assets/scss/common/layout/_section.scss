@@ -106,6 +106,7 @@
 .section__col {
     display: flex;
     flex-wrap: wrap;
+    align-items: flex-start;
     gap: rem(120);
 
     @include mq(pc) {

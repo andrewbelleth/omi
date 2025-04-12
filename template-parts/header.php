@@ -7,6 +7,7 @@
     <meta name="format-detection" content="telephone=no">
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/destyle.css@1.0.15/destyle.css" />
+    <link rel="stylesheet" href="https://unpkg.com/lenis@1.2.3/dist/lenis.css">
     <?php wp_head(); ?>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/css/lightbox.min.css" rel="stylesheet" />
@@ -14,14 +15,22 @@
 
 <body class="<?php
                 global $post;
-                $slug = $post->post_name;
+                if (is_post_type_archive('works')) {
+                    $slug = 'works';
+                } else {
+                    $slug = $post->post_name;
+                }
                 foreach (get_body_class() as $class) {
                     echo $class . " ";
                 }
                 echo "page-" . $slug;
                 ?>">
     <header class="header" id="header">
-        <div class="header__logo"><a href="<?php echo home_url(); ?>"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/pc/logo.webp" alt="omi printing"></a></div>
+        <?php if (is_front_page()): ?>
+            <div class="header__logo"><a href="<?php echo home_url(); ?>"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/pc/logo.webp" alt="omi printing"></a></div>
+        <?php else: ?>
+            <div class="header__logo"><a href="<?php echo home_url(); ?>"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/pc/logo-blue.webp" alt="omi printing"></a></div>
+        <?php endif; ?>
         <nav class="header__nav" id="header__nav">
             <ul>
                 <li><a href="<?php echo home_url(); ?>/feature">近江印刷の特徴</a></li>

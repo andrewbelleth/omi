@@ -95,11 +95,11 @@ function change_set_garden($query)
     return;
   }
 
-  if (is_archive('news')) {
-    $query->set('posts_per_page', -1);
-    $query->set('orderby', 'date');
-    $query->set('order', 'DESC');
-  }
+  // if (is_archive('news')) {
+  //   $query->set('posts_per_page', -1);
+  //   $query->set('orderby', 'date');
+  //   $query->set('order', 'DESC');
+  // }
 }
 add_action('pre_get_posts', 'change_set_garden');
 

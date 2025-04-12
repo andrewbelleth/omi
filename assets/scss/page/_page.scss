@@ -226,13 +226,13 @@
     gap: 1rem;
 
     .previouspostslink {
-      content: url(/images/icon/arrow-left-black.svg);
+      content: url(../images/common/arrow-left-black.svg);
       width: 1.5rem;
       margin-right: 1rem;
     }
 
     .nextpostslink {
-      content: url(/images/icon/arrow-right-black.svg);
+      content: url(../images/common/arrow-right-black.svg);
       width: 1.5rem;
       margin-left: 1rem;
     }
@@ -264,7 +264,7 @@
 
     .extend {
       width: rem(22);
-      content: url(/images/icon/extend-gray.svg);
+      content: url(../images/common/extend-gray.svg);
       margin-inline: rem(4);
     }
   }

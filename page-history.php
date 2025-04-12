@@ -342,70 +342,72 @@ if (! defined('ABSPATH')) exit;
     </div>
 </div>
 
-<div class="component-box-item section">
-    <div class="link-01-component">
-        <div class="link-01-head">
-            <h3 class="link-01-title">COMPANY</h3>
-            <a href="#" class="link-01-link">
-                <span class="link-01-link-icon">
-                    <svg viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <circle cx="14" cy="14" r="13.5" stroke="#0068B6" />
-                        <path d="M15.9384 19.94L14.8317 18.8013L18.842 14.7911H6.12488V13.2161H18.842L14.8317 9.20586L15.9384 8.06714L21.8749 14.0036L15.9384 19.94Z" fill="#0068B6" />
-                    </svg>
-                </span>
-                <span class="link-01-link-text">会社概要トップへ戻る</span>
-            </a>
-        </div>
-        <div class="btn-list-01">
-            <a href="<?php echo esc_url(home_url('/company/facility')); ?>" class="btn-02">
-                <span class="btn__text">設備概要</span>
-                <span class="btn__icon">
-                    <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <circle cx="16" cy="16" r="16" fill="#0068B6" />
-                        <g clip-path="url(#clip0_817_15493)">
-                            <path d="M18.0934 22.6183L16.8418 21.3305L21.3772 16.7951H6.99475V15.0139H21.3772L16.8418 10.4785L18.0934 9.19067L24.8073 15.9045L18.0934 22.6183Z" fill="white" />
-                        </g>
-                        <defs>
-                            <clipPath id="clip0_817_15493">
-                                <rect width="19" height="19" fill="white" transform="translate(6.401 6.40002)" />
-                            </clipPath>
-                        </defs>
-                    </svg>
+<div class="section">
+    <div class="component-box-item">
+        <div class="link-01-component">
+            <div class="link-01-head">
+                <h3 class="link-01-title">COMPANY</h3>
+                <a href="#" class="link-01-link">
+                    <span class="link-01-link-icon">
+                        <svg viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="14" cy="14" r="13.5" stroke="#0068B6" />
+                            <path d="M15.9384 19.94L14.8317 18.8013L18.842 14.7911H6.12488V13.2161H18.842L14.8317 9.20586L15.9384 8.06714L21.8749 14.0036L15.9384 19.94Z" fill="#0068B6" />
+                        </svg>
+                    </span>
+                    <span class="link-01-link-text">会社概要トップへ戻る</span>
+                </a>
+            </div>
+            <div class="btn-list-01">
+                <a href="<?php echo esc_url(home_url('/company/facility')); ?>" class="btn-02">
+                    <span class="btn__text">設備概要</span>
+                    <span class="btn__icon">
+                        <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="16" cy="16" r="16" fill="#0068B6" />
+                            <g clip-path="url(#clip0_817_15493)">
+                                <path d="M18.0934 22.6183L16.8418 21.3305L21.3772 16.7951H6.99475V15.0139H21.3772L16.8418 10.4785L18.0934 9.19067L24.8073 15.9045L18.0934 22.6183Z" fill="white" />
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_817_15493">
+                                    <rect width="19" height="19" fill="white" transform="translate(6.401 6.40002)" />
+                                </clipPath>
+                            </defs>
+                        </svg>
 
-                </span>
-            </a>
-            <a href="<?php echo esc_url(home_url('/company/project')); ?>" class="btn-02">
-                <span class="btn__text btn__text--newspaper">私たちの<br class="mobile">取り組み</span>
-                <span class="btn__icon">
-                    <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <circle cx="16" cy="16" r="16" fill="#0068B6" />
-                        <g clip-path="url(#clip0_817_15493)">
-                            <path d="M18.0934 22.6183L16.8418 21.3305L21.3772 16.7951H6.99475V15.0139H21.3772L16.8418 10.4785L18.0934 9.19067L24.8073 15.9045L18.0934 22.6183Z" fill="white" />
-                        </g>
-                        <defs>
-                            <clipPath id="clip0_817_15493">
-                                <rect width="19" height="19" fill="white" transform="translate(6.401 6.40002)" />
-                            </clipPath>
-                        </defs>
-                    </svg>
-                </span>
-            </a>
-            <a href="<?php echo esc_url(home_url('/company/ing')); ?>" class="btn-02">
-                <span class="btn__text btn__text--branding">社外報ing</span>
-                <span class="btn__icon">
-                    <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <circle cx="16" cy="16" r="16" fill="#0068B6" />
-                        <g clip-path="url(#clip0_817_15493)">
-                            <path d="M18.0934 22.6183L16.8418 21.3305L21.3772 16.7951H6.99475V15.0139H21.3772L16.8418 10.4785L18.0934 9.19067L24.8073 15.9045L18.0934 22.6183Z" fill="white" />
-                        </g>
-                        <defs>
-                            <clipPath id="clip0_817_15493">
-                                <rect width="19" height="19" fill="white" transform="translate(6.401 6.40002)" />
-                            </clipPath>
-                        </defs>
-                    </svg>
-                </span>
-            </a>
+                    </span>
+                </a>
+                <a href="<?php echo esc_url(home_url('/company/project')); ?>" class="btn-02">
+                    <span class="btn__text btn__text--newspaper">私たちの<br class="mobile">取り組み</span>
+                    <span class="btn__icon">
+                        <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="16" cy="16" r="16" fill="#0068B6" />
+                            <g clip-path="url(#clip0_817_15493)">
+                                <path d="M18.0934 22.6183L16.8418 21.3305L21.3772 16.7951H6.99475V15.0139H21.3772L16.8418 10.4785L18.0934 9.19067L24.8073 15.9045L18.0934 22.6183Z" fill="white" />
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_817_15493">
+                                    <rect width="19" height="19" fill="white" transform="translate(6.401 6.40002)" />
+                                </clipPath>
+                            </defs>
+                        </svg>
+                    </span>
+                </a>
+                <a href="<?php echo esc_url(home_url('/company/ing')); ?>" class="btn-02">
+                    <span class="btn__text btn__text--branding">社外報ing</span>
+                    <span class="btn__icon">
+                        <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="16" cy="16" r="16" fill="#0068B6" />
+                            <g clip-path="url(#clip0_817_15493)">
+                                <path d="M18.0934 22.6183L16.8418 21.3305L21.3772 16.7951H6.99475V15.0139H21.3772L16.8418 10.4785L18.0934 9.19067L24.8073 15.9045L18.0934 22.6183Z" fill="white" />
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_817_15493">
+                                    <rect width="19" height="19" fill="white" transform="translate(6.401 6.40002)" />
+                                </clipPath>
+                            </defs>
+                        </svg>
+                    </span>
+                </a>
+            </div>
         </div>
     </div>
 </div>
