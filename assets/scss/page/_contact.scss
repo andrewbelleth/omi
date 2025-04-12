@@ -361,7 +361,12 @@
         &-btn {
             margin: 0 auto;
 
-            &:has(.js-activation-button:disabled) {
+            &:hover {
+                width: rem(280 + 40);
+                left: 0;
+            }
+
+            &:has(.js-activation-button.disabled) {
                 background: $gray !important;
                 width: rem(280) !important;
 
@@ -400,6 +405,7 @@
             &:hover {
                 padding-inline: 2.00875rem rem(40);
                 width: rem(232 + 40) !important;
+
                 .btn__text {
                     color: $gray !important;
                 }
@@ -417,7 +423,7 @@
 }
 
 .js-activation-button {
-    &:disabled {
+    &.disabled {
         pointer-events: none;
     }
 }
@@ -478,7 +484,7 @@
 
 .active-policy {
     max-width: rem(960);
-    width: calc(100% - rem(48));
+    width: 100%;
     margin-inline: auto;
 
     &-inner {
@@ -542,13 +548,9 @@
     }
 
     &-check {
-        margin-top: rem(32);
+        margin-top: rem(24);
         display: flex;
         justify-content: center;
-
-        @include mq(tb) {
-            margin-top: rem(24);
-        }
 
         label {
             display: flex;
@@ -628,5 +630,28 @@
 
     &-btn {
         margin-inline: auto;
+        left: 0 !important;
+
+        &:has(.js-activation-button.disabled) {
+            background: $gray !important;
+            width: rem(280) !important;
+            pointer-events: none;
+
+            .btn__text {
+                color: $white !important;
+            }
+
+            .btn__icon {
+                path {
+                    fill: $gray !important;
+                }
+            }
+
+            &:hover {
+                left: 0;
+                gap: 1rem;
+                padding-inline: 2rem 1rem;
+            }
+        }
     }
 }

@@ -26,7 +26,11 @@
                 echo "page-" . $slug;
                 ?>">
     <header class="header" id="header">
-        <div class="header__logo"><a href="<?php echo home_url(); ?>"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/pc/logo.webp" alt="omi printing"></a></div>
+        <?php if (is_front_page()): ?>
+            <div class="header__logo"><a href="<?php echo home_url(); ?>"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/pc/logo.webp" alt="omi printing"></a></div>
+        <?php else: ?>
+            <div class="header__logo"><a href="<?php echo home_url(); ?>"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/pc/logo-blue.webp" alt="omi printing"></a></div>
+        <?php endif; ?>
         <nav class="header__nav" id="header__nav">
             <ul>
                 <li><a href="<?php echo home_url(); ?>/feature">近江印刷の特徴</a></li>
