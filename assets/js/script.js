@@ -544,3 +544,48 @@ document.addEventListener('DOMContentLoaded', function () {
 //     }
 //   });
 // });
+
+class StickyScroll {
+  constructor() {
+    this.els = document.querySelectorAll('.js-sticky');
+    if(!this.els.length) return
+    this.init();
+  }
+  init() {
+    this.initSmoothScrolling();
+    this.scroll();
+  }
+  scroll() {
+    const texts = document.querySelectorAll('.js-sticky-text');
+    const images = document.querySelectorAll('.js-sticky-img');
+
+    texts.forEach((text, index) => {
+      gsap.timeline({
+        scrollTrigger: {
+          trigger: text,
+          start: 'top center',
+          end: 'bottom center',
+          scrub: 1,
+          // markers: true,
+        },
+      })
+      .to(images[index], {
+        opacity: 1,
+      });
+    });
+
+  }
+  initSmoothScrolling() {
+    const lenis = new Lenis({ lerp: 0.2, smoothWheel: true });
+    lenis.on('scroll', () => ScrollTrigger.update());
+
+    const scrollFn = (time) => {
+      lenis.raf(time);
+      requestAnimationFrame(scrollFn);
+    };
+
+    requestAnimationFrame(scrollFn);
+  }
+}
+
+new StickyScroll();

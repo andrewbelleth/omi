@@ -19,8 +19,8 @@ if (! defined('ABSPATH')) exit;
 <div class="page-wrapper">
     <div class="js-pallax-target">
         <picture class="pallax-bg">
-            <source srcset="<?php echo get_template_directory_uri(); ?>/assets/images/recruit/recruit-mv.webp" media="(min-width: 768px)">
-            <img class="js-pallax-img" src="<?php echo get_template_directory_uri(); ?>/assets/images/recruit/sp-recruit-mv.webp" loading="eager" decoding="async" alt="近江印刷リクルートページのメインビジュアル" width="1439" height="640">
+            <source srcset="<?php echo get_template_directory_uri(); ?>/assets/images/company/company-mv.webp" media="(min-width: 768px)">
+            <img class="js-pallax-img" src="<?php echo get_template_directory_uri(); ?>/assets/images/company/sp-company-mv.webp" loading="eager" decoding="async" alt="近江印刷会社概要ページのメインビジュアル" width="1439" height="640">
         </picture>
     </div><!-- / -->
     <div class="company pt160--sp96">

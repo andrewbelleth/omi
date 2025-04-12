@@ -284,7 +284,7 @@ if (! defined('ABSPATH')) exit;
                     <a href="<?php echo home_url('/privacypolicy/'); ?>" class="active-policy-check-link mt12--sp8">個人情報保護方針</a>
                 </div>
                 <a href="" class="active-policy-btn btn mt64--sp48">
-                    <span class="btn__text js-activation-button">エントリーシートをダウンロードする</span>
+                    <span class="btn__text js-activation-button">エントリーシートを<br class="mobile">ダウンロードする</span>
                     <span class="btn__icon">
                         <svg viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <g clip-path="url(#clip0_40_1378)">

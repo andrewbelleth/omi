@@ -7,6 +7,7 @@
     <meta name="format-detection" content="telephone=no">
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/destyle.css@1.0.15/destyle.css" />
+    <link rel="stylesheet" href="https://unpkg.com/lenis@1.2.3/dist/lenis.css">
     <?php wp_head(); ?>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
@@ -14,7 +15,11 @@
 
 <body class="<?php
                 global $post;
-                $slug = $post->post_name;
+                if (is_post_type_archive('works')) {
+                    $slug = 'works';
+                } else {
+                    $slug = $post->post_name;
+                }
                 foreach (get_body_class() as $class) {
                     echo $class . " ";
                 }

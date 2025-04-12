@@ -477,6 +477,10 @@
 }
 
 .active-policy {
+    max-width: rem(960);
+    width: calc(100% - rem(48));
+    margin-inline: auto;
+
     &-inner {
         padding: rem(40) rem(48);
         background-color: $white;
