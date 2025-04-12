@@ -71,7 +71,7 @@ Template Name: 外部パートナーページ
                         応募要項
                     </dt>
                     <dd>
-                        <a class="link-underline" href="<?php echo home_url('/company/partner/#entry-sheet'); ?>">下記</a>よりエントリーシートをダウンロードしていただき、ポートフォリオとともにメールか郵送で当社までご送付ください。<br>
+                        <a class="link-underline" href="<?php echo home_url('/partner/#entry-sheet'); ?>">下記</a>よりエントリーシートをダウンロードしていただき、ポートフォリオとともにメールか郵送で当社までご送付ください。<br>
                         追って担当者よりご連絡いたします。<br>
                         ご不明点等がございましたら、お問い合わせフォームかお電話にて、外部スタッフ募集係までご連絡ください。<br class="sp-only">（TEL 0749-42-8400月～金曜日、9:00〜17:00、当社休業日は除く）
                     </dd>
@@ -224,7 +224,7 @@ Template Name: 外部パートナーページ
             </dl>
         </details><!-- /.faq-item -->
         <!-- 取り扱い -->
-        <div class="ttl-03">取り扱いのコンテンツ</div><!-- / -->
+        <div class="ttl-03" id="entry-sheet">取り扱いのコンテンツ</div><!-- / -->
     </div>
 
 

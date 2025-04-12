@@ -49,7 +49,7 @@ Template Name: 取り扱い品目ページ
                     <li><img src="<?php echo get_template_directory_uri(); ?>/assets/images/products/products-img02.webp" alt="広報誌・定期刊行物についてのイメージ画像" width="368" height="220" loading="lazy"></li>
                 </ul>
                 <div class="component-box-btn mt32--sp40">
-                    <a href="<?php echo esc_url(home_url('/products')); ?>" class="btn inview">
+                    <a href="<?php echo esc_url(home_url('/')); ?>" class="btn inview">
                         <span class="btn__text">WebBookについて</span>
                         <span class="btn__icon">
                             <svg viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -77,7 +77,7 @@ Template Name: 取り扱い品目ページ
                     <li><img src="<?php echo get_template_directory_uri(); ?>/assets/images/products/products-img04.webp" alt="印刷物の企画デザイン力を活かしたチラシポスター制作のイメージ画像" width="368" height="220" loading="lazy"></li>
                 </ul>
                 <div class="component-box-btn mt32--sp40">
-                    <a href="<?php echo esc_url(home_url('/')); ?>" class="btn inview">
+                    <a href="<?php echo esc_url(home_url('/service/promotion')); ?>" class="btn inview">
                         <span class="btn__text">プロモーションについて</span>
                         <span class="btn__icon">
                             <svg viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -105,7 +105,7 @@ Template Name: 取り扱い品目ページ
                 </ul>
                 <div class="component-box-btn mt32--sp40">
                     <div class="btn-list">
-                        <a href="<?php echo esc_url(home_url('/')); ?>" class="btn inview">
+                        <a href="<?php echo esc_url(home_url('/service/degital')); ?>" class="btn inview">
                             <span class="btn__text">デジタルについて</span>
                             <span class="btn__icon">
                                 <svg viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -117,7 +117,7 @@ Template Name: 取り扱い品目ページ
                                 </svg>
                             </span>
                         </a>
-                        <a href="<?php echo esc_url(home_url('/')); ?>" class="btn inview">
+                        <a href="<?php echo esc_url(home_url('/service/printing/bookbinding')); ?>" class="btn inview">
                             <span class="btn__text">製本について</span>
                             <span class="btn__icon">
                                 <svg viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -146,7 +146,7 @@ Template Name: 取り扱い品目ページ
                 </ul>
                 <div class="component-box-btn mt32--sp40">
                     <div class="btn-list">
-                        <a href="<?php echo esc_url(home_url('/')); ?>" class="btn inview">
+                        <a href="<?php echo esc_url(home_url('/service/printing/processing')); ?>" class="btn inview">
                             <span class="btn__text">加工について</span>
                             <span class="btn__icon">
                                 <svg viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -158,7 +158,7 @@ Template Name: 取り扱い品目ページ
                                 </svg>
                             </span>
                         </a>
-                        <a href="<?php echo esc_url(home_url('/')); ?>" class="btn inview">
+                        <a href="<?php echo esc_url(home_url('/service/printing/bookbinding')); ?>" class="btn inview">
                             <span class="btn__text">製本について</span>
                             <span class="btn__icon">
                                 <svg viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -346,7 +346,7 @@ Template Name: 取り扱い品目ページ
 
                     </span>
                 </a>
-                <a href="<?php echo esc_url(home_url('/service/printing/booklet')); ?>" class="btn-02">
+                <a href="<?php echo esc_url(home_url('/service/printing/bookbinding')); ?>" class="btn-02">
                     <span class="btn__text btn__text--newspaper">製本</span>
                     <span class="btn__icon">
                         <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">

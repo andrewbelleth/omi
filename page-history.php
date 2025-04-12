@@ -357,7 +357,7 @@ if (! defined('ABSPATH')) exit;
             </a>
         </div>
         <div class="btn-list-01">
-            <a href="#" class="btn-02">
+            <a href="<?php echo esc_url(home_url('/company/facility')); ?>" class="btn-02">
                 <span class="btn__text">設備概要</span>
                 <span class="btn__icon">
                     <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -374,7 +374,7 @@ if (! defined('ABSPATH')) exit;
 
                 </span>
             </a>
-            <a href="#" class="btn-02">
+            <a href="<?php echo esc_url(home_url('/company/project')); ?>" class="btn-02">
                 <span class="btn__text btn__text--newspaper">私たちの<br class="mobile">取り組み</span>
                 <span class="btn__icon">
                     <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -388,10 +388,9 @@ if (! defined('ABSPATH')) exit;
                             </clipPath>
                         </defs>
                     </svg>
-
                 </span>
             </a>
-            <a href="#" class="btn-02">
+            <a href="<?php echo esc_url(home_url('/company/ing')); ?>" class="btn-02">
                 <span class="btn__text btn__text--branding">社外報ing</span>
                 <span class="btn__icon">
                     <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -405,7 +404,6 @@ if (! defined('ABSPATH')) exit;
                             </clipPath>
                         </defs>
                     </svg>
-
                 </span>
             </a>
         </div>

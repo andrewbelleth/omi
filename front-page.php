@@ -156,7 +156,7 @@ Template Name: トップページ
                     <p>「伝えたい人」に「伝えたいこと」を「伝えたい時」に伝える。<br>伝え、伝わることにこだわり続けている近江印刷だからこそ、<br>さまざまなメディアを組み合わせ、相乗効果を生み出すことができます。
                     </p>
                 </div>
-                <a href="<?php echo home_url(); ?>/about" class="btn inview">
+                <a href="<?php echo esc_url(home_url('/feature')); ?>" class="btn inview">
                     <span class="btn__text">近江印刷の特徴</span>
                     <span class="btn__icon">
                         <svg viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -193,7 +193,7 @@ Template Name: トップページ
                             </p>
                             <p>全国からもお問い合わせをいただき、<br>充実した印刷・製本設備と熟練のオペレーターの技術力で、<br>高品質な製品を短納期で納品しています。</p>
                         </div>
-                        <a href="<?php echo home_url(); ?>/about" class="btn btn--white">
+                        <a href="<?php echo esc_url(home_url('/company')); ?>" class="btn btn--white">
                             <span class="btn__text">会社概要</span>
                             <span class="btn__icon">
                                 <svg viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -226,7 +226,7 @@ Template Name: トップページ
                             <p>部署の垣根を超えたコミュニケーションが活発で、<br>迅速で丁寧な商品・サービスを提供します。</p>
                             <p>貴社専属のスタッフが付き、見積・スケジュール調整・あらゆるご相談・ご連絡に対しても真摯に対応いたします。</p>
                         </div>
-                        <a href="<?php echo home_url(); ?>/about" class="btn btn--white">
+                        <a href="<?php echo esc_url(home_url('/feature')); ?>" class="btn btn--white">
                             <span class="btn__text">近江印刷の特徴</span>
                             <span class="btn__icon">
                                 <svg viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -261,7 +261,7 @@ Template Name: トップページ
                             <p>紙とデジタルの相乗効果によってさらなる訴求力の向上が期待できますので、<br>印刷物にもWebにも精通した私たちにぜひお任せください。<br>デジタルコンテンツに特化した事業も行っております。
                             </p>
                         </div>
-                        <a href="<?php echo home_url(); ?>/about" class="btn btn--white">
+                        <a href="<?php echo esc_url(home_url('/service/degital')); ?>" class="btn btn--white">
                             <span class="btn__text">デジタルコンテンツ</span>
                             <span class="btn__icon">
                                 <svg viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -289,7 +289,7 @@ Template Name: トップページ
                 <span class="section__title--en">SERVICE</span>
                 <span class="section__title--jp">サービス</span>
             </h2>
-            <a href="<?php echo home_url(); ?>/service" class="btn btn--right inview">
+            <a href="<?php echo esc_url(home_url('/service')); ?>" class="btn btn--right inview">
                 <span class="btn__text">サービスを詳しく見る</span>
                 <span class="btn__icon">
                     <svg viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
