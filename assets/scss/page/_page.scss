@@ -1185,16 +1185,40 @@ body:has(.common-contant) {
       line-height: rem(32);
       white-space: nowrap;
     }
-
-    @media (769px <=width < 1050px) {
-      li {
-        width: 100%;
-
-        &:last-child {
-          width: 100%;
+    .tab-br{
+      display: none;
+    }
+    @media (1025px <= width < 1050px) {
+      p{
+        &:after{
+          right: -0.91rem;
+          height: 28px;
+          clip-path: polygon(0.9375rem 50%, 0% 0%, 0% 28px);
         }
       }
     }
+    @media (769px <= width < 1050px) {
+      li {
+       
+        width: rem(175);
+        width: 23.5%;
+        &:last-child {
+          width: 23.5%;
+        }
+        img{
+          max-width: rem(165);
+        }
+      }
+     
+      .tab-br{
+        display: block;
+      }
+      p.fz12 {
+       font-size: rem(11.5); 
+       line-height: 1rem;
+      }
+    }
+   
   }
 
   .fz22--sp16 {

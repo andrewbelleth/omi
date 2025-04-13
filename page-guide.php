@@ -158,7 +158,7 @@ Template Name: 入稿ガイド
                             <img src="<?php echo get_template_directory_uri(); ?>/assets/images/guide/guide-img02.webp" alt="" width="166" height="214" loading="lazy">
                         </li>
                         <li>
-                            <p class="fz12">特色からプロセスカラーへ変換</p>
+                            <p class="fz12">特色から<br class="tab-br">プロセスカラーへ変換</p>
                             <img src="<?php echo get_template_directory_uri(); ?>/assets/images/guide/guide-img03.webp" alt="" width="166" height="214" loading="lazy">
                         </li>
                         <li>
