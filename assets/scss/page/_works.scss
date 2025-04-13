@@ -12,6 +12,11 @@
     li {
         width: calc(100% / 3 - rem(60 / 3));
 
+        a {
+            display: block;
+            width: 100%;
+        }
+
         .img {
             position: relative;
             display: flex;

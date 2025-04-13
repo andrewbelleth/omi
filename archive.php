@@ -1,8 +1,5 @@
 <?php
 if (! defined('ABSPATH')) exit;
-/* 
-Template Name: トップページ
-*/
 ?>
 
 <?php get_template_part('template-parts/header'); ?>
@@ -14,12 +11,26 @@ Template Name: トップページ
 <div class="page-news section section__col">
     <div class="page-news__side section__side section__side--news">
         <h3>カテゴリ</h3>
-        <ul>
-            <li><a href="<?php echo home_url(); ?>/news">全て</a></li>
+        <ul id="news-sidemenu">
+            <?php
+            $current_cat = get_queried_object();
+            if (!$current_cat) {
+                $current_cat = 'post';
+            }
+            ?>
+            <?php if ($current_cat && $current_cat->name === 'post') { ?>
+            <li><a data-slug="post" href="<?php echo home_url(); ?>/news" class="active">全て</a></li>
+            <?php } else { ?>
+            <li><a data-slug="post" href="<?php echo home_url(); ?>/news">全て</a></li>
+            <?php } ?>
             <?php
             $categories = get_categories();
             foreach ($categories as $category) {
-                echo '<li><a href="' . get_category_link($category->term_id) . '">' . $category->name . '</a></li>';
+                if ($current_cat && $current_cat->name === $category->name) {
+                    echo '<li><a data-slug="' . $category->name . '" href="' . get_category_link($category->term_id) . '" class="active">' . $category->name . '</a></li>';
+                } else {
+                    echo '<li><a data-slug="' . $category->name . '" href="' . get_category_link($category->term_id) . '">' . $category->name . '</a></li>';
+                }
             }
             ?>
         </ul>

@@ -409,10 +409,6 @@ function activateMenuByHash() {
       item.classList.remove('active');
     }
   });
-
-  if (!matched && menuItems.length > 0) {
-    menuItems[0].classList.add('active');
-  }
 }
 
 // 初期表示時

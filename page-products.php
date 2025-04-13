@@ -13,7 +13,7 @@ Template Name: 取り扱い品目ページ
 <div class="page-wrapper wrapper mt160--sp96">
     <div class=" section section__col">
         <div class="page-printing__side section__side">
-            <ul>
+        <ul id="sidemenu">
                 <li><a data-slug="magazine" href="<?php echo home_url('/service/printing/products/#magazine'); ?>">広報誌・定期刊行物</a></li>
                 <li><a data-slug="flyer" href="<?php echo home_url('/service/printing/products/#flyer'); ?>">チラシ・ポスター</a></li>
                 <li><a data-slug="catalog" href="<?php echo home_url('/service/printing/products/#catalog'); ?>">カタログ</a></li>

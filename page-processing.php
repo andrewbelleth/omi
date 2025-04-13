@@ -13,7 +13,7 @@ Template Name: 加工ページ
 <div class="page-wrapper mt160--sp96">
     <div class=" section section__col">
         <div class="page-printing__side section__side">
-            <ul>
+            <ul id="sidemenu">
                 <li><a data-slug="occasionally" href="<?php echo home_url('/service/printing/processing/#occasionally'); ?>">折り加工</a></li>
                 <li><a data-slug="sewing" href="<?php echo home_url('/service/printing/processing/#sewing'); ?>">ミシン加工</a></li>
                 <li><a data-slug="punching" href="<?php echo home_url('/service/printing/processing/#punching'); ?>">穴あけ加工</a></li>

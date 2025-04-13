@@ -471,52 +471,41 @@ $args = array(
             </a>
         </div>
         <ul class="card__list card__list--works inview">
-            <li>
-                <div class="img"></div>
-                <div class="meta">
-                    <p class="cat">
-                        <span>カテゴリが入ります</span>
-                    </p>
-                </div>
-                <h3 class="title">企業名や案件名が入ります企業名や案件名が入ります</h3>
-            </li>
-            <li>
-                <div class="img"></div>
-                <div class="meta">
-                    <p class="cat">
-                        <span>カテゴリが入ります</span>
-                        <span>カテゴリが入ります</span>
-                    </p>
-                </div>
-                <h3 class="title">企業名や案件名が入ります企業名や案件名が入ります</h3>
-            </li>
-            <li>
-                <div class="img"></div>
-                <div class="meta">
-                    <p class="cat">
-                        <span>カテゴリが入ります</span>
-                    </p>
-                </div>
-                <h3 class="title">企業名や案件名が入ります企業名や案件名が入ります</h3>
-            </li>
-            <li>
-                <div class="img"></div>
-                <div class="meta">
-                    <p class="cat">
-                        <span>カテゴリが入ります</span>
-                    </p>
-                </div>
-                <h3 class="title">企業名や案件名が入ります企業名や案件名が入ります</h3>
-            </li>
-            <li>
-                <div class="img"></div>
-                <div class="meta">
-                    <p class="cat">
-                        <span>カテゴリが入ります</span>
-                    </p>
-                </div>
-                <h3 class="title">企業名や案件名が入ります企業名や案件名が入ります</h3>
-            </li>
+            <?php
+            $args = array(
+                'post_type' => 'works',
+                'posts_per_page' => 6,
+            );
+            $query = new WP_Query($args);
+            ?>
+            <?php if ($query->have_posts()) : ?>
+                <?php
+                while ($query->have_posts()) : $query->the_post();
+                    $the_id = $post->ID;
+                    $categories = get_the_terms($the_id, 'works-cat');
+                ?>
+                    <li>
+                        <a href="<?php the_permalink(); ?>">
+                            <div class="img">
+                                <?php if (has_post_thumbnail()) : ?>
+                                    <?php the_post_thumbnail('full', array('class' => 'img__cover')); ?>
+                                <?php endif; ?>
+                            </div>
+                            <div class="meta">
+                                <?php if ($categories) : ?>
+                                    <p class="cat">
+                                        <?php foreach ($categories as $category) : ?>
+                                            <span><?php echo esc_html($category->name); ?></span>
+                                        <?php endforeach; ?>
+                                    </p>
+                                <?php endif; ?>
+                            </div>
+                            <h3 class="title"><?php the_title(); ?></h3>
+                        </a>
+                    </li>
+                <?php endwhile; ?>
+            <?php endif; ?>
+            <?php wp_reset_postdata(); ?>
         </ul>
     </div>
 </div>
@@ -561,51 +550,25 @@ $args = array(
         </a>
     </div>
     <ul class="top-news__list post__list inview">
-        <li>
-            <a href="">
-                <p class="date">0000/00/00</p>
-                <p class="cat">リリース情報</p>
-                <p class="title">ダミーテキストが入ります。ダミーテキストが入ります。<span class="icon"></span></p>
-            </a>
-        </li>
-        <li>
-            <a href="">
-                <p class="date">0000/00/00</p>
-                <p class="cat">お知らせ</p>
-                <p class="title">
-                    ダミーテキストが入ります。ダミーテキストが入ります。ダミーテキストが入ります。ダミーテキストが入ります。ダミーテキストが入ります。ダミーテキストが入ります。<span
-                        class="icon"></span></p>
-            </a>
-        </li>
-        <li>
-            <a href="">
-                <p class="date">0000/00/00</p>
-                <p class="cat">求人</p>
-                <p class="title">ダミーテキストが入ります。ダミーテキストが入ります。<span class="icon"></span></p>
-            </a>
-        </li>
-        <li>
-            <a href="">
-                <p class="date">0000/00/00</p>
-                <p class="cat">お知らせ</p>
-                <p class="title">ダミーテキストが入ります。ダミーテキストが入ります。ダミーテキストが入ります。ダミーテキストが入ります。<span class="icon"></span>
-                </p>
-            </a>
-        </li>
-        <li>
-            <a href="">
-                <p class="date">0000/00/00</p>
-                <p class="cat">コラム</p>
-                <p class="title">ダミーテキストが入ります。ダミーテキストが入ります。<span class="icon"></span></p>
-            </a>
-        </li>
-        <li>
-            <a href="">
-                <p class="date">0000/00/00</p>
-                <p class="cat">お知らせ</p>
-                <p class="title">ダミーテキストが入ります。ダミーテキストが入ります。<span class="icon"></span></p>
-            </a>
-        </li>
+        <?php
+        $args = array(
+            'post_type' => 'post',
+            'posts_per_page' => 6,
+        );
+        $query = new WP_Query($args);
+        ?>
+        <?php if ($query->have_posts()) : ?>
+            <?php while ($query->have_posts()) : $query->the_post(); ?>
+                <li>
+                    <a href="<?php the_permalink(); ?>">
+                        <p class="date"><?php echo get_the_date('Y/m/d'); ?></p>
+                        <p class="cat"><?php echo get_the_category()[0]->name; ?></p>
+                        <p class="title"><?php the_title(); ?><span class="icon"></span></p>
+                    </a>
+                </li>
+            <?php endwhile; ?>
+        <?php endif; ?>
+        <?php wp_reset_postdata(); ?>
     </ul>
 </div>
 

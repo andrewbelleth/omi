@@ -13,7 +13,7 @@ Template Name: 製本ページ
 <div class="page-wrapper wrapper mt160--sp96">
     <div class=" section section__col">
         <div class="page-printing__side section__side">
-            <ul>
+            <ul id="sidemenu">
                 <li><a data-slug="middle-stitching" href="<?php echo home_url('/service/printing/bookbinding/#middle-stitching'); ?>">中綴じ製本</a></li>
                 <li><a data-slug="scram" href="<?php echo home_url('/service/printing/bookbinding/#scram'); ?>">スクラム製本</a></li>
                 <li><a data-slug="wireless-stitching" href="<?php echo home_url('/service/printing/bookbinding/#wireless-stitching'); ?>">無線綴じ製本</a></li>

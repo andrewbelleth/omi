@@ -105,78 +105,6 @@ Template Name: フッター
           <p>©omi-printing. All rights reserved.</p>
         </div>
       </div>
-<<<<<<< HEAD
-      <div class="footer__main">
-        <div class="footer__address">
-          <dl>
-            <dt>本社</dt>
-            <dd>529-1302 滋賀県愛知郡愛荘町川原771-1<br>TEL:0749-42-8400(代) FAX:0749-42-6700(代)</dd>
-          </dl>
-          <dl>
-            <dt>彦根支店</dt>
-            <dd>521-1113 滋賀県彦根市稲部町100-4</dd>
-          </dl>
-          <dl>
-            <dt>甲賀支店</dt>
-            <dd>520-3402 滋賀県甲賀市甲賀町小佐治2546</dd>
-          </dl>
-          <dl>
-            <dt>東近江支店</dt>
-            <dd>529-1422 滋賀県東近江市五個荘町小幡町698-2</dd>
-          </dl>
-          <dl>
-            <dt>草津支店</dt>
-            <dd>525-0037 滋賀県草津市西大路町11-18</dd>
-          </dl>
-        </div>
-        <nav class="footer__nav">
-          <div class="footer__nav-item">
-            <h3><a href="<?php echo esc_url(home_url('/feature')); ?>">近江印刷の特徴</a></h3>
-            <h3><a href="<?php echo esc_url(home_url('/service')); ?>">サービス</a></h3>
-            <ul>
-              <li>
-                <a href="<?php echo esc_url(home_url('/service/printing')); ?>">印刷</a>
-                <ul>
-                  <li><a href="<?php echo esc_url(home_url('/service/printing/products')); ?>">取扱品目</a></li>
-                  <li><a href="<?php echo esc_url(home_url('/service/printing/processing')); ?>">加工</a></li>
-                  <li><a href="<?php echo esc_url(home_url('/service/printing/bookbinding')); ?>">製本</a></li>
-                </ul>
-              </li>
-              <li><a href="<?php echo esc_url(home_url('/service/degital')); ?>">デジタル</a></li>
-              <li><a href="<?php echo esc_url(home_url('/service/newspaper')); ?>">彦根経済新聞</a></li>
-              <li><a href="<?php echo esc_url(home_url('/service/branding')); ?>">ブランディング</a></li>
-              <li><a href="<?php echo esc_url(home_url('/service/promotion')); ?>">プロモーション</a></li>
-            </ul>
-          </div>
-          <div class="footer__nav-item">
-            <h3><a href="<?php echo esc_url(home_url('/works')); ?>">制作実績</a></h3>
-            <h3><a href="<?php echo esc_url(home_url('/company')); ?>">会社概要</a></h3>
-            <ul>
-              <li><a href="<?php echo esc_url(home_url('/company/facility')); ?>">設備概要</a></li>
-              <li><a href="<?php echo esc_url(home_url('/company/history')); ?>">会社沿革</a></li>
-              <li><a href="<?php echo esc_url(home_url('/company/project')); ?>">私たちの取り組み</a></li>
-              <li><a href="<?php echo esc_url(home_url('/company/ing')); ?>">社外報ing</a></li>
-            </ul>
-          </div>
-          <div class="footer__nav-item">
-            <h3><a href="<?php echo esc_url(home_url('/news')); ?>">お知らせ</a></h3>
-            <h3><a href="<?php echo esc_url(home_url('/recruit')); ?>">リクルート</a></h3>
-            <h3><a href="<?php echo esc_url(home_url('/partner')); ?>">外部パートナー募集</a></h3>
-            <h3><a href="<?php echo esc_url(home_url('/guide')); ?>">入稿ガイド</a></h3>
-            <h3><a href="<?php echo esc_url(home_url('/contact')); ?>">お問い合わせ</a></h3>
-          </div>
-        </nav>
-      </div>
-      <ul class="footer__sns sns">
-        <li><a class="sns--x" href=""><img src="<?php echo get_template_directory_uri(); ?>/assets/images/common/ico_x.png" alt="x icon"></a></li>
-        <li><a class="sns--youtube" href=""><img src="<?php echo get_template_directory_uri(); ?>/assets/images/common/ico_youtube.png" alt="youtbe icon"></a>
-        </li>
-        <li><a class="sns--facebook" href=""><img src="<?php echo get_template_directory_uri(); ?>/assets/images/common/ico_facebook_color.png"
-              alt="facebook icon"></a></li>
-        <li><a class="sns--instagram" href=""><img src="<?php echo get_template_directory_uri(); ?>/assets/images/common/ico_instagram.png" alt="instagram icon"></a>
-        </li>
-      </ul>
-=======
     </footer>
     <a href="#" class="page-top">
       <svg xmlns="http://www.w3.org/2000/svg" width="39" height="39" viewBox="0 0 39 39" fill="none">
@@ -185,7 +113,6 @@ Template Name: フッター
           fill="#0068B6" />
       </svg>
     </a>
->>>>>>> origin/main
     </div>
   </div>
   <script src="https://code.jquery.com/jquery-3.7.1.min.js"

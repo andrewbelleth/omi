@@ -13,7 +13,7 @@ Template Name: 入稿ガイド
 <div class="page-wrapper mt160--sp96">
     <div class=" section section__col">
         <div class="page-printing__side section__side">
-            <ul>
+            <ul id="sidemenu">
                 <li><a data-slug="preparation" href="<?php echo home_url('/guide/#preparation'); ?>">ご準備いただくもの</a></li>
                 <li><a data-slug="preparation-adobe" href="<?php echo home_url('/guide/#preparation-adobe'); ?>">データの準備<br><span class="sp--fz12">（Adobe社）</span><!-- /.fz12 --></a></li>
                 <li><a data-slug="preparation-microsoft" href="<?php echo home_url('/guide/#preparation-microsoft'); ?>">データの準備<br><span class="sp--fz12">（Microsoft Office系）</span><!-- /.fz12 --></a></li>

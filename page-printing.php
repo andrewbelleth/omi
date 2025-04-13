@@ -13,7 +13,7 @@ Template Name: 印刷ページ
 
 <div class="section section__col mt160--sp96">
     <div class="page-printing__side section__side">
-        <ul>
+        <ul id="sidemenu">
             <li><a data-slug="type-printing" href="<?php echo home_url('/service/printing/#type-printing'); ?>">印刷の種類</a></li>
             <li><a data-slug="type-products" href="<?php echo home_url('/service/printing/#type-products'); ?>">取り扱い品目</a></li>
             <li><a data-slug="type-processing" href="<?php echo home_url('/service/printing/#type-processing'); ?>">加工・製本</a></li>

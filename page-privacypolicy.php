@@ -14,7 +14,7 @@ Template Name: プライバシーポリシーページ
     <div class="page-wrapper mt160--sp96">
         <div class=" section section__col">
             <div class="section__side">
-                <ul>
+                <ul id="sidemenu">
                     <li><a data-slug="philosophy" href="<?php echo home_url('/privacypolicy/#philosophy'); ?>">個人情報保護理念</a></li>
                     <li><a data-slug="policy" href="<?php echo home_url('/privacypolicy/#policy'); ?>">個人情報保護方針</a></li>
                     <li><a data-slug="purpose" href="<?php echo home_url('/privacypolicy/#purpose'); ?>">個人情報の利用目的</a></li>
