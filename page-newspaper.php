@@ -14,13 +14,13 @@ Template Name: 彦根経済新聞ページ
     <div class=" section section__col">
         <div class="page-printing__side section__side">
             <ul id="sidemenu">
-                <li><a data-slug="shop" href="<?php echo home_url('/service/newspaper/#minpr'); ?>">みん経に加盟</a></li>
-                <li><a data-slug="recruit" href="<?php echo home_url('/service/newspaper/#interview'); ?>">編集部・取材体制に<br class="mobile">つ<br class="desktop">いて</a></li>
-                <li><a data-slug="company" href="<?php echo home_url('/service/newspaper/#newspaper'); ?>">彦根経済新聞<br class="mobile">について</a></li>
-                <li><a data-slug="company" href="<?php echo home_url('/service/newspaper/#access'); ?>">アクセス数</a></li>
-                <li><a data-slug="company" href="<?php echo home_url('/service/newspaper/#pr'); ?>">彦根経済新聞が<br class="mobile">取材・<br class="desktop">制作する記事広告</a></li>
-                <li><a data-slug="company" href="<?php echo home_url('/service/newspaper/#support'); ?>">彦経応援サポーター<br class="mobile">の<br class="desktop">ご案内</a></li>
-                <li><a data-slug="company" href="<?php echo home_url('/service/newspaper/#info'); ?>">編集部への情報提供</a></li>
+                <li><a data-slug="minpr" href="<?php echo home_url('/service/newspaper/#minpr'); ?>">みん経に加盟</a></li>
+                <li><a data-slug="interview" href="<?php echo home_url('/service/newspaper/#interview'); ?>">編集部・取材体制に<br class="mobile">つ<br class="desktop">いて</a></li>
+                <li><a data-slug="newspaper" href="<?php echo home_url('/service/newspaper/#newspaper'); ?>">彦根経済新聞<br class="mobile">について</a></li>
+                <li><a data-slug="access" href="<?php echo home_url('/service/newspaper/#access'); ?>">アクセス数</a></li>
+                <li><a data-slug="pr" href="<?php echo home_url('/service/newspaper/#pr'); ?>">彦根経済新聞が<br class="mobile">取材・<br class="desktop">制作する記事広告</a></li>
+                <li><a data-slug="support" href="<?php echo home_url('/service/newspaper/#support'); ?>">彦経応援サポーター<br class="mobile">の<br class="desktop">ご案内</a></li>
+                <li><a data-slug="info" href="<?php echo home_url('/service/newspaper/#info'); ?>">編集部への情報提供</a></li>
             </ul>
         </div>
         <div class="section__main wrapper-136">

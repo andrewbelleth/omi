@@ -198,6 +198,10 @@
                 a {
                     font-size: rem(16);
                     line-height: calc(24 / 16);
+
+                    @include mq(tb) {
+                        font-size: rem(14);
+                    }
                 }
             }
         }

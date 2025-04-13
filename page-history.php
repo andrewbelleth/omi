@@ -8,7 +8,7 @@ if (! defined('ABSPATH')) exit;
     'title_jp' => '会社沿革',
 ]); ?>
 
-<div class="history-follow section">
+<div class="history-follow section mt160--sp96">
     <div class="history-item">
         <div class="history-item__year">
             <div class="history-item__year-number">1945</div>

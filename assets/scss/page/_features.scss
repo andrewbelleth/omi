@@ -41,22 +41,60 @@
             .feature__item-title-text {
                 display: inline-flex;
                 width: fit-content;
-                background-color: $blue;
-                padding: rem(8) rem(24);
-                color: $white;
+                overflow: hidden;
                 font-size: rem(36);
                 font-weight: 700;
                 line-height: 1.7;
                 letter-spacing: 0.1em;
                 white-space: nowrap;
-
+                
+                
                 &.desktop {
                     display: inline-flex;
                 }
-
+                
                 &.mobile {
                     display: none;
                 }
+
+
+                .feature__item-title-text-inner {
+                    background-color: $blue;
+                    padding: rem(8) rem(24);
+                    color: $white;
+                    overflow: hidden;
+                    display: block;
+                    transform: translateX(-100%);
+    
+                    >span {
+                        display: block;
+                        // 親要素と同じ分だけ逆方向に移動させる
+                        transform: translateX(100%);
+                    }
+    
+                    &.active {
+                        transform: translateX(0);
+                        transition: transform cubic-bezier(0.74, 0, 0.24, 0.99) 1.1s;
+    
+                        >span {
+                            transform: translateX(0);
+                            transition: transform cubic-bezier(0.74, 0, 0.24, 0.99) 1.1s;
+                        }
+    
+                        @for $i from 1 through 3 {
+                            &:nth-child(#{$i}) {
+                                transition-delay: #{($i - 1) * 0.13s};
+    
+                                >span {
+                                    transition-delay: #{($i - 1) * 0.13s};
+                                }
+                            }
+                        }
+                    }
+                }
+
+
+
 
                 @include mq(tb) {
                     &.desktop {
@@ -163,8 +201,11 @@
                 z-index: 1;
 
                 .feature__item-title-text {
-                    padding: rem(3) rem(12);
                     font-size: rem(20);
+                    
+                    .feature__item-title-text-inner {
+                        padding: rem(3) rem(12);
+                    }
                 }
             }
 

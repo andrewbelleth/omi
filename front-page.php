@@ -8,7 +8,7 @@ Template Name: トップページ
 <?php get_template_part('template-parts/header'); ?>
 
 <?php
-// get_template_part('template-parts/loading');
+get_template_part('template-parts/loading');
 ?>
 <div class="mv-wrapper mt0">
     <div class="mv">
@@ -293,7 +293,7 @@ $args = array(
                             <p>広報誌 / 定期刊行物 / 冊子 / チラシ / ポスター / 伝票・帳票 / DMハガキ / 新聞 / 名刺 / 封筒 / ノベルティグッズ / 看板 / パッケージ
                                 / カード / メニュー表 / シール / その他</p>
                         </div>
-                        <a href="<?php echo home_url(); ?>/service" class="btn inview">
+                        <a href="<?php echo home_url(); ?>/service/printing" class="btn inview">
                             <span class="btn__text">詳しく見る</span>
                             <span class="btn__icon">
                                 <svg viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -328,7 +328,7 @@ $args = array(
                         <div class="top-service__item-tag inview">
                             <p>Webサイト / プロモーション動画 / WebBook / Web広告 / SNS / 360°VR</p>
                         </div>
-                        <a href="<?php echo home_url(); ?>/service" class="btn inview">
+                        <a href="<?php echo home_url(); ?>/service/degital/" class="btn inview">
                             <span class="btn__text">詳しく見る</span>
                             <span class="btn__icon">
                                 <svg viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -362,7 +362,7 @@ $args = array(
                         <div class="top-service__item-tag inview">
                             <p>新店オープン / 新サービス / 周年記念 / イベント情報 / レポート記事 / 特集ページ / 広告記事 / バナー広告</p>
                         </div>
-                        <a href="<?php echo home_url(); ?>/service" class="btn inview">
+                        <a href="<?php echo home_url(); ?>/service/newspaper" class="btn inview">
                             <span class="btn__text">詳しく見る</span>
                             <span class="btn__icon">
                                 <svg viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -397,7 +397,7 @@ $args = array(
                         <div class="top-service__item-tag inview">
                             <p>ファンを増やす / 惹き付ける仕組み / デザインの可視化 / コンセプトと計画 / 課題のシェア</p>
                         </div>
-                        <a href="<?php echo home_url(); ?>/service" class="btn inview">
+                        <a href="<?php echo home_url(); ?>/service/branding" class="btn inview">
                             <span class="btn__text">詳しく見る</span>
                             <span class="btn__icon">
                                 <svg viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -433,7 +433,7 @@ $args = array(
                         <div class="top-service__item-tag inview">
                             <p>店頭プロモーション / 採用プロモーション / 企業プロモーション / シティープロモーション</p>
                         </div>
-                        <a href="<?php echo home_url(); ?>/service" class="btn inview">
+                        <a href="<?php echo home_url(); ?>/service/promotion" class="btn inview">
                             <span class="btn__text">詳しく見る</span>
                             <span class="btn__icon">
                                 <svg viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">

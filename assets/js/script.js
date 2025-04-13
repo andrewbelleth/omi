@@ -316,7 +316,7 @@ panels.forEach((panel) => {
   )
 });
 
-let inviewItems = gsap.utils.toArray('.inview');
+let inviewItems = gsap.utils.toArray('.inview, .feature__item-title-text-inner');
 
 inviewItems.forEach((inviewItem) => {
   ScrollTrigger.create({
@@ -329,6 +329,8 @@ inviewItems.forEach((inviewItem) => {
     once: true,
   });
 });
+
+
 
 $(function () {
   let mm = gsap.matchMedia();

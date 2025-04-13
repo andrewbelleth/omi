@@ -59,7 +59,7 @@ Template Name: フッター
                 <li>
                   <a href="<?php echo esc_url(home_url('/service/printing')); ?>">印刷</a>
                   <ul>
-                    <li><a href="<?php echo esc_url(home_url('/service/printing/product')); ?>">取扱品目</a></li>
+                    <li><a href="<?php echo esc_url(home_url('/service/printing/products')); ?>">取扱品目</a></li>
                     <li><a href="<?php echo esc_url(home_url('/service/printing/processing')); ?>">加工</a></li>
                     <li><a href="<?php echo esc_url(home_url('/service/printing/bookbinding')); ?>">製本</a></li>
                   </ul>

@@ -13,6 +13,7 @@ if (! defined('ABSPATH')) exit;
         <div class="txt">
             <p>以下のお問い合わせ内容に間違いがなければ、「送信する」を押してください。</p>
         </div>
+        <?php echo do_shortcode('[contact-form-7 id="1480e2d" title="お問い合わせ確認"]'); ?>
         <div class="info-list mt48--sp40">
             <div class="info-item">
                 <h3 class="info-heading minw146--spauto">お問い合わせ種別</h3>

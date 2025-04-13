@@ -29,6 +29,7 @@
 
   @include mq(tb) {
     gap: rem(24);
+
     .page__service-box-title {
       font-size: rem(32);
     }
@@ -44,6 +45,7 @@
 .page-printing {
   @include mq(sp) {
     .type-products {
+
       /*  .img-list--2column {
             gap: rem(16);
             li{
@@ -65,6 +67,7 @@
       line-height: calc(30 / 17);
       letter-spacing: lts-em(0.85, 17);
     }
+
     p {
       font-size: rem(15);
       line-height: calc(27 / 15);
@@ -77,12 +80,14 @@
     gap: rem(40);
     margin-top: rem(16);
   }
+
   .occasionally {
     .light-blue-box-flex {
       display: grid;
       grid-template-columns: repeat(5, 1fr);
       gap: rem(10);
       margin-top: rem(16);
+
       li {
         height: 100%;
         display: flex;
@@ -91,10 +96,12 @@
         gap: rem(4);
         background: $white;
         padding-block: rem(8) rem(12);
+
         img {
           width: rem(62);
           height: rem(62);
         }
+
         p {
           font-size: rem(13);
           line-height: calc(18 / 13);
@@ -104,6 +111,7 @@
           height: 100%;
           text-align: center;
         }
+
         span {
           font-size: rem(11);
           line-height: calc(18 / 11);
@@ -112,29 +120,36 @@
       }
     }
   }
+
   @include mq(tb) {
-      .page__head-inner{
+    .page__head-inner {
       width: 100%;
       padding-left: rem(24);
+      padding-right: rem(18);
+
       .page__title--en {
         letter-spacing: lts-em(2.7, 54);
       }
     }
+
     .light-blue-box-inner {
       gap: rem(0);
       margin-top: rem(12);
       flex-direction: column;
     }
+
     .occasionally {
       .light-blue-box {
         width: calc(100% + rem(48));
         margin-left: rem(-24);
+
         p {
           font-size: rem(12);
           line-height: calc(21 / 12);
           letter-spacing: lts-em(0.6, 12);
         }
       }
+
       .light-blue-box-flex {
         grid-template-columns: repeat(3, 1fr);
         margin-top: rem(20);
@@ -143,16 +158,19 @@
   }
 }
 
-.page-bookbinding{
+.page-bookbinding {
   @include mq(tb) {
     .page__head-inner {
       width: 100%;
       padding-left: rem(24);
+      padding-right: rem(24);
+
       .page__title--en {
         letter-spacing: lts-em(2.3, 46);
         font-size: rem(46);
       }
     }
+
     .img-list--2column-sp1 {
       gap: rem(20);
     }
@@ -162,153 +180,341 @@
 .page-service {
   .page__service-content {
     position: relative;
+
+    @include mq(tb) {
+      max-width: rem(600);
+      margin-inline: auto;
+    }
   }
-  
+
+  .sp-overlay {
+    display: none;
+
+    @include mq(tb) {
+      display: block;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(255, 255, 255, 0.7);
+      z-index: 100;
+      opacity: 0;
+      visibility: hidden;
+      transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+
+      &.active {
+        opacity: 1;
+        visibility: visible;
+      }
+    }
+  }
+
   .page__service-content-main {
     width: rem(667);
     margin-inline: auto;
-  
+
     @include mq(pc) {
-        padding-block: rem(100);
+      padding-block: rem(100);
+    }
+
+    @include mq(tb) {
+      width: rem(327);
+      min-width: 70%;
+      padding-block: rem(116);
     }
   }
-  
+
   .service-item {
     position: absolute;
     cursor: pointer;
+
+    &.fix {
+      @include mq(tb) {
+        opacity: 0;
+
+        &:has(+ .service-item.mobile.active) {
+          opacity: 1;
+        }
+      }
+    }
+
+    &.mobile {
+      display: none;
+
+      @include mq(tb) {
+        display: flex;
+
+        &.active {
+          z-index: 101;
+        }
+      }
+    }
+
     &.service-item--01 {
-        $color: #004FB6;
-        --service-item-color: #004FB6;
-        background: rgba($color, 0.1);
-        padding-top: rem(34);
-        padding-bottom: rem(8);
-        top: rem(46);
-        left: rem(36);
-    }
-    &.service-item--02 {
-        $color: #009EB6;
-        --service-item-color: #009EB6;
-        background: rgba($color, 0.1);
+      $color: #004FB6;
+      --service-item-color: #004FB6;
+      background: rgba($color, 0.1);
+      padding-top: rem(34);
+      padding-bottom: rem(8);
+      top: rem(46);
+      left: rem(36);
+
+      @include mq(tb) {
+        top: rem(0);
+        left: rem(0);
         padding-top: rem(19);
-        padding-bottom: rem(8);
-        top: rem(46);
-        right: rem(36);
-        .service-item__title {
-            font-size: rem(18);
-            line-height: calc(25/18);
-        }
-        .service-item__image {
-            margin-left: rem(6);
-        }
+        padding-bottom: rem(6);
+      }
     }
+
+    &.service-item--02 {
+      $color: #009EB6;
+      --service-item-color: #009EB6;
+      background: rgba($color, 0.1);
+      padding-top: rem(19);
+      padding-bottom: rem(8);
+      top: rem(46);
+      right: rem(36);
+
+      .service-item__title {
+        font-size: rem(18);
+        line-height: calc(25/18);
+      }
+
+      .service-item__image {
+        margin-left: rem(6);
+      }
+
+      @include mq(tb) {
+        top: rem(0);
+        right: rem(0);
+        padding-top: rem(13);
+        padding-bottom: rem(6);
+
+        .service-item__title {
+          font-size: rem(12);
+          line-height: 1.4;
+          margin-bottom: rem(5);
+        }
+      }
+    }
+
     &.service-item--03 {
-        $color: #0C7DBE;
-        --service-item-color: #0C7DBE;
-        background: rgba($color, 0.1);
-        padding-top: rem(34);
-        padding-bottom: rem(8);
-        bottom: rem(63);
-        left: rem(36);
+      $color: #0C7DBE;
+      --service-item-color: #0C7DBE;
+      background: rgba($color, 0.1);
+      padding-top: rem(34);
+      padding-bottom: rem(8);
+      bottom: rem(63);
+      left: rem(36);
+
+      @include mq(tb) {
+        bottom: rem(0);
+        left: rem(0);
+        padding-top: rem(19);
+        padding-bottom: rem(6);
+      }
     }
+
     &.service-item--04 {
-        $color: #75859A;
-        --service-item-color: #75859A;
-        background: rgba($color, 0.1);
-        padding-top: rem(21);
-        padding-bottom: rem(8);
-        bottom: rem(63);
-        right: rem(36);
-  
+      $color: #75859A;
+      --service-item-color: #75859A;
+      background: rgba($color, 0.1);
+      padding-top: rem(21);
+      padding-bottom: rem(8);
+      bottom: rem(63);
+      right: rem(36);
+
+      .service-item__title {
+        margin-bottom: rem(7);
+        font-size: rem(18);
+        line-height: calc(25/18);
+      }
+
+      @include mq(tb) {
+        bottom: rem(0);
+        right: rem(0);
+        padding-top: rem(13);
+        padding-bottom: rem(6);
+
         .service-item__title {
-            margin-bottom: rem(7);
-            font-size: rem(18);
-            line-height: calc(25/18);
+          font-size: rem(12);
+          line-height: 1.4;
+          margin-bottom: rem(5);
         }
+      }
     }
+
     &.active {
-        width: rem(306);
-        height: rem(306);
-  
+      width: rem(306);
+      height: rem(306);
+
+      @include mq(tb) {
+        width: rem(290);
+        height: rem(290);
+      }
+
+      .service-item__title {
+        font-size: rem(22);
+        line-height: calc(31/22);
+        color: $white;
+
+        @include mq(tb) {
+          font-size: rem(20);
+          line-height: 1.4;
+        }
+      }
+
+      .service-item__text {
+        display: block;
+      }
+
+      .service-item__image {
+        path {
+          stroke: $white;
+        }
+
+        @include mq(tb) {
+          width: rem(68);
+        }
+      }
+
+      .service-item__icon {
+        display: none;
+      }
+
+      &.service-item--01 {
+        background: var(--service-item-color);
+        padding-block: rem(30) rem(24);
+        top: rem(-23);
+        left: rem(-17);
+
         .service-item__title {
-            font-size: rem(22);
-            line-height: calc(31/22);
-            color: $white;
+          margin-bottom: rem(11);
         }
-  
+
         .service-item__text {
-            display: block;
+          width: rem(232);
+          margin-inline: auto;
         }
-  
-        .service-item__image {
-            path {
-                stroke: $white;
-            }
+
+        @include mq(tb) {
+          top: 50%;
+          left: 50%;
+          right: auto;
+          bottom: auto;
+          transform: translate(-50%, -50%);
+          padding-block: rem(34) rem(19);
+
+          .service-item__title {
+            margin-bottom: rem(12);
+          }
         }
-        .service-item__icon {
-            display: none;
+      }
+
+      &.service-item--02 {
+        background: var(--service-item-color);
+        padding-block: rem(37) rem(30);
+        top: rem(-23);
+        right: rem(-17);
+
+        .service-item__title {
+          margin-bottom: rem(13);
         }
-        
-        &.service-item--01 {
-            background: var(--service-item-color);
-            padding-block: rem(30) rem(24);
-            top: rem(-23);
-            left: rem(-17);
-  
-            .service-item__title {
-                margin-bottom: rem(11);
-            }
-  
-            .service-item__text {
-                width: rem(232);
-                margin-inline: auto;
-            }
+
+        .service-item__text {
+          width: rem(166);
+          margin-inline: auto;
         }
-        &.service-item--02 {
-            background: var(--service-item-color);
-            padding-block: rem(37) rem(30);
-            top: rem(-23);
-            right: rem(-17);
-  
-            .service-item__title {
-                margin-bottom: rem(13);
-            }
-            .service-item__text {
-                width: rem(166);
-                margin-inline: auto;
-            }
+
+        @include mq(tb) {
+          top: 50%;
+          left: 50%;
+          right: auto;
+          bottom: auto;
+          transform: translate(-50%, -50%);
+          padding-block: rem(37) rem(30);
+
+          .service-item__title {
+            margin-bottom: rem(14);
+          }
+
+          .service-item__text {
+            width: rem(232);
+          }
         }
-        &.service-item--03 {
-            background: var(--service-item-color);
-            padding-block: rem(50) rem(44);
-            bottom: rem(0);
-            left: rem(-17);
-  
-            .service-item__title {
-                margin-bottom: rem(12);
-            }
-  
-            .service-item__text {
-                width: rem(232);
-                margin-inline: auto;
-            }
+      }
+
+      &.service-item--03 {
+        background: var(--service-item-color);
+        padding-block: rem(50) rem(44);
+        bottom: rem(0);
+        left: rem(-17);
+
+        .service-item__title {
+          margin-bottom: rem(12);
         }
-        &.service-item--04 {
-            background: var(--service-item-color);
-            padding-block: rem(26) rem(22);
-            bottom: rem(0);
-            right: rem(-17);
-  
-            .service-item__title {
-                margin-bottom: rem(11);
-            }
-  
-            .service-item__text {
-                width: rem(274);
-                margin-inline: auto;
-            }
+
+        .service-item__text {
+          width: rem(232);
+          margin-inline: auto;
         }
-        
+
+        @include mq(tb) {
+          top: 50%;
+          left: 50%;
+          right: auto;
+          bottom: auto;
+          transform: translate(-50%, -50%);
+          padding-block: rem(47) rem(38);
+
+          .service-item__title {
+            margin-bottom: rem(16);
+          }
+
+          .service-item__text {
+            width: rem(232);
+          }
+        }
+      }
+
+      &.service-item--04 {
+        background: var(--service-item-color);
+        padding-block: rem(26) rem(22);
+        bottom: rem(0);
+        right: rem(-17);
+
+        .service-item__title {
+          margin-bottom: rem(11);
+        }
+
+        .service-item__text {
+          width: rem(274);
+          margin-inline: auto;
+        }
+
+
+        @include mq(tb) {
+          top: 50%;
+          left: 50%;
+          right: auto;
+          bottom: auto;
+          transform: translate(-50%, -50%);
+          padding-block: rem(24) rem(24);
+
+          .service-item__title {
+            margin-bottom: rem(14);
+          }
+
+          .service-item__text {
+            width: rem(232);
+          }
+        }
+      }
+
     }
+
     width: rem(180);
     height: rem(180);
     display: flex;
@@ -316,44 +522,68 @@
     align-items: center;
     border-radius: 50%;
     border: rem(2) solid var(--service-item-color);
-  
+
+    @include mq(tb) {
+      width: rem(116);
+      height: rem(116);
+    }
+
     .service-item__text {
-        display: none;
-        text-align: center;
-        font-size: rem(14);
-        line-height: 1.8;
-        letter-spacing: 0em;
-        text-align: center;
-        color: $white;
-        margin-top: auto;
+      display: none;
+      text-align: center;
+      font-size: rem(14);
+      line-height: 1.8;
+      letter-spacing: 0em;
+      text-align: center;
+      color: $white;
+      margin-top: auto;
+
+      @include mq(tb) {
+        font-size: rem(13);
+      }
     }
-  
+
     .service-item__image {
-        width: rem(68);
-  
-        path {
-            stroke: var(--service-item-color);
-        }
+      width: rem(68);
+
+      path {
+        stroke: var(--service-item-color);
+      }
+
+      @include mq(tb) {
+        width: rem(42);
+      }
     }
-  
+
     .service-item__icon {
-        width: rem(12);
-        height: rem(10);
-        margin-top: auto;
-  
-        path {
-            fill: var(--service-item-color);
-        }
+      width: rem(12);
+      height: rem(10);
+      margin-top: auto;
+
+      path {
+        fill: var(--service-item-color);
+      }
+
+      @include mq(tb) {
+        width: rem(8);
+        height: rem(7);
+      }
     }
-  
+
     .service-item__title {
-        font-size: rem(22);
-        line-height: calc(31/22);
-        letter-spacing: 0;
-        font-weight: 700;
-        margin-bottom: rem(9);
-        color: var(--service-item-color);
-        text-align: center;
+      font-size: rem(22);
+      line-height: calc(31/22);
+      letter-spacing: 0;
+      font-weight: 700;
+      margin-bottom: rem(9);
+      color: var(--service-item-color);
+      text-align: center;
+
+      @include mq(tb) {
+        font-size: rem(15);
+        line-height: 1.4;
+        margin-bottom: rem(6);
+      }
     }
-  } 
+  }
 }

@@ -8,7 +8,7 @@
             </h2>
         </div>
         <a href="<?php echo esc_url(home_url('/contact')); ?>" class="cta__btn btn btn--white">
-            <span class="btn__text"><span>お問い合わせフォームは</span><span>こちら</span></span>
+            <span class="btn__text"><span>お問い合わせフォームは</span><br class="mobile"><span>こちら</span></span>
             <span class="btn__icon">
                 <svg viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path

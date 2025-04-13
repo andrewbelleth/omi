@@ -19,7 +19,7 @@ Template Name: 取り扱い品目ページ
                 <li><a data-slug="catalog" href="<?php echo home_url('/service/printing/products/#catalog'); ?>">カタログ</a></li>
                 <li><a data-slug="booklet" href="<?php echo home_url('/service/printing/products/#booklet'); ?>">冊子</a></li>
                 <li><a data-slug="slip" href="<?php echo home_url('/service/printing/products/#slip'); ?>">伝票・帳票</a></li>
-                <li><a data-slug="envelope" href="<?php echo home_url('/service/printing/products/#envelope'); ?>">名刺・封筒・はがき・挨拶状</a></li>
+                <li><a data-slug="envelope" href="<?php echo home_url('/service/printing/products/#envelope'); ?>">名刺・封筒・はがき・<br class="mobile">挨<br class="desktop">拶状</a></li>
                 <li><a data-slug="ricebag" href="<?php echo home_url('/service/printing/products/#ricebag'); ?>">米袋</a></li>
                 <li><a data-slug="promotion" href="<?php echo home_url('/service/printing/products/#promotion'); ?>">販促</a></li>
             </ul>
@@ -186,7 +186,7 @@ Template Name: 取り扱い品目ページ
                 </ul>
                 <div class="component-box-btn mt32--sp40">
                     <div class="btn-list">
-                        <a href="<?php echo esc_url(home_url('/')); ?>" class="btn inview">
+                        <a href="<?php echo esc_url(home_url('/')); ?>" class="btn btn--onlyspanimation inview">
                             <span class="btn__text">パンフレットの<br class="br-1050">ダウンロードはこちら</span>
                             <span class="btn__icon">
                                 <svg viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -198,7 +198,7 @@ Template Name: 取り扱い品目ページ
                                 </svg>
                             </span>
                         </a>
-                        <a href="<?php echo esc_url(home_url('/')); ?>" class="btn inview">
+                        <a href="<?php echo esc_url(home_url('/')); ?>" class="btn btn--onlyspanimation inview">
                             <span class="btn__text">WebBookで<br class="br-1050">パンフレットを見る</span>
                             <span class="btn__icon">
                                 <svg viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
