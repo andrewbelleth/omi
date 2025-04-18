@@ -105,7 +105,7 @@ Template Name: プライバシーポリシーページ
                             <li class="privacy__item">・&nbsp;当社の業務管理及び採用業務のため</li>
                         </ul>
                         <p class="privacy__note mt12--sp16 pl22--sp0">ただし、下記a)～d)の場合は、利用目的を通知、又は、公表しません。</p>
-                        <ul class="privacy__conditions mt4 pl22--sp0">
+                        <ul class="privacy__conditions mt4--sp8 pl22--sp0">
                             <li class="privacy__condition">
                                 <span>a&nbsp;）</span>
                                 利用目的を本人に通知し、又は公表することによって本人又は第三者の生命、身体、財産その他の権利利益を害するおそれがある場合

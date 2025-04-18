@@ -516,7 +516,7 @@ $args = array(
             <span class="section__title--jp">インスタグラム</span>
         </h2>
         <a href="<?php echo home_url(); ?>/instagram" class="btn btn--right inview">
-            <span class="btn__text">近江印刷株式会社 Instagram</span>
+            <span class="btn__text">近江印刷株式会社<br class="mobile"> Instagram</span>
             <span class="btn__icon">
                 <svg viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <g clip-path="url(#clip0_40_1378)">

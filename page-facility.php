@@ -14,7 +14,7 @@ Template Name: ファシリティページ
 <div class="page-wrapper mt160--sp96">
     <div class=" section section__col">
         <div class="section__side">
-            <ul>
+            <ul id="sidemenu">
                 <li><a data-slug="equipment-overview" href="<?php echo home_url('/company/facility/#equipment-overview'); ?>">設備の概要</a></li>
                 <li><a data-slug="general-printing" href="<?php echo home_url('/company/facility/#general-printing'); ?>">一般印刷関連</a></li>
                 <li><a data-slug="business-form-printing" href="<?php echo home_url('/company/facility/#business-form-printing'); ?>">ビジネスフォーム<br class="sp-only">印刷<br class="pc-only">関連</a></li>

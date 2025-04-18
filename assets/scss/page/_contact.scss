@@ -225,6 +225,10 @@
                 width: 100%;
             }
 
+            .wpcf7-not-valid {
+                border: 1px solid $red;
+            }
+
             input[type="text"],
             input[type="tel"],
             input[type="email"],
