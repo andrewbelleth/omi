@@ -99,8 +99,47 @@ document.addEventListener("DOMContentLoaded", function () {
   gsap.registerPlugin(ScrollToPlugin);
 
   // ページ内リンクのイベントリスナー設定
-  const anchors = document.querySelectorAll(".link");
+  const anchors = document.querySelectorAll("#sidemenu > li > a");
 
+  console.log(anchors);
+
+  // アクティブ状態の切り替え処理を追加
+  anchors.forEach((anchor) => {
+    const href = anchor.getAttribute("href");
+    const hashIndex = href.indexOf("#");
+
+    if (hashIndex === -1) return;
+
+    const hash = href.slice(hashIndex + 1);
+    const targetElement = document.getElementById(hash);
+
+    
+
+    if (targetElement) {
+      ScrollTrigger.create({
+        trigger: targetElement,
+        start: "top top",
+        end: "bottom top",
+        onEnter: () => updateActiveState(anchor),
+        onEnterBack: () => updateActiveState(anchor),
+        onLeave: () => removeActiveState(anchor),
+        onLeaveBack: () => removeActiveState(anchor)
+      });
+    }
+  });
+
+  // アクティブ状態を更新する関数
+  function updateActiveState(activeAnchor) {
+    anchors.forEach(anchor => anchor.classList.remove('active'));
+    activeAnchor.classList.add('active');
+  }
+
+  // アクティブ状態を解除する関数
+  function removeActiveState(anchor) {
+    anchor.classList.remove('active');
+  }
+
+  // クリックイベントハンドラー
   anchors.forEach((anchor) => {
     anchor.addEventListener("click", (e) => {
       const href = anchor.getAttribute("href");

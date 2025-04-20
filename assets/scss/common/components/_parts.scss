@@ -241,6 +241,12 @@
         padding-top: 0;
     }
 }
+.pt14--sp20{
+    padding-top: rem(14) !important;
+    @include mq(tb) {
+        padding-top: rem(20) !important;
+    }
+}
 .pt20{
     padding-top: rem(20);
 }
@@ -1055,6 +1061,7 @@
         }
 
         .btn__icon {
+            transform: translateX(rem(10));
             circle {
                 fill: $white;
             }

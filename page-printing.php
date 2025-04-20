@@ -15,7 +15,7 @@ Template Name: 印刷ページ
     <div class="page-printing__side section__side">
         <ul id="sidemenu">
             <li><a data-slug="type-printing" href="<?php echo home_url('/service/printing/#type-printing'); ?>">印刷の種類</a></li>
-            <li><a data-slug="type-products" href="<?php echo home_url('/service/printing/#type-products'); ?>">取り扱い品目</a></li>
+            <li><a data-slug="type-products" href="<?php echo home_url('/service/printing/#type-products'); ?>">取扱品目</a></li>
             <li><a data-slug="type-processing" href="<?php echo home_url('/service/printing/#type-processing'); ?>">加工・製本</a></li>
             <li><a data-slug="type-agency" href="<?php echo home_url('/service/printing/#type-agency'); ?>">業務代行</a></li>
         </ul>
@@ -23,11 +23,9 @@ Template Name: 印刷ページ
     <div class="section__main wrapper-136">
         <div class="component-box-item">
             <div class="txt">
-                <p>企画デザインから印刷、加工、製本、納品までを一貫して自社完結できるトータルシステムを完備し、高品質、短納期、低価格をモットーに事業展開しております。
-                    ポスター、チラシ、パンフレット、広報誌などの商業印刷物から、帳票、封筒、名刺などの事務用印刷物、シール、看板、のぼり、各種ノベルティなどの特殊印刷まで、幅広く対応しています。
-                    また、全国各地、複数箇所への配送も承っております。</p>
+                <p>企画デザインから印刷、加工、製本、納品までを一貫して自社完結できるトータルシステムを完備し、高品質、短納期、低価格をモットーに事業展開しております。<br>ポスター、チラシ、パンフレット、広報誌などの商業印刷物から、帳票、封筒、名刺などの事務用印刷物、シール、看板、のぼり、各種ノベルティなどの特殊印刷まで、幅広く対応しています。<br>また、全国各地、複数箇所への配送も承っております。</p>
             </div>
-            <ul class="img-list img-list--2column mt32--sp24">
+            <ul class="img-list img-list--2column mt24">
                 <li><img src="<?php echo get_template_directory_uri(); ?>/assets/images/printing/printing-img01.webp" alt="商業印刷物制作の様子" width="368" height="220" loading="lazy"></li>
                 <li><img src="<?php echo get_template_directory_uri(); ?>/assets/images/printing/printing-img02.webp" alt="商業印刷物制作の様子" width="368" height="220" loading="lazy"></li>
                 <li><img src="<?php echo get_template_directory_uri(); ?>/assets/images/printing/printing-img03.webp" alt="商業印刷物制作の様子" width="368" height="220" loading="lazy"></li>

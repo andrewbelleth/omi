@@ -90,7 +90,8 @@
             transition: .3s;
 
             &:hover {
-                opacity: .4;
+                background: $white;
+                color: $blue;
             }
         }
 

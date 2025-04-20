@@ -14,9 +14,9 @@ Template Name: 印刷ページ
     <div class=" section section__col">
         <div class="page-printing__side section__side">
             <ul id="sidemenu">
-                <li><a data-slug="merit" href="<?php echo home_url('/service/branding/#merit'); ?>">ブランディングの<br>メリット</a></li>
-                <li><a data-slug="workflow" href="<?php echo home_url('/service/branding/#workflow'); ?>">ワークフロー</a></li>
-                <li><a data-slug="support" href="<?php echo home_url('/service/branding/#support'); ?>">サポート内容</a></li>
+                <li><a class="link" data-slug="merit" href="<?php echo home_url('/service/branding/#merit'); ?>">ブランディングの<br>メリット</a></li>
+                <li><a class="link" data-slug="workflow" href="<?php echo home_url('/service/branding/#workflow'); ?>">ワークフロー</a></li>
+                <li><a class="link" data-slug="support" href="<?php echo home_url('/service/branding/#support'); ?>">サポート内容</a></li>
             </ul>
         </div>
         <div class="section__main wrapper-136">
@@ -184,7 +184,7 @@ Template Name: 印刷ページ
                         </div>
                     </div>
                 </div>
-                <h3 class="ttl-02 ttl-02--triangle mt32--sp24">コーポレートマーク・ブランドロゴマーク作成</h3>
+                <h3 class="ttl-02 ttl-02--triangle mt32--sp24">コーポレートマーク・<br class="mobile">ブランドロゴマーク作成</h3>
                 <div class="txt-01">
                     <p>企業や製品が伝えたいイメージを象徴的に表現することで記憶に残りやすく認知度向上につながります。</p>
                 </div>

@@ -53,7 +53,7 @@ Template Name: フッター
           </div>
           <nav class="footer__nav">
             <div class="footer__nav-item">
-              <h3><a href="<?php echo esc_url(home_url('/feature')); ?>">近江印刷の特徴</a></h3>
+              <h3><a href="<?php echo esc_url(home_url('/features')); ?>">近江印刷の特徴</a></h3>
               <h3><a href="<?php echo esc_url(home_url('/service')); ?>">サービス</a></h3>
               <ul>
                 <li>
@@ -101,7 +101,7 @@ Template Name: フッター
       </div>
       <div class="footer__copy">
         <div class="footer__copy-inner">
-          <a href="<?php echo esc_url(home_url('/privacy')); ?>">個人情報保護方針</a>
+          <a href="<?php echo esc_url(home_url('/privacypolicy')); ?>">個人情報保護方針</a>
           <p>©omi-printing. All rights reserved.</p>
         </div>
       </div>

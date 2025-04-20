@@ -33,7 +33,7 @@
         <?php endif; ?>
         <nav class="header__nav" id="header__nav">
             <ul>
-                <li><a href="<?php echo home_url(); ?>/feature">近江印刷の特徴</a></li>
+                <li><a href="<?php echo home_url(); ?>/features">近江印刷の特徴</a></li>
                 <li><a href="<?php echo home_url(); ?>/service">サービス</a></li>
                 <li><a href="<?php echo home_url(); ?>/works">制作実績</a></li>
                 <li><a href="<?php echo home_url(); ?>/company">会社概要</a></li>

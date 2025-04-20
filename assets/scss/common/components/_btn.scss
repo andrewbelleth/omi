@@ -42,6 +42,7 @@
         svg {
             width: rem(22);
             height: rem(22);
+            transition: .3s;
 
             path {
                 transition: .3s;
@@ -53,10 +54,11 @@
         position: relative;
         background: $white;
         color: $blue;
-        padding-inline: rem(40) rem(40 - 7.86);
-        gap: rem(30);
-        width: rem(280 + 40);
-        left: rem(-20);
+
+        .btn__icon {
+            transform: translateX(rem(7.5));
+
+        }
     }
 
     &--onlyspanimation {
@@ -64,10 +66,6 @@
             position: relative;
             background: $white;
             color: $blue;
-            padding-inline: 2rem 1rem;
-            gap: 1rem;
-            width: rem(280);
-            left: rem(0);
         }
     }
 
@@ -88,11 +86,9 @@
 
     &--right {
         left: auto;
-        right: 0;
 
         &:hover {
             left: auto;
-            right: rem(-20);
         }
     }
 
@@ -118,9 +114,9 @@
         }
 
         &:hover {
-            width: rem(420);
-            padding-inline: rem(48 + 12) rem(48 + 12 - 7.86);
-            right: rem(-20);
+            .btn__icon {
+                transform: translateX(rem(10));
+            }
         }
     }
 
@@ -132,20 +128,17 @@
 
         &:hover {
             left: auto;
-            padding-inline: rem(32) rem(32 - 7.86);
-            width: rem(280 + 20);
         }
 
         &--onlyspanimation {
             &:hover {
                 left: auto;
-                padding-inline: rem(32) rem(32 - 7.86);
-                width: rem(280 + 20);
             }
         }
 
         .btn__text {
             font-size: 0.9375rem;
+            line-height: 1.4;
         }
 
 
@@ -169,9 +162,7 @@
             }
 
             &:hover {
-                gap: 1rem;
-                padding-inline: rem(32) rem(32 - 7.86);
-                right: rem(-10);
+
             }
         }
 
@@ -194,7 +185,6 @@
             right: auto;
 
             &:hover {
-                width: rem(340);
                 right: auto;
             }
         }
@@ -205,7 +195,6 @@
             width: rem(280);
 
             &:hover {
-                width: rem(300);
             }
         }
     }

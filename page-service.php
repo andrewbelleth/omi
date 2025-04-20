@@ -165,7 +165,10 @@ if (! defined('ABSPATH')) exit;
         </div>
         <div class="sp-overlay"></div>
         <div class="page__service-content-main">
-            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/service/service-content.png" alt="サービス内容">
+            <picture>
+                <source srcset="<?php echo get_template_directory_uri(); ?>/assets/images/service/service-content-sp.png" media="(max-width: 768px)">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/service/service-content.png" alt="サービス内容">
+            </picture>
         </div>
     </div>
 </div>

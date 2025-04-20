@@ -17,7 +17,8 @@ html {
   }
 
   @include mq(sp) {
-    font-size: min(calc(16 / (375 / 100) * 1vw), 16px);
+    // font-size: min(calc(16 / (375 / 100) * 1vw), 16px);
+    font-size: min(calc(16 / (375 / 100) * 1vw), 32px);
   }
 }
 

@@ -308,6 +308,8 @@
 
     .info-content--small {
         font-size: rem(15);
+        line-height: 1.8;
+        letter-spacing: 0.05em;
     }
 
     a {
@@ -323,6 +325,10 @@
 
     @include mq(tb) {
         font-size: rem(14);
+
+        .info-content--small {
+            font-size: rem(12);
+        }
 
         ol {
             padding-left: rem(16);

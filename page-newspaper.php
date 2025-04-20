@@ -10,7 +10,7 @@ Template Name: 彦根経済新聞ページ
     'title_en' => 'NEWSPAPER',
     'title_jp' => '彦根経済新聞',
 ]); ?>
-<div class="page-wrapper">
+<div class="page-wrapper mt160--sp96">
     <div class=" section section__col">
         <div class="page-printing__side section__side">
             <ul id="sidemenu">
@@ -50,7 +50,7 @@ Template Name: 彦根経済新聞ページ
                     </div>
                     <div class="info-item">
                         <h3 class="info-heading">編集部所在地</h3>
-                        <p class="info-content">〒529-1302<br>滋賀県愛知郡愛荘町川原771-1<br>近江印刷株式会社 内<br>彦根経済新聞 編集部<br>TEL 0749-42-8400 / FAX 0749-42-6700<br><a href="mailto:info@hikone.keizai.biz">info@hikone.keizai.biz</a></p>
+                        <p class="info-content">〒529-1302<br>滋賀県愛知郡愛荘町川原771-1 <br class="mobile">近江印刷株式会社 内<br>彦根経済新聞 編集部<br>TEL 0749-42-8400 / FAX 0749-42-6700<br><a href="mailto:info@hikone.keizai.biz">info@hikone.keizai.biz</a></p>
                     </div>
                     <div class="info-item">
                         <h3 class="info-heading">開設</h3>
@@ -79,7 +79,7 @@ Template Name: 彦根経済新聞ページ
 
             <section class="component-box-item" id="newspaper">
                 <h2 class="ttl-01">彦根経済新聞について</h2>
-                <h3 class="ttl-02 ttl-02--triangle mt32--sp24">｢まちの記録係｣として、彦根エリアの<br class="mobile">ハッピーニュースを<br class="desktop">週3本のペースで配信</h3>
+                <h3 class="ttl-02 ttl-02--triangle mt32--sp24">｢まちの記録係｣として、彦根エリアの<br class="mobile">ハッピーニュースを週3本のペースで配信</h3>
                 <div class="txt-01">
                     <p>私たちは「まちの記録係」として、ニュースの大小に関わらず、地域にとって有用な情報を取材し、ウェブを通じて「まちのニュース（＝速報） 」「まちの記録（＝アーカイブ） 」を1週間に3本、年間約150本以上の記事を配信しています。</p>
                 </div>
@@ -229,7 +229,7 @@ Template Name: 彦根経済新聞ページ
                             </ul>
                         </div>
                     </div>
-                    <div class="info-item">
+                    <div class="info-item pt14--sp20">
                         <h3 class="info-heading pt10--sp0 minw108--spauto">掲載料金</h3>
                         <p class="info-content">
                             <span class="fsz18 fw700 colorBlue">掲載料 <span class="fsz24">15</span>万円/月</span></span><br>

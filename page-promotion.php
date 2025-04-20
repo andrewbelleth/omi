@@ -10,7 +10,7 @@ Template Name: 印刷ページ
     'title_en' => 'PROMOTION',
     'title_jp' => 'プロモーション',
 ]); ?>
-<div class="page-wrapper">
+<div class="page-wrapper mt160--sp96">
     <div class=" section section__col">
         <div class="page-printing__side section__side">
             <ul id="sidemenu">
