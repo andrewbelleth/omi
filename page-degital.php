@@ -308,7 +308,7 @@ Template Name: 印刷ページ
                 <div class="img-list pt16--sp20 pl21--sp20">
                     <div class="img-list__item">
                         <div class="img-list__item-img">
-                            <img src="http://omi.local/wp-content/themes/omi/assets/images/degital/degital-07.png" alt="画像の説明3">
+                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/degital/degital-07.png" alt="画像の説明3">
                         </div>
                         <div class="txt mt10">
                             <p>基本機能の使い方と、オプション機能のご紹介</p>
@@ -316,7 +316,7 @@ Template Name: 印刷ページ
                     </div>
                     <div class="img-list__item">
                         <div class="img-list__item-img">
-                            <img src="http://omi.local/wp-content/themes/omi/assets/images/degital/degital-08.png" alt="画像の説明3">
+                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/degital/degital-08.png" alt="画像の説明3">
                         </div>
                         <div class="txt mt10">
                             <p>WebBook用データの作り方などをご紹介</p>
@@ -328,12 +328,12 @@ Template Name: 印刷ページ
                 <div class="img-list pt16--sp20 pl21--sp20">
                     <div class="img-list__item">
                         <div class="img-list__item-img">
-                            <img src="http://omi.local/wp-content/themes/omi/assets/images/degital/degital-09.png" alt="画像の説明3">
+                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/degital/degital-09.png" alt="画像の説明3">
                         </div>
                     </div>
                     <div class="img-list__item">
                         <div class="img-list__item-img">
-                            <img src="http://omi.local/wp-content/themes/omi/assets/images/degital/degital-10.png" alt="画像の説明3">
+                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/degital/degital-10.png" alt="画像の説明3">
                         </div>
                     </div>
                 </div>

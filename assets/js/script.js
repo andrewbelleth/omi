@@ -506,7 +506,7 @@ const shuffleNumberCounter = (target) => {
     return
   }
 
-  const duration = 2000 // 1秒間
+  const duration = 750 // 1秒間
   const startTime = performance.now()
 
   const animate = (currentTime) => {

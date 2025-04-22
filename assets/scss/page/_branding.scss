@@ -44,20 +44,21 @@
         @include mq(pc) {
             gap: rem(0);
         }
+
         @include mq(tb) {
             gap: rem(16) 0;
-    
+
             .branding-merit-list__item {
                 width: rem(109);
             }
-    
-            .branding-merit-list__item-img {    
+
+            .branding-merit-list__item-img {
                 img {
                     width: rem(56);
                     height: rem(56);
                 }
             }
-    
+
             .branding-merit-list__item-title {
                 font-size: rem(14);
             }
@@ -114,6 +115,12 @@
             display: flex;
             align-items: center;
             gap: rem(12);
+
+            &.workflow__item-header--06 {
+                @include mq(tb) {
+                    align-items: flex-start;
+                }
+            }
         }
 
         &__item-number {
@@ -126,7 +133,7 @@
             justify-content: center;
             margin-top: rem(2);
             flex-shrink: 0;
-            
+
             span {
                 color: #fff;
                 font-size: rem(16);

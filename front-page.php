@@ -21,7 +21,7 @@ get_template_part('template-parts/loading');
             </div>
             <h1 class="mv__title">
                 <picture>
-                    <source srcset="<?php echo get_template_directory_uri(); ?>/assets/images/sp/mv_title-sp.pwebpng" alt="印刷会社だけど、印刷だけじゃない" media="(max-width: 768px)">
+                    <source srcset="<?php echo get_template_directory_uri(); ?>/assets/images/sp/mv_title-sp.svg" alt="印刷会社だけど、印刷だけじゃない" media="(max-width: 768px)">
                     <img src="<?php echo get_template_directory_uri(); ?>/assets/images/pc/mv_title.svg" alt="印刷会社だけど、印刷だけじゃない">
                 </picture>
             </h1>
@@ -34,6 +34,7 @@ get_template_part('template-parts/loading');
             'img_02' => 'sample_slider_img02.webp',
             'img_03' => 'sample_slider_img03.webp',
             'img_04' => 'sample_slider_img04.webp',
+            'img_05' => 'lp-bunner.webp',
         ),
     );
     ?>
@@ -108,9 +109,9 @@ $args = array(
         'img_01' => 'sample_gallery01.webp',
         'img_02' => 'sample_gallery02.webp',
         'img_03' => 'sample_gallery03.webp',
-        'img_04' => 'sample_gallery01.webp',
-        'img_05' => 'sample_gallery02.webp',
-        'img_06' => 'sample_gallery03.webp',
+        'img_04' => 'sample_gallery04.webp',
+        'img_05' => 'sample_gallery05.webp',
+        'img_06' => 'sample_gallery06.webp',
     ),
 );
 ?>
@@ -277,7 +278,7 @@ $args = array(
                 <div class="top-service__item-slide _image mobile">
                     <div class="top-service__item-slide-inner _cover">
                         <div class="top-service__item-img">
-                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/pc/sample_service-img01.webp" alt="">
+                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/sp/sample_service-img01.webp" alt="">
                         </div>
                     </div>
                 </div>
@@ -312,7 +313,7 @@ $args = array(
                 <div class="top-service__item-slide _image mobile">
                     <div class="top-service__item-slide-inner _cover">
                         <div class="top-service__item-img">
-                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/pc/sample_service-img02.webp" alt="">
+                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/sp/sample_service-img02.webp" alt="">
                         </div>
                     </div>
                 </div>
@@ -347,7 +348,7 @@ $args = array(
                 <div class="top-service__item-slide _image mobile">
                     <div class="top-service__item-slide-inner _cover">
                         <div class="top-service__item-img">
-                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/pc/sample_service-img03.webp" alt="">
+                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/sp/sample_service-img03.webp" alt="">
                         </div>
                     </div>
                 </div>
@@ -381,7 +382,7 @@ $args = array(
                 <div class="top-service__item-slide _image mobile">
                     <div class="top-service__item-slide-inner _cover">
                         <div class="top-service__item-img">
-                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/pc/sample_service-img04.webp" alt="">
+                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/sp/sample_service-img04.webp" alt="">
                         </div>
                     </div>
                 </div>
@@ -417,7 +418,7 @@ $args = array(
                 <div class="top-service__item-slide _image mobile">
                     <div class="top-service__item-slide-inner _cover">
                         <div class="top-service__item-img">
-                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/pc/sample_service-img05.webp" alt="">
+                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/sp/sample_service-img05.webp" alt="">
                         </div>
                     </div>
                 </div>

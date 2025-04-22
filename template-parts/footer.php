@@ -90,12 +90,12 @@ Template Name: フッター
           </nav>
         </div>
         <ul class="footer__sns sns">
-          <li><a class="sns--x" href=""><img src="<?php echo get_template_directory_uri(); ?>/assets/images/common/ico_x.png" alt="x icon"></a></li>
-          <li><a class="sns--youtube" href=""><img src="<?php echo get_template_directory_uri(); ?>/assets/images/common/ico_youtube.png" alt="youtbe icon"></a>
+          <li><a class="sns--x" href="https://twitter.com/omp63" target="_blank" rel="noopener noreferrer"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/common/ico_x.png" alt="x icon"></a></li>
+          <li><a class="sns--youtube" href="https://www.youtube.com/channel/UCGkR-Vi1vzr6GQCxyscWJLg" target="_blank" rel="noopener noreferrer"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/common/ico_youtube.png" alt="youtbe icon"></a>
           </li>
-          <li><a class="sns--facebook" href=""><img src="<?php echo get_template_directory_uri(); ?>/assets/images/common/ico_facebook_color.png"
+          <li><a class="sns--facebook" href="https://www.facebook.com/omi.printing/" target="_blank" rel="noopener noreferrer"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/common/ico_facebook_color.png"
                 alt="facebook icon"></a></li>
-          <li><a class="sns--instagram" href=""><img src="<?php echo get_template_directory_uri(); ?>/assets/images/common/ico_instagram.png" alt="instagram icon"></a>
+          <li><a class="sns--instagram" href="https://www.instagram.com/omiprint/?hl=ja" target="_blank" rel="noopener noreferrer"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/common/ico_instagram.png" alt="instagram icon"></a>
           </li>
         </ul>
       </div>

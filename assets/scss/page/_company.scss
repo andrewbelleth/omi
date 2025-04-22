@@ -221,15 +221,32 @@
             flex: 1;
 
             ol {
-                list-style: decimal;
-                padding-left: rem(20);
+                list-style: none;
+                
+                li {
+                    position: relative;
+                    padding-left: rem(20);
+                    list-style: none;
+                    // padding-left: rem(20);
+                    counter-reset: li;
+
+                    &::before {
+                        content: counter(li) ". ";
+                        counter-increment: li;
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                    }
+                }
             }
 
             @include mq(tb) {
                 font-size: rem(14);
 
                 ol {
-                    padding-left: rem(16);
+                    li {
+                        padding-left: rem(16);
+                    }
                 }
             }
         }
@@ -319,8 +336,24 @@
     }
 
     ol {
-        list-style: decimal;
-        padding-left: rem(20);
+        list-style: none;
+        position: relative;
+        // 自動数字カウント
+        counter-reset: li;
+        
+        li {
+            list-style: none;
+            position: relative;
+            padding-left: rem(20);
+
+            &::before {
+                content: counter(li) ". ";
+                counter-increment: li;
+                position: absolute;
+                top: 0;
+                left: 0;
+            }
+        }
     }
 
     @include mq(tb) {
@@ -331,7 +364,9 @@
         }
 
         ol {
-            padding-left: rem(16);
+            li {
+                padding-left: rem(16);
+            }
         }
     }
 }

@@ -144,7 +144,7 @@ Template Name: 製本ページ
         <div class="component-box-item">
             <div class="link-01-component">
                 <div class="link-01-head">
-                    <h3 class="link-01-title">SERVICE</h3>
+                    <h3 class="link-01-title">PRINTING</h3>
                     <a href="<?php echo esc_url(home_url('/service')); ?>" class="link-01-link">
                         <span class="link-01-link-icon">
                             <svg viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">

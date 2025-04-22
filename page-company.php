@@ -27,7 +27,7 @@ if (! defined('ABSPATH')) exit;
         <div class="top-message section">
             <h2 class="top-message__title">
                 <span class="top-message__title-en">TOP MESSAGE</span>
-                <span class="top-message__title-jp">お客様と共に想いを成果につなげるため、<br>進化し続けてまいります</span>
+                <span class="top-message__title-jp">お客様と共に想いを<br class="mobile">成果につなげるため、<br>進化し続けてまいります</span>
             </h2>
             <div class="top-message__media">
                 <div class="top-message__media-img">
@@ -87,7 +87,7 @@ if (! defined('ABSPATH')) exit;
                 <div class="info-item">
                     <h3 class="info-heading">本社</h3>
                     <p class="info-content">〒529-1302 滋賀県愛知郡愛荘町川原771-1<br>
-                        <span class="mobile">TEL: 0749-42-8400（代）　　　FAX: 0749-42-6700（代）</span>
+                        <span class="mobile">TEL: 0749-42-8400（代）<br>FAX: 0749-42-6700（代）</span>
                         <span class="desktop">TEL: 0749-42-8400（代） FAX: 0749-42-6700（代）</span>
                     </p>
                 </div>

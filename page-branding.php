@@ -150,7 +150,7 @@ Template Name: 印刷ページ
                         </div>
 
                         <div class="workflow__item">
-                            <div class="workflow__item-header">
+                            <div class="workflow__item-header workflow__item-header--06">
                                 <div class="workflow__item-number">
                                     <span>06</span>
                                 </div>
