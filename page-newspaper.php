@@ -99,12 +99,12 @@ Template Name: 彦根経済新聞ページ
                     </div>
                 </div>
 
-                <h3 class="ttl-02 ttl-02--triangle mt32--sp24">彦根経済新聞には、どんな記事が配信されているの？</h3>
+                <h3 class="ttl-02 ttl-02--triangle mt32--sp40">彦根経済新聞には、どんな記事が配信されているの？</h3>
                 <div class="txt-01">
                     <p>広域彦根圏（彦根市・犬上郡・愛知郡）を中心に、イベントや展覧会、ライブなどのカルチャー情報のほか、ニューオープンのお店や、コロナ禍における地元企業・ソーシャルビジネスの新しい取り組み、ネットでバズっている彦根ネタ、さらに地元若者たちの間で今話題になっている流行・トレンドまで、私たちは「まちのハッピーニュース」に特化して情報発信しています。<br>事件・事故・政治は発信せず、「街ネタ」にこだわった独自の編集スタイルは、各地域の読者から大きな支持を得ています。</p>
                 </div>
 
-                <h3 class="ttl-02 ttl-02--triangle mt32--sp24">マルチチャンネルでコンテンツ提供</h3>
+                <h3 class="ttl-02 ttl-02--triangle mt32--sp40">マルチチャンネルでコンテンツ提供</h3>
 
                 <div class="txt-01">
                     <p>配信された記事はすべて「Yahoo!ニュース」（月間150億PV)をはじめ、スマートニュース、dmenu、gooニュース、LINEニュースにも転載。<br>彦根の記事が、Yahoo!のトップを飾ることも。SNSによる記事拡散を含め、マルチチャンネルで地域情報コンテンツを提供・発信しています。</p>
@@ -116,7 +116,7 @@ Template Name: 彦根経済新聞ページ
                     </picture>
                 </div>
 
-                <h3 class="ttl-02 ttl-02--triangle mt32--sp24">彦根の話題がYahoo!にも掲載！</h3>
+                <h3 class="ttl-02 ttl-02--triangle mt32--sp40">彦根の話題がYahoo!にも掲載！</h3>
                 <div class="img-wrapper pt16--sp12 pl21--sp20">
                     <img src="<?php echo get_template_directory_uri(); ?>/assets/images/newspaper/newspaper-item03.png" alt="彦根の話題がYahoo!にも掲載！" width="368" height="220" loading="lazy">
                 </div>
@@ -145,7 +145,7 @@ Template Name: 彦根経済新聞ページ
                         </div>
                     </div>
                 </div>
-                <div class="light-blue-box-wrap mt32">
+                <div class="light-blue-box-wrap mt32--sp16">
                     <div class="light-blue-box pi32--sp24 pb14--sp16">
                         <div class="light-blue-box-flex newspaper-access-box-col">
                             <div class="light-blue-box-flex__item newspaper-access-box-col__item js-count">
@@ -166,7 +166,7 @@ Template Name: 彦根経済新聞ページ
                     </div>
                 </div>
 
-                <h3 class="ttl-02 ttl-02--triangle mt32--sp24">彦根経済新聞はどんな人が見ている？</h3>
+                <h3 class="ttl-02 ttl-02--triangle mt32--sp40">彦根経済新聞はどんな人が見ている？</h3>
                 <div class="txt txt--small pt8--sp10 pl21--sp20">
                     <p>※2024年3月～2024年8月データ</p>
                 </div>
@@ -196,7 +196,7 @@ Template Name: 彦根経済新聞ページ
                 <div class="img-wrapper mt16">
                     <img src="<?php echo get_template_directory_uri(); ?>/assets/images/newspaper/newspaper-item04.png" alt="" width="760" height="350" loading="lazy">
                 </div>
-                <h3 class="ttl-02 ttl-02--triangle mt32--sp24">各ページから記事広告に誘導</h3>
+                <h3 class="ttl-02 ttl-02--triangle mt32--sp40">各ページから記事広告に誘導</h3>
                 <div class="txt-01">
                     <p>企画特集枠（右カラム上部）が固定掲載。<br>さらにニュース記事タイムライン中のいずれかに必ず掲載され、<br class="desktop">記事広告への誘導を図ります。スマホからも同様に誘導。</p>
                 </div>
@@ -206,11 +206,11 @@ Template Name: 彦根経済新聞ページ
                         <img src="<?php echo get_template_directory_uri(); ?>/assets/images/newspaper/newspaper-item05.png" alt="" width="739" height="340" loading="lazy">
                     </picture>
                 </div>
-                <h3 class="ttl-02 ttl-02--triangle mt32--sp24">ローカルトピックの合間に、自然と目に留まる掲載方式</h3>
+                <h3 class="ttl-02 ttl-02--triangle mt32--sp40">ローカルトピックの合間に、自然と目に留まる掲載方式</h3>
                 <div class="txt-01">
                     <p>ユーザーが日々チェックしているみん経媒体のタイムライン（スマートフォン）や企画特集枠（PC）から記事広告ページへと誘導されるので、違和感なく認知してもらう事ができます。</p>
                 </div>
-                <h3 class="ttl-02 ttl-02--triangle mt32--sp24">掲載記事広告はLP（ランディングページ）として内外のメディアで活用可能</h3>
+                <h3 class="ttl-02 ttl-02--triangle mt32--sp40">掲載記事広告はLP（ランディングページ）として内外のメディアで活用可能</h3>
                 <div class="txt-01">
                     <p>FacebookなどSNSでの投稿シェアや、みんなの経済新聞ネットワーク、外部広告ネットワーク（有料）を活用する事で、掲載エリア以外のみん経ユーザーへも広くPRすることが可能です。</p>
                 </div>

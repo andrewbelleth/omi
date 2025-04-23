@@ -206,7 +206,6 @@
                 align-items: center;
                 justify-content: center;
                 padding: rem(0) rem(6) rem(2);
-                margin-top: rem(2);
                 font-size: rem(10);
                 font-weight: 500;
                 line-height: calc(13 / 10);
@@ -282,6 +281,10 @@
                 flex-wrap: wrap;
                 gap: rem(8) rem(32);
 
+                > span:first-of-type label > span {
+                    width: 18.75rem;
+                }
+
                 .wpcf7-list-item {
                     display: flex;
                     align-items: center;
@@ -353,6 +356,10 @@
 
                 @include mq(tb) {
                     flex-direction: column;
+
+                    > span:first-of-type label > span {
+                        width: fit-content;
+                    }
                 }
             }
         }
@@ -362,17 +369,15 @@
         position: relative;
         display: flex;
 
+        .wpcf7-spinner {
+            display: none;
+        }
+
         &-btn {
             margin: 0 auto;
 
-            &:hover {
-                width: rem(280 + 40);
-                left: 0;
-            }
-
             &:has(.js-activation-button.disabled) {
                 background: $gray !important;
-                width: rem(280) !important;
 
                 .btn__text {
                     color: $white !important;
@@ -385,8 +390,9 @@
                 }
 
                 &:hover {
-                    left: 0;
-                    padding-inline: 2rem 1rem;
+                    .btn__icon {
+                        transform: none;
+                    }
                 }
             }
         }
@@ -422,6 +428,12 @@
             left: 0;
             width: rem(280);
             height: rem(60);
+            padding-inline: rem(32) rem(72);
+            font-size: rem(16);
+
+            @include mq(tb) {
+                font-size: rem(15);
+            }
         }
     }
 }

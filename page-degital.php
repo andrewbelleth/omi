@@ -51,7 +51,7 @@ Template Name: 印刷ページ
                         </span>
                     </a>
                 </div>
-                <h3 class="ttl-02 ttl-02--triangle mt32--sp24">OMITOの各サービス</h3>
+                <h3 class="ttl-02 ttl-02--triangle mt32--sp40">OMITOの各サービス</h3>
                 <div class="degital-btn-list">
                     <a href="#" class="btn-02 btn-02--rikueru">
                         <div class="btn__img">
@@ -136,7 +136,7 @@ Template Name: 印刷ページ
                 </div>
                 <div class="light-blue-box-wrap pt24 pl21--sp20">
                     <div class="light-blue-box">
-                        <h4 class="ttl-04 ttl-04--fsz18">動画の活用シチュエーション</h4>
+                        <h4 class="ttl-04 ttl-04--fsz18 fsz18--sp17">動画の活用シチュエーション</h4>
                         <div class="col col-gap4 mt12">
                             <h5 class="ttl-02 ttl-02--fsz16 ttl-02--triangle">社内向け動画</h5>
                             <div class="txt txt--fw500 txt--blue pl21--sp20">
@@ -157,18 +157,18 @@ Template Name: 印刷ページ
                         </div>
                     </div>
                 </div>
-                <h3 class="ttl-02 ttl-02--triangle mt32--sp24">動画を活用したクロスメディアプロモーションのご提案</h3>
+                <h3 class="ttl-02 ttl-02--triangle mt32--sp40">動画を活用したクロスメディアプロモーションのご提案</h3>
                 <div class="txt-01">
                     <p>印刷会社である当社が自信をもってお勧めする動画の活用方法が、紙媒体と動画のクロスメディアプロモーションです。従来の紙メディアは、文字と静止画による表現が主となり、伝えられる情報には限りがありました。<br>しかしそこにQRコードなどで動画を融合させることで、もっとたくさんの情報を読者に伝えることが可能になります。</p>
                 </div>
                 <div class="txt-01">
                     <p>広報誌、チラシ、カタログなどの紙メディアは保存性に優れ、デジタルコンテンツに比べてユーザーに「手元に置いてもらいやすい」「後から見返してもらいやすい」という特性があります。<br>この優れた保存性に、動画の圧倒的な情報量・表現力を掛け合わせることで、それぞれ単体での活用よりもさらに魅力的かつ効果的なプロモーションになるのです。</p>
                 </div>
-                <h3 class="ttl-02 ttl-02--triangle mt32--sp24">動画の制作実績</h3>
+                <h3 class="ttl-02 ttl-02--triangle mt32--sp40">動画の制作実績</h3>
 
                 <ul class="img-list img-list--2column-sp1 pt24--sp20 pl21--sp20">
-                    <li><img src="<?php echo get_template_directory_uri(); ?>/assets/images/degital/degital-01.png" alt="広報誌から事務用品印刷物まで幅広く対応" width="368" height="220" loading="lazy"></li>
-                    <li><img src="<?php echo get_template_directory_uri(); ?>/assets/images/degital/degital-02.png" alt="広報誌から事務用品印刷物まで幅広く対応" width="368" height="220" loading="lazy"></li>
+                    <li><img src="<?php echo get_template_directory_uri(); ?>/assets/images/degital/degital-01.png" alt="広報誌から事務用品印刷物まで幅広く対応" width="358" height="202" loading="lazy"></li>
+                    <li><img src="<?php echo get_template_directory_uri(); ?>/assets/images/degital/degital-02.png" alt="広報誌から事務用品印刷物まで幅広く対応" width="358" height="202" loading="lazy"></li>
                 </ul>
                 <div class="component-box-btn mt32 pl21--sp0">
                     <a href="<?php echo esc_url(home_url('/works')); ?>" class="btn inview">
@@ -198,7 +198,7 @@ Template Name: 印刷ページ
                 <div class="txt-01">
                     <p>当社ではアナログプロモーションツールである印刷物と、デジタルプロモーションツールであるデジタルコンテンツを自社内で完結できます。<br>原稿や写真、デザインデータなどを共通で活用することで、様々なメリットをご提供することができるのです。</p>
                 </div>
-                <h3 class="ttl-02 ttl-02--triangle mt32--sp24">Webサイト作成のメリット</h3>
+                <h3 class="ttl-02 ttl-02--triangle mt32--sp40">Webサイト作成のメリット</h3>
                 <div class="txt-01">
                     <ul class="disc-list">
                         <li>制作会社一本化によるコスト・工数の削減</li>
@@ -207,7 +207,7 @@ Template Name: 印刷ページ
                         <li>お客さまのクロスメディアプロモーションを総合的にサポート</li>
                     </ul>
                 </div>
-                <h3 class="ttl-02 ttl-02--triangle mt32--sp24">作って終わりはもったいない！Webサイトは育てるもの！</h3>
+                <h3 class="ttl-02 ttl-02--triangle mt32--sp40">作って終わりはもったいない！Webサイトは育てるもの！</h3>
                 <div class="txt-01">
                     <p>情報メディアの多様化により、デジタルでのプロモーション活動が重要度を増しています。<br>企業Webサイトは、デジタルプロモーション活動の核となる重要な宣伝媒体。常に分析・改善・更新し、最新・最善の状態を保つことが、ユーザーからの信頼度向上には不可欠です。</p>
                 </div>
@@ -220,18 +220,18 @@ Template Name: 印刷ページ
 
 
                 <div class="light-blue-box-wrap pt24 pl21--sp20">
-                    <div class="light-blue-box">
-                        <h4 class="ttl-04 ttl-04--fsz18">ご提供サービス</h4>
-                        <div class="txt txt--blue txt--fw500 mt12">
+                    <div class="light-blue-box pi40--sp24 pk28--sp24">
+                        <h4 class="ttl-04 ttl-04--fsz18 fsz18--sp17">ご提供サービス</h4>
+                        <div class="txt txt--blue txt--fw500 mt12--sp8">
                             <p>Webサイト製作 / CMS構築・カスタマイズ / アクセス解析 / 企画設計・マーケティング / サイト運営 / LP・バナー製作</p>
                         </div>
                     </div>
                 </div>
-                <h3 class="ttl-02 ttl-02--triangle mt32--sp24">Webサイトの制作実績</h3>
+                <h3 class="ttl-02 ttl-02--triangle mt32--sp40">Webサイトの制作実績</h3>
 
-                <ul class="img-list img-list--2column-sp1 pt24--sp20 pl21--sp20">
-                    <li><img src="<?php echo get_template_directory_uri(); ?>/assets/images/degital/degital-03.png" alt="広報誌から事務用品印刷物まで幅広く対応" width="368" height="220" loading="lazy"></li>
-                    <li><img src="<?php echo get_template_directory_uri(); ?>/assets/images/degital/degital-04.png" alt="広報誌から事務用品印刷物まで幅広く対応" width="368" height="220" loading="lazy"></li>
+                <ul class="img-list img-list--2column-sp1 gap24 pt24--sp20 pl21--sp20">
+                    <li><img src="<?php echo get_template_directory_uri(); ?>/assets/images/degital/degital-03.png" alt="広報誌から事務用品印刷物まで幅広く対応" width="358" height="488" loading="lazy"></li>
+                    <li><img src="<?php echo get_template_directory_uri(); ?>/assets/images/degital/degital-04.png" alt="広報誌から事務用品印刷物まで幅広く対応" width="358" height="488" loading="lazy"></li>
                 </ul>
                 <div class="component-box-btn mt32 pl21--sp0">
                     <a href="<?php echo esc_url(home_url('/works')); ?>" class="btn inview">
@@ -259,7 +259,7 @@ Template Name: 印刷ページ
                     <p>「とりあえず広告を配信してみたけど、結果がわからない･･･」「広告媒体がありすぎて、何を選んだらいいかわからない･･･」といった、広告の運用についてお困りの方はもちろん、「ブランド認知度を向上させたい！」「お客様との接点をもっと増やしたい！」など、ビジネス目標に合わせて最適なWeb広告戦略をご提案し、ビジネス目標達成をサポートいたします。</p>
                 </div>
 
-                <h3 class="ttl-02 ttl-02--triangle mt32--sp24">サービスの特徴</h3>
+                <h3 class="ttl-02 ttl-02--triangle mt32--sp40">サービスの特徴</h3>
                 <div class="txt-01">
                     <p>SNS広告、 ディスプレイ広告、検索連動型広告など、様々なWeb広告手法を駆使し、最適な戦略をご提案いたします。また、 それぞれの広告媒体の特徴やユーザー属性に合わせて、年齢、性別、興味関心、地域など詳細なターゲティングを設定し、お客様の商品・サービスに関心の高いユーザーへピンポイントに訴求します。</p>
                 </div>
@@ -268,18 +268,18 @@ Template Name: 印刷ページ
                 </div>
 
                 <div class="light-blue-box-wrap pt24 pl21--sp20">
-                    <div class="light-blue-box">
-                        <h4 class="ttl-04 ttl-04--fsz18">ご提供サービス</h4>
-                        <div class="txt txt--blue txt--fw500 mt12">
+                    <div class="light-blue-box pi40--sp24 pk28--sp24">
+                        <h4 class="ttl-04 ttl-04--fsz18 fsz18--sp17">ご提供サービス</h4>
+                        <div class="txt txt--blue txt--fw500 mt12--sp8">
                             <p>YouTube広告/LINE広告/Meta広告（Instagram・Facebook）/ディスプレイ広告（Google・Yahoo!）/検索連動型広告（Google・Yahoo!）</p>
                         </div>
                     </div>
                 </div>
-                <h3 class="ttl-02 ttl-02--triangle mt32--sp24">Web広告の制作実績</h3>
+                <h3 class="ttl-02 ttl-02--triangle mt32--sp40">Web広告の制作実績</h3>
 
                 <ul class="img-list img-list--2column-sp1 pt24--sp20 pl21--sp20">
-                    <li><img src="<?php echo get_template_directory_uri(); ?>/assets/images/degital/degital-05.png" alt="広報誌から事務用品印刷物まで幅広く対応" width="368" height="220" loading="lazy"></li>
-                    <li><img src="<?php echo get_template_directory_uri(); ?>/assets/images/degital/degital-06.png" alt="広報誌から事務用品印刷物まで幅広く対応" width="368" height="220" loading="lazy"></li>
+                    <li><img src="<?php echo get_template_directory_uri(); ?>/assets/images/degital/degital-05.png" alt="広報誌から事務用品印刷物まで幅広く対応" width="358" height="358" loading="lazy"></li>
+                    <li><img src="<?php echo get_template_directory_uri(); ?>/assets/images/degital/degital-06.png" alt="広報誌から事務用品印刷物まで幅広く対応" width="358" height="358" loading="lazy"></li>
                 </ul>
                 <div class="component-box-btn mt32 pl21--sp0">
                     <a href="<?php echo esc_url(home_url('/works')); ?>" class="btn inview">
@@ -304,11 +304,11 @@ Template Name: 印刷ページ
                     <p>動画、スライド画像、音声も再生可能。リンク機能で外部サイトへの動線を作ることで、閲覧者をECサイトや公式ホームページなどにスムーズに誘導することができ、商品の購入や問合せ率向上などのKPI達成を強力にサポートします。</p>
                 </div>
 
-                <h3 class="ttl-02 ttl-02--triangle mt32--sp24">使い方・作り方を動画で見る</h3>
+                <h3 class="ttl-02 ttl-02--triangle mt32--sp40">使い方・作り方を動画で見る</h3>
                 <div class="img-list pt16--sp20 pl21--sp20">
                     <div class="img-list__item">
                         <div class="img-list__item-img">
-                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/degital/degital-07.png" alt="画像の説明3">
+                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/degital/degital-07.png" alt="画像の説明3" width="358" height="237" loading="lazy">
                         </div>
                         <div class="txt mt10">
                             <p>基本機能の使い方と、オプション機能のご紹介</p>
@@ -316,7 +316,7 @@ Template Name: 印刷ページ
                     </div>
                     <div class="img-list__item">
                         <div class="img-list__item-img">
-                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/degital/degital-08.png" alt="画像の説明3">
+                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/degital/degital-08.png" alt="画像の説明3" width="358" height="237" loading="lazy">
                         </div>
                         <div class="txt mt10">
                             <p>WebBook用データの作り方などをご紹介</p>
@@ -324,16 +324,16 @@ Template Name: 印刷ページ
                     </div>
                 </div>
 
-                <h3 class="ttl-02 ttl-02--triangle mt32--sp24">WebBookの制作実績</h3>
+                <h3 class="ttl-02 ttl-02--triangle mt32--sp40">WebBookの制作実績</h3>
                 <div class="img-list pt16--sp20 pl21--sp20">
                     <div class="img-list__item">
                         <div class="img-list__item-img">
-                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/degital/degital-09.png" alt="画像の説明3">
+                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/degital/degital-09.png" alt="画像の説明3" width="358" height="234" loading="lazy">
                         </div>
                     </div>
                     <div class="img-list__item">
                         <div class="img-list__item-img">
-                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/degital/degital-10.png" alt="画像の説明3">
+                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/degital/degital-10.png" alt="画像の説明3" width="358" height="234" loading="lazy">
                         </div>
                     </div>
                 </div>

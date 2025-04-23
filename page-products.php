@@ -20,8 +20,8 @@ Template Name: 取り扱い品目ページ
                 <li><a data-slug="booklet" href="<?php echo home_url('/service/printing/products/#booklet'); ?>">冊子</a></li>
                 <li><a data-slug="slip" href="<?php echo home_url('/service/printing/products/#slip'); ?>">伝票・帳票</a></li>
                 <li><a data-slug="envelope" href="<?php echo home_url('/service/printing/products/#envelope'); ?>">名刺・封筒・はがき・<br class="mobile">挨<br class="desktop">拶状</a></li>
-                <li><a data-slug="ricebag" href="<?php echo home_url('/service/printing/products/#ricebag'); ?>">米袋</a></li>
-                <li><a data-slug="promotion" href="<?php echo home_url('/service/printing/products/#promotion'); ?>">販促</a></li>
+                <li style="display: none;"><a data-slug="ricebag" href="<?php echo home_url('/service/printing/products/#ricebag'); ?>">米袋</a></li>
+                <li style="display: none;"><a data-slug="promotion" href="<?php echo home_url('/service/printing/products/#promotion'); ?>">販促</a></li>
             </ul>
         </div>
         <div class="section__main wrapper-136">
@@ -49,7 +49,7 @@ Template Name: 取り扱い品目ページ
                     <li><img src="<?php echo get_template_directory_uri(); ?>/assets/images/products/products-img02.webp" alt="広報誌・定期刊行物についてのイメージ画像" width="368" height="220" loading="lazy"></li>
                 </ul>
                 <div class="component-box-btn mt32--sp40">
-                    <a href="<?php echo esc_url(home_url('/')); ?>" class="btn inview">
+                    <a href="<?php echo esc_url(home_url('/service/degital#web-book')); ?>" class="btn inview">
                         <span class="btn__text">WebBookについて</span>
                         <span class="btn__icon">
                             <svg viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -186,7 +186,7 @@ Template Name: 取り扱い品目ページ
                 </ul>
                 <div class="component-box-btn mt32--sp40">
                     <div class="btn-list">
-                        <a href="<?php echo esc_url(home_url('/')); ?>" class="btn btn--onlyspanimation inview">
+                        <a href="https://docs.google.com/forms/d/e/1FAIpQLScgfWcO7tSq_gGsVv_ZqFiyBLAOddozOfD7rbwZ8MWb3ybY4Q/viewform" target="_blank" class="btn btn--onlyspanimation inview">
                             <span class="btn__text">パンフレットの<br class="br-1050">ダウンロードはこちら</span>
                             <span class="btn__icon">
                                 <svg viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -198,7 +198,7 @@ Template Name: 取り扱い品目ページ
                                 </svg>
                             </span>
                         </a>
-                        <a href="<?php echo esc_url(home_url('/')); ?>" class="btn btn--onlyspanimation inview">
+                        <a href="https://www.omi-in.co.jp/digitalbook/BF/book/#target/page_no=1" target="_blank" class="btn btn--onlyspanimation inview">
                             <span class="btn__text">WebBookで<br class="br-1050">パンフレットを見る</span>
                             <span class="btn__icon">
                                 <svg viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -239,7 +239,7 @@ Template Name: 取り扱い品目ページ
                     </a>
                 </div>
             </section>
-            <section class="component-box-item ricebag" id="ricebag">
+            <section class="component-box-item ricebag" id="ricebag" style="display: none;">
                 <h2 class="ttl-01">米袋</h2>
                 <div class="txt mt32--sp20">
                     <p>
@@ -265,7 +265,7 @@ Template Name: 取り扱い品目ページ
                     </a>
                 </div>
             </section>
-            <section class="component-box-item promotion" id="promotion">
+            <section class="component-box-item promotion" id="promotion" style="display: none;">
                 <h2 class="ttl-01">販促</h2>
                 <div class="txt mt32--sp20">
                     <p>

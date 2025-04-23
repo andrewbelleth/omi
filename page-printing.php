@@ -34,36 +34,36 @@ Template Name: 印刷ページ
         </div>
         <section class="component-box-item type-item" id="type-printing">
             <h2 class="ttl-01">印刷の種類</h2>
-            <div class="component-item-column-g10 mt32--sp24">
+            <div class="mt32--sp24">
                 <h3 class="ttl-02 ttl-02--triangle">オフセット印刷</h3>
                 <div class="txt-01">
                     <p>オフセット印刷とは、シアン・マゼンタ・イエロー・ブラック各色の版を出力し印刷を行う方式です。一枚の紙に4つの色を刷り重ねていくことで最終的な仕上がり色を再現します。大量に印刷することでコストを大幅に下げることが特徴です。<br>当社は高生産性・高品質を誇る印刷機MEGA Jprintを2台完備し、ロール紙を使用することにより、大量印刷、多頁物印刷も短納期・低コストでのご提供を可能としています。</p>
                 </div>
             </div>
-            <div class="component-item-column-g10 mt32--sp24">
+            <div class="mt32--sp24">
                 <h3 class="ttl-02 ttl-02--triangle">オンデマンド印刷</h3>
                 <div class="txt-01">
                     <p>オンデマンド印刷は、データから直接印刷する高速デジタル印刷機による印刷方式です。従来のオフセット印刷のような版を必要としないため、作業工程が少なく、印刷に掛かる時間とコストを大幅に短縮することができ、小ロット・多品種に対応しています。<br>住所やバーコードなど、印刷内容の一部を変えるバリアブル印刷（可変印刷）にも対応できます。</p>
                 </div>
             </div>
-            <div class="component-item-column-g10 mt32--sp24">
+            <div class="mt32--sp24">
                 <h3 class="ttl-02 ttl-02--triangle">伝票・ビジネスフォーム印刷</h3>
                 <div class="txt-01">
                     <p>ビジネスフォーム印刷機、伝票製本設備を各種完備。制作から納品までワンストップの社内生産体制により、短納期・低コストを実現しております。裏カーボン、増感・減感加工、ナンバリングやミシン、穴あけなどの加工も可能です。</p>
                 </div>
             </div>
-            <div class="component-item-column-g10 mt32--sp24">
+            <div class="mt32--sp24">
                 <h3 class="ttl-02 ttl-02--triangle">シール印刷</h3>
                 <div class="txt-01">
                     <p>商品ラベル、製造内容シール、各種表示ステッカー、目隠しシール、訂正シールなど、用途や貼付場所などによって、様々な形、材質、加工のシールを制作させていただいております。</p>
                 </div>
             </div>
-            <div class="component-item-column-g10 mt32--sp24">
+            <div class="mt32--sp24">
                 <h3 class="ttl-02 ttl-02--triangle">パッケージ印刷</h3>
                 <div class="txt-01">
                     <p>商品のパンフレット、チラシ、販促ツールと同時にパッケージの制作も承っております。形状や材質は様々。ヒアリングを基に、最も良いパッケージが仕上がるようデザインからご提案させていただきます。</p>
                 </div>
-                <div class="component-item-column-g10 mt32--sp24">
+                <div class="mt32--sp24">
                     <h3 class="ttl-02 ttl-02--triangle">パッケージ印刷</h3>
                     <div class="txt-01">
                         <p>商品のパンフレット、チラシ、販促ツールと同時にパッケージの制作も承っております。形状や材質は様々。ヒアリングを基に、最も良いパッケージが仕上がるようデザインからご提案させていただきます。</p>
@@ -73,7 +73,7 @@ Template Name: 印刷ページ
         </section>
         <section class="component-box-item type-products" id="type-products">
             <h2 class="ttl-01">取扱品目</h2>
-            <div class="txt m32">
+            <div class="txt mt32--sp20">
                 <p>
                     ポスター、チラシ、パンフレット、広報誌などの商業印刷物から、帳票、封筒、名刺などの事務用印刷物、シール、看板、のぼり、各種ノベルティなどの特殊印刷まで、幅広く対応しています。自社工場に取り揃えた豊富な設備により、様々な加工で印刷物に付加価値を与えることも可能です。お客さまの用途に適した印刷物を制作いたします。
                 </p>
@@ -99,10 +99,10 @@ Template Name: 印刷ページ
         </section>
         <section class="component-box-item type-processing" id="type-processing">
             <h2 class="ttl-01">加工・製本</h2>
-            <div class="txt m32">
+            <div class="txt mt32--sp20">
                 <p>
-                当社の自社工場設備と信頼ある協力会社との連携により、印刷物に付加価値をプラスした高品質な製品をご提供します。<br>
-                加工が必要な場合には、加工位置や向きを示す仕上がり見本をご準備ください。
+                    当社の自社工場設備と信頼ある協力会社との連携により、印刷物に付加価値をプラスした高品質な製品をご提供します。<br>
+                    加工が必要な場合には、加工位置や向きを示す仕上がり見本をご準備ください。
                 </p>
             </div>
             <ul class="img-list img-list--2column-sp1 mt32--sp24">
@@ -110,37 +110,37 @@ Template Name: 印刷ページ
                 <li><img src="<?php echo get_template_directory_uri(); ?>/assets/images/printing/printing-img08.webp" alt="加工が必要な場合でも高品質な製品を提供" width="368" height="220" loading="lazy"></li>
             </ul>
             <div class="component-box-btn mt32--sp40">
-            <div class="btn-list">
-                        <a href="<?php echo esc_url(home_url('/service/printing/processing')); ?>" class="btn inview">
-                            <span class="btn__text">加工について詳しく見る</span>
-                            <span class="btn__icon">
-                                <svg viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <g clip-path="url(#clip0_40_1378)">
-                                        <path
-                                            d="M13.6814 18.9216L12.2322 17.4304L17.4836 12.1789H0.830322V10.1164H17.4836L12.2322 4.86497L13.6814 3.37378L21.4553 11.1477L13.6814 18.9216Z"
-                                            fill="#0068B6" />
-                                    </g>
-                                </svg>
-                            </span>
-                        </a>
-                        <a href="<?php echo esc_url(home_url('/service/printing/bookbinding')); ?>" class="btn inview">
-                            <span class="btn__text">製本について詳しく見る</span>
-                            <span class="btn__icon">
-                                <svg viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <g clip-path="url(#clip0_40_1378)">
-                                        <path
-                                            d="M13.6814 18.9216L12.2322 17.4304L17.4836 12.1789H0.830322V10.1164H17.4836L12.2322 4.86497L13.6814 3.37378L21.4553 11.1477L13.6814 18.9216Z"
-                                            fill="#0068B6" />
-                                    </g>
-                                </svg>
-                            </span>
-                        </a>
-                    </div>
+                <div class="btn-list">
+                    <a href="<?php echo esc_url(home_url('/service/printing/processing')); ?>" class="btn inview">
+                        <span class="btn__text">加工について詳しく見る</span>
+                        <span class="btn__icon">
+                            <svg viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_40_1378)">
+                                    <path
+                                        d="M13.6814 18.9216L12.2322 17.4304L17.4836 12.1789H0.830322V10.1164H17.4836L12.2322 4.86497L13.6814 3.37378L21.4553 11.1477L13.6814 18.9216Z"
+                                        fill="#0068B6" />
+                                </g>
+                            </svg>
+                        </span>
+                    </a>
+                    <a href="<?php echo esc_url(home_url('/service/printing/bookbinding')); ?>" class="btn inview">
+                        <span class="btn__text">製本について詳しく見る</span>
+                        <span class="btn__icon">
+                            <svg viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_40_1378)">
+                                    <path
+                                        d="M13.6814 18.9216L12.2322 17.4304L17.4836 12.1789H0.830322V10.1164H17.4836L12.2322 4.86497L13.6814 3.37378L21.4553 11.1477L13.6814 18.9216Z"
+                                        fill="#0068B6" />
+                                </g>
+                            </svg>
+                        </span>
+                    </a>
+                </div>
             </div>
         </section>
         <section class="component-box-item type-agency" id="type-agency">
             <h2 class="ttl-01">業務代行</h2>
-            <div class="txt mt32--sp24">
+            <div class="txt mt32--sp20">
                 <p>
                     当社の自社工場設備と信頼ある協力会社との連携により、印刷物に付加価値をプラスした高品質な製品をご提供します。<br>
                     加工が必要な場合には、加工位置や向きを示す仕上がり見本をご準備ください。

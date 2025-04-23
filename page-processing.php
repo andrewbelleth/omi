@@ -113,10 +113,7 @@ Template Name: 加工ページ
                         </li>
                         <li>
                             <img src="<?php echo get_template_directory_uri(); ?>/assets/images/processings/processings-icon13.webp" alt="折り加工の外三つ折+クロス二つ折についてのイメージ画像" width="62" height="62" loading="lazy">
-                            <p>外三つ折<br>
-                                クロス二つ折<br>
-                                <span>（変形12頁）</span>
-                            </p>
+                            <p>外三つ折<br>クロス二つ折<br></p>
                         </li>
                         <li>
                             <img src="<?php echo get_template_directory_uri(); ?>/assets/images/processings/processings-icon14.webp" alt="折り加工の巻四つ折+クロス二つ折についてのイメージ画像" width="62" height="62" loading="lazy">

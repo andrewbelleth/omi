@@ -31,7 +31,7 @@ Template Name: 印刷ページ
                 <div class="light-blue-box-wrap mt32">
                     <div class="light-blue-box">
                         <h4 class="ttl-04 ttl-04--fsz18">当社がご提供するプロモーション</h4>
-                        <div class="light-blue-box-flex mt20">
+                        <div class="light-blue-box-flex gap64--sp24 mt20">
                             <div class="light-blue-box-flex__item">
                                 <h5 class="light-blue-box-flex__item-title">アナログツール</h5>
                                 <div class="light-blue-box-flex__item-body">
@@ -100,7 +100,7 @@ Template Name: 印刷ページ
                 <div class="light-blue-box-wrap mt32">
                     <div class="light-blue-box">
                         <h4 class="ttl-04 ttl-04--fsz18">近江印刷がサポートできること</h4>
-                        <div class="col col-gap4 mt12">
+                        <div class="col col-gap4 mt12--sp16">
                             <h5 class="ttl-02 ttl-02--fsz16 ttl-02--triangle">店舗内印刷物</h5>
                             <div class="txt txt--fw500 txt--blue pl21--sp20">
                                 <p>店頭POP / チラシ・フレイヤー / ポスター </p>
@@ -143,7 +143,7 @@ Template Name: 印刷ページ
                 <div class="light-blue-box-wrap mt32">
                     <div class="light-blue-box">
                         <h4 class="ttl-04 ttl-04--fsz18">近江印刷がサポートできること</h4>
-                        <div class="col col-gap4 mt12">
+                        <div class="col col-gap4 mt12--sp16">
                             <h5 class="ttl-02 ttl-02--fsz16 ttl-02--triangle">リクルート用パンフレット</h5>
                             <div class="txt txt--fw500 txt--blue pl21--sp20">
                                 <p>パンフレットカバー / 小冊子 / チラシ / 手提げ袋</p>
@@ -186,7 +186,7 @@ Template Name: 印刷ページ
                 <div class="light-blue-box-wrap mt32">
                     <div class="light-blue-box">
                         <h4 class="ttl-04 ttl-04--fsz18">近江印刷がサポートできること</h4>
-                        <div class="col col-gap4 mt12">
+                        <div class="col col-gap4 mt12--sp16">
                             <h5 class="ttl-02 ttl-02--fsz16 ttl-02--triangle">営業用印刷物</h5>
                             <div class="txt txt--fw500 txt--blue pl21--sp20">
                                 <p>会社案内パンフレット / ブランドブック / 商品案内リーフレット / カタログ</p>
@@ -201,7 +201,7 @@ Template Name: 印刷ページ
                         <div class="col col-gap4 mt12">
                             <h5 class="ttl-02 ttl-02--fsz16 ttl-02--triangle">ブランディング</h5>
                             <div class="txt txt--fw500 txt--blue pl21--sp20">
-                                <p>企業ブランディング / ロゴマーク作成 / キャラクター作成 / ノベルティ・グッズ作成</p>
+                                <p>企業ブランディング / ロゴマーク作成 /<br class="mobile"> キャラクター作成 / ノベルティ・グッズ作成</p>
                             </div>
                         </div>
                         <div class="col col-gap4 mt12">
@@ -241,7 +241,7 @@ Template Name: 印刷ページ
                 <div class="light-blue-box-wrap mt32">
                     <div class="light-blue-box">
                         <h4 class="ttl-04 ttl-04--fsz18">当社がご提供するプロモーション</h4>
-                        <div class="light-blue-box-flex mt20">
+                        <div class="light-blue-box-flex gap64--sp24 mt20">
                             <div class="light-blue-box-flex__item">
                                 <h5 class="light-blue-box-flex__item-title">アナログツール</h5>
                                 <div class="light-blue-box-flex__item-body">
@@ -255,11 +255,14 @@ Template Name: 印刷ページ
                                         <li class="txt">
                                             <p>チラシ</p>
                                         </li>
-                                        <li class="txt">
+                                        <li class="txt desktop">
                                             <p>のぼり</p>
                                         </li>
                                     </ul>
                                     <ul class="mt8 disc-list">
+                                        <li class="txt mobile">
+                                            <p>のぼり</p>
+                                        </li>
                                         <li class="txt">
                                             <p>観光MAP</p>
                                         </li>
@@ -288,7 +291,7 @@ Template Name: 印刷ページ
                                     </ul>
                                     <ul class="mt8 disc-list">
                                         <li class="txt">
-                                            <p>プロモーション動画</p>
+                                            <p>プロモーション<br class="mobile">動画</p>
                                         </li>
                                         <li class="txt">
                                             <p>動画広告</p>
