@@ -167,7 +167,7 @@ Template Name: 印刷ページ
                 <div class="txt-01">
                     <p>ブランディングは提供する製品、サービス、商品に対する信頼や共感を通じて自社の価値向上や他社との差別化などを目指すマーケティング戦略の1つです。</p>
                 </div>
-                <div class="img-list img-list--3column mt20 pl21--sp20">
+                <div class="img-list img-list--3column row-gap20--sp12 mt20 pl21--sp20">
                     <div class="img-list__item">
                         <div class="img-list__item-img">
                             <img src="<?php echo get_template_directory_uri(); ?>/assets/images/branding/support01.png" alt="">
@@ -184,11 +184,11 @@ Template Name: 印刷ページ
                         </div>
                     </div>
                 </div>
-                <h3 class="ttl-02 ttl-02--triangle mt32--sp24">コーポレートマーク・<br class="mobile">ブランドロゴマーク作成</h3>
+                <h3 class="ttl-02 ttl-02--triangle mt32--sp40">コーポレートマーク・<br class="mobile">ブランドロゴマーク作成</h3>
                 <div class="txt-01">
                     <p>企業や製品が伝えたいイメージを象徴的に表現することで記憶に残りやすく認知度向上につながります。</p>
                 </div>
-                <div class="img-list img-list--3column img-list--sp2column mt20 pl21--sp20">
+                <div class="img-list img-list--3column row-gap20--sp16 column-gap23--sp15 img-list--sp2column mt20 pl21--sp20">
                     <div class="img-list__item">
                         <div class="img-list__item-img">
                             <picture>
@@ -238,11 +238,11 @@ Template Name: 印刷ページ
                         </div>
                     </div>
                 </div>
-                <h3 class="ttl-02 ttl-02--triangle mt32--sp24">公式キャラクター作成</h3>
+                <h3 class="ttl-02 ttl-02--triangle mt32--sp40">公式キャラクター作成</h3>
                 <div class="txt-01">
                     <p>親しみやすいキャラクターは企業や団体の好感度向上にもつながります。<br>親近感を持てるキャラクターは話題性や集客効果を高めます。</p>
                 </div>
-                <div class="img-list img-list--3column mt20 pl21--sp20">
+                <div class="img-list img-list--3column row-gap20--sp16 mt20 pl21--sp20">
                     <div class="img-list__item">
                         <div class="img-list__item-img">
                             <img src="<?php echo get_template_directory_uri(); ?>/assets/images/branding/character01.png" alt="">
@@ -259,7 +259,7 @@ Template Name: 印刷ページ
                         </div>
                     </div>
                 </div>
-                <h3 class="ttl-02 ttl-02--triangle mt32--sp24">ブランドブック・コンセプトブック作成</h3>
+                <h3 class="ttl-02 ttl-02--triangle mt32--sp40">ブランドブック・コンセプトブック作成</h3>
                 <div class="txt-01">
                     <p>社内外に一貫したイメージを浸透させることでブランドの価値を最大化し、持続的な成長を支えるための重要なツールとなります。</p>
                 </div>
@@ -270,11 +270,11 @@ Template Name: 印刷ページ
                         </div>
                     </div>
                 </div>
-                <h3 class="ttl-02 ttl-02--triangle mt32--sp24">商品ラベル作成</h3>
+                <h3 class="ttl-02 ttl-02--triangle mt32--sp40">商品ラベル作成</h3>
                 <div class="txt-01">
                     <p>商品の特徴や魅力を分かりやすく伝えて訴求力を高め、他の商品との差別化や消費者の購買意欲を高めるなどブランド価値向上に貢献します。</p>
                 </div>
-                <div class="img-list img-list--3column mt20 pl21--sp20">
+                <div class="img-list img-list--3column row-gap20--sp12 mt20 pl21--sp20">
                     <div class="img-list__item">
                         <div class="img-list__item-img">
                             <img src="<?php echo get_template_directory_uri(); ?>/assets/images/branding/label01.png" alt="">

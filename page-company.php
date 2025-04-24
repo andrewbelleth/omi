@@ -3,14 +3,16 @@ if (! defined('ABSPATH')) exit;
 ?>
 
 <?php get_template_part('template-parts/header'); ?>
-<div class="breadcrumb section">
-    <?php
-    if (function_exists('bcn_display')) {
-        bcn_display();
-    }
-    ?>
+<div class="section">
+    <div class="breadcrumb pt126--sp80">
+        <?php
+        if (function_exists('bcn_display')) {
+            bcn_display();
+        }
+        ?>
+    </div>
 </div>
-<div class="page__head-inner">
+<div class="page__head-inner mt72--sp56">
     <h2 class="page__title">
         <span class="page__title--en">COMPANY</span>
         <span class="page__title--jp">会社概要</span>

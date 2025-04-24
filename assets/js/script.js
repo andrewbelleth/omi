@@ -101,8 +101,6 @@ document.addEventListener("DOMContentLoaded", function () {
   // ページ内リンクのイベントリスナー設定
   const anchors = document.querySelectorAll("#sidemenu > li > a");
 
-  console.log(anchors);
-
   // アクティブ状態の切り替え処理を追加
   anchors.forEach((anchor) => {
     const href = anchor.getAttribute("href");
@@ -118,8 +116,9 @@ document.addEventListener("DOMContentLoaded", function () {
     if (targetElement) {
       ScrollTrigger.create({
         trigger: targetElement,
-        start: "top top",
+        start: "top 0%",
         end: "bottom top",
+        markers: true,
         onEnter: () => updateActiveState(anchor),
         onEnterBack: () => updateActiveState(anchor),
         onLeave: () => removeActiveState(anchor),
@@ -160,11 +159,11 @@ document.addEventListener("DOMContentLoaded", function () {
         e.preventDefault(); // デフォルトのジャンプを防ぐ
 
         gsap.to(window, {
-          duration: 0.5,
+          duration: 0.2,
           ease: "power2.out",
           scrollTo: {
             y: targetElement,
-            offsetY: 100,
+            offsetY: 0,
             autokill: true,
           },
         });
