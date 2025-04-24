@@ -625,3 +625,20 @@ class StickyScroll {
 }
 
 new StickyScroll();
+
+// スクロールバーの常時表示設定
+document.addEventListener('DOMContentLoaded', function() {
+  const swatchList = document.querySelector('.swatch-list');
+  if (swatchList) {
+    // スクロールバーのスタイルを強制的に適用
+    swatchList.style.setProperty('--scrollbar-visible', 'block');
+    swatchList.style.setProperty('scrollbar-width', 'auto');
+    swatchList.style.setProperty('-webkit-overflow-scrolling', 'touch');
+    
+    // iOSデバイスでのスクロールバー表示
+    if (/iPad|iPhone|iPod/.test(navigator.userAgent)) {
+      swatchList.style.setProperty('overflow', 'scroll');
+      swatchList.style.setProperty('-webkit-overflow-scrolling', 'touch');
+    }
+  }
+}); 
