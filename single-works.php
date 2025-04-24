@@ -41,6 +41,29 @@ Template Name: トップページ
             <?php the_content(); ?>
         </div>
 
+        <div class="article__gallery">
+            <?php
+            $gallery01 = get_field('gallery01');
+            $gallery02 = get_field('gallery02');
+            $gallery03 = get_field('gallery03');
+            ?>
+            <?php if ($gallery01) : ?>
+                <div class="article__gallery-item">
+                    <img src="<?php echo $gallery01; ?>" alt="">
+                </div>
+            <?php endif; ?>
+            <?php if ($gallery02) : ?>
+                <div class="article__gallery-item">
+                    <img src="<?php echo $gallery02; ?>" alt="">
+                </div>
+            <?php endif; ?>
+            <?php if ($gallery03) : ?>
+                <div class="article__gallery-item">
+                    <img src="<?php echo $gallery03; ?>" alt="">
+                </div>
+            <?php endif; ?>
+        </div>
+
         <?php if ($external_link) : ?>
             <a href="<?php echo $external_link; ?>" class="article__btn">
                 <span class="article__btn-text">
