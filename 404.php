@@ -3,7 +3,6 @@ if (! defined('ABSPATH')) exit;
 ?>
 
 <?php get_template_part('template-parts/header'); ?>
-<div class="wrapper">
     <?php get_template_part('template-parts/components/page-head', null, [
         'title_en' => '404 NOT FOUND',
         'title_jp' => null,
@@ -29,6 +28,4 @@ if (! defined('ABSPATH')) exit;
 
         </div>
     </div>
-
     <?php get_template_part('template-parts/footer'); ?>
-</div>

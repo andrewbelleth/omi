@@ -125,7 +125,7 @@ Template Name: ファシリティページ
                 </ul>
                 <div class="txt tar">
                     <p class="mt16--sp12">
-                        交換胴は8.5吋〜18吋まで完備、14吋までは半吋きざみを取り揃えております。
+                        交換胴は8.5吋〜18吋まで完備、<br class="sp-only">14吋までは半吋きざみを取り揃えております。
                     </p>
                 </div>
             </section>
@@ -248,7 +248,7 @@ Template Name: ファシリティページ
             </section>
             <section class="component-box-item dtp-pre-press" id="dtp-pre-press">
                 <h2 class="ttl-03">DTP・製版関連</h2>
-                <h3 class="ttl-05">デジタル製版関連</h3>
+                <h3 class="ttl-05">オンデマンドデジタル印刷機</h3>
                 <ul class="facility-list mt12">
                     <li>
                         RevoriaPressPC1120S（Model-6C） 〈富士フィルム〉

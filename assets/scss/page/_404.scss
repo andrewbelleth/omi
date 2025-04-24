@@ -8,36 +8,61 @@
     line-height: calc(54 / 36);
     margin-bottom: rem(40);
   }
-  p{
+  p {
     color: var(--black);
-    font-size: rem(16);
-    font-feature-settings: 'pwid' on, 'palt' on;
+    font-size: rem(15);
+    font-feature-settings: "pwid" on, "palt" on;
     font-weight: 400;
     line-height: calc(27 / 16);
-    letter-spacing: lts-em(0.75,16);
+    letter-spacing: lts-em(0.75, 16);
     text-align: center;
   }
-  .btn{
+  .btn {
     margin-top: rem(80);
   }
-  .page-thanks__text-blue{
+  .page-thanks__text-blue {
     color: var(--blue);
     font-weight: 500;
   }
   @include mq(sp) {
     h2 {
-        font-size: rem(24);
-        line-height: calc(36 / 24);
-        margin-bottom: rem(32);
-      }
-      p{
-        font-size: rem(14);
-        line-height: calc(25 / 14);
-        letter-spacing: lts-em(0.7,14);
-      }
-      .btn{
-        margin-top: rem(56);
-      }
+      font-size: rem(24);
+      line-height: calc(36 / 24);
+      margin-bottom: rem(32);
+    }
+    p {
+      font-size: rem(14);
+      line-height: calc(25 / 14);
+      letter-spacing: lts-em(0.7, 14);
+    }
+    .btn {
+      margin-top: rem(56);
+    }
+  }
+}
+.error404 {
+  .page__title {
+    margin-bottom: rem(44);
+  }
+
+  @include mq(tb) {
+    .page__title {
+      margin-bottom: rem(64);
+    }
+
+    .page__title--en {
+      font-size: rem(37);
+    }
+    .page-404 {
+      margin-top: rem(80);
+    }
+  }
+}
+.page-id-28 {
+  @include mq(tb) {
+    .page-thanks {
+      margin-top: rem(80);
+    }
   }
 }
 

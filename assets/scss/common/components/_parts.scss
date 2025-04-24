@@ -117,6 +117,9 @@
     line-height: 1.8;
     letter-spacing: .05em;
 }
+.fw500 {
+    font-weight: 500;
+}
 
 .fw700 {
     font-weight: 700;
@@ -132,6 +135,92 @@
 
 .ltsp05em {
     letter-spacing: .05em;
+}
+
+.mt8 {
+    margin-top: rem(8);
+}
+
+.mt2--sp6{
+    margin-top: rem(2);
+    @include mq(tb) {
+        margin-top: rem(6);
+    }
+}
+.mt8--sp12 {
+    margin-top: rem(8);
+
+    @include mq(tb) {
+        margin-top: rem(12);
+    }
+}
+
+.mt12--sp8 {
+    margin-top: rem(12);
+
+    @include mq(tb) {
+        margin-top: rem(8);
+    }
+}
+
+.mt8--sp20{
+    margin-top: rem(8);
+    @include mq(tb) {
+        margin-top: rem(20);
+    }
+}
+.mt16 {
+    margin-top: rem(16);
+}
+
+.mt16--sp10 {
+    margin-top: rem(16);
+
+    @include mq(tb) {
+        margin-top: rem(10);
+    }
+}
+.mt16--sp12 {
+    margin-top: rem(16);
+    @include mq(tb) {
+        margin-top: rem(12);
+    }
+}
+
+.mt20 {
+    margin-top: rem(20);
+}
+
+.mt20--sp24 {
+    margin-top: rem(20);
+
+    @include mq(tb) {
+        margin-top: rem(12);
+    }
+}
+
+.mt20--sp24 {
+    margin-top: rem(20);
+
+    @include mq(tb) {
+        margin-top: rem(24);
+    }
+}
+
+.mt20--sp16 {
+    margin-top: rem(20);
+
+    @include mq(tb) {
+        margin-top: rem(16);
+    }
+}
+
+.mt20--sp24 {
+    margin-top: rem(20);
+
+    @include mq(tb) {
+        margin-top: rem(24);
+    }
 }
 
 .pt20pl20 {

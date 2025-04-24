@@ -456,11 +456,11 @@ body:has(.common-contant) {
 .page-privacypolicy {
   .page-wrapper {
     h3 {
-      font-size: rem(15);
+      font-size: rem(16);
       line-height: 180%;
       letter-spacing: lts-em(0.75, 15);
       display: flex;
-      align-items: center;
+      align-items: flex-start;
       gap: rem(8);
       font-weight: 700;
 
@@ -508,7 +508,6 @@ body:has(.common-contant) {
       span {
         display: block;
         min-width: rem(78);
-        font-weight: 400;
 
         +span {
           flex: 1;
@@ -522,6 +521,7 @@ body:has(.common-contant) {
 
       h2 {
         font-weight: 700;
+        line-height: 180%;
       }
     }
   }
@@ -535,6 +535,9 @@ body:has(.common-contant) {
         font-size: rem(40);
         letter-spacing: lts-em(2, 40);
       }
+    }
+    .breadcrumb {
+      padding-right: rem(24);
     }
 
     .section__side {
@@ -652,11 +655,9 @@ body:has(.common-contant) {
     }
 
     .btn {
-      border: 1px solid $gray;
       width: calc(50% - rem(10));
       min-width: auto;
-      /* aspect-ratio: 550/158; */
-      max-height: rem(172);
+      max-height: rem(158);
       height: auto;
       padding: rem(48) rem(40);
       border-radius: rem(8);
@@ -718,6 +719,9 @@ body:has(.common-contant) {
     .page__head-inner {
       margin-top: rem(56);
     }
+    .page__title{
+      margin-bottom: 0;
+    }
 
     .page-wrapper {
       margin-top: rem(36);
@@ -742,6 +746,7 @@ body:has(.common-contant) {
       .btn {
         width: 100%;
         aspect-ratio: 327/120;
+        max-height: rem(120);
         padding: rem(36) rem(24);
       }
 
@@ -967,6 +972,15 @@ body:has(.common-contant) {
       background-image: url(../images/common/close-icon.png); // 開いてるときのアイコン
     }
   }
+  /* Firefox用 */
+summary::-moz-list-bullet {
+  list-style-type: none;
+}
+
+/* Chrome, Safariなど用 */
+summary::-webkit-details-marker {
+  display: none;
+}
 
   @include mq(tb) {
     .faq-title {

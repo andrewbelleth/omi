@@ -53,24 +53,34 @@ Template Name: 社外報ingページ
             <p>2022年 Vol.6</p>
         </li>
         <li>
-            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/ing/ing-img11.webp" alt="2022年 Vol.5社外報の画像" width="347" height="245" loading="lazy">
-            <p>2022年 Vol.5</p>
+            <a href="https://www.omi-in.co.jp/digitalbook/ing/vol5/book/" target="_blank" rel="noopener noreferrer">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/ing/ing-img11.webp" alt="2022年 Vol.5社外報の画像" width="347" height="245" loading="lazy">
+                <p>2022年 Vol.5</p>
+            </a>
         </li>
         <li>
-            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/ing/ing-img12.webp" alt="2022年 Vol.4社外報の画像" width="347" height="245" loading="lazy">
-            <p>2022年 Vol.4</p>
+            <a href="https://www.omi-in.co.jp/digitalbook/ing/vol4/book/" target="_blank" rel="noopener noreferrer">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/ing/ing-img12.webp" alt="2022年 Vol.4社外報の画像" width="347" height="245" loading="lazy">
+                <p>2022年 Vol.4</p>
+            </a>
         </li>
         <li>
-            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/ing/ing-img13.webp" alt="2021年 Vol.3社外報の画像" width="347" height="245" loading="lazy">
-            <p>2021年 Vol.3</p>
+            <a href="https://www.omi-in.co.jp/digitalbook/ing/vol3/book/" target="_blank" rel="noopener noreferrer">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/ing/ing-img13.webp" alt="2021年 Vol.3社外報の画像" width="347" height="245" loading="lazy">
+                <p>2021年 Vol.3</p>
+            </a>
         </li>
         <li>
-            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/ing/ing-img14.webp" alt="2021年 Vol.2社外報の画像" width="347" height="245" loading="lazy">
-            <p>2021年 Vol.2</p>
+            <a href="https://www.omi-in.co.jp/digitalbook/ing/vol2/book/" target="_blank" rel="noopener noreferrer">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/ing/ing-img14.webp" alt="2021年 Vol.2社外報の画像" width="347" height="245" loading="lazy">
+                <p>2021年 Vol.2</p>
+            </a>
         </li>
         <li>
-            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/ing/ing-img15.webp" alt="2021年 創刊号社外報の画像" width="347" height="245" loading="lazy">
-            <p>2021年 創刊号</p>
+            <a href="https://www.omi-in.co.jp/digitalbook/ing/vol1/book/" target="_blank" rel="noopener noreferrer">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/ing/ing-img15.webp" alt="2021年 創刊号社外報の画像" width="347" height="245" loading="lazy">
+                <p>2021年 創刊号</p>
+            </a>
         </li>
     </ul>
 </div><!-- / -->
@@ -122,7 +132,7 @@ Template Name: 社外報ingページ
                 </span>
             </a>
             <a href="<?php echo esc_url(home_url('/company/project/')); ?>" class="btn-02">
-                <span class="btn__text btn__text--newspaper">私たちの取り組み</span>
+                <span class="btn__text btn__text--newspaper">私たちの<br class="sp-only">取り組み</span>
                 <span class="btn__icon">
                     <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <circle cx="16" cy="16" r="16" fill="#0068B6" />
