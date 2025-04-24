@@ -5,7 +5,8 @@
   &__head {
     width: 100%;
     height: rem(420);
-    background: $light-gray url(../images/pc/page_bg.webp) no-repeat center center/cover;
+    background: $light-gray url(../images/pc/page_bg.webp) no-repeat center
+      center/cover;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -108,7 +109,8 @@
   @include mq(tb) {
     &__head {
       height: rem(361);
-      background: $light-gray url(../images/sp/page_bg-sp.webp) no-repeat center center/cover;
+      background: $light-gray url(../images/sp/page_bg-sp.webp) no-repeat center
+        center/cover;
 
       &-inner {
         width: calc(100% - rem(48));
@@ -126,7 +128,7 @@
 
       &--en {
         font-size: rem(54);
-        letter-spacing: .05em;
+        letter-spacing: 0.05em;
       }
 
       &--jp {
@@ -175,14 +177,14 @@
   align-items: baseline;
   gap: rem(10);
 
-  >span {
+  > span {
     font-size: 0.875rem;
     font-weight: 500;
     line-height: 170%;
     letter-spacing: 0.1em;
   }
 
-  >span+span {
+  > span + span {
     display: flex;
     align-items: center;
 
@@ -191,7 +193,8 @@
       display: block;
       width: rem(12);
       height: rem(12);
-      background: url(../images/common/chevron-right-blue.svg) no-repeat center center/cover;
+      background: url(../images/common/chevron-right-blue.svg) no-repeat center
+        center/cover;
       margin-right: rem(8);
       margin-top: rem(2);
     }
@@ -201,12 +204,12 @@
     gap: 4px;
     align-items: flex-start;
 
-    >span {
+    > span {
       font-size: 12px;
       line-height: calc(20 / 12);
     }
 
-    span+span {
+    span + span {
       &::before {
         width: 10px;
         height: 11px;
@@ -310,7 +313,7 @@ body:has(.common-contant) {
   @include mq(tb) {
     .page__head-inner {
       .page__title--en {
-        letter-spacing: .05em;
+        letter-spacing: 0.05em;
       }
     }
   }
@@ -320,7 +323,7 @@ body:has(.common-contant) {
   @include mq(tb) {
     .page__head-inner {
       .page__title--en {
-        letter-spacing: .05em;
+        letter-spacing: 0.05em;
       }
     }
 
@@ -383,7 +386,7 @@ body:has(.common-contant) {
       line-height: 180%;
       letter-spacing: lts-em(0.75, 15);
 
-      +p {
+      + p {
         margin-top: rem(16);
       }
     }
@@ -412,7 +415,7 @@ body:has(.common-contant) {
 
   @include mq(tb) {
     .wrapper {
-      >*+* {
+      > * + * {
         margin-top: rem(96);
       }
     }
@@ -428,7 +431,7 @@ body:has(.common-contant) {
         font-size: rem(14);
         letter-spacing: lts-em(0.7, 14);
 
-        +p {
+        + p {
           margin-top: rem(12);
         }
       }
@@ -509,7 +512,7 @@ body:has(.common-contant) {
         display: block;
         min-width: rem(78);
 
-        +span {
+        + span {
           flex: 1;
           font-weight: 400;
         }
@@ -571,7 +574,6 @@ body:has(.common-contant) {
     }
 
     .page-wrapper {
-
       p,
       li {
         font-size: rem(14);
@@ -681,11 +683,13 @@ body:has(.common-contant) {
     }
 
     .btn--recruit {
-      background: url(../images/recruit/recruit__btn-bg01.webp) no-repeat center center/100% 100%;
+      background: url(../images/recruit/recruit__btn-bg01.webp) no-repeat center
+        center/100% 100%;
     }
 
     .btn--career {
-      background: url(../images/recruit/recruit__btn-bg02.webp) no-repeat center center/100% 100%;
+      background: url(../images/recruit/recruit__btn-bg02.webp) no-repeat center
+        center/100% 100%;
     }
 
     .btn__text {
@@ -719,7 +723,7 @@ body:has(.common-contant) {
     .page__head-inner {
       margin-top: rem(56);
     }
-    .page__title{
+    .page__title {
       margin-bottom: 0;
     }
 
@@ -751,11 +755,13 @@ body:has(.common-contant) {
       }
 
       .btn--recruit {
-        background: url(../images/recruit/sp-recruit__btn-bg01.webp) no-repeat center center/cover;
+        background: url(../images/recruit/sp-recruit__btn-bg01.webp) no-repeat
+          center center/cover;
       }
 
       .btn--career {
-        background: url(../images/recruit/sp-recruit__btn-bg02.webp) no-repeat center center/cover;
+        background: url(../images/recruit/sp-recruit__btn-bg02.webp) no-repeat
+          center center/cover;
       }
 
       .btn__text {
@@ -964,7 +970,8 @@ body:has(.common-contant) {
     transform: translateY(-50%);
     width: rem(41);
     height: rem(41);
-    background: url(../images/common/open-icon.svg) no-repeat center center/contain;
+    background: url(../images/common/open-icon.svg) no-repeat center
+      center/contain;
   }
 
   details[open] {
@@ -973,14 +980,14 @@ body:has(.common-contant) {
     }
   }
   /* Firefox用 */
-summary::-moz-list-bullet {
-  list-style-type: none;
-}
+  summary::-moz-list-bullet {
+    list-style-type: none;
+  }
 
-/* Chrome, Safariなど用 */
-summary::-webkit-details-marker {
-  display: none;
-}
+  /* Chrome, Safariなど用 */
+  summary::-webkit-details-marker {
+    display: none;
+  }
 
   @include mq(tb) {
     .faq-title {
@@ -1124,6 +1131,11 @@ summary::-webkit-details-marker {
         &:first-child {
           min-width: rem(95);
         }
+        .fz13--sp12{
+          @include fz13--sp12;
+          letter-spacing: lts-em(0.75, 13);
+          line-height: 180%;
+        }
       }
     }
   }
@@ -1181,7 +1193,7 @@ summary::-webkit-details-marker {
       z-index: 1;
 
       &::after {
-        content: '';
+        content: "";
         position: absolute;
         z-index: -1;
         top: 50%;
@@ -1199,12 +1211,12 @@ summary::-webkit-details-marker {
       line-height: rem(32);
       white-space: nowrap;
     }
-    .tab-br{
+    .tab-br {
       display: none;
     }
     @media (1025px <= width < 1050px) {
-      p{
-        &:after{
+      p {
+        &:after {
           right: -0.91rem;
           height: 28px;
           clip-path: polygon(0.9375rem 50%, 0% 0%, 0% 28px);
@@ -1213,26 +1225,24 @@ summary::-webkit-details-marker {
     }
     @media (769px <= width < 1050px) {
       li {
-       
         width: rem(175);
         width: 23.5%;
         &:last-child {
           width: 23.5%;
         }
-        img{
+        img {
           max-width: rem(165);
         }
       }
-     
-      .tab-br{
+
+      .tab-br {
         display: block;
       }
       p.fz12 {
-       font-size: rem(11.5); 
-       line-height: 1rem;
+        font-size: rem(11.5);
+        line-height: 1rem;
       }
     }
-   
   }
 
   .fz22--sp16 {
@@ -1266,6 +1276,9 @@ summary::-webkit-details-marker {
   }
 
   .submission-contact {
+    h3 {
+      line-height: 180%;
+    }
     .light-blue-box {
       .text-flex {
         span {
@@ -1291,6 +1304,7 @@ summary::-webkit-details-marker {
         font-weight: 700;
         line-height: 160%;
         color: $blue;
+        font-family: $font-montserrat;
       }
     }
 
@@ -1327,8 +1341,9 @@ summary::-webkit-details-marker {
             font-weight: 700;
           }
 
-          &:nth-child(2) {
+          &:nth-child(2):not(.fz13--sp12) {
             display: none;
+
           }
         }
       }
@@ -1381,13 +1396,13 @@ summary::-webkit-details-marker {
     }
 
     .swatch-list::-webkit-scrollbar-thumb {
-      background-color: #0068B6;
+      background-color: #0068b6;
       /* スクロールバーのつまみ色 */
       border-radius: rem(100);
     }
 
     .swatch-list::-webkit-scrollbar-track {
-      background-color: #EEF1F4;
+      background-color: #eef1f4;
       /* スクロールバーのトラック背景 */
     }
 
@@ -1471,15 +1486,30 @@ summary::-webkit-details-marker {
           }
         }
       }
+      .lts-short{
+        display: inline;
+        letter-spacing: lts-em(0.42, 14);
+      }
+      .pl40 {
+        padding-left: rem(40);
+      }
     }
 
     .submission {
       .btn {
         height: rem(65);
       }
+      .light-blue-box {
+        h2 {
+          font-size: rem(17);
+        }
+      }
     }
 
     .submission-contact {
+      .fz15 {
+        font-size: rem(14);
+      }
       .light-blue-box {
         .text-flex {
           flex-direction: row;
@@ -1502,13 +1532,15 @@ summary::-webkit-details-marker {
           }
         }
       }
-
     }
+    /*    .preparation-microsoft{
+.fz13--sp12
+    } */
 
     .guide-contact {
       gap: rem(0);
       flex-direction: column;
-
+      align-items: flex-start;
       li {
         img {
           width: rem(40);

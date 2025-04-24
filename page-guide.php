@@ -47,7 +47,7 @@ Template Name: 入稿ガイド
                     <h3 class="ttl-bluesque">
                         入稿データ
                     </h3>
-                    <div class="pl21--sp0 pt8--sp0 txt mt12">
+                    <div class="pl21--sp0 pt8--sp0 txt mt8--sp20">
                         <p>
                             【推奨形式】<br>
                             <span class="marker">
@@ -91,9 +91,9 @@ Template Name: 入稿ガイド
                     <h3 class="ttl-bluesque">
                         出力見本
                     </h3>
-                    <div class="pl21--sp0 pt8--sp0 txt mt12">
+                    <div class="pl21--sp0 pt8--sp0 txt mt8--sp20">
                         <p>
-                            <span class="marker">入稿データを、お客様の制作環境でプリンター出力したもの。</span><!-- /.marker --><br>
+                            入稿データを、<span class="marker">お客様の制作環境でプリンター出力したもの。</span><!-- /.marker --><br>
                             入稿データの確認に使用いたします。印刷色の指定を受けるものではありません。<br>
                             下記「メディアおよび見本の送付先」までご送付ください。
                         </p>
@@ -103,7 +103,7 @@ Template Name: 入稿ガイド
                     <h3 class="ttl-bluesque">
                         仕上がり見本
                     </h3>
-                    <div class="pl21--sp0 pt8--sp0 txt mt12">
+                    <div class="pl21--sp0 pt8--sp0 txt mt8--sp20">
                         <p>
                             <span class="marker">折り方、穴位置、ページ順など、加工や製本の際の仕様を示したもの。</span><!-- /.marker --><br>
                             加工、製本時の仕様の確認に使用いたします。<br>
@@ -120,16 +120,16 @@ Template Name: 入稿ガイド
                                 滋賀県愛知郡愛荘町川原771-1&nbsp;<br class="sp-only">近江印刷株式会社&nbsp;データ入稿係&nbsp;宛
                             </span>
                         </p>
-                        <p class="text-flex mt8--sp12">
+                        <p class="text-flex mt0--sp12">
                             <span>電話</span>
                             <span>:</span>
                             <span>0749-42-8400</span>
                         </p>
-                        <p class="text-flex mt8--sp12">
+                        <p class="text-flex mt0--sp12">
                             <span>受取可能日時</span>
                             <span>:</span>
                             <span>月曜 ～ 金曜&nbsp;9:00～17:00<br>
-                                <span class="fz13">(※当社規定の休業日は受け取りが出来ませんのでご了承ください)</span><!-- /.fz13 -->
+                                <span class="fz13--sp12">(※当社規定の休業日は受け取りが出来ませんのでご了承ください)</span><!-- /.fz13 -->
                             </span>
                         </p>
                     </div>
@@ -151,23 +151,23 @@ Template Name: 入稿ガイド
                         <ul class="swatch-list">
                             <li>
                                 <p>スウォッチを確認</p>
-                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/guide/guide-img01.webp" alt="" width="166" height="214" loading="lazy">
-                        </li>
-                        <li>
-                            <p>カラータイプを確認</p>
-                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/guide/guide-img02.webp" alt="" width="166" height="214" loading="lazy">
-                        </li>
-                        <li>
-                            <p class="fz12">特色から<br class="tab-br">プロセスカラーへ変換</p>
-                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/guide/guide-img03.webp" alt="" width="166" height="214" loading="lazy">
-                        </li>
-                        <li>
-                            <p>全てプロセスカラーに</p>
-                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/guide/guide-img04.webp" alt="" width="166" height="214" loading="lazy">
+                                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/guide/guide-img01.webp" alt="" width="166" height="214" loading="lazy">
+                            </li>
+                            <li>
+                                <p>カラータイプを確認</p>
+                                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/guide/guide-img02.webp" alt="" width="166" height="214" loading="lazy">
+                            </li>
+                            <li>
+                                <p class="fz12">特色から<br class="tab-br">プロセスカラーへ変換</p>
+                                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/guide/guide-img03.webp" alt="" width="166" height="214" loading="lazy">
+                            </li>
+                            <li>
+                                <p>全てプロセスカラーに</p>
+                                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/guide/guide-img04.webp" alt="" width="166" height="214" loading="lazy">
                             </li>
                         </ul>
                     </div>
-                    <div class="txt">
+                    <div class="txt pt0--sp16">
                         <p class="pl21--sp20 pt8--sp10">
                             PDF-X-1a または PDF-X4 でのご入稿の場合でも、プロセスカラーへ変換してください。<br>
                             プロセスカラーへ変換してから、PDFに書き出しを行ってください。
@@ -176,7 +176,7 @@ Template Name: 入稿ガイド
                 </div><!-- /.inner -->
                 <div class="item-inner">
                     <div class="txt">
-                        <h2 class="mt32--sp24 ttl-02 ttl-02--triangle">
+                        <h2 class="mt32--sp40 ttl-02 ttl-02--triangle">
                             Ai（Illustrator）ファイル保存時、「PDF互換ファイルを作成」にチェック</h2>
                         <p class="pl21--sp20 pt8--sp10">
                             Aiファイル保存時に<span class="marker">「PDF互換ファイルを作成」</span><!-- /.marker -->にチェックを入れてください。
@@ -188,7 +188,7 @@ Template Name: 入稿ガイド
                 </div><!-- /.inner -->
                 <div class="item-inner">
                     <div class="txt">
-                        <h2 class="mt32--sp24 ttl-02 ttl-02--triangle">
+                        <h2 class="mt32--sp40 ttl-02 ttl-02--triangle">
                             Ai（Illustrator）ドキュメントの「裁ち落とし」を3mmに
                         </h2>
                         <p class="pl21--sp20 pt8--sp10">
@@ -201,7 +201,7 @@ Template Name: 入稿ガイド
                 </div><!-- /.inner -->
                 <div class="item-inner">
                     <div class="txt">
-                        <h2 class="mt32--sp24 ttl-02 ttl-02--triangle">
+                        <h2 class="mt32--sp40 ttl-02 ttl-02--triangle">
                             Ai（Illustrator）・InDesign&nbsp;配置画像のパッケージ
                         </h2>
                         <p class="pl21--sp20 pt8--sp10">
@@ -252,8 +252,8 @@ Template Name: 入稿ガイド
                         お使いのパソコンのOS、Office系ソフトのバージョン（アプリ情報）を、データご入稿時にお知らせください。
                     </p>
                 </div>
-                <div class="txt">
-                    <p class="pl21--sp20 pt8--sp10 fz13">
+                <div class="">
+                    <p class=" mt32--sp24 fz13--sp12">
                         ※データご入稿後、チェックをさせていただき、不具合などありましたら担当よりご連絡させていただきます。
                     </p>
                 </div>
@@ -283,14 +283,14 @@ Template Name: 入稿ガイド
                     </p>
                 </div>
                 <div class="txt">
-                    <h3 class="mt32--sp24 ttl-02 ttl-02--triangle">
+                    <h3 class="mt32--sp40 ttl-02 ttl-02--triangle">
                         ストレージサービスを利用し、DL用URLをメールにて送付
                     </h3>
                     <p class="pl21--sp20 pt8--sp10">
                         <span class="fw700">●おすすめのストレージサービス</span><!-- /.fw700 --><br>
-                       <span class="u-flex"><span class="txt-blue">・&nbsp;</span><a class="link-blue db" href="https://datadeliver.net/" target="_blank" rel="noopener noreferrer">データ便</a></span>
-                       <span class="u-flex"><span class="txt-blue">・&nbsp;</span><a class="link-blue db" href="https://gigafile.nu/" target="_blank" rel="noopener noreferrer"> ギガファイル便</a></span>
-                       <span class="u-flex"><span class="txt-blue">・&nbsp;</span><a class="link-blue db" href="https://okurin.bitpark.co.jp/" target="_blank" rel="noopener noreferrer">おくりん坊</a></span>
+                        <span class="u-flex"><span class="txt-blue">・&nbsp;</span><a class="link-blue db" href="https://datadeliver.net/" target="_blank" rel="noopener noreferrer">データ便</a></span>
+                        <span class="u-flex"><span class="txt-blue">・&nbsp;</span><a class="link-blue db" href="https://gigafile.nu/" target="_blank" rel="noopener noreferrer"> ギガファイル便</a></span>
+                        <span class="u-flex"><span class="txt-blue">・&nbsp;</span><a class="link-blue db" href="https://okurin.bitpark.co.jp/" target="_blank" rel="noopener noreferrer">おくりん坊</a></span>
                     </p>
                     <p class="pl21--sp20 pt8--sp10">
                         <span class="fw700">●送信先アドレス</span><!-- /.fw700 --><br>
@@ -298,7 +298,7 @@ Template Name: 入稿ガイド
                     </p>
                 </div>
                 <div class="txt">
-                    <h3 class="mt32--sp24 ttl-02 ttl-02--triangle">
+                    <h3 class="mt32--sp40 ttl-02 ttl-02--triangle">
                         メディアに保存し、当社まで宅配便等で送付
                     </h3>
                     <p class="pl21--sp20 pt8--sp10">
@@ -328,7 +328,7 @@ Template Name: 入稿ガイド
                     </div>
                 </div>
                 <div class="txt">
-                    <h3 class="mt32--sp24 ttl-02 ttl-02--triangle">
+                    <h3 class="mt32--sp40 ttl-02 ttl-02--triangle">
                         入稿に関する注意事項
                     </h3>
 
@@ -370,7 +370,7 @@ Template Name: 入稿ガイド
             </section>
             <section class="component-box-item correction" id="correction">
                 <h2 class="ttl-01">校正について</h2>
-                <div class="txt">
+                <div class="txt mt32--sp24">
                     <p class="">
                         当社では、３つの方法の校正サービスをご用意しております。ご注文の際に確認させていただきますので、お申し付けください。<br>
                         校正サービスをご利用の場合、『OK』のお返事を確認させていただいてから印刷工程に進みます。万が一、そのお返事が遅くなりますと、納期もずれこみます。ご了承ください。
@@ -407,18 +407,18 @@ Template Name: 入稿ガイド
                             確認用のPDFファイルを送信いたします。データが正しく出力されるか、RGBの色がどのように変化するのかなどを確認いただけます。
                         </p>
                         <h4 class="fw700 mt24">
-                            <span class="blue-circle mr8">
+                            <span class="blue-circle mr2">
                                 ●
                             </span><!-- /.blue-circle -->
                             仕様
                         </h4>
                         <p class="pl21--sp20 pt8--sp10">
                             ファイル形式 ： PDF形式<br>
-                            推奨する閲覧ビューア ： Adobe Acrobat Reader<br>
+                            推奨する閲覧ビューア ： <span class="lts-short">Adobe Acrobat Reader</span><br>
                             お渡し方法 ： メール
                         </p>
                         <h4 class="fw700 mt24">
-                            <span class="blue-circle mr8">
+                            <span class="blue-circle mr2">
                                 ●
                             </span><!-- /.blue-circle -->
                             注意事項
@@ -465,19 +465,19 @@ Template Name: 入稿ガイド
                             <span class="fz13">※実際の印刷機の色に近い設定での出力ですが、微妙な色の差異は発生します。</span><!-- /.fz13 -->
                         </p>
                         <h4 class="fw700 mt24">
-                            <span class="blue-circle mr8">
+                            <span class="blue-circle mr2">
                                 ●
                             </span><!-- /.blue-circle -->
                             仕様
                         </h4>
                         <p class="pl21--sp20 pt8--sp10">
-                            用紙 ： レーザープリンター用紙（本紙ではありません）<br>
+                            用紙 ： レーザープリンター用紙<br class="sp-only"><span class="pl40">（本紙ではありません）</span><br>
                             印刷 ： レーザープリンター印刷<br>
                             お渡し枚数 ： 2枚<br>
                             お渡し方法 ： 配送（業者は指定いただけません）
                         </p>
                         <h4 class="fw700 mt24">
-                            <span class="blue-circle mr8">
+                            <span class="blue-circle mr2">
                                 ●
                             </span><!-- /.blue-circle -->
                             料金
@@ -486,7 +486,7 @@ Template Name: 入稿ガイド
                             仕様により異なります。お見積り時にご案内いたします。
                         </p>
                         <h4 class="fw700 mt24">
-                            <span class="blue-circle mr8">
+                            <span class="blue-circle mr2">
                                 ●
                             </span><!-- /.blue-circle -->
                             注意事項
@@ -509,7 +509,7 @@ Template Name: 入稿ガイド
                             他の方法に比べ、高精度の校正方法です。質感や色の再現などを確認されたい方にはこちらをおすすめします。
                         </p>
                         <h4 class="fw700 mt24">
-                            <span class="blue-circle mr8">
+                            <span class="blue-circle mr2">
                                 ●
                             </span><!-- /.blue-circle -->
                             仕様
@@ -521,7 +521,7 @@ Template Name: 入稿ガイド
                             お渡し方法 ： 配送（業者は指定いただけません）
                         </p>
                         <h4 class="fw700 mt24">
-                            <span class="blue-circle mr8">
+                            <span class="blue-circle mr2">
                                 ●
                             </span><!-- /.blue-circle -->
                             料金
@@ -530,7 +530,7 @@ Template Name: 入稿ガイド
                             仕様により異なります。お見積り時にご案内いたします。
                         </p>
                         <h4 class="fw700 mt24">
-                            <span class="blue-circle mr8">
+                            <span class="blue-circle mr2">
                                 ●
                             </span><!-- /.blue-circle -->
                             注意事項
@@ -621,7 +621,7 @@ Template Name: 入稿ガイド
                     </p>
                 </div>
                 <div class="light-blue-box mt32--sp24 ">
-                    <h3>ページ下部のお問い合わせフォーム&nbsp;<span class="fz15">または</span>&nbsp;下記よりお電話・FAXよりご連絡ください</h3>
+                    <h3 class="fw700">ページ下部のお問い合わせフォーム&nbsp;<span class="fz15">または</span>&nbsp;下記より<br class="sp-only">お電話・FAXよりご連絡ください</h3>
                     <ul class="guide-contact u-flex-aic mt8">
                         <li class="u-flex-aic">
                             <img src="<?php echo get_template_directory_uri(); ?>/assets/images/guide/icon-tel.webp" alt="" width="36" height="36" loading="lazy">
