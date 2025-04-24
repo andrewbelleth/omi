@@ -106,38 +106,22 @@ add_action('pre_get_posts', 'change_set_garden');
 //コンタクトフォーム７のPタグ禁止
 add_filter('wpcf7_autop_or_not', '__return_false');
 
-function custom_wpcf7_validation_error_checkbox($result, $tag)
-{
-  if ('checkbox-685' == $tag->name) {
-    if (empty($_POST[$tag->name])) {
-      $result->invalidate($tag, 'プライバシーポリシーへの同意がないと送信できません。');
-    }
-  }
-  return $result;
-}
-add_filter('wpcf7_validate_checkbox', 'custom_wpcf7_validation_error_checkbox', 10, 2);
-
 
 function custom_wpcf7_validation_error_message($result, $tag)
 {
-  if ('your-company' == $tag->name) {
+  if ('your-address' == $tag->name) {
     if (empty($_POST[$tag->name])) {
-      $result->invalidate($tag, '会社名を入力してください。');
-    }
-  }
-  if ('your-busyo' == $tag->name) {
-    if (empty($_POST[$tag->name])) {
-      $result->invalidate($tag, '部署を入力してください。');
-    }
-  }
-  if ('your-miyoji' == $tag->name) {
-    if (empty($_POST[$tag->name])) {
-      $result->invalidate($tag, 'ご担当者の苗字を入力してください。');
+      $result->invalidate($tag, '※「住所」は必須項目です');
     }
   }
   if ('your-name' == $tag->name) {
     if (empty($_POST[$tag->name])) {
-      $result->invalidate($tag, 'ご担当者の名前を入力してください。');
+      $result->invalidate($tag, '※「お名前」は必須項目です');
+    }
+  }
+  if ('your-email' == $tag->name) {
+    if (empty($_POST[$tag->name])) {
+      $result->invalidate($tag, '※「メールアドレス」は必須項目です');
     }
   }
   return $result;
@@ -149,7 +133,7 @@ function custom_wpcf7_validation_error_email($result, $tag)
 {
   if ('your-email' == $tag->name) {
     if (empty($_POST[$tag->name])) {
-      $result->invalidate($tag, 'メールアドレスを入力してください。');
+      $result->invalidate($tag, '※「メールアドレス」は必須項目です');
     }
   }
   return $result;
@@ -160,18 +144,29 @@ function custom_wpcf7_validation_error_tel($result, $tag)
 {
   if ('your-tel' == $tag->name) {
     if (empty($_POST[$tag->name])) {
-      $result->invalidate($tag, '電話番号を入力してください。');
+      $result->invalidate($tag, '※「電話番号」は必須項目です');
     }
   }
   return $result;
 }
 add_filter('wpcf7_validate_tel', 'custom_wpcf7_validation_error_tel', 10, 2);
 
+function custom_wpcf7_validation_error_select($result, $tag)
+{
+  if ('your-cue' == $tag->name) {
+    if (empty($_POST[$tag->name])) {
+      $result->invalidate($tag, '※「当社を知ったきっかけ」は必須項目です');
+    }
+  }
+  return $result;
+}
+add_filter('wpcf7_validate_select', 'custom_wpcf7_validation_error_select', 10, 2);
+
 function custom_wpcf7_validation_error_textarea($result, $tag)
 {
   if ('your-message' == $tag->name) {
     if (empty($_POST[$tag->name])) {
-      $result->invalidate($tag, 'お問い合わせ内容・お悩みごとを入力してください。');
+      $result->invalidate($tag, '※「お問い合わせ内容」は必須項目です');
     }
   }
   return $result;

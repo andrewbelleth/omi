@@ -6,12 +6,14 @@ Template Name: リクルートページ
 ?>
 
 <?php get_template_part('template-parts/header'); ?>
-<div class="breadcrumb section">
-    <?php
-    if (function_exists('bcn_display')) {
-        bcn_display();
-    }
-    ?>
+<div class="section">
+    <div class="breadcrumb pt126--sp80 mt0">
+        <?php
+        if (function_exists('bcn_display')) {
+            bcn_display();
+        }
+        ?>
+    </div>
 </div>
 <div class="page__head-inner">
     <h2 class="page__title">

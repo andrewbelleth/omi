@@ -226,7 +226,7 @@ Template Name: 外部パートナーページ
         <div class="active-policy mt160--sp120">
             <div class="active-policy-inner bgLightBlue">
                 <h3 class="active-policy-title">外部スタッフエントリーに関する個人情報の取り扱い</h3>
-                <p class="active-policy-text mt16">下記事項をご確認のうえ、<br>『同意する』にチェックをしていただき、エントリーシートをダウンロードください。</p>
+                <p class="active-policy-text mt16">下記事項をご確認のうえ、<br>『同意する』にチェックをしていただき、<br class="mobile">エントリーシートをダウンロードください。</p>
                 <div class="active-policy-scroll mt24">
                     <div class="active-policy-scroll-inner">
                         <p class="tac">《外部スタッフエントリーシート、利用する個人情報に関する同意書》</p>

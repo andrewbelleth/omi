@@ -15,10 +15,15 @@
 
 <body class="<?php
                 global $post;
+                $slug = '';
                 if (is_post_type_archive('works')) {
                     $slug = 'works';
                 } else {
-                    $slug = $post->post_name;
+                    if ($post == NULL) {
+                        $slug = '';
+                    } else {
+                        $slug = $post->post_name;
+                    }
                 }
                 foreach (get_body_class() as $class) {
                     echo $class . " ";
