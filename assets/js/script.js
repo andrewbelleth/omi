@@ -111,7 +111,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const hash = href.slice(hashIndex + 1);
     const targetElement = document.getElementById(hash);
 
-    
+
 
     if (targetElement) {
       ScrollTrigger.create({
@@ -581,47 +581,123 @@ document.addEventListener('DOMContentLoaded', function () {
 //   });
 // });
 
-class StickyScroll {
-  constructor() {
-    this.els = document.querySelectorAll('.js-sticky');
-    if(!this.els.length) return
-    this.init();
-  }
-  init() {
-    this.initSmoothScrolling();
-    this.scroll();
-  }
-  scroll() {
-    const texts = document.querySelectorAll('.js-sticky-text');
-    const images = document.querySelectorAll('.js-sticky-img');
+// class StickyScroll {
+//   constructor() {
+//     this.els = document.querySelectorAll('.js-sticky');
+//     if(!this.els.length) return
+//     this.init();
+//   }
+//   init() {
+//     this.initSmoothScrolling();
+//     this.scroll();
+//   }
+//   scroll() {
+//     const texts = document.querySelectorAll('.js-sticky-text');
+//     const images = document.querySelectorAll('.js-sticky-img');
 
-    texts.forEach((text, index) => {
-      gsap.timeline({
-        scrollTrigger: {
-          trigger: text,
-          start: 'top center',
-          end: 'bottom center',
-          scrub: 1,
-          // markers: true,
-        },
-      })
-      .to(images[index], {
-        opacity: 1,
-      });
+//     texts.forEach((text, index) => {
+//       gsap.timeline({
+//         scrollTrigger: {
+//           trigger: text,
+//           start: 'top center',
+//           end: 'bottom center',
+//           scrub: 1,
+//           // markers: true,
+//         },
+//       })
+//       .to(images[index], {
+//         opacity: 1,
+//       });
+//     });
+
+//   }
+//   initSmoothScrolling() {
+//     const lenis = new Lenis({ lerp: 0.2, smoothWheel: true });
+//     lenis.on('scroll', () => ScrollTrigger.update());
+
+//     const scrollFn = (time) => {
+//       lenis.raf(time);
+//       requestAnimationFrame(scrollFn);
+//     };
+
+//     requestAnimationFrame(scrollFn);
+//   }
+// }
+
+// new StickyScroll();
+
+/* 2. スライダーの設定 */
+document.addEventListener('DOMContentLoaded', function () {
+  gsap.registerPlugin(ScrollTrigger);
+
+  const verticalSlider = new Swiper(".vertical-slider", {
+    direction: "vertical",
+    slidesPerView: 1,
+    // フェード
+    // effect: "fade",
+    speed: 1000,
+    allowTouchMove: false,
+    mousewheel: false,
+  });
+
+  // スライダー用のScrollTriggerを保持する配列
+  let sliderTriggers = [];
+
+  function getCurrentSection() {
+    const items = gsap.utils.toArray('.top-service__item');
+    let closest = items[0];
+    let closestDistance = Infinity;
+    
+    items.forEach((item) => {
+      const rect = item.getBoundingClientRect();
+      const distance = Math.abs(rect.top);
+      if (distance < closestDistance) {
+        closestDistance = distance;
+        closest = item;
+      }
     });
-
+    
+    return items.indexOf(closest);
   }
-  initSmoothScrolling() {
-    const lenis = new Lenis({ lerp: 0.2, smoothWheel: true });
-    lenis.on('scroll', () => ScrollTrigger.update());
 
-    const scrollFn = (time) => {
-      lenis.raf(time);
-      requestAnimationFrame(scrollFn);
-    };
+  function initScrollTriggers() {
+    // 既存のスライダー用トリガーのみを削除
+    sliderTriggers.forEach(trigger => trigger.kill());
+    sliderTriggers = [];
 
-    requestAnimationFrame(scrollFn);
+    gsap.utils.toArray('.top-service__item').forEach((item, index) => {
+      const trigger = ScrollTrigger.create({
+        trigger: item,
+        start: "top center",
+        end: "bottom center",
+        onEnter: () => {
+          verticalSlider.slideTo(index);
+        },
+        onEnterBack: () => {
+          verticalSlider.slideTo(index);
+        },
+        markers: false,
+        toggleActions: "play none none reverse"
+      });
+      
+      // 新しいトリガーを配列に追加
+      sliderTriggers.push(trigger);
+    });
   }
-}
 
-new StickyScroll();
+  function init() {
+    const currentIndex = getCurrentSection();
+    verticalSlider.slideTo(currentIndex, 0);
+    initScrollTriggers();
+  }
+
+  init();
+
+  window.addEventListener('load', () => {
+    setTimeout(init, 100);
+  });
+
+  window.addEventListener('resize', () => {
+    setTimeout(initScrollTriggers, 100);
+  });
+});
