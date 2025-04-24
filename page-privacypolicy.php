@@ -89,20 +89,32 @@ Template Name: プライバシーポリシーページ
                     <div class="txt mt32--sp24">
                         <h3>直接書面以外の方法により取得した場合の利用目的【非開示】</h3>
                         <ul class="privacy__list mt8">
-                            <li class="privacy__item">・&nbsp;各種印刷物作成業務</li>
-                            <li class="privacy__item">・&nbsp;会員名簿の印刷、発送業務のため</li>
-                            <li class="privacy__item">・&nbsp;ダイレクトメール印刷・発送業務のため</li>
-                            <li class="privacy__item">・&nbsp;委託を受けた場合</li>
-                            <li class="privacy__item">・&nbsp;本人から直接提供しているが、書面ではない場合（監視カメラや口頭など）</li>
+                            <li class="privacy__item"><span>・&nbsp;</span>各種印刷物作成業務</li>
+                            <li class="privacy__item"><span>・&nbsp;</span>会員名簿の印刷、発送業務のため</li>
+                            <li class="privacy__item"><span>・&nbsp;</span>ダイレクトメール印刷・発送業務のため</li>
+                            <li class="privacy__item"><span>・&nbsp;</span>委託を受けた場合</li>
+                            <li class="privacy__item"><span>・&nbsp;</span>本人から直接提供しているが、書面ではない場合（監視カメラや口頭など）</li>
                         </ul>
                     </div>
                     <div class="txt mt32">
-                        <h3>直接書面により取得した場合の利用目的【開示対象】</h3>
+                        <h3>直接書面により取得した場合の利用目的<br class="sp-only">【開示対象】</h3>
                         <ul class="privacy__list mt8">
-                            <li class="privacy__item">・&nbsp;当社事業に関してお問い合わせいただいた内容に回答するため</li>
-                            <li class="privacy__item">・&nbsp;当社事業に関してご請求いただいた各種資料を送付するため</li>
-                            <li class="privacy__item">・&nbsp;当社の商品情報・サービスのご案内・サポート情報をご提供するため</li>
-                            <li class="privacy__item">・&nbsp;当社の業務管理及び採用業務のため</li>
+                            <li class="privacy__item">
+                                <span>・&nbsp;</span>
+                            当社事業に関してお問い合わせいただいた内容に回答するため
+                        </li>
+                            <li class="privacy__item">
+                                <span>・&nbsp;</span>
+                            当社事業に関してご請求いただいた各種資料を送付するため
+                        </li>
+                            <li class="privacy__item">
+                            <span>・&nbsp;</span>
+                                当社の商品情報・サービスのご案内・サポート情報をご提供するため
+                            </li>
+                            <li class="privacy__item">
+                            <span>・&nbsp;</span>
+                                当社の業務管理及び採用業務のため
+                            </li>
                         </ul>
                         <p class="privacy__note mt12--sp16 pl22--sp0">ただし、下記a)～d)の場合は、利用目的を通知、又は、公表しません。</p>
                         <ul class="privacy__conditions mt4--sp8 pl22--sp0">
@@ -184,11 +196,11 @@ Template Name: プライバシーポリシーページ
                         <h2>個人情報の取り扱いに関するお問い合わせは、<br class="pc-only">
                         下記の「個人情報問い合わせ窓口」までご連絡ください</h2>
                         <p class="text-flex mt16">
-                            <span>窓口の名称</span>
+                            <span class="fw500">窓口の名称</span>
                             <span>個人情報問合せ窓口</span>
                         </p>
                         <p class="text-flex mt12">
-                            <span>連絡先</span>
+                            <span class="fw500">連絡先</span>
                             <span>住所 ：〒529-1302<br><span class="sp-br">滋賀県愛知郡愛荘町川原771-1</span>
                                 電話 ： 0749-42-8400<br>
                                 FAX ： 0749-42-6700</span>

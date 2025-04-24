@@ -107,6 +107,9 @@
     line-height: 1.8;
     letter-spacing: .05em;
 }
+.fw500 {
+    font-weight: 500;
+}
 
 .fw700 {
     font-weight: 700;
@@ -165,6 +168,12 @@
 
     @include mq(tb) {
         margin-top: rem(10);
+    }
+}
+.mt16--sp12 {
+    margin-top: rem(16);
+    @include mq(tb) {
+        margin-top: rem(12);
     }
 }
 
