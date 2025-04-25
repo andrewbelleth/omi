@@ -824,7 +824,10 @@ body:has(.common-contant) {
     margin-top: rem(-96);
     padding-top: rem(96);
   }
-
+  .txt-note{
+    font-size: rem(13);
+    letter-spacing: lts-em(0.65, 13);
+  }
   @include mq(tb) {
     .section__col {
       gap: rem(48);
@@ -873,6 +876,16 @@ body:has(.common-contant) {
     .component-box-item {
       margin-top: rem(-64);
       padding-top: rem(64);
+    }
+    .dtp-pre-press{
+      .ttl-05{
+        font-size: rem(15);
+
+      }
+    }
+    .txt-note{
+      font-size: rem(12);
+      letter-spacing: lts-em(0.6, 12);
     }
   }
 }
@@ -1149,7 +1162,7 @@ body:has(.common-contant) {
     @include mq(tb) {
       overflow-x: scroll;
       scrollbar-width: auto;
-      -webkit-overflow-scrolling: touch;
+      --webkit-overflow-scrolling: touch;
       --scrollbar-visible: block;
 
       /* Chrome / Safari用のスクロールバー装飾 */
@@ -1300,6 +1313,12 @@ body:has(.common-contant) {
   .submission-contact {
     h3 {
       line-height: 180%;
+      font-size: rem(17);
+      letter-spacing: lts-em(0.85, 17);
+      span{
+        font-size: rem(15);
+        letter-spacing: lts-em(0.75, 15);
+      }
     }
     .light-blue-box {
       .text-flex {
@@ -1513,10 +1532,15 @@ body:has(.common-contant) {
     }
 
     .submission-contact {
-      .fz15 {
-        font-size: rem(14);
-      }
       .light-blue-box {
+        h3{
+          font-size: rem(16);
+          letter-spacing: lts-em(0.8, 16);
+          span{
+            font-size: rem(14);
+            letter-spacing: lts-em(0.7, 14);
+          }
+        }
         .text-flex {
           flex-direction: row;
           gap: rem(4);
@@ -1539,10 +1563,7 @@ body:has(.common-contant) {
         }
       }
     }
-    /*    .preparation-microsoft{
-.fz13--sp12
-    } */
-
+   
     .guide-contact {
       gap: rem(0);
       flex-direction: column;

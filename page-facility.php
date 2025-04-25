@@ -84,7 +84,7 @@ Template Name: ファシリティページ
                     </li>
                 </ul>
                 <div class="txt">
-                    <p class="mt16--sp12 tar">
+                    <p class="mt16--sp12 tar txt-note">
                         ◎全機種UV照射装置装着<br>
                         ※2…パンチ穴・コーナーカット装置付
                     </p>
@@ -124,7 +124,7 @@ Template Name: ファシリティページ
                     </li>
                 </ul>
                 <div class="txt tar">
-                    <p class="mt16--sp12">
+                    <p class="mt16--sp12 txt-note">
                         交換胴は8.5吋〜18吋まで完備、<br class="sp-only">14吋までは半吋きざみを取り揃えております。
                     </p>
                 </div>

@@ -223,7 +223,7 @@ Template Name: 外部パートナーページ
             </dl>
         </details><!-- /.faq-item -->
         <!-- 取り扱い -->
-        <div class="active-policy mt160--sp120">
+        <div class="active-policy">
             <div class="active-policy-inner bgLightBlue">
                 <h3 class="active-policy-title">外部スタッフエントリーに関する個人情報の取り扱い</h3>
                 <p class="active-policy-text mt16">下記事項をご確認のうえ、<br>『同意する』にチェックをしていただき、<br class="mobile">エントリーシートをダウンロードください。</p>
