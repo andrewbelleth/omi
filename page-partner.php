@@ -225,7 +225,7 @@ Template Name: 外部パートナーページ
         <!-- 取り扱い -->
         <div class="active-policy mt160--sp120">
             <div class="active-policy-inner bgLightBlue">
-                <h3 class="active-policy-title">外部スタッフエントリーに関する個人情報の取り扱い</h3>
+                <h3 class="active-policy-title">外部スタッフエントリーに<br class="mobile">関する個人情報の取り扱い</h3>
                 <p class="active-policy-text mt16">下記事項をご確認のうえ、<br>『同意する』にチェックをしていただき、<br class="mobile">エントリーシートをダウンロードください。</p>
                 <div class="active-policy-scroll mt24">
                     <div class="active-policy-scroll-inner">
@@ -266,7 +266,7 @@ Template Name: 外部パートナーページ
                                 </span>
                             </span>
                         </span>
-                        <span class="active-policy-check-text">個人情報の取り扱いについて同意する</span>
+                        <span class="active-policy-check-text">個人情報の取り扱いに同意する</span>
                     </label>
                 </div>
                 <a href="<?php echo home_url('/privacypolicy/'); ?>" class="active-policy-check-link mt12--sp8">個人情報保護方針</a>

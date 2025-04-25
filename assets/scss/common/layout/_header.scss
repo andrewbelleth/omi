@@ -88,10 +88,11 @@
             background: $blue;
             color: $white;
             transition: .3s;
-
+            border: rem(1) solid transparent;
             &:hover {
                 background: $white;
                 color: $blue;
+                border: rem(1) solid $blue;
             }
         }
 

@@ -11,7 +11,8 @@
         a {
             display: flex;
             flex-wrap: wrap;
-            align-items: flex-start;
+            // align-items: flex-start;
+            align-items: center;
             gap: .5rem 1.5rem;
             padding: 1.5rem 1.5rem 1.5rem 1rem;
 
@@ -64,9 +65,10 @@
                 display: block;
                 width: 1rem;
                 height: 1rem;
-                margin-top: rem(6);
+                // margin-top: rem(6);
                 position: absolute;
-                top: 0;
+                top: 50%;
+                transform: translateY(-50%);
                 right: 0;
                 overflow: hidden;
 
