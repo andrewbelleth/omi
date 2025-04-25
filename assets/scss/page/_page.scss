@@ -1153,33 +1153,11 @@ body:has(.common-contant) {
       }
     }
   }
-
   .swatch-list {
-    overflow-x: auto;
+    padding: rem(24) rem(0) rem(8) rem(20);
+    display: flex;
+    gap: rem(10);
     width: 100%;
-    overflow-y: hidden;
-
-    @include mq(tb) {
-      overflow-x: scroll;
-      scrollbar-width: auto;
-      --webkit-overflow-scrolling: touch;
-      --scrollbar-visible: block;
-
-      /* Chrome / Safari用のスクロールバー装飾 */
-      &::-webkit-scrollbar {
-        height: 8px;
-        display: var(--scrollbar-visible);
-      }
-
-      &::-webkit-scrollbar-thumb {
-        background-color: #0068b6;
-        border-radius: rem(100);
-      }
-
-      &::-webkit-scrollbar-track {
-        background-color: #eef1f4;
-      }
-    }
 
     li {
       flex-shrink: 0;
@@ -1228,7 +1206,7 @@ body:has(.common-contant) {
       z-index: 1;
 
       &::after {
-        content: "";
+        content: '';
         position: absolute;
         z-index: -1;
         top: 50%;
@@ -1246,12 +1224,12 @@ body:has(.common-contant) {
       line-height: rem(32);
       white-space: nowrap;
     }
-    .tab-br {
+    .tab-br{
       display: none;
     }
     @media (1025px <= width < 1050px) {
-      p {
-        &:after {
+      p{
+        &:after{
           right: -0.91rem;
           height: 28px;
           clip-path: polygon(0.9375rem 50%, 0% 0%, 0% 28px);
@@ -1260,25 +1238,28 @@ body:has(.common-contant) {
     }
     @media (769px <= width < 1050px) {
       li {
+       
         width: rem(175);
         width: 23.5%;
         &:last-child {
           width: 23.5%;
         }
-        img {
+        img{
           max-width: rem(165);
         }
       }
-
-      .tab-br {
+     
+      .tab-br{
         display: block;
       }
       p.fz12 {
-        font-size: rem(11.5);
-        line-height: 1rem;
+       font-size: rem(11.5); 
+       line-height: 1rem;
       }
     }
+   
   }
+  
 
   .fz22--sp16 {
     letter-spacing: lts-em(2.2, 22);
