@@ -22,7 +22,7 @@ get_template_part('template-parts/loading');
             <h1 class="mv__title">
                 <picture>
                     <source srcset="<?php echo get_template_directory_uri(); ?>/assets/images/sp/mv_title-sp.svg" alt="印刷会社だけど、印刷だけじゃない" media="(max-width: 768px)">
-                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/pc/mv_title.svg" alt="印刷会社だけど、印刷だけじゃない">
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/sp/mv_title.png" alt="印刷会社だけど、印刷だけじゃない">
                 </picture>
             </h1>
         </div>
@@ -228,6 +228,7 @@ $args = array(
         </div>
     </div>
 </div>
+
 <div class="top-service" id="service">
     <div class="top-service__head section__head">
         <h2 class="section__title inview">
@@ -237,38 +238,42 @@ $args = array(
     </div>
     <div class="top-service__img-sticky-wrap js-sticky">
         <div class="top-service__img-sticky">
-            <div class="top-service__item-slide js-sticky-img">
-                <div class="top-service__item-slide-inner _cover">
-                    <div class="top-service__item-img">
-                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/pc/sample_service-img01.webp" alt="" width="529" height="573">
+            <div class="swiper-container vertical-slider">
+                <div class="swiper-wrapper vertical-slider__wrapper">
+                    <div class="swiper-slide vertical-slider__slide top-service__item-slide js-sticky-img">
+                        <div class="top-service__item-slide-inner _cover">
+                            <div class="top-service__item-img">
+                                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/pc/sample_service-img01.webp" alt="" width="529" height="573">
+                            </div>
+                        </div>
                     </div>
-                </div>
-            </div>
-            <div class="top-service__item-slide js-sticky-img">
-                <div class="top-service__item-slide-inner _cover">
-                    <div class="top-service__item-img">
-                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/pc/sample_service-img02.webp" alt="" width="529" height="573">
+                    <div class="swiper-slide vertical-slider__slide top-service__item-slide js-sticky-img">
+                        <div class="top-service__item-slide-inner _cover">
+                            <div class="top-service__item-img">
+                                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/pc/sample_service-img02.webp" alt="" width="529" height="573">
+                            </div>
+                        </div>
                     </div>
-                </div>
-            </div>
-            <div class="top-service__item-slide js-sticky-img">
-                <div class="top-service__item-slide-inner _cover">
-                    <div class="top-service__item-img">
-                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/pc/sample_service-img03.webp" alt="" width="529" height="573">
+                    <div class="swiper-slide vertical-slider__slide top-service__item-slide js-sticky-img">
+                        <div class="top-service__item-slide-inner _cover">
+                            <div class="top-service__item-img">
+                                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/pc/sample_service-img03.webp" alt="" width="529" height="573">
+                            </div>
+                        </div>
                     </div>
-                </div>
-            </div>
-            <div class="top-service__item-slide js-sticky-img">
-                <div class="top-service__item-slide-inner _cover">
-                    <div class="top-service__item-img">
-                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/pc/sample_service-img04.webp" alt="" width="529" height="573">
+                    <div class="swiper-slide vertical-slider__slide top-service__item-slide js-sticky-img">
+                        <div class="top-service__item-slide-inner _cover">
+                            <div class="top-service__item-img">
+                                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/pc/sample_service-img04.webp" alt="" width="529" height="573">
+                            </div>
+                        </div>
                     </div>
-                </div>
-            </div>
-            <div class="top-service__item-slide js-sticky-img">
-                <div class="top-service__item-slide-inner _cover">
-                    <div class="top-service__item-img">
-                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/pc/sample_service-img05.webp" alt="" width="529" height="573">
+                    <div class="swiper-slide vertical-slider__slide top-service__item-slide js-sticky-img">
+                        <div class="top-service__item-slide-inner _cover">
+                            <div class="top-service__item-img">
+                                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/pc/sample_service-img05.webp" alt="" width="529" height="573">
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -453,6 +458,7 @@ $args = array(
         </div>
     </div>
 </div>
+
 <div class="top-works" id="works">
     <div class="top-works__inner">
         <div class="top-works__head section__head">

@@ -118,7 +118,6 @@ document.addEventListener("DOMContentLoaded", function () {
         trigger: targetElement,
         start: "top 0%",
         end: "bottom top",
-       /*  markers: true, */
         onEnter: () => updateActiveState(anchor),
         onEnterBack: () => updateActiveState(anchor),
         onLeave: () => removeActiveState(anchor),
@@ -629,21 +628,22 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 /* 2. スライダーの設定 */
+// スライダーを768px以下では無効
+
 document.addEventListener('DOMContentLoaded', function () {
   gsap.registerPlugin(ScrollTrigger);
 
   const verticalSlider = new Swiper(".vertical-slider", {
     direction: "vertical",
     slidesPerView: 1,
-    // フェード
-    // effect: "fade",
+    effect: "fade",
     speed: 1000,
     allowTouchMove: false,
     mousewheel: false,
   });
 
-  // スライダー用のScrollTriggerを保持する配列
   let sliderTriggers = [];
+  let isEnabled = window.innerWidth > 768;
 
   function getCurrentSection() {
     const items = gsap.utils.toArray('.top-service__item');
@@ -663,9 +663,15 @@ document.addEventListener('DOMContentLoaded', function () {
   }
 
   function initScrollTriggers() {
-    // 既存のスライダー用トリガーのみを削除
+    // 既存のトリガーを削除
     sliderTriggers.forEach(trigger => trigger.kill());
     sliderTriggers = [];
+
+    // 768px以下では初期化しない
+    if (!isEnabled) {
+      verticalSlider.destroy(true, true);
+      return;
+    }
 
     gsap.utils.toArray('.top-service__item').forEach((item, index) => {
       const trigger = ScrollTrigger.create({
@@ -678,19 +684,21 @@ document.addEventListener('DOMContentLoaded', function () {
         onEnterBack: () => {
           verticalSlider.slideTo(index);
         },
-        markers: false,
         toggleActions: "play none none reverse"
       });
       
-      // 新しいトリガーを配列に追加
       sliderTriggers.push(trigger);
     });
   }
 
   function init() {
-    const currentIndex = getCurrentSection();
-    verticalSlider.slideTo(currentIndex, 0);
-    initScrollTriggers();
+    isEnabled = window.innerWidth > 768;
+    
+    if (isEnabled) {
+      const currentIndex = getCurrentSection();
+      verticalSlider.slideTo(currentIndex, 0);
+      initScrollTriggers();
+    }
   }
 
   init();
@@ -699,7 +707,20 @@ document.addEventListener('DOMContentLoaded', function () {
     setTimeout(init, 100);
   });
 
+  // リサイズ時の処理を改善
+  let resizeTimer;
   window.addEventListener('resize', () => {
-    setTimeout(initScrollTriggers, 100);
+    clearTimeout(resizeTimer);
+    resizeTimer = setTimeout(() => {
+      const wasEnabled = isEnabled;
+      isEnabled = window.innerWidth > 768;
+      
+      // 状態が変化した時のみ初期化
+      if (wasEnabled !== isEnabled) {
+        init();
+      } else if (isEnabled) {
+        initScrollTriggers();
+      }
+    }, 100);
   });
 });

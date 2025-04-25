@@ -69,7 +69,7 @@ Template Name: 印刷ページ
                         <h3 class="branding-merit-list__item-title">優秀な人材の<br class="mobile">確保</h3>
                     </div>
                 </div>
-               
+
                 <div class="txt mt32--sp20">
                     <p>ブランディングによりブランドイメージが確立・向上してそのブランドに「付加価値」が得られると、他の類似商品やサービスとの差別化が図れます。<br>差別化は価格競争からの脱却につながります。<br>その「付加価値」に魅力を感じた消費者がファンとなり、ロイヤル化すると、リピート率が上昇し、長期的な利益が期待できます。<br>人気ブランドを保有する企業の社員は自然と業務に対するモチベーションも上がり、採用においても、優秀な人材が集まりやすくなるのです。</p>
                 </div>
@@ -328,6 +328,22 @@ Template Name: 印刷ページ
                 </a>
             </div>
             <div class="btn-list-01">
+                <a href="<?php echo esc_url(home_url('/service/printing')); ?>" class="btn-02">
+                    <span class="btn__text btn__text--newspaper">印刷</span>
+                    <span class="btn__icon">
+                        <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="16" cy="16" r="16" fill="#0068B6" />
+                            <g clip-path="url(#clip0_817_15493)">
+                                <path d="M18.0934 22.6183L16.8418 21.3305L21.3772 16.7951H6.99475V15.0139H21.3772L16.8418 10.4785L18.0934 9.19067L24.8073 15.9045L18.0934 22.6183Z" fill="white" />
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_817_15493">
+                                    <rect width="19" height="19" fill="white" transform="translate(6.401 6.40002)" />
+                                </clipPath>
+                            </defs>
+                        </svg>
+                    </span>
+                </a>
                 <a href="<?php echo esc_url(home_url('/service/degital')); ?>" class="btn-02">
                     <span class="btn__text">デジタル</span>
                     <span class="btn__icon">
@@ -360,22 +376,6 @@ Template Name: 印刷ページ
                             </defs>
                         </svg>
 
-                    </span>
-                </a>
-                <a href="<?php echo esc_url(home_url('/service/branding')); ?>" class="btn-02">
-                    <span class="btn__text btn__text--newspaper">ブランディング</span>
-                    <span class="btn__icon">
-                        <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <circle cx="16" cy="16" r="16" fill="#0068B6" />
-                            <g clip-path="url(#clip0_817_15493)">
-                                <path d="M18.0934 22.6183L16.8418 21.3305L21.3772 16.7951H6.99475V15.0139H21.3772L16.8418 10.4785L18.0934 9.19067L24.8073 15.9045L18.0934 22.6183Z" fill="white" />
-                            </g>
-                            <defs>
-                                <clipPath id="clip0_817_15493">
-                                    <rect width="19" height="19" fill="white" transform="translate(6.401 6.40002)" />
-                                </clipPath>
-                            </defs>
-                        </svg>
                     </span>
                 </a>
                 <a href="<?php echo esc_url(home_url('/service/promotion')); ?>" class="btn-02">

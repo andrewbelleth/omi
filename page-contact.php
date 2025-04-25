@@ -111,13 +111,19 @@ OS：Machintosh・Windows7/8/10
 
 その他 お問い合わせ・ご希望等ご記入ください。`;
 
+
+        // 初期表示時のプレースホルダーを設定
+        messageTextarea.placeholder = printingPlaceholder;
+        messageTextarea.style.height = '43rem';
+
+
         radioButtons.forEach(function(radio) {
             radio.addEventListener('change', function() {
                 if (this.value === '印刷物に関するお問い合わせ・お見積もり') {
                     messageTextarea.placeholder = printingPlaceholder;
                     messageTextarea.style.height = '43rem';
                 } else {
-                    messageTextarea.placeholder = originalPlaceholder;
+                    messageTextarea.placeholder = 'お問い合わせ内容をご入力ください';
                     // 外す
                     messageTextarea.style.height = '';
                 }

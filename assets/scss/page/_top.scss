@@ -791,7 +791,6 @@
         display: flex;
         gap: rem(88);
         margin-top: 4rem;
-        pointer-events: none;
     }
 
     &__img-sticky {
@@ -800,10 +799,12 @@
         flex-shrink: 0;
         height: 100%;
         position: sticky;
-        top: rem(84 + 64);
+        // top: rem(84 + 64);
+        top: calc((100vh - rem(592)) / 2);
         display: flex;
         align-items: center;
         justify-content: center;
+        pointer-events: none;
 
         .swiper-container {
             height: rem(592);
@@ -828,6 +829,13 @@
     @include mq(pc) {
         &__img-sticky-wrap {
             gap: rem(60);
+        }
+        &__img-sticky {
+            width: rem(402);
+            top: calc((100vh - rem(445)) / 2);
+            .swiper-container {
+                height: rem(445);
+            }
         }
         &__item {
             &-slide {
@@ -866,6 +874,7 @@
 
         &__item {
             flex-direction: column;
+            padding-top: 0;
 
             &-content {
                 gap: 0;

@@ -205,7 +205,7 @@
                 display: flex;
                 align-items: center;
                 justify-content: center;
-                padding: rem(0) rem(6) rem(2);
+                padding: rem(2) rem(6);
                 font-size: rem(10);
                 font-weight: 500;
                 line-height: calc(13 / 10);
@@ -413,9 +413,6 @@
             }
 
             &:hover {
-                padding-inline: 2.00875rem rem(40);
-                width: rem(232 + 40) !important;
-
                 .btn__text {
                     color: $gray !important;
                 }
@@ -428,8 +425,10 @@
             left: 0;
             width: rem(280);
             height: rem(60);
-            padding-inline: rem(32) rem(72);
+            padding-inline: rem(32) rem(70);
             font-size: rem(16);
+            font-weight: 700;
+            letter-spacing: 0.1em;
 
             @include mq(tb) {
                 font-size: rem(15);
@@ -671,12 +670,6 @@
                 path {
                     fill: $gray !important;
                 }
-            }
-
-            &:hover {
-                left: 0;
-                gap: 1rem;
-                padding-inline: 2rem 1rem;
             }
         }
     }

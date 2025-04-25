@@ -15,43 +15,6 @@ Template Name: サイトマップ
             </h2>
         </div>
         <div class="top-service__img-sticky-wrap js-sticky">
-            <!-- <div class="top-service__img-sticky">
-                <div class="top-service__item-slide js-sticky-img">
-                    <div class="top-service__item-slide-inner _cover">
-                        <div class="top-service__item-img">
-                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/pc/sample_service-img01.webp" alt="" width="529" height="573">
-                        </div>
-                    </div>
-                </div>
-                <div class="top-service__item-slide js-sticky-img">
-                    <div class="top-service__item-slide-inner _cover">
-                        <div class="top-service__item-img">
-                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/pc/sample_service-img02.webp" alt="" width="529" height="573">
-                        </div>
-                    </div>
-                </div>
-                <div class="top-service__item-slide js-sticky-img">
-                    <div class="top-service__item-slide-inner _cover">
-                        <div class="top-service__item-img">
-                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/pc/sample_service-img03.webp" alt="" width="529" height="573">
-                        </div>
-                    </div>
-                </div>
-                <div class="top-service__item-slide js-sticky-img">
-                    <div class="top-service__item-slide-inner _cover">
-                        <div class="top-service__item-img">
-                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/pc/sample_service-img04.webp" alt="" width="529" height="573">
-                        </div>
-                    </div>
-                </div>
-                <div class="top-service__item-slide js-sticky-img">
-                    <div class="top-service__item-slide-inner _cover">
-                        <div class="top-service__item-img">
-                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/pc/sample_service-img05.webp" alt="" width="529" height="573">
-                        </div>
-                    </div>
-                </div>
-            </div> -->
             <div class="top-service__img-sticky">
                 <div class="swiper-container vertical-slider">
                     <div class="swiper-wrapper vertical-slider__wrapper">
