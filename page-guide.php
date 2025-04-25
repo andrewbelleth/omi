@@ -621,7 +621,7 @@ Template Name: 入稿ガイド
                     </p>
                 </div>
                 <div class="light-blue-box mt32--sp24 ">
-                    <h3 class="fw700">ページ下部のお問い合わせフォーム&nbsp;<span class="fz15">または</span>&nbsp;下記より<br class="sp-only">お電話・FAXよりご連絡ください</h3>
+                    <h3 class="fw700">ページ下部のお問い合わせフォーム&nbsp;<span class="">または</span>&nbsp;下記より<br class="sp-only">お電話・FAXよりご連絡ください</h3>
                     <ul class="guide-contact u-flex-aic mt8">
                         <li class="u-flex-aic">
                             <img src="<?php echo get_template_directory_uri(); ?>/assets/images/guide/icon-tel.webp" alt="" width="36" height="36" loading="lazy">

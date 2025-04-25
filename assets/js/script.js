@@ -118,6 +118,10 @@ document.addEventListener("DOMContentLoaded", function () {
         trigger: targetElement,
         start: "top 0%",
         end: "bottom top",
+<<<<<<< HEAD
+=======
+       /*  markers: true, */
+>>>>>>> 2d686d4c6efe39a6da6e9263437d88e0d89b4d42
         onEnter: () => updateActiveState(anchor),
         onEnterBack: () => updateActiveState(anchor),
         onLeave: () => removeActiveState(anchor),
@@ -630,7 +634,7 @@ document.addEventListener('DOMContentLoaded', function() {
   const swatchList = document.querySelector('.swatch-list');
   if (swatchList) {
     // スクロールバーのスタイルを強制的に適用
-    swatchList.style.setProperty('--scrollbar-visible', 'block');
+   /*  swatchList.style.setProperty('--scrollbar-visible', 'block'); */
     swatchList.style.setProperty('scrollbar-width', 'auto');
     swatchList.style.setProperty('-webkit-overflow-scrolling', 'touch');
     
