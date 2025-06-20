@@ -18,8 +18,8 @@ Template Name: 外部パートナーページ
         </p>
     </div>
     <div class="accordion-list mt128--sp72">
-        <div class="faq-item">
-            <p class="faq-title faq-title--btn jcc">共通要項</p>
+        <div class="faq-item m0">
+            <p class="faq-title faq-title--no-border-radius faq-title--btn jcc">共通要項</p>
             <dl class="faq-content mt64--sp40">
                 <div class="faq-content__item-wrapper">
                     <dt>
@@ -73,7 +73,7 @@ Template Name: 外部パートナーページ
                     <dd>
                         <a class="link-underline" href="<?php echo home_url('/partner/#entry-sheet'); ?>">下記</a>よりエントリーシートをダウンロードしていただき、ポートフォリオとともにメールか郵送で当社までご送付ください。<br>
                         追って担当者よりご連絡いたします。<br>
-                        ご不明点等がございましたら、お問い合わせフォームかお電話にて、外部スタッフ募集係までご連絡ください。<br class="sp-only">（TEL 0749-42-8400月～金曜日、9:00〜17:00、当社休業日は除く）
+                        ご不明点等がございましたら、お問い合わせフォームかお電話にて、外部スタッフ募集係までご連絡ください。<br class="sp-only">（TEL <a href="tel:0749428400">0749-42-8400</a>月～金曜日、9:00〜17:00、当社休業日は除く）
                     </dd>
                 </div>
 
@@ -253,7 +253,7 @@ Template Name: 外部パートナーページ
                         【個人情報に関する問い合わせ先】<br>
                         近江印刷株式会社　個人情報問合せ窓口　宛<br>
                         〒529-1302　滋賀県愛知郡愛荘町川原771-1<br>
-                        TEL：0749-42-8400　FAX：0749-42-6700　メール：info@omi-in.co.jp<br>
+                        TEL：<a href="tel:0749428400">0749-42-8400</a>　FAX：0749-42-6700　メール：info@omi-in.co.jp<br>
                         対応受付時間　AM9:00～PM5:00（当社休業日を除く）
                     </div>
                 </div>
@@ -271,7 +271,7 @@ Template Name: 外部パートナーページ
                 </div>
                 <a href="<?php echo home_url('/privacypolicy/'); ?>" class="active-policy-check-link mt12--sp8">個人情報保護方針</a>
             </div>
-            <a href="" class="active-policy-btn btn mt64--sp48">
+            <a id="entry-sheet" href="https://www.omi-in.co.jp/pdf/entry_2.pdf" target="_blank" class="active-policy-btn active-policy-btn--partner btn mt64--sp48">
                 <span class="btn__text btn__text--entry js-activation-button">エントリーシートを<br class="mobile">ダウンロードする</span>
                 <span class="btn__icon">
                     <svg viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">

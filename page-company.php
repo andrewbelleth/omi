@@ -51,25 +51,25 @@ if (! defined('ABSPATH')) exit;
                 </div>
             </div>
         </div>
-    
+
         <div class="mt160--sp120">
-        <?php
-        $args = array(
-            'slider_array' => array(
-                'img_01' => 'company-gallery01.webp',
-                'img_02' => 'company-gallery02.webp',
-                'img_03' => 'company-gallery03.webp',
-                'img_04' => 'company-gallery04.webp',
-                'img_05' => 'company-gallery05.webp',
-                'img_06' => 'company-gallery06.webp',
-                'img_07' => 'company-gallery07.webp',
-                'img_08' => 'company-gallery08.webp',
-            ),
-        );
-        ?>
-        <?php get_template_part('template-parts/components/gallery', null, $args); ?>
+            <?php
+            $args = array(
+                'slider_array' => array(
+                    'img_01' => 'company-gallery01.webp',
+                    'img_02' => 'company-gallery02.webp',
+                    'img_03' => 'company-gallery03.webp',
+                    'img_04' => 'company-gallery04.webp',
+                    'img_05' => 'company-gallery05.webp',
+                    'img_06' => 'company-gallery06.webp',
+                    'img_07' => 'company-gallery07.webp',
+                    'img_08' => 'company-gallery08.webp',
+                ),
+            );
+            ?>
+            <?php get_template_part('template-parts/components/gallery', null, $args); ?>
         </div>
-    
+
         <div class="company-about section mt160--sp120">
             <div class="company-about__head section__head">
                 <h2 class="section__title">
@@ -89,8 +89,8 @@ if (! defined('ABSPATH')) exit;
                 <div class="info-item">
                     <h3 class="info-heading">本社</h3>
                     <p class="info-content">〒529-1302 滋賀県愛知郡愛荘町川原771-1<br>
-                        <span class="mobile">TEL: 0749-42-8400（代）<br>FAX: 0749-42-6700（代）</span>
-                        <span class="desktop">TEL: 0749-42-8400（代） FAX: 0749-42-6700（代）</span>
+                        <span class="mobile">TEL: <a href="tel:0749428400">0749-42-8400</a>（代）<br>FAX: 0749-42-6700（代）</span>
+                        <span class="desktop">TEL: <a href="tel:0749428400">0749-42-8400</a>（代） FAX: 0749-42-6700（代）</span>
                     </p>
                 </div>
                 <div class="info-item">
@@ -131,85 +131,34 @@ if (! defined('ABSPATH')) exit;
                 </div>
             </div>
         </div>
-    
+
         <div class="mt160--sp120 mb160--sp120">
             <div class="component-box-item section">
                 <div class="link-01-component">
                     <div class="link-01-head">
-                    <h3 class="link-01-title">COMPANY</h3>
-                </div>
-                <div class="btn-list-01">
-                    <a href="<?php echo esc_url(home_url('/company/facility')); ?>" class="btn-02">
-                        <span class="btn__text">設備概要</span>
-                        <span class="btn__icon">
-                            <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <circle cx="16" cy="16" r="16" fill="#0068B6" />
-                                <g clip-path="url(#clip0_817_15493)">
-                                    <path d="M18.0934 22.6183L16.8418 21.3305L21.3772 16.7951H6.99475V15.0139H21.3772L16.8418 10.4785L18.0934 9.19067L24.8073 15.9045L18.0934 22.6183Z" fill="white" />
-                                </g>
-                                <defs>
-                                    <clipPath id="clip0_817_15493">
-                                        <rect width="19" height="19" fill="white" transform="translate(6.401 6.40002)" />
-                                    </clipPath>
-                                </defs>
-                            </svg>
-    
-                        </span>
-                    </a>
-                    <a href="<?php echo esc_url(home_url('/company/history')); ?>" class="btn-02">
-                        <span class="btn__text">会社沿革</span>
-                        <span class="btn__icon">
-                            <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <circle cx="16" cy="16" r="16" fill="#0068B6" />
-                                <g clip-path="url(#clip0_817_15493)">
-                                    <path d="M18.0934 22.6183L16.8418 21.3305L21.3772 16.7951H6.99475V15.0139H21.3772L16.8418 10.4785L18.0934 9.19067L24.8073 15.9045L18.0934 22.6183Z" fill="white" />
-                                </g>
-                                <defs>
-                                    <clipPath id="clip0_817_15493">
-                                        <rect width="19" height="19" fill="white" transform="translate(6.401 6.40002)" />
-                                    </clipPath>
-                                </defs>
-                            </svg>
-    
-                        </span>
-                    </a>
-                    <a href="<?php echo esc_url(home_url('/company/project')); ?>" class="btn-02">
-                        <span class="btn__text btn__text--newspaper">私たちの<br class="sp-only">取り組み</span>
-                        <span class="btn__icon">
-                            <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <circle cx="16" cy="16" r="16" fill="#0068B6" />
-                                <g clip-path="url(#clip0_817_15493)">
-                                    <path d="M18.0934 22.6183L16.8418 21.3305L21.3772 16.7951H6.99475V15.0139H21.3772L16.8418 10.4785L18.0934 9.19067L24.8073 15.9045L18.0934 22.6183Z" fill="white" />
-                                </g>
-                                <defs>
-                                    <clipPath id="clip0_817_15493">
-                                        <rect width="19" height="19" fill="white" transform="translate(6.401 6.40002)" />
-                                    </clipPath>
-                                </defs>
-                            </svg>
-    
-                        </span>
-                    </a>
-                    <a href="<?php echo esc_url(home_url('/company/ing')); ?>" class="btn-02">
-                        <span class="btn__text btn__text--branding">社外報ing</span>
-                        <span class="btn__icon">
-                            <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <circle cx="16" cy="16" r="16" fill="#0068B6" />
-                                <g clip-path="url(#clip0_817_15493)">
-                                    <path d="M18.0934 22.6183L16.8418 21.3305L21.3772 16.7951H6.99475V15.0139H21.3772L16.8418 10.4785L18.0934 9.19067L24.8073 15.9045L18.0934 22.6183Z" fill="white" />
-                                </g>
-                                <defs>
-                                    <clipPath id="clip0_817_15493">
-                                        <rect width="19" height="19" fill="white" transform="translate(6.401 6.40002)" />
-                                    </clipPath>
-                                </defs>
-                            </svg>
-                        </span>
-                    </a>
+                        <h3 class="link-01-title">COMPANY</h3>
+                    </div>
+                    <div class="btn-list-01">
+                        <a href="<?php echo esc_url(home_url('/company/facility')); ?>" class="btn-02">
+                            <span class="btn__text">設備概要</span>
+                            <?php get_template_part('template-parts/parts/btn-icon--blue'); ?>
+                        </a>
+                        <a href="<?php echo esc_url(home_url('/company/history')); ?>" class="btn-02">
+                            <span class="btn__text">会社沿革</span>
+                            <?php get_template_part('template-parts/parts/btn-icon--blue'); ?>
+                        </a>
+                        <a href="<?php echo esc_url(home_url('/company/project')); ?>" class="btn-02">
+                            <span class="btn__text btn__text--newspaper">私たちの<br class="sp-only">取り組み</span>
+                            <?php get_template_part('template-parts/parts/btn-icon--blue'); ?>
+                        </a>
+                        <a href="<?php echo esc_url(home_url('/company/ing')); ?>" class="btn-02">
+                            <span class="btn__text btn__text--branding">社外報ing</span>
+                            <?php get_template_part('template-parts/parts/btn-icon--blue'); ?>
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
 
-<?php get_template_part('template-parts/footer'); ?>
+    <?php get_template_part('template-parts/footer'); ?>

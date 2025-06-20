@@ -5,8 +5,7 @@
   &__head {
     width: 100%;
     height: rem(420);
-    background: $light-gray url(../images/pc/page_bg.webp) no-repeat center
-      center/cover;
+    background: $light-gray url(../images/pc/page_bg.webp) no-repeat center center/cover;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -109,8 +108,7 @@
   @include mq(tb) {
     &__head {
       height: rem(361);
-      background: $light-gray url(../images/sp/page_bg-sp.webp) no-repeat center
-        center/cover;
+      background: $light-gray url(../images/sp/page_bg-sp.webp) no-repeat center center/cover;
 
       &-inner {
         width: calc(100% - rem(48));
@@ -177,14 +175,14 @@
   align-items: baseline;
   gap: rem(10);
 
-  > span {
+  >span {
     font-size: 0.875rem;
     font-weight: 500;
     line-height: 170%;
     letter-spacing: 0.1em;
   }
 
-  > span + span {
+  >span+span {
     display: flex;
     align-items: center;
 
@@ -193,8 +191,7 @@
       display: block;
       width: rem(12);
       height: rem(12);
-      background: url(../images/common/chevron-right-blue.svg) no-repeat center
-        center/cover;
+      background: url(../images/common/chevron-right-blue.svg) no-repeat center center/cover;
       margin-right: rem(8);
       margin-top: rem(2);
     }
@@ -204,12 +201,12 @@
     gap: 4px;
     align-items: flex-start;
 
-    > span {
+    >span {
       font-size: 12px;
       line-height: calc(20 / 12);
     }
 
-    span + span {
+    span+span {
       &::before {
         width: 10px;
         height: 11px;
@@ -346,6 +343,10 @@ body:has(.common-contant) {
 
     li {
       width: calc((100% - rem(80)) / 3);
+
+      a {
+        display: block;
+      }
     }
 
     img {
@@ -386,7 +387,7 @@ body:has(.common-contant) {
       line-height: 180%;
       letter-spacing: lts-em(0.75, 15);
 
-      + p {
+      +p {
         margin-top: rem(16);
       }
     }
@@ -415,7 +416,7 @@ body:has(.common-contant) {
 
   @include mq(tb) {
     .wrapper {
-      > * + * {
+      >*+* {
         margin-top: rem(96);
       }
     }
@@ -431,7 +432,7 @@ body:has(.common-contant) {
         font-size: rem(14);
         letter-spacing: lts-em(0.7, 14);
 
-        + p {
+        +p {
           margin-top: rem(12);
         }
       }
@@ -512,7 +513,7 @@ body:has(.common-contant) {
         display: block;
         min-width: rem(78);
 
-        + span {
+        +span {
           flex: 1;
           font-weight: 400;
         }
@@ -539,6 +540,7 @@ body:has(.common-contant) {
         letter-spacing: lts-em(2, 40);
       }
     }
+
     .breadcrumb {
       padding-right: rem(24);
     }
@@ -574,6 +576,7 @@ body:has(.common-contant) {
     }
 
     .page-wrapper {
+
       p,
       li {
         font-size: rem(14);
@@ -683,13 +686,11 @@ body:has(.common-contant) {
     }
 
     .btn--recruit {
-      background: url(../images/recruit/recruit__btn-bg01.webp) no-repeat center
-        center/100% 100%;
+      background: url(../images/recruit/recruit__btn-bg01.webp) no-repeat center center/100% 100%;
     }
 
     .btn--career {
-      background: url(../images/recruit/recruit__btn-bg02.webp) no-repeat center
-        center/100% 100%;
+      background: url(../images/recruit/recruit__btn-bg02.webp) no-repeat center center/100% 100%;
     }
 
     .btn__text {
@@ -723,6 +724,7 @@ body:has(.common-contant) {
     .page__head-inner {
       margin-top: rem(56);
     }
+
     .page__title {
       margin-bottom: 0;
     }
@@ -755,13 +757,11 @@ body:has(.common-contant) {
       }
 
       .btn--recruit {
-        background: url(../images/recruit/sp-recruit__btn-bg01.webp) no-repeat
-          center center/cover;
+        background: url(../images/recruit/sp-recruit__btn-bg01.webp) no-repeat center center/cover;
       }
 
       .btn--career {
-        background: url(../images/recruit/sp-recruit__btn-bg02.webp) no-repeat
-          center center/cover;
+        background: url(../images/recruit/sp-recruit__btn-bg02.webp) no-repeat center center/cover;
       }
 
       .btn__text {
@@ -824,10 +824,12 @@ body:has(.common-contant) {
     margin-top: rem(-96);
     padding-top: rem(96);
   }
-  .txt-note{
+
+  .txt-note {
     font-size: rem(13);
     letter-spacing: lts-em(0.65, 13);
   }
+
   @include mq(tb) {
     .section__col {
       gap: rem(48);
@@ -877,13 +879,15 @@ body:has(.common-contant) {
       margin-top: rem(-64);
       padding-top: rem(64);
     }
-    .dtp-pre-press{
-      .ttl-05{
+
+    .dtp-pre-press {
+      .ttl-05 {
         font-size: rem(15);
 
       }
     }
-    .txt-note{
+
+    .txt-note {
       font-size: rem(12);
       letter-spacing: lts-em(0.6, 12);
     }
@@ -901,6 +905,10 @@ body:has(.common-contant) {
     background: $blue;
     padding-block: rem(12);
     display: flex;
+
+    &--no-border-radius {
+      border-radius: 0;
+    }
   }
 
   .txt {
@@ -911,10 +919,15 @@ body:has(.common-contant) {
     }
   }
 
+
+  .faq-item {
+    margin-bottom: rem(80);
+  }
+
   .faq-content {
     max-width: rem(960);
     margin-inline: auto;
-    padding-bottom: rem(80);
+    // margin-bottom: rem(80);
     border-top: 1px solid var(--light-gray);
   }
 
@@ -984,8 +997,7 @@ body:has(.common-contant) {
     transform: translateY(-50%);
     width: rem(41);
     height: rem(41);
-    background: url(../images/common/open-icon.svg) no-repeat center
-      center/contain;
+    background: url(../images/common/open-icon.svg) no-repeat center center/contain;
   }
 
   details[open] {
@@ -993,6 +1005,7 @@ body:has(.common-contant) {
       background-image: url(../images/common/close-icon.png); // 開いてるときのアイコン
     }
   }
+
   /* Firefox用 */
   summary::-moz-list-bullet {
     list-style-type: none;
@@ -1010,9 +1023,13 @@ body:has(.common-contant) {
       padding-right: rem(16);
     }
 
+    .faq-item {
+      margin-bottom: rem(40);
+    }
+
     .faq-content {
       max-width: 100%;
-      padding-bottom: rem(40);
+      // padding-bottom: rem(40);
     }
 
     .txt {
@@ -1145,7 +1162,8 @@ body:has(.common-contant) {
         &:first-child {
           min-width: rem(95);
         }
-        .fz13--sp12{
+
+        .fz13--sp12 {
           @include fz13--sp12;
           letter-spacing: lts-em(0.75, 13);
           line-height: 180%;
@@ -1153,6 +1171,7 @@ body:has(.common-contant) {
       }
     }
   }
+
   .swatch-list {
     padding: rem(24) rem(0) rem(8) rem(20);
     display: flex;
@@ -1224,42 +1243,48 @@ body:has(.common-contant) {
       line-height: rem(32);
       white-space: nowrap;
     }
-    .tab-br{
+
+    .tab-br {
       display: none;
     }
-    @media (1025px <= width < 1050px) {
-      p{
-        &:after{
+
+    @media (1025px <=width < 1050px) {
+      p {
+        &:after {
           right: -0.91rem;
           height: 28px;
           clip-path: polygon(0.9375rem 50%, 0% 0%, 0% 28px);
         }
       }
     }
-    @media (769px <= width < 1050px) {
+
+    @media (769px <=width < 1050px) {
       li {
-       
+
         width: rem(175);
         width: 23.5%;
+
         &:last-child {
           width: 23.5%;
         }
-        img{
+
+        img {
           max-width: rem(165);
         }
       }
-     
-      .tab-br{
+
+      .tab-br {
         display: block;
       }
+
       p.fz12 {
-       font-size: rem(11.5); 
-       line-height: 1rem;
+        font-size: rem(11.5);
+        line-height: 1rem;
       }
     }
-   
+
   }
-  
+
 
   .fz22--sp16 {
     letter-spacing: lts-em(2.2, 22);
@@ -1296,11 +1321,13 @@ body:has(.common-contant) {
       line-height: 180%;
       font-size: rem(17);
       letter-spacing: lts-em(0.85, 17);
-      span{
+
+      span {
         font-size: rem(15);
         letter-spacing: lts-em(0.75, 15);
       }
     }
+
     .light-blue-box {
       .text-flex {
         span {
@@ -1492,10 +1519,12 @@ body:has(.common-contant) {
           }
         }
       }
-      .lts-short{
+
+      .lts-short {
         display: inline;
         letter-spacing: lts-em(0.42, 14);
       }
+
       .pl40 {
         padding-left: rem(40);
       }
@@ -1505,6 +1534,7 @@ body:has(.common-contant) {
       .btn {
         height: rem(65);
       }
+
       .light-blue-box {
         h2 {
           font-size: rem(17);
@@ -1514,14 +1544,16 @@ body:has(.common-contant) {
 
     .submission-contact {
       .light-blue-box {
-        h3{
+        h3 {
           font-size: rem(16);
           letter-spacing: lts-em(0.8, 16);
-          span{
+
+          span {
             font-size: rem(14);
             letter-spacing: lts-em(0.7, 14);
           }
         }
+
         .text-flex {
           flex-direction: row;
           gap: rem(4);
@@ -1544,11 +1576,12 @@ body:has(.common-contant) {
         }
       }
     }
-   
+
     .guide-contact {
       gap: rem(0);
       flex-direction: column;
       align-items: flex-start;
+
       li {
         img {
           width: rem(40);

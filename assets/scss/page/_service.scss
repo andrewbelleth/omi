@@ -211,7 +211,7 @@
   }
 
   .page__service-content-main {
-    width: rem(667);
+    width: rem(676);
     margin-inline: auto;
 
     @include mq(pc) {
@@ -257,7 +257,7 @@
       background: rgba($color, 0.1);
       padding-top: rem(34);
       padding-bottom: rem(8);
-      top: rem(46);
+      top: rem(58);
       left: rem(36);
 
       @include mq(tb) {
@@ -274,7 +274,7 @@
       background: rgba($color, 0.1);
       padding-top: rem(19);
       padding-bottom: rem(8);
-      top: rem(46);
+      top: rem(58);
       right: rem(36);
 
       .service-item__title {
@@ -306,7 +306,7 @@
       background: rgba($color, 0.1);
       padding-top: rem(34);
       padding-bottom: rem(8);
-      bottom: rem(63);
+      bottom: rem(60);
       left: rem(36);
 
       @include mq(tb) {
@@ -323,7 +323,7 @@
       background: rgba($color, 0.1);
       padding-top: rem(21);
       padding-bottom: rem(8);
-      bottom: rem(63);
+      bottom: rem(60);
       right: rem(36);
 
       .service-item__title {

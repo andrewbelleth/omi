@@ -22,7 +22,10 @@ Template Name: フッター
                                 } ?>">
         <div class="footer__logo">
           <div class="footer__logo-img">
-            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/pc/logo.webp" alt="omi printing">
+            <picture>
+              <source srcset="<?php echo get_template_directory_uri(); ?>/assets/images/sp/footer-logo.png" media="(max-width: 768px)">
+              <img src="<?php echo get_template_directory_uri(); ?>/assets/images/pc/footer-logo.png" alt="omi printing">
+            </picture>
           </div>
           <div class="footer__logo-text">
             <img src="<?php echo get_template_directory_uri(); ?>/assets/images/pc/logo-text.svg" alt="近江印刷株式会社">
@@ -32,7 +35,7 @@ Template Name: フッター
           <div class="footer__address">
             <dl>
               <dt>本社</dt>
-              <dd>529-1302 滋賀県愛知郡愛荘町川原771-1<br>TEL:0749-42-8400(代) FAX:0749-42-6700(代)</dd>
+              <dd>529-1302 滋賀県愛知郡愛荘町川原771-1<br>TEL:<a href="tel:0749428400">0749-42-8400</a>(代)&nbsp;&nbsp;&nbsp;FAX:0749-42-6700(代)</dd>
             </dl>
             <dl>
               <dt>彦根支店</dt>
@@ -90,12 +93,12 @@ Template Name: フッター
           </nav>
         </div>
         <ul class="footer__sns sns">
-          <li><a class="sns--x" href="https://twitter.com/omp63" target="_blank" rel="noopener noreferrer"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/common/ico_x.png" alt="x icon"></a></li>
-          <li><a class="sns--youtube" href="https://www.youtube.com/channel/UCGkR-Vi1vzr6GQCxyscWJLg" target="_blank" rel="noopener noreferrer"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/common/ico_youtube.png" alt="youtbe icon"></a>
+          <li><a class="sns--x" href="https://twitter.com/omp63" target="_blank" rel="noopener noreferrer"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/common/ico_x.svg" alt="x icon"></a></li>
+          <li><a class="sns--youtube" href="https://www.youtube.com/channel/UCGkR-Vi1vzr6GQCxyscWJLg" target="_blank" rel="noopener noreferrer"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/common/ico_youtube.svg" alt="youtbe icon"></a>
           </li>
-          <li><a class="sns--facebook" href="https://www.facebook.com/omi.printing/" target="_blank" rel="noopener noreferrer"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/common/ico_facebook_color.png"
+          <li><a class="sns--facebook" href="https://www.facebook.com/omi.printing/" target="_blank" rel="noopener noreferrer"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/common/ico_facebook_color.svg"
                 alt="facebook icon"></a></li>
-          <li><a class="sns--instagram" href="https://www.instagram.com/omiprint/?hl=ja" target="_blank" rel="noopener noreferrer"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/common/ico_instagram.png" alt="instagram icon"></a>
+          <li><a class="sns--instagram" href="https://www.instagram.com/omiprint/?hl=ja" target="_blank" rel="noopener noreferrer"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/common/ico_instagram.svg" alt="instagram icon"></a>
           </li>
         </ul>
       </div>

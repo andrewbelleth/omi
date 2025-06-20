@@ -38,7 +38,7 @@ Template Name: 印刷ページ
                     <p>デジタル領域について、詳しく知りたい方はOMITOをチェック！</p>
                 </div>
                 <div class="component-box-btn mt24--sp32 pl21--sp0">
-                    <a href="<?php echo esc_url(home_url('/omito')); ?>" class="btn inview">
+                    <a href="https://omito.biz/" target="_blank" class="btn inview">
                         <span class="btn__text">OMITO</span>
                         <span class="btn__icon">
                             <svg viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -53,9 +53,9 @@ Template Name: 印刷ページ
                 </div>
                 <h3 class="ttl-02 ttl-02--triangle mt32--sp40">OMITOの各サービス</h3>
                 <div class="degital-btn-list">
-                    <a href="#" class="btn-02 btn-02--rikueru">
+                    <a href="https://omito.biz/rikuel/" target="_blank" class="btn-02 btn-02--rikueru">
                         <div class="btn__img">
-                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/degital/rikueru.png" alt="リクエル" width="113" height="113" loading="lazy">
+                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/degital/rikueru.webp" alt="リクエル" width="113" height="113" loading="lazy">
                         </div>
                         <div class="btn__body">
                             <span class="btn__text">リクエル</span>
@@ -76,7 +76,7 @@ Template Name: 印刷ページ
 
                         </span>
                     </a>
-                    <a href="#" class="btn-02 btn-02--douga">
+                    <a href="https://omito.biz/dooga/" target="_blank" class="btn-02 btn-02--douga">
                         <div class="btn__img">
                             <img src="<?php echo get_template_directory_uri(); ?>/assets/images/degital/douga.png" alt="ドゥーガ" width="113" height="113" loading="lazy">
                         </div>
@@ -99,7 +99,7 @@ Template Name: 印刷ページ
 
                         </span>
                     </a>
-                    <a href="#" class="btn-02 btn-02--sukketosan">
+                    <a href="https://omito.biz/sukettosan/" target="_blank" class="btn-02 btn-02--sukketosan">
                         <div class="btn__img">
                             <img src="<?php echo get_template_directory_uri(); ?>/assets/images/degital/sukketosan.png" alt="助っ人さん" width="113" height="113" loading="lazy">
                         </div>
@@ -167,8 +167,16 @@ Template Name: 印刷ページ
                 <h3 class="ttl-02 ttl-02--triangle mt32--sp40">動画の制作実績</h3>
 
                 <ul class="img-list img-list--2column-sp1 pt24--sp20 pl21--sp20">
-                    <li><img src="<?php echo get_template_directory_uri(); ?>/assets/images/degital/degital-01.png" alt="広報誌から事務用品印刷物まで幅広く対応" width="358" height="202" loading="lazy"></li>
-                    <li><img src="<?php echo get_template_directory_uri(); ?>/assets/images/degital/degital-02.png" alt="広報誌から事務用品印刷物まで幅広く対応" width="358" height="202" loading="lazy"></li>
+                    <li>
+                        <a href="https://www.youtube.com/watch?v=xZJJ5Lx5okM" target="_blank">
+                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/degital/degital-01.png" alt="広報誌から事務用品印刷物まで幅広く対応" width="358" height="202" loading="lazy">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.youtube.com/watch?v=O-OTKP6KOrA" target="_blank">
+                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/degital/degital-02.png" alt="広報誌から事務用品印刷物まで幅広く対応" width="358" height="202" loading="lazy">
+                        </a>
+                    </li>
                 </ul>
                 <div class="component-box-btn mt32 pl21--sp0">
                     <a href="<?php echo esc_url(home_url('/works')); ?>" class="btn inview">
@@ -230,8 +238,16 @@ Template Name: 印刷ページ
                 <h3 class="ttl-02 ttl-02--triangle mt32--sp40">Webサイトの制作実績</h3>
 
                 <ul class="img-list img-list--2column-sp1 gap24 pt24--sp20 pl21--sp20">
-                    <li><img src="<?php echo get_template_directory_uri(); ?>/assets/images/degital/degital-03.png" alt="広報誌から事務用品印刷物まで幅広く対応" width="358" height="488" loading="lazy"></li>
-                    <li><img src="<?php echo get_template_directory_uri(); ?>/assets/images/degital/degital-04.png" alt="広報誌から事務用品印刷物まで幅広く対応" width="358" height="488" loading="lazy"></li>
+                    <li>
+                        <a href="https://gamoukoumuten.com/" target="_blank">
+                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/degital/degital-03.png" alt="広報誌から事務用品印刷物まで幅広く対応" width="358" height="488" loading="lazy">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://hattorijuku.com/" target="_blank">
+                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/degital/degital-04.png" alt="広報誌から事務用品印刷物まで幅広く対応" width="358" height="488" loading="lazy">
+                        </a>
+                    </li>
                 </ul>
                 <div class="component-box-btn mt32 pl21--sp0">
                     <a href="<?php echo esc_url(home_url('/works')); ?>" class="btn inview">
@@ -308,7 +324,9 @@ Template Name: 印刷ページ
                 <div class="img-list pt16--sp20 pl21--sp20">
                     <div class="img-list__item">
                         <div class="img-list__item-img">
-                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/degital/degital-07.png" alt="画像の説明3" width="358" height="237" loading="lazy">
+                            <a href="https://youtu.be/MteSZXqRkx8" target="_blank">
+                                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/degital/degital-07.png" alt="画像の説明3" width="358" height="237" loading="lazy">
+                            </a>
                         </div>
                         <div class="txt mt10">
                             <p>基本機能の使い方と、オプション機能のご紹介</p>
@@ -316,7 +334,9 @@ Template Name: 印刷ページ
                     </div>
                     <div class="img-list__item">
                         <div class="img-list__item-img">
-                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/degital/degital-08.png" alt="画像の説明3" width="358" height="237" loading="lazy">
+                            <a href="https://youtu.be/hA4Z7oDDFCI" target="_blank">
+                                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/degital/degital-08.png" alt="画像の説明3" width="358" height="237" loading="lazy">
+                            </a>
                         </div>
                         <div class="txt mt10">
                             <p>WebBook用データの作り方などをご紹介</p>
@@ -363,83 +383,26 @@ Template Name: 印刷ページ
             <div class="link-01-head">
                 <h3 class="link-01-title">SERVICE</h3>
                 <a href="<?php echo esc_url(home_url('/service')); ?>" class="link-01-link">
-                    <span class="link-01-link-icon">
-                        <svg viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <circle cx="14" cy="14" r="13.5" stroke="#0068B6" />
-                            <path d="M15.9384 19.94L14.8317 18.8013L18.842 14.7911H6.12488V13.2161H18.842L14.8317 9.20586L15.9384 8.06714L21.8749 14.0036L15.9384 19.94Z" fill="#0068B6" />
-                        </svg>
-                    </span>
+                    <?php get_template_part('template-parts/parts/link-01-link-icon'); ?>
                     <span class="link-01-link-text">サービストップへ戻る</span>
                 </a>
             </div>
             <div class="btn-list-01">
                 <a href="<?php echo esc_url(home_url('/service/printing')); ?>" class="btn-02">
                     <span class="btn__text">印刷</span>
-                    <span class="btn__icon">
-                        <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <circle cx="16" cy="16" r="16" fill="#0068B6" />
-                            <g clip-path="url(#clip0_817_15493)">
-                                <path d="M18.0934 22.6183L16.8418 21.3305L21.3772 16.7951H6.99475V15.0139H21.3772L16.8418 10.4785L18.0934 9.19067L24.8073 15.9045L18.0934 22.6183Z" fill="white" />
-                            </g>
-                            <defs>
-                                <clipPath id="clip0_817_15493">
-                                    <rect width="19" height="19" fill="white" transform="translate(6.401 6.40002)" />
-                                </clipPath>
-                            </defs>
-                        </svg>
-
-                    </span>
+                    <?php get_template_part('template-parts/parts/btn-icon--blue'); ?>
                 </a>
                 <a href="<?php echo esc_url(home_url('/service/newspaper')); ?>" class="btn-02">
                     <span class="btn__text">彦根経済新聞</span>
-                    <span class="btn__icon">
-                        <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <circle cx="16" cy="16" r="16" fill="#0068B6" />
-                            <g clip-path="url(#clip0_817_15493)">
-                                <path d="M18.0934 22.6183L16.8418 21.3305L21.3772 16.7951H6.99475V15.0139H21.3772L16.8418 10.4785L18.0934 9.19067L24.8073 15.9045L18.0934 22.6183Z" fill="white" />
-                            </g>
-                            <defs>
-                                <clipPath id="clip0_817_15493">
-                                    <rect width="19" height="19" fill="white" transform="translate(6.401 6.40002)" />
-                                </clipPath>
-                            </defs>
-                        </svg>
-
-                    </span>
+                    <?php get_template_part('template-parts/parts/btn-icon--blue'); ?>
                 </a>
                 <a href="<?php echo esc_url(home_url('/service/branding')); ?>" class="btn-02">
                     <span class="btn__text btn__text--newspaper">ブランディング</span>
-                    <span class="btn__icon">
-                        <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <circle cx="16" cy="16" r="16" fill="#0068B6" />
-                            <g clip-path="url(#clip0_817_15493)">
-                                <path d="M18.0934 22.6183L16.8418 21.3305L21.3772 16.7951H6.99475V15.0139H21.3772L16.8418 10.4785L18.0934 9.19067L24.8073 15.9045L18.0934 22.6183Z" fill="white" />
-                            </g>
-                            <defs>
-                                <clipPath id="clip0_817_15493">
-                                    <rect width="19" height="19" fill="white" transform="translate(6.401 6.40002)" />
-                                </clipPath>
-                            </defs>
-                        </svg>
-
-                    </span>
+                    <?php get_template_part('template-parts/parts/btn-icon--blue'); ?>
                 </a>
                 <a href="<?php echo esc_url(home_url('/service/promotion')); ?>" class="btn-02">
                     <span class="btn__text btn__text--branding">プロモーション</span>
-                    <span class="btn__icon">
-                        <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <circle cx="16" cy="16" r="16" fill="#0068B6" />
-                            <g clip-path="url(#clip0_817_15493)">
-                                <path d="M18.0934 22.6183L16.8418 21.3305L21.3772 16.7951H6.99475V15.0139H21.3772L16.8418 10.4785L18.0934 9.19067L24.8073 15.9045L18.0934 22.6183Z" fill="white" />
-                            </g>
-                            <defs>
-                                <clipPath id="clip0_817_15493">
-                                    <rect width="19" height="19" fill="white" transform="translate(6.401 6.40002)" />
-                                </clipPath>
-                            </defs>
-                        </svg>
-
-                    </span>
+                    <?php get_template_part('template-parts/parts/btn-icon--blue'); ?>
                 </a>
 
             </div>

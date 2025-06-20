@@ -124,10 +124,14 @@
         font-weight: 700;
         line-height: calc(96 / 60);
         color: $blue;
+        pointer-events: none;
+        cursor: default;
 
         @include mq(tb) {
             font-size: rem(32);
             line-height: calc(51 / 32);
+            pointer-events: auto;
+            cursor: pointer;
         }
     }
 
@@ -136,6 +140,10 @@
             font-size: rem(14);
             line-height: 2;
             letter-spacing: 0.05em;
+
+            b {
+                white-space: nowrap;
+            }
 
             @include mq(tb) {
                 font-size: rem(13);
@@ -281,7 +289,7 @@
                 flex-wrap: wrap;
                 gap: rem(8) rem(32);
 
-                > span:first-of-type label > span {
+                >span:first-of-type label>span {
                     width: 18.75rem;
                 }
 
@@ -357,7 +365,7 @@
                 @include mq(tb) {
                     flex-direction: column;
 
-                    > span:first-of-type label > span {
+                    >span:first-of-type label>span {
                         width: fit-content;
                     }
                 }
@@ -654,6 +662,12 @@
     &-btn {
         margin-inline: auto;
         left: 0 !important;
+
+        @include mq(tb) {
+            &--partner {
+                height: rem(65);
+            }
+        }
 
         &:has(.js-activation-button.disabled) {
             background: $gray !important;

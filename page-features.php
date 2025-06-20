@@ -8,7 +8,7 @@ Template Name: 特徴ページ
 <?php get_template_part('template-parts/header'); ?>
 <?php get_template_part('template-parts/components/page-head', null, [
     'title_en' => 'FEATURES',
-    'title_jp' => '特徴',
+    'title_jp' => '近江印刷の特徴',
 ]); ?>
 <div class="page-wrapper mt160--sp96">
     <div class="section">

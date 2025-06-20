@@ -5,10 +5,10 @@
     background: $light-gray url(../images/pc/cta_btg-pc.webp) no-repeat center center/cover;
     max-width: rem(1200);
     width: calc(100% - rem(80));
-    margin-block: rem(0) rem(-156);
+    margin-block: rem(0) rem(-162);
     margin-inline: auto;
-    padding-block: rem(74);
-    padding-inline: rem(100) rem(94);
+    padding-block: rem(48);
+    padding-inline: rem(48);
     border-radius: rem(16);
     z-index: 1;
 
@@ -16,6 +16,8 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
+        max-width: rem(944);
+        margin-inline: auto;
     }
 
     .section__title {
@@ -33,32 +35,66 @@
         font-size: 1.25rem;
         font-weight: 700;
         line-height: 160%;
-        letter-spacing: 0.15em;
-        margin-left: rem(2);
-        margin-bottom: rem(34);
+        letter-spacing: 0.1em;
+        margin-bottom: rem(36);
         span {
             display: inline-block;
         }
     }
 
-    @include mq(pc) {
-        padding-inline: rem(60) rem(54);
+    &__sec-btn-wap {
+        display: flex;
+        flex-direction: column;
+        gap: rem(24);
     }
 
-    @include mq(tb) {
-        padding: 2.75rem 1.5rem 2.44rem;
-        width: calc(100% - rem(48));
+    @include mq(pc) {
+        padding-inline: rem(60) rem(54);
+
+        &__inner {
+            gap: rem(32);
+        }
 
         .section__title {
             &--en {
+                font-size: rem(64);
+            }
+        }
+    }
+
+    @include mq(tb) {
+        padding: rem(39) rem(24) rem(32);
+        width: calc(100% - rem(48));
+        margin-block: rem(0) rem(-317);
+
+        &__inner {
+            gap: rem(28);
+        }
+
+        .section__title {
+            margin-bottom: 0;
+
+            &--en {
                 font-size: rem(48);
+                letter-spacing: 0.05em;
+                padding-left: 0;
+            }
+
+            &--jp {
+                padding-left: 0;
             }
         }
 
-        // &__text {
-        //     display: flex;
-        //     flex-direction: column;
-        // }
+        &__sec-btn-wap {
+            gap: rem(16);
+        }
+
+        &__text {
+            font-size: rem(17);
+            line-height: calc(29/17);
+            margin-left: 0;
+            margin-bottom: rem(16);
+        }
     }
 
     @include mq(sp) {
@@ -76,7 +112,7 @@
     color: $white;
 
     &__inner {
-        padding-block: rem(238) rem(48);
+        padding-block: rem(241) rem(48);
         padding-inline: rem(20);
         max-width: rem(1200);
         width: calc(100% - rem(80));
@@ -101,7 +137,7 @@
     }
 
     &__main {
-        margin-top: rem(56);
+        margin-top: rem(48);
         display: flex;
         justify-content: space-between;
         gap: rem(96);
@@ -229,27 +265,27 @@
     }
 
     &__sns {
-        margin-top: rem(60);
+        margin-top: rem(48);
         width: fit-content;
         display: flex;
         align-items: center;
-        gap: 1.5rem;
+        gap: rem(28);
 
         .sns {
             &--x {
-                width: 2.375rem;
+                width: rem(36);
             }
 
             &--youtube {
-                width: 2.875rem;
+                width: rem(46);
             }
 
             &--facebook {
-                width: 2.5rem;
+                width: rem(40);
             }
 
             &--instagram {
-                width: 2.375rem;
+                width: rem(38);
             }
 
             a {
@@ -300,37 +336,40 @@
 
     @include mq(tb) {
         &__inner {
-            padding-block: rem(212) 2rem;
+            padding-block: rem(365) rem(24);
             width: calc(100% - rem(48));
             padding-inline: rem(11.5);
         }
 
         &__logo {
-            gap: rem(16);
+            gap: rem(12);
 
             &-img {
-                width: rem(77);
+                width: rem(68);
             }
 
             &-text {
-                width: rem(208);
-                padding-bottom: rem(5);
+                width: rem(194);
+                padding-top: rem(16);
+                padding-bottom: 0;
             }
         }
 
         &__address {
             width: 100%;
-            gap: 1rem;
+            gap: rem(12);
 
             dl {
-                gap: rem(2);
+                gap: rem(0);
 
                 dt {
                     font-size: rem(13);
+                    line-height: calc(22/13);
                 }
 
                 dd {
                     font-size: rem(12);
+                    line-height: calc(20/12);
                 }
             }
         }
@@ -338,12 +377,12 @@
         &__main {
             flex-direction: column;
             gap: rem(36);
-            margin-top: rem(36);
+            margin-top: rem(32);
         }
 
         &__nav {
             flex-wrap: wrap;
-            gap: 1rem 1.25rem;
+            gap: 1rem rem(40);
             padding-top: rem(36);
             border-top: 1px solid #004273;
             margin-top: 0;
@@ -354,6 +393,7 @@
 
                 h3 {
                     font-size: rem(13);
+                    line-height: calc(22/13);
 
                     +h3 {
                         margin-top: 1rem;
@@ -370,6 +410,7 @@
 
                         a {
                             font-size: rem(12);
+                            line-height: calc(20/12);
 
                             &::before {
                                 width: 0.5rem;
@@ -388,10 +429,10 @@
                     flex: 1 0 100%;
                     display: flex;
                     flex-wrap: wrap;
-                    gap: 1rem 1.25rem;
+                    gap: rem(16) rem(40);
 
                     h3 {
-                        width: calc(50% - 1.25rem / 2);
+                        width: calc(50% - rem(40) / 2);
                         margin: 0;
                     }
                 }
@@ -400,12 +441,10 @@
 
         &__sns {
             margin-inline: auto;
-            margin-top: rem(40);
+            margin-top: rem(32);
         }
 
         &__copy {
-            padding-block: 1.25rem;
-
             &-inner {
                 flex-direction: column;
                 align-items: center;

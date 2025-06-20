@@ -38,7 +38,7 @@ Template Name: リクルートページ
             </div>
             <div class="component-box-btn recruit-btn">
                 <div class="btn-list">
-                    <a href="<?php echo esc_url(home_url('/')); ?>" class="btn btn--recruit inview">
+                    <a href="https://omi-in.co.jp/saiyo/" target="_blank" class="btn btn--recruit inview">
                         <span class="btn__text">近江印刷株式会社<br>リクルートサイト</span>
                         <span class="btn__icon">
                             <svg viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">

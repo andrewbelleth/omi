@@ -123,7 +123,9 @@ Template Name: 入稿ガイド
                         <p class="text-flex mt0--sp12">
                             <span>電話</span>
                             <span>:</span>
-                            <span>0749-42-8400</span>
+                            <span>
+                                <a href="tel:0749428400">0749-42-8400</a>
+                            </span>
                         </p>
                         <p class="text-flex mt0--sp12">
                             <span>受取可能日時</span>

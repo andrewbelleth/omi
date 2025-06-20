@@ -44,7 +44,7 @@
     &__year {
         display: flex;
         justify-content: center;
-        align-items: center;
+        align-items: flex-start;
         padding-top: rem(24);
         width: rem(222);
 
@@ -56,6 +56,7 @@
             letter-spacing: 0.05em;
             color: $blue;
             opacity: 0.2;
+            width: 100%;
         }
     }
 

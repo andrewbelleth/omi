@@ -127,7 +127,8 @@
             font-weight: 500;
             line-height: 180%;
             letter-spacing: 0.05em;
-            text-decoration: underline 1px;
+            text-decoration: underline;
+            text-decoration-width: 1px;
             text-decoration-color: $blue;
             text-underline-offset: .1em;
         }

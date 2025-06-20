@@ -21,8 +21,8 @@ get_template_part('template-parts/loading');
             </div>
             <h1 class="mv__title">
                 <picture>
-                    <source srcset="<?php echo get_template_directory_uri(); ?>/assets/images/sp/mv_title-sp.svg" alt="印刷会社だけど、印刷だけじゃない" media="(max-width: 768px)">
-                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/sp/mv_title.png" alt="印刷会社だけど、印刷だけじゃない">
+                    <source srcset="<?php echo get_template_directory_uri(); ?>/assets/images/sp/mv_title.png" alt="印刷会社だけど、印刷だけじゃない" media="(max-width: 768px)">
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/pc/mv_title.svg" alt="印刷会社だけど、印刷だけじゃない">
                 </picture>
             </h1>
         </div>
@@ -30,11 +30,26 @@ get_template_part('template-parts/loading');
     <?php
     $args = array(
         'slider_array' => array(
-            'img_01' => 'sample_slider_img01.webp',
-            'img_02' => 'sample_slider_img02.webp',
-            'img_03' => 'sample_slider_img03.webp',
-            'img_04' => 'sample_slider_img04.webp',
-            'img_05' => 'lp-bunner.webp',
+            'img_01' => array(
+                'img' => 'sample_slider_img01.webp',
+                'link' => 'https://omito.biz/sukettosan/',
+            ),
+            'img_02' => array(
+                'img' => 'sample_slider_img02.webp',
+                'link' => 'https://omito.biz/',
+            ),
+            'img_03' => array(
+                'img' => 'sample_slider_img03.webp',
+                'link' => 'https://omito.biz/rikuel/',
+            ),
+            'img_04' => array(
+                'img' => 'sample_slider_img04.webp',
+                'link' => 'https://omito.biz/dooga/',
+            ),
+            'img_05' => array(
+                'img' => 'lp-bunner.webp',
+                'link' => 'https://omi-in.co.jp/lp',
+            ),
         ),
     );
     ?>
@@ -88,7 +103,7 @@ get_template_part('template-parts/loading');
                 <p>『近江印刷株式会社』と社名にもあるように、<br>印刷物だけを取り扱う会社だとよく思われます。<br>でも、実際は印刷物を作るだけの会社ではありません。</p>
                 <p>「伝えたい人」に「伝えたいこと」を「伝えたい時」に伝える。<br>伝え、伝わることにこだわり続けている近江印刷だからこそ、<br>さまざまなメディアを組み合わせ、<span class="dib">相乗効果を生み出すことができます。</span></p>
             </div>
-            <a href="<?php echo home_url(); ?>/about" class="btn inview">
+            <a href="<?php echo home_url(); ?>/feature" class="btn inview">
                 <span class="btn__text">近江印刷の特徴</span>
                 <span class="btn__icon">
                     <svg viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -138,7 +153,7 @@ $args = array(
                         </p>
                         <p>全国からもお問い合わせをいただき、<br>充実した印刷・製本設備と熟練のオペレーターの技術力で、<br>高品質な製品を短納期で納品しています。</p>
                     </div>
-                    <a href="<?php echo home_url(); ?>/about" class="btn btn--white">
+                    <a href="<?php echo home_url(); ?>/company" class="btn btn--white">
                         <span class="btn__text">会社概要</span>
                         <span class="btn__icon">
                             <svg viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -171,7 +186,7 @@ $args = array(
                         <p>部署の垣根を超えたコミュニケーションが活発で、<br>迅速で丁寧な商品・サービスを提供します。</p>
                         <p>貴社専属のスタッフが付き、見積・スケジュール調整・あらゆるご相談・ご連絡に対しても真摯に対応いたします。</p>
                     </div>
-                    <a href="<?php echo home_url(); ?>/about" class="btn btn--white">
+                    <a href="<?php echo home_url(); ?>/features" class="btn btn--white">
                         <span class="btn__text">近江印刷の特徴</span>
                         <span class="btn__icon">
                             <svg viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -206,7 +221,7 @@ $args = array(
                         <p>紙とデジタルの相乗効果によってさらなる訴求力の向上が期待できますので、<br>印刷物にもWebにも精通した私たちにぜひお任せください。<br>デジタルコンテンツに特化した事業も行っております。
                         </p>
                     </div>
-                    <a href="<?php echo home_url(); ?>/about" class="btn btn--white">
+                    <a href="<?php echo home_url(); ?>/service/degital" class="btn btn--white">
                         <span class="btn__text">デジタルコンテンツ</span>
                         <span class="btn__icon">
                             <svg viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -522,7 +537,7 @@ $args = array(
             <span class="section__title--en">INSTAGRAM</span>
             <span class="section__title--jp">インスタグラム</span>
         </h2>
-        <a href="<?php echo home_url(); ?>/instagram" class="btn btn--right inview">
+        <a href="https://www.instagram.com/omiprint/?hl=ja" target="_blank" class="btn btn--right inview">
             <span class="btn__text">近江印刷株式会社<br class="mobile"> Instagram</span>
             <span class="btn__icon">
                 <svg viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">

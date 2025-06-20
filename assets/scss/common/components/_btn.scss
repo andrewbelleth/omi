@@ -74,6 +74,30 @@
         color: $black;
         box-shadow: 0px 0px 16px 0px rgba(40, 40, 40, 0.15);
 
+        &.btn--tel {
+            background: $blue;
+            color: $white;
+            pointer-events: none;
+            cursor: default;
+
+            &:hover {
+                background: inherit;
+                color: inherit;
+            }
+
+            @include mq(tb) {
+                background: $white;
+                color: $black;
+                pointer-events: auto;
+                cursor: pointer;
+
+                &:hover {
+                    background: $blue;
+                    color: $white;
+                }
+            }
+        }
+
         .btn__icon {
             background: $blue;
         }
@@ -102,20 +126,123 @@
     }
 
     &.cta__btn {
-        width: rem(380);
+        width: rem(492);
         height: rem(102);
-        padding-inline: 3rem;
+        padding-inline: rem(48) rem(60);
         left: auto;
         right: 0;
+        gap: rem(20);
+
+        &.cta__btn02 {
+            width: rem(490);
+            margin-inline: auto;
+            padding-inline: rem(48);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            .cta__btn02-text01 {
+                font-size: rem(18);
+                line-height: 1.5;
+                letter-spacing: 0.1em;
+                font-weight: 700;
+                position: relative;
+                width: rem(114);
+                white-space: nowrap;
+                text-align: center;
+
+                &::before {
+                    content: '';
+                    display: block;
+                    width: rem(2);
+                    height: rem(69);
+                    border-radius: 62.5em;
+                    background: $light-gray;
+                    position: absolute;
+                    right: rem(-23);
+                    top: 50%;
+                    transform: translateY(-50%);
+                    background: $light-gray;
+                }
+            }
+
+            .cta__btn02-text02 {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+
+                .cta__btn02-text02-tel {
+                    font-size: rem(38);
+                    line-height: 1;
+                    letter-spacing: 0;
+                    font-weight: 700;
+                    color: $white;
+                    font-family: $font-hind;
+                    transition: .3s;
+                }
+
+                .cta__btn02-text02-time {
+                    font-size: rem(11);
+                    line-height: 1.6;
+                    letter-spacing: 0.1em;
+                    font-weight: 700;
+                    color: $white;
+                    transition: .3s;
+                }
+
+                // スマホのみ
+                @include mq(tb) {
+
+                    .cta__btn02-text02-tel,
+                    .cta__btn02-text02-time {
+                        color: $blue;
+                    }
+                }
+            }
+
+            &:hover {
+                @include mq(tb) {
+                    .cta__btn02-text02 {
+
+                        .cta__btn02-text02-tel,
+                        .cta__btn02-text02-time {
+                            color: $white;
+                        }
+                    }
+                }
+            }
+
+        }
 
 
         .btn__text {
-            letter-spacing: 0.025em;
+            font-size: rem(20);
+            line-height: 1.6;
+            letter-spacing: 0.1em;
         }
 
         &:hover {
             .btn__icon {
                 transform: translateX(rem(10));
+            }
+        }
+    }
+
+    @include mq(pc) {
+        &.cta__btn {
+            width: rem(428);
+            padding-inline: rem(48) rem(60);
+
+            &.cta__btn02 {
+                width: rem(426);
+                padding-inline: rem(32);
+
+                .cta__btn02-text02 {
+                    .cta__btn02-text02-tel {
+                        font-size: rem(34);
+                    }
+                }
             }
         }
     }
@@ -154,14 +281,55 @@
 
         &.cta__btn {
             height: auto;
-            padding: 0.6875rem 1rem 0.75rem 1.875rem;
+            padding: rem(17) rem(16) rem(17) rem(30);
+            width: rem(279);
+            gap: rem(16);
 
             .btn__text {
-                font-size: 0.875rem;
+                font-size: rem(16);
                 line-height: 1.4;
+                letter-spacing: 0.1em;
             }
 
-            &:hover {
+            &.cta__btn02 {
+                width: rem(279);
+                height: auto;
+                padding: rem(10);
+                flex-direction: column;
+                gap: rem(6);
+
+                .cta__btn02-text01 {
+                    width: 100%;
+                    font-size: rem(13);
+                    line-height: calc(18/13);
+                    letter-spacing: 0.1em;
+
+                    &::before {
+                        display: none;
+                    }
+                }
+
+                .cta__btn02-hr {
+                    display: none;
+                }
+
+                .cta__btn02-text02 {
+                    flex-direction: column;
+                    gap: rem(0);
+
+                    .cta__btn02-text02-tel {
+                        font-size: rem(32);
+                        line-height: 1;
+                        letter-spacing: 0;
+                    }
+
+                    .cta__btn02-text02-time {
+                        font-size: rem(10);
+                        line-height: 1.6;
+                        letter-spacing: 0.1em;
+                        margin-top: rem(-2);
+                    }
+                }
 
             }
         }
@@ -172,29 +340,6 @@
 
             &:hover {
                 left: auto;
-            }
-        }
-    }
-
-    @include mq(sp) {
-        &.cta__btn {
-            width: rem(320);
-            left: 50%;
-            transform: translateX(-50%);
-            margin-inline: 0;
-            right: auto;
-
-            &:hover {
-                right: auto;
-            }
-        }
-    }
-
-    @media screen and (max-width: 440px) {
-        &.cta__btn {
-            width: rem(280);
-
-            &:hover {
             }
         }
     }

@@ -117,6 +117,7 @@
     line-height: 1.8;
     letter-spacing: .05em;
 }
+
 .fw500 {
     font-weight: 500;
 }
@@ -136,8 +137,10 @@
 .ltsp05em {
     letter-spacing: .05em;
 }
-.mt0--sp12{
+
+.mt0--sp12 {
     margin-top: 0;
+
     @include mq(tb) {
         margin-top: rem(12);
     }
@@ -147,12 +150,14 @@
     margin-top: rem(8);
 }
 
-.mt2--sp6{
+.mt2--sp6 {
     margin-top: rem(2);
+
     @include mq(tb) {
         margin-top: rem(6);
     }
 }
+
 .mt8--sp12 {
     margin-top: rem(8);
 
@@ -169,12 +174,14 @@
     }
 }
 
-.mt8--sp20{
+.mt8--sp20 {
     margin-top: rem(8);
+
     @include mq(tb) {
         margin-top: rem(20);
     }
 }
+
 .mt16 {
     margin-top: rem(16);
 }
@@ -186,8 +193,10 @@
         margin-top: rem(10);
     }
 }
+
 .mt16--sp12 {
     margin-top: rem(16);
+
     @include mq(tb) {
         margin-top: rem(12);
     }
@@ -228,8 +237,10 @@
         margin-top: rem(24);
     }
 }
-.pt0--sp16{
+
+.pt0--sp16 {
     padding-top: 0;
+
     @include mq(tb) {
         padding-top: rem(16);
     }
@@ -286,6 +297,10 @@
 
 .pl20 {
     padding-left: rem(20);
+}
+
+.m0 {
+    margin: 0 !important;
 }
 
 .mt0 {
@@ -832,7 +847,7 @@
 
 .gap20--sp16 {
     gap: rem(20) !important;
-    
+
     @include mq(tb) {
         gap: rem(16) !important;
     }
@@ -1226,12 +1241,17 @@
     .btn__icon {
         width: rem(32);
         height: rem(32);
+        background-color: $blue;
         flex-shrink: 0;
-        transition: .3s;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        transition: 0.3s;
 
         svg {
-            width: 100%;
-            height: 100%;
+            width: rem(20);
+            height: rem(20);
 
             path {
                 transition: .3s;
@@ -1253,10 +1273,7 @@
 
         .btn__icon {
             transform: translateX(rem(10));
-
-            circle {
-                fill: $white;
-            }
+            background-color: $white;
 
             path {
                 fill: $blue;
@@ -1287,6 +1304,17 @@
         .btn__icon {
             width: rem(23);
             height: rem(23);
+
+            svg {
+                width: rem(13);
+                height: rem(13);
+            }
+        }
+
+        &:hover {
+            .btn__icon {
+                transform: translateX(rem(5));
+            }
         }
     }
 }
@@ -1339,11 +1367,19 @@
             .link-01-link-icon {
                 width: rem(28);
                 height: rem(28);
+                border-radius: 50%;
+                background: $white;
+                border: rem(1) solid $blue;
                 display: block;
+                transition: .3s;
+                flex-shrink: 0;
+                display: flex;
+                align-items: center;
+                justify-content: center;
 
                 svg {
-                    width: 100%;
-                    height: 100%;
+                    width: rem(18);
+                    height: rem(18);
                 }
             }
 
@@ -1375,6 +1411,11 @@
                 .link-01-link-icon {
                     width: rem(23);
                     height: rem(23);
+
+                    svg {
+                        width: rem(13);
+                        height: rem(13);
+                    }
                 }
 
                 .link-01-link-text {
@@ -1775,10 +1816,11 @@
     font-weight: 700;
 }
 
-.fz13--sp12{
+.fz13--sp12 {
     font-size: rem(13);
     letter-spacing: lts-em(0.65, 13);
     line-height: 180%;
+
     @include mq(tb) {
         font-size: rem(12);
         letter-spacing: lts-em(0.6, 12);
@@ -1827,15 +1869,17 @@
     letter-spacing: lts-em(1.2, 12);
 }
 
-.fz13--sp12{
+.fz13--sp12 {
     font-size: rem(13);
     line-height: 180%;
     letter-spacing: lts-em(0.65, 13);
+
     @include mq(tb) {
         font-size: rem(12);
         letter-spacing: lts-em(0.6, 12);
     }
 }
+
 .link-blue {
     color: $blue;
     text-decoration: underline;
@@ -1850,9 +1894,10 @@
     display: block;
 }
 
-.mr2{
+.mr2 {
     margin-right: rem(2);
 }
+
 .mr7 {
     margin-right: rem(7);
 }
@@ -1891,4 +1936,14 @@
 
 .txt-blue {
     color: $blue;
+}
+
+a[href^="tel:"] {
+    pointer-events: none;
+    cursor: default;
+
+    @include mq(tb) {
+        pointer-events: auto;
+        cursor: pointer;
+    }
 }
