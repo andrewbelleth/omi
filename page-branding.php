@@ -40,31 +40,31 @@ Template Name: 印刷ページ
                 <div class="branding-merit-list mt24">
                     <div class="branding-merit-list__item">
                         <div class="branding-merit-list__item-img">
-                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/branding/merit01.png" alt="競合との差別化">
+                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/branding/merit01.webp" alt="競合との差別化">
                         </div>
                         <h3 class="branding-merit-list__item-title">競合との<br class="mobile">差別化</h3>
                     </div>
                     <div class="branding-merit-list__item">
                         <div class="branding-merit-list__item-img">
-                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/branding/merit02.png" alt="価格競争からの脱却">
+                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/branding/merit02.webp" alt="価格競争からの脱却">
                         </div>
                         <h3 class="branding-merit-list__item-title">価格競争<br>からの脱却</h3>
                     </div>
                     <div class="branding-merit-list__item">
                         <div class="branding-merit-list__item-img">
-                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/branding/merit03.png" alt="顧客のロイヤル化">
+                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/branding/merit03.webp" alt="顧客のロイヤル化">
                         </div>
                         <h3 class="branding-merit-list__item-title">顧客の<br>ロイヤル化</h3>
                     </div>
                     <div class="branding-merit-list__item">
                         <div class="branding-merit-list__item-img">
-                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/branding/merit04.png" alt="社内モチベーションの向上">
+                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/branding/merit04.webp" alt="社内モチベーションの向上">
                         </div>
                         <h3 class="branding-merit-list__item-title">社内<br>モチベーション<br>の向上</h3>
                     </div>
                     <div class="branding-merit-list__item">
                         <div class="branding-merit-list__item-img">
-                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/branding/merit05.png" alt="優秀な人材の確保">
+                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/branding/merit05.webp" alt="優秀な人材の確保">
                         </div>
                         <h3 class="branding-merit-list__item-title">優秀な人材の<br class="mobile">確保</h3>
                     </div>
@@ -170,17 +170,17 @@ Template Name: 印刷ページ
                 <div class="img-list img-list--3column row-gap20--sp12 mt20 pl21--sp20">
                     <div class="img-list__item">
                         <div class="img-list__item-img">
-                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/branding/support01.png" alt="">
+                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/branding/support01.webp" alt="">
                         </div>
                     </div>
                     <div class="img-list__item">
                         <div class="img-list__item-img">
-                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/branding/support02.png" alt="">
+                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/branding/support02.webp" alt="">
                         </div>
                     </div>
                     <div class="img-list__item">
                         <div class="img-list__item-img">
-                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/branding/support03.png" alt="">
+                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/branding/support03.webp" alt="">
                         </div>
                     </div>
                 </div>
@@ -192,48 +192,48 @@ Template Name: 印刷ページ
                     <div class="img-list__item">
                         <div class="img-list__item-img">
                             <picture>
-                                <source srcset="<?php echo get_template_directory_uri(); ?>/assets/images/branding/logo01.png" media="(min-width: 768px)">
-                                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/branding/logo01-sp.png" alt="">
+                                <source srcset="<?php echo get_template_directory_uri(); ?>/assets/images/branding/logo01.webp" media="(min-width: 768px)">
+                                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/branding/logo01-sp.webp" alt="">
                             </picture>
                         </div>
                     </div>
                     <div class="img-list__item">
                         <div class="img-list__item-img">
                             <picture>
-                                <source srcset="<?php echo get_template_directory_uri(); ?>/assets/images/branding/logo02.png" media="(min-width: 768px)">
-                                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/branding/logo02-sp.png" alt="">
+                                <source srcset="<?php echo get_template_directory_uri(); ?>/assets/images/branding/logo02.webp" media="(min-width: 768px)">
+                                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/branding/logo02-sp.webp" alt="">
                             </picture>
                         </div>
                     </div>
                     <div class="img-list__item">
                         <div class="img-list__item-img">
                             <picture>
-                                <source srcset="<?php echo get_template_directory_uri(); ?>/assets/images/branding/logo03.png" media="(min-width: 768px)">
-                                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/branding/logo03-sp.png" alt="">
+                                <source srcset="<?php echo get_template_directory_uri(); ?>/assets/images/branding/logo03.webp" media="(min-width: 768px)">
+                                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/branding/logo03-sp.webp" alt="">
                             </picture>
                         </div>
                     </div>
                     <div class="img-list__item">
                         <div class="img-list__item-img">
                             <picture>
-                                <source srcset="<?php echo get_template_directory_uri(); ?>/assets/images/branding/logo04.png" media="(min-width: 768px)">
-                                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/branding/logo04-sp.png" alt="">
+                                <source srcset="<?php echo get_template_directory_uri(); ?>/assets/images/branding/logo04.webp" media="(min-width: 768px)">
+                                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/branding/logo04-sp.webp" alt="">
                             </picture>
                         </div>
                     </div>
                     <div class="img-list__item">
                         <div class="img-list__item-img">
                             <picture>
-                                <source srcset="<?php echo get_template_directory_uri(); ?>/assets/images/branding/logo05.png" media="(min-width: 768px)">
-                                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/branding/logo05-sp.png" alt="">
+                                <source srcset="<?php echo get_template_directory_uri(); ?>/assets/images/branding/logo05.webp" media="(min-width: 768px)">
+                                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/branding/logo05-sp.webp" alt="">
                             </picture>
                         </div>
                     </div>
                     <div class="img-list__item">
                         <div class="img-list__item-img">
                             <picture>
-                                <source srcset="<?php echo get_template_directory_uri(); ?>/assets/images/branding/logo06.png" media="(min-width: 768px)">
-                                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/branding/logo06-sp.png" alt="">
+                                <source srcset="<?php echo get_template_directory_uri(); ?>/assets/images/branding/logo06.webp" media="(min-width: 768px)">
+                                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/branding/logo06-sp.webp" alt="">
                             </picture>
                         </div>
                     </div>
@@ -245,17 +245,17 @@ Template Name: 印刷ページ
                 <div class="img-list img-list--3column row-gap20--sp16 mt20 pl21--sp20">
                     <div class="img-list__item">
                         <div class="img-list__item-img">
-                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/branding/character01.png" alt="">
+                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/branding/character01.webp" alt="">
                         </div>
                     </div>
                     <div class="img-list__item">
                         <div class="img-list__item-img">
-                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/branding/character02.png" alt="">
+                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/branding/character02.webp" alt="">
                         </div>
                     </div>
                     <div class="img-list__item">
                         <div class="img-list__item-img">
-                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/branding/character03.png" alt="">
+                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/branding/character03.webp" alt="">
                         </div>
                     </div>
                 </div>
@@ -266,7 +266,7 @@ Template Name: 印刷ページ
                 <div class="img-list img-list--3column mt20 pl21--sp20">
                     <div class="img-list__item">
                         <div class="img-list__item-img">
-                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/branding/concept01.png" alt="">
+                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/branding/concept01.webp" alt="">
                         </div>
                     </div>
                 </div>
@@ -277,22 +277,22 @@ Template Name: 印刷ページ
                 <div class="img-list img-list--3column row-gap20--sp12 mt20 pl21--sp20">
                     <div class="img-list__item">
                         <div class="img-list__item-img">
-                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/branding/label01.png" alt="">
+                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/branding/label01.webp" alt="">
                         </div>
                     </div>
                     <div class="img-list__item">
                         <div class="img-list__item-img">
-                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/branding/label02.png" alt="">
+                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/branding/label02.webp" alt="">
                         </div>
                     </div>
                     <div class="img-list__item">
                         <div class="img-list__item-img">
-                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/branding/label03.png" alt="">
+                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/branding/label03.webp" alt="">
                         </div>
                     </div>
                 </div>
                 <div class="component-box-btn mt48">
-                    <a href="<?php echo esc_url(home_url('/works')); ?>" class="btn inview">
+                    <a href="<?php echo esc_url(home_url('/works/?works-cat=ブランディング')); ?>" class="btn inview">
                         <span class="btn__text">製作実績を見る</span>
                         <span class="btn__icon">
                             <svg viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">

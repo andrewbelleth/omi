@@ -36,7 +36,7 @@ Template Name: 彦根経済新聞ページ
                     <p>2000年にスタートした「シブヤ経済新聞」を本部に、国内外145地域を超える編集部で構成される「みんなの経済新聞ネットワーク（みん経） 」。月に1600本以上のニュースを配信、月間で約2300万PVを誇ります。</p>
                 </div>
                 <div class="img-wrapper mt32--sp24">
-                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/newspaper/newspaper-item01.png" alt="広報誌から事務用品印刷物まで幅広く対応" width="368" height="220" loading="lazy">
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/newspaper/newspaper-item01.webp" alt="広報誌から事務用品印刷物まで幅広く対応" width="368" height="220" loading="lazy">
                 </div>
 
                 <div class="info-list mt48--sp40">
@@ -73,7 +73,7 @@ Template Name: 彦根経済新聞ページ
                     <p>市内在住のライター3名、フォトグラファー1名を含む8名体制の編集部で、日々、彦根エリアの採れたてニュースを発信しています。</p>
                 </div>
                 <div class="img-wrapper mt32--sp20">
-                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/newspaper/newspaper-item02.png" alt="編集部・取材体制について" width="368" height="220" loading="lazy">
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/newspaper/newspaper-item02.webp" alt="編集部・取材体制について" width="368" height="220" loading="lazy">
                 </div>
             </section>
 
@@ -111,14 +111,14 @@ Template Name: 彦根経済新聞ページ
                 </div>
                 <div class="img-wrapper pt24 pl21--sp20">
                     <picture>
-                        <source srcset="<?php echo get_template_directory_uri(); ?>/assets/images/newspaper/multi-channel-sp.png" media="(max-width: 768px)">
-                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/newspaper/multi-channel-pc.png" alt="マルチチャンネルでコンテンツ提供" width="368" height="220" loading="lazy">
+                        <source srcset="<?php echo get_template_directory_uri(); ?>/assets/images/newspaper/multi-channel-sp.webp" media="(max-width: 768px)">
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/newspaper/multi-channel-pc.webp" alt="マルチチャンネルでコンテンツ提供" width="368" height="220" loading="lazy">
                     </picture>
                 </div>
 
                 <h3 class="ttl-02 ttl-02--triangle mt32--sp40">彦根の話題がYahoo!にも掲載！</h3>
                 <div class="img-wrapper pt16--sp12 pl21--sp20">
-                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/newspaper/newspaper-item03.png" alt="彦根の話題がYahoo!にも掲載！" width="368" height="220" loading="lazy">
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/newspaper/newspaper-item03.webp" alt="彦根の話題がYahoo!にも掲載！" width="368" height="220" loading="lazy">
                 </div>
             </section>
 
@@ -173,14 +173,14 @@ Template Name: 彦根経済新聞ページ
 
                 <div class="img-wrapper spmt32 sppl20">
                     <picture>
-                        <source srcset="<?php echo get_template_directory_uri(); ?>/assets/images/newspaper/newspaper-graph01-sp.png" media="(max-width: 768px)">
-                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/newspaper/newspaper-graph01-pc.png" alt="マルチチャンネルでコンテンツ提供" width="368" height="220" loading="lazy">
+                        <source srcset="<?php echo get_template_directory_uri(); ?>/assets/images/newspaper/newspaper-graph01-sp.webp" media="(max-width: 768px)">
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/newspaper/newspaper-graph01-pc.webp" alt="マルチチャンネルでコンテンツ提供" width="368" height="220" loading="lazy">
                     </picture>
                 </div>
                 <div class="img-wrapper spmt48 sppl20">
                     <picture>
-                        <source srcset="<?php echo get_template_directory_uri(); ?>/assets/images/newspaper/newspaper-graph02-sp.png" media="(max-width: 768px)">
-                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/newspaper/newspaper-graph02-pc.png" alt="マルチチャンネルでコンテンツ提供" width="368" height="220" loading="lazy">
+                        <source srcset="<?php echo get_template_directory_uri(); ?>/assets/images/newspaper/newspaper-graph02-sp.webp" media="(max-width: 768px)">
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/newspaper/newspaper-graph02-pc.webp" alt="マルチチャンネルでコンテンツ提供" width="368" height="220" loading="lazy">
                     </picture>
                 </div>
             </section>
@@ -188,13 +188,13 @@ Template Name: 彦根経済新聞ページ
             <section class="component-box-item" id="pr">
                 <h2 class="ttl-01">彦根経済新聞が取材・制作する記事広告</h2>
                 <p class="img-wrapper w245--sp238 mt32">
-                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/newspaper/minpr.png" alt="みん経PRセンター" width="245" height="24" loading="lazy">
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/newspaper/minpr.webp" alt="みん経PRセンター" width="245" height="24" loading="lazy">
                 </p>
                 <div class="txt mt24--sp20">
                     <p>各地域に拠点がある編集部ならではのローカル目線の取材で、エリアの地域性に特化したトピックを織り込みながら制作されます。</p>
                 </div>
                 <div class="img-wrapper mt16">
-                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/newspaper/newspaper-item04.png" alt="" width="760" height="350" loading="lazy">
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/newspaper/newspaper-item04.webp" alt="" width="760" height="350" loading="lazy">
                 </div>
                 <h3 class="ttl-02 ttl-02--triangle mt32--sp40">各ページから記事広告に誘導</h3>
                 <div class="txt-01">
@@ -202,8 +202,8 @@ Template Name: 彦根経済新聞ページ
                 </div>
                 <div class="img-wrapper mt16 pl21--sp20">
                     <picture>
-                        <source srcset="<?php echo get_template_directory_uri(); ?>/assets/images/newspaper/newspaper-item05-sp.png" media="(max-width: 768px)">
-                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/newspaper/newspaper-item05.png" alt="" width="739" height="340" loading="lazy">
+                        <source srcset="<?php echo get_template_directory_uri(); ?>/assets/images/newspaper/newspaper-item05-sp.webp" media="(max-width: 768px)">
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/newspaper/newspaper-item05.webp" alt="" width="739" height="340" loading="lazy">
                     </picture>
                 </div>
                 <h3 class="ttl-02 ttl-02--triangle mt32--sp40">ローカルトピックの合間に、自然と目に留まる掲載方式</h3>
@@ -277,8 +277,8 @@ Template Name: 彦根経済新聞ページ
                             </div>
                             <div class="newspaper-support-box-img">
                                 <picture>
-                                    <source srcset="<?php echo get_template_directory_uri(); ?>/assets/images/newspaper/newspaper-item06-sp.png" media="(max-width: 768px)">
-                                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/newspaper/newspaper-item06.png" alt="" width="246" height="307" loading="lazy">
+                                    <source srcset="<?php echo get_template_directory_uri(); ?>/assets/images/newspaper/newspaper-item06-sp.webp" media="(max-width: 768px)">
+                                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/newspaper/newspaper-item06.webp" alt="" width="246" height="307" loading="lazy">
                                 </picture>
                             </div>
                         </div>
@@ -294,7 +294,7 @@ Template Name: 彦根経済新聞ページ
                     </ul>
                 </div>
                 <div class="component-box-btn mt32">
-                    <a href="<?php echo esc_url(home_url('/service/printing/products')); ?>" class="btn inview">
+                    <a href="https://hikone.keizai.biz/contact/contact.html" target="_blank" class="btn inview">
                         <span class="btn__text">お申し込みはこちら</span>
                         <span class="btn__icon">
                             <svg viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -313,7 +313,7 @@ Template Name: 彦根経済新聞ページ
                 <h2 class="ttl-01">編集部への情報提供</h2>
                 <h3 class="ttl-02 ttl-02--triangle mt32">プレスリリースの送付をご希望の場合は、こちらからご連絡ください</h3>
                 <div class="component-box-btn mt24 pl21--sp0">
-                    <a href="<?php echo esc_url(home_url('/service/printing/products')); ?>" class="btn inview">
+                    <a href="https://hikone.keizai.biz/contact/press.html" target="_blank" class="btn inview">
                         <span class="btn__text">情報・プレスリリース</span>
                         <span class="btn__icon">
                             <svg viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -330,7 +330,7 @@ Template Name: 彦根経済新聞ページ
                     <p>彦根エリアの方からの情報提供も大歓迎です。<br>公式SNSでも情報提供を受け付けていますので、お気軽にご連絡ください。</p>
                 </div>
                 <div class="component-box-btn component-box-btn--col3 mt24 pl21--sp0">
-                    <a href="<?php echo esc_url(home_url('/service/printing/products')); ?>" class="btn btn--onlyspanimation inview">
+                    <a href="https://www.facebook.com/hikonekeizai/" target="_blank" class="btn btn--onlyspanimation inview">
                         <span class="btn__text">公式Facebook</span>
                         <span class="btn__icon">
                             <svg viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -342,7 +342,7 @@ Template Name: 彦根経済新聞ページ
                             </svg>
                         </span>
                     </a>
-                    <a href="<?php echo esc_url(home_url('/service/printing/products')); ?>" class="btn btn--onlyspanimation inview">
+                    <a href="https://www.instagram.com/hikone_keizai/" target="_blank" class="btn btn--onlyspanimation inview">
                         <span class="btn__text">公式Instagram</span>
                         <span class="btn__icon">
                             <svg viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -354,7 +354,7 @@ Template Name: 彦根経済新聞ページ
                             </svg>
                         </span>
                     </a>
-                    <a href="<?php echo esc_url(home_url('/service/printing/products')); ?>" class="btn btn--onlyspanimation inview">
+                    <a href="https://x.com/hikone_keizai" target="_blank" class="btn btn--onlyspanimation inview">
                         <span class="btn__text">公式X</span>
                         <span class="btn__icon">
                             <svg viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">

@@ -13,9 +13,9 @@ Template Name: projectページ
 <div class="section wrapper-152">
     <section class="sdgs project">
         <div class="project__img-wrapper">
-        <a href="<?php echo get_template_directory_uri(); ?>/assets/images/project/project-img01.webp" data-lightbox="project-img01">
-            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/project/project-img01.webp" alt="SDGsの画像" width="960" height="489" loading="lazy">
-        </a>
+            <a href="<?php echo get_template_directory_uri(); ?>/assets/images/project/project-img01.webp" data-lightbox="project-img01">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/project/project-img01.webp" alt="SDGsの画像" width="960" height="489" loading="lazy">
+            </a>
         </div>
         <h2 class="sdgs__head mt56--sp40">
             近江印刷株式会社は<br class="sp-only">次世代に向けた<br>
@@ -58,9 +58,9 @@ Template Name: projectページ
     </section><!-- /.sdgs -->
     <section class="mlgs project">
         <div class="project__img-wrapper">
-        <a href="<?php echo get_template_directory_uri(); ?>/assets/images/project/project-img02.webp" data-lightbox="project-img02">
-            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/project/project-img02.webp" alt="マザーレイクゴールズについての説明画像" width="960" height="723" loading="lazy">
-        </a>
+            <a href="<?php echo get_template_directory_uri(); ?>/assets/images/project/project-img02.webp" data-lightbox="project-img02">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/project/project-img02.webp" alt="マザーレイクゴールズについての説明画像" width="960" height="723" loading="lazy">
+            </a>
         </div>
         <h2 class="mlgs__head mt56--sp40">
             近江印刷株式会社は<br>
@@ -72,7 +72,7 @@ Template Name: projectページ
         </p>
         <div class="component-box-btn mt48--sp40">
             <div class="btn-list">
-                <a href="<?php echo esc_url(home_url('/')); ?>" class="btn inview">
+                <a href="https://mlgs.shiga.jp/" target="_blank" class="btn inview">
                     <span class="btn__text">滋賀県<br class="sp-only">マザーレイクゴールズ</span>
                     <span class="btn__icon">
                         <svg xmlns="http://www.w3.org/2000/svg" width="19" height="18" viewBox="0 0 19 18" fill="none">
@@ -86,9 +86,9 @@ Template Name: projectページ
     </section><!-- /.sdgs -->
     <section class="smaile project">
         <div class="project__img-wrapper">
-        <a href="<?php echo get_template_directory_uri(); ?>/assets/images/project/project-img03.webp" data-lightbox="project-img03">
-            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/project/project-img03.webp" alt="すまいるあくしょんについての画像" width="960" height="763" loading="lazy">
-        </a>
+            <a href="<?php echo get_template_directory_uri(); ?>/assets/images/project/project-img03.webp" data-lightbox="project-img03">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/project/project-img03.webp" alt="すまいるあくしょんについての画像" width="960" height="763" loading="lazy">
+            </a>
         </div>
         <h2 class="smaile__head mt56--sp40">
             近江印刷株式会社は<br>
@@ -111,7 +111,7 @@ Template Name: projectページ
         </ul>
         <div class="component-box-btn mt48--sp40">
             <div class="btn-list">
-                <a href="<?php echo esc_url(home_url('/')); ?>" class="btn inview">
+                <a href="https://smile-action.jp/" target="_blank" class="btn inview">
                     <span class="btn__text">滋賀県<br class="sp-only"> すまいる・あくしょん</span>
                     <span class="btn__icon">
                         <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">

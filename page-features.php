@@ -21,8 +21,8 @@ Template Name: 特徴ページ
             <div class="feature__item feature__item--01">
                 <div class="feature__item-image inview">
                     <picture>
-                        <source srcset="<?php echo get_template_directory_uri(); ?>/assets/images/features/features-item01-pc.png" media="(min-width: 768px)">
-                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/features/features-item01-sp.png" alt="創業66年の豊富な実績とノウハウ">
+                        <source srcset="<?php echo get_template_directory_uri(); ?>/assets/images/features/features-item01-pc.webp" media="(min-width: 768px)">
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/features/features-item01-sp.webp" alt="創業66年の豊富な実績とノウハウ">
                     </picture>
                 </div>
                 <div class="feature__item-content">
@@ -40,8 +40,8 @@ Template Name: 特徴ページ
             <div class="feature__item feature__item--02">
                 <div class="feature__item-image inview">
                     <picture>
-                        <source srcset="<?php echo get_template_directory_uri(); ?>/assets/images/features/features-item02-pc.png" media="(min-width: 768px)">
-                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/features/features-item02-sp.png" alt="創業66年の豊富な実績とノウハウ">
+                        <source srcset="<?php echo get_template_directory_uri(); ?>/assets/images/features/features-item02-pc.webp" media="(min-width: 768px)">
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/features/features-item02-sp.webp" alt="創業66年の豊富な実績とノウハウ">
                     </picture>
                 </div>
                 <div class="feature__item-content">
@@ -60,8 +60,8 @@ Template Name: 特徴ページ
             <div class="feature__item feature__item--03">
                 <div class="feature__item-image inview">
                     <picture>
-                        <source srcset="<?php echo get_template_directory_uri(); ?>/assets/images/features/features-item03-pc.png" media="(min-width: 768px)">
-                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/features/features-item03-sp.png" alt="創業66年の豊富な実績とノウハウ">
+                        <source srcset="<?php echo get_template_directory_uri(); ?>/assets/images/features/features-item03-pc.webp" media="(min-width: 768px)">
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/features/features-item03-sp.webp" alt="創業66年の豊富な実績とノウハウ">
                     </picture>
                 </div>
                 <div class="feature__item-content">
@@ -79,8 +79,8 @@ Template Name: 特徴ページ
             <div class="feature__item feature__item--04">
                 <div class="feature__item-image inview">
                     <picture>
-                        <source srcset="<?php echo get_template_directory_uri(); ?>/assets/images/features/features-item04-pc.png" media="(min-width: 768px)">
-                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/features/features-item04-sp.png" alt="創業66年の豊富な実績とノウハウ">
+                        <source srcset="<?php echo get_template_directory_uri(); ?>/assets/images/features/features-item04-pc.webp" media="(min-width: 768px)">
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/features/features-item04-sp.webp" alt="創業66年の豊富な実績とノウハウ">
                     </picture>
                 </div>
                 <div class="feature__item-content">
@@ -99,8 +99,8 @@ Template Name: 特徴ページ
             <div class="feature__item feature__item--05">
                 <div class="feature__item-image inview">
                     <picture>
-                        <source srcset="<?php echo get_template_directory_uri(); ?>/assets/images/features/features-item05-pc.png" media="(min-width: 768px)">
-                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/features/features-item05-sp.png" alt="創業66年の豊富な実績とノウハウ">
+                        <source srcset="<?php echo get_template_directory_uri(); ?>/assets/images/features/features-item05-pc.webp" media="(min-width: 768px)">
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/features/features-item05-sp.webp" alt="創業66年の豊富な実績とノウハウ">
                     </picture>
                 </div>
                 <div class="feature__item-content">

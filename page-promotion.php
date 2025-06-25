@@ -128,8 +128,8 @@ Template Name: 印刷ページ
                 </div>
 
                 <ul class="img-list img-list--2column-sp1 mt32">
-                    <li><img src="<?php echo get_template_directory_uri(); ?>/assets/images/promotion/promotion-item01.png" alt="広報誌から事務用品印刷物まで幅広く対応" width="368" height="220" loading="lazy"></li>
-                    <li><img src="<?php echo get_template_directory_uri(); ?>/assets/images/promotion/promotion-item02.png" alt="広報誌から事務用品印刷物まで幅広く対応" width="368" height="220" loading="lazy"></li>
+                    <li><img src="<?php echo get_template_directory_uri(); ?>/assets/images/promotion/promotion-item01.webp" alt="広報誌から事務用品印刷物まで幅広く対応" width="368" height="220" loading="lazy"></li>
+                    <li><img src="<?php echo get_template_directory_uri(); ?>/assets/images/promotion/promotion-item02.webp" alt="広報誌から事務用品印刷物まで幅広く対応" width="368" height="220" loading="lazy"></li>
                 </ul>
             </section>
 
@@ -171,8 +171,8 @@ Template Name: 印刷ページ
                 </div>
 
                 <ul class="img-list img-list--2column-sp1 mt32">
-                    <li><img src="<?php echo get_template_directory_uri(); ?>/assets/images/promotion/promotion-item03.png" alt="広報誌から事務用品印刷物まで幅広く対応" width="368" height="220" loading="lazy"></li>
-                    <li><img src="<?php echo get_template_directory_uri(); ?>/assets/images/promotion/promotion-item04.png" alt="広報誌から事務用品印刷物まで幅広く対応" width="368" height="220" loading="lazy"></li>
+                    <li><img src="<?php echo get_template_directory_uri(); ?>/assets/images/promotion/promotion-item03.webp" alt="広報誌から事務用品印刷物まで幅広く対応" width="368" height="220" loading="lazy"></li>
+                    <li><img src="<?php echo get_template_directory_uri(); ?>/assets/images/promotion/promotion-item04.webp" alt="広報誌から事務用品印刷物まで幅広く対応" width="368" height="220" loading="lazy"></li>
                 </ul>
             </section>
 
@@ -226,8 +226,8 @@ Template Name: 印刷ページ
                 </div>
 
                 <ul class="img-list img-list--2column-sp1 mt32">
-                    <li><img src="<?php echo get_template_directory_uri(); ?>/assets/images/promotion/promotion-item05.png" alt="広報誌から事務用品印刷物まで幅広く対応" width="368" height="220" loading="lazy"></li>
-                    <li><img src="<?php echo get_template_directory_uri(); ?>/assets/images/promotion/promotion-item06.png" alt="広報誌から事務用品印刷物まで幅広く対応" width="368" height="220" loading="lazy"></li>
+                    <li><img src="<?php echo get_template_directory_uri(); ?>/assets/images/promotion/promotion-item05.webp" alt="広報誌から事務用品印刷物まで幅広く対応" width="368" height="220" loading="lazy"></li>
+                    <li><img src="<?php echo get_template_directory_uri(); ?>/assets/images/promotion/promotion-item06.webp" alt="広報誌から事務用品印刷物まで幅広く対応" width="368" height="220" loading="lazy"></li>
                 </ul>
             </section>
 
@@ -307,8 +307,8 @@ Template Name: 印刷ページ
                 </div>
 
                 <ul class="img-list img-list--2column-sp1 mt32">
-                    <li><img src="<?php echo get_template_directory_uri(); ?>/assets/images/promotion/promotion-item07.png" alt="広報誌から事務用品印刷物まで幅広く対応" width="368" height="220" loading="lazy"></li>
-                    <li><img src="<?php echo get_template_directory_uri(); ?>/assets/images/promotion/promotion-item08.png" alt="広報誌から事務用品印刷物まで幅広く対応" width="368" height="220" loading="lazy"></li>
+                    <li><img src="<?php echo get_template_directory_uri(); ?>/assets/images/promotion/promotion-item07.webp" alt="広報誌から事務用品印刷物まで幅広く対応" width="368" height="220" loading="lazy"></li>
+                    <li><img src="<?php echo get_template_directory_uri(); ?>/assets/images/promotion/promotion-item08.webp" alt="広報誌から事務用品印刷物まで幅広く対応" width="368" height="220" loading="lazy"></li>
                 </ul>
             </section>
 
@@ -328,7 +328,7 @@ Template Name: 印刷ページ
                 </a>
             </div>
             <div class="btn-list-01">
-            <a href="<?php echo esc_url(home_url('/service/printing')); ?>" class="btn-02">
+                <a href="<?php echo esc_url(home_url('/service/printing')); ?>" class="btn-02">
                     <span class="btn__text btn__text--branding">印刷</span>
                     <?php get_template_part('template-parts/parts/btn-icon--blue'); ?>
                 </a>
@@ -344,7 +344,7 @@ Template Name: 印刷ページ
                     <span class="btn__text btn__text--newspaper">ブランディング</span>
                     <?php get_template_part('template-parts/parts/btn-icon--blue'); ?>
                 </a>
-                
+
             </div>
         </div>
     </div>

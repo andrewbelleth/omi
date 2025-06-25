@@ -550,7 +550,9 @@ $args = array(
             </span>
         </a>
     </div>
-    <div class="top-instagram__body inview"></div>
+    <div class="top-instagram__body inview">
+        <?php echo do_shortcode('[instagram-feed feed=1]'); ?>
+    </div>
 </div>
 <div class="top-news section">
     <div class="top-news__head section__head">

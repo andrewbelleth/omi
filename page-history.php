@@ -347,7 +347,7 @@ if (! defined('ABSPATH')) exit;
         <div class="link-01-component">
             <div class="link-01-head">
                 <h3 class="link-01-title">COMPANY</h3>
-                <a href="#" class="link-01-link">
+                <a href="<?php echo esc_url(home_url('/company/')); ?>" class="link-01-link">
                     <?php get_template_part('template-parts/parts/link-01-link-icon'); ?>
                     <span class="link-01-link-text">会社概要トップへ戻る</span>
                 </a>

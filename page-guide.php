@@ -281,7 +281,7 @@ Template Name: 入稿ガイド
                     </p>
                     <p class="pl21--sp20 pt8--sp10">
                         <span class="fw700">●送信先アドレス</span><!-- /.fw700 --><br>
-                        <a class="link-blue" href="<?php echo home_url('/contact/'); ?>">お問い合わせ</a>よりご連絡ください。
+                        <a class="link-blue" href="mailto:customer@omi-in.co.jp.test-google-a.com">お問い合わせ</a>よりご連絡ください。
                     </p>
                 </div>
                 <div class="txt">
@@ -315,7 +315,7 @@ Template Name: 入稿ガイド
                         「手持ちのデータが印刷可能か知りたい」「作成方法が間違っていないかチェックしてほしい」など、入稿データに少しでも不安のあるお客様は、ぜひご活用ください。
                     </p>
                     <div class="component-box-btn mt24">
-                        <a href="<?php echo esc_url(home_url('/')); ?>" class="btn inview">
+                        <a href="https://forms.gle/rvYhhvy68ukRrk2x6" target="_blank" rel="noopener noreferrer" class="btn inview">
                             <span class="btn__text">入稿前データチェック<br class="sp-only">サービスを申し込む</span>
                             <span class="btn__icon">
                                 <svg viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">

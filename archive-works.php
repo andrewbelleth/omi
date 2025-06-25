@@ -88,7 +88,7 @@ $get_works_cat = get_query_var('works-cat');
     <div class="popup">
         <div class="popup__body">
             <button class="popup__close">
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/common/close.png" alt="">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/common/close.webp" alt="">
             </button>
             <form method="get" class="popup__content" action="<?php echo home_url('/works'); ?>">
                 <div class="popup__head">

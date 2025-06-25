@@ -117,6 +117,7 @@
 
     &__item {
         position: relative;
+
         &::before {
             content: '';
             width: 100%;
@@ -341,6 +342,7 @@
                 ._image {
                     width: 100%;
                     height: 100%;
+
                     img {
                         width: 100%;
                         height: 100%;
@@ -621,6 +623,7 @@
 
 .top-service {
     margin-bottom: rem(160);
+
     .section__head {
         max-width: rem(1200);
         width: calc(100% - rem(80));
@@ -683,7 +686,7 @@
             display: flex;
             align-items: center;
             gap: rem(28);
-            
+
             &-text {
                 padding-bottom: rem(16);
             }
@@ -691,6 +694,7 @@
 
         &-text {
             margin-top: rem(8);
+
             p {
                 font-feature-settings: 'pwid' on, 'palt' on;
                 font-size: 0.9375rem;
@@ -830,13 +834,16 @@
         &__img-sticky-wrap {
             gap: rem(60);
         }
+
         &__img-sticky {
             width: rem(402);
             top: calc((100vh - rem(445)) / 2);
+
             .swiper-container {
                 height: rem(445);
             }
         }
+
         &__item {
             &-slide {
                 width: rem(420);
@@ -863,6 +870,7 @@
         &__img-sticky-wrap {
             display: contents;
         }
+
         &__img-sticky {
             display: none;
         }
@@ -955,7 +963,7 @@
         padding-block: rem(88) rem(93);
 
         background: var(--light-gray) url(../images/sp/works_bg-sp.webp) no-repeat top left / 100% 100%;
-        
+
         &__inner {
             width: calc(100% - rem(48));
             display: flex;
@@ -1003,8 +1011,8 @@
 
     &__body {
         margin-top: rem(64);
-        height: rem(400);
-        background: #000;
+        // height: rem(400);
+        // background: #000;
     }
 
     @include mq(tb) {
@@ -1025,7 +1033,7 @@
             margin-top: 2.5rem;
             width: 100vw;
             margin-inline: calc(50% - 50vw);
-            height: rem(375);
+            // height: rem(375);
         }
 
         .btn {

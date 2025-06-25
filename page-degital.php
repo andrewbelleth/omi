@@ -32,7 +32,7 @@ Template Name: 印刷ページ
                 <h2 class="ttl-01 ">OMITO</h2>
                 <h3 class="ttl-02 ttl-02--triangle mt32--sp24">印刷だけじゃない！をテーマに、<br class="mobile">デジタルコンテンツに特化した事業を立ち上げました</h3>
                 <div class="omito-logo">
-                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/degital/omito-logo.png" alt="OMITO" width="199" height="54" loading="lazy">
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/degital/omito-logo.webp" alt="OMITO" width="199" height="54" loading="lazy">
                 </div>
                 <div class="txt-01">
                     <p>デジタル領域について、詳しく知りたい方はOMITOをチェック！</p>
@@ -78,7 +78,7 @@ Template Name: 印刷ページ
                     </a>
                     <a href="https://omito.biz/dooga/" target="_blank" class="btn-02 btn-02--douga">
                         <div class="btn__img">
-                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/degital/douga.png" alt="ドゥーガ" width="113" height="113" loading="lazy">
+                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/degital/douga.webp" alt="ドゥーガ" width="113" height="113" loading="lazy">
                         </div>
                         <div class="btn__body">
                             <span class="btn__text">ドゥーガ</span>
@@ -101,7 +101,7 @@ Template Name: 印刷ページ
                     </a>
                     <a href="https://omito.biz/sukettosan/" target="_blank" class="btn-02 btn-02--sukketosan">
                         <div class="btn__img">
-                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/degital/sukketosan.png" alt="助っ人さん" width="113" height="113" loading="lazy">
+                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/degital/sukketosan.webp" alt="助っ人さん" width="113" height="113" loading="lazy">
                         </div>
                         <div class="btn__body">
                             <span class="btn__text">助っ人さん</span>
@@ -169,17 +169,17 @@ Template Name: 印刷ページ
                 <ul class="img-list img-list--2column-sp1 pt24--sp20 pl21--sp20">
                     <li>
                         <a href="https://www.youtube.com/watch?v=xZJJ5Lx5okM" target="_blank">
-                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/degital/degital-01.png" alt="広報誌から事務用品印刷物まで幅広く対応" width="358" height="202" loading="lazy">
+                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/degital/degital-01.webp" alt="広報誌から事務用品印刷物まで幅広く対応" width="358" height="202" loading="lazy">
                         </a>
                     </li>
                     <li>
                         <a href="https://www.youtube.com/watch?v=O-OTKP6KOrA" target="_blank">
-                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/degital/degital-02.png" alt="広報誌から事務用品印刷物まで幅広く対応" width="358" height="202" loading="lazy">
+                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/degital/degital-02.webp" alt="広報誌から事務用品印刷物まで幅広く対応" width="358" height="202" loading="lazy">
                         </a>
                     </li>
                 </ul>
                 <div class="component-box-btn mt32 pl21--sp0">
-                    <a href="<?php echo esc_url(home_url('/works')); ?>" class="btn inview">
+                    <a href="<?php echo esc_url(home_url('/works/?works-cat=動画')); ?>" class="btn inview">
                         <span class="btn__text">制作実績を見る</span>
                         <span class="btn__icon">
                             <svg viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -240,17 +240,17 @@ Template Name: 印刷ページ
                 <ul class="img-list img-list--2column-sp1 gap24 pt24--sp20 pl21--sp20">
                     <li>
                         <a href="https://gamoukoumuten.com/" target="_blank">
-                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/degital/degital-03.png" alt="広報誌から事務用品印刷物まで幅広く対応" width="358" height="488" loading="lazy">
+                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/degital/degital-03.webp" alt="広報誌から事務用品印刷物まで幅広く対応" width="358" height="488" loading="lazy">
                         </a>
                     </li>
                     <li>
                         <a href="https://hattorijuku.com/" target="_blank">
-                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/degital/degital-04.png" alt="広報誌から事務用品印刷物まで幅広く対応" width="358" height="488" loading="lazy">
+                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/degital/degital-04.webp" alt="広報誌から事務用品印刷物まで幅広く対応" width="358" height="488" loading="lazy">
                         </a>
                     </li>
                 </ul>
                 <div class="component-box-btn mt32 pl21--sp0">
-                    <a href="<?php echo esc_url(home_url('/works')); ?>" class="btn inview">
+                    <a href="<?php echo esc_url(home_url('/works/?works-cat=Webサイト')); ?>" class="btn inview">
                         <span class="btn__text">制作実績を見る</span>
                         <span class="btn__icon">
                             <svg viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -294,11 +294,11 @@ Template Name: 印刷ページ
                 <h3 class="ttl-02 ttl-02--triangle mt32--sp40">Web広告の制作実績</h3>
 
                 <ul class="img-list img-list--2column-sp1 pt24--sp20 pl21--sp20">
-                    <li><img src="<?php echo get_template_directory_uri(); ?>/assets/images/degital/degital-05.png" alt="広報誌から事務用品印刷物まで幅広く対応" width="358" height="358" loading="lazy"></li>
-                    <li><img src="<?php echo get_template_directory_uri(); ?>/assets/images/degital/degital-06.png" alt="広報誌から事務用品印刷物まで幅広く対応" width="358" height="358" loading="lazy"></li>
+                    <li><img src="<?php echo get_template_directory_uri(); ?>/assets/images/degital/degital-05.webp" alt="広報誌から事務用品印刷物まで幅広く対応" width="358" height="358" loading="lazy"></li>
+                    <li><img src="<?php echo get_template_directory_uri(); ?>/assets/images/degital/degital-06.webp" alt="広報誌から事務用品印刷物まで幅広く対応" width="358" height="358" loading="lazy"></li>
                 </ul>
                 <div class="component-box-btn mt32 pl21--sp0">
-                    <a href="<?php echo esc_url(home_url('/works')); ?>" class="btn inview">
+                    <a href="<?php echo esc_url(home_url('/works/?works-cat=Web広告')); ?>" class="btn inview">
                         <span class="btn__text">制作実績を見る</span>
                         <span class="btn__icon">
                             <svg viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -325,7 +325,7 @@ Template Name: 印刷ページ
                     <div class="img-list__item">
                         <div class="img-list__item-img">
                             <a href="https://youtu.be/MteSZXqRkx8" target="_blank">
-                                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/degital/degital-07.png" alt="画像の説明3" width="358" height="237" loading="lazy">
+                                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/degital/degital-07.webp" alt="画像の説明3" width="358" height="237" loading="lazy">
                             </a>
                         </div>
                         <div class="txt mt10">
@@ -335,7 +335,7 @@ Template Name: 印刷ページ
                     <div class="img-list__item">
                         <div class="img-list__item-img">
                             <a href="https://youtu.be/hA4Z7oDDFCI" target="_blank">
-                                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/degital/degital-08.png" alt="画像の説明3" width="358" height="237" loading="lazy">
+                                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/degital/degital-08.webp" alt="画像の説明3" width="358" height="237" loading="lazy">
                             </a>
                         </div>
                         <div class="txt mt10">
@@ -348,18 +348,18 @@ Template Name: 印刷ページ
                 <div class="img-list pt16--sp20 pl21--sp20">
                     <div class="img-list__item">
                         <div class="img-list__item-img">
-                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/degital/degital-09.png" alt="画像の説明3" width="358" height="234" loading="lazy">
+                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/degital/degital-09.webp" alt="画像の説明3" width="358" height="234" loading="lazy">
                         </div>
                     </div>
                     <div class="img-list__item">
                         <div class="img-list__item-img">
-                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/degital/degital-10.png" alt="画像の説明3" width="358" height="234" loading="lazy">
+                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/degital/degital-10.webp" alt="画像の説明3" width="358" height="234" loading="lazy">
                         </div>
                     </div>
                 </div>
 
                 <div class="component-box-btn mt32 pl21--sp0">
-                    <a href="<?php echo esc_url(home_url('/works')); ?>" class="btn inview">
+                    <a href="<?php echo esc_url(home_url('/works/?works-cat=Web-Book')); ?>" class="btn inview">
                         <span class="btn__text">制作実績を見る</span>
                         <span class="btn__icon">
                             <svg viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">

@@ -46,30 +46,6 @@ jQuery(document).ready(function () {
   });
 });
 
-
-// //fadeIn
-// document.addEventListener("DOMContentLoaded", function () {
-//   let triggerEffects = document.querySelectorAll(".fadeIn");
-//   gsap.set(".fadeIn", { y: 40, autoAlpha: 0 });
-
-//   triggerEffects.forEach((trigger) => {
-//     let tl = gsap.timeline({
-//       scrollTrigger: {
-//         trigger: trigger,
-//         start: "top 95%",
-//        /*  markers: true, */
-//       },
-//     });
-//     tl
-//     .fromTo(
-//       trigger,
-//       { y: 40, autoAlpha: 0 },
-//       { y: 0, autoAlpha: 1, stagger: 0.2, delay: 0.5 ,duration: 0.2}
-//     );
-//   });
-// });
-
-
 //あこーでぃおん
 jQuery(document).ready(function () {
   var firstAccordion = jQuery("#firstAccordion");
@@ -190,6 +166,29 @@ document.addEventListener("DOMContentLoaded", function () {
     }, 80);
   }
 });
+
+function activateMenuByHash() {
+  const hash = window.location.hash.replace('#', '');
+  const menuItems = document.querySelectorAll('#sidemenu li a');
+
+  let matched = false;
+
+  menuItems.forEach(item => {
+    const slug = item.getAttribute('data-slug');
+    if (slug === hash) {
+      item.classList.add('active');
+      matched = true;
+    } else {
+      item.classList.remove('active');
+    }
+  });
+}
+
+// 初期表示時
+document.addEventListener('DOMContentLoaded', activateMenuByHash);
+
+// フラグメントが変化したとき
+window.addEventListener('hashchange', activateMenuByHash);
 
 // swiper
 const swiper = new Swiper('.swiper', {
@@ -431,29 +430,6 @@ $(function () {
 
 });
 
-function activateMenuByHash() {
-  const hash = window.location.hash.replace('#', '');
-  const menuItems = document.querySelectorAll('#sidemenu li a');
-
-  let matched = false;
-
-  menuItems.forEach(item => {
-    const slug = item.getAttribute('data-slug');
-    if (slug === hash) {
-      item.classList.add('active');
-      matched = true;
-    } else {
-      item.classList.remove('active');
-    }
-  });
-}
-
-// 初期表示時
-document.addEventListener('DOMContentLoaded', activateMenuByHash);
-
-// フラグメントが変化したとき
-window.addEventListener('hashchange', activateMenuByHash);
-
 //パララックス+紙芝居
 
 gsap.registerPlugin(ScrollTrigger);
@@ -649,7 +625,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const items = gsap.utils.toArray('.top-service__item');
     let closest = items[0];
     let closestDistance = Infinity;
-    
+
     items.forEach((item) => {
       const rect = item.getBoundingClientRect();
       const distance = Math.abs(rect.top);
@@ -658,7 +634,7 @@ document.addEventListener('DOMContentLoaded', function () {
         closest = item;
       }
     });
-    
+
     return items.indexOf(closest);
   }
 
@@ -686,14 +662,14 @@ document.addEventListener('DOMContentLoaded', function () {
         },
         toggleActions: "play none none reverse"
       });
-      
+
       sliderTriggers.push(trigger);
     });
   }
 
   function init() {
     isEnabled = window.innerWidth > 768;
-    
+
     if (isEnabled) {
       const currentIndex = getCurrentSection();
       verticalSlider.slideTo(currentIndex, 0);
@@ -714,7 +690,7 @@ document.addEventListener('DOMContentLoaded', function () {
     resizeTimer = setTimeout(() => {
       const wasEnabled = isEnabled;
       isEnabled = window.innerWidth > 768;
-      
+
       // 状態が変化した時のみ初期化
       if (wasEnabled !== isEnabled) {
         init();
