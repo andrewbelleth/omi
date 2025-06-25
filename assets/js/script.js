@@ -87,8 +87,6 @@ document.addEventListener("DOMContentLoaded", function () {
     const hash = href.slice(hashIndex + 1);
     const targetElement = document.getElementById(hash);
 
-
-
     if (targetElement) {
       ScrollTrigger.create({
         trigger: targetElement,
@@ -113,12 +111,34 @@ document.addEventListener("DOMContentLoaded", function () {
     anchor.classList.remove('active');
   }
 
+  // 現在のスクロール位置に最も近いセクションのアンカーにactiveを付与する関数
+  function updateActiveAnchorByScroll() {
+    let closestAnchor = null;
+    let closestDistance = Infinity;
+    const scrollY = window.scrollY || window.pageYOffset;
+    anchors.forEach(anchor => {
+      const href = anchor.getAttribute('href');
+      const hashIndex = href.indexOf('#');
+      if (hashIndex === -1) return;
+      const hash = href.slice(hashIndex + 1);
+      const targetElement = document.getElementById(hash);
+      if (!targetElement) return;
+      const rect = targetElement.getBoundingClientRect();
+      const distance = Math.abs(rect.top);
+      if (distance < closestDistance) {
+        closestDistance = distance;
+        closestAnchor = anchor;
+      }
+    });
+    if (closestAnchor) {
+      updateActiveState(closestAnchor);
+    }
+  }
+
   // クリックイベントハンドラー
   anchors.forEach((anchor) => {
     anchor.addEventListener("click", (e) => {
       const href = anchor.getAttribute("href");
-
-      // ハッシュ部分を取得
       const hashIndex = href.indexOf("#");
       if (hashIndex === -1) return; // ハッシュがないリンクは無視
 
@@ -141,6 +161,11 @@ document.addEventListener("DOMContentLoaded", function () {
             offsetY: 0,
             autokill: true,
           },
+          onComplete: () => {
+            updateActiveAnchorByScroll();
+            // ハッシュを消す
+            history.replaceState(null, null, window.location.pathname + window.location.search);
+          }
         });
       }
     });
@@ -161,10 +186,21 @@ document.addEventListener("DOMContentLoaded", function () {
             offsetY: 80,
             autokill: true,
           },
+          onComplete: () => {
+            updateActiveAnchorByScroll();
+          }
         });
       }
     }, 80);
+  } else {
+    // ハッシュがない場合は初期表示時にactiveを判定
+    updateActiveAnchorByScroll();
   }
+
+  // スクロール時にもactiveを再判定
+  window.addEventListener('scroll', () => {
+    updateActiveAnchorByScroll();
+  });
 });
 
 function activateMenuByHash() {
