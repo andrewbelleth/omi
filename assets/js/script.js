@@ -645,15 +645,7 @@ document.addEventListener('DOMContentLoaded', function () {
 document.addEventListener('DOMContentLoaded', function () {
   gsap.registerPlugin(ScrollTrigger);
 
-  const verticalSlider = new Swiper(".vertical-slider", {
-    direction: "vertical",
-    slidesPerView: 1,
-    effect: "fade",
-    speed: 1000,
-    allowTouchMove: false,
-    mousewheel: false,
-  });
-
+  let verticalSlider = null;
   let sliderTriggers = [];
   let isEnabled = window.innerWidth > 768;
 
@@ -681,7 +673,10 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // 768px以下では初期化しない
     if (!isEnabled) {
-      verticalSlider.destroy(true, true);
+      if (verticalSlider) {
+        verticalSlider.destroy(true, true);
+        verticalSlider = null;
+      }
       return;
     }
 
@@ -691,10 +686,14 @@ document.addEventListener('DOMContentLoaded', function () {
         start: "top center",
         end: "bottom center",
         onEnter: () => {
-          verticalSlider.slideTo(index);
+          if (verticalSlider && verticalSlider.slides && verticalSlider.slides.length > 0) {
+            verticalSlider.slideTo(index);
+          }
         },
         onEnterBack: () => {
-          verticalSlider.slideTo(index);
+          if (verticalSlider && verticalSlider.slides && verticalSlider.slides.length > 0) {
+            verticalSlider.slideTo(index);
+          }
         },
         toggleActions: "play none none reverse"
       });
@@ -707,9 +706,29 @@ document.addEventListener('DOMContentLoaded', function () {
     isEnabled = window.innerWidth > 768;
 
     if (isEnabled) {
+      // スライダーが存在しない場合のみ初期化
+      if (!verticalSlider) {
+        verticalSlider = new Swiper(".vertical-slider", {
+          direction: "vertical",
+          slidesPerView: 1,
+          effect: "fade",
+          speed: 1000,
+          allowTouchMove: false,
+          mousewheel: false,
+        });
+      }
+
       const currentIndex = getCurrentSection();
-      verticalSlider.slideTo(currentIndex, 0);
+      if (verticalSlider && verticalSlider.slides && verticalSlider.slides.length > 0) {
+        verticalSlider.slideTo(currentIndex, 0);
+      }
       initScrollTriggers();
+    } else {
+      // 768px以下の場合はスライダーを破棄
+      if (verticalSlider) {
+        verticalSlider.destroy(true, true);
+        verticalSlider = null;
+      }
     }
   }
 

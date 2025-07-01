@@ -37,6 +37,7 @@
         line-height: 160%;
         letter-spacing: 0.1em;
         margin-bottom: rem(36);
+
         span {
             display: inline-block;
         }
@@ -196,6 +197,7 @@
                 gap: .5rem;
                 color: $white;
                 transition: .3s;
+
                 &[target="_blank"]::after {
                     content: '';
                     display: block;
@@ -239,6 +241,7 @@
                         align-items: center;
                         gap: .5rem;
                         transition: .3s;
+
                         &::before {
                             content: '';
                             display: block;
@@ -270,6 +273,18 @@
         display: flex;
         align-items: center;
         gap: rem(28);
+
+        a {
+            img {
+                transition: .3s;
+            }
+
+            &:hover {
+                img {
+                    opacity: 0.5;
+                }
+            }
+        }
 
         .sns {
             &--x {

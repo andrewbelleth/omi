@@ -50,7 +50,7 @@ Template Name: リクルートページ
                             </svg>
                         </span>
                     </a>
-                    <a href="<?php echo esc_url(home_url('/')); ?>" class="btn btn--career inview">
+                    <a tabindex="-1" class="btn btn--career inview">
                         <span class="btn__text">キャリア採用はこちら</span>
                         <span class="btn__icon">
                             <svg viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">

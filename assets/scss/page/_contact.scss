@@ -376,6 +376,7 @@
     &-submit {
         position: relative;
         display: flex;
+        position: relative;
 
         .wpcf7-spinner {
             display: none;
@@ -409,6 +410,18 @@
             background: $gray;
             width: rem(232) !important;
             padding-inline: rem(16) rem(32);
+            position: relative;
+
+            input {
+                position: absolute;
+                cursor: pointer;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                padding-left: rem(100);
+                padding-right: rem(62);
+            }
 
             .btn__icon {
                 path {

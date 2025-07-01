@@ -13,19 +13,19 @@ Template Name: 取り扱い品目ページ
 <div class="page-wrapper wrapper mt160--sp96">
     <div class=" section section__col">
         <div class="page-printing__side section__side">
-        <ul id="sidemenu">
+            <ul id="sidemenu">
                 <li><a data-slug="magazine" href="<?php echo home_url('/service/printing/products/#magazine'); ?>">広報誌・定期刊行物</a></li>
                 <li><a data-slug="flyer" href="<?php echo home_url('/service/printing/products/#flyer'); ?>">チラシ・ポスター</a></li>
                 <li><a data-slug="catalog" href="<?php echo home_url('/service/printing/products/#catalog'); ?>">カタログ</a></li>
                 <li><a data-slug="booklet" href="<?php echo home_url('/service/printing/products/#booklet'); ?>">冊子</a></li>
                 <li><a data-slug="slip" href="<?php echo home_url('/service/printing/products/#slip'); ?>">伝票・帳票</a></li>
                 <li><a data-slug="envelope" href="<?php echo home_url('/service/printing/products/#envelope'); ?>">名刺・封筒・はがき・<br class="mobile">挨<br class="desktop">拶状</a></li>
-                <li style="display: none;"><a data-slug="ricebag" href="<?php echo home_url('/service/printing/products/#ricebag'); ?>">米袋</a></li>
-                <li style="display: none;"><a data-slug="promotion" href="<?php echo home_url('/service/printing/products/#promotion'); ?>">販促</a></li>
+                <!-- <li style="display: none;"><a data-slug="ricebag" href="<?php echo home_url('/service/printing/products/#ricebag'); ?>">米袋</a></li> -->
+                <!-- <li style="display: none;"><a data-slug="promotion" href="<?php echo home_url('/service/printing/products/#promotion'); ?>">販促</a></li> -->
             </ul>
         </div>
         <div class="section__main wrapper-136">
-            <div class="">
+            <!-- <div class="">
                 <div class="txt">
                     <p>
                         お客様の「伝えたい」を大切に。より効果的な「伝わる」表現へ。<br>
@@ -33,7 +33,7 @@ Template Name: 取り扱い品目ページ
                         お客様の「伝えたい」想いにしっかり向き合い、効果的な表現で「伝わる」グラフィックデザインをご提供いたします。
                     </p>
                 </div>
-            </div>
+            </div> -->
 
             <section class="component-box-item type-products" id="magazine">
                 <h2 class="ttl-01">広報誌・定期刊行物</h2>
@@ -225,7 +225,7 @@ Template Name: 取り扱い品目ページ
                     <li><img src="<?php echo get_template_directory_uri(); ?>/assets/images/products/products-img12.webp" alt="名刺・封筒・はがき・挨拶状の製作のイメージ画像" width="368" height="220" loading="lazy"></li>
                 </ul>
                 <div class="component-box-btn mt32--sp40">
-                    <a href="<?php echo esc_url(home_url('/works')); ?>" class="btn inview">
+                    <a href="<?php echo esc_url(home_url('/works/?works-cat=名刺・封筒・はがき・挨拶状')); ?>" class="btn inview">
                         <span class="btn__text">製作事例はこちら</span>
                         <span class="btn__icon">
                             <svg viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">

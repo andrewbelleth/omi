@@ -29,7 +29,7 @@ Template Name: projectページ
         </p>
         <div class="component-box-btn mt48--sp40">
             <div class="btn-list">
-                <a href="<?php echo esc_url(home_url('/')); ?>" class="btn inview">
+                <a href="https://www.youtube.com/watch?v=POkvjZ7BhDM" target="_blank" class="btn inview">
                     <span class="btn__text">YouTubeで動画を見る</span>
                     <span class="btn__icon">
                         <svg viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -41,7 +41,7 @@ Template Name: projectページ
                         </svg>
                     </span>
                 </a>
-                <a href="<?php echo esc_url(home_url('/')); ?>" class="btn inview">
+                <a href="https://www.omi-in.co.jp/digitalbook/SDGs2020/book/#target/page_no=1" target="_blank" class="btn inview">
                     <span class="btn__text">WebBookで<br class="sp-only">パンフレットを見る</span>
                     <span class="btn__icon">
                         <svg viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">

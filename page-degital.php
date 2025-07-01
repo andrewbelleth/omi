@@ -348,12 +348,16 @@ Template Name: 印刷ページ
                 <div class="img-list pt16--sp20 pl21--sp20">
                     <div class="img-list__item">
                         <div class="img-list__item-img">
-                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/degital/degital-09.webp" alt="画像の説明3" width="358" height="234" loading="lazy">
+                            <a href="https://www.omi-in.co.jp/digitalbook/book20200826/book/#target/page_no=1" target="_blank">
+                                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/degital/degital-09.webp" alt="画像の説明3" width="358" height="234" loading="lazy">
+                            </a>
                         </div>
                     </div>
                     <div class="img-list__item">
                         <div class="img-list__item-img">
-                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/degital/degital-10.webp" alt="画像の説明3" width="358" height="234" loading="lazy">
+                            <a href="https://www.omi-in.co.jp/digitalbook/freebook/book/#target/page_no=1" target="_blank">
+                                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/degital/degital-10.webp" alt="画像の説明3" width="358" height="234" loading="lazy">
+                            </a>
                         </div>
                     </div>
                 </div>

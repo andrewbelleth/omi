@@ -296,7 +296,7 @@ Template Name: 入稿ガイド
                     </p>
                     <p class="pl21--sp20 pt8--sp10">
                         <span class="fw700">●送信先アドレス</span><!-- /.fw700 --><br>
-                        <a class="link-blue" href="<?php echo home_url('/contact/'); ?>">お問い合わせ</a>よりご連絡ください。
+                        <a class="link-blue" href="mailto:customer@omi-in.co.jp.test-google-a.com">お問い合わせ</a>よりご連絡ください。
                     </p>
                 </div>
                 <div class="txt">

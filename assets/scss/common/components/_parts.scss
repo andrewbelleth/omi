@@ -1435,6 +1435,19 @@
     gap: rem(24);
     width: 100%;
 
+    a {
+        img {
+            transition: .3s;
+        }
+
+        &:hover {
+
+            img {
+                opacity: 0.5;
+            }
+        }
+    }
+
     &.img-list--mt32 {
         margin-top: rem(32);
     }
