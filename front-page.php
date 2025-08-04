@@ -3,12 +3,19 @@ if (! defined('ABSPATH')) exit;
 /* 
 Template Name: トップページ
 */
+
+$is_first_visit = empty($_SESSION['loading_shown']);
+if ($is_first_visit) {
+    $_SESSION['loading_shown'] = true;
+}
 ?>
 
 <?php get_template_part('template-parts/header'); ?>
 
 <?php
-get_template_part('template-parts/loading');
+if (!$is_first_visit) {
+    get_template_part('template-parts/loading');
+}
 ?>
 <div class="mv-wrapper mt0">
     <div class="mv">
@@ -552,6 +559,63 @@ $args = array(
     </div>
     <div class="top-instagram__body inview">
         <?php echo do_shortcode('[instagram-feed feed=1]'); ?>
+    </div>
+</div>
+<div class="top-works" id="works">
+    <div class="top-works__inner">
+        <div class="top-works__head section__head">
+            <h2 class="section__title inview">
+                <span class="section__title--en">COLUMN</span>
+                <span class="section__title--jp">コラム</span>
+            </h2>
+            <a href="<?php echo home_url(); ?>/column" class="btn btn--white btn--right inview">
+                <span class="btn__text">コラムを全て見る</span>
+                <span class="btn__icon">
+                    <svg viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M13.5386 18.7793L12.0893 17.2881L17.3408 12.0366H0.6875V9.9741H17.3408L12.0893 4.72263L13.5386 3.23145L21.3125 11.0054L13.5386 18.7793Z"
+                            fill="white" />
+                    </svg>
+                </span>
+            </a>
+        </div>
+        <ul class="card__list card__list--works inview">
+            <?php
+            $args = array(
+                'post_type' => 'column',
+                'posts_per_page' => 6,
+            );
+            $query = new WP_Query($args);
+            ?>
+            <?php if ($query->have_posts()) : ?>
+                <?php
+                while ($query->have_posts()) : $query->the_post();
+                    $the_id = $post->ID;
+                    $categories = get_the_terms($the_id, 'column-cat');
+                ?>
+                    <li>
+                        <a href="<?php the_permalink(); ?>">
+                            <div class="img">
+                                <?php if (has_post_thumbnail()) : ?>
+                                    <?php the_post_thumbnail('full', array('class' => 'img__cover')); ?>
+                                <?php endif; ?>
+                            </div>
+                            <div class="meta">
+                                <?php if ($categories) : ?>
+                                    <p class="cat">
+                                        <?php foreach ($categories as $category) : ?>
+                                            <span><?php echo esc_html($category->name); ?></span>
+                                        <?php endforeach; ?>
+                                    </p>
+                                <?php endif; ?>
+                            </div>
+                            <h3 class="title"><?php the_title(); ?></h3>
+                        </a>
+                    </li>
+                <?php endwhile; ?>
+            <?php endif; ?>
+            <?php wp_reset_postdata(); ?>
+        </ul>
     </div>
 </div>
 <div class="top-news section">

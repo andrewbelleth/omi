@@ -14,7 +14,7 @@ $get_works_cat = get_query_var('works-cat');
     'title_en' => 'WORKS',
     'title_jp' => '制作実績',
 ]); ?>
-<div class="page-works section">
+<div class="page-works-archive section">
     <button class="page-works__popup-btn popup__open">
         <span class="page-works__popup-btn-text">カテゴリで絞り込む</span>
         <span class="page-works__popup-btn-icon">
@@ -59,11 +59,6 @@ $get_works_cat = get_query_var('works-cat');
                                 <?php the_post_thumbnail('full'); ?>
                             <?php endif; ?>
                         </div>
-                        <p class="date"><?php echo get_the_date('Y'); ?></p>
-                        <h3 class="title"><?php the_title(); ?></h3>
-                        <p class="expert">
-                            <?php the_excerpt(); ?>
-                        </p>
                         <div class="meta">
                             <?php if ($categories) : ?>
                                 <p class="cat">
@@ -72,7 +67,12 @@ $get_works_cat = get_query_var('works-cat');
                                     <?php endforeach; ?>
                                 </p>
                             <?php endif; ?>
+                            <p class="date"><?php echo get_the_date('Y年'); ?></p>
                         </div>
+                        <h3 class="title"><?php the_title(); ?></h3>
+                        <p class="expert">
+                            <?php the_excerpt(); ?>
+                        </p>
                     </a>
                 </li>
             <?php endwhile; ?>

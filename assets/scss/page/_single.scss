@@ -120,6 +120,18 @@
             text-decoration-width: 1px;
             text-decoration-color: $blue;
             text-underline-offset: .1em;
+            position: relative;
+            display: inline-flex;
+            align-items: center;
+            gap: rem(8);
+
+            &::after {
+                content: '';
+                display: block;
+                width: rem(16);
+                height: rem(16);
+                background: url(../images/common/arrow-right-blue.svg) no-repeat center center/cover;
+            }
         }
 
         ul,
@@ -385,11 +397,16 @@
 
             a {
                 font-size: 0.875rem;
+
+                &::after {
+                    width: rem(14);
+                    height: rem(14);
+                }
             }
 
             ul,
             ol {
-                padding: 1.5rem;
+                padding: rem(32) 1.5rem;
 
                 li {
                     font-size: 0.875rem;

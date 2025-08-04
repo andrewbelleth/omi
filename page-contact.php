@@ -80,13 +80,10 @@ if (! defined('ABSPATH')) exit;
     // ラジオボタンの変更を監視
     document.addEventListener('DOMContentLoaded', function() {
         const radioButtons = document.getElementsByName('your-contact-type');
-        const messageTextarea = document.querySelector('textarea[name="your-message"]');
-
-        // オリジナルのプレースホルダーを保存
-        const originalPlaceholder = messageTextarea.placeholder;
+        const messageTextarea = document.querySelector('textarea[name="your-textarea"]');
 
         // 印刷物用のプレースホルダーテキスト
-        const printingPlaceholder = `お問い合わせの詳細をご記入ください。
+        const printingDefaultText = `お問い合わせの詳細をご記入ください。
 （印刷物に関するお問い合わせ・お見積）
 （デジタルコンテンツに関するお問い合わせ・お見積）
 （WebBookパンフレットのお取り寄せ）
@@ -113,22 +110,25 @@ OS：Machintosh・Windows7/8/10
 
 
         // 初期表示時のプレースホルダーを設定
-        messageTextarea.placeholder = printingPlaceholder;
+        messageTextarea.value = printingDefaultText;
         messageTextarea.style.height = '43rem';
 
 
         radioButtons.forEach(function(radio) {
             radio.addEventListener('change', function() {
                 if (this.value === '印刷物に関するお問い合わせ・お見積もり') {
-                    messageTextarea.placeholder = printingPlaceholder;
+                    console.log(messageTextarea);
+                    messageTextarea.value = printingDefaultText;
                     messageTextarea.style.height = '43rem';
                 } else {
-                    messageTextarea.placeholder = 'お問い合わせ内容をご入力ください';
+                    messageTextarea.value = 'お問い合わせ内容をご入力ください';
                     // 外す
                     messageTextarea.style.height = '';
                 }
             });
         });
+
+        // contact form 7 送信した全ての項目の値をconsole.logで出力
     });
 </script>
 

@@ -85,8 +85,10 @@ Template Name: フッター
             </div>
             <div class="footer__nav-item">
               <h3><a href="<?php echo esc_url(home_url('/news')); ?>">お知らせ</a></h3>
+              <h3><a href="<?php echo esc_url(home_url('/column')); ?>">コラム</a></h3>
               <h3><a href="<?php echo esc_url(home_url('/recruit')); ?>">リクルート</a></h3>
               <h3><a href="<?php echo esc_url(home_url('/partner')); ?>">外部パートナー募集</a></h3>
+              <h3><a href="<?php echo esc_url(home_url('/career')); ?>">キャリア採用</a></h3>
               <h3><a href="<?php echo esc_url(home_url('/guide')); ?>">入稿ガイド</a></h3>
               <h3><a href="<?php echo esc_url(home_url('/contact')); ?>">お問い合わせ</a></h3>
             </div>

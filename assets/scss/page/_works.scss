@@ -22,7 +22,7 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            border: 1px solid $gray;
+            border: 1px solid $light-gray;
             background: #D9D9D9;
 
             &::before {
@@ -50,13 +50,12 @@
 
             span {
                 display: flex;
-                padding: 0.125rem 0.625rem 0.1875rem 0.625rem;
+                padding: rem(2) rem(12) rem(3);
                 width: fit-content;
-                border: 1px solid $dark-gray;
                 background: $white;
-                color: $dark-gray;
+                color: $blue;
                 font-feature-settings: 'pwid' on, 'palt' on;
-                font-size: 0.8125rem;
+                font-size: rem(13);
                 font-weight: 400;
                 line-height: 170%;
                 letter-spacing: 0.1em;
@@ -91,8 +90,8 @@
 
             .cat {
                 span {
-                    padding: 0.1875rem 0.625rem;
-                    font-size: 0.75rem;
+                    padding: rem(3) rem(10);
+                    font-size: rem(12);
                 }
             }
 
@@ -107,6 +106,7 @@
             width: 100%;
         }
     }
+
 }
 
 .page-works__list {
@@ -123,6 +123,30 @@
                 width: 100%;
             }
 
+            .meta {
+                display: flex;
+                align-items: center;
+                gap: 0.5rem;
+                margin-top: 1.25rem;
+            }
+
+            .cat {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 0.5rem;
+
+                span {
+                    background: $light-blue;
+                    color: $blue;
+                    font-size: rem(12);
+                    line-height: 170%;
+                    font-weight: 500;
+                    padding: rem(1) rem(12) rem(2);
+                    letter-spacing: 0.1em;
+                    border: none;
+                }
+            }
+
             .date {
                 color: $dark-gray;
                 font-feature-settings: 'pwid' on, 'palt' on;
@@ -130,7 +154,6 @@
                 font-weight: 400;
                 line-height: 170%;
                 letter-spacing: 0.1em;
-                margin-top: 1.25rem;
             }
 
             .title {
@@ -155,18 +178,6 @@
                 letter-spacing: 0.1em;
                 margin-top: 0.5rem;
             }
-
-            .meta {
-                margin-top: 1rem;
-            }
-
-            .cat {
-                span {
-                    padding: 0 0.5rem;
-                    font-size: 0.75rem;
-                    font-weight: 500;
-                }
-            }
         }
     }
 
@@ -185,16 +196,16 @@
                     }
                 }
 
-                .date {
-                    margin-top: 1rem;
-                }
-
                 .title {
-                    margin-top: rem(6);
+                    margin-top: rem(8);
                 }
 
                 .text {
                     margin-top: rem(8);
+                }
+
+                .meta {
+                    margin-top: rem(16);
                 }
 
                 .cat {

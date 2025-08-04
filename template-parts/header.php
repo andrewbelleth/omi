@@ -1,3 +1,11 @@
+<?php
+session_start();
+$is_first_visit = empty($_SESSION['loading_shown']);
+if ($is_first_visit) {
+    $_SESSION['loading_shown'] = true;
+}
+?>
+
 <!DOCTYPE html>
 <html <?php language_attributes(); ?>>
 
@@ -43,8 +51,10 @@
                 <li><a href="<?php echo home_url(); ?>/works">制作実績</a></li>
                 <li><a href="<?php echo home_url(); ?>/company">会社概要</a></li>
                 <li><a href="<?php echo home_url(); ?>/news">お知らせ</a></li>
+                <li><a href="<?php echo home_url(); ?>/column">コラム</a></li>
                 <li><a href="<?php echo home_url(); ?>/recruit">リクルート</a></li>
                 <li><a href="<?php echo home_url(); ?>/partner">外部パートナー募集</a></li>
+                <li><a href="<?php echo home_url(); ?>/career">キャリア採用</a></li>
             </ul>
             <div class="header__cta"><a href="<?php echo home_url(); ?>/contact">お問い合わせ</a></div>
             <div class="header__menu-btn" id="header__menu-btn">
@@ -63,8 +73,10 @@
             <li><a href="<?php echo home_url(); ?>/works">制作実績</a></li>
             <li><a href="<?php echo home_url(); ?>/company">会社概要</a></li>
             <li><a href="<?php echo home_url(); ?>/news">お知らせ</a></li>
+            <li><a href="<?php echo home_url(); ?>/column">コラム</a></li>
             <li><a href="<?php echo home_url(); ?>/recruit">リクルート</a></li>
             <li><a href="<?php echo home_url(); ?>/partner">外部パートナー募集</a></li>
+            <li><a href="<?php echo home_url(); ?>/career">キャリア採用</a></li>
         </ul>
         <a href="<?php echo home_url(); ?>/contact" class="btn btn--white">
             <span class="btn__text">お問い合わせ</span>

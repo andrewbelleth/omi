@@ -14,60 +14,66 @@ Template Name: 社外報ingページ
     <ul class="img-list img-list--3column-sp1">
         <li>
             <a href="https://www.omi-in.co.jp/digitalbook/ing/vol16/book/#target/page_no=1" target="_blank" rel="noopener noreferrer">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/ing/ing-img-vol16.webp" alt="2025年 Vol.16社外報の画像" width="347" height="245" loading="lazy">
+                <p>2025年 Vol.16</p>
+            </a>
+        </li>
+        <li>
+            <a href="https://www.omi-in.co.jp/digitalbook/ing/vol15/book/#target/page_no=1" target="_blank" rel="noopener noreferrer">
                 <img src="<?php echo get_template_directory_uri(); ?>/assets/images/ing/ing-img01.webp" alt="2025年 Vol.15社外報の画像" width="347" height="245" loading="lazy">
                 <p>2025年 Vol.15</p>
             </a>
         </li>
         <li>
-            <a table="-1" target="_blank" rel="noopener noreferrer">
+            <a href="https://www.omi-in.co.jp/digitalbook/ing/vol14/book/#target/page_no=1" target="_blank" rel="noopener noreferrer">
                 <img src="<?php echo get_template_directory_uri(); ?>/assets/images/ing/ing-img02.webp" alt="2024年 Vol.14社外報の画像" width="347" height="245" loading="lazy">
                 <p>2024年 Vol.14</p>
             </a>
         </li>
         <li>
-            <a table="-1" target="_blank" rel="noopener noreferrer">
+            <a href="https://www.omi-in.co.jp/digitalbook/ing/vol13/book/#target/page_no=1" target="_blank" rel="noopener noreferrer">
                 <img src="<?php echo get_template_directory_uri(); ?>/assets/images/ing/ing-img03.webp" alt="2024年 Vol.13社外報の画像" width="347" height="245" loading="lazy">
                 <p>2024年 Vol.13</p>
             </a>
         </li>
         <li>
-            <a table="-1" target="_blank" rel="noopener noreferrer">
+            <a href="https://www.omi-in.co.jp/digitalbook/ing/vol12/book/#target/page_no=1" target="_blank" rel="noopener noreferrer">
                 <img src="<?php echo get_template_directory_uri(); ?>/assets/images/ing/ing-img04.webp" alt="2024年 Vol.12社外報の画像" width="347" height="245" loading="lazy">
                 <p>2024年 Vol.12</p>
             </a>
         </li>
         <li>
-            <a table="-1" target="_blank" rel="noopener noreferrer">
+            <a href="https://www.omi-in.co.jp/digitalbook/ing/vol11/book/#target/page_no=1" target="_blank" rel="noopener noreferrer">
                 <img src="<?php echo get_template_directory_uri(); ?>/assets/images/ing/ing-img05.webp" alt="2024年 Vol.11社外報の画像" width="347" height="245" loading="lazy">
                 <p>2024年 Vol.11</p>
             </a>
         </li>
         <li>
-            <a table="-1" target="_blank" rel="noopener noreferrer">
+            <a href="https://www.omi-in.co.jp/digitalbook/ing/vol10/book/#target/page_no=1" target="_blank" rel="noopener noreferrer">
                 <img src="<?php echo get_template_directory_uri(); ?>/assets/images/ing/ing-img06.webp" alt="2023年 Vol.10社外報の画像" width="347" height="245" loading="lazy">
                 <p>2023年 Vol.10</p>
             </a>
         </li>
         <li>
-            <a table="-1" target="_blank" rel="noopener noreferrer">
+            <a href="https://www.omi-in.co.jp/digitalbook/ing/vol9/book/#target/page_no=1" target="_blank" rel="noopener noreferrer">
                 <img src="<?php echo get_template_directory_uri(); ?>/assets/images/ing/ing-img07.webp" alt="2023年 Vol.9社外報の画像" width="347" height="245" loading="lazy">
                 <p>2023年 Vol.9</p>
             </a>
         </li>
         <li>
-            <a table="-1" target="_blank" rel="noopener noreferrer">
+            <a href="https://www.omi-in.co.jp/digitalbook/ing/vol8/book/#target/page_no=1" target="_blank" rel="noopener noreferrer">
                 <img src="<?php echo get_template_directory_uri(); ?>/assets/images/ing/ing-img08.webp" alt="2023年 Vol.8社外報の画像" width="347" height="245" loading="lazy">
                 <p>2023年 Vol.8</p>
             </a>
         </li>
         <li>
-            <a table="-1" target="_blank" rel="noopener noreferrer">
+            <a href="https://www.omi-in.co.jp/digitalbook/ing/vol7/book/#target/page_no=1" target="_blank" rel="noopener noreferrer">
                 <img src="<?php echo get_template_directory_uri(); ?>/assets/images/ing/ing-img09.webp" alt="2022年 Vol.7社外報の画像" width="347" height="245" loading="lazy">
                 <p>2022年 Vol.7</p>
             </a>
         </li>
         <li>
-            <a table="-1" rel="noopener noreferrer">
+            <a href="https://www.omi-in.co.jp/digitalbook/ing/vol6/book/#target/page_no=1" target="_blank" rel="noopener noreferrer">
                 <img src="<?php echo get_template_directory_uri(); ?>/assets/images/ing/ing-img10.webp" alt="2022年 Vol.6社外報の画像" width="347" height="245" loading="lazy">
                 <p>2022年 Vol.6</p>
             </a>
