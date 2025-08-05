@@ -53,6 +53,7 @@ if (! defined('ABSPATH')) exit;
                 <ul></ul>
             </div>
             <?php echo do_shortcode('[contact-form-7 id="45a1726" title="お問い合せ"]'); ?>
+            <?php echo do_shortcode('[contact-form-7 id="e3eb629" title="キャリアフォーム"]'); ?>
         </div>
     </div>
 </div>

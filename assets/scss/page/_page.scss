@@ -173,6 +173,7 @@
   margin-left: auto;
   display: flex;
   align-items: baseline;
+  flex-wrap: wrap;
   gap: rem(10);
 
   >span {
