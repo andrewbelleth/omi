@@ -136,9 +136,6 @@
 
         ul,
         ol {
-            padding: 2rem;
-            background: $light-blue;
-
             li {
                 font-feature-settings: 'pwid' on, 'palt' on;
                 font-size: 0.9375rem;
@@ -155,19 +152,56 @@
             }
         }
 
+        .list-01-patern {
+            margin-top: rem(40);
+            padding: 2rem;
+            background: $light-blue;
+
+            p.list-01-patern-title {
+                padding-top: 0;
+                font-size: rem(18);
+                color: $blue;
+                font-weight: 700;
+                line-height: 170%;
+                letter-spacing: 0.1em;
+            }
+
+            ul {
+                margin-top: rem(8);
+            }
+        }
+
+        .list-02-patern {
+            margin-top: rem(40);
+            padding: rem(32 - 4);
+            border: rem(4) solid $light-blue;
+            background: $white;
+
+            p.list-01-patern-title {
+                padding-top: 0;
+                font-size: rem(18);
+                color: $blue;
+                font-weight: 700;
+                line-height: 170%;
+                letter-spacing: 0.1em;
+            }
+
+            ul {
+                margin-top: rem(8);
+            }
+        }
+
         figure {
             position: relative;
             max-width: rem(798);
             width: 100%;
             background: #d9d9d9;
             margin-inline: auto;
+            margin-top: rem(64);
 
-            // &::before {
-            //     content: '';
-            //     display: block;
-            //     width: 100%;
-            //     padding-top: 55.8897243108%;
-            // }
+            @include mq(tb) {
+                margin-top: rem(24);
+            }
 
             img,
             video,
@@ -318,30 +352,35 @@
     &--works {
         .article {
             &__thumbnail {
-                margin-top: 0;
+                margin-top: rem(56);
+            }
+
+            &__tag-list {
+                justify-content: flex-start;
+                padding-inline: 0;
             }
 
             &__title {
                 font-size: 2.5rem;
-                line-height: 160%;
-                margin-top: 3.5rem;
-                text-align: center;
+                line-height: 170%;
+                letter-spacing: 0.1em;
+                margin-top: rem(24);
             }
 
             &__text {
-                margin-top: rem(96);
+                padding-top: rem(56);
+                margin-top: 0;
 
                 p {
                     font-size: 0.9375rem;
                     font-weight: 400;
                     line-height: 170%;
                     letter-spacing: 0.1em;
+                    padding-top: rem(24);
                 }
 
-                * {
-                    +p {
-                        margin-top: 1.5rem;
-                    }
+                *+p {
+                    margin-top: 0;
                 }
             }
         }
@@ -406,10 +445,34 @@
 
             ul,
             ol {
-                padding: rem(32) 1.5rem;
+                // padding: rem(32) 1.5rem;
 
                 li {
                     font-size: 0.875rem;
+                }
+            }
+
+            .list-01-patern {
+                padding: rem(32) rem(20);
+
+                p.list-01-patern-title {
+                    font-size: rem(16);
+                }
+
+                ul {
+                    margin-top: rem(12);
+                }
+            }
+
+            .list-02-patern {
+                padding: rem(32 - 4) rem(20 - 4);
+
+                p.list-02-patern-title {
+                    font-size: rem(16);
+                }
+
+                ul {
+                    margin-top: rem(12);
                 }
             }
 
@@ -482,15 +545,20 @@
 
                 &__title {
                     font-size: 1.375rem;
-                    margin-top: 2.5rem;
+                    margin-top: rem(20);
+                    line-height: 160%;
                 }
 
                 &__text {
-                    margin-top: 3.5rem;
+                    padding-top: rem(0);
 
                     p {
                         font-size: 0.875rem;
                     }
+                }
+
+                &__thumbnail {
+                    margin-top: rem(32);
                 }
             }
         }

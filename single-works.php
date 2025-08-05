@@ -24,18 +24,18 @@ Template Name: トップページ
     $external_link = get_field('works-link');
     ?>
     <article class="article article--works">
-        <?php if (has_post_thumbnail()) : ?>
-            <figure class="article__thumbnail">
-                <?php the_post_thumbnail('full'); ?>
-            </figure>
-        <?php endif; ?>
-        <h1 class="article__title"><?php the_title(); ?></h1>
         <?php if ($tags) : ?>
             <ul class="article__tag-list">
                 <?php foreach ($tags as $tag) : ?>
                     <li><a href="<?php echo get_tag_link($tag->term_id); ?>"><?php echo $tag->name; ?></a></li>
                 <?php endforeach; ?>
             </ul>
+        <?php endif; ?>
+        <h1 class="article__title"><?php the_title(); ?></h1>
+        <?php if (has_post_thumbnail()) : ?>
+            <figure class="article__thumbnail">
+                <?php the_post_thumbnail('full'); ?>
+            </figure>
         <?php endif; ?>
         <div class="article__text">
             <?php the_content(); ?>
