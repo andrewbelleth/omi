@@ -15,11 +15,16 @@ Template Name: 入稿ガイド
         <div class="page-printing__side section__side">
             <ul id="sidemenu">
                 <li><a data-slug="preparation" href="<?php echo home_url('/guide/#preparation'); ?>">ご準備いただくもの</a></li>
-                <li><a data-slug="preparation-adobe" href="<?php echo home_url('/guide/#preparation-adobe'); ?>">データの準備<br><span class="sp--fz12">（Adobe社）</span><!-- /.fz12 --></a></li>
-                <li><a data-slug="preparation-microsoft" href="<?php echo home_url('/guide/#preparation-microsoft'); ?>">データの準備<br><span class="sp--fz12">（Microsoft Office系）</span><!-- /.fz12 --></a></li>
+                <li><a data-slug="preparation-adobe"
+                        href="<?php echo home_url('/guide/#preparation-adobe'); ?>">データの準備<br><span
+                            class="sp--fz12">（Illustrator）</span><!-- /.fz12 --></a></li>
+                <li><a data-slug="preparation-microsoft"
+                        href="<?php echo home_url('/guide/#preparation-microsoft'); ?>">データの準備<br><span
+                            class="sp--fz12">（Microsoft Office系）</span><!-- /.fz12 --></a></li>
                 <li><a data-slug="submission" href="<?php echo home_url('/guide/#submission'); ?>">データの入稿方法</a></li>
                 <li><a data-slug="correction" href="<?php echo home_url('/guide/#correction'); ?>">校正について</a></li>
-                <li><a data-slug="submission-contact" href="<?php echo home_url('/guide/#submission-contact'); ?>">お問い合わせ窓口</a></li>
+                <li><a data-slug="submission-contact"
+                        href="<?php echo home_url('/guide/#submission-contact'); ?>">お問い合わせ窓口</a></li>
             </ul>
         </div>
         <div class="section__main wrapper-136">
@@ -30,15 +35,18 @@ Template Name: 入稿ガイド
                 <ul class="preparation-list mt32--sp24">
                     <li>
                         <p>データ</p>
-                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/guide/guide-icon01.webp" alt="" width="121" height="121" loading="lazy">
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/guide/guide-icon01.webp"
+                            alt="" width="121" height="121" loading="lazy">
                     </li>
                     <li>
                         <p>出力見本</p>
-                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/guide/guide-icon02.webp" alt="" width="121" height="121" loading="lazy">
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/guide/guide-icon02.webp"
+                            alt="" width="121" height="121" loading="lazy">
                     </li>
                     <li>
                         <p>仕上がり見本</p>
-                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/guide/guide-icon03.webp" alt="" width="121" height="121" loading="lazy">
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/guide/guide-icon03.webp"
+                            alt="" width="121" height="121" loading="lazy">
                         <p class="mt12--sp8 fw-400 fz10">※加工、製本がある<br class="sp-only">印刷物の場合のみ</p>
                     </li>
                 </ul>
@@ -54,11 +62,28 @@ Template Name: 入稿ガイド
                                 PDF X-1a / PDF X-4
                             </span>
                             <br>
-                            <span class="marker">illustrator（2020まで）
-                            </span><!-- /.marker --><!-- /.fz13 --><br>
-                            <span class="fz13">※ほかの形式については、一度ご相談ください。</span>
+                            <span class="marker">Illustrator（CC2024まで）
+                            </span><!-- /.marker -->
+                            <!-- /.fz13 --><br>
+                            <span class="fz13">※ほかの形式については、一度ご相談ください。<br>
+                                ※x-1a（エックスワンエー）もしくはX-4（エックスフォー）の書き出し方法が不明な場合は、以下のボタンを押してください。
+                            </span>
                         </p>
-                        <ul class="bluesque-list mt8--sp20">
+                        <div class="component-box-btn mt24--sp20">
+                            <a href="" target="_blank" rel="noopener noreferrer" class="btn inview">
+                                <span class="btn__text">x-1aもしくはX-4の<br class="sp-only">書き出し方法はこちら</span>
+                                <span class="btn__icon">
+                                    <svg viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <g clip-path="url(#clip0_40_1378)">
+                                            <path
+                                                d="M13.6814 18.9216L12.2322 17.4304L17.4836 12.1789H0.830322V10.1164H17.4836L12.2322 4.86497L13.6814 3.37378L21.4553 11.1477L13.6814 18.9216Z"
+                                                fill="#0068B6" />
+                                        </g>
+                                    </svg>
+                                </span>
+                            </a>
+                        </div>
+                        <ul class="bluesque-list mt24--sp32">
                             <li>【データのまとめ方】</li>
                             <li>
                                 <p>
@@ -81,6 +106,22 @@ Template Name: 入稿ガイド
                                     <span class="dot">・&nbsp;</span>
                                     <span class="txt">
                                         データはひとつのフォルダにまとめ、圧縮してください。
+                                    </span>
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    <span class="dot">・&nbsp;</span>
+                                    <span class="txt">
+                                        Illustratorでの入稿の場合は、フォントのアウトラインをとってください。
+                                    </span>
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    <span class="dot">・&nbsp;</span>
+                                    <span class="txt">
+                                        InDesignでのデータ作成の場合は、ネイティブデータの入稿ではなく、PDFデータの入稿をお願いします。
                                     </span>
                                 </p>
                             </li>
@@ -139,7 +180,9 @@ Template Name: 入稿ガイド
             </section>
 
             <section class="component-box-item preparation-adobe" id="preparation-adobe">
-                <h2 class="ttl-01">データの準備<br class="sp-only"><span class="fz22--sp16">（Adobe社製品でデータを作成した場合）</span><!-- /.fz22 --></h2>
+                <h2 class="ttl-01">データの準備<br class="sp-only"><span class="fz22--sp16">（Illustratorで作成した場合）</span>
+                    <!-- /.fz22 -->
+                </h2>
 
                 <div class="item-inner">
                     <div class="txt">
@@ -153,19 +196,23 @@ Template Name: 入稿ガイド
                         <ul class="swatch-list">
                             <li>
                                 <p>スウォッチを確認</p>
-                                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/guide/guide-img01.webp" alt="" width="166" height="214" loading="lazy">
+                                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/guide/guide-img01.webp"
+                                    alt="" width="166" height="214" loading="lazy">
                             </li>
                             <li>
                                 <p>カラータイプを確認</p>
-                                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/guide/guide-img02.webp" alt="" width="166" height="214" loading="lazy">
+                                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/guide/guide-img02.webp"
+                                    alt="" width="166" height="214" loading="lazy">
                             </li>
                             <li>
                                 <p class="fz12">特色から<br class="tab-br">プロセスカラーへ変換</p>
-                                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/guide/guide-img03.webp" alt="" width="166" height="214" loading="lazy">
+                                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/guide/guide-img03.webp"
+                                    alt="" width="166" height="214" loading="lazy">
                             </li>
                             <li>
                                 <p>全てプロセスカラーに</p>
-                                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/guide/guide-img04.webp" alt="" width="166" height="214" loading="lazy">
+                                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/guide/guide-img04.webp"
+                                    alt="" width="166" height="214" loading="lazy">
                             </li>
                         </ul>
                     </div>
@@ -185,7 +232,8 @@ Template Name: 入稿ガイド
                         </p>
                     </div>
                     <div class="img-wrapper pl20 mt20">
-                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/guide/guide-img05.webp" alt="" width="739" height="372" loading="lazy">
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/guide/guide-img05.webp"
+                            alt="" width="739" height="372" loading="lazy">
                     </div>
                 </div><!-- /.inner -->
                 <div class="item-inner">
@@ -194,30 +242,54 @@ Template Name: 入稿ガイド
                             Ai（Illustrator）ドキュメントの「裁ち落とし」を3mmに
                         </h2>
                         <p class="pl21--sp20 pt8--sp10">
-                            「ドキュメント設定」の「裁ち落とし」設定は<span class="marker">「天・地・左・右&nbsp;3mm」</span><!-- /.marker -->に設定してください。
+                            「ドキュメント設定」の「裁ち落とし」設定は<span class="marker">「天・地・左・右&nbsp;3mm」</span>
+                            <!-- /.marker -->に設定してください。
                         </p>
                     </div>
                     <div class="img-wrapper pl20 mt20">
-                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/guide/guide-img06.webp" alt="" width="739" height="307" loading="lazy">
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/guide/guide-img06.webp"
+                            alt="" width="739" height="307" loading="lazy">
                     </div>
                 </div><!-- /.inner -->
                 <div class="item-inner">
                     <div class="txt">
                         <h2 class="mt32--sp40 ttl-02 ttl-02--triangle">
-                            Ai（Illustrator）・InDesign&nbsp;配置画像のパッケージ
+                            Ai（Illustrator）配置画像のパッケージ
                         </h2>
                         <p class="pl21--sp20 pt8--sp10">
-                            配置画像は「埋め込み」ではなく「リンク」で行い、<span class="marker">リンク切れを防ぐために「パッケージ」でリンク画像を収集</span><!-- /.marker -->してください。
+                            配置画像は「埋め込み」ではなく「リンク」で行い、<span class="marker">リンク切れを防ぐために「パッケージ」でリンク画像を収集</span>
+                            <!-- /.marker -->してください。
                         </p>
                     </div>
                     <div class="img-wrapper pl20 mt20">
-                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/guide/guide-img07.webp" alt="" width="739" height="440" loading="lazy">
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/guide/guide-img07.webp"
+                            alt="" width="739" height="440" loading="lazy">
                     </div>
+
+                    <p class="fz13 pl21--sp20 pt8--sp10">
+                        ※リンク画像に関しては、基本的にCMYKモードにしてください。（RGB、特色等が混在してる場合、印刷事故の原因になります）<br>
+                        <span class="pc-only--inline">&emsp;</span>推奨のデータ形式は、「psd」「jpeg」「tif」です。（epsは推奨していません）
+                    </p>
+                </div><!-- /.inner -->
+                <div class="item-inner">
+                    <div class="txt">
+                        <h2 class="mt32--sp40 ttl-02 ttl-02--triangle">
+                            入稿用データはアウトラインをとってください
+                        </h2>
+                    </div>
+                    <div class="img-wrapper pl20 mt20">
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/guide/guide-outline.webp"
+                            alt="" width="739" height="440" loading="lazy">
+                    </div>
+
+
                 </div><!-- /.inner -->
             </section>
 
             <section class="component-box-item preparation-microsoft" id="preparation-microsoft">
-                <h2 class="ttl-01">データの準備<br class="sp-only"><span class="fz22--sp16">（Microsoft Office系ソフトでデータを作成した場合）</span><!-- /.fz22 --></h2>
+                <h2 class="ttl-01">データの準備<br class="sp-only"><span class="fz22--sp16">（Microsoft
+                        Office系ソフトでデータを作成した場合）</span><!-- /.fz22 -->
+                </h2>
 
                 <div class="txt">
                     <h2 class="mt32--sp24 ttl-02 ttl-02--triangle">
@@ -234,7 +306,9 @@ Template Name: 入稿ガイド
                     <p class="pl21--sp20 pt8--sp10">
                         Word・Excel・PowerPointで作成されたデータは、PC環境の違いによりレイアウトの崩れ等の不具合が発生する可能性が高いので、必ずPDF校正を確認いただいております。 </p>
                     <p class="pl21--sp20 pt8--sp10">
-                        PDFファイルの閲覧ソフト Adobe Acrobat Reader&nbsp;の<a class="link-blue" href="https://www.adobe.com/jp/acrobat/pdf-reader.html" target="_blank" rel="noopener noreferrer">ダウンロードはこちらから</a>
+                        PDFファイルの閲覧ソフト Adobe Acrobat Reader&nbsp;の<a class="link-blue"
+                            href="https://www.adobe.com/jp/acrobat/pdf-reader.html" target="_blank"
+                            rel="noopener noreferrer">ダウンロードはこちらから</a>
                     </p>
                 </div>
                 <div class="txt">
@@ -252,6 +326,15 @@ Template Name: 入稿ガイド
                     </h2>
                     <p class="pl21--sp20 pt8--sp10">
                         お使いのパソコンのOS、Office系ソフトのバージョン（アプリ情報）を、データご入稿時にお知らせください。
+                    </p>
+                </div>
+                <div class="txt">
+                    <h2 class="mt32--sp24 ttl-02 ttl-02--triangle">
+                        基本的に無料のPDF校正をご要望ください
+                    </h2>
+                    <p class="pl21--sp20 pt8--sp10">
+                        データによりリサイズが必要な場合がありますので、基本的に無料のPDF校正をご要望ください。<br>
+                        印刷用に書き出したPDFをお送りさせていただきますので、お客様の方で最終確認をお願いします。
                     </p>
                 </div>
                 <div class="">
@@ -290,9 +373,15 @@ Template Name: 入稿ガイド
                     </h3>
                     <p class="pl21--sp20 pt8--sp10">
                         <span class="fw700">●おすすめのストレージサービス</span><!-- /.fw700 --><br>
-                        <span class="u-flex"><span class="txt-blue">・&nbsp;</span><a class="link-blue db" href="https://datadeliver.net/" target="_blank" rel="noopener noreferrer">データ便</a></span>
-                        <span class="u-flex"><span class="txt-blue">・&nbsp;</span><a class="link-blue db" href="https://gigafile.nu/" target="_blank" rel="noopener noreferrer"> ギガファイル便</a></span>
-                        <span class="u-flex"><span class="txt-blue">・&nbsp;</span><a class="link-blue db" href="https://okurin.bitpark.co.jp/" target="_blank" rel="noopener noreferrer">おくりん坊</a></span>
+                        <span class="u-flex"><span class="txt-blue">・&nbsp;</span><a class="link-blue db"
+                                href="https://datadeliver.net/" target="_blank"
+                                rel="noopener noreferrer">データ便</a></span>
+                        <span class="u-flex"><span class="txt-blue">・&nbsp;</span><a class="link-blue db"
+                                href="https://gigafile.nu/" target="_blank" rel="noopener noreferrer">
+                                ギガファイル便</a></span>
+                        <span class="u-flex"><span class="txt-blue">・&nbsp;</span><a class="link-blue db"
+                                href="https://okurin.bitpark.co.jp/" target="_blank"
+                                rel="noopener noreferrer">おくりん坊</a></span>
                     </p>
                     <p class="pl21--sp20 pt8--sp10">
                         <span class="fw700">●送信先アドレス</span><!-- /.fw700 --><br>
@@ -304,7 +393,8 @@ Template Name: 入稿ガイド
                         メディアに保存し、当社まで宅配便等で送付
                     </h3>
                     <p class="pl21--sp20 pt8--sp10">
-                        万が一に備え、データは送付いただくメディア以外に、<span class="marker">ご自身でバックアップをお取りいただきますよう</span><!-- /.marker -->お願いいたします。<br>
+                        万が一に備え、データは送付いただくメディア以外に、<span class="marker">ご自身でバックアップをお取りいただきますよう</span>
+                        <!-- /.marker -->お願いいたします。<br>
                         <span class="fz13">※送付先は、メディアおよび見本の送付先をご覧ください。</span><!-- /.fz13 -->
                     </p>
                 </div>
@@ -315,7 +405,8 @@ Template Name: 入稿ガイド
                         「手持ちのデータが印刷可能か知りたい」「作成方法が間違っていないかチェックしてほしい」など、入稿データに少しでも不安のあるお客様は、ぜひご活用ください。
                     </p>
                     <div class="component-box-btn mt24">
-                        <a href="https://forms.gle/rvYhhvy68ukRrk2x6" target="_blank" rel="noopener noreferrer" class="btn inview">
+                        <a href="https://forms.gle/rvYhhvy68ukRrk2x6" target="_blank" rel="noopener noreferrer"
+                            class="btn inview">
                             <span class="btn__text">入稿前データチェック<br class="sp-only">サービスを申し込む</span>
                             <span class="btn__icon">
                                 <svg viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -382,17 +473,20 @@ Template Name: 入稿ガイド
                 <ul class="preparation-list mt32--sp24">
                     <li>
                         <p>PDF校正</p>
-                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/guide/guide-icon04.webp" alt="" width="121" height="121" loading="lazy">
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/guide/guide-icon04.webp"
+                            alt="" width="121" height="121" loading="lazy">
                         <p>無料</p>
                     </li>
                     <li>
                         <p>プリンター校正</p>
-                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/guide/guide-icon05.webp" alt="" width="121" height="121" loading="lazy">
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/guide/guide-icon05.webp"
+                            alt="" width="121" height="121" loading="lazy">
                         <p>有料</p>
                     </li>
                     <li>
                         <p>本機校正</p>
-                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/guide/guide-icon06.webp" alt="" width="121" height="121" loading="lazy">
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/guide/guide-icon06.webp"
+                            alt="" width="121" height="121" loading="lazy">
                         <p>有料</p>
                     </li>
                 </ul>
@@ -438,7 +532,8 @@ Template Name: 入稿ガイド
                                 <p>
                                     <span class="dot mr7">・&nbsp;</span>
                                     <span class="txt">
-                                        Adobe Acrobat Readerのバージョンは6.0以降をご利用ください。それ以前のバージョンは、アウトライン化された文字が太って見えてしまうことがあります。（「環境設定」⇒「表示」⇒「スムージング」で、「ラインアートのスムージング」にチェックを入れることで解消します）
+                                        Adobe Acrobat
+                                        Readerのバージョンは6.0以降をご利用ください。それ以前のバージョンは、アウトライン化された文字が太って見えてしまうことがあります。（「環境設定」⇒「表示」⇒「スムージング」で、「ラインアートのスムージング」にチェックを入れることで解消します）
                                     </span>
                                 </p>
                             </li>
@@ -446,7 +541,9 @@ Template Name: 入稿ガイド
                                 <p>
                                     <span class="dot mr7">・&nbsp;</span>
                                     <span class="txt">
-                                        PDFファイルの閲覧ソフトAdobe Acrobat Readerの<a class="link-blue" href="https://www.adobe.com/jp/acrobat/pdf-reader.html" target="_blank" rel="noopener noreferrer">ダウンロードはこちらから</a>
+                                        PDFファイルの閲覧ソフトAdobe Acrobat Readerの<a class="link-blue"
+                                            href="https://www.adobe.com/jp/acrobat/pdf-reader.html" target="_blank"
+                                            rel="noopener noreferrer">ダウンロードはこちらから</a>
                                     </span>
                                 </p>
                             </li>
@@ -623,14 +720,17 @@ Template Name: 入稿ガイド
                     </p>
                 </div>
                 <div class="light-blue-box mt32--sp24 ">
-                    <h3 class="fw700">ページ下部のお問い合わせフォーム&nbsp;<span class="">または</span>&nbsp;下記より<br class="sp-only">お電話・FAXよりご連絡ください</h3>
+                    <h3 class="fw700">ページ下部のお問い合わせフォーム&nbsp;<span class="">または</span>&nbsp;下記より<br
+                            class="sp-only">お電話・FAXよりご連絡ください</h3>
                     <ul class="guide-contact u-flex-aic mt8">
                         <li class="u-flex-aic">
-                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/guide/icon-tel.webp" alt="" width="36" height="36" loading="lazy">
+                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/guide/icon-tel.webp"
+                                alt="" width="36" height="36" loading="lazy">
                             <a href="tel:0749-42-8400">0749-42-8400</a>
                         </li>
                         <li class="u-flex-aic">
-                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/guide/icon-fax.webp" alt="" width="36" height="36" loading="lazy">
+                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/guide/icon-fax.webp"
+                                alt="" width="36" height="36" loading="lazy">
                             <a href="tel:0749-42-6700">0749-42-6700</a>
                         </li>
 
