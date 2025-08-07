@@ -239,9 +239,9 @@ Template Name: フッター
     <?php endif; ?>
 
 
-    <?php if (is_post_type_archive('works') || is_tax('works-tag')): ?>
+    <?php if (is_post_type_archive('works') || is_tax('works-tag') || is_page('guide')): ?>
       var open = $('.popup__open'),
-        close = $('.popup__close'),
+        close = $('.popup__close, .popup__btn-close'),
         container = $('.popup');
 
       open.on('click', function() {

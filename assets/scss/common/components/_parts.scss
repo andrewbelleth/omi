@@ -267,6 +267,26 @@
     }
 }
 
+.pl48--sp0 {
+    padding-left: rem(48);
+
+    @include mq(tb) {
+        padding-left: 0;
+    }
+}
+
+.pt32--sp40 {
+    padding-top: rem(32);
+
+    @include mq(tb) {
+        padding-top: rem(40);
+    }
+}
+
+.pt48 {
+    padding-top: rem(48);
+}
+
 .pt160--sp96 {
     padding-top: rem(160);
 
@@ -650,6 +670,14 @@
     @include mq(tb) {
         margin-top: rem(72);
     }
+}
+
+.mb24 {
+    margin-bottom: rem(24);
+}
+
+.mb48 {
+    margin-bottom: rem(48);
 }
 
 .mt160--sp120 {
@@ -1949,6 +1977,10 @@
 
 .txt-blue {
     color: $blue;
+}
+
+.color-red {
+    color: $red !important;
 }
 
 a[href^="tel:"] {

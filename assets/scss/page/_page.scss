@@ -5,8 +5,7 @@
   &__head {
     width: 100%;
     height: rem(420);
-    background: $light-gray url(../images/pc/page_bg.webp) no-repeat center
-      center/cover;
+    background: $light-gray url(../images/pc/page_bg.webp) no-repeat center center/cover;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -109,8 +108,7 @@
   @include mq(tb) {
     &__head {
       height: rem(361);
-      background: $light-gray url(../images/sp/page_bg-sp.webp) no-repeat center
-        center/cover;
+      background: $light-gray url(../images/sp/page_bg-sp.webp) no-repeat center center/cover;
 
       &-inner {
         width: calc(100% - rem(48));
@@ -178,14 +176,14 @@
   flex-wrap: wrap;
   gap: rem(10);
 
-  > span {
+  >span {
     font-size: 0.875rem;
     font-weight: 500;
     line-height: 170%;
     letter-spacing: 0.1em;
   }
 
-  > span + span {
+  >span+span {
     display: flex;
     align-items: center;
 
@@ -194,8 +192,7 @@
       display: block;
       width: rem(12);
       height: rem(12);
-      background: url(../images/common/chevron-right-blue.svg) no-repeat center
-        center/cover;
+      background: url(../images/common/chevron-right-blue.svg) no-repeat center center/cover;
       margin-right: rem(8);
       margin-top: rem(2);
     }
@@ -205,12 +202,12 @@
     gap: 4px;
     align-items: flex-start;
 
-    > span {
+    >span {
       font-size: 12px;
       line-height: calc(20 / 12);
     }
 
-    span + span {
+    span+span {
       &::before {
         width: 10px;
         height: 11px;
@@ -391,7 +388,7 @@ body:has(.common-contant) {
       line-height: 180%;
       letter-spacing: lts-em(0.75, 15);
 
-      + p {
+      +p {
         margin-top: rem(16);
       }
     }
@@ -420,7 +417,7 @@ body:has(.common-contant) {
 
   @include mq(tb) {
     .wrapper {
-      > * + * {
+      >*+* {
         margin-top: rem(96);
       }
     }
@@ -436,7 +433,7 @@ body:has(.common-contant) {
         font-size: rem(14);
         letter-spacing: lts-em(0.7, 14);
 
-        + p {
+        +p {
           margin-top: rem(12);
         }
       }
@@ -517,7 +514,7 @@ body:has(.common-contant) {
         display: block;
         min-width: rem(78);
 
-        + span {
+        +span {
           flex: 1;
           font-weight: 400;
         }
@@ -580,6 +577,7 @@ body:has(.common-contant) {
     }
 
     .page-wrapper {
+
       p,
       li {
         font-size: rem(14);
@@ -689,13 +687,11 @@ body:has(.common-contant) {
     }
 
     .btn--recruit {
-      background: url(../images/recruit/recruit__btn-bg01.webp) no-repeat center
-        center/100% 100%;
+      background: url(../images/recruit/recruit__btn-bg01.webp) no-repeat center center/100% 100%;
     }
 
     .btn--career {
-      background: url(../images/recruit/recruit__btn-bg02.webp) no-repeat center
-        center/100% 100%;
+      background: url(../images/recruit/recruit__btn-bg02.webp) no-repeat center center/100% 100%;
     }
 
     .btn__text {
@@ -762,13 +758,11 @@ body:has(.common-contant) {
       }
 
       .btn--recruit {
-        background: url(../images/recruit/sp-recruit__btn-bg01.webp) no-repeat
-          center center/cover;
+        background: url(../images/recruit/sp-recruit__btn-bg01.webp) no-repeat center center/cover;
       }
 
       .btn--career {
-        background: url(../images/recruit/sp-recruit__btn-bg02.webp) no-repeat
-          center center/cover;
+        background: url(../images/recruit/sp-recruit__btn-bg02.webp) no-repeat center center/cover;
       }
 
       .btn__text {
@@ -1002,8 +996,7 @@ body:has(.common-contant) {
     transform: translateY(-50%);
     width: rem(41);
     height: rem(41);
-    background: url(../images/common/open-icon.svg) no-repeat center
-      center/contain;
+    background: url(../images/common/open-icon.svg) no-repeat center center/contain;
   }
 
   details[open] {
@@ -1602,6 +1595,44 @@ body:has(.common-contant) {
           font-size: rem(30);
         }
       }
+    }
+  }
+}
+
+.guide-popup {
+
+  .guide-popup__content {
+    padding-block: rem(160) rem(120);
+    overflow: auto;
+    height: 100%;
+
+    @include mq(tb) {
+      padding-block: rem(72) rem(64);
+    }
+  }
+
+  .guide-popup__scroll {
+    overflow: auto;
+    height: 40vh;
+  }
+
+  .guide-popup__title {
+    font-size: rem(22);
+    line-height: 180%;
+    font-weight: 700;
+    letter-spacing: .05em;
+    width: 100%;
+    background: $blue;
+    color: $white;
+    text-align: left;
+    padding: rem(2) rem(16);
+  }
+
+  .guide-popup__btn {
+    margin-top: rem(40);
+
+    @include mq(tb) {
+      margin-top: rem(24);
     }
   }
 }

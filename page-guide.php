@@ -70,7 +70,7 @@ Template Name: 入稿ガイド
                             </span>
                         </p>
                         <div class="component-box-btn mt24--sp20">
-                            <a href="" target="_blank" rel="noopener noreferrer" class="btn inview">
+                            <button class="btn inview popup__open">
                                 <span class="btn__text">x-1aもしくはX-4の<br class="sp-only">書き出し方法はこちら</span>
                                 <span class="btn__icon">
                                     <svg viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -81,7 +81,7 @@ Template Name: 入稿ガイド
                                         </g>
                                     </svg>
                                 </span>
-                            </a>
+                            </button>
                         </div>
                         <ul class="bluesque-list mt24--sp32">
                             <li>【データのまとめ方】</li>
@@ -754,6 +754,87 @@ Template Name: 入稿ガイド
     </div>
 </div>
 
+
+<div class="popup guide-popup active">
+    <div class="popup__body guide-popup__body">
+        <button class="popup__close">
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/common/close.webp" alt="">
+        </button>
+        <div class="popup__content guide-popup__content">
+            <div class="popup__head guide-popup__head mb48">
+                <h2 class="popup__title guide-popup__title">x-1aもしくはX-4の書き出し方法</h2>
+            </div>
+            <div class="guide-popup__scroll">
+                <div class="pl21--sp0 txt">
+                    <p>まず、以下のボタンからMacまたはWindows向けのプリセットをダウンロードしてください。</p>
+                </div>
+                <div class="btn-list jcc pt24--sp20">
+                    <a href="http://omi-insatsu.local/service/printing/processing" class="btn inview active">
+                        <span class="btn__text">Macの方はこちら</span>
+                        <span class="btn__icon">
+                            <svg viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_40_1378)">
+                                    <path d="M13.6814 18.9216L12.2322 17.4304L17.4836 12.1789H0.830322V10.1164H17.4836L12.2322 4.86497L13.6814 3.37378L21.4553 11.1477L13.6814 18.9216Z" fill="#0068B6"></path>
+                                </g>
+                            </svg>
+                        </span>
+                    </a>
+                    <a href="http://omi-insatsu.local/service/printing/bookbinding" class="btn inview active">
+                        <span class="btn__text">Windowsの方はこちら</span>
+                        <span class="btn__icon">
+                            <svg viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_40_1378)">
+                                    <path d="M13.6814 18.9216L12.2322 17.4304L17.4836 12.1789H0.830322V10.1164H17.4836L12.2322 4.86497L13.6814 3.37378L21.4553 11.1477L13.6814 18.9216Z" fill="#0068B6"></path>
+                                </g>
+                            </svg>
+                        </span>
+                    </a>
+                </div>
+                <div class="pl21--sp0 pt48 txt">
+                    <p>その後、以下❶❷❸の順で、ダウンロードしたプリセットを読み込んでください。<br>❶Illustratorのメニューバーにある「編集」から「プリントプリセット」を選択してください。<br>❷ポップアップ表示から「読み込み」ボタンを押します。</p>
+                </div>
+                <div class="img-wrapper pl21--sp0 mt20">
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/guide/guide-popup01.webp"
+                        alt="" width="739" height="372" loading="lazy">
+                </div>
+                <div class="pl21--sp0 pt32--sp40 txt">
+                    <p>❸でプリセットファイルを読み込んでください。<br>「OMI_PDFX-4」「OMI_PDFX-1a」のデータはどこに置いていても読み込めますが、誤って削除すると読み込めなくなります。<br>そのため、❸のように専用のフォルダ「setting（読み込みを押すと表示されるフォルダ）」に入れておくと誤って削除する心配がないので安心です。</p>
+                </div>
+                <div class="img-wrapper pl21--sp0 mt20">
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/guide/guide-popup02.webp"
+                        alt="" width="739" height="372" loading="lazy">
+                </div>
+                <div class="pl21--sp0 pt32--sp40 txt">
+                    <p>プリセットファイルを読み込み後、❹❺❻❼の順でPDFの書き出しをしてください。<br>❹別名保存で、❺ファイル形式は「PDF」を選択します。</p>
+                </div>
+                <div class="img-wrapper pl21--sp0 mt20">
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/guide/guide-popup03.webp"
+                        alt="" width="739" height="372" loading="lazy">
+                </div>
+                <div class="pl21--sp0 pt32--sp40 txt">
+                    <p>❻次の画面で「x-1a」もしくは「X-4」を選択し、❼「PDFを保存」ボタンを押してください。</p>
+                </div>
+                <div class="img-wrapper pl21--sp0 mt20">
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/guide/guide-popup04.webp"
+                        alt="" width="739" height="372" loading="lazy">
+                </div>
+                <div class="pl21--sp0 pt32--sp40 mb24 txt">
+                    <p class="color-red">❻次の画面で「x-1a」もしくは「X-4」を選択し、❼「PDFを保存」ボタンを押してください。</p>
+                </div>
+            </div>
+            <button class="btn popup__btn popup__btn-close inview active guide-popup__btn">
+                <span class="btn__text">閉じる</span>
+                <span class="btn__icon">
+                    <svg viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0_40_1378)">
+                            <path d="M13.6814 18.9216L12.2322 17.4304L17.4836 12.1789H0.830322V10.1164H17.4836L12.2322 4.86497L13.6814 3.37378L21.4553 11.1477L13.6814 18.9216Z" fill="#0068B6"></path>
+                        </g>
+                    </svg>
+                </span>
+            </button>
+        </div>
+    </div>
+</div>
 
 
 <?php get_template_part('template-parts/footer'); ?>
