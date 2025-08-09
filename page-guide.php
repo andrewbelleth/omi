@@ -757,180 +757,182 @@ Template Name: 入稿ガイド
 
 <div class="popup guide-popup">
     <div class="popup__body guide-popup__body">
-        <button class="popup__close">
-            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/common/close.webp" alt="">
-        </button>
-        <div class="popup__content guide-popup__content">
-            <div class="popup__head guide-popup__head mb48">
-                <h2 class="popup__title guide-popup__title">x-1aもしくはX-4の書き出し方法</h2>
-            </div>
-            <div class="guide-popup__scroll">
-                <div class="pl21--sp0 txt">
-                    <p>まず、以下のボタンからMacまたはWindows向けのプリセットをダウンロードしてください。</p>
-                </div>
-                <div class="btn-list jcc pt24--sp20">
-                    <button class="btn inview active" id="download-preset-mac">
-                        <span class="btn__text">Macの方はこちら</span>
-                        <span class="btn__icon">
-                            <svg viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <g clip-path="url(#clip0_40_1378)">
-                                    <path d="M13.6814 18.9216L12.2322 17.4304L17.4836 12.1789H0.830322V10.1164H17.4836L12.2322 4.86497L13.6814 3.37378L21.4553 11.1477L13.6814 18.9216Z" fill="#0068B6"></path>
-                                </g>
-                            </svg>
-                        </span>
-                    </button>
-                    <button class="btn inview active" id="download-preset-windows">
-                        <span class="btn__text">Windowsの方はこちら</span>
-                        <span class="btn__icon">
-                            <svg viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <g clip-path="url(#clip0_40_1378)">
-                                    <path d="M13.6814 18.9216L12.2322 17.4304L17.4836 12.1789H0.830322V10.1164H17.4836L12.2322 4.86497L13.6814 3.37378L21.4553 11.1477L13.6814 18.9216Z" fill="#0068B6"></path>
-                                </g>
-                            </svg>
-                        </span>
-                    </button>
-                    <script>
-                        document.addEventListener('DOMContentLoaded', function() {
-                            const downloadMacButton = document.getElementById('download-preset-mac');
-                            const downloadWindowsButton = document.getElementById('download-preset-windows');
-
-                            if (downloadMacButton) {
-                                downloadMacButton.addEventListener('click', function(e) {
-                                    e.preventDefault();
-                                    e.stopPropagation();
-
-                                    // ボタンを一時的に無効化
-                                    downloadMacButton.disabled = true;
-                                    downloadMacButton.style.opacity = '0.6';
-
-                                    // ダウンロードするプリセットファイルのパス
-                                    const presetFiles = [
-                                        '<?php echo get_template_directory_uri(); ?>/assets/preset/mac/OMI_PDFX-1a.joboptions',
-                                        '<?php echo get_template_directory_uri(); ?>/assets/preset/mac/OMI_PDFX-4.joboptions'
-                                    ];
-
-                                    let downloadCount = 0;
-
-                                    // 各プリセットファイルを順次ダウンロード
-                                    presetFiles.forEach((filePath, index) => {
-                                        setTimeout(() => {
-                                            const link = document.createElement('a');
-                                            link.setAttribute('data-download-preset', 'true');
-                                            link.href = filePath;
-                                            link.download = index === 0 ? 'OMI_PDFX-1a.joboptions' : 'OMI_PDFX-4.joboptions';
-                                            link.style.display = 'none';
-                                            document.body.appendChild(link);
-                                            link.click();
-
-                                            downloadCount++;
-
-                                            // 少し待ってから要素を削除
-                                            setTimeout(() => {
-                                                document.body.removeChild(link);
-
-                                                // 全てのダウンロードが完了したらボタンを再有効化
-                                                if (downloadCount === presetFiles.length) {
-                                                    setTimeout(() => {
-                                                        downloadMacButton.disabled = false;
-                                                        downloadMacButton.style.opacity = '1';
-                                                    }, 500);
-                                                }
-                                            }, 200);
-                                        }, index * 1500); // 1.5秒間隔でダウンロード
-                                    });
-                                });
-                            }
-
-                            if (downloadWindowsButton) {
-                                downloadWindowsButton.addEventListener('click', function(e) {
-                                    e.preventDefault();
-                                    e.stopPropagation();
-
-                                    // ボタンを一時的に無効化
-                                    downloadWindowsButton.disabled = true;
-                                    downloadWindowsButton.style.opacity = '0.6';
-
-                                    // ダウンロードするプリセットファイルのパス
-                                    const presetFiles = [
-                                        '<?php echo get_template_directory_uri(); ?>/assets/preset/win/Prinergy用PDFX-1a.joboptions',
-                                        '<?php echo get_template_directory_uri(); ?>/assets/preset/win/Prinergy用PDFX-4.joboptions'
-                                    ];
-
-                                    let downloadCount = 0;
-
-                                    presetFiles.forEach((filePath, index) => {
-                                        setTimeout(() => {
-                                            const link = document.createElement('a');
-                                            link.setAttribute('data-download-preset', 'true');
-                                            link.href = filePath;
-                                            link.download = index === 0 ? 'Prinergy用PDFX-1a.joboptions' : 'Prinergy用PDFX-4.joboptions';
-                                            link.style.display = 'none';
-                                            document.body.appendChild(link);
-                                            link.click();
-
-                                            downloadCount++;
-
-                                            // 少し待ってから要素を削除
-                                            setTimeout(() => {
-                                                document.body.removeChild(link);
-
-                                                // 全てのダウンロードが完了したらボタンを再有効化
-                                                if (downloadCount === presetFiles.length) {
-                                                    setTimeout(() => {
-                                                        downloadWindowsButton.disabled = false;
-                                                        downloadWindowsButton.style.opacity = '1';
-                                                    }, 500);
-                                                }
-                                            }, 200);
-                                        }, index * 1500); // 1.5秒間隔でダウンロード
-                                    });
-                                });
-                            }
-                        });
-                    </script>
-                </div>
-                <div class="pl21--sp0 pt48 txt">
-                    <p>その後、以下❶❷❸の順で、ダウンロードしたプリセットを読み込んでください。<br>❶Illustratorのメニューバーにある「編集」から「プリントプリセット」を選択してください。<br>❷ポップアップ表示から「読み込み」ボタンを押します。</p>
-                </div>
-                <div class="img-wrapper pl21--sp0 mt20">
-                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/guide/guide-popup01.webp"
-                        alt="" width="739" height="372" loading="lazy">
-                </div>
-                <div class="pl21--sp0 pt32--sp40 txt">
-                    <p>❸でプリセットファイルを読み込んでください。<br>「OMI_PDFX-4」「OMI_PDFX-1a」のデータはどこに置いていても読み込めますが、誤って削除すると読み込めなくなります。<br>そのため、❸のように専用のフォルダ「setting（読み込みを押すと表示されるフォルダ）」に入れておくと誤って削除する心配がないので安心です。</p>
-                </div>
-                <div class="img-wrapper pl21--sp0 mt20">
-                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/guide/guide-popup02.webp"
-                        alt="" width="739" height="372" loading="lazy">
-                </div>
-                <div class="pl21--sp0 pt32--sp40 txt">
-                    <p>プリセットファイルを読み込み後、❹❺❻❼の順でPDFの書き出しをしてください。<br>❹別名保存で、❺ファイル形式は「PDF」を選択します。</p>
-                </div>
-                <div class="img-wrapper pl21--sp0 mt20">
-                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/guide/guide-popup03.webp"
-                        alt="" width="739" height="372" loading="lazy">
-                </div>
-                <div class="pl21--sp0 pt32--sp40 txt">
-                    <p>❻次の画面で「x-1a」もしくは「X-4」を選択し、❼「PDFを保存」ボタンを押してください。</p>
-                </div>
-                <div class="img-wrapper pl21--sp0 mt20">
-                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/guide/guide-popup04.webp"
-                        alt="" width="739" height="372" loading="lazy">
-                </div>
-                <div class="pl21--sp0 pt32--sp40 mb24 txt">
-                    <p class="color-red">念のため、「x-1a」と「X-4」両方のプリセットでPDFを生成のうえ、ご入稿いただけますと幸いです。</p>
-                </div>
-            </div>
-            <button class="btn popup__btn popup__btn-close inview active guide-popup__btn">
-                <span class="btn__text">閉じる</span>
-                <span class="btn__icon">
-                    <svg viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <g clip-path="url(#clip0_40_1378)">
-                            <path d="M13.6814 18.9216L12.2322 17.4304L17.4836 12.1789H0.830322V10.1164H17.4836L12.2322 4.86497L13.6814 3.37378L21.4553 11.1477L13.6814 18.9216Z" fill="#0068B6"></path>
-                        </g>
-                    </svg>
-                </span>
+        <div class="guide-popup__body-inner">
+            <button class="popup__close">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/common/close.webp" alt="">
             </button>
+            <div class="popup__content guide-popup__content">
+                <div class="popup__head guide-popup__head mb48">
+                    <h2 class="popup__title guide-popup__title">x-1aもしくはX-4の書き出し方法</h2>
+                </div>
+                <div class="guide-popup__scroll">
+                    <div class="pl21--sp0 txt">
+                        <p>まず、以下のボタンからMacまたはWindows向けのプリセットをダウンロードしてください。</p>
+                    </div>
+                    <div class="btn-list jcc pt24--sp20">
+                        <button class="btn inview active" id="download-preset-mac">
+                            <span class="btn__text">Macの方はこちら</span>
+                            <span class="btn__icon">
+                                <svg viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_40_1378)">
+                                        <path d="M13.6814 18.9216L12.2322 17.4304L17.4836 12.1789H0.830322V10.1164H17.4836L12.2322 4.86497L13.6814 3.37378L21.4553 11.1477L13.6814 18.9216Z" fill="#0068B6"></path>
+                                    </g>
+                                </svg>
+                            </span>
+                        </button>
+                        <button class="btn inview active" id="download-preset-windows">
+                            <span class="btn__text">Windowsの方はこちら</span>
+                            <span class="btn__icon">
+                                <svg viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_40_1378)">
+                                        <path d="M13.6814 18.9216L12.2322 17.4304L17.4836 12.1789H0.830322V10.1164H17.4836L12.2322 4.86497L13.6814 3.37378L21.4553 11.1477L13.6814 18.9216Z" fill="#0068B6"></path>
+                                    </g>
+                                </svg>
+                            </span>
+                        </button>
+                        <script>
+                            document.addEventListener('DOMContentLoaded', function() {
+                                const downloadMacButton = document.getElementById('download-preset-mac');
+                                const downloadWindowsButton = document.getElementById('download-preset-windows');
+
+                                if (downloadMacButton) {
+                                    downloadMacButton.addEventListener('click', function(e) {
+                                        e.preventDefault();
+                                        e.stopPropagation();
+
+                                        // ボタンを一時的に無効化
+                                        downloadMacButton.disabled = true;
+                                        downloadMacButton.style.opacity = '0.6';
+
+                                        // ダウンロードするプリセットファイルのパス
+                                        const presetFiles = [
+                                            '<?php echo get_template_directory_uri(); ?>/assets/preset/mac/OMI_PDFX-1a.joboptions',
+                                            '<?php echo get_template_directory_uri(); ?>/assets/preset/mac/OMI_PDFX-4.joboptions'
+                                        ];
+
+                                        let downloadCount = 0;
+
+                                        // 各プリセットファイルを順次ダウンロード
+                                        presetFiles.forEach((filePath, index) => {
+                                            setTimeout(() => {
+                                                const link = document.createElement('a');
+                                                link.setAttribute('data-download-preset', 'true');
+                                                link.href = filePath;
+                                                link.download = index === 0 ? 'OMI_PDFX-1a.joboptions' : 'OMI_PDFX-4.joboptions';
+                                                link.style.display = 'none';
+                                                document.body.appendChild(link);
+                                                link.click();
+
+                                                downloadCount++;
+
+                                                // 少し待ってから要素を削除
+                                                setTimeout(() => {
+                                                    document.body.removeChild(link);
+
+                                                    // 全てのダウンロードが完了したらボタンを再有効化
+                                                    if (downloadCount === presetFiles.length) {
+                                                        setTimeout(() => {
+                                                            downloadMacButton.disabled = false;
+                                                            downloadMacButton.style.opacity = '1';
+                                                        }, 500);
+                                                    }
+                                                }, 200);
+                                            }, index * 1500); // 1.5秒間隔でダウンロード
+                                        });
+                                    });
+                                }
+
+                                if (downloadWindowsButton) {
+                                    downloadWindowsButton.addEventListener('click', function(e) {
+                                        e.preventDefault();
+                                        e.stopPropagation();
+
+                                        // ボタンを一時的に無効化
+                                        downloadWindowsButton.disabled = true;
+                                        downloadWindowsButton.style.opacity = '0.6';
+
+                                        // ダウンロードするプリセットファイルのパス
+                                        const presetFiles = [
+                                            '<?php echo get_template_directory_uri(); ?>/assets/preset/win/Prinergy用PDFX-1a.joboptions',
+                                            '<?php echo get_template_directory_uri(); ?>/assets/preset/win/Prinergy用PDFX-4.joboptions'
+                                        ];
+
+                                        let downloadCount = 0;
+
+                                        presetFiles.forEach((filePath, index) => {
+                                            setTimeout(() => {
+                                                const link = document.createElement('a');
+                                                link.setAttribute('data-download-preset', 'true');
+                                                link.href = filePath;
+                                                link.download = index === 0 ? 'Prinergy用PDFX-1a.joboptions' : 'Prinergy用PDFX-4.joboptions';
+                                                link.style.display = 'none';
+                                                document.body.appendChild(link);
+                                                link.click();
+
+                                                downloadCount++;
+
+                                                // 少し待ってから要素を削除
+                                                setTimeout(() => {
+                                                    document.body.removeChild(link);
+
+                                                    // 全てのダウンロードが完了したらボタンを再有効化
+                                                    if (downloadCount === presetFiles.length) {
+                                                        setTimeout(() => {
+                                                            downloadWindowsButton.disabled = false;
+                                                            downloadWindowsButton.style.opacity = '1';
+                                                        }, 500);
+                                                    }
+                                                }, 200);
+                                            }, index * 1500); // 1.5秒間隔でダウンロード
+                                        });
+                                    });
+                                }
+                            });
+                        </script>
+                    </div>
+                    <div class="pl21--sp0 pt48 txt">
+                        <p>その後、以下❶❷❸の順で、ダウンロードしたプリセットを読み込んでください。<br>❶Illustratorのメニューバーにある「編集」から「プリントプリセット」を選択してください。<br>❷ポップアップ表示から「読み込み」ボタンを押します。</p>
+                    </div>
+                    <div class="img-wrapper pl21--sp0 mt20">
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/guide/guide-popup01.webp"
+                            alt="" width="739" height="372" loading="lazy">
+                    </div>
+                    <div class="pl21--sp0 pt32--sp40 txt">
+                        <p>❸でプリセットファイルを読み込んでください。<br>「OMI_PDFX-4」「OMI_PDFX-1a」のデータはどこに置いていても読み込めますが、誤って削除すると読み込めなくなります。<br>そのため、❸のように専用のフォルダ「setting（読み込みを押すと表示されるフォルダ）」に入れておくと誤って削除する心配がないので安心です。</p>
+                    </div>
+                    <div class="img-wrapper pl21--sp0 mt20">
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/guide/guide-popup02.webp"
+                            alt="" width="739" height="372" loading="lazy">
+                    </div>
+                    <div class="pl21--sp0 pt32--sp40 txt">
+                        <p>プリセットファイルを読み込み後、❹❺❻❼の順でPDFの書き出しをしてください。<br>❹別名保存で、❺ファイル形式は「PDF」を選択します。</p>
+                    </div>
+                    <div class="img-wrapper pl21--sp0 mt20">
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/guide/guide-popup03.webp"
+                            alt="" width="739" height="372" loading="lazy">
+                    </div>
+                    <div class="pl21--sp0 pt32--sp40 txt">
+                        <p>❻次の画面で「x-1a」もしくは「X-4」を選択し、❼「PDFを保存」ボタンを押してください。</p>
+                    </div>
+                    <div class="img-wrapper pl21--sp0 mt20">
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/guide/guide-popup04.webp"
+                            alt="" width="739" height="372" loading="lazy">
+                    </div>
+                    <div class="pl21--sp0 pt32--sp40 mb24 txt">
+                        <p class="color-red">念のため、「x-1a」と「X-4」両方のプリセットでPDFを生成のうえ、ご入稿いただけますと幸いです。</p>
+                    </div>
+                </div>
+                <button class="btn popup__btn popup__btn-close inview active guide-popup__btn">
+                    <span class="btn__text">閉じる</span>
+                    <span class="btn__icon">
+                        <svg viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_40_1378)">
+                                <path d="M13.6814 18.9216L12.2322 17.4304L17.4836 12.1789H0.830322V10.1164H17.4836L12.2322 4.86497L13.6814 3.37378L21.4553 11.1477L13.6814 18.9216Z" fill="#0068B6"></path>
+                            </g>
+                        </svg>
+                    </span>
+                </button>
+            </div>
         </div>
     </div>
 </div>
