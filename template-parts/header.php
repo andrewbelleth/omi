@@ -54,7 +54,6 @@ if ($is_first_visit) {
                 <li><a href="<?php echo home_url(); ?>/column">コラム</a></li>
                 <li><a href="<?php echo home_url(); ?>/recruit">リクルート</a></li>
                 <li><a href="<?php echo home_url(); ?>/partner">外部パートナー募集</a></li>
-                <li><a href="<?php echo home_url(); ?>/career">キャリア採用</a></li>
             </ul>
             <div class="header__cta"><a href="<?php echo home_url(); ?>/contact">お問い合わせ</a></div>
             <div class="header__menu-btn" id="header__menu-btn">
@@ -76,7 +75,6 @@ if ($is_first_visit) {
             <li><a href="<?php echo home_url(); ?>/column">コラム</a></li>
             <li><a href="<?php echo home_url(); ?>/recruit">リクルート</a></li>
             <li><a href="<?php echo home_url(); ?>/partner">外部パートナー募集</a></li>
-            <li><a href="<?php echo home_url(); ?>/career">キャリア採用</a></li>
         </ul>
         <a href="<?php echo home_url(); ?>/contact" class="btn btn--white">
             <span class="btn__text">お問い合わせ</span>

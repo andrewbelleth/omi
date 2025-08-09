@@ -255,7 +255,13 @@ Template Name: フッター
       });
 
       $(document).on('click', function(e) {
-        if (!$(e.target).closest('.popup__body').length) {
+        // ダウンロードボタンをクリックした場合はポップアップを閉じない
+        if ($(e.target).closest('[data-download-preset]').length) {
+          return;
+        }
+
+
+        if (!$(e.target).closest('.popup__body').length && !$(e.target).attr('data-download-preset')) {
           container.removeClass('active');
         }
       });

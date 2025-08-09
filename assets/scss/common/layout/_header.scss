@@ -265,7 +265,7 @@
         padding-left: rem(24);
         display: flex;
         flex-direction: column;
-        gap: 2rem;
+        gap: min(2rem, 4vh);
 
         li {
             a {

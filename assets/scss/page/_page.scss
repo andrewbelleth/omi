@@ -1015,9 +1015,11 @@ body:has(.common-contant) {
       transition: 0.3s;
     }
   }
+
   .link-underline.fw400 {
     font-weight: 400;
   }
+
   @include mq(tb) {
     .faq-title {
       font-size: rem(16);
@@ -1628,6 +1630,7 @@ body:has(.common-contant) {
     background: $blue;
     color: $white;
     text-align: left;
+    font-family: $font-noto-sans-jp;
     padding: rem(2) rem(16);
   }
 
