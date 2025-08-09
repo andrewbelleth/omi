@@ -756,8 +756,8 @@ Template Name: 入稿ガイド
 
 
 <div class="popup guide-popup">
-    <div class="popup__body guide-popup__body">
-        <div class="guide-popup__body-inner">
+    <div class="guide-popup__body-wrapper">
+        <div class="popup__body guide-popup__body">
             <button class="popup__close">
                 <img src="<?php echo get_template_directory_uri(); ?>/assets/images/common/close.webp" alt="">
             </button>
