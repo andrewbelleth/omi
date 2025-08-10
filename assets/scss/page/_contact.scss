@@ -416,7 +416,7 @@
             line-height: 1.5;
             letter-spacing: 0.05em;
             font-weight: 400;
-            margin-top: rem(-16);
+            margin-top: rem(-8);
 
             @include mq(tb) {
                 margin-top: rem(-4);

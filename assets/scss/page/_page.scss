@@ -1651,6 +1651,12 @@ body:has(.common-contant) {
     padding: rem(2) rem(16);
   }
 
+  .btn {
+    @include mq(tb) {
+      max-width: 100%;
+    }
+  }
+
   .guide-popup__btn {
     margin-top: rem(40);
 
