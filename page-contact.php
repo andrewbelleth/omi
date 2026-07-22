@@ -53,7 +53,6 @@ if (! defined('ABSPATH')) exit;
                 <ul></ul>
             </div>
             <?php echo do_shortcode('[contact-form-7 id="45a1726" title="お問い合せ"]'); ?>
-            <?php echo do_shortcode('[contact-form-7 id="e3eb629" title="キャリアフォーム"]'); ?>
         </div>
     </div>
 </div>
@@ -76,60 +75,6 @@ if (! defined('ABSPATH')) exit;
             select.style.color = '#A9A9A9';
             select.style.fontSize = '0.9375rem';
         }
-    });
-
-    // ラジオボタンの変更を監視
-    document.addEventListener('DOMContentLoaded', function() {
-        const radioButtons = document.getElementsByName('your-contact-type');
-        const messageTextarea = document.querySelector('textarea[name="your-textarea"]');
-
-        // 印刷物用のプレースホルダーテキスト
-        const printingDefaultText = `お問い合わせの詳細をご記入ください。
-（印刷物に関するお問い合わせ・お見積）
-（デジタルコンテンツに関するお問い合わせ・お見積）
-（WebBookパンフレットのお取り寄せ）
-（動画広告に関するお問い合わせ・お見積）
-
-＜※下記の必要項目をご記入下さい。（必要ない項目は削除してください）＞
-商品名：パンフレット・中綴じ冊子・選挙ポスター・メニュー 等
-印刷用紙：コート110kg・マットコート110kg 等
-展開サイズ(用紙サイズ)：
-仕上りサイズ：
-ページ数：
-数量・部数：
-加工・製本：巻三折・二折・観音折・DM折・中綴じ 等
-印刷：片面カラー・両面カラー・カラー+モノクロ 等
-校正：PDF校正・プリンター校正・本機校正
-OS：Machintosh・Windows7/8/10
-使用ソフト：PDF・Word・Powerpoint・Illustrator・Photoshop 等
-バージョン：
-入稿予定日：○月○日○時
-納品先：滋賀県
-お支払い方法：クレジット・代引き・銀行振込 等
-
-その他 お問い合わせ・ご希望等ご記入ください。`;
-
-
-        // 初期表示時のプレースホルダーを設定
-        messageTextarea.value = printingDefaultText;
-        messageTextarea.style.height = '43rem';
-
-
-        radioButtons.forEach(function(radio) {
-            radio.addEventListener('change', function() {
-                if (this.value === '印刷物に関するお問い合わせ・お見積もり') {
-                    console.log(messageTextarea);
-                    messageTextarea.value = printingDefaultText;
-                    messageTextarea.style.height = '43rem';
-                } else {
-                    messageTextarea.value = 'お問い合わせ内容をご入力ください';
-                    // 外す
-                    messageTextarea.style.height = '';
-                }
-            });
-        });
-
-        // contact form 7 送信した全ての項目の値をconsole.logで出力
     });
 </script>
 

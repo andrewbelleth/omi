@@ -13,6 +13,18 @@ Template Name: 社外報ingページ
 <div class="section">
     <ul class="img-list img-list--3column-sp1">
         <li>
+            <a href="https://www.omi-in.co.jp/digitalbook/ing/vol18/book/#target/page_no=1" target="_blank" rel="noopener noreferrer">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/ing/ing-img-vol18.webp" alt="2026年 Vol.18社外報の画像" width="347" height="245" loading="lazy">
+                <p>2026年 Vol.18</p>
+            </a>
+        </li>
+        <li>
+            <a href="https://www.omi-in.co.jp/digitalbook/ing/vol17/book/#target/page_no=1" target="_blank" rel="noopener noreferrer">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/ing/ing-img-vol17.webp" alt="2025年 Vol.17社外報の画像" width="347" height="245" loading="lazy">
+                <p>2025年 Vol.17</p>
+            </a>
+        </li>
+        <li>
             <a href="https://www.omi-in.co.jp/digitalbook/ing/vol16/book/#target/page_no=1" target="_blank" rel="noopener noreferrer">
                 <img src="<?php echo get_template_directory_uri(); ?>/assets/images/ing/ing-img-vol16.webp" alt="2025年 Vol.16社外報の画像" width="347" height="245" loading="lazy">
                 <p>2025年 Vol.16</p>

@@ -416,7 +416,7 @@
             line-height: 1.5;
             letter-spacing: 0.05em;
             font-weight: 400;
-            margin-top: rem(-8);
+            margin-top: rem(-16);
 
             @include mq(tb) {
                 margin-top: rem(-4);
@@ -532,15 +532,6 @@
 
         .btn {
             margin: 0;
-
-            input {
-                position: absolute;
-                top: 0;
-                left: 0;
-                width: rem(280);
-                height: rem(60);
-                padding-inline: rem(32) rem(70);
-            }
         }
 
         .wpcf7-spinner {

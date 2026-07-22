@@ -85,7 +85,7 @@ Template Name: フッター
             </div>
             <div class="footer__nav-item">
               <h3><a href="<?php echo esc_url(home_url('/news')); ?>">お知らせ</a></h3>
-              <h3><a href="<?php echo esc_url(home_url('/column')); ?>">コラム</a></h3>
+              <!-- <h3><a href="<?php echo esc_url(home_url('/column')); ?>">コラム</a></h3> -->
               <h3><a href="<?php echo esc_url(home_url('/recruit')); ?>">リクルート</a></h3>
               <h3><a href="<?php echo esc_url(home_url('/partner')); ?>">外部パートナー募集</a></h3>
               <h3><a href="<?php echo esc_url(home_url('/career')); ?>">キャリア採用</a></h3>
@@ -106,7 +106,10 @@ Template Name: フッター
       </div>
       <div class="footer__copy">
         <div class="footer__copy-inner">
+			<div class="footer__copy-link">
           <a href="<?php echo esc_url(home_url('/privacypolicy')); ?>">個人情報保護方針</a>
+		<a href="<?php echo esc_url(home_url('/privacypolicy#opposition-forces')); ?>">反社会的勢力への対応</a>
+			</div>
           <p>©omi-printing. All rights reserved.</p>
         </div>
       </div>

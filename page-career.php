@@ -233,7 +233,7 @@ Template Name: キャリア採用ページ
                 <p role="status" aria-live="polite" aria-atomic="true"></p>
                 <ul></ul>
             </div>
-            <?php echo do_shortcode('[contact-form-7 id="e3eb629" title="キャリアフォーム"]'); ?>
+            <?php echo do_shortcode('[contact-form-7 id="fb614ce" title="キャリアフォーム"]'); ?>
         </div>
     </div>
 </div>

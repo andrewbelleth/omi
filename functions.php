@@ -79,11 +79,11 @@ add_filter('wpcf7_support_html5_fallback', '__return_true');
 add_post_type_support('post', 'excerpt');
 
 //記事抜粋表示文字数
-function custom_excerpt_length($length)
-{
-  return 38; // 表示する単語数
-}
-add_filter('excerpt_length', 'custom_excerpt_length');
+// function custom_excerpt_length($length)
+// {
+//   return 38; // 表示する単語数
+// }
+// add_filter('excerpt_length', 'custom_excerpt_length');
 
 //表示件数の変更
 function change_set_garden($query)
@@ -122,6 +122,11 @@ function custom_wpcf7_validation_error_message($result, $tag)
   if ('your-email' == $tag->name) {
     if (empty($_POST[$tag->name])) {
       $result->invalidate($tag, '※「メールアドレス」は必須項目です');
+    }
+  }
+if ('your-tel' == $tag->name) {
+    if (empty($_POST[$tag->name])) {
+      $result->invalidate($tag, '※「電話番号」は必須項目です');
     }
   }
   return $result;
@@ -164,7 +169,7 @@ add_filter('wpcf7_validate_select', 'custom_wpcf7_validation_error_select', 10, 
 
 function custom_wpcf7_validation_error_textarea($result, $tag)
 {
-  if ('your-message' == $tag->name) {
+  if ('your-textarea' == $tag->name) {
     if (empty($_POST[$tag->name])) {
       $result->invalidate($tag, '※「お問い合わせ内容」は必須項目です');
     }

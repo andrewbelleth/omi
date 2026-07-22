@@ -1,5 +1,9 @@
 <?php
 if (! defined('ABSPATH')) exit;
+
+/* 
+Template Name: 会社概要ページ
+*/
 ?>
 
 <?php get_template_part('template-parts/header'); ?>
@@ -125,6 +129,7 @@ if (! defined('ABSPATH')) exit;
                     <h3 class="info-heading">建物</h3>
                     <p class="info-content">6,700㎡</p>
                 </div>
+				<div class="info-item"><h3 class="info-heading">顧問弁護士</h3><p class="info-content">オアシス法律事務所</p></div>
                 <div class="info-item">
                     <h3 class="info-heading">取扱金融機関</h3>
                     <p class="info-content">関西みらい銀行　愛知川支店<br>京都銀行　彦根支店<br>滋賀銀行　愛知川支店</p>

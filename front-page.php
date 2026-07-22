@@ -561,6 +561,7 @@ $args = array(
         <?php echo do_shortcode('[instagram-feed feed=1]'); ?>
     </div>
 </div>
+
 <div class="top-works" id="works">
     <div class="top-works__inner">
         <div class="top-works__head section__head">
@@ -618,6 +619,7 @@ $args = array(
         </ul>
     </div>
 </div>
+
 <div class="top-news section">
     <div class="top-news__head section__head">
         <h2 class="section__title inview">
