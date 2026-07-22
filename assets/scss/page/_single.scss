@@ -109,7 +109,7 @@
             letter-spacing: 0.05em;
         }
 
-        a {
+        a:not(.btn) {
             color: $blue;
             font-feature-settings: 'pwid' on, 'palt' on;
             font-size: 0.9375rem;
@@ -434,7 +434,7 @@
                 font-size: 0.875rem;
             }
 
-            a {
+            a:not(.btn) {
                 font-size: 0.875rem;
 
                 &::after {
