@@ -1,0 +1,13 @@
+.wp-block-omi-arrow-button .btn {
+  cursor: default;
+  pointer-events: none;
+}
+
+.wp-block-omi-arrow-button .btn__text {
+  min-width: 4em;
+}
+
+.wp-block-omi-arrow-button .btn__text:focus {
+  outline: 2px solid #007cba;
+  outline-offset: 2px;
+}

@@ -1,0 +1,22 @@
+.wp-block-omi-arrow-button {
+  margin-block: 1.5rem;
+}
+
+.wp-block-omi-arrow-button .btn {
+  text-decoration: none;
+}
+
+.wp-block-omi-arrow-button.alignleft {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.wp-block-omi-arrow-button.aligncenter {
+  display: flex;
+  justify-content: center;
+}
+
+.wp-block-omi-arrow-button.alignright {
+  display: flex;
+  justify-content: flex-end;
+}

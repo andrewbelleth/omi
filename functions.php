@@ -191,3 +191,43 @@ function bcn_add($bcnObj) {
 	return $bcnObj;
 }
 add_action('bcn_after_fill', 'bcn_add');
+
+/**
+ * 矢印ボタン Gutenberg ブロック
+ */
+function omi_register_arrow_button_block()
+{
+  $editor_script_path = get_theme_file_path('/blocks/arrow-button/edit.js');
+
+  wp_register_script(
+    'omi-arrow-button-editor',
+    get_theme_file_uri('/blocks/arrow-button/edit.js'),
+    [
+      'wp-blocks',
+      'wp-element',
+      'wp-block-editor',
+      'wp-components',
+    ],
+    file_exists($editor_script_path) ? filemtime($editor_script_path) : false,
+    true
+  );
+
+  register_block_type(get_theme_file_path('/blocks/arrow-button'));
+}
+add_action('init', 'omi_register_arrow_button_block');
+
+/**
+ * ブロックエディターでもテーマの .btn スタイルを適用
+ */
+function omi_enqueue_block_editor_theme_styles()
+{
+  $style_path = get_theme_file_path('/assets/css/style.css');
+
+  wp_enqueue_style(
+    'omi-theme-editor-style',
+    get_theme_file_uri('/assets/css/style.css'),
+    [],
+    file_exists($style_path) ? filemtime($style_path) : false
+  );
+}
+add_action('enqueue_block_editor_assets', 'omi_enqueue_block_editor_theme_styles');
