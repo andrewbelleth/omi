@@ -35,7 +35,7 @@
     }
   },
   "editorScript": "omi-arrow-button-editor",
-  "style": "file:./style.css",
-  "editorStyle": "file:./editor.css",
+  "style": "omi-arrow-button-style",
+  "editorStyle": "omi-arrow-button-editor-style",
   "render": "file:./render.php"
 }

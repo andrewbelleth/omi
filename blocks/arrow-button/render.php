@@ -39,7 +39,7 @@ $href = $url !== '' ? esc_url($url) : '#';
   >
     <span class="btn__text"><?php echo esc_html($text); ?></span>
     <span class="btn__icon" aria-hidden="true">
-      <svg viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <svg width="22" height="22" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path
           d="M13.6814 18.9216L12.2322 17.4304L17.4836 12.1789H0.830322V10.1164H17.4836L12.2322 4.86497L13.6814 3.37378L21.4553 11.1477L13.6814 18.9216Z"
           fill="#0068B6"
