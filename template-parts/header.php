@@ -45,17 +45,8 @@ if ($is_first_visit) {
             <div class="header__logo"><a href="<?php echo home_url(); ?>"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/pc/logo-blue.webp" alt="omi printing"></a></div>
         <?php endif; ?>
         <nav class="header__nav" id="header__nav">
-            <ul>
-                <li><a href="<?php echo home_url(); ?>/features">近江印刷の特徴</a></li>
-                <li><a href="<?php echo home_url(); ?>/service">サービス</a></li>
-                <li><a href="<?php echo home_url(); ?>/works">制作実績</a></li>
-                <li><a href="<?php echo home_url(); ?>/company">会社概要</a></li>
-                <li><a href="<?php echo home_url(); ?>/news">お知らせ</a></li>
-                <li><a href="<?php echo home_url(); ?>/column">コラム</a></li>
-                <li><a href="<?php echo home_url(); ?>/recruit">リクルート</a></li>
-                <li><a href="<?php echo home_url(); ?>/partner">外部パートナー募集</a></li>
-            </ul>
-            <div class="header__cta"><a href="<?php echo home_url(); ?>/contact">お問い合わせ</a></div>
+            <?php get_template_part('template-parts/parts/header-nav'); ?>
+            <div class="header__cta"><a href="<?php echo esc_url(home_url('/contact')); ?>">お問い合わせ</a></div>
             <div class="header__menu-btn" id="header__menu-btn">
                 <div class="header__menu-icon">
                     <span></span>
@@ -66,17 +57,8 @@ if ($is_first_visit) {
         </nav>
     </header>
     <div class="sp-menu" id="sp-menu">
-        <ul>
-            <li><a href="<?php echo home_url(); ?>/features">近江印刷の特徴</a></li>
-            <li><a href="<?php echo home_url(); ?>/service">サービス</a></li>
-            <li><a href="<?php echo home_url(); ?>/works">制作実績</a></li>
-            <li><a href="<?php echo home_url(); ?>/company">会社概要</a></li>
-            <li><a href="<?php echo home_url(); ?>/news">お知らせ</a></li>
-            <li><a href="<?php echo home_url(); ?>/column">コラム</a></li>
-            <li><a href="<?php echo home_url(); ?>/recruit">リクルート</a></li>
-            <li><a href="<?php echo home_url(); ?>/partner">外部パートナー募集</a></li>
-        </ul>
-        <a href="<?php echo home_url(); ?>/contact" class="btn btn--white">
+        <?php get_template_part('template-parts/parts/header-nav'); ?>
+        <a href="<?php echo esc_url(home_url('/contact')); ?>" class="btn btn--white">
             <span class="btn__text">お問い合わせ</span>
             <span class="btn__icon">
                 <svg viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">

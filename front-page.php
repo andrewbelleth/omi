@@ -297,6 +297,13 @@ $args = array(
                             </div>
                         </div>
                     </div>
+                    <div class="swiper-slide vertical-slider__slide top-service__item-slide js-sticky-img">
+                        <div class="top-service__item-slide-inner _cover">
+                            <div class="top-service__item-img">
+                                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/pc/sample_service-img06.webp" alt="" width="529" height="573">
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -319,7 +326,7 @@ $args = array(
                         </div>
                         <div class="top-service__item-tag inview">
                             <p>広報誌 / 定期刊行物 / 冊子 / チラシ / ポスター / 伝票・帳票 / DMハガキ / 新聞 / 名刺 / 封筒 / ノベルティグッズ / 看板 / パッケージ
-                                / カード / メニュー表 / シール / その他</p>
+                                / カード / メニュー表 / シール / オリジナルウェア / その他</p>
                         </div>
                         <a href="<?php echo home_url(); ?>/service/printing" class="btn inview">
                             <span class="btn__text">詳しく見る</span>
@@ -476,6 +483,40 @@ $args = array(
                     </div>
                 </div>
 
+            </div>
+            <div class="top-service__item inview">
+                <div class="top-service__item-slide _image mobile">
+                    <div class="top-service__item-slide-inner _cover">
+                        <div class="top-service__item-img">
+                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/sp/sample_service-img06.webp" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="top-service__item-body js-sticky-text">
+                    <div class="top-service__item-content">
+                        <h3 class="top-service__item-title inview"><span class="top-service__item-num">06</span><span class="top-service__item-title-text">NICE CREW</span></h3>
+                        <div class="top-service__item-text inview">
+                            <p>彦根市役所前に構える「NICE CREW」は、お客様とより近い距離でつながりたいという想いから生まれた拠点です。オリジナルウェアへのDTF転写プリントのご相談・ご注文はもちろん、オリジナルグッズの制作や広報についてのご相談も承っております。ナイスクルーオリジナルグッズの販売も行っています。</p>
+                            <p>彦根経済新聞のサテライト拠点としての役割も担い、地域の皆さんとのつながりを通じて、新たな地域創生を目指しています。</p>
+                            <p>印刷やものづくりを軸に、さまざまな人と出会い、表現し合える場所として運営しています。</p>
+                        </div>
+                        <div class="top-service__item-tag inview">
+                            <p>オリジナルウェア・オリジナルグッズの制作 / オリジナルグッズ販売 / 広報・PR支援業務（相談） / 彦根経済新聞サテライトなど</p>
+                        </div>
+                        <a href="<?php echo home_url(); ?>/service/nice-crew" class="btn inview">
+                            <span class="btn__text">詳しく見る</span>
+                            <span class="btn__icon">
+                                <svg viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_40_1378)">
+                                        <path
+                                            d="M13.6814 18.9216L12.2322 17.4304L17.4836 12.1789H0.830322V10.1164H17.4836L12.2322 4.86497L13.6814 3.37378L21.4553 11.1477L13.6814 18.9216Z"
+                                            fill="#0068B6" />
+                                    </g>
+                                </svg>
+                            </span>
+                        </a>
+                    </div>
+                </div>
             </div>
         </div>
     </div>

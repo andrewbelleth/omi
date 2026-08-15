@@ -17,6 +17,7 @@ Template Name: 印刷ページ
             <li><a data-slug="type-printing" href="<?php echo home_url('/service/printing/#type-printing'); ?>">印刷の種類</a></li>
             <li><a data-slug="type-products" href="<?php echo home_url('/service/printing/#type-products'); ?>">取扱品目</a></li>
             <li><a data-slug="type-processing" href="<?php echo home_url('/service/printing/#type-processing'); ?>">加工・製本</a></li>
+            <li><a data-slug="type-dtf" href="<?php echo home_url('/service/printing/#type-dtf'); ?>">DTF印刷</a></li>
             <li><a data-slug="type-agency" href="<?php echo home_url('/service/printing/#type-agency'); ?>">業務代行</a></li>
         </ul>
     </div>
@@ -138,6 +139,32 @@ Template Name: 印刷ページ
                 </div>
             </div>
         </section>
+        <section class="component-box-item type-dtf" id="type-dtf">
+            <h2 class="ttl-01">DTF印刷</h2>
+            <div class="txt mt32--sp20">
+                <p>DTF印刷（Direct to Film）は、特殊なフィルムに専用インクでフルカラー印刷を行い、熱と圧力によって生地へ転写するプリント方式です。</p>
+                <p>版の作成が不要なため、1枚からのご注文でも柔軟に対応でき、細かなグラデーションや写真のような繊細な表現も美しく再現します。</p>
+                <p>綿・ポリエステルをはじめとした幅広い生地に対応しており、Tシャツやトートバッグ、パーカーなど、さまざまなアイテムへの加工が可能です。小ロットのオリジナルグッズ制作から、チームユニフォーム、イベントノベルティまで、幅広い用途でご活用いただけます。</p>
+            </div>
+            <ul class="img-list img-list--2column-sp1 mt32--sp24">
+                <li><img src="<?php echo get_template_directory_uri(); ?>/assets/images/printing/printing-img-dtf01.webp" alt="DTF印刷（サンプル画像）" width="368" height="220" loading="lazy"></li>
+                <li><img src="<?php echo get_template_directory_uri(); ?>/assets/images/printing/printing-img-dtf02.webp" alt="DTF印刷（サンプル画像）" width="368" height="220" loading="lazy"></li>
+            </ul>
+            <div class="component-box-btn mt32--sp40">
+                <a href="#" class="btn inview">
+                    <span class="btn__text">DTF印刷について詳しく見る</span>
+                    <span class="btn__icon">
+                        <svg viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_40_1378)">
+                                <path
+                                    d="M13.6814 18.9216L12.2322 17.4304L17.4836 12.1789H0.830322V10.1164H17.4836L12.2322 4.86497L13.6814 3.37378L21.4553 11.1477L13.6814 18.9216Z"
+                                    fill="#0068B6" />
+                            </g>
+                        </svg>
+                    </span>
+                </a>
+            </div>
+        </section>
         <section class="component-box-item type-agency" id="type-agency">
             <h2 class="ttl-01">業務代行</h2>
             <div class="txt mt32--sp20">
@@ -224,7 +251,10 @@ Template Name: 印刷ページ
                     <span class="btn__text btn__text--branding">プロモーション</span>
                     <?php get_template_part('template-parts/parts/btn-icon--blue'); ?>
                 </a>
-
+                <a href="#" class="btn-02">
+                    <span class="btn__text">NICE CREW</span>
+                    <?php get_template_part('template-parts/parts/btn-icon--blue'); ?>
+                </a>
             </div>
         </div>
     </div>

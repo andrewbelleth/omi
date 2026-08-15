@@ -284,6 +284,49 @@ $(function () {
     $('#header').toggleClass('menu-open');
     $('#header__menu-btn').toggleClass('active');
     $('#sp-menu').toggleClass('active');
+
+    if (!$('#sp-menu').hasClass('active')) {
+      $('.sp-menu .menu-item-has-children').removeClass('is-open');
+      $('.sp-menu .menu-toggle, .sp-menu .menu-item__link--parent').attr('aria-expanded', 'false');
+    }
+  });
+
+  // SP: サブメニューアコーディオン（行全体で開閉）
+  function omiToggleSpAccordion($item) {
+    if (!$item.length) return;
+    var willOpen = !$item.hasClass('is-open');
+
+    $item
+      .siblings('.menu-item-has-children')
+      .removeClass('is-open')
+      .find('> .menu-item__row .menu-toggle, > .menu-item__row .menu-item__link--parent, > .menu-toggle, > .menu-item__link--parent')
+      .attr('aria-expanded', 'false');
+
+    $item.toggleClass('is-open', willOpen);
+    $item
+      .find('> .menu-item__row .menu-toggle, > .menu-item__row .menu-item__link--parent, > .menu-toggle, > .menu-item__link--parent')
+      .attr('aria-expanded', willOpen ? 'true' : 'false');
+  }
+
+  $(document).on('click', '.sp-menu .menu-item-has-children > .menu-item__row', function (e) {
+    e.preventDefault();
+    e.stopPropagation();
+    omiToggleSpAccordion($(this).closest('.menu-item-has-children'));
+  });
+
+  // 後方互換（row 無しの旧マークアップ向け）
+  $(document).on('click', '.sp-menu .menu-toggle', function (e) {
+    if ($(this).closest('.menu-item__row').length) return;
+    e.preventDefault();
+    e.stopPropagation();
+    omiToggleSpAccordion($(this).closest('.menu-item-has-children'));
+  });
+
+  $(document).on('click', '.sp-menu .menu-item-has-children > .menu-item__link--parent', function (e) {
+    if ($(this).closest('.menu-item__row').length) return;
+    e.preventDefault();
+    e.stopPropagation();
+    omiToggleSpAccordion($(this).closest('.menu-item-has-children'));
   });
 
   $('#top-slider').slick({

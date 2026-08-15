@@ -39,32 +39,45 @@
             gap: 1rem;
         }
 
-        ul {
+        > .header-menu {
+            // CTA 高さに合わせて伸ばし、サブメニューの top:100% をピル内容下端に揃える
+            align-self: stretch;
             display: flex;
-            align-items: center;
+            align-items: stretch;
             gap: 1.5rem;
 
             @media (min-width: 1025px) and (max-width: 1148px) {
                 gap: 1rem;
             }
 
-            li {
-                a {
+            > .menu-item {
+                position: relative;
+                display: flex;
+                align-items: center;
+
+                > .menu-item__row {
+                    display: inline-flex;
+                    align-items: center;
+                    gap: rem(4);
+                }
+
+                > .menu-item__link,
+                > .menu-item__row > .menu-item__link {
                     color: $black;
                     text-align: center;
                     font-size: 0.875rem;
                     font-weight: 700;
                     line-height: 160%;
                     letter-spacing: 0.1em;
-                    display: flex;
+                    display: inline-flex;
                     align-items: center;
-                    gap: 0.25rem;
-                    transition: .3s;
+                    gap: rem(4);
+                    transition: color .2s ease, opacity .2s ease;
 
                     &[target="_blank"]::after {
                         content: '';
                         display: block;
-                        background: url('/images/icon/newtab.webp') no-repeat center center/cover;
+                        background: url('../images/common/newtab.webp') no-repeat center center/cover;
                         width: 0.875rem;
                         height: 0.875rem;
                     }
@@ -72,6 +85,148 @@
                     &:hover {
                         opacity: .4;
                     }
+
+                    &--parent {
+                        &::after {
+                            content: '';
+                            display: block;
+                            width: rem(14);
+                            height: rem(14);
+                            background: url('../images/common/menu-under.png') no-repeat center center/contain;
+                            transition: transform .2s ease;
+                            flex-shrink: 0;
+                        }
+                    }
+                }
+
+                > .menu-toggle,
+                > .menu-item__row > .menu-toggle {
+                    display: none;
+                }
+
+                &.menu-item-has-children:hover > .menu-item__link--parent,
+                &.menu-item-has-children:hover > .menu-item__row > .menu-item__link--parent,
+                &.menu-item-has-children:focus-within > .menu-item__link--parent,
+                &.menu-item-has-children:focus-within > .menu-item__row > .menu-item__link--parent,
+                &.is-open > .menu-item__link--parent,
+                &.is-open > .menu-item__row > .menu-item__link--parent {
+                    color: $blue;
+                    opacity: 1;
+
+                    &::after {
+                        transform: rotate(180deg);
+                    }
+                }
+
+                &.menu-item-has-children:hover > .menu-item__link--parent:hover,
+                &.menu-item-has-children:hover > .menu-item__row > .menu-item__link--parent:hover,
+                &.menu-item-has-children:focus-within > .menu-item__link--parent:hover,
+                &.menu-item-has-children:focus-within > .menu-item__row > .menu-item__link--parent:hover {
+                    opacity: 1;
+                }
+
+                // ヘッダー下端〜サブメニュー間(16px)のホバー橋
+                &.menu-item-has-children::after {
+                    content: '';
+                    position: absolute;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    top: 100%;
+                    width: rem(220);
+                    height: 0;
+                    z-index: 121;
+                }
+
+                &.menu-item-has-children:hover::after,
+                &.menu-item-has-children:focus-within::after {
+                    // nav の padding-bottom(.5rem) + デザイン上の余白16px
+                    height: calc(0.5rem + #{rem(16)});
+                }
+
+                // PC ドロップダウン
+                > .sub-menu {
+                    position: absolute;
+                    // ピル型ヘッダー下端から 16px（li下〜nav下端の padding + 16px）
+                    top: calc(100% + 0.5rem + #{rem(16)});
+                    left: 50%;
+                    transform: translateX(-50%);
+                    z-index: 120;
+                    display: none;
+                    flex-direction: column;
+                    align-items: flex-end;
+                    width: rem(190);
+                    min-width: rem(190);
+                    padding: rem(8) rem(12);
+                    background: $white;
+                    border-radius: rem(20);
+                    box-shadow: 0px 4px 16px 0px rgba(40, 40, 40, 0.15);
+
+                    .menu-item {
+                        width: 100%;
+
+                        > .menu-item__link {
+                            display: flex;
+                            align-items: center;
+                            justify-content: space-between;
+                            gap: rem(8);
+                            width: 100%;
+                            min-height: rem(47);
+                            padding: rem(12);
+                            color: $black;
+                            font-size: rem(13);
+                            font-weight: 700;
+                            line-height: 1.7;
+                            letter-spacing: 0.1em;
+                            border-bottom: 1px solid $light-gray;
+                            transition: opacity .2s ease;
+                            text-align: left;
+                            opacity: 1;
+
+                            &::after {
+                                content: '';
+                                display: block;
+                                flex-shrink: 0;
+                                width: rem(16);
+                                height: rem(16);
+                                background: url('../images/common/arrow-right-blue.svg') no-repeat center center/contain;
+                            }
+
+                            &:hover {
+                                opacity: .5;
+                            }
+                        }
+
+                        &:last-child > .menu-item__link {
+                            border-bottom: none;
+                        }
+                    }
+
+                    // 入れ子（印刷配下など）は同パネル内にインデント表示
+                    .sub-menu {
+                        position: static;
+                        transform: none;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: flex-end;
+                        width: 100%;
+                        min-width: 0;
+                        padding: 0;
+                        background: transparent;
+                        border-radius: 0;
+                        box-shadow: none;
+
+                        > .menu-item > .menu-item__link {
+                            width: rem(153);
+                            font-weight: 400;
+                            min-height: rem(47);
+                        }
+                    }
+                }
+
+                &.menu-item-has-children:hover > .sub-menu,
+                &.menu-item-has-children:focus-within > .sub-menu,
+                &.is-open > .sub-menu {
+                    display: flex;
                 }
             }
         }
@@ -80,7 +235,7 @@
             padding: .35rem .5rem;
             gap: .38rem;
 
-            ul {
+            > .header-menu {
                 display: none;
             }
         }
@@ -131,13 +286,11 @@
     @include mq(pc) {
 
         &__nav {
-            ul {
+            > .header-menu {
                 gap: .75rem;
 
-                li {
-                    a {
-                        font-size: .75rem;
-                    }
+                > .menu-item > .menu-item__link {
+                    font-size: .75rem;
                 }
             }
         }
@@ -201,13 +354,13 @@
                 &.active {
                     width: 2.25rem;
                     height: 2.25rem;
-                    background: $white;
-                    border: 0.125rem solid $white;
+                    background: $blue;
+                    border: 0.125rem solid $blue;
                     margin-top: rem(1);
 
                     .header__menu-icon {
                         span {
-                            background: $dark-gray;
+                            background: $white;
 
                             &:nth-of-type(1) {
                                 rotate: 45deg;
@@ -236,9 +389,8 @@
             }
 
             .header__nav {
-                background: $blue;
+                background: transparent;
                 box-shadow: 0 0 0 transparent;
-
             }
 
             .header__cta {
@@ -253,49 +405,300 @@
     display: none;
     width: 100%;
     height: 100vh;
+    height: 100dvh;
     position: fixed;
     top: 0;
     left: 100%;
     z-index: 99;
-    background: $blue;
-    padding: rem(122) 3rem 5rem;
+    background: $white;
+    padding: rem(98) rem(48) rem(64);
+    overflow-y: auto;
     transition: .3s;
 
-    ul {
-        padding-left: rem(24);
+    > .header-menu {
         display: flex;
         flex-direction: column;
-        gap: min(2rem, 4vh);
+        width: 100%;
+        max-width: rem(280);
+        margin-inline: auto;
+        padding: 0;
 
-        li {
-            a {
-                color: $white;
-                font-size: .875rem;
-                font-weight: 700;
-                line-height: calc(22 / 14);
-                letter-spacing: 0.05em;
+        > .menu-item {
+            border-bottom: 1px solid $light-gray;
+
+            > .menu-item__link,
+            > .menu-item__row > .menu-item__link {
                 display: flex;
                 align-items: center;
-                gap: 0.5rem;
-                transition: .3s;
+                gap: rem(24);
+                width: 100%;
+                padding: rem(20);
+                color: $black;
+                font-size: rem(15);
+                font-weight: 700;
+                line-height: 1.6;
+                letter-spacing: 0.05em;
 
-                &[target="_blank"]::after {
+                &::after {
                     content: '';
                     display: block;
-                    width: 1rem;
-                    height: 1rem;
-                    background: url(/images/icon/newtab-white.svg) no-repeat center center/cover;
+                    margin-left: auto;
+                    width: rem(20);
+                    height: rem(20);
+                    background: url('../images/common/arrow-right-blue.svg') no-repeat center center/contain;
+                    flex-shrink: 0;
                 }
 
-                &:hover {
-                    opacity: .4;
+                &--parent::after {
+                    display: none;
+                }
+            }
+
+            > .menu-item__row {
+                position: relative;
+                display: flex;
+                align-items: center;
+                width: 100%;
+                cursor: pointer;
+                -webkit-tap-highlight-color: transparent;
+
+                > .menu-item__link {
+                    padding-right: rem(60);
+                }
+            }
+
+            > .menu-toggle,
+            > .menu-item__row > .menu-toggle {
+                position: absolute;
+                right: 0;
+                top: 0;
+                width: rem(60);
+                height: 100%;
+                min-height: rem(62);
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background: transparent;
+                border: 0;
+                padding: 0;
+                cursor: pointer;
+                z-index: 2;
+                pointer-events: none; // 行クリックで統一操作
+
+                .menu-toggle__icon {
+                    position: relative;
+                    width: rem(14);
+                    height: rem(14);
+                    pointer-events: none;
+
+                    &::before,
+                    &::after {
+                        content: '';
+                        position: absolute;
+                        left: 0;
+                        top: 50%;
+                        width: 100%;
+                        height: 2px;
+                        background: $blue;
+                        border-radius: 1px;
+                        transform: translateY(-50%);
+                        transition: transform .2s ease, opacity .2s ease;
+                    }
+
+                    &::after {
+                        transform: translateY(-50%) rotate(90deg);
+                    }
+                }
+            }
+
+            &.menu-item-has-children {
+                position: relative;
+
+                > .menu-item__link {
+                    padding-right: rem(60);
+                }
+
+                // 親行は白のまま。背景色はサブメニュー側のみ
+                > .sub-menu {
+                    display: none;
+                    width: 100%;
+                    background: $light-gray;
+                    padding: 1px 0;
+                }
+
+                &.is-open {
+                    > .menu-toggle .menu-toggle__icon::after,
+                    > .menu-item__row .menu-toggle .menu-toggle__icon::after {
+                        opacity: 0;
+                        transform: translateY(-50%) rotate(0deg);
+                    }
+
+                    > .sub-menu {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: flex-end;
+                    }
+                }
+            }
+
+            // 通常サブ（会社概要など）: フル幅行
+            &.menu-item-has-children:not(.menu-item--service) > .sub-menu {
+                > .menu-item {
+                    width: 100%;
+                    border-bottom: none;
+
+                    > .menu-item__link {
+                        display: flex;
+                        align-items: center;
+                        gap: rem(24);
+                        width: 100%;
+                        padding: rem(20) rem(20) rem(20) rem(40);
+                        color: $black;
+                        font-size: rem(14);
+                        font-weight: 700;
+                        line-height: 1.4;
+                        letter-spacing: 0.05em;
+                        border-bottom: 1px solid #d5d7da;
+
+                        &::after {
+                            content: '';
+                            display: block;
+                            margin-left: auto;
+                            width: rem(20);
+                            height: rem(20);
+                            background: url('../images/common/arrow-right-blue.svg') no-repeat center center/contain;
+                            flex-shrink: 0;
+                        }
+                    }
+
+                    &:last-child > .menu-item__link {
+                        border-bottom: none;
+                    }
+                }
+            }
+
+            // サービス: トップ＋2カラム印刷ブロック＋以降フル幅
+            &.menu-item--service > .sub-menu {
+                > .menu-item:not(.menu-item--printing) {
+                    width: 100%;
+                    border-bottom: none;
+
+                    > .menu-item__link {
+                        display: flex;
+                        align-items: center;
+                        gap: rem(24);
+                        width: 100%;
+                        padding: rem(20) rem(20) rem(20) rem(40);
+                        color: $black;
+                        font-size: rem(14);
+                        font-weight: 700;
+                        line-height: 1.4;
+                        letter-spacing: 0.05em;
+                        border-bottom: 1px solid #d5d7da;
+
+                        &::after {
+                            content: '';
+                            display: block;
+                            margin-left: auto;
+                            width: rem(20);
+                            height: rem(20);
+                            background: url('../images/common/arrow-right-blue.svg') no-repeat center center/contain;
+                            flex-shrink: 0;
+                        }
+                    }
+
+                    &:last-child > .menu-item__link {
+                        border-bottom: none;
+                    }
+                }
+
+                // 印刷〜DTF: 2カラムグリッド
+                > .menu-item--printing {
+                    display: grid;
+                    grid-template-columns: repeat(2, minmax(0, 1fr));
+                    column-gap: rem(12);
+                    width: 100%;
+                    padding-left: rem(40);
+                    padding-right: rem(20);
+                    border-bottom: none;
+
+                    > .menu-item__link {
+                        display: flex;
+                        align-items: center;
+                        gap: rem(8);
+                        padding: rem(12) 0;
+                        color: $black;
+                        font-size: rem(14);
+                        font-weight: 700;
+                        line-height: 1.4;
+                        letter-spacing: 0.05em;
+                        border-bottom: 1px solid #d5d7da;
+
+                        &::after {
+                            content: '';
+                            display: block;
+                            width: rem(20);
+                            height: rem(20);
+                            background: url('../images/common/arrow-right-blue.svg') no-repeat center center/contain;
+                            flex-shrink: 0;
+                        }
+                    }
+
+                    > .sub-menu {
+                        display: contents;
+                        background: transparent;
+                        padding: 0;
+
+                        > .menu-item {
+                            border-bottom: none;
+
+                            > .menu-item__link {
+                                display: flex;
+                                align-items: center;
+                                gap: rem(8);
+                                width: 100%;
+                                padding: rem(12) 0;
+                                color: $black;
+                                font-size: rem(14);
+                                font-weight: 700;
+                                line-height: 1.4;
+                                letter-spacing: 0.05em;
+                                border-bottom: 1px solid #d5d7da;
+
+                                &::after {
+                                    content: '';
+                                    display: block;
+                                    width: rem(20);
+                                    height: rem(20);
+                                    background: url('../images/common/arrow-right-blue.svg') no-repeat center center/contain;
+                                    flex-shrink: 0;
+                                }
+                            }
+                        }
+                    }
                 }
             }
         }
     }
 
     .btn {
-        margin-top: rem(56);
+        display: flex;
+        margin: rem(64) auto 0;
+        max-width: rem(280);
+    }
+
+    // 白背景メニュー上では通常の青ボタンを使う
+    .btn--white {
+        background: $blue;
+        color: $white;
+
+        .btn__icon {
+            background: $white;
+
+            svg path {
+                fill: $blue;
+            }
+        }
     }
 
     &.active {

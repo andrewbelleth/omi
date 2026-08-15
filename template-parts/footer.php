@@ -53,6 +53,10 @@ Template Name: フッター
               <dt>草津支店</dt>
               <dd>525-0037 滋賀県草津市西大路町11-18</dd>
             </dl>
+            <dl>
+              <dt>NICE CREW（彦根営業所）</dt>
+              <dd>522-0075 滋賀県彦根市佐和町6-14 伊藤ビル1F（西）</dd>
+            </dl>
           </div>
           <nav class="footer__nav">
             <div class="footer__nav-item">
@@ -65,12 +69,14 @@ Template Name: フッター
                     <li><a href="<?php echo esc_url(home_url('/service/printing/products')); ?>">取扱品目</a></li>
                     <li><a href="<?php echo esc_url(home_url('/service/printing/processing')); ?>">加工</a></li>
                     <li><a href="<?php echo esc_url(home_url('/service/printing/bookbinding')); ?>">製本</a></li>
+                    <li><a href="#">DTF印刷</a></li>
                   </ul>
                 </li>
                 <li><a href="<?php echo esc_url(home_url('/service/degital')); ?>">デジタル</a></li>
                 <li><a href="<?php echo esc_url(home_url('/service/newspaper')); ?>">彦根経済新聞</a></li>
                 <li><a href="<?php echo esc_url(home_url('/service/branding')); ?>">ブランディング</a></li>
                 <li><a href="<?php echo esc_url(home_url('/service/promotion')); ?>">プロモーション</a></li>
+                <li><a href="#">NICE CREW</a></li>
               </ul>
             </div>
             <div class="footer__nav-item">
@@ -143,7 +149,7 @@ Template Name: フッター
   <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script src="https://unpkg.com/lenis@1.2.3/dist/lenis.min.js"></script>
-  <script src="<?php echo esc_url(get_theme_file_uri('/assets/js/script.js')); ?>"></script>
+  <script src="<?php echo esc_url(get_theme_file_uri('/assets/js/script.js')); ?>?v=<?php echo esc_attr(filemtime(get_theme_file_path('/assets/js/script.js'))); ?>"></script>
 
 
   <script>
