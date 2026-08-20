@@ -214,6 +214,7 @@
                         background: transparent;
                         border-radius: 0;
                         box-shadow: none;
+                        padding-left: rem(13);
 
                         > .menu-item > .menu-item__link {
                             width: rem(153);
@@ -487,8 +488,8 @@
 
                 .menu-toggle__icon {
                     position: relative;
-                    width: rem(14);
-                    height: rem(14);
+                    width: rem(20);
+                    height: rem(20);
                     pointer-events: none;
 
                     &::before,
@@ -625,6 +626,7 @@
                     > .menu-item__link {
                         display: flex;
                         align-items: center;
+                        justify-content: space-between;
                         gap: rem(8);
                         padding: rem(12) 0;
                         color: $black;
@@ -655,6 +657,7 @@
                             > .menu-item__link {
                                 display: flex;
                                 align-items: center;
+                                justify-content: space-between;
                                 gap: rem(8);
                                 width: 100%;
                                 padding: rem(12) 0;
