@@ -1,0 +1,34 @@
+---
+description: 作業完了時に .agents/CHANGELOG.md へ決定ログを追記する（必須）
+alwaysApply: true
+---
+
+# CHANGELOG 更新（必須）
+
+コード変更・設計決定を行ったら、**作業完了前に** [.agents/CHANGELOG.md](../.agents/CHANGELOG.md) を必ず更新する。
+
+## 追記タイミング
+
+- 機能追加・修正・リファクタリング完了時
+- 設計・方針の決定時
+- AGENTS.md / Cursor ルールの更新時
+- 回答のみでファイル未変更の場合は不要
+
+## 追記形式
+
+`## 開発ログ` セクションの末尾に 1 行追記する。
+
+```
+YYYY-MM-DD：x.y.z：決定内容（理由）
+```
+
+## バージョンの参照
+
+1. ルートの `VERSION` ファイル（SemVer の正本）
+2. 無い場合は [style.css](../style.css) の `Version` ヘッダーを使用
+
+## 例
+
+```
+2026-06-14：0.9.0：お問い合わせページのテンプレートを templates/ へ移動（AGENTS.md の構成規約に合わせるため）
+```

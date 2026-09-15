@@ -1,0 +1,95 @@
+---
+description: 2026-07-06 追記 — SCSSのBEM複合Elementネスト記述ルール
+globs: assets/scss/**/*.scss
+alwaysApply: false
+---
+
+# 2026-07-06 SCSS BEM複合Elementネスト記述ルール
+
+## 概要
+
+Block 配下の Element を SCSS で書くとき、**同階層に `&__block-element` を並べず**、親 Block の中へ `&-element` としてネストする。
+
+HTML のクラス名（例: `.single-interview__message-body`）は変えず、SCSS の構造だけを揃える。
+
+## 基本パターン
+
+```scss
+// ✅ 正しい — 親 Block 内に子 Element をネスト
+.single-interview {
+  &__message {
+    margin-top: rem(80);
+
+    &-body { ... }
+    &-card { ... }
+    &-quote {
+      &--open { ... }
+      &--close { ... }
+    }
+    &-text { ... }
+  }
+}
+
+// ❌ 避ける — 同階層に複合 Element をフラットに並べる
+.single-interview {
+  &__message { ... }
+  &__message-body { ... }
+  &__message-card { ... }
+}
+```
+
+## 適用ルール
+
+1. **複合 Element 名**（`block__section-item` など）は `&__section { &-item {} }` と書く
+2. **Modifier** は対象 Element の直下に `&--modifier` でネストする
+3. **Block 自体のスタイル**は `&__section { }` の直下に書き、子はその中へ入れる
+4. **ネストは3階層まで**（`global.mdc` の既存ルールに従う）
+5. 出力クラス名が HTML と一致することを確認する（リファクタ後も `.block__section-item` のまま）
+
+## 実装例（single-interview）
+
+```scss
+.single-interview {
+  &__qa {
+    &-inner { ... }
+    &-list { ... }
+    &-item { ... }
+    &-header { ... }
+    &-number { ... }
+    &-title { ... }
+    &-body { ... }
+    &-text { ... }
+  }
+
+  &__flow {
+    &-list { ... }
+    &-item { ... }
+    &-card {
+      &--01 { ... }
+      &--02 { ... }
+      &--03 { ... }
+    }
+    &-num { ... }
+    &-title { ... }
+    &-arrow {
+      &--02 { ... }
+    }
+  }
+
+  &__message {
+    &-body { ... }
+    &-card { ... }
+    &-quote {
+      &--open { ... }
+      &--close { ... }
+    }
+    &-text { ... }
+  }
+}
+```
+
+## 補足
+
+- 単一語の Element（`&__title`）は従来どおり `&__title` でよい
+- ハイフン区切りの複合名（`message-body` / `flow-card`）は本ルールのネストを使う
+- 新規 SCSS 作成・既存リファクタ時はこの構造を優先する

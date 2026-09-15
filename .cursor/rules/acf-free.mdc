@@ -1,0 +1,82 @@
+---
+description: ACF 無料版前提のフィールド設計・取得ルール（Pro 非使用）
+globs:
+alwaysApply: true
+---
+
+# ACF 無料版前提ルール
+
+## 前提
+
+- **ACF Pro は使わない**。ライセンス・運用ともに無料版（ACF）のみを前提に設計する。
+- 繰り返し表示が必要な場合も **Repeater / Flexible Content / Clone 等の Pro 専用フィールドは使わない**。
+
+## 繰り返し項目の標準パターン
+
+### 1. フィールド定義（Group × 固定件数）
+
+`inc/custom-field.php` の求人・インタビュー実装を参照する。
+
+- `type => 'group'` を **項目 1〜N** として並べる（例: `interview_schedule_item_1` … `_10`）
+- サブフィールドは共通関数で生成（例: `techno_interview_acf_schedule_sub_fields()`）
+- 1件目にだけ「使う分だけ入力（空は非表示）」の instructions を付ける
+
+```php
+// ✅ 無料版対応
+...techno_interview_acf_schedule_group_fields(10),
+
+// ❌ Pro 専用 — 使わない
+'type' => 'repeater',
+```
+
+### 2. 取得・表示（PHP で foreach）
+
+- ヘルパーで Group をループし、**空行を除外**して配列化する
+- テンプレート側はその配列を `foreach` で回す
+- ACF 未読込時は `post_meta` フォールバック（`techno_get_*_field()` 系）を使う
+
+```php
+// 取得例（inc/custom-field.php）
+for ($i = 1; $i <= $max; $i++) {
+    $row = techno_get_interview_field($post_id, 'interview_schedule_item_' . $i, array());
+    if (!is_array($row) || !techno_interview_schedule_row_has_content($row)) {
+        continue;
+    }
+    $items[] = /* 正規化 */;
+}
+
+// 表示例（single-*.php）
+foreach ($techno_items as $item) { /* ... */ }
+```
+
+### 3. 件数の目安
+
+- 一覧・スケジュール等: **最大 10 件**（必要なら 5 / 3 など用途に合わせて調整）
+- 管理画面の入力負荷と実データ件数のバランスで決める
+
+## Pro 専用フィールド（使用禁止）
+
+| フィールド | 代替 |
+| --- | --- |
+| Repeater | Group × N + PHP ループ |
+| Flexible Content | タブ + Group / 固定セクション |
+| Clone | サブフィールドを明示的に定義 |
+| Gallery | 画像 Group または個別 image フィールド |
+| Options Page（Pro） | `theme_mod` / 固定ページ / カスタム設定 |
+
+## 実装時チェックリスト
+
+1. 新規 ACF 定義前に `inc/custom-field.php` の既存 Group パターンを確認
+2. Repeater を提案・実装しない
+3. 取得ヘルパー + 空判定関数を `inc/` に置き、テンプレートは表示のみ担当
+4. 管理画面で「項目を追加」が必要な UX は **Group 番号の並び**で代替する
+
+## 参照実装
+
+- 求人ボックス: `techno_recruit_acf_content_box_group_fields()` / `techno_recruit_get_content_boxes()`
+- 雰囲気カード: `techno_recruit_acf_ambiance_card_group_fields()` / `techno_recruit_get_ambiance_cards()`
+- インタビュースケジュール: `techno_interview_acf_schedule_group_fields()` / `techno_interview_get_schedule_items()`
+
+## 既存コード
+
+- コラムの `column_author_certifications`（Repeater）は **レガシー**。触るタイミングで Group 方式へ移行する。

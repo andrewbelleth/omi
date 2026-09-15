@@ -1,0 +1,128 @@
+---
+description: Figma MCPを使ったデザイン→コード実装ルール（maruesu-theme）
+globs: "**/*.{php,scss}"
+alwaysApply: false
+---
+
+# Figma MCP Integration Rules
+
+Figma MCPから取得したデザインを maruesu-theme（WordPress + BEM SCSS）に実装する際の必須フローと変換ルール。
+
+## 必須フロー（スキップ禁止）
+
+1. `get_design_context` で対象ノードの構造・スタイルを取得する
+2. レスポンスが大きい場合は `get_metadata` でノード一覧を確認し、必要なノードだけ再取得する
+3. `get_screenshot` で見た目の参照画像を取得する
+4. 必要に応じて `get_variable_defs` でFigma変数（色・余白・タイポ）を取得する
+5. 上記を参照しながら PHP / SCSS を実装する
+6. スクリーンショットと見た目を照合して完了とする
+
+## Figma URL の扱い
+
+- ユーザーから **node-id 付きのURL** を受け取る（例: `?node-id=123-456`）
+- `fileKey` と `nodeId`（`123-456` → `123:456`）をURLから抽出する
+- node-id がないURLの場合は、ユーザーに選択範囲へのリンクを依頼する
+
+## 出力形式の変換
+
+`get_design_context` の出力は **React + Tailwind** 形式。これは中間表現であり、そのまま使わない。
+
+### PHP / HTML
+
+- テンプレート形式: `page-*.php` または `template-parts/*.php`
+- BEM記法: `.block__element--modifier`（`global.mdc` 準拠）
+- 既存パーツを優先再利用:
+  - `template-parts/section-title.php`（セクション見出し）
+  - `assets/scss/common/conpornent/_btn.scss`（ボタン）
+  - `.wrapper`（コンテナ）
+- WordPress関数: `get_header()`, `get_footer()`, `get_template_directory_uri()`, `esc_html()`, `esc_attr()`
+- 画像: `assets/images/` 配下、AVIF/WebP、`width`/`height`/`loading`/`decoding`/`alt` 必須
+
+### SCSS
+
+- 先頭に `@use "../global/" as *;`（パスはファイル位置に応じて調整）
+- 色: `assets/scss/global/_valiables.scss` の変数（`$text`, `$pink`, `$gray`, `$main` 等）
+- サイズ: `rem()` 関数
+- レスポンシブ: `@include mq(pc)` / `@include mq(sp)`（モバイルファースト）
+- ページ別SCSS: `assets/scss/page/_*.scss` → `assets/scss/page/_index.scss` に import 追加
+
+### 色・タイポのマッピング例
+
+| Figma MCP（Tailwind） | maruesu-theme |
+|----------------------|---------------|
+| `text-[#e73042]` | `color: $pink;` |
+| `text-[#5b5c57]` | `color: $gray-text;` |
+| `text-[#333333]` | `color: $text;` |
+| `font-['Noto_Sans_JP']` | `font-family: $notosans;` |
+| `font-['Crimson_Text']` | `font-family: $crimson;` |
+| `text-[24px]` | `font-size: max(rem(24), 22px);` |
+| `gap-[12px]` | `gap: rem(12);` |
+
+## アセットの扱い
+
+- Figma MCPが **localhost URL** で画像・SVGを返した場合、そのURLを直接使用する
+- プレースホルダ画像を使わない
+- 新しいアイコンパッケージを追加しない（Figmaペイロード内のアセットを使う）
+- 最終配置先: `assets/images/{ページ名}/`
+
+## 画面サイズ・分割方針
+
+- 大きい画面はセクション単位のフレームに分けて取得する
+- 1回の取得でエラーや truncation が出たら、フレームを小さく分割して再試行する
+
+## 実装先の判断
+
+| 内容 | 出力先 |
+|------|--------|
+| 固定ページ | `page-{slug}.php` + `assets/scss/page/_{slug}.scss` |
+| 共通パーツ | `template-parts/{name}.php` + `assets/scss/common/conpornent/_{name}.scss` |
+| トップページ | `front-page.php` + `assets/scss/page/_top.scss` |
+
+## 推奨プロンプト（ユーザー向け）
+
+```
+【Figma実装タスク】
+URL: （Figmaのリンク）
+
+【出力先】
+- PHP: page-○○.php
+- SCSS: assets/scss/page/_○○.scss
+
+【必須ルール】
+1. get_design_context → get_screenshot の順で取得
+2. React/Tailwind出力は参考情報のみ。最終コードはBEM + SCSS
+3. 既存の section-title, btn, wrapper を優先再利用
+4. 画像はFigma MCPのlocalhost URLをそのまま使用
+5. 大きい画面はセクション単位に分割
+6. 実装後、スクリーンショットと照合
+```
+
+## 変換ドライラン（section-title）
+
+Figma MCPが以下のようなReact+Tailwindを返した場合:
+
+```jsx
+<div className="flex flex-col items-center">
+  <h3 className="text-[#e73042] text-[24px] font-semibold text-center">会社概要</h3>
+  <h2 className="text-[#afafaf] text-[20px] tracking-[0.05em] text-center -mt-[3px]">Company</h2>
+</div>
+```
+
+maruesu-theme では既存の `section-title` を使う:
+
+```php
+<div class="section-title">
+  <h1 class="section-title__ja">会社概要</h1>
+  <span class="section-title__en">Company</span>
+</div>
+```
+
+スタイルは `assets/scss/common/conpornent/_section-title.scss` を参照・再利用する。
+
+## 動作検証（2026-06-17）
+
+- 認証: `whoami` 成功（Full 席）
+- 重複MCP: `~/.cursor/mcp.json` の `Figma-MCP`（localhost:3333）を削除済み
+- テストファイル: https://www.figma.com/design/pBdbj78AYvLZ7XFPgZh8kh/maruesu-mcp-test?node-id=1-2
+- `get_design_context` + `get_screenshot` の取得を確認済み
+- 上記フレームの変換結果は既存の `section-title` パターンと一致

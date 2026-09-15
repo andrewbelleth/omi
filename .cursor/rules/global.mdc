@@ -1,0 +1,973 @@
+---
+description:
+globs:
+alwaysApply: true
+---
+
+# Cursor Rules
+
+## コーディング規約
+
+### CSS/SCSS 規約
+
+#### BEM記法を基準とする
+
+- **Block**: 独立したコンポーネント（例：`.news`, `.header`, `.button`）
+- **Element**: Block内の要素（`__`で区切る）（例：`.news__header`, `.news__title`）
+- **Modifier**: 状態やバリエーション（`--`で区切る）（例：`.button--large`, `.news--featured`）
+- **複合 Element の SCSS ネスト**: `block__section-item` のような名前は `&__section { &-item {} }` と親 Block 内へネストする（詳細は `2026-07-06-scss-bem-nesting.mdc`）
+
+```scss
+// ✅ 正しい例
+.news {
+  // Block styles
+
+  &__header {
+    // Element styles
+  }
+
+  &__title {
+    // Element styles
+  }
+
+  &--featured {
+    // Modifier styles
+  }
+}
+
+// ❌ 避けるべき例
+.top-news {
+}
+.news-header {
+}
+.news-title {
+}
+```
+
+#### 命名規則
+
+- クラス名は英語、小文字、ハイフン区切り
+- 意味のある名前を使用する
+- 略語は避ける
+
+#### ファイル構成
+
+- コンポーネントごとにファイルを分割
+- `_components.scss`でインポート管理
+- ネストは3階層まで
+
+#### SCSSファイル構成と参照方法
+
+```scss
+// ✅ 正しい参照方法
+@use "../global/" as *;
+
+// 変数の使用例
+.news {
+  font-family: $sora; // Soraフォント
+  font-family: $shippori-gothic; // Shippori Gothic B2フォント
+  font-family: $zen-kaku-gothic; // Zen Kaku Gothic Newフォント
+  color: $text; // テキストカラー (#333232)
+  color: $black; // メインカラー (#348fff)
+  color: $accent; // アクセントカラー (#024dbc)
+  color: $black; // ブラック (#000)
+  color: $white; // ホワイト (#ffffff)
+
+  // rem関数の使用
+  font-size: rem(12); // 12pxをremに変換
+  padding: rem(20); // 20pxをremに変換
+  gap: rem(12); // 12pxをremに変換
+
+  // メディアクエリの使用
+  @include mq(pc) {
+    // PC用スタイル
+  }
+
+  @include mq(sp) {
+    // スマホ用スタイル
+  }
+}
+```
+
+#### 利用可能な変数一覧
+
+##### カラー変数
+
+- `$black`: ブラック (#000)
+- `$white`: ホワイト (#ffffff)
+- `$white2`: ライトグレー (#fafafa)
+- `$text`: テキストカラー (#333232)
+- `$black`: メインカラー (#348fff)
+- `$accent`: アクセントカラー (#024dbc)
+
+##### フォント変数
+
+- `$sora`: Soraフォントファミリー
+- `$shippori-gothic`: Shippori Antiqueフォントファミリー
+- `$zen-kaku-gothic`: Zen Kaku Gothic Newフォントファミリー
+
+##### その他の変数
+
+- `$leading-trim`: 行間調整用の計算値 (calc((1em - 1lh) / 2))
+
+##### 関数
+
+- `rem()`: pxをremに変換する関数
+- `mq()`: メディアクエリ用のmixin
+
+#### その他のCSS規約
+
+- プロパティはアルファベット順
+- 単位は`rem`または`px`を統一使用
+- カラーは変数化（`$primary-color`など）
+- レスポンシブデザインはモバイルファースト
+- 必ず`@use "../global/" as *;`で変数をインポート
+
+#### リセットCSSとの役割分担
+
+`assets/scss/common/foundation/_reset.scss` で全体リセット済みのため、コンポーネント側で毎回書かない。
+
+- **書かない例**: `margin: 0`, `padding: 0`, `list-style: none`（`*` および `ul` / `li` 等で初期化済み）
+- **例外**: リセット後に上書きが必要なときだけ、該当要素に限定して指定する
+
+#### 余白（margin / padding）の書き方
+
+- **最小範囲で書く**: セクション間の余白は Block（例: `.newgraduates__flow`）や、必要な Element にだけ付ける
+- **広く書かない**: 子要素すべてに `margin: 0` を並べない、リスト全体に不要な `padding: 0` を重ねない
+- **優先順位**: レイアウト用の余白 → 親 Block / ラッパー、要素固有の余白 → その Element のみ
+
+```scss
+// ✅ セクション単位で余白を付ける
+.newgraduates {
+  &__flow {
+    margin-top: rem(80);
+    padding-inline: rem(80);
+  }
+}
+
+// ❌ リセット済みの指定を子要素に重ねる
+.newgraduates__flow-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.newgraduates__flow-title {
+  margin: 0;
+}
+```
+
+### HTML規約
+
+#### セマンティックHTML
+
+- 適切なHTML要素を使用（`<header>`, `<nav>`, `<main>`, `<section>`, `<article>`, `<aside>`, `<footer>`）
+- 見出し構造を正しく使用（h1→h2→h3の順序）
+- リスト構造を適切に使用（`<ul>`, `<ol>`, `<li>`）
+
+#### セマンティックHTMLタグの詳細
+
+##### 文章構造タグ
+
+###### `<article>`
+
+- **用途**: 独立した完結したコンテンツ（記事、ブログ投稿、ニュース記事など）
+- **セマンティック意味**: 単独で配信・再利用可能なコンテンツの単位
+- **使用例**:
+
+```html
+<article class="section__article">
+  <h2>記事タイトル</h2>
+  <p>記事の本文...</p>
+</article>
+```
+
+###### `<p>`
+
+- **用途**: 段落を表す
+- **セマンティック意味**: テキストの段落を意味的に区切る
+- **使用例**:
+
+```html
+<p class="section__content">これは段落です。</p>
+```
+
+###### `<h1>` - `<h6>`
+
+- **用途**: 見出しを表す（h1が最上位、h6が最下位）
+- **セマンティック意味**: コンテンツの階層構造を示す
+- **注意**: 見出しレベルを飛ばさない（h1→h3は×、h1→h2→h3は○）
+- **使用例**:
+
+```html
+<h1>ページタイトル</h1>
+<h2>セクションタイトル</h2>
+<h3>サブセクションタイトル</h3>
+```
+
+###### `<br>`
+
+- **用途**: 改行を挿入
+- **セマンティック意味**: 詩や住所など、改行が意味を持つ場合に使用
+- **注意**: スタイリング目的での使用は避ける（CSSのmarginを使用）
+- **アクセシビリティ**: 装飾的な改行には`aria-hidden="true"`を使用
+  - **意味のある改行**（住所、詩など）: `aria-hidden`不要
+  - **装飾的な改行**（レイアウト目的のみ）: `aria-hidden="true"`を付与してスクリーンリーダーから隠す
+- **使用例**:
+
+```html
+<!-- ✅ 意味のある改行（aria-hidden不要） -->
+<p>
+  〒123-4567<br />
+  東京都渋谷区○○○-○-○
+</p>
+
+<address class="section__address">
+  株式会社Example<br />
+  代表取締役 山田太郎
+</address>
+
+<!-- ✅ 装飾的な改行（aria-hidden推奨） -->
+<p>
+  サービス名<br aria-hidden="true" />
+  <span class="section__subtitle">副題やキャッチコピー</span>
+</p>
+
+<!-- ❌ 避けるべき例：レイアウト目的でのbr使用 -->
+<p>テキスト</p>
+<br /><br /><br />
+<!-- CSSのmarginを使うべき -->
+<p>次のテキスト</p>
+```
+
+##### テキスト意味づけタグ
+
+###### `<strong>`
+
+- **用途**: 重要性、深刻性、緊急性を持つテキスト
+- **セマンティック意味**: 内容的に重要であることを示す
+- **デフォルト表示**: 太字
+- **使用例**:
+
+```html
+<p><strong>重要：</strong>この情報は必ずお読みください。</p>
+```
+
+###### `<em>`
+
+- **用途**: 強調するテキスト
+- **セマンティック意味**: 発音上の強調を示す
+- **デフォルト表示**: 斜体
+- **使用例**:
+
+```html
+<p>これは<em>とても</em>重要です。</p>
+```
+
+###### `<mark>`
+
+- **用途**: ハイライトされたテキスト
+- **セマンティック意味**: 関連性や参照目的でマークされたテキスト
+- **デフォルト表示**: 黄色背景
+- **使用例**:
+
+```html
+<p>検索結果: <mark>JavaScript</mark>に関する記事</p>
+```
+
+###### `<small>`
+
+- **用途**: 注釈、細則、著作権表示などの小さいテキスト
+- **セマンティック意味**: 副次的な情報を示す
+- **デフォルト表示**: 小さいフォントサイズ
+- **使用例**:
+
+```html
+<p><small>※この情報は予告なく変更される場合があります。</small></p>
+```
+
+###### `<abbr>`
+
+- **用途**: 略語や頭字語
+- **セマンティック意味**: 略語の意味を機械可読にする
+- **必須属性**: `title`（フルスペルを記載）
+- **使用例**:
+
+```html
+<p><abbr title="HyperText Markup Language">HTML</abbr>は...</p>
+<p><abbr title="Software as a Service">SaaS</abbr>事業</p>
+```
+
+###### `<time>`
+
+- **用途**: 日付や時刻を表す
+- **セマンティック意味**: 日時情報を機械可読にする
+- **推奨属性**: `datetime`（ISO 8601形式）
+- **使用例**:
+
+```html
+<time datetime="2025-10-09">2025年10月9日</time>
+<time datetime="09:00">9:00</time>
+<time datetime="2025-10-09T09:00:00+09:00">2025年10月9日 午前9時</time>
+```
+
+##### リスト構造タグ
+
+###### `<ul>` - 順序なしリスト
+
+- **用途**: 順序に意味がない項目の列挙
+- **セマンティック意味**: 箇条書きリスト
+- **使用例**:
+
+```html
+<ul class="section__list">
+  <li class="section__list-item">項目1</li>
+  <li class="section__list-item">項目2</li>
+  <li class="section__list-item">項目3</li>
+</ul>
+```
+
+###### `<ol>` - 順序付きリスト
+
+- **用途**: 順序に意味がある項目の列挙（手順、ランキングなど）
+- **セマンティック意味**: 番号付きリスト
+- **使用例**:
+
+```html
+<ol class="section__list">
+  <li class="section__list-item">第一に...</li>
+  <li class="section__list-item">次に...</li>
+  <li class="section__list-item">最後に...</li>
+</ol>
+```
+
+###### `<li>` - リスト項目
+
+- **用途**: `<ul>`または`<ol>`の子要素としてリスト項目を表す
+- **セマンティック意味**: リストの各項目
+- **注意**: `<ul>`や`<ol>`の直接の子要素である必要がある
+
+###### `<dl>` - 定義リスト
+
+- **用途**: 用語とその定義、キーと値のペアなど
+- **セマンティック意味**: 説明リスト
+- **使用例**:
+
+```html
+<dl class="section__definition-list">
+  <dt class="section__definition-term">会社名</dt>
+  <dd class="section__definition-desc">株式会社Example</dd>
+
+  <dt class="section__definition-term">設立</dt>
+  <dd class="section__definition-desc">2020年1月1日</dd>
+</dl>
+```
+
+###### `<dt>` - 定義用語
+
+- **用途**: `<dl>`内の用語（キー）を表す
+- **セマンティック意味**: 定義される用語
+
+###### `<dd>` - 定義の説明
+
+- **用途**: `<dl>`内の説明（値）を表す
+- **セマンティック意味**: 用語の定義・説明
+
+##### 引用・補足タグ
+
+###### `<blockquote>`
+
+- **用途**: 他のソースからの引用ブロック
+- **セマンティック意味**: 長い引用文を示す
+- **推奨属性**: `cite`（引用元のURL）
+- **使用例**:
+
+```html
+<blockquote class="section__quote" cite="https://example.com">
+  <p>「引用文がここに入ります」</p>
+  <footer>- 引用元の著者名</footer>
+</blockquote>
+```
+
+###### `<cite>`
+
+- **用途**: 作品のタイトル（書籍、映画、論文など）
+- **セマンティック意味**: 創作物の参照を示す
+- **使用例**:
+
+```html
+<p>参考文献: <cite>HTML5の教科書</cite></p>
+```
+
+###### `<aside>`
+
+- **用途**: メインコンテンツから独立した補足情報
+- **セマンティック意味**: サイドバー、注釈、広告など
+- **使用例**:
+
+```html
+<aside class="section__note" role="note" aria-label="補足情報">
+  <h4>注意事項</h4>
+  <p>補足的な情報...</p>
+</aside>
+```
+
+##### リンク・アクションタグ
+
+###### `<a href="tel:...">`
+
+- **用途**: 電話番号リンク（タップで電話アプリ起動）
+- **セマンティック意味**: 電話番号への行動を促す
+- **使用例**:
+
+```html
+<a href="tel:03-1234-5678" class="section__link">03-1234-5678</a>
+<a href="tel:+81312345678">+81-3-1234-5678</a>
+```
+
+###### `<a href="mailto:...">`
+
+- **用途**: メールアドレスリンク（タップでメールアプリ起動）
+- **セマンティック意味**: メール送信への行動を促す
+- **使用例**:
+
+```html
+<a href="mailto:info@example.com" class="section__link">info@example.com</a>
+<a href="mailto:contact@example.com?subject=お問い合わせ&body=本文"
+  >メール送信</a
+>
+```
+
+##### 画像タグ
+
+###### `<img>`
+
+- **用途**: 画像を表示する
+- **セマンティック意味**: コンテンツの一部として意味を持つ画像
+- **必須属性**: `src`, `alt`
+- **推奨属性**: `width`, `height`, `loading`, `decoding`
+
+###### `width`と`height`属性
+
+- **用途**: 画像の表示サイズを指定
+- **重要性**: レイアウトシフト（CLS）を防ぎ、パフォーマンスを向上
+- **推奨**: 常に指定する（実際の画像サイズまたは表示サイズ）
+- **メリット**:
+  - ブラウザが画像読み込み前にスペースを確保
+  - ページのガタつきを防ぐ
+  - Core Web Vitalsのスコア向上
+- **使用例**:
+
+```html
+<!-- ✅ 正しい例：width/height指定あり -->
+<img
+  src="image.jpg"
+  alt="商品画像"
+  width="800"
+  height="600"
+  class="section__image"
+/>
+
+<!-- ❌ 避けるべき例：width/height指定なし -->
+<img src="image.jpg" alt="商品画像" class="section__image" />
+```
+
+###### `alt`属性
+
+- **用途**: 画像の代替テキスト
+- **必須**: すべての`<img>`タグに必須
+- **重要性**: アクセシビリティとSEOに不可欠
+- **記述ルール**:
+  - **意味のある画像**: 画像の内容を具体的に説明
+  - **装飾的な画像**: 空文字列`alt=""`を指定（`aria-hidden="true"`も可）
+  - **リンク内の画像**: リンク先の内容を説明
+  - **テキストを含む画像**: そのテキストを記載
+- **使用例**:
+
+```html
+<!-- ✅ 意味のある画像 -->
+<img
+  src="product.jpg"
+  alt="赤いワンピース - フロントビュー"
+  width="400"
+  height="600"
+/>
+
+<!-- ✅ 装飾的な画像 -->
+<img src="decoration.svg" alt="" width="100" height="100" aria-hidden="true" />
+
+<!-- ✅ リンク内の画像 -->
+<a href="/about">
+  <img src="about-icon.png" alt="会社概要ページへ" width="50" height="50" />
+</a>
+
+<!-- ✅ テキストを含む画像 -->
+<img
+  src="banner.jpg"
+  alt="春の新作セール 最大50%オフ"
+  width="1200"
+  height="400"
+/>
+
+<!-- ❌ 避けるべき例 -->
+<img src="photo.jpg" alt="画像" />
+<!-- 不明確 -->
+<img src="photo.jpg" alt="photo.jpg" />
+<!-- ファイル名をそのまま -->
+<img src="photo.jpg" />
+<!-- alt属性なし -->
+```
+
+###### `loading`属性
+
+- **用途**: 画像の読み込みタイミングを制御（遅延読み込み）
+- **値**:
+  - `lazy`: 画面に近づいた時に読み込み（推奨）
+  - `eager`: 即座に読み込み（デフォルト）
+- **推奨使用場面**:
+  - ファーストビュー外の画像: `loading="lazy"`
+  - ファーストビュー内の画像: 指定なし or `loading="eager"`
+- **メリット**:
+  - 初期ページ読み込みの高速化
+  - 通信量の削減
+  - パフォーマンス向上
+- **使用例**:
+
+```html
+<!-- ✅ ファーストビュー内（すぐに表示される画像） -->
+<img
+  src="hero.jpg"
+  alt="メインビジュアル"
+  width="1200"
+  height="800"
+  loading="eager"
+/>
+
+<!-- ✅ ファーストビュー外（スクロールしないと見えない画像） -->
+<img
+  src="gallery-1.jpg"
+  alt="ギャラリー画像1"
+  width="400"
+  height="300"
+  loading="lazy"
+/>
+
+<!-- ✅ 記事内の画像 -->
+<img
+  src="article-image.jpg"
+  alt="記事の説明画像"
+  width="800"
+  height="600"
+  loading="lazy"
+/>
+```
+
+###### `decoding`属性
+
+- **用途**: 画像のデコード方法のヒントをブラウザーに提供
+- **セマンティック意味**: 他のコンテンツを表示する前に画像がデコードされるのを待つべきかどうかを指示
+- **参考**: [MDN - HTMLImageElement: decoding プロパティ](https://developer.mozilla.org/ja/docs/Web/API/HTMLImageElement/decoding)
+- **値**:
+  - `"sync"`: 画像を他のコンテンツと同期してデコードし、アトミックに表示
+  - `"async"`: 画像を非同期にデコードし、完全に完了する前に他のコンテンツをレンダリング可能
+  - `"auto"`: ブラウザが最適なものを決定（デフォルト）
+- **ブラウザの既定値**:
+  - Chromium: `"sync"`
+  - Firefox: `"async"`
+  - Safari: `"sync"`（一部の状況を除く）
+- **使用上の注意**:
+  - **ビューポート内のDOM挿入**: `"async"`はスタイルのないコンテンツが点滅する可能性があり、`"sync"`は少量のジャンクが発生する可能性
+  - **ビューポート外のDOM挿入**: どちらの値を使用しても顕著な違いはない（ブラウザーは通常、スクロールして表示される前にデコード）
+  - **ベストプラクティス**: `HTMLImageElement.decode()` メソッドを使用する方が通常は良い方法
+- **推奨使用場面**:
+  - ファーストビュー外の画像: `decoding="async"`
+  - 大きな画像: `decoding="async"`
+  - ファーストビュー内の重要な画像: `decoding="sync"` または明示的な指定なし
+- **メリット**:
+  - メインスレッドをブロックしない（`async`の場合）
+  - スムーズなページ表示
+  - ユーザー体験の向上
+- **使用例**:
+
+```html
+<!-- ✅ ファーストビュー外の画像（非同期デコード推奨） -->
+<img
+  src="large-image.jpg"
+  alt="詳細画像"
+  width="1920"
+  height="1080"
+  loading="lazy"
+  decoding="async"
+/>
+
+<!-- ✅ 記事のサムネイル（非同期デコード） -->
+<img
+  src="thumbnail.jpg"
+  alt="記事サムネイル"
+  width="300"
+  height="200"
+  loading="lazy"
+  decoding="async"
+/>
+
+<!-- ✅ ファーストビュー内の重要な画像（同期デコード） -->
+<img
+  src="hero.jpg"
+  alt="メインビジュアル"
+  width="1200"
+  height="800"
+  loading="eager"
+  decoding="sync"
+/>
+
+<!-- ✅ JavaScriptで動的に挿入する場合の推奨パターン -->
+<script>
+  const img = new Image();
+  img.src = "image.jpg";
+  img.alt = "画像の説明";
+  img.width = 800;
+  img.height = 600;
+
+  // decode()メソッドを使用して、デコード完了後に挿入
+  img
+    .decode()
+    .then(() => {
+      document.body.appendChild(img);
+    })
+    .catch(() => {
+      console.error("画像のデコードに失敗しました");
+    });
+</script>
+```
+
+###### 画像の完全な例
+
+```html
+<!-- ✅ ファーストビュー内の重要な画像 -->
+<img
+  src="hero.jpg"
+  alt="新商品発表会の様子"
+  width="1200"
+  height="800"
+  loading="eager"
+  decoding="sync"
+  class="hero__image"
+/>
+
+<!-- ✅ ファーストビュー外の一般的な画像 -->
+<img
+  src="product.jpg"
+  alt="ブルーのTシャツ - 正面"
+  width="600"
+  height="800"
+  loading="lazy"
+  decoding="async"
+  class="product__image"
+/>
+
+<!-- ✅ 装飾的な画像 -->
+<img
+  src="decoration.svg"
+  alt=""
+  width="100"
+  height="100"
+  loading="lazy"
+  decoding="async"
+  aria-hidden="true"
+  class="section__decoration"
+/>
+```
+
+###### 画像最適化のベストプラクティス
+
+- **フォーマット**: WebP形式を優先（フォールバックにJPG/PNG）
+- **レスポンシブ**: `<picture>`タグや`srcset`属性を活用
+- **サイズ最適化**: 適切な解像度で書き出し（不要に大きくしない）
+- **圧縮**: 画質を保ちつつファイルサイズを削減
+- **CDN**: 画像配信にCDNを活用
+
+#### セマンティックHTMLの使い分け指針
+
+| タグ       | 使用場面                         | 避けるべき使い方 |
+| ---------- | -------------------------------- | ---------------- |
+| `<strong>` | 重要な内容                       | 単なる太字目的   |
+| `<em>`     | 発音上の強調                     | 単なる斜体目的   |
+| `<b>`      | 目を引くテキスト（重要ではない） | 重要な内容       |
+| `<i>`      | 技術用語、外国語など             | 強調             |
+| `<mark>`   | 検索結果、注目箇所               | 重要性の強調     |
+| `<small>`  | 細則、注釈                       | 本文の縮小       |
+
+#### W3C準拠
+
+- HTML5標準に準拠したマークアップ
+- 適切なDOCTYPE宣言（`<!DOCTYPE html>`）
+- 有効なHTML構文の使用
+- 閉じタグの適切な使用
+
+### アクセシビリティ規約
+
+#### WCAG 2.1 AA準拠
+
+- **キーボードナビゲーション**: すべてのインタラクティブ要素がキーボードで操作可能
+- **スクリーンリーダー対応**: 適切なARIA属性とラベルの使用
+- **カラーコントラスト**: 4.5:1以上のコントラスト比を確保
+- **フォーカス表示**: 明確なフォーカスインジケーターの提供
+
+#### 必須のアクセシビリティ要素
+
+```html
+<!-- ✅ 正しい例 -->
+<img
+  src="image.jpg"
+  alt="商品の写真"
+  width="800"
+  height="600"
+  loading="lazy"
+  decoding="async"
+/>
+<button aria-label="メニューを開く">☰</button>
+<input type="text" aria-describedby="email-help" />
+<div id="email-help">メールアドレスを入力してください</div>
+
+<!-- ❌ 避けるべき例 -->
+<img src="image.jpg" />
+<!-- alt属性なし -->
+<button>☰</button>
+<!-- aria-labelなし -->
+<input type="text" />
+<!-- ラベルや説明なし -->
+```
+
+#### 画像のアクセシビリティ
+
+- **alt属性は必須**: すべての画像に適切な代替テキストを提供
+- **装飾的な画像**: `alt=""`と`aria-hidden="true"`を使用
+- **width/height属性**: レイアウトシフトを防ぐため必ず指定
+- **loading属性**: ファーストビュー外の画像には`loading="lazy"`を使用
+- **意味のある説明**: 画像の内容を具体的に説明（「画像」「写真」などの不明確な表現は避ける）
+
+```html
+<!-- ✅ 意味のある画像 -->
+<img
+  src="product.jpg"
+  alt="赤いワンピース - フロントビュー、膝丈、半袖"
+  width="600"
+  height="800"
+  loading="lazy"
+  decoding="async"
+  class="product__image"
+/>
+
+<!-- ✅ 装飾的な画像 -->
+<img
+  src="decoration.svg"
+  alt=""
+  width="100"
+  height="100"
+  loading="lazy"
+  decoding="async"
+  aria-hidden="true"
+  class="section__decoration"
+/>
+```
+
+#### ARIA属性の使用
+
+##### `aria-label`
+
+- **用途**: 要素の説明ラベルを提供
+- **使用場面**: アイコンボタンやテキストラベルがない要素
+- **使用例**:
+
+```html
+<button aria-label="メニューを開く">☰</button>
+<a href="#" aria-label="Twitterでシェア"><i class="icon-twitter"></i></a>
+```
+
+##### `aria-describedby`
+
+- **用途**: 追加の説明情報への参照
+- **使用場面**: フォーム入力のヘルプテキスト、詳細説明
+- **使用例**:
+
+```html
+<input type="email" id="email" aria-describedby="email-help" />
+<span id="email-help">例: user@example.com</span>
+```
+
+##### `aria-expanded`
+
+- **用途**: 展開/折りたたみ状態を示す
+- **使用場面**: アコーディオン、ドロップダウンメニュー
+- **値**: `true`（展開）または `false`（折りたたみ）
+- **使用例**:
+
+```html
+<button aria-expanded="false" aria-controls="menu">メニュー</button>
+<ul id="menu" hidden>
+  ...
+</ul>
+```
+
+##### `aria-hidden`
+
+- **用途**: 装飾的要素をスクリーンリーダーから隠す
+- **使用場面**:
+  - 装飾的なアイコンやグラフィック
+  - 視覚的なみ目的の要素（装飾的な`<br>`など）
+  - 重複するコンテンツ
+- **注意**:
+  - **重要なコンテンツには使用しない**
+  - `aria-hidden="true"`を設定した要素内のすべての子要素も非表示になる
+  - フォーカス可能な要素には使用を避ける
+- **使用例**:
+
+```html
+<!-- ✅ 正しい例：装飾的なアイコン -->
+<button>
+  <i class="icon-save" aria-hidden="true"></i>
+  保存
+</button>
+
+<!-- ✅ 正しい例：装飾的な改行 -->
+<p>
+  タイトル<br aria-hidden="true" />
+  <span class="subtitle">サブタイトル</span>
+</p>
+
+<!-- ✅ 正しい例：装飾的なSVG -->
+<div class="card">
+  <svg aria-hidden="true" class="decoration">...</svg>
+  <h3>カードタイトル</h3>
+</div>
+
+<!-- ❌ 避けるべき例：重要なコンテンツを隠す -->
+<button aria-hidden="true">クリック</button>
+<!-- ボタンが操作不能に -->
+
+<!-- ❌ 避けるべき例：意味のあるアイコンを隠す -->
+<button aria-hidden="true">
+  <i class="icon-warning"></i>
+  <!-- 警告の意味が失われる -->
+</button>
+```
+
+##### `role`
+
+- **用途**: 要素の役割を明示
+- **使用場面**: セマンティックHTMLで表現できない役割を持つ要素
+- **使用例**:
+
+```html
+<div role="navigation">...</div>
+<div role="alert">重要なお知らせ</div>
+<aside role="note" aria-label="補足情報">...</aside>
+```
+
+#### フォームアクセシビリティ
+
+- `<label>`要素と`for`属性の適切な使用
+- エラーメッセージの明確な関連付け
+- 必須項目の明示（`required`属性、`aria-required`）
+
+### JavaScript規約
+
+#### 基本規約
+
+- ES6+の記法を使用
+- 関数名は動詞から始める
+- 定数は`UPPER_SNAKE_CASE`
+- コメントは日本語で記述
+
+#### 画像の動的読み込み
+
+- **HTMLImageElement.decode()メソッドの使用**: 画像を動的に挿入する際は、`decode()`メソッドを使用してデコード完了後に挿入
+- **参考**: [MDN - HTMLImageElement: decoding プロパティ](https://developer.mozilla.org/ja/docs/Web/API/HTMLImageElement/decoding)
+- **メリット**:
+  - 画像のデコード中に他の無関係な描画が中断されるのを防ぐ
+  - アトミックな画像表示を実現
+  - より良いユーザー体験
+
+```javascript
+// ✅ 推奨：decode()メソッドを使用
+async function loadImage(url, alt, width, height) {
+  const img = new Image();
+  img.src = url;
+  img.alt = alt;
+  img.width = width;
+  img.height = height;
+
+  try {
+    // デコードが完了するまで待機
+    await img.decode();
+    // デコード完了後に挿入
+    document.body.appendChild(img);
+    console.log("画像の読み込みとデコードが完了しました");
+  } catch (error) {
+    console.error("画像のデコードに失敗しました:", error);
+  }
+}
+
+// ✅ 画像の入れ替え時
+async function replaceImage(oldImg, newSrc) {
+  const newImg = new Image();
+  newImg.src = newSrc;
+  newImg.alt = oldImg.alt;
+  newImg.width = oldImg.width;
+  newImg.height = oldImg.height;
+  newImg.className = oldImg.className;
+
+  try {
+    await newImg.decode();
+    // デコード完了後に入れ替え
+    oldImg.replaceWith(newImg);
+  } catch (error) {
+    console.error("画像の入れ替えに失敗しました:", error);
+  }
+}
+
+// ❌ 避けるべき：デコード待機なしで挿入
+function loadImageBad(url) {
+  const img = new Image();
+  img.src = url;
+  // デコード中にページがブロックされる可能性
+  document.body.appendChild(img);
+}
+```
+
+### パフォーマンス規約
+
+#### 画像の最適化
+
+- **フォーマット**: WebP形式を優先（フォールバックにJPG/PNG）
+- **サイズ**: 適切な解像度で書き出し（表示サイズの2倍程度まで）
+- **圧縮**: 画質を保ちつつファイルサイズを削減
+- **レスポンシブ**: `<picture>`タグや`srcset`属性を活用
+- **遅延読み込み**: ファーストビュー外の画像には`loading="lazy"`を必ず使用
+- **非同期デコード**: 大きな画像には`decoding="async"`を指定
+- **width/height指定**: レイアウトシフト（CLS）を防ぐため必須
+
+#### Core Web Vitals対応
+
+- **LCP（Largest Contentful Paint）**:
+  - メインビジュアル画像を最適化
+  - ファーストビュー内の画像は`loading="eager"`
+  - 画像のプリロード（`<link rel="preload">`）を活用
+- **CLS（Cumulative Layout Shift）**:
+  - すべての画像に`width`と`height`を指定
+  - アスペクト比を維持
+- **FID（First Input Delay）**:
+  - 画像の非同期デコード（`decoding="async"`）を使用
+
+#### その他のパフォーマンス対策
+
+- 重要なリソースのプリロード
+- 不要なHTTPリクエストの削減
+- CDNの活用
+- キャッシュ戦略の最適化
+
+### その他
+
+- コミットメッセージは日本語
+- コードレビューは必須
+- テストコードの記述を推奨
+- W3Cバリデータでの検証を必須とする
