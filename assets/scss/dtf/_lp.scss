@@ -1,14 +1,590 @@
 @use "../global" as *;
 
-/* 
+/*
 メモ
 コンテンツ幅：1120px
 ブレイクポイント：tb：1024px, sp：768px
 ｓｐ切り替え：768px
 ｓｐカンプ：375px
 PCカンプ：1440px
+
+MV・case・can・CTA・見出し・ボタンは common/components/_lp.scss（LP共通）
+このファイルはDTF印刷LP固有のセクションのみ
 */
 
 /* セクションごとに記載 */
 
-/* CTAセクション */
+/* QUALITYセクション */
+.dtf-quality {
+    padding: rem(160) rem(24);
+
+    .dtf-quality__list {
+        margin-top: rem(80);
+        display: flex;
+        flex-direction: column;
+        gap: rem(72);
+    }
+
+    .dtf-quality__item {
+        display: flex;
+        align-items: center;
+        gap: rem(48);
+    }
+
+    .dtf-quality__item--reverse {
+        flex-direction: row-reverse;
+    }
+
+    .dtf-quality__item-img {
+        width: rem(548);
+        flex-shrink: 0;
+
+        img {
+            width: 100%;
+            height: auto;
+            aspect-ratio: 548 / 332;
+            object-fit: cover;
+        }
+    }
+
+    .dtf-quality__item-body {
+        flex: 1;
+    }
+
+    .dtf-quality__item-ttl {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: rem(8);
+
+        span {
+            padding: 0 rem(16) rem(4);
+            background: $blue;
+            font-size: rem(24);
+            font-weight: 700;
+            line-height: 1.8;
+            letter-spacing: 0.05em;
+            color: $white;
+        }
+    }
+
+    .dtf-quality__item-text {
+        margin-top: rem(24);
+        font-size: rem(16);
+        font-weight: 500;
+        line-height: 2.2;
+        letter-spacing: 0.05em;
+        color: $black;
+    }
+
+    @include mq(tb) {
+        padding: rem(104) 0;
+
+        .dtf-quality__list {
+            margin-top: rem(48);
+        }
+
+        .dtf-quality__item,
+        .dtf-quality__item--reverse {
+            flex-direction: column;
+            gap: rem(32);
+        }
+
+        .dtf-quality__item-img {
+            width: 100%;
+
+            img {
+                aspect-ratio: 375 / 227;
+            }
+        }
+
+        .dtf-quality__item-body {
+            width: 100%;
+            padding-inline: rem(24);
+        }
+
+        .dtf-quality__item-ttl {
+            gap: rem(6);
+
+            span {
+                padding: 0 rem(12) rem(2);
+                font-size: rem(19);
+            }
+        }
+
+        .dtf-quality__item-text {
+            margin-top: rem(16);
+            font-size: rem(15);
+            line-height: 2;
+        }
+    }
+}
+
+/* PRODUCTSセクション */
+.dtf-products {
+    padding: rem(160) rem(24);
+    background: $light-gray;
+
+    .dtf-products__list {
+        margin-top: rem(80);
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: rem(28);
+    }
+
+    .dtf-products__item-img {
+        img {
+            width: 100%;
+            height: auto;
+            aspect-ratio: 258 / 176;
+            object-fit: cover;
+        }
+    }
+
+    .dtf-products__item-ttl {
+        margin-top: rem(16);
+        font-size: rem(17);
+        font-weight: 700;
+        line-height: 1.5;
+        letter-spacing: 0.05em;
+        color: $black;
+    }
+
+    .dtf-products__item-text {
+        margin-top: rem(8);
+        font-size: rem(13);
+        font-weight: 500;
+        line-height: 1.7;
+        letter-spacing: 0.05em;
+        color: $mid-gray;
+    }
+
+    @include mq(tb) {
+        padding: rem(104) rem(24);
+
+        .dtf-products__list {
+            margin-top: rem(40);
+            grid-template-columns: repeat(2, 1fr);
+            gap: rem(15);
+        }
+
+        .dtf-products__item-img img {
+            aspect-ratio: 156 / 106;
+        }
+
+        .dtf-products__item-ttl {
+            margin-top: rem(10);
+            font-size: rem(14);
+        }
+
+        .dtf-products__item-text {
+            margin-top: rem(6);
+            font-size: rem(11);
+        }
+    }
+}
+
+/* FLOWセクション */
+.dtf-flow {
+    padding: rem(160) rem(24);
+
+    .dtf-flow__list {
+        margin-top: rem(80);
+        display: flex;
+        flex-direction: column;
+        gap: rem(56);
+    }
+
+    .dtf-flow__item {
+        position: relative;
+        z-index: 1;
+        display: flex;
+        gap: rem(32);
+
+        /* ステップをつなぐ点線（カンプ：太さ3px・破線4/8・端丸）。
+           アイコン中心から次のステップのアイコン中心まで引き、両端はアイコンの下に隠す */
+        &:not(:last-child)::before {
+            content: "";
+            position: absolute;
+            left: rem(57.5);
+            top: rem(59);
+            z-index: -1;
+            width: rem(3);
+            height: calc(100% + #{rem(56)});
+            background-color: $line-gray;
+            -webkit-mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='3' height='12'%3E%3Cline x1='1.5' y1='1.5' x2='1.5' y2='5.5' stroke='%23000' stroke-width='3' stroke-linecap='round'/%3E%3C/svg%3E") repeat-y top / rem(3) rem(12);
+            mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='3' height='12'%3E%3Cline x1='1.5' y1='1.5' x2='1.5' y2='5.5' stroke='%23000' stroke-width='3' stroke-linecap='round'/%3E%3C/svg%3E") repeat-y top / rem(3) rem(12);
+        }
+    }
+
+    .dtf-flow__item-icon {
+        width: rem(118);
+        height: rem(118);
+        flex-shrink: 0;
+
+        img {
+            width: 100%;
+            height: auto;
+        }
+    }
+
+    .dtf-flow__item-body {
+        flex: 1;
+        /* 中の横スクロール画像の幅で列が広がらないように */
+        min-width: 0;
+        padding-top: rem(20);
+    }
+
+    .dtf-flow__item-head {
+        display: flex;
+        align-items: center;
+        gap: rem(12);
+    }
+
+    .dtf-flow__item-num {
+        font-family: $font-hind;
+        font-size: rem(24);
+        font-weight: 700;
+        line-height: 1;
+        letter-spacing: 0.05em;
+        color: $blue;
+    }
+
+    .dtf-flow__item-ttl {
+        font-size: rem(28);
+        font-weight: 700;
+        line-height: 1.6;
+        letter-spacing: 0.1em;
+        color: $black;
+    }
+
+    .dtf-flow__item-text {
+        margin-top: rem(12);
+        font-size: rem(17);
+        font-weight: 400;
+        line-height: 1.8;
+        letter-spacing: 0.05em;
+
+        /* 単語の途中では折り返さず、単語と単語の間でだけ改行させる
+           （リセットCSSで span が inline-block のため inline に戻し、下線が途切れないようにする） */
+        &-word {
+            display: inline;
+            white-space: nowrap;
+        }
+
+        /* リセットCSSで a が inline-block のため、文章の途中で折り返せるよう inline に戻す */
+        a {
+            display: inline;
+            font-weight: 700;
+            color: $blue;
+            text-decoration: underline;
+            transition: .3s;
+
+            &:hover {
+                opacity: .7;
+            }
+        }
+    }
+
+    .dtf-flow__item-img {
+        margin-top: rem(16);
+        width: rem(736);
+
+        img {
+            width: 100%;
+            height: auto;
+        }
+    }
+
+    @include mq(tb) {
+        padding: rem(104) rem(24);
+
+        .dtf-flow__list {
+            margin-top: rem(40);
+            gap: rem(32);
+        }
+
+        .dtf-flow__item {
+            gap: rem(16);
+
+            /* SPカンプ：太さ2px・破線4/8・端丸 */
+            &:not(:last-child)::before {
+                left: rem(35);
+                top: rem(36);
+                width: rem(2);
+                height: calc(100% + #{rem(32)});
+                -webkit-mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='2' height='12'%3E%3Cline x1='1' y1='1' x2='1' y2='5' stroke='%23000' stroke-width='2' stroke-linecap='round'/%3E%3C/svg%3E") repeat-y top / rem(2) rem(12);
+                mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='2' height='12'%3E%3Cline x1='1' y1='1' x2='1' y2='5' stroke='%23000' stroke-width='2' stroke-linecap='round'/%3E%3C/svg%3E") repeat-y top / rem(2) rem(12);
+            }
+        }
+
+        .dtf-flow__item-icon {
+            width: rem(72);
+            height: rem(72);
+        }
+
+        .dtf-flow__item-body {
+            padding-top: rem(8);
+        }
+
+        .dtf-flow__item-num {
+            font-size: rem(18);
+        }
+
+        .dtf-flow__item-ttl {
+            font-size: rem(18);
+        }
+
+        .dtf-flow__item-text {
+            margin-top: rem(8);
+            font-size: rem(14);
+        }
+
+        .dtf-flow__item-img {
+            width: 100%;
+        }
+    }
+}
+
+/* FLOW内アコーディオン */
+/* STEP03 のテキスト列（アイコン118＋gap32の右側）に収まる */
+.dtf-acc {
+    margin-top: rem(24);
+
+    @include mq(tb) {
+        margin-top: rem(16);
+    }
+}
+
+.dtf-acc__item+.dtf-acc__item {
+    margin-top: rem(12);
+
+    @include mq(tb) {
+        margin-top: rem(8);
+    }
+}
+
+.dtf-acc__heading {
+    width: 100%;
+}
+
+.dtf-acc__head {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: rem(24);
+    padding: 0 rem(16) rem(12) 0;
+    border-bottom: rem(1) solid $gray;
+    cursor: pointer;
+    transition: .3s;
+
+    &:hover {
+        opacity: .7;
+    }
+
+    .dtf-acc__head-ttl {
+        font-size: rem(20);
+        font-weight: 700;
+        line-height: 1.6;
+        letter-spacing: 0.1em;
+        color: $blue;
+        text-align: left;
+    }
+
+    .dtf-acc__head-more {
+        flex-shrink: 0;
+        display: flex;
+        align-items: center;
+        gap: rem(8);
+        font-size: rem(15);
+        font-weight: 700;
+        line-height: 1.6;
+        letter-spacing: 0.1em;
+        color: $dark-gray;
+    }
+
+    .dtf-acc__head-icon {
+        position: relative;
+        width: rem(28);
+        height: rem(28);
+        flex-shrink: 0;
+        background: $gray;
+        border-radius: 50%;
+
+        &::before,
+        &::after {
+            content: "";
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            width: rem(16);
+            height: rem(2);
+            transform: translate(-50%, -50%);
+            background: $white;
+            transition: .3s;
+        }
+
+        &::after {
+            transform: translate(-50%, -50%) rotate(90deg);
+        }
+    }
+
+    &.active .dtf-acc__head-icon::after {
+        transform: translate(-50%, -50%) rotate(0);
+    }
+
+    /* カンプ：列幅239px ＝ 見出し187px ＋ すき間24px ＋ アイコン28px（右余白なし） */
+    @include mq(tb) {
+        padding-right: 0;
+
+        .dtf-acc__head-ttl {
+            font-size: rem(16);
+        }
+
+        .dtf-acc__head-more {
+            font-size: 0;
+            gap: 0;
+        }
+    }
+}
+
+.dtf-acc__body {
+    display: none;
+}
+
+.dtf-acc__inner {
+    padding: rem(40) 0;
+    display: flex;
+    flex-direction: column;
+    gap: rem(40);
+
+    @include mq(tb) {
+        padding: rem(24) 0;
+        gap: rem(24);
+    }
+}
+
+.dtf-acc__block-ttl {
+    display: flex;
+    align-items: center;
+    gap: rem(8);
+    font-size: rem(18);
+    font-weight: 700;
+    line-height: 1.8;
+    letter-spacing: 0.05em;
+    color: $black;
+
+    &::before {
+        content: "";
+        width: rem(9);
+        height: rem(12);
+        flex-shrink: 0;
+        background: $black;
+        clip-path: polygon(0 0, 100% 50%, 0 100%);
+    }
+
+    @include mq(tb) {
+        font-size: rem(16);
+    }
+}
+
+.dtf-acc__text {
+    margin-top: rem(16);
+    font-size: rem(17);
+    font-weight: 400;
+    line-height: 1.8;
+    letter-spacing: 0.05em;
+    color: $black;
+
+    @include mq(tb) {
+        margin-top: rem(12);
+        font-size: rem(14);
+    }
+}
+
+.dtf-acc__note {
+    margin-top: rem(16);
+    font-size: rem(14);
+    font-weight: 400;
+    line-height: 1.8;
+    letter-spacing: 0.05em;
+    color: $black;
+
+    .dtf-acc__note-ttl {
+        color: $red;
+    }
+
+    @include mq(tb) {
+        font-size: rem(13);
+    }
+}
+
+.dtf-acc__img {
+    margin-top: rem(28);
+
+    img {
+        width: 100%;
+        height: auto;
+    }
+
+    @include mq(tb) {
+        margin-top: rem(20);
+    }
+}
+
+.dtf-acc__img--print-area {
+    max-width: rem(524);
+}
+
+/* SP：画像はカンプの実寸のまま横スクロール（ガイドページの .swatch-list と同じスクロールバー） */
+.dtf-acc__scroll {
+    @include mq(tb) {
+        /* 画像が枠からはみ出すときだけスクロールバーを出す（641〜768pxで収まる場合は空のバーを出さない） */
+        overflow-x: auto;
+        overflow-y: hidden;
+        padding-bottom: rem(20);
+        scrollbar-width: auto;
+        -webkit-overflow-scrolling: touch;
+
+        &::-webkit-scrollbar {
+            height: 8px;
+        }
+
+        &::-webkit-scrollbar-thumb {
+            background-color: $blue;
+            border-radius: rem(100);
+        }
+
+        &::-webkit-scrollbar-track {
+            background-color: $light-gray;
+            border-radius: rem(100);
+        }
+
+        img {
+            max-width: none;
+        }
+
+        &+& {
+            margin-top: rem(40);
+        }
+    }
+
+    &--font img {
+        @include mq(tb) {
+            width: rem(475);
+        }
+    }
+
+    &--color img {
+        @include mq(tb) {
+            width: rem(970);
+        }
+    }
+
+    &--print-area img {
+        @include mq(tb) {
+            width: rem(524);
+        }
+    }
+}
