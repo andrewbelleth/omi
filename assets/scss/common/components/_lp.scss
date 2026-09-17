@@ -1,0 +1,234 @@
+@use '../../global/' as *;
+
+/*
+LP専用パーツ（DTF印刷LP / NICE CREW LP）
+見出し・ボタン・MV・CTA は _parts.scss の ttl-06 / btn-03 / mv-02 / cta-02
+コンテンツ幅：1120px
+ブレイクポイント：tb：1024px, sp：768px
+ｓｐ切り替え：768px
+ｓｐカンプ：375px
+PCカンプ：1440px
+*/
+
+/* LP全体 */
+.lp-inner {
+    width: min(100%, rem(1120));
+    margin-inline: auto;
+}
+
+/* MV下の導入（吹き出し＋3カード） */
+.lp-lead {
+    background: $light-blue;
+}
+
+.lp-case {
+    position: relative;
+    padding: rem(160) rem(24) rem(150);
+    overflow: hidden;
+
+    /* 白背景の下端が円弧になる */
+    &::before {
+        content: "";
+        position: absolute;
+        left: 50%;
+        bottom: 0;
+        z-index: 0;
+        width: rem(3618);
+        aspect-ratio: 1 / 1;
+        transform: translateX(-50%);
+        background: $white;
+        border-radius: 50%;
+    }
+
+    .lp-case__inner {
+        position: relative;
+        z-index: 1;
+    }
+
+    .lp-case__ttl {
+        position: relative;
+        width: fit-content;
+        margin-inline: auto;
+        padding: rem(10) rem(40) rem(14);
+        background: $blue;
+        border-radius: rem(999);
+        font-size: rem(28);
+        font-weight: 700;
+        line-height: 1.4;
+        letter-spacing: 0.2em;
+        color: $white;
+        text-align: center;
+
+        &::after {
+            content: "";
+            position: absolute;
+            left: 50%;
+            bottom: rem(-16);
+            width: rem(32);
+            height: rem(16);
+            transform: translateX(-50%);
+            background: $blue;
+            clip-path: polygon(0 0, 100% 0, 50% 100%);
+        }
+    }
+
+    .lp-case__list {
+        /* 32（吹き出し下の余白）＋ 16（三角の高さ） */
+        margin-top: rem(48);
+        display: flex;
+        gap: rem(35);
+    }
+
+    .lp-case__item {
+        width: calc((100% - #{rem(70)}) / 3);
+    }
+
+    .lp-case__item-img {
+        img {
+            width: 100%;
+            height: auto;
+            aspect-ratio: 350 / 200;
+            object-fit: cover;
+        }
+    }
+
+    .lp-case__item-text {
+        margin-top: rem(24);
+        font-size: rem(18);
+        font-weight: 700;
+        line-height: 1.6;
+        letter-spacing: 0.05em;
+        color: $black;
+        text-align: center;
+    }
+
+    @include mq(tb) {
+        /* カンプ：375px幅に対し直径524pxの円の下端で弧を作り、下80pxの帯だけ弧が見える。
+           640〜768pxでも同じ形で伸縮させるため、帯と円は375px基準（vw・%）で指定 */
+        padding: rem(104) rem(24) calc(80 / (375 / 100) * 1vw);
+        background: linear-gradient($white, $white) no-repeat top / 100% calc(100% - 80 / (375 / 100) * 1vw);
+
+        &::before {
+            width: calc(524 / 375 * 100%);
+        }
+
+        .lp-case__ttl {
+            padding: rem(12) rem(32) rem(16);
+            font-size: rem(18);
+
+            &::after {
+                bottom: rem(-14);
+                width: rem(28);
+                height: rem(14);
+            }
+        }
+
+        .lp-case__list {
+            /* 28（吹き出し下の余白）＋ 14（三角の高さ） */
+            margin-top: rem(42);
+            flex-direction: column;
+            gap: rem(48);
+        }
+
+        .lp-case__item {
+            width: 100%;
+        }
+
+        .lp-case__item-img img {
+            aspect-ratio: 327 / 187;
+        }
+
+        .lp-case__item-text {
+            margin-top: rem(20);
+            font-size: rem(16);
+        }
+    }
+}
+
+/* できること（3カラム＋ボタン） */
+.lp-can {
+    padding: rem(112) rem(24) rem(160);
+
+    .lp-can__ttl {
+        font-size: rem(40);
+        font-weight: 700;
+        line-height: 1.6;
+        letter-spacing: 0.15em;
+        color: $black;
+        text-align: center;
+    }
+
+    .lp-can__list {
+        margin-top: rem(48);
+        display: flex;
+        gap: rem(35);
+    }
+
+    .lp-can__item {
+        width: calc((100% - #{rem(70)}) / 3);
+    }
+
+    .lp-can__item-img {
+        img {
+            width: 100%;
+            height: auto;
+            aspect-ratio: 350 / 200;
+            object-fit: cover;
+        }
+    }
+
+    .lp-can__item-ttl {
+        margin-top: rem(24);
+        font-size: rem(20);
+        font-weight: 700;
+        line-height: 1.6;
+        letter-spacing: 0.05em;
+        color: $blue;
+        text-align: center;
+    }
+
+    .lp-can__item-text {
+        margin-top: rem(16);
+        font-size: rem(15);
+        font-weight: 500;
+        line-height: 1.8;
+        letter-spacing: 0.05em;
+        color: $black;
+    }
+
+    .lp-can__btn {
+        margin-top: rem(56);
+    }
+
+    @include mq(tb) {
+        padding: rem(68) rem(24) rem(104);
+
+        .lp-can__ttl {
+            font-size: rem(24);
+        }
+
+        .lp-can__list {
+            margin-top: rem(40);
+            flex-direction: column;
+            gap: rem(48);
+        }
+
+        .lp-can__item {
+            width: 100%;
+        }
+
+        .lp-can__item-img img {
+            aspect-ratio: 327 / 187;
+        }
+
+        .lp-can__item-ttl {
+            font-size: rem(18);
+        }
+
+        .lp-can__item-text {
+            margin-top: rem(12);
+            font-size: rem(14);
+            line-height: 1.79;
+        }
+    }
+}

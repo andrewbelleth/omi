@@ -15,6 +15,15 @@
     --light-gray: #EEF1F4;
     --yellow: #FFFEAD;
     --red: #DD0000;
+    /* LP用 */
+    --pale-blue: #D3DFEA;
+    --off-white: #F7F8F9;
+    --mid-gray: #575757;
+    --line-gray: #D4D5D5;
+    --orange: #FF8A0D;
+    --orange-dark: #FF7300;
+    --green: #1AC500;
+    --green-dark: #22A80D;
 }
 
 // color
@@ -27,6 +36,15 @@ $dark-gray: var(--dark-gray);
 $light-gray: var(--light-gray);
 $yellow: var(--yellow);
 $red: var(--red);
+// LP用
+$pale-blue: var(--pale-blue);
+$off-white: var(--off-white);
+$mid-gray: var(--mid-gray);
+$line-gray: var(--line-gray);
+$orange: var(--orange);
+$orange-dark: var(--orange-dark);
+$green: var(--green);
+$green-dark: var(--green-dark);
 // font
 $font-noto-sans-jp: "Noto Sans JP", sans-serif;
 $font-hind: "Hind", serif;
