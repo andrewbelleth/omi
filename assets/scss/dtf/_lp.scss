@@ -74,6 +74,17 @@ MV・case・can・CTA・見出し・ボタンは common/components/_lp.scss（LP
     color: $black;
   }
 
+  @include mq(pc) {
+    .dtf-quality__item {
+      gap: rem(32);
+    }
+
+    .dtf-quality__item-img {
+      /* 中間幅ではカンプ比率（548:524）のままだと画像が本文を圧迫するので 45% に絞る */
+      width: calc((100% - #{rem(32)}) * 45 / 100);
+    }
+  }
+
   @include mq(tb) {
     padding: rem(104) 0;
 
