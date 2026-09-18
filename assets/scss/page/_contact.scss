@@ -186,6 +186,53 @@
         gap: rem(32);
     }
 
+    &-section {
+        display: flex;
+        flex-direction: column;
+        gap: rem(40);
+
+        @include mq(tb) {
+            gap: rem(32);
+        }
+
+        &-title {
+            font-size: rem(24);
+            font-weight: 700;
+            line-height: 1.5;
+            letter-spacing: 0.05em;
+            color: $blue;
+            border-bottom: 1px solid #d9d9d9;
+            padding-bottom: rem(12);
+
+            @include mq(tb) {
+                font-size: rem(18);
+            }
+        }
+    }
+
+    &-suffix {
+        flex-shrink: 0;
+        font-size: rem(15);
+        line-height: 1.8;
+        letter-spacing: 0.05em;
+        white-space: nowrap;
+    }
+
+    &-name {
+        display: flex;
+        flex-direction: column;
+        gap: rem(8);
+        flex: 1;
+        min-width: 0;
+
+        &-label {
+            font-size: rem(13);
+            line-height: 1.5;
+            letter-spacing: 0.05em;
+            color: $dark-gray;
+        }
+    }
+
     &-item {
         display: flex;
         flex-direction: column;
@@ -253,9 +300,31 @@
                 border: 1px solid $red;
             }
 
+            &--suffix {
+                display: flex;
+                align-items: center;
+                gap: rem(12);
+
+                .wpcf7-form-control-wrap {
+                    flex: 1;
+                }
+            }
+
+            &--name {
+                display: flex;
+                gap: rem(16);
+
+                @include mq(tb) {
+                    flex-direction: column;
+                    gap: rem(12);
+                }
+            }
+
             input[type="text"],
             input[type="tel"],
             input[type="email"],
+            input[type="number"],
+            input[type="date"],
             select,
             textarea {
                 width: 100%;
@@ -323,7 +392,8 @@
             }
 
 
-            .wpcf7-radio {
+            .wpcf7-radio,
+            .wpcf7-checkbox {
                 display: flex;
                 flex-wrap: wrap;
                 gap: rem(8) rem(32);
@@ -352,24 +422,28 @@
                         }
                     }
 
-                    input[type="radio"] {
+                    input[type="radio"],
+                    input[type="checkbox"] {
                         appearance: none;
                         width: rem(20);
                         height: rem(20);
                         border: 1px solid $gray;
-                        border-radius: 50%;
                         position: relative;
                         margin: 0;
                         display: flex;
                         align-items: center;
                         justify-content: center;
+                        flex-shrink: 0;
 
                         @include mq(tb) {
                             width: rem(15);
                             height: rem(15);
                             margin-top: rem(6);
-                            flex-shrink: 0;
                         }
+                    }
+
+                    input[type="radio"] {
+                        border-radius: 50%;
 
                         &:checked {
                             border-color: $blue;
@@ -386,6 +460,27 @@
                                     width: rem(11);
                                     height: rem(11);
                                 }
+                            }
+                        }
+                    }
+
+                    input[type="checkbox"] {
+                        border-radius: rem(3);
+
+                        &:checked {
+                            background-color: $blue;
+                            border-color: $blue;
+
+                            &::after {
+                                content: '';
+                                position: absolute;
+                                top: 45%;
+                                left: 50%;
+                                transform: translate(-50%, -50%) rotate(-45deg);
+                                width: rem(10);
+                                height: rem(5);
+                                border-left: 2px solid $white;
+                                border-bottom: 2px solid $white;
                             }
                         }
                     }

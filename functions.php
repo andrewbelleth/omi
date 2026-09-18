@@ -119,6 +119,26 @@ function custom_wpcf7_validation_error_message($result, $tag)
       $result->invalidate($tag, '※「お名前」は必須項目です');
     }
   }
+  if ('your-name-sei' == $tag->name) {
+    if (empty($_POST[$tag->name])) {
+      $result->invalidate($tag, '※「お名前（姓）」は必須項目です');
+    }
+  }
+  if ('your-name-mei' == $tag->name) {
+    if (empty($_POST[$tag->name])) {
+      $result->invalidate($tag, '※「お名前（名）」は必須項目です');
+    }
+  }
+  if ('your-kana-sei' == $tag->name) {
+    if (empty($_POST[$tag->name])) {
+      $result->invalidate($tag, '※「フリガナ（セイ）」は必須項目です');
+    }
+  }
+  if ('your-kana-mei' == $tag->name) {
+    if (empty($_POST[$tag->name])) {
+      $result->invalidate($tag, '※「フリガナ（メイ）」は必須項目です');
+    }
+  }
   if ('your-email' == $tag->name) {
     if (empty($_POST[$tag->name])) {
       $result->invalidate($tag, '※「メールアドレス」は必須項目です');
@@ -132,6 +152,7 @@ if ('your-tel' == $tag->name) {
   return $result;
 }
 add_filter('wpcf7_validate_text', 'custom_wpcf7_validation_error_message', 10, 2);
+add_filter('wpcf7_validate_text*', 'custom_wpcf7_validation_error_message', 10, 2);
 
 
 function custom_wpcf7_validation_error_email($result, $tag)
@@ -141,9 +162,19 @@ function custom_wpcf7_validation_error_email($result, $tag)
       $result->invalidate($tag, '※「メールアドレス」は必須項目です');
     }
   }
+  if ('your-email-confirm' == $tag->name) {
+    $email = isset($_POST['your-email']) ? wp_unslash($_POST['your-email']) : '';
+    $confirm = isset($_POST['your-email-confirm']) ? wp_unslash($_POST['your-email-confirm']) : '';
+    if ($confirm === '') {
+      $result->invalidate($tag, '※「メールアドレス（確認用）」は必須項目です');
+    } elseif ($email !== $confirm) {
+      $result->invalidate($tag, '※メールアドレスが一致しません');
+    }
+  }
   return $result;
 }
 add_filter('wpcf7_validate_email', 'custom_wpcf7_validation_error_email', 10, 2);
+add_filter('wpcf7_validate_email*', 'custom_wpcf7_validation_error_email', 10, 2);
 
 function custom_wpcf7_validation_error_tel($result, $tag)
 {
@@ -166,6 +197,44 @@ function custom_wpcf7_validation_error_select($result, $tag)
   return $result;
 }
 add_filter('wpcf7_validate_select', 'custom_wpcf7_validation_error_select', 10, 2);
+add_filter('wpcf7_validate_select*', 'custom_wpcf7_validation_error_select', 10, 2);
+
+function custom_wpcf7_validation_error_checkbox($result, $tag)
+{
+  if ('product-category' == $tag->name) {
+    $values = isset($_POST[$tag->name]) ? (array) $_POST[$tag->name] : [];
+    if (empty($values)) {
+      $result->invalidate($tag, '※「商品カテゴリー」は必須項目です');
+    }
+  }
+  return $result;
+}
+add_filter('wpcf7_validate_checkbox', 'custom_wpcf7_validation_error_checkbox', 10, 2);
+add_filter('wpcf7_validate_checkbox*', 'custom_wpcf7_validation_error_checkbox', 10, 2);
+
+function custom_wpcf7_validation_error_number($result, $tag)
+{
+  if ('product-quantity' == $tag->name) {
+    if (!isset($_POST[$tag->name]) || $_POST[$tag->name] === '') {
+      $result->invalidate($tag, '※「製作予定数量」は必須項目です');
+    }
+  }
+  return $result;
+}
+add_filter('wpcf7_validate_number', 'custom_wpcf7_validation_error_number', 10, 2);
+add_filter('wpcf7_validate_number*', 'custom_wpcf7_validation_error_number', 10, 2);
+
+function custom_wpcf7_validation_error_date($result, $tag)
+{
+  if ('desired-delivery' == $tag->name) {
+    if (empty($_POST[$tag->name])) {
+      $result->invalidate($tag, '※「希望納期」は必須項目です');
+    }
+  }
+  return $result;
+}
+add_filter('wpcf7_validate_date', 'custom_wpcf7_validation_error_date', 10, 2);
+add_filter('wpcf7_validate_date*', 'custom_wpcf7_validation_error_date', 10, 2);
 
 function custom_wpcf7_validation_error_textarea($result, $tag)
 {
