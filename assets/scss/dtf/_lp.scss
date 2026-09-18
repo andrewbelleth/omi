@@ -558,38 +558,24 @@ MV・case・can・CTA・見出し・ボタンは common/components/_lp.scss（LP
   max-width: rem(524);
 }
 
-/* SP：画像はカンプの実寸のまま横スクロール（ガイドページの .swatch-list と同じスクロールバー） */
+/* SP：画像はカンプの実寸のまま横スクロール。
+   ネイティブのスクロールバーはつまみの長さが中身の幅で変わってしまうので隠し、
+   長さを固定した .dtf-acc__bar（カンプ準拠）を JS で動かす */
 .dtf-acc__scroll {
   @include mq(tb) {
     /* カンプ：スクロール領域は画面右端まで抜ける（本文カラム239＋ページ右余白24＝263） */
     margin-right: rem(-24);
-    /* 画像が枠からはみ出すときだけスクロールバーを出す（641〜768pxで収まる場合は空のバーを出さない） */
     overflow-x: auto;
     overflow-y: hidden;
-    padding-bottom: rem(20);
-    scrollbar-width: auto;
+    scrollbar-width: none;
     -webkit-overflow-scrolling: touch;
 
     &::-webkit-scrollbar {
-      height: 8px;
-    }
-
-    &::-webkit-scrollbar-thumb {
-      background-color: $blue;
-      border-radius: rem(100);
-    }
-
-    &::-webkit-scrollbar-track {
-      background-color: $light-gray;
-      border-radius: rem(100);
+      display: none;
     }
 
     img {
       max-width: none;
-    }
-
-    & + & {
-      margin-top: rem(40);
     }
   }
 
@@ -612,3 +598,48 @@ MV・case・can・CTA・見出し・ボタンは common/components/_lp.scss（LP
   }
 }
 
+/* 横スクロールバー（カンプ準拠）。
+   つまみの長さは中身の幅によらず固定で、位置だけ JS がスクロール量に合わせて動かす */
+.dtf-acc__bar {
+  /* PCでは横スクロールしないので出さない */
+  display: none;
+
+  @include mq(tb) {
+    /* スクロール領域と同じ幅にそろえる（画面右端まで抜ける） */
+    display: block;
+    position: relative;
+    margin-top: rem(12);
+    margin-right: rem(-24);
+    height: rem(8);
+    border-radius: rem(100);
+    background: $light-gray;
+  }
+
+  /* 画像が枠に収まりスクロールが不要なとき（641〜768px）は JS が付ける */
+  &.is-hidden {
+    display: none;
+  }
+}
+
+.dtf-acc__bar-thumb {
+  position: absolute;
+  top: 0;
+  left: 0;
+  /* カンプ：バー全体に対するつまみの割合。JS の THUMB_RATIO と合わせる */
+  width: 55%;
+  height: 100%;
+  border-radius: rem(100);
+  background: $blue;
+  cursor: grab;
+
+  &.is-dragging {
+    cursor: grabbing;
+  }
+}
+
+/* スクロール領域どうしの間隔（間にバーが入るのでバーを起点にする） */
+.dtf-acc__bar + .dtf-acc__scroll {
+  @include mq(tb) {
+    margin-top: rem(40);
+  }
+}
