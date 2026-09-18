@@ -31,12 +31,9 @@ MV・case・can・CTA・見出し・ボタンは common/components/_lp.scss（LP
     gap: rem(48);
   }
 
-  .dtf-quality__item--reverse {
-    flex-direction: row-reverse;
-  }
-
   .dtf-quality__item-img {
-    width: rem(548);
+    /* カンプ：inner1120 のとき 548。gap48 を除いた残りを 548:524 で分けるので中間幅でも比率が保たれる */
+    width: calc((100% - #{rem(48)}) * 548 / 1072);
     flex-shrink: 0;
 
     img {
@@ -84,8 +81,7 @@ MV・case・can・CTA・見出し・ボタンは common/components/_lp.scss（LP
       margin-top: rem(48);
     }
 
-    .dtf-quality__item,
-    .dtf-quality__item--reverse {
+    .dtf-quality__item {
       flex-direction: column;
       gap: rem(32);
     }
@@ -290,7 +286,8 @@ MV・case・can・CTA・見出し・ボタンは common/components/_lp.scss（LP
 
   .dtf-flow__item-img {
     margin-top: rem(16);
-    width: rem(736);
+    /* カンプ：本文列970 のとき 736 */
+    width: calc(100% * 736 / 970);
 
     img {
       width: 100%;
@@ -356,16 +353,13 @@ MV・case・can・CTA・見出し・ボタンは common/components/_lp.scss（LP
   margin-top: rem(24);
 
   @include mq(tb) {
-    margin-top: rem(16);
+    margin-top: rem(20);
   }
 }
 
 .dtf-acc__item + .dtf-acc__item {
+  /* PC/SP ともカンプ 12 */
   margin-top: rem(12);
-
-  @include mq(tb) {
-    margin-top: rem(8);
-  }
 }
 
 .dtf-acc__heading {
@@ -458,14 +452,26 @@ MV・case・can・CTA・見出し・ボタンは common/components/_lp.scss（LP
 }
 
 .dtf-acc__inner {
-  padding: rem(40) 0;
+  /* 上余白は先頭要素側で付ける（カンプ：小見出し始まり16 / 本文始まり12） */
+  /* 下余白はカンプの「プリント箇所とサイズ」だけ0だが、詰め忘れと判断し3つとも PC40 / SP32 で揃える */
+  padding: 0 0 rem(40);
   display: flex;
   flex-direction: column;
   gap: rem(40);
 
   @include mq(tb) {
-    padding: rem(24) 0;
-    gap: rem(24);
+    padding: 0 0 rem(32);
+    gap: rem(32);
+  }
+}
+
+.dtf-acc__block:first-child {
+  > .dtf-acc__block-ttl:first-child {
+    margin-top: rem(16);
+  }
+
+  > .dtf-acc__text:first-child {
+    margin-top: rem(12);
   }
 }
 
@@ -481,10 +487,10 @@ MV・case・can・CTA・見出し・ボタンは common/components/_lp.scss（LP
 
   &::before {
     content: "";
-    width: rem(9);
-    height: rem(12);
+    width: rem(13);
+    height: rem(15);
     flex-shrink: 0;
-    background: $black;
+    background: $blue;
     clip-path: polygon(0 0, 100% 50%, 0 100%);
   }
 
@@ -544,6 +550,8 @@ MV・case・can・CTA・見出し・ボタンは common/components/_lp.scss（LP
 /* SP：画像はカンプの実寸のまま横スクロール（ガイドページの .swatch-list と同じスクロールバー） */
 .dtf-acc__scroll {
   @include mq(tb) {
+    /* カンプ：スクロール領域は画面右端まで抜ける（本文カラム239＋ページ右余白24＝263） */
+    margin-right: rem(-24);
     /* 画像が枠からはみ出すときだけスクロールバーを出す（641〜768pxで収まる場合は空のバーを出さない） */
     overflow-x: auto;
     overflow-y: hidden;
@@ -592,3 +600,4 @@ MV・case・can・CTA・見出し・ボタンは common/components/_lp.scss（LP
     }
   }
 }
+
