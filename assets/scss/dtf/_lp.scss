@@ -605,11 +605,10 @@ MV・case・can・CTA・見出し・ボタンは common/components/_lp.scss（LP
   display: none;
 
   @include mq(tb) {
-    /* スクロール領域と同じ幅にそろえる（画面右端まで抜ける） */
+    /* カンプ：画像は画面右端まで抜けるが、バーは本文カラム幅239で止まる。画像との間隔は20 */
     display: block;
     position: relative;
-    margin-top: rem(12);
-    margin-right: rem(-24);
+    margin-top: rem(20);
     height: rem(8);
     border-radius: rem(100);
     background: $light-gray;
@@ -625,8 +624,8 @@ MV・case・can・CTA・見出し・ボタンは common/components/_lp.scss（LP
   position: absolute;
   top: 0;
   left: 0;
-  /* カンプ：バー全体に対するつまみの割合。JS の THUMB_RATIO と合わせる */
-  width: 55%;
+  /* カンプ：トラック239 に対してつまみ101。JS の THUMB_RATIO と合わせる */
+  width: calc(101 / 239 * 100%);
   height: 100%;
   border-radius: rem(100);
   background: $blue;

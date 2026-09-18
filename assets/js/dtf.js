@@ -2,7 +2,7 @@ jQuery(function ($) {
   /* FLOW STEP03 の横スクロール画像のスクロールバー
      ネイティブのスクロールバーはつまみの長さが中身の幅で決まってしまい、
      ブロックごとに長さが変わるため、カンプどおり固定長のバーを自前で動かす */
-  var THUMB_RATIO = 0.55; // バー全体に対するつまみの割合（SCSS の .dtf-acc__bar-thumb と合わせる）
+  var THUMB_RATIO = 101 / 239; // カンプ：トラック239 に対してつまみ101（SCSS の .dtf-acc__bar-thumb と合わせる）
   var updaters = [];
 
   function setupScrollBar(scroll) {
