@@ -401,7 +401,7 @@ Template Name: 彦根経済新聞ページ
                     <span class="btn__text btn__text--branding">プロモーション</span>
                     <?php get_template_part('template-parts/parts/btn-icon--blue'); ?>
                 </a>
-                <a href="#" class="btn-02">
+                <a href="<?php echo esc_url(home_url('/service/nice-crew')); ?>" class="btn-02">
                     <span class="btn__text">NICE CREW</span>
                     <?php get_template_part('template-parts/parts/btn-icon--blue'); ?>
                 </a>

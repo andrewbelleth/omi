@@ -151,7 +151,7 @@ Template Name: 印刷ページ
                 <li><img src="<?php echo get_template_directory_uri(); ?>/assets/images/printing/printing-img-dtf02.webp" alt="DTF印刷（サンプル画像）" width="368" height="220" loading="lazy"></li>
             </ul>
             <div class="component-box-btn mt32--sp40">
-                <a href="#" class="btn inview">
+                <a href="<?php echo esc_url(home_url('/service/printing/dtf')); ?>" class="btn inview">
                     <span class="btn__text">DTF印刷について詳しく見る</span>
                     <span class="btn__icon">
                         <svg viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -251,7 +251,7 @@ Template Name: 印刷ページ
                     <span class="btn__text btn__text--branding">プロモーション</span>
                     <?php get_template_part('template-parts/parts/btn-icon--blue'); ?>
                 </a>
-                <a href="#" class="btn-02">
+                <a href="<?php echo esc_url(home_url('/service/nice-crew')); ?>" class="btn-02">
                     <span class="btn__text">NICE CREW</span>
                     <?php get_template_part('template-parts/parts/btn-icon--blue'); ?>
                 </a>
