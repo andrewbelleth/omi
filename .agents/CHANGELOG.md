@@ -241,3 +241,4 @@
 2026-09-18：0.1.0：NICE CREW向け /service/contact お問い合わせを追加（既存contactデザイン準拠・CF7フォームCLI作成・DTF/NICE CREW導線用）
 2026-09-19：1.0.2：page-dtf.php の静的パスを WP 関数へ置換（画像は get_template_directory_uri、問い合わせは /service/contact。公式LINEはURL未確定のため # のまま）
 2026-09-19：1.0.2：DTF/NICE CREW のプレースホルダリンクを実URLへ置換（フッター・印刷詳細・各サービス下部ナビ。ヘッダー既存パスに揃える）
+2026-09-19：1.0.2：DTFページで dtf.js を読み込む（アコーディオンが display:none のまま開かないのは WP 側未読込が原因。静的 dtf.html のみ script があった）

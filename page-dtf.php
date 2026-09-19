@@ -10,8 +10,8 @@ Template Name: DTF印刷 LPページ
     <!-- メインビジュアル -->
     <section class="mv-02">
         <div class="mv-02__img">
-            <img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/dtf/dtf-mv-img.webp" alt="DTF印刷で作ったTシャツ・トートバッグ・パーカーなどのオリジナルグッズ" width="849"
-                height="732" />
+            <img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/dtf/dtf-mv-img.webp"
+                alt="DTF印刷で作ったTシャツ・トートバッグ・パーカーなどのオリジナルグッズ" width="849" height="732" />
         </div>
         <div class="mv-02__inner">
             <ul class="mv-02__point">
@@ -19,13 +19,15 @@ Template Name: DTF印刷 LPページ
                     <span class="mv-02__point-text">早い！</span>
                 </li>
                 <li class="mv-02__point-cross">
-                    <img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/dtf/dtf-mv-cross.svg" alt="" width="20" height="20" />
+                    <img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/dtf/dtf-mv-cross.svg"
+                        alt="" width="20" height="20" />
                 </li>
                 <li class="mv-02__point-item">
                     <span class="mv-02__point-text">安い！</span>
                 </li>
                 <li class="mv-02__point-cross">
-                    <img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/dtf/dtf-mv-cross.svg" alt="" width="20" height="20" />
+                    <img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/dtf/dtf-mv-cross.svg"
+                        alt="" width="20" height="20" />
                 </li>
                 <li class="mv-02__point-item mv-02__point-item--order">
                     <span class="mv-02__point-text"><span class="mv-02__point-num">1</span>枚から<br />注文OK</span>
@@ -76,8 +78,8 @@ Template Name: DTF印刷 LPページ
                     <li class="lp-case__item">
                         <div class="lp-case__item-img">
                             <!-- TODO: 写真素材が未購入のため差し替え予定 -->
-                            <img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/dtf/dtf-case-img01.webp" alt="文化祭でおそろいのTシャツを着る学生たち" width="350"
-                                height="200" loading="lazy" />
+                            <img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/dtf/dtf-case-img01.webp"
+                                alt="文化祭でおそろいのTシャツを着る学生たち" width="350" height="200" loading="lazy" />
                         </div>
                         <p class="lp-case__item-text">
                             学校の文化祭や体育祭で、<br />クラス・チームの<br class="desktop" />おそろいTシャツを作りたい
@@ -86,8 +88,8 @@ Template Name: DTF印刷 LPページ
                     <li class="lp-case__item">
                         <div class="lp-case__item-img">
                             <!-- TODO: 写真素材が未購入のため差し替え予定 -->
-                            <img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/dtf/dtf-case-img02.webp" alt="イベント出店でおそろいのウェアを着たスタッフ" width="350"
-                                height="200" loading="lazy" />
+                            <img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/dtf/dtf-case-img02.webp"
+                                alt="イベント出店でおそろいのウェアを着たスタッフ" width="350" height="200" loading="lazy" />
                         </div>
                         <p class="lp-case__item-text">
                             展示会やイベント出店で、<br />スタッフが<br class="desktop" />目立つオリジナルウェアがほしい
@@ -96,8 +98,8 @@ Template Name: DTF印刷 LPページ
                     <li class="lp-case__item">
                         <div class="lp-case__item-img">
                             <!-- TODO: 写真素材が未購入のため差し替え予定 -->
-                            <img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/dtf/dtf-case-img03.webp" alt="おそろいのユニフォームで円陣を組むスポーツチーム" width="350"
-                                height="200" loading="lazy" />
+                            <img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/dtf/dtf-case-img03.webp"
+                                alt="おそろいのユニフォームで円陣を組むスポーツチーム" width="350" height="200" loading="lazy" />
                         </div>
                         <p class="lp-case__item-text">
                             職場やスポーツ団のユニフォームに、<br />ロゴやオリジナルデザインを<br class="desktop" />入れたい
@@ -117,8 +119,8 @@ Template Name: DTF印刷 LPページ
                     <li class="lp-can__item">
                         <div class="lp-can__item-img">
                             <!-- TODO: 実際のプリント写真に差し替え予定 -->
-                            <img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/dtf/dtf-can-img01.webp" alt="高精細にプリントされたウェア" width="350"
-                                height="200" loading="lazy" />
+                            <img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/dtf/dtf-can-img01.webp"
+                                alt="高精細にプリントされたウェア" width="350" height="200" loading="lazy" />
                         </div>
                         <h3 class="lp-can__item-ttl">
                             高精細のプリントで<br />細かいデザインもくっきり再現
@@ -129,8 +131,8 @@ Template Name: DTF印刷 LPページ
                     </li>
                     <li class="lp-can__item">
                         <div class="lp-can__item-img">
-                            <img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/dtf/dtf-can-img02.webp" alt="スマートフォンで相談する女性" width="350"
-                                height="200" loading="lazy" />
+                            <img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/dtf/dtf-can-img02.webp"
+                                alt="スマートフォンで相談する女性" width="350" height="200" loading="lazy" />
                         </div>
                         <h3 class="lp-can__item-ttl">
                             LINEや実店舗（NICE CREW）で<br />気軽にプロに相談できる！
@@ -141,8 +143,8 @@ Template Name: DTF印刷 LPページ
                     </li>
                     <li class="lp-can__item">
                         <div class="lp-can__item-img">
-                            <img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/dtf/dtf-can-img03.webp" alt="実店舗NICE CREWに並ぶオリジナルウェア" width="350"
-                                height="200" loading="lazy" />
+                            <img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/dtf/dtf-can-img03.webp"
+                                alt="実店舗NICE CREWに並ぶオリジナルウェア" width="350" height="200" loading="lazy" />
                         </div>
                         <h3 class="lp-can__item-ttl">
                             実店舗（NICE CREW）で<br />実物を見ることができる！
@@ -169,8 +171,8 @@ Template Name: DTF印刷 LPページ
             <ul class="dtf-quality__list">
                 <li class="dtf-quality__item">
                     <div class="dtf-quality__item-img">
-                        <img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/dtf/dtf-quality-img01.webp" alt="犬の写真を高精細にプリントしたトートバッグ" width="548"
-                            height="332" loading="lazy" />
+                        <img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/dtf/dtf-quality-img01.webp"
+                            alt="犬の写真を高精細にプリントしたトートバッグ" width="548" height="332" loading="lazy" />
                     </div>
                     <div class="dtf-quality__item-body">
                         <h3 class="dtf-quality__item-ttl">
@@ -184,8 +186,8 @@ Template Name: DTF印刷 LPページ
                 </li>
                 <li class="dtf-quality__item">
                     <div class="dtf-quality__item-img">
-                        <img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/dtf/dtf-quality-img02.webp" alt="棚に並ぶ専用熱転写顔料インク" width="548"
-                            height="332" loading="lazy" />
+                        <img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/dtf/dtf-quality-img02.webp"
+                            alt="棚に並ぶ専用熱転写顔料インク" width="548" height="332" loading="lazy" />
                     </div>
                     <div class="dtf-quality__item-body">
                         <h3 class="dtf-quality__item-ttl">
@@ -204,10 +206,12 @@ Template Name: DTF印刷 LPページ
 
     <!-- CTA -->
     <section class="cta-02">
-        <img class="cta-02__deco cta-02__deco--01" src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/dtf/cta-02-logo01.svg" alt="" width="835"
-            height="366" />
-        <img class="cta-02__deco cta-02__deco--02" src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/dtf/cta-02-logo02.svg" alt="" width="385"
-            height="200" />
+        <img class="cta-02__deco cta-02__deco--01"
+            src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/dtf/cta-02-logo01.svg" alt=""
+            width="835" height="366" />
+        <img class="cta-02__deco cta-02__deco--02"
+            src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/dtf/cta-02-logo02.svg" alt=""
+            width="385" height="200" />
         <div class="cta-02__inner lp-inner">
             <h2 class="cta-02__ttl">
                 お問い合わせ・<br class="mobile" />ご相談はこちら！
@@ -256,8 +260,8 @@ Template Name: DTF印刷 LPページ
             <ul class="dtf-products__list">
                 <li class="dtf-products__item">
                     <div class="dtf-products__item-img">
-                        <img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/dtf/dtf-products-img01.webp" alt="5.6オンス ハイクオリティー Ｔシャツ〈アダルト〉"
-                            width="258" height="176" loading="lazy" />
+                        <img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/dtf/dtf-products-img01.webp"
+                            alt="5.6オンス ハイクオリティー Ｔシャツ〈アダルト〉" width="258" height="176" loading="lazy" />
                     </div>
                     <h3 class="dtf-products__item-ttl">
                         5.6オンス ハイクオリティー Ｔシャツ〈アダルト〉
@@ -268,8 +272,8 @@ Template Name: DTF印刷 LPページ
                 </li>
                 <li class="dtf-products__item">
                     <div class="dtf-products__item-img">
-                        <img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/dtf/dtf-products-img02.webp" alt="4.1オンス ドライアスレチック Ｔシャツ〈アダルト〉"
-                            width="258" height="176" loading="lazy" />
+                        <img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/dtf/dtf-products-img02.webp"
+                            alt="4.1オンス ドライアスレチック Ｔシャツ〈アダルト〉" width="258" height="176" loading="lazy" />
                     </div>
                     <h3 class="dtf-products__item-ttl">
                         4.1オンス ドライアスレチック Ｔシャツ〈アダルト〉
@@ -280,8 +284,8 @@ Template Name: DTF印刷 LPページ
                 </li>
                 <li class="dtf-products__item">
                     <div class="dtf-products__item-img">
-                        <img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/dtf/dtf-products-img03.webp" alt="4.4オンス ドライ ポロシャツ（ポケット付）" width="258"
-                            height="176" loading="lazy" />
+                        <img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/dtf/dtf-products-img03.webp"
+                            alt="4.4オンス ドライ ポロシャツ（ポケット付）" width="258" height="176" loading="lazy" />
                     </div>
                     <h3 class="dtf-products__item-ttl">
                         4.4オンス ドライ ポロシャツ（ポケット付）
@@ -292,8 +296,8 @@ Template Name: DTF印刷 LPページ
                 </li>
                 <li class="dtf-products__item">
                     <div class="dtf-products__item-img">
-                        <img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/dtf/dtf-products-img04.webp" alt="4.7オンス スペシャル ドライカノコ ポロシャツ（ローブリード）"
-                            width="258" height="176" loading="lazy" />
+                        <img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/dtf/dtf-products-img04.webp"
+                            alt="4.7オンス スペシャル ドライカノコ ポロシャツ（ローブリード）" width="258" height="176" loading="lazy" />
                     </div>
                     <h3 class="dtf-products__item-ttl">
                         4.7オンス スペシャル ドライカノコ ポロシャツ（ローブリード）
@@ -304,8 +308,8 @@ Template Name: DTF印刷 LPページ
                 </li>
                 <li class="dtf-products__item">
                     <div class="dtf-products__item-img">
-                        <img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/dtf/dtf-products-img05.webp" alt="6.2オンス プレミアム ロングスリーブ Tシャツ（2.1インチリブ）"
-                            width="258" height="176" loading="lazy" />
+                        <img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/dtf/dtf-products-img05.webp"
+                            alt="6.2オンス プレミアム ロングスリーブ Tシャツ（2.1インチリブ）" width="258" height="176" loading="lazy" />
                     </div>
                     <h3 class="dtf-products__item-ttl">
                         6.2オンス プレミアム ロングスリーブ Tシャツ（2.1インチリブ）
@@ -316,8 +320,8 @@ Template Name: DTF印刷 LPページ
                 </li>
                 <li class="dtf-products__item">
                     <div class="dtf-products__item-img">
-                        <img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/dtf/dtf-products-img06.webp" alt="5.6オンス ラグラン ロングスリーブ Tシャツ（1.6インチリブ）"
-                            width="258" height="176" loading="lazy" />
+                        <img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/dtf/dtf-products-img06.webp"
+                            alt="5.6オンス ラグラン ロングスリーブ Tシャツ（1.6インチリブ）" width="258" height="176" loading="lazy" />
                     </div>
                     <h3 class="dtf-products__item-ttl">
                         5.6オンス ラグラン ロングスリーブ Tシャツ（1.6インチリブ）
@@ -354,8 +358,8 @@ Template Name: DTF印刷 LPページ
                 </li>
                 <li class="dtf-products__item">
                     <div class="dtf-products__item-img">
-                        <img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/dtf/dtf-products-img09.webp" alt="ベーシックベスト" width="258" height="176"
-                            loading="lazy" />
+                        <img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/dtf/dtf-products-img09.webp"
+                            alt="ベーシックベスト" width="258" height="176" loading="lazy" />
                     </div>
                     <h3 class="dtf-products__item-ttl">ベーシックベスト</h3>
                     <p class="dtf-products__item-text">
@@ -364,8 +368,8 @@ Template Name: DTF印刷 LPページ
                 </li>
                 <li class="dtf-products__item">
                     <div class="dtf-products__item-img">
-                        <img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/dtf/dtf-products-img10.webp" alt="ベーシックハッピ" width="258" height="176"
-                            loading="lazy" />
+                        <img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/dtf/dtf-products-img10.webp"
+                            alt="ベーシックハッピ" width="258" height="176" loading="lazy" />
                     </div>
                     <h3 class="dtf-products__item-ttl">ベーシックハッピ</h3>
                     <p class="dtf-products__item-text">
@@ -374,8 +378,8 @@ Template Name: DTF印刷 LPページ
                 </li>
                 <li class="dtf-products__item">
                     <div class="dtf-products__item-img">
-                        <img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/dtf/dtf-products-img11.webp" alt="軍手" width="258" height="176"
-                            loading="lazy" />
+                        <img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/dtf/dtf-products-img11.webp"
+                            alt="軍手" width="258" height="176" loading="lazy" />
                     </div>
                     <h3 class="dtf-products__item-ttl">軍手</h3>
                     <p class="dtf-products__item-text">
@@ -384,8 +388,8 @@ Template Name: DTF印刷 LPページ
                 </li>
                 <li class="dtf-products__item">
                     <div class="dtf-products__item-img">
-                        <img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/dtf/dtf-products-img12.webp" alt="デイリー フラット トートバッグ" width="258"
-                            height="176" loading="lazy" />
+                        <img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/dtf/dtf-products-img12.webp"
+                            alt="デイリー フラット トートバッグ" width="258" height="176" loading="lazy" />
                     </div>
                     <h3 class="dtf-products__item-ttl">
                         デイリー フラット トートバッグ
@@ -396,8 +400,8 @@ Template Name: DTF印刷 LPページ
                 </li>
                 <li class="dtf-products__item">
                     <div class="dtf-products__item-img">
-                        <img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/dtf/dtf-products-img13.webp" alt="レギュラー キャンバス トートバッグ" width="258"
-                            height="176" loading="lazy" />
+                        <img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/dtf/dtf-products-img13.webp"
+                            alt="レギュラー キャンバス トートバッグ" width="258" height="176" loading="lazy" />
                     </div>
                     <h3 class="dtf-products__item-ttl">
                         レギュラー キャンバス トートバッグ
@@ -408,8 +412,8 @@ Template Name: DTF印刷 LPページ
                 </li>
                 <li class="dtf-products__item">
                     <div class="dtf-products__item-img">
-                        <img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/dtf/dtf-products-img14.webp" alt="ヘヴィー キャンバス ニュースペーパーバッグ" width="258"
-                            height="176" loading="lazy" />
+                        <img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/dtf/dtf-products-img14.webp"
+                            alt="ヘヴィー キャンバス ニュースペーパーバッグ" width="258" height="176" loading="lazy" />
                     </div>
                     <h3 class="dtf-products__item-ttl">
                         ヘヴィー キャンバス ニュースペーパーバッグ
@@ -420,8 +424,8 @@ Template Name: DTF印刷 LPページ
                 </li>
                 <li class="dtf-products__item">
                     <div class="dtf-products__item-img">
-                        <img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/dtf/dtf-products-img15.webp" alt="ランドリーバッグ" width="258" height="176"
-                            loading="lazy" />
+                        <img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/dtf/dtf-products-img15.webp"
+                            alt="ランドリーバッグ" width="258" height="176" loading="lazy" />
                     </div>
                     <h3 class="dtf-products__item-ttl">ランドリーバッグ</h3>
                     <p class="dtf-products__item-text">
@@ -434,10 +438,12 @@ Template Name: DTF印刷 LPページ
 
     <!-- CTA -->
     <section class="cta-02">
-        <img class="cta-02__deco cta-02__deco--01" src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/dtf/cta-02-logo01.svg" alt="" width="835"
-            height="366" />
-        <img class="cta-02__deco cta-02__deco--02" src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/dtf/cta-02-logo02.svg" alt="" width="385"
-            height="200" />
+        <img class="cta-02__deco cta-02__deco--01"
+            src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/dtf/cta-02-logo01.svg" alt=""
+            width="835" height="366" />
+        <img class="cta-02__deco cta-02__deco--02"
+            src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/dtf/cta-02-logo02.svg" alt=""
+            width="385" height="200" />
         <div class="cta-02__inner lp-inner">
             <h2 class="cta-02__ttl">
                 商品について<br class="mobile" />詳しく相談する！
@@ -486,8 +492,8 @@ Template Name: DTF印刷 LPページ
             <ol class="dtf-flow__list">
                 <li class="dtf-flow__item">
                     <div class="dtf-flow__item-icon">
-                        <img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/dtf/dtf-flow-icon01.svg" alt="" width="118" height="118"
-                            loading="lazy" />
+                        <img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/dtf/dtf-flow-icon01.svg"
+                            alt="" width="118" height="118" loading="lazy" />
                     </div>
                     <div class="dtf-flow__item-body">
                         <div class="dtf-flow__item-head">
@@ -495,7 +501,8 @@ Template Name: DTF印刷 LPページ
                             <h3 class="dtf-flow__item-ttl">お問い合わせ</h3>
                         </div>
                         <p class="dtf-flow__item-text">
-                            作りたいオリジナルグッズ・ウェア、デザイン、枚数などを<a href="<?php echo esc_url(home_url('/service/contact')); ?>"><span
+                            作りたいオリジナルグッズ・ウェア、デザイン、枚数などを<a
+                                href="<?php echo esc_url(home_url('/service/contact')); ?>"><span
                                     class="dtf-flow__item-text-word">お問い合わせ</span><span
                                     class="dtf-flow__item-text-word">フォーム</span></a>または<a
                                 href="#">公式LINE</a>からお気軽にご相談ください。
@@ -504,8 +511,8 @@ Template Name: DTF印刷 LPページ
                 </li>
                 <li class="dtf-flow__item">
                     <div class="dtf-flow__item-icon">
-                        <img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/dtf/dtf-flow-icon02.svg" alt="" width="118" height="118"
-                            loading="lazy" />
+                        <img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/dtf/dtf-flow-icon02.svg"
+                            alt="" width="118" height="118" loading="lazy" />
                     </div>
                     <div class="dtf-flow__item-body">
                         <div class="dtf-flow__item-head">
@@ -519,8 +526,8 @@ Template Name: DTF印刷 LPページ
                 </li>
                 <li class="dtf-flow__item">
                     <div class="dtf-flow__item-icon">
-                        <img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/dtf/dtf-flow-icon03.svg" alt="" width="118" height="118"
-                            loading="lazy" />
+                        <img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/dtf/dtf-flow-icon03.svg"
+                            alt="" width="118" height="118" loading="lazy" />
                     </div>
                     <div class="dtf-flow__item-body">
                         <div class="dtf-flow__item-head">
@@ -663,8 +670,8 @@ Template Name: DTF印刷 LPページ
                 </li>
                 <li class="dtf-flow__item">
                     <div class="dtf-flow__item-icon">
-                        <img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/dtf/dtf-flow-icon04.svg" alt="" width="118" height="118"
-                            loading="lazy" />
+                        <img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/dtf/dtf-flow-icon04.svg"
+                            alt="" width="118" height="118" loading="lazy" />
                     </div>
                     <div class="dtf-flow__item-body">
                         <div class="dtf-flow__item-head">
@@ -678,8 +685,8 @@ Template Name: DTF印刷 LPページ
                 </li>
                 <li class="dtf-flow__item">
                     <div class="dtf-flow__item-icon">
-                        <img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/dtf/dtf-flow-icon05.svg" alt="" width="118" height="118"
-                            loading="lazy" />
+                        <img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/dtf/dtf-flow-icon05.svg"
+                            alt="" width="118" height="118" loading="lazy" />
                     </div>
                     <div class="dtf-flow__item-body">
                         <div class="dtf-flow__item-head">
@@ -690,8 +697,8 @@ Template Name: DTF印刷 LPページ
                             完成したウェアを丁寧に製作し、お届けします。
                         </p>
                         <div class="dtf-flow__item-img">
-                            <img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/dtf/dtf-flow-img.webp" alt="完成したオリジナルウェアとトートバッグ" width="736"
-                                height="230" loading="lazy" />
+                            <img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/dtf/dtf-flow-img.webp"
+                                alt="完成したオリジナルウェアとトートバッグ" width="736" height="230" loading="lazy" />
                         </div>
                     </div>
                 </li>
@@ -720,6 +727,10 @@ Template Name: DTF印刷 LPページ
                     </a>
                     <a href="<?php echo esc_url(home_url('/service/printing/processing')); ?>" class="btn-02">
                         <span class="btn__text">加工</span>
+                        <?php get_template_part('template-parts/parts/btn-icon--blue'); ?>
+                    </a>
+                    <a href="<?php echo esc_url(home_url('/service/printing/bookbinding')); ?>" class="btn-02">
+                        <span class="btn__text btn__text--newspaper">製本</span>
                         <?php get_template_part('template-parts/parts/btn-icon--blue'); ?>
                     </a>
                 </div>

@@ -150,6 +150,9 @@ Template Name: フッター
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script src="https://unpkg.com/lenis@1.2.3/dist/lenis.min.js"></script>
   <script src="<?php echo esc_url(get_theme_file_uri('/assets/js/script.js')); ?>?v=<?php echo esc_attr(filemtime(get_theme_file_path('/assets/js/script.js'))); ?>"></script>
+  <?php if (is_page('dtf') || is_page_template('page-dtf.php')) : ?>
+    <script src="<?php echo esc_url(get_theme_file_uri('/assets/js/dtf.js')); ?>?v=<?php echo esc_attr(filemtime(get_theme_file_path('/assets/js/dtf.js'))); ?>"></script>
+  <?php endif; ?>
 
 
   <script>
