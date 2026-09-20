@@ -15,8 +15,9 @@ $omi_nice_crew_shortcode = $omi_nice_crew_form_id > 0
 
 <?php get_template_part('template-parts/header'); ?>
 <?php get_template_part('template-parts/components/page-head', null, [
-  'title_en' => 'CONTACT',
-  'title_jp' => 'お問い合わせ',
+  'title_en' => 'NICE CREW CONTACT',
+  'title_jp' => 'NICE CREW お問い合わせ',
+  'title_modifier' => 'nice-crew',
 ]); ?>
 
 <div class="contact-top mt80--sp64">
@@ -58,7 +59,7 @@ $omi_nice_crew_shortcode = $omi_nice_crew_form_id > 0
   </div>
 </div>
 
-<div class="contact-form mt80--sp64">
+<div class="contact-form contact-form--nice-crew mt80--sp64">
   <div class="contact-form__inner">
     <?php if ($omi_nice_crew_shortcode !== '') : ?>
       <?php echo do_shortcode($omi_nice_crew_shortcode); ?>

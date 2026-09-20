@@ -400,6 +400,11 @@
 
                 >span:first-of-type label>span {
                     width: 18.75rem;
+
+                    // NICE CREW: 1項目目の固定幅を無効化（詳細度を上げて上書き）
+                    .contact-form--nice-crew & {
+                        width: auto;
+                    }
                 }
 
                 .wpcf7-list-item {

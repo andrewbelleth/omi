@@ -50,6 +50,17 @@
       letter-spacing: 0.05em;
       margin-top: auto;
     }
+
+    // NICE CREW CONTACT など長い英字タイトル（PCのみ縮小、SPは通常 rem(54)）
+    &--nice-crew {
+      .page__title--en {
+        font-size: rem(64);
+
+        @include mq(tb) {
+          font-size: rem(54);
+        }
+      }
+    }
   }
 
   &-works {
