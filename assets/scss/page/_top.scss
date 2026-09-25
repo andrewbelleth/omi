@@ -623,23 +623,13 @@
 
 .top-service {
     margin-bottom: rem(160);
-
-    .section__head {
-        max-width: rem(1200);
-        width: calc(100% - rem(80));
-        margin-inline: auto;
-        display: flex;
-        justify-content: space-between;
-        align-items: flex-end;
-
-    }
+    max-width: rem(1200);
 
     &__list {
-        display: flex;
-        flex-direction: column;
-        // gap: rem(144);
-        // border-top: 1px solid $dark-gray;
-        // margin-top: 4rem;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: rem(32);
+        margin-top: rem(64);
     }
 
     &__item {
@@ -788,62 +778,7 @@
         }
     }
 
-    &__img-sticky-wrap {
-        max-width: rem(1200);
-        width: calc(100% - rem(80));
-        margin-inline: auto;
-        display: flex;
-        gap: rem(88);
-        margin-top: 4rem;
-    }
-
-    &__img-sticky {
-        position: relative;
-        width: rem(529);
-        flex-shrink: 0;
-        height: 100%;
-        position: sticky;
-        // top: rem(84 + 64);
-        top: calc((100vh - rem(592)) / 2);
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        pointer-events: none;
-
-        .swiper-container {
-            height: rem(592);
-            width: 100%;
-            overflow: hidden;
-        }
-
-        .top-service__item-slide {
-            height: 100%;
-            width: 100%;
-
-            .top-service__item-img {
-                &::before {
-                    padding-top: calc(592 / 529 * 100%);
-                }
-            }
-        }
-    }
-
-
-
     @include mq(pc) {
-        &__img-sticky-wrap {
-            gap: rem(60);
-        }
-
-        &__img-sticky {
-            width: rem(402);
-            top: calc((100vh - rem(445)) / 2);
-
-            .swiper-container {
-                height: rem(445);
-            }
-        }
-
         &__item {
             &-slide {
                 width: rem(420);
@@ -856,10 +791,6 @@
         flex-direction: column;
         margin-bottom: 0;
 
-        .section__head {
-            display: contents;
-        }
-
         .section__title {
             order: 1;
             width: calc(100% - rem(48));
@@ -867,18 +798,11 @@
             margin-bottom: 0;
         }
 
-        &__img-sticky-wrap {
-            display: contents;
-        }
-
-        &__img-sticky {
-            display: none;
-        }
-
         &__list {
-            margin-top: 2.5rem;
+            grid-template-columns: 1fr;
+            margin-top: rem(40);
             order: 2;
-            gap: rem(88);
+            gap: rem(24);
         }
 
         &__item {

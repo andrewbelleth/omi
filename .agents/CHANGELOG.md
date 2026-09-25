@@ -245,3 +245,6 @@
 2026-09-20：1.0.2：NICE CREWお問い合わせでチェック／ラジオ1項目目の固定幅（18.75rem）を無効化（通常contactの2列揃え用指定がTシャツ等に効いていたため）
 2026-09-20：1.0.2：NICE CREWお問い合わせの英字タイトルをPCのみ rem(64) に縮小（「NICE CREW CONTACT」が rem(96) では収まらないため。SPは通常の rem(54)）
 2026-09-20：1.0.2：NICE CREWチェック1項目目の固定幅を再修正（上書きCSSの詳細度が元ルールより低く効いていなかったため）
+2026-09-25：1.0.2：TOP service の sticky 画像連携（`_top.scss` の `__img-sticky*` / `script.js` の vertical-slider + StickyScroll）を削除（セクション改修に向けデッドコード化を防ぐため）
+2026-09-25：1.0.2：TOP service 6件をカードリンク構造に統一（外側 `<a.top-service__item>`、内側 btn は入れ子リンク回避のため `<span class="btn">`）
+2026-09-25：1.0.2：TOP service 画像を top-service-image-0N（pc/sp）へ差し替え（`<picture>` で max-width:768px 切替）
