@@ -248,3 +248,5 @@
 2026-09-25：1.0.2：TOP service の sticky 画像連携（`_top.scss` の `__img-sticky*` / `script.js` の vertical-slider + StickyScroll）を削除（セクション改修に向けデッドコード化を防ぐため）
 2026-09-25：1.0.2：TOP service 6件をカードリンク構造に統一（外側 `<a.top-service__item>`、内側 btn は入れ子リンク回避のため `<span class="btn">`）
 2026-09-25：1.0.2：TOP service 画像を top-service-image-0N（pc/sp）へ差し替え（`<picture>` で max-width:768px 切替）
+2026-09-25：1.0.2：TOP service PC を Figma（2526:78561）準拠の2列カードへ改修（短縮コピー・丸矢印 btn__icon・影付き横並び）
+2026-09-26：1.0.2：TOP service SP を Figma（471:7292）準拠へ（縦積み・画像16:7.8・タイトル行＋丸矢印30px）

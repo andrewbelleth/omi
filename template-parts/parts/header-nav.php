@@ -31,7 +31,7 @@ if (! defined('ABSPATH')) {
             <a class="menu-item__link" href="<?php echo esc_url(home_url('/service/printing/bookbinding')); ?>">製本</a>
           </li>
           <li class="menu-item">
-            <a class="menu-item__link" href="<?php echo esc_url(home_url('/service/printing/dtf')); ?>">DTF印刷</a>
+            <a class="menu-item__link" href="<?php echo esc_url(home_url('/dtf')); ?>">DTF印刷</a>
           </li>
         </ul>
       </li>
