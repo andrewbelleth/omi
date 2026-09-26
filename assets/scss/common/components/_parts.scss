@@ -287,6 +287,14 @@
     padding-top: rem(48);
 }
 
+.pt120--sp96 {
+    padding-top: rem(120);
+
+    @include mq(tb) {
+        padding-top: rem(96);
+    }
+}
+
 .pt160--sp96 {
     padding-top: rem(160);
 
@@ -678,6 +686,14 @@
 
 .mb48 {
     margin-bottom: rem(48);
+}
+
+.mt120--sp96 {
+    margin-top: rem(120);
+
+    @include mq(tb) {
+        margin-top: rem(96);
+    }
 }
 
 .mt160--sp120 {

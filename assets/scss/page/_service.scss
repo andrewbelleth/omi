@@ -1,43 +1,120 @@
 @use "../global" as *;
 
-.page__service-box {
-  display: flex;
-  flex-direction: column;
-  gap: rem(40);
+.page__service-head {
+  box-sizing: border-box;
+  margin-inline: auto;
+  max-width: rem(1220 + 20 + 40);
+  padding-bottom: rem(160);
+  padding-inline: rem(20 + 20) rem(20);
+  width: 100%;
 
-  .page__service-box-title {
-    font-size: rem(54);
-    font-weight: 700;
-    line-height: 1.6;
-    letter-spacing: 0.1em;
-    font-feature-settings: "palt";
+  &-inner {
+    align-items: flex-end;
+    display: flex;
+    gap: rem(44);
+    justify-content: center;
   }
 
-  .page__service-box-text {
-    display: flex;
-    flex-direction: column;
-    gap: rem(16);
+  &-image {
+    flex: 1 1 rem(720);
+    max-width: rem(720);
+    min-width: 0;
+
+    @include mq(pc) {
+      flex: 1 1 rem(480);
+      max-width: rem(480);
+    }
+
+    picture,
+    img {
+      display: block;
+      height: auto;
+      width: 100%;
+    }
+  }
+
+  &-text {
+    flex: 1;
+    max-width: rem(456);
+    min-width: 0;
+    padding-bottom: rem(16);
+    width: rem(456);
+
+    &-body {
+      display: flex;
+      flex-direction: column;
+      gap: rem(20);
+    }
 
     p {
-      font-size: rem(15);
-      font-weight: 500;
-      line-height: 2.2;
-      letter-spacing: 0.05em;
-      font-feature-settings: "palt";
+      color: $black;
+      font-feature-settings: "pwid", "palt";
+      font-size: rem(17);
+      font-weight: 400;
+      letter-spacing: lts-em(0.85, 17);
+      line-height: 2.6;
     }
+  }
+
+  &-mark {
+    background: linear-gradient(
+      to bottom,
+      transparent 0,
+      transparent calc(50% - #{rem(12)}),
+      #e4f3ff calc(50% - #{rem(12)}),
+      #e4f3ff calc(50% + #{rem(12)}),
+      transparent calc(50% + #{rem(12)}),
+      transparent 100%
+    );
+    -webkit-box-decoration-break: clone;
+    box-decoration-break: clone;
+    display: inline;
   }
 
   @include mq(tb) {
-    gap: rem(24);
+    padding-bottom: rem(120);
+    padding-inline: rem(24);
 
-    .page__service-box-title {
-      font-size: rem(32);
+    &-inner {
+      align-items: center;
+      flex-direction: column;
+      gap: rem(32);
     }
 
-    .page__service-box-text {
-      p {
-        font-size: rem(14);
+    &-image {
+      flex: none;
+      // max-width: rem(327);
+      width: 100%;
+    }
+
+    &-text {
+      flex: none;
+      max-width: rem(327);
+      max-width: 100%;
+      padding-bottom: 0;
+      width: 100%;
+
+      &-body {
+        gap: rem(12);
       }
+
+      p {
+        font-size: rem(15);
+        letter-spacing: lts-em(0.75, 15);
+        line-height: 2.6;
+      }
+    }
+
+    &-mark {
+      background: linear-gradient(
+        to bottom,
+        transparent 0,
+        transparent calc(50% - #{rem(12)}),
+        #e4f3ff calc(50% - #{rem(12)}),
+        #e4f3ff calc(50% + #{rem(12)}),
+        transparent calc(50% + #{rem(12)}),
+        transparent 100%
+      );
     }
   }
 }
