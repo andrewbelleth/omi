@@ -2145,7 +2145,7 @@ a[href^="tel:"] {
         position: relative;
         z-index: 1;
         /* 1440カンプでは左右100pxアキ。狭い幅でも左右24pxは確保する */
-        width: min(100% - #{rem(48)}, rem(1240));
+        width: min(100% - #{rem(48)}, 86.1111111111vw); 
         height: 100%;
         margin-inline: auto;
         padding-top: rem(130);
