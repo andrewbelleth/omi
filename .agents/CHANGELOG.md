@@ -253,3 +253,4 @@
 2026-09-26：1.0.2：service ページ head を Figma（2515:77736）準拠で実装（グラフ画像＋本文・ハイライト帯。重複の page__service-box を廃止）
 2026-09-26：1.0.2：service head のマーカーを absolute 帯から span 囲み＋linear-gradient に変更（折り返し追従のため）
 2026-09-26：1.0.2：service head SP を Figma（1207:36115）準拠へ（画像327・gap32・本文15px/lh2.6・段落gap12）
+2026-09-26：1.0.2：page__service-content（service-item / sp-overlay / インラインJS / 関連画像）を削除（head＋リンク導線のみ残すため）
