@@ -10,29 +10,15 @@ Template Name: DTF印刷 LPページ
     <!-- メインビジュアル -->
     <section class="mv-02">
         <div class="mv-02__img">
-            <img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/dtf/dtf-mv-img.webp"
-                alt="DTF印刷で作ったTシャツ・トートバッグ・パーカーなどのオリジナルグッズ" width="849" height="732" />
+            <picture>
+                <source srcset="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/dtf/dtf-mv-img-sp.webp"
+                    media="(max-width: 768px)">
+                <img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/dtf/dtf-mv-img.webp"
+                    alt="DTF印刷で作ったTシャツ・トートバッグ・パーカーなどのオリジナルグッズ" width="849" height="732" />
+            </picture>
         </div>
         <div class="mv-02__inner">
-            <ul class="mv-02__point">
-                <li class="mv-02__point-item">
-                    <span class="mv-02__point-text">早い！</span>
-                </li>
-                <li class="mv-02__point-cross">
-                    <img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/dtf/dtf-mv-cross.svg"
-                        alt="" width="20" height="20" />
-                </li>
-                <li class="mv-02__point-item">
-                    <span class="mv-02__point-text">安い！</span>
-                </li>
-                <li class="mv-02__point-cross">
-                    <img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/dtf/dtf-mv-cross.svg"
-                        alt="" width="20" height="20" />
-                </li>
-                <li class="mv-02__point-item mv-02__point-item--order">
-                    <span class="mv-02__point-text"><span class="mv-02__point-num">1</span>枚から<br />注文OK</span>
-                </li>
-            </ul>
+            <p class="mv-02__balloon"><span class="mv-02__balloon-num">1</span>枚から注文OK</p>
             <p class="mv-02__lead">
                 Tシャツ・トートバッグ・パーカー<span class="mv-02__lead-sm">など</span>
             </p>
@@ -61,10 +47,13 @@ Template Name: DTF印刷 LPページ
                     </span>
                 </a>
             </div>
-            <p class="mv-02__label">
-                DTF<span class="mv-02__label-jp">印刷</span>
-            </p>
         </div>
+        <!-- フチの角を丸くするため、SVGテキストで描く（-webkit-text-stroke では角が尖る） -->
+        <p class="mv-02__label">
+            <svg class="mv-02__label-svg" role="img" aria-label="DTF印刷">
+                <text x="100%" y="100%" text-anchor="end">DTF<tspan class="mv-02__label-jp">印刷</tspan></text>
+            </svg>
+        </p>
     </section>
 
     <div class="lp-lead">
@@ -77,7 +66,6 @@ Template Name: DTF印刷 LPページ
                 <ul class="lp-case__list">
                     <li class="lp-case__item">
                         <div class="lp-case__item-img">
-                            <!-- TODO: 写真素材が未購入のため差し替え予定 -->
                             <img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/dtf/dtf-case-img01.webp"
                                 alt="文化祭でおそろいのTシャツを着る学生たち" width="350" height="200" loading="lazy" />
                         </div>
@@ -87,7 +75,6 @@ Template Name: DTF印刷 LPページ
                     </li>
                     <li class="lp-case__item">
                         <div class="lp-case__item-img">
-                            <!-- TODO: 写真素材が未購入のため差し替え予定 -->
                             <img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/dtf/dtf-case-img02.webp"
                                 alt="イベント出店でおそろいのウェアを着たスタッフ" width="350" height="200" loading="lazy" />
                         </div>
@@ -97,7 +84,6 @@ Template Name: DTF印刷 LPページ
                     </li>
                     <li class="lp-case__item">
                         <div class="lp-case__item-img">
-                            <!-- TODO: 写真素材が未購入のため差し替え予定 -->
                             <img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/dtf/dtf-case-img03.webp"
                                 alt="おそろいのユニフォームで円陣を組むスポーツチーム" width="350" height="200" loading="lazy" />
                         </div>
@@ -118,9 +104,8 @@ Template Name: DTF印刷 LPページ
                 <ul class="lp-can__list">
                     <li class="lp-can__item">
                         <div class="lp-can__item-img">
-                            <!-- TODO: 実際のプリント写真に差し替え予定 -->
                             <img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/dtf/dtf-can-img01.webp"
-                                alt="高精細にプリントされたウェア" width="350" height="200" loading="lazy" />
+                                alt="犬の写真を高精細にプリントした生地" width="350" height="200" loading="lazy" />
                         </div>
                         <h3 class="lp-can__item-ttl">
                             高精細のプリントで<br />細かいデザインもくっきり再現
@@ -172,7 +157,7 @@ Template Name: DTF印刷 LPページ
                 <li class="dtf-quality__item">
                     <div class="dtf-quality__item-img">
                         <img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/dtf/dtf-quality-img01.webp"
-                            alt="犬の写真を高精細にプリントしたトートバッグ" width="548" height="332" loading="lazy" />
+                            alt="ハイビスカスの花を高精細にプリントした生地" width="548" height="332" loading="lazy" />
                     </div>
                     <div class="dtf-quality__item-body">
                         <h3 class="dtf-quality__item-ttl">
@@ -187,7 +172,7 @@ Template Name: DTF印刷 LPページ
                 <li class="dtf-quality__item">
                     <div class="dtf-quality__item-img">
                         <img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/dtf/dtf-quality-img02.webp"
-                            alt="棚に並ぶ専用熱転写顔料インク" width="548" height="332" loading="lazy" />
+                            alt="プリンターに装着された専用熱転写顔料インク" width="548" height="332" loading="lazy" />
                     </div>
                     <div class="dtf-quality__item-body">
                         <h3 class="dtf-quality__item-ttl">

@@ -2148,55 +2148,63 @@ a[href^="tel:"] {
         width: min(100% - #{rem(48)}, 86.1111111111vw); 
         height: 100%;
         margin-inline: auto;
-        padding-top: rem(130);
+        padding-top: rem(155);
     }
 
-    /* 早い！×安い！×1枚から注文OK */
-    .mv-02__point {
-        display: flex;
-        align-items: center;
-        gap: rem(10);
-    }
-
-    .mv-02__point-item {
-        width: rem(92);
-        height: rem(92);
-        flex-shrink: 0;
+    /* 1枚から注文OK（吹き出し）*/
+    .mv-02__balloon {
+        position: relative;
+        width: fit-content;
+        height: rem(68);
         display: flex;
         align-items: center;
         justify-content: center;
+        /* 内側線なので、フチ2px分をパディングから引く */
+        padding-inline: rem(42);
         background: $off-white;
         border: rem(2) solid $blue;
-        border-radius: 50%;
-        font-size: rem(24);
+        border-radius: rem(999);
+        font-size: rem(28);
         font-weight: 700;
-        line-height: 1.6;
+        line-height: 1;
         letter-spacing: 0.1em;
         color: $blue;
-        text-align: center;
-    }
 
-    .mv-02__point-item--order {
-        font-size: rem(16);
-        /* 「1」だけ文字サイズが大きいので、行間は固定値にして1行目の行ボックスが膨らむのを防ぐ */
-        line-height: rem(22);
-        letter-spacing: 0.05em;
+        /* しっぽもフチつきなので、青い三角に地色の三角を重ねて作る。
+           内側は同じ三角を3px上にずらしたもの。斜辺のフチは垂直方向のズレより細くなり、
+           この三角（30×14）では約2pxとなって本体のフチと揃う */
+        &::before,
+        &::after {
+            content: "";
+            position: absolute;
+            left: 50%;
+            width: rem(30);
+            height: rem(14);
+            transform: translateX(-50%);
+            clip-path: polygon(0 0, 100% 0, 50% 100%);
+        }
+
+        /* 外側（線）。本体の外周に続けるため、下線の分だけ下げる */
+        &::before {
+            top: calc(100% + #{rem(2)});
+            background: $blue;
+        }
+
+        /* 内側（地）。本体の下線も覆うので、しっぽの口だけ線が消える */
+        &::after {
+            top: calc(100% - #{rem(1)});
+            background: $off-white;
+        }
 
         /* 「1」と「枚から」はベースラインを揃える（同じインラインフォーマット内に置く） */
-        .mv-02__point-num {
-            font-size: rem(22);
-            line-height: inherit;
+        .mv-02__balloon-num {
+            font-size: rem(40);
         }
     }
 
-    .mv-02__point-cross {
-        width: rem(20);
-        height: rem(20);
-        flex-shrink: 0;
-    }
-
     .mv-02__lead {
-        margin-top: rem(32);
+        /* 17（吹き出し下の余白）＋ 14（三角の高さ） */
+        margin-top: rem(31);
         font-size: rem(34);
         font-weight: 700;
         line-height: 1.7;
@@ -2209,7 +2217,10 @@ a[href^="tel:"] {
     }
 
     .mv-02__ttl {
-        margin-top: rem(20);
+        /* 白帯の上端をカンプに合わせる。line-height: 2 の行送りのうち
+           上側の余白（ハーフリーディング約13.5px）から padding-top 6px を引いた
+           約7px ぶん、行ボックスは白帯より上にはみ出しているので詰める */
+        margin-top: rem(13);
 
         /* 改行ごとに白背景が付く（PC/SPで改行位置が変わるためインラインで組む） */
         >span {
@@ -2232,35 +2243,72 @@ a[href^="tel:"] {
     }
 
     .mv-02__btn {
-        margin-top: rem(64);
+        /* 見出しの行ボックスは白帯より下にも約3pxはみ出しているので、その分を引く */
+        margin-top: rem(61);
         display: flex;
         gap: rem(16);
 
-        /* カンプではMVのボタンのみ白フチあり（内側線なので、フチ2px分をパディングから引く） */
+        /* カンプではMVのボタンのみ白フチあり（内側線なので、フチ2px分をパディングから引く）。
+           幅はカンプどおり2つとも同じにする */
         .btn-03 {
+            width: rem(353);
+            /* ブラウザの字幅では「公式LINEからお気軽に！」が1行に収まらないため、
+               文字と矢印のアキをカンプの20pxから16pxに詰める */
+            gap: rem(16);
             padding: rem(14) rem(26) rem(14) rem(32);
             border: rem(2) solid $white;
         }
+
+        /* 指定した位置（brタグ）以外で折り返さない */
+        .btn-03__text {
+            white-space: nowrap;
+        }
     }
 
-    /* DTF印刷 */
+    /* DTF印刷
+       -webkit-text-stroke はフチの角が尖る（マイター結合）ので、角を丸くできるSVGテキストで描く。
+       箱は幅0・高さ0の「基準点」だけにして、SVGのテキストを右揃え・ベースライン合わせで置く */
     .mv-02__label {
         position: absolute;
-        right: rem(40);
-        bottom: rem(-3);
-        font-family: $font-hind;
-        font-size: rem(99);
-        font-weight: 600;
-        line-height: 1;
-        letter-spacing: 0.1em;
-        color: $blue;
-        paint-order: stroke fill;
-        -webkit-text-stroke: rem(20) var(--off-white);
+        /* 末尾の1文字の右にできる字送りのアキ（84px × 0.1em = 8.4）を引いて右端を合わせる */
+        right: rem(31.6);
+        /* カンプは文字のベースラインがMV下端の6px上。
+           テキストは箱の右下（x=100% / y=100%）を基準に右揃えで描くので、
+           箱の下端＝ベースラインになる */
+        bottom: rem(6);
+        /* 幅・高さが0のSVGは描画されない（SVGの仕様）ので、文字が収まる大きさを持たせる。
+           中身は透明なので、下の要素をクリックできるよう当たり判定は切る */
+        width: rem(420);
+        height: rem(120);
+        pointer-events: none;
+
+        .mv-02__label-svg {
+            display: block;
+            width: 100%;
+            height: 100%;
+            /* フチが箱からはみ出しても切らない */
+            overflow: visible;
+        }
+
+        text {
+            font-family: $font-hind;
+            font-size: rem(99);
+            font-weight: 600;
+            letter-spacing: 0.1em;
+            fill: $blue;
+            stroke: var(--off-white);
+            /* 中心揃えの線なので、カンプの外側10pxに対して倍の20pxを指定する */
+            stroke-width: rem(20);
+            stroke-linejoin: round;
+            stroke-linecap: round;
+            paint-order: stroke fill;
+        }
 
         .mv-02__label-jp {
             font-family: $font-noto-sans-jp;
             font-size: rem(84);
-            font-weight: 600;
+            /* em は継承すると親の文字サイズのまま固定されるので、自分の84pxで計算し直す */
+            letter-spacing: 0.1em;
         }
     }
 
@@ -2273,31 +2321,28 @@ a[href^="tel:"] {
         }
 
         .mv-02__inner {
-            padding-top: rem(96);
+            padding-top: rem(116);
         }
 
-        .mv-02__point-item {
-            width: rem(68);
-            height: rem(68);
-            font-size: rem(18);
-        }
+        .mv-02__balloon {
+            height: rem(50);
+            padding-inline: rem(30);
+            font-size: rem(20);
 
-        .mv-02__point-item--order {
-            font-size: rem(12);
-            line-height: rem(17);
+            &::before,
+            &::after {
+                width: rem(22);
+                height: rem(10);
+            }
 
-            .mv-02__point-num {
-                font-size: rem(16);
+            .mv-02__balloon-num {
+                font-size: rem(28);
             }
         }
 
-        .mv-02__point-cross {
-            width: rem(16);
-            height: rem(16);
-        }
-
         .mv-02__lead {
-            margin-top: rem(24);
+            /* 12（吹き出し下の余白）＋ 10（三角の高さ） */
+            margin-top: rem(22);
             font-size: rem(25);
 
             .mv-02__lead-sm {
@@ -2306,7 +2351,7 @@ a[href^="tel:"] {
         }
 
         .mv-02__ttl {
-            margin-top: rem(14);
+            margin-top: rem(9);
 
             >span {
                 padding: rem(4) rem(14) rem(7);
@@ -2315,7 +2360,7 @@ a[href^="tel:"] {
         }
 
         .mv-02__btn {
-            margin-top: rem(40);
+            margin-top: rem(38);
             gap: rem(12);
 
             .btn-03 {
@@ -2338,9 +2383,16 @@ a[href^="tel:"] {
         }
 
         .mv-02__label {
-            right: rem(24);
-            font-size: rem(72);
-            -webkit-text-stroke: rem(14) var(--off-white);
+            /* 61px × 0.1em = 6.1 を引く */
+            right: rem(17.9);
+            bottom: rem(4);
+            width: rem(310);
+            height: rem(90);
+
+            text {
+                font-size: rem(72);
+                stroke-width: rem(14);
+            }
 
             .mv-02__label-jp {
                 font-size: rem(61);
@@ -2356,48 +2408,52 @@ a[href^="tel:"] {
         font-size: calc(16 / (375 / 100) * 1vw);
         background-image: none;
 
+        /* SPはカンプの並びがPCと違うため、専用画像に差し替える（375×343）*/
         .mv-02__img {
             left: 0;
             right: auto;
-            width: em(373);
+            width: em(375);
+
+            img {
+                aspect-ratio: 375 / 343;
+            }
         }
 
         .mv-02__inner {
             width: 100%;
-            padding-top: em(82);
+            padding-top: em(78);
             padding-inline: em(24);
         }
 
-        .mv-02__point {
-            gap: em(8);
-        }
+        .mv-02__balloon {
+            height: em(46, 18);
+            padding-inline: em(23, 18);
+            border-width: em(1, 18);
+            font-size: em(18);
 
-        .mv-02__point-item {
-            width: em(65);
-            height: em(65);
-            border-width: em(1);
-            font-size: em(16);
-        }
+            /* フチが1pxになるぶん、しっぽの位置も内側の三角のずらし幅も半分にする */
+            &::before,
+            &::after {
+                width: em(20, 18);
+                height: em(10, 18);
+            }
 
-        .mv-02__point-item--order {
-            width: em(65, 12);
-            height: em(65, 12);
-            border-width: em(1, 12);
-            font-size: em(12);
-            line-height: em(17, 12);
+            &::before {
+                top: calc(100% + #{em(1, 18)});
+            }
 
-            .mv-02__point-num {
-                font-size: em(16, 12);
+            &::after {
+                top: calc(100% - #{em(0.5, 18)});
+            }
+
+            .mv-02__balloon-num {
+                font-size: em(24, 18);
             }
         }
 
-        .mv-02__point-cross {
-            width: em(20);
-            height: em(20);
-        }
-
         .mv-02__lead {
-            margin-top: em(12, 19);
+            /* 8（吹き出し下の余白）＋ 10（三角の高さ） */
+            margin-top: em(18, 19);
             font-size: em(19);
 
             .mv-02__lead-sm {
@@ -2452,10 +2508,17 @@ a[href^="tel:"] {
         }
 
         .mv-02__label {
-            right: 0;
-            bottom: 0;
-            font-size: em(54);
-            -webkit-text-stroke: em(11, 54) var(--off-white);
+            /* 46px × 0.1em = 4.6 を引く */
+            right: em(-4.6);
+            bottom: em(4);
+            width: em(230);
+            height: em(70);
+
+            text {
+                font-size: em(54);
+                /* stroke-width の em は自分の文字サイズ基準なので 54 で計算する */
+                stroke-width: em(11, 54);
+            }
 
             .mv-02__label-jp {
                 font-size: em(46, 54);

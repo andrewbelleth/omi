@@ -148,8 +148,10 @@ PCカンプ：1440px
 }
 
 /* できること（3カラム＋ボタン） */
+/* 下パディングはカンプの160に、未実装のNICE CREWボタン（高さ54）のぶんを足した値。
+   ボタンを入れるときは rem(160) に戻す */
 .lp-can {
-    padding: rem(112) rem(24) rem(160);
+    padding: rem(112) rem(24) rem(214);
 
     .lp-can__ttl {
         font-size: rem(40);

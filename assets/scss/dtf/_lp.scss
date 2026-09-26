@@ -136,7 +136,8 @@ MV・case・can・CTA・見出し・ボタンは common/components/_lp.scss（LP
     margin-top: rem(80);
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: rem(28);
+    /* カンプは行間と列間が違う（縦56・横28）*/
+    gap: rem(56) rem(28);
   }
 
   .dtf-products__item-img {
@@ -172,7 +173,8 @@ MV・case・can・CTA・見出し・ボタンは common/components/_lp.scss（LP
     .dtf-products__list {
       margin-top: rem(40);
       grid-template-columns: repeat(2, 1fr);
-      gap: rem(15);
+      /* カンプは行間と列間が違う（縦28・横15）*/
+      gap: rem(28) rem(15);
     }
 
     .dtf-products__item-img img {
@@ -296,7 +298,8 @@ MV・case・can・CTA・見出し・ボタンは common/components/_lp.scss（LP
   }
 
   .dtf-flow__item-img {
-    margin-top: rem(16);
+    /* カンプはアイコン（118）の下端から8pxアキ。本文列は108pxで終わるので、差の10pxを足す */
+    margin-top: rem(18);
     /* カンプ：本文列970 のとき 736 */
     width: calc(100% * 736 / 970);
 
@@ -361,7 +364,8 @@ MV・case・can・CTA・見出し・ボタンは common/components/_lp.scss（LP
 /* FLOW内アコーディオン */
 /* STEP03 のテキスト列（アイコン118＋gap32の右側）に収まる */
 .dtf-acc {
-  margin-top: rem(24);
+  /* カンプはアイコン（118）の下端から24pxアキ。本文列は108pxで終わるので、差の10pxを足す */
+  margin-top: rem(34);
 
   @include mq(tb) {
     margin-top: rem(20);
