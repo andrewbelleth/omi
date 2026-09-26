@@ -1,0 +1,1192 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="format-detection" content="telephone=no" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/destyle.css@1.0.15/destyle.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/lenis@1.2.3/dist/lenis.css"
+    />
+    <meta name="robots" content="max-image-preview:large" />
+    <style id="wp-img-auto-sizes-contain-inline-css">
+      img:is([sizes="auto" i], [sizes^="auto," i]) {
+        contain-intrinsic-size: 3000px 1500px;
+      }
+      /*# sourceURL=wp-img-auto-sizes-contain-inline-css */
+    </style>
+    <style id="wp-emoji-styles-inline-css">
+      img.wp-smiley,
+      img.emoji {
+        display: inline !important;
+        border: none !important;
+        box-shadow: none !important;
+        height: 1em !important;
+        width: 1em !important;
+        margin: 0 0.07em !important;
+        vertical-align: -0.1em !important;
+        background: none !important;
+        padding: 0 !important;
+      }
+      /*# sourceURL=wp-emoji-styles-inline-css */
+    </style>
+    <style id="wp-block-library-inline-css">
+      :root {
+        --wp-block-synced-color: #7a00df;
+        --wp-block-synced-color--rgb: 122, 0, 223;
+        --wp-bound-block-color: var(--wp-block-synced-color);
+        --wp-editor-canvas-background: #ddd;
+        --wp-admin-theme-color: #007cba;
+        --wp-admin-theme-color--rgb: 0, 124, 186;
+        --wp-admin-theme-color-darker-10: #006ba1;
+        --wp-admin-theme-color-darker-10--rgb: 0, 107, 160.5;
+        --wp-admin-theme-color-darker-20: #005a87;
+        --wp-admin-theme-color-darker-20--rgb: 0, 90, 135;
+        --wp-admin-border-width-focus: 2px;
+      }
+      @media (min-resolution: 192dpi) {
+        :root {
+          --wp-admin-border-width-focus: 1.5px;
+        }
+      }
+      .wp-element-button {
+        cursor: pointer;
+      }
+      :root .has-very-light-gray-background-color {
+        background-color: #eee;
+      }
+      :root .has-very-dark-gray-background-color {
+        background-color: #313131;
+      }
+      :root .has-very-light-gray-color {
+        color: #eee;
+      }
+      :root .has-very-dark-gray-color {
+        color: #313131;
+      }
+      :root .has-vivid-green-cyan-to-vivid-cyan-blue-gradient-background {
+        background: linear-gradient(135deg, #00d084, #0693e3);
+      }
+      :root .has-purple-crush-gradient-background {
+        background: linear-gradient(135deg, #34e2e4, #4721fb 50%, #ab1dfe);
+      }
+      :root .has-hazy-dawn-gradient-background {
+        background: linear-gradient(135deg, #faaca8, #dad0ec);
+      }
+      :root .has-subdued-olive-gradient-background {
+        background: linear-gradient(135deg, #fafae1, #67a671);
+      }
+      :root .has-atomic-cream-gradient-background {
+        background: linear-gradient(135deg, #fdd79a, #004a59);
+      }
+      :root .has-nightshade-gradient-background {
+        background: linear-gradient(135deg, #330968, #31cdcf);
+      }
+      :root .has-midnight-gradient-background {
+        background: linear-gradient(135deg, #020381, #2874fc);
+      }
+      :root {
+        --wp--preset--font-size--normal: 16px;
+        --wp--preset--font-size--huge: 42px;
+      }
+      .has-regular-font-size {
+        font-size: 1em;
+      }
+      .has-larger-font-size {
+        font-size: 2.625em;
+      }
+      .has-normal-font-size {
+        font-size: var(--wp--preset--font-size--normal);
+      }
+      .has-huge-font-size {
+        font-size: var(--wp--preset--font-size--huge);
+      }
+      :root .has-text-align-center {
+        text-align: center;
+      }
+      :root .has-text-align-left {
+        text-align: left;
+      }
+      :root .has-text-align-right {
+        text-align: right;
+      }
+      .has-fit-text {
+        white-space: nowrap !important;
+      }
+      #end-resizable-editor-section {
+        display: none;
+      }
+      .aligncenter {
+        clear: both;
+      }
+      .items-justified-left {
+        justify-content: flex-start;
+      }
+      .items-justified-center {
+        justify-content: center;
+      }
+      .items-justified-right {
+        justify-content: flex-end;
+      }
+      .items-justified-space-between {
+        justify-content: space-between;
+      }
+      .screen-reader-text {
+        word-wrap: normal !important;
+        border: 0;
+        clip-path: inset(50%);
+        height: 1px;
+        margin: -1px;
+        overflow: hidden;
+        padding: 0;
+        position: absolute;
+        width: 1px;
+      }
+      .screen-reader-text:focus {
+        background-color: #ddd;
+        clip-path: none;
+        color: #444;
+        display: block;
+        font-size: 1em;
+        height: auto;
+        left: 5px;
+        line-height: normal;
+        padding: 15px 23px 14px;
+        text-decoration: none;
+        top: 5px;
+        width: auto;
+        z-index: 100000;
+      }
+      html :where(.has-border-color) {
+        border-style: solid;
+      }
+      html :where([style*="border-color"]) {
+        border-style: solid;
+      }
+      html :where([style*="border-top-color"]) {
+        border-top-style: solid;
+      }
+      html :where([style*="border-right-color"]) {
+        border-right-style: solid;
+      }
+      html :where([style*="border-bottom-color"]) {
+        border-bottom-style: solid;
+      }
+      html :where([style*="border-left-color"]) {
+        border-left-style: solid;
+      }
+      html :where([style*="border-width"]) {
+        border-style: solid;
+      }
+      html :where([style*="border-top-width"]) {
+        border-top-style: solid;
+      }
+      html :where([style*="border-right-width"]) {
+        border-right-style: solid;
+      }
+      html :where([style*="border-bottom-width"]) {
+        border-bottom-style: solid;
+      }
+      html :where([style*="border-left-width"]) {
+        border-left-style: solid;
+      }
+      html :where(img[class*="wp-image-"]) {
+        height: auto;
+        max-width: 100%;
+      }
+      :where(figure) {
+        margin: 0 0 1em;
+      }
+      html :where(.is-position-sticky) {
+        --wp-admin--admin-bar--position-offset: var(
+          --wp-admin--admin-bar--height,
+          0px
+        );
+      }
+      @media screen and (max-width: 600px) {
+        html :where(.is-position-sticky) {
+          --wp-admin--admin-bar--position-offset: 0px;
+        }
+      }
+
+      /*# sourceURL=/wp-includes/css/dist/block-library/common.min.css */
+    </style>
+    <style id="classic-theme-styles-inline-css">
+      /*! This file is auto-generated */
+      .wp-block-button__link {
+        color: #fff;
+        background-color: #32373c;
+        border-radius: 9999px;
+        box-shadow: none;
+        text-decoration: none;
+        padding: calc(0.667em + 2px) calc(1.333em + 2px);
+        font-size: 1.125em;
+      }
+      .wp-block-file__button {
+        background: #32373c;
+        color: #fff;
+        text-decoration: none;
+      }
+      /*# sourceURL=/wp-includes/css/classic-themes.min.css */
+    </style>
+
+    <style id="global-styles-inline-css">
+      :root {
+        --wp--preset--aspect-ratio--square: 1;
+        --wp--preset--aspect-ratio--4-3: 4/3;
+        --wp--preset--aspect-ratio--3-4: 3/4;
+        --wp--preset--aspect-ratio--3-2: 3/2;
+        --wp--preset--aspect-ratio--2-3: 2/3;
+        --wp--preset--aspect-ratio--16-9: 16/9;
+        --wp--preset--aspect-ratio--9-16: 9/16;
+        --wp--preset--color--black: #000000;
+        --wp--preset--color--cyan-bluish-gray: #abb8c3;
+        --wp--preset--color--white: #ffffff;
+        --wp--preset--color--pale-pink: #f78da7;
+        --wp--preset--color--vivid-red: #cf2e2e;
+        --wp--preset--color--luminous-vivid-orange: #ff6900;
+        --wp--preset--color--luminous-vivid-amber: #fcb900;
+        --wp--preset--color--light-green-cyan: #7bdcb5;
+        --wp--preset--color--vivid-green-cyan: #00d084;
+        --wp--preset--color--pale-cyan-blue: #8ed1fc;
+        --wp--preset--color--vivid-cyan-blue: #0693e3;
+        --wp--preset--color--vivid-purple: #9b51e0;
+        --wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(
+          135deg,
+          rgb(6, 147, 227) 0%,
+          rgb(155, 81, 224) 100%
+        );
+        --wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(
+          135deg,
+          rgb(122, 220, 180) 0%,
+          rgb(0, 208, 130) 100%
+        );
+        --wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(
+          135deg,
+          rgb(252, 185, 0) 0%,
+          rgb(255, 105, 0) 100%
+        );
+        --wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(
+          135deg,
+          rgb(255, 105, 0) 0%,
+          rgb(207, 46, 46) 100%
+        );
+        --wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(
+          135deg,
+          rgb(238, 238, 238) 0%,
+          rgb(169, 184, 195) 100%
+        );
+        --wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(
+          135deg,
+          rgb(74, 234, 220) 0%,
+          rgb(151, 120, 209) 20%,
+          rgb(207, 42, 186) 40%,
+          rgb(238, 44, 130) 60%,
+          rgb(251, 105, 98) 80%,
+          rgb(254, 248, 76) 100%
+        );
+        --wp--preset--gradient--blush-light-purple: linear-gradient(
+          135deg,
+          rgb(255, 206, 236) 0%,
+          rgb(152, 150, 240) 100%
+        );
+        --wp--preset--gradient--blush-bordeaux: linear-gradient(
+          135deg,
+          rgb(254, 205, 165) 0%,
+          rgb(254, 45, 45) 50%,
+          rgb(107, 0, 62) 100%
+        );
+        --wp--preset--gradient--luminous-dusk: linear-gradient(
+          135deg,
+          rgb(255, 203, 112) 0%,
+          rgb(199, 81, 192) 50%,
+          rgb(65, 88, 208) 100%
+        );
+        --wp--preset--gradient--pale-ocean: linear-gradient(
+          135deg,
+          rgb(255, 245, 203) 0%,
+          rgb(182, 227, 212) 50%,
+          rgb(51, 167, 181) 100%
+        );
+        --wp--preset--gradient--electric-grass: linear-gradient(
+          135deg,
+          rgb(202, 248, 128) 0%,
+          rgb(113, 206, 126) 100%
+        );
+        --wp--preset--gradient--midnight: linear-gradient(
+          135deg,
+          rgb(2, 3, 129) 0%,
+          rgb(40, 116, 252) 100%
+        );
+        --wp--preset--font-size--small: 13px;
+        --wp--preset--font-size--medium: 20px;
+        --wp--preset--font-size--large: 36px;
+        --wp--preset--font-size--x-large: 42px;
+        --wp--preset--spacing--20: 0.44rem;
+        --wp--preset--spacing--30: 0.67rem;
+        --wp--preset--spacing--40: 1rem;
+        --wp--preset--spacing--50: 1.5rem;
+        --wp--preset--spacing--60: 2.25rem;
+        --wp--preset--spacing--70: 3.38rem;
+        --wp--preset--spacing--80: 5.06rem;
+        --wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);
+        --wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);
+        --wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);
+        --wp--preset--shadow--outlined:
+          6px 6px 0px -3px rgb(255, 255, 255), 6px 6px rgb(0, 0, 0);
+        --wp--preset--shadow--crisp: 6px 6px 0px rgb(0, 0, 0);
+      }
+      :where(body) {
+        margin: 0;
+      }
+      :where(.is-layout-flex) {
+        gap: 0.5em;
+      }
+      :where(.is-layout-grid) {
+        gap: 0.5em;
+      }
+      body .is-layout-flex {
+        display: flex;
+      }
+      .is-layout-flex {
+        flex-wrap: wrap;
+        align-items: center;
+      }
+      .is-layout-flex > :is(*, div) {
+        margin: 0;
+      }
+      body .is-layout-grid {
+        display: grid;
+      }
+      .is-layout-grid > :is(*, div) {
+        margin: 0;
+      }
+      body {
+        padding-top: 0px;
+        padding-right: 0px;
+        padding-bottom: 0px;
+        padding-left: 0px;
+      }
+      :root :where(.wp-element-button, .wp-block-button__link) {
+        background-color: #32373c;
+        border-width: 0;
+        color: #fff;
+        font-family: inherit;
+        font-size: inherit;
+        font-style: inherit;
+        font-weight: inherit;
+        letter-spacing: inherit;
+        line-height: inherit;
+        padding-top: calc(0.667em + 2px);
+        padding-right: calc(1.333em + 2px);
+        padding-bottom: calc(0.667em + 2px);
+        padding-left: calc(1.333em + 2px);
+        text-decoration: none;
+        text-transform: inherit;
+      }
+      .has-black-color {
+        color: var(--wp--preset--color--black) !important;
+      }
+      .has-cyan-bluish-gray-color {
+        color: var(--wp--preset--color--cyan-bluish-gray) !important;
+      }
+      .has-white-color {
+        color: var(--wp--preset--color--white) !important;
+      }
+      .has-pale-pink-color {
+        color: var(--wp--preset--color--pale-pink) !important;
+      }
+      .has-vivid-red-color {
+        color: var(--wp--preset--color--vivid-red) !important;
+      }
+      .has-luminous-vivid-orange-color {
+        color: var(--wp--preset--color--luminous-vivid-orange) !important;
+      }
+      .has-luminous-vivid-amber-color {
+        color: var(--wp--preset--color--luminous-vivid-amber) !important;
+      }
+      .has-light-green-cyan-color {
+        color: var(--wp--preset--color--light-green-cyan) !important;
+      }
+      .has-vivid-green-cyan-color {
+        color: var(--wp--preset--color--vivid-green-cyan) !important;
+      }
+      .has-pale-cyan-blue-color {
+        color: var(--wp--preset--color--pale-cyan-blue) !important;
+      }
+      .has-vivid-cyan-blue-color {
+        color: var(--wp--preset--color--vivid-cyan-blue) !important;
+      }
+      .has-vivid-purple-color {
+        color: var(--wp--preset--color--vivid-purple) !important;
+      }
+      .has-black-background-color {
+        background-color: var(--wp--preset--color--black) !important;
+      }
+      .has-cyan-bluish-gray-background-color {
+        background-color: var(--wp--preset--color--cyan-bluish-gray) !important;
+      }
+      .has-white-background-color {
+        background-color: var(--wp--preset--color--white) !important;
+      }
+      .has-pale-pink-background-color {
+        background-color: var(--wp--preset--color--pale-pink) !important;
+      }
+      .has-vivid-red-background-color {
+        background-color: var(--wp--preset--color--vivid-red) !important;
+      }
+      .has-luminous-vivid-orange-background-color {
+        background-color: var(
+          --wp--preset--color--luminous-vivid-orange
+        ) !important;
+      }
+      .has-luminous-vivid-amber-background-color {
+        background-color: var(
+          --wp--preset--color--luminous-vivid-amber
+        ) !important;
+      }
+      .has-light-green-cyan-background-color {
+        background-color: var(--wp--preset--color--light-green-cyan) !important;
+      }
+      .has-vivid-green-cyan-background-color {
+        background-color: var(--wp--preset--color--vivid-green-cyan) !important;
+      }
+      .has-pale-cyan-blue-background-color {
+        background-color: var(--wp--preset--color--pale-cyan-blue) !important;
+      }
+      .has-vivid-cyan-blue-background-color {
+        background-color: var(--wp--preset--color--vivid-cyan-blue) !important;
+      }
+      .has-vivid-purple-background-color {
+        background-color: var(--wp--preset--color--vivid-purple) !important;
+      }
+      .has-black-border-color {
+        border-color: var(--wp--preset--color--black) !important;
+      }
+      .has-cyan-bluish-gray-border-color {
+        border-color: var(--wp--preset--color--cyan-bluish-gray) !important;
+      }
+      .has-white-border-color {
+        border-color: var(--wp--preset--color--white) !important;
+      }
+      .has-pale-pink-border-color {
+        border-color: var(--wp--preset--color--pale-pink) !important;
+      }
+      .has-vivid-red-border-color {
+        border-color: var(--wp--preset--color--vivid-red) !important;
+      }
+      .has-luminous-vivid-orange-border-color {
+        border-color: var(
+          --wp--preset--color--luminous-vivid-orange
+        ) !important;
+      }
+      .has-luminous-vivid-amber-border-color {
+        border-color: var(--wp--preset--color--luminous-vivid-amber) !important;
+      }
+      .has-light-green-cyan-border-color {
+        border-color: var(--wp--preset--color--light-green-cyan) !important;
+      }
+      .has-vivid-green-cyan-border-color {
+        border-color: var(--wp--preset--color--vivid-green-cyan) !important;
+      }
+      .has-pale-cyan-blue-border-color {
+        border-color: var(--wp--preset--color--pale-cyan-blue) !important;
+      }
+      .has-vivid-cyan-blue-border-color {
+        border-color: var(--wp--preset--color--vivid-cyan-blue) !important;
+      }
+      .has-vivid-purple-border-color {
+        border-color: var(--wp--preset--color--vivid-purple) !important;
+      }
+      .has-vivid-cyan-blue-to-vivid-purple-gradient-background {
+        background: var(
+          --wp--preset--gradient--vivid-cyan-blue-to-vivid-purple
+        ) !important;
+      }
+      .has-light-green-cyan-to-vivid-green-cyan-gradient-background {
+        background: var(
+          --wp--preset--gradient--light-green-cyan-to-vivid-green-cyan
+        ) !important;
+      }
+      .has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background {
+        background: var(
+          --wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange
+        ) !important;
+      }
+      .has-luminous-vivid-orange-to-vivid-red-gradient-background {
+        background: var(
+          --wp--preset--gradient--luminous-vivid-orange-to-vivid-red
+        ) !important;
+      }
+      .has-very-light-gray-to-cyan-bluish-gray-gradient-background {
+        background: var(
+          --wp--preset--gradient--very-light-gray-to-cyan-bluish-gray
+        ) !important;
+      }
+      .has-cool-to-warm-spectrum-gradient-background {
+        background: var(
+          --wp--preset--gradient--cool-to-warm-spectrum
+        ) !important;
+      }
+      .has-blush-light-purple-gradient-background {
+        background: var(--wp--preset--gradient--blush-light-purple) !important;
+      }
+      .has-blush-bordeaux-gradient-background {
+        background: var(--wp--preset--gradient--blush-bordeaux) !important;
+      }
+      .has-luminous-dusk-gradient-background {
+        background: var(--wp--preset--gradient--luminous-dusk) !important;
+      }
+      .has-pale-ocean-gradient-background {
+        background: var(--wp--preset--gradient--pale-ocean) !important;
+      }
+      .has-electric-grass-gradient-background {
+        background: var(--wp--preset--gradient--electric-grass) !important;
+      }
+      .has-midnight-gradient-background {
+        background: var(--wp--preset--gradient--midnight) !important;
+      }
+      .has-small-font-size {
+        font-size: var(--wp--preset--font-size--small) !important;
+      }
+      .has-medium-font-size {
+        font-size: var(--wp--preset--font-size--medium) !important;
+      }
+      .has-large-font-size {
+        font-size: var(--wp--preset--font-size--large) !important;
+      }
+      .has-x-large-font-size {
+        font-size: var(--wp--preset--font-size--x-large) !important;
+      }
+      /*# sourceURL=global-styles-inline-css */
+    </style>
+
+    <link
+      rel="stylesheet"
+      id="css-css"
+      href="assets/css/style.css"
+      media="all"
+    />
+    <script
+      id="jquery-core-js"
+      src="https://belinklab-dev.com/omi/wp-includes/js/jquery/jquery.min.js?ver=3.7.1"
+    ></script>
+    <script
+      id="jquery-migrate-js"
+      src="https://belinklab-dev.com/omi/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.1"
+    ></script>
+    <link
+      rel="https://api.w.org/"
+      href="https://belinklab-dev.com/omi/wp-json/"
+    />
+    <link
+      rel="EditURI"
+      type="application/rsd+xml"
+      title="RSD"
+      href="https://belinklab-dev.com/omi/xmlrpc.php?rsd"
+    />
+    <meta name="generator" content="WordPress 7.0.4" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/css/lightbox.min.css"
+      rel="stylesheet"
+    />
+    <script
+      src="https://belinklab-dev.com/omi/wp-includes/js/wp-emoji-release.min.js?ver=7.0.4"
+      defer=""
+    ></script>
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <main class="lp">
+        <!-- メインビジュアル -->
+        <section class="mv-02">
+          <div class="mv-02__img">
+            <picture>
+              <source
+                srcset="assets/images/dtf/dtf-mv-img-sp.webp"
+                media="(max-width: 768px)"
+              />
+              <img
+                src="assets/images/dtf/dtf-mv-img.webp"
+                alt="DTF印刷で作ったTシャツ・トートバッグ・パーカーなどのオリジナルグッズ"
+                width="849"
+                height="732"
+              />
+            </picture>
+          </div>
+          <div class="mv-02__inner">
+            <p class="mv-02__balloon">
+              <span class="mv-02__balloon-num">1</span>枚から注文OK
+            </p>
+            <p class="mv-02__lead">
+              Tシャツ・トートバッグ・パーカー<span class="mv-02__lead-sm"
+                >など</span
+              >
+            </p>
+            <h1 class="mv-02__ttl">
+              <span
+                ><span class="colorBlue">オリジナルグッズ</span>・<br
+                  class="mobile"
+                /><span class="colorBlue">ウェア</span>が<br
+                  class="desktop"
+                />簡単に作れる！</span
+              >
+            </h1>
+            <div class="mv-02__btn">
+              <!-- TODO: DTF専用フォームのURLが決まり次第差し替え -->
+              <a href="#" class="btn-03">
+                <span class="btn-03__text"
+                  >お問い合わせ<br class="mobile" />はこちら</span
+                >
+                <span class="btn-03__icon">
+                  <svg
+                    viewBox="0 0 22 22"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M13.5386 18.7793L12.0893 17.2881L17.3408 12.0366H0.6875V9.9741H17.3408L12.0893 4.72263L13.5386 3.23145L21.3125 11.0054L13.5386 18.7793Z"
+                    />
+                  </svg>
+                </span>
+              </a>
+              <!-- TODO: 公式LINEのURLが決まり次第差し替え -->
+              <a href="#" class="btn-03 btn-03--line">
+                <span class="btn-03__text"
+                  >公式LINEから<br class="mobile" />お気軽に！</span
+                >
+                <span class="btn-03__icon">
+                  <svg
+                    viewBox="0 0 22 22"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M13.5386 18.7793L12.0893 17.2881L17.3408 12.0366H0.6875V9.9741H17.3408L12.0893 4.72263L13.5386 3.23145L21.3125 11.0054L13.5386 18.7793Z"
+                    />
+                  </svg>
+                </span>
+              </a>
+            </div>
+          </div>
+          <!-- フチの角を丸くするため、SVGテキストで描く（-webkit-text-stroke では角が尖る） -->
+          <p class="mv-02__label">
+            <svg class="mv-02__label-svg" role="img" aria-label="DTF印刷">
+              <!-- prettier-ignore -->
+              <text x="100%" y="100%" text-anchor="end">DTF<tspan class="mv-02__label-jp">印刷</tspan></text>
+            </svg>
+          </p>
+        </section>
+
+        <div class="lp-lead">
+          <!-- こんなときに -->
+          <section class="lp-case">
+            <div class="lp-case__inner lp-inner">
+              <h2 class="lp-case__ttl">
+                そうだ！<br class="mobile" />オリジナルウェアを作ろう！
+              </h2>
+              <ul class="lp-case__list">
+                <li class="lp-case__item">
+                  <div class="lp-case__item-img">
+                    <img
+                      src="assets/images/dtf/dtf-case-img01.webp"
+                      alt="文化祭でおそろいのTシャツを着る学生たち"
+                      width="350"
+                      height="200"
+                      loading="lazy"
+                    />
+                  </div>
+                  <p class="lp-case__item-text">
+                    学校の文化祭や体育祭で、<br />クラス・チームの<br
+                      class="desktop"
+                    />おそろいTシャツを作りたい
+                  </p>
+                </li>
+                <li class="lp-case__item">
+                  <div class="lp-case__item-img">
+                    <img
+                      src="assets/images/dtf/dtf-case-img02.webp"
+                      alt="イベント出店でおそろいのウェアを着たスタッフ"
+                      width="350"
+                      height="200"
+                      loading="lazy"
+                    />
+                  </div>
+                  <p class="lp-case__item-text">
+                    展示会やイベント出店で、<br />スタッフが<br
+                      class="desktop"
+                    />目立つオリジナルウェアがほしい
+                  </p>
+                </li>
+                <li class="lp-case__item">
+                  <div class="lp-case__item-img">
+                    <img
+                      src="assets/images/dtf/dtf-case-img03.webp"
+                      alt="おそろいのユニフォームで円陣を組むスポーツチーム"
+                      width="350"
+                      height="200"
+                      loading="lazy"
+                    />
+                  </div>
+                  <p class="lp-case__item-text">
+                    職場やスポーツ団のユニフォームに、<br />ロゴやオリジナルデザインを<br
+                      class="desktop"
+                    />入れたい
+                  </p>
+                </li>
+              </ul>
+            </div>
+          </section>
+
+          <!-- できること -->
+          <section class="lp-can">
+            <div class="lp-can__inner lp-inner">
+              <h2 class="lp-can__ttl">
+                近江印刷の<br class="mobile" />DTF印刷でできること
+              </h2>
+              <ul class="lp-can__list">
+                <li class="lp-can__item">
+                  <div class="lp-can__item-img">
+                    <img
+                      src="assets/images/dtf/dtf-can-img01.webp"
+                      alt="犬の写真を高精細にプリントした生地"
+                      width="350"
+                      height="200"
+                      loading="lazy"
+                    />
+                  </div>
+                  <h3 class="lp-can__item-ttl">
+                    高精細のプリントで<br />細かいデザインもくっきり再現
+                  </h3>
+                  <p class="lp-can__item-text">
+                    フィルム転写で細かい線やグラデーションもくっきり再現。洗濯を繰り返しても色あせにくく、伸縮性もあるため型崩れしにくい仕上がりです。
+                  </p>
+                </li>
+                <li class="lp-can__item">
+                  <div class="lp-can__item-img">
+                    <img
+                      src="assets/images/dtf/dtf-can-img02.webp"
+                      alt="スマートフォンで相談する女性"
+                      width="350"
+                      height="200"
+                      loading="lazy"
+                    />
+                  </div>
+                  <h3 class="lp-can__item-ttl">
+                    LINEや実店舗（NICE CREW）で<br />気軽にプロに相談できる！
+                  </h3>
+                  <p class="lp-can__item-text">
+                    ささいな疑問も、公式LINEやお電話で気軽にご相談可能。専門知識がなくても安心してご注文いただけます。
+                  </p>
+                </li>
+                <li class="lp-can__item">
+                  <div class="lp-can__item-img">
+                    <img
+                      src="assets/images/dtf/dtf-can-img03.webp"
+                      alt="実店舗NICE CREWに並ぶオリジナルウェア"
+                      width="350"
+                      height="200"
+                      loading="lazy"
+                    />
+                  </div>
+                  <h3 class="lp-can__item-ttl">
+                    実店舗（NICE CREW）で<br />実物を見ることができる！
+                  </h3>
+                  <p class="lp-can__item-text">
+                    彦根市役所近くの実店舗「NICE
+                    CREW」で、DTF印刷のサンプルを実際に手に取って確認可能。質感を見て安心してご注文いただけます。
+                  </p>
+                </li>
+              </ul>
+              <!-- NICE CREWボタン：中身は後から入れる -->
+              <div class="lp-can__btn"></div>
+            </div>
+          </section>
+        </div>
+
+        <!-- QUALITY -->
+        <section class="dtf-quality">
+          <div class="dtf-quality__inner lp-inner">
+            <h2 class="ttl-06">
+              <span class="ttl-06__en">QUALITY</span>
+              <span class="ttl-06__jp"
+                >当社の<br class="mobile" />プリントクオリティについて</span
+              >
+            </h2>
+            <ul class="dtf-quality__list">
+              <li class="dtf-quality__item">
+                <div class="dtf-quality__item-img">
+                  <img
+                    src="assets/images/dtf/dtf-quality-img01.webp"
+                    alt="ハイビスカスの花を高精細にプリントした生地"
+                    width="548"
+                    height="332"
+                    loading="lazy"
+                  />
+                </div>
+                <div class="dtf-quality__item-body">
+                  <h3 class="dtf-quality__item-ttl">
+                    <span>細かいグラデーションや</span>
+                    <span>複雑なデザインもきれいにプリント</span>
+                  </h3>
+                  <p class="dtf-quality__item-text">
+                    当社が採用するDTFプリント方式は、インクジェットプリンターで出力したフィルムを、デザイン部分のみ熱で圧着させる印刷方法です。<br />専用フィルムに直接印刷するため、写真やイラストを使った複雑なデザイン、細かいグラデーションも色ムラなく高精細に再現できます。
+                  </p>
+                </div>
+              </li>
+              <li class="dtf-quality__item">
+                <div class="dtf-quality__item-img">
+                  <img
+                    src="assets/images/dtf/dtf-quality-img02.webp"
+                    alt="プリンターに装着された専用熱転写顔料インク"
+                    width="548"
+                    height="332"
+                    loading="lazy"
+                  />
+                </div>
+                <div class="dtf-quality__item-body">
+                  <h3 class="dtf-quality__item-ttl">
+                    <span>洗濯を重ねても色落ちしにくい</span>
+                    <span>専用インクにこだわっています</span>
+                  </h3>
+                  <p class="dtf-quality__item-text">
+                    フルカラーを再現するCMYKに白を加えた5色構成の専用熱転写顔料インク「PHT50」を使用。<br />繊維の安全性に関する国際規格「OEKO-TEX®」の前提認証として認められている「ECO
+                    PASSPORT」を取得しており、安全性に配慮したインクで洗濯を重ねても色落ちしにくいのが特長です。
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <!-- CTA -->
+        <section class="cta-02">
+          <img
+            class="cta-02__deco cta-02__deco--01"
+            src="assets/images/dtf/cta-02-logo01.svg"
+            alt=""
+            width="835"
+            height="366"
+          />
+          <img
+            class="cta-02__deco cta-02__deco--02"
+            src="assets/images/dtf/cta-02-logo02.svg"
+            alt=""
+            width="385"
+            height="200"
+          />
+          <div class="cta-02__inner lp-inner">
+            <h2 class="cta-02__ttl">
+              お問い合わせ・<br class="mobile" />ご相談はこちら！
+            </h2>
+            <ul class="cta-02__list">
+              <li class="cta-02__item">
+                <p class="cta-02__item-ttl">お問い合わせフォームから</p>
+                <div class="cta-02__item-btn">
+                  <!-- TODO: DTF専用フォームのURLが決まり次第差し替え -->
+                  <a href="#" class="btn-03">
+                    <span class="btn-03__text">お問い合わせはこちら</span>
+                    <span class="btn-03__icon">
+                      <svg
+                        viewBox="0 0 22 22"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M13.5386 18.7793L12.0893 17.2881L17.3408 12.0366H0.6875V9.9741H17.3408L12.0893 4.72263L13.5386 3.23145L21.3125 11.0054L13.5386 18.7793Z"
+                        />
+                      </svg>
+                    </span>
+                  </a>
+                </div>
+              </li>
+              <li class="cta-02__item">
+                <p class="cta-02__item-ttl">公式LINEからお気軽に！</p>
+                <div class="cta-02__item-btn">
+                  <!-- TODO: 公式LINEのURLが決まり次第差し替え -->
+                  <a href="#" class="btn-03 btn-03--line">
+                    <span class="btn-03__text">公式LINEはこちら</span>
+                    <span class="btn-03__icon">
+                      <svg
+                        viewBox="0 0 22 22"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M13.5386 18.7793L12.0893 17.2881L17.3408 12.0366H0.6875V9.9741H17.3408L12.0893 4.72263L13.5386 3.23145L21.3125 11.0054L13.5386 18.7793Z"
+                        />
+                      </svg>
+                    </span>
+                  </a>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <!-- CTA -->
+        <section class="cta-02">
+          <img
+            class="cta-02__deco cta-02__deco--01"
+            src="assets/images/dtf/cta-02-logo01.svg"
+            alt=""
+            width="835"
+            height="366"
+          />
+          <img
+            class="cta-02__deco cta-02__deco--02"
+            src="assets/images/dtf/cta-02-logo02.svg"
+            alt=""
+            width="385"
+            height="200"
+          />
+          <div class="cta-02__inner lp-inner">
+            <h2 class="cta-02__ttl">
+              商品について<br class="mobile" />詳しく相談する！
+            </h2>
+            <ul class="cta-02__list">
+              <li class="cta-02__item">
+                <p class="cta-02__item-ttl">お問い合わせフォームから</p>
+                <div class="cta-02__item-btn">
+                  <!-- TODO: DTF専用フォームのURLが決まり次第差し替え -->
+                  <a href="#" class="btn-03">
+                    <span class="btn-03__text">お問い合わせはこちら</span>
+                    <span class="btn-03__icon">
+                      <svg
+                        viewBox="0 0 22 22"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M13.5386 18.7793L12.0893 17.2881L17.3408 12.0366H0.6875V9.9741H17.3408L12.0893 4.72263L13.5386 3.23145L21.3125 11.0054L13.5386 18.7793Z"
+                        />
+                      </svg>
+                    </span>
+                  </a>
+                </div>
+              </li>
+              <li class="cta-02__item">
+                <p class="cta-02__item-ttl">公式LINEからお気軽に！</p>
+                <div class="cta-02__item-btn">
+                  <!-- TODO: 公式LINEのURLが決まり次第差し替え -->
+                  <a href="#" class="btn-03 btn-03--line">
+                    <span class="btn-03__text">公式LINEはこちら</span>
+                    <span class="btn-03__icon">
+                      <svg
+                        viewBox="0 0 22 22"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M13.5386 18.7793L12.0893 17.2881L17.3408 12.0366H0.6875V9.9741H17.3408L12.0893 4.72263L13.5386 3.23145L21.3125 11.0054L13.5386 18.7793Z"
+                        />
+                      </svg>
+                    </span>
+                  </a>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </section>
+      </main>
+      <footer class="footer">
+        <div class="footer__inner">
+          <div class="footer__logo">
+            <div class="footer__logo-img">
+              <picture>
+                <source
+                  srcset="assets/images/sp/footer-logo.png"
+                  media="(max-width: 768px)"
+                />
+                <img
+                  src="assets/images/pc/footer-logo.png"
+                  alt="omi printing"
+                  width="91"
+                  height="91"
+                />
+              </picture>
+            </div>
+            <div class="footer__logo-text">
+              <img
+                src="assets/images/pc/logo-text.svg"
+                alt="近江印刷株式会社"
+                width="292"
+                height="40"
+              />
+            </div>
+          </div>
+          <div class="footer__main">
+            <div class="footer__address">
+              <dl>
+                <dt>本社</dt>
+                <dd>
+                  〒529-1302 滋賀県愛知郡愛荘町川原771-1<br />TEL:<a
+                    href="tel:0749428400"
+                    >0749-42-8400</a
+                  >(代)&nbsp;&nbsp;&nbsp;FAX:0749-42-6700(代)
+                </dd>
+              </dl>
+              <dl>
+                <dt>彦根支店</dt>
+                <dd>〒521-1113 滋賀県彦根市稲部町100-4</dd>
+              </dl>
+              <dl>
+                <dt>甲賀支店</dt>
+                <dd>〒520-3402 滋賀県甲賀市甲賀町小佐治2546</dd>
+              </dl>
+              <dl>
+                <dt>東近江支店</dt>
+                <dd>〒529-1422 滋賀県東近江市五個荘町小幡町698-2</dd>
+              </dl>
+              <dl>
+                <dt>草津支店</dt>
+                <dd>〒525-0037 滋賀県草津市西大路町11-18</dd>
+              </dl>
+              <dl>
+                <dt>NICE CREW（彦根営業所）</dt>
+                <dd>〒522-0075 滋賀県彦根市佐和町6-14 伊藤ビル1F</dd>
+              </dl>
+            </div>
+            <nav class="footer__nav">
+              <div class="footer__nav-item">
+                <h3><a href="/omi/features">近江印刷の特徴</a></h3>
+                <h3><a href="/omi/service">サービス</a></h3>
+                <ul>
+                  <li>
+                    <a href="/omi/service/printing">印刷</a>
+                    <ul>
+                      <li>
+                        <a href="/omi/service/printing/products">取扱品目</a>
+                      </li>
+                      <li>
+                        <a href="/omi/service/printing/processing">加工</a>
+                      </li>
+                      <li>
+                        <a href="/omi/service/printing/bookbinding">製本</a>
+                      </li>
+                      <li><a href="#">DTF印刷</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="/omi/service/degital">デジタル</a></li>
+                  <li><a href="/omi/service/newspaper">彦根経済新聞</a></li>
+                  <li><a href="/omi/service/branding">ブランディング</a></li>
+                  <li><a href="/omi/service/promotion">プロモーション</a></li>
+                  <li><a href="#">NICE CREW</a></li>
+                </ul>
+              </div>
+              <div class="footer__nav-item">
+                <h3><a href="/omi/works">制作実績</a></h3>
+                <h3><a href="/omi/company">会社概要</a></h3>
+                <ul>
+                  <li><a href="/omi/company/facility">設備概要</a></li>
+                  <li><a href="/omi/company/history">会社沿革</a></li>
+                  <li><a href="/omi/company/project">私たちの取り組み</a></li>
+                  <li><a href="/omi/company/ing">社外報ing</a></li>
+                </ul>
+              </div>
+              <div class="footer__nav-item">
+                <h3><a href="/omi/news">お知らせ</a></h3>
+                <h3><a href="/omi/recruit">リクルート</a></h3>
+                <h3><a href="/omi/partner">外部パートナー募集</a></h3>
+                <h3><a href="/omi/career">キャリア採用</a></h3>
+                <h3><a href="/omi/guide">入稿ガイド</a></h3>
+                <h3><a href="/omi/contact">お問い合わせ</a></h3>
+              </div>
+            </nav>
+          </div>
+          <ul class="footer__sns sns">
+            <li>
+              <a
+                class="sns--x"
+                href="https://twitter.com/omp63"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><img
+                  src="assets/images/common/ico_x.svg"
+                  alt="x icon"
+                  width="24"
+                  height="24"
+              /></a>
+            </li>
+            <li>
+              <a
+                class="sns--youtube"
+                href="https://www.youtube.com/channel/UCGkR-Vi1vzr6GQCxyscWJLg"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><img
+                  src="assets/images/common/ico_youtube.svg"
+                  alt="youtube icon"
+                  width="24"
+                  height="24"
+              /></a>
+            </li>
+            <li>
+              <a
+                class="sns--facebook"
+                href="https://www.facebook.com/omi.printing/"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><img
+                  src="assets/images/common/ico_facebook_color.svg"
+                  alt="facebook icon"
+                  width="24"
+                  height="24"
+              /></a>
+            </li>
+            <li>
+              <a
+                class="sns--instagram"
+                href="https://www.instagram.com/omiprint/?hl=ja"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><img
+                  src="assets/images/common/ico_instagram.svg"
+                  alt="instagram icon"
+                  width="24"
+                  height="24"
+              /></a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__copy">
+          <div class="footer__copy-inner">
+            <div class="footer__copy-link">
+              <a href="/omi/privacypolicy">個人情報保護方針</a>
+              <a href="/omi/privacypolicy#opposition-forces"
+                >反社会的勢力への対応</a
+              >
+            </div>
+            <p>©omi-printing. All rights reserved.</p>
+          </div>
+        </div>
+      </footer>
+      <a href="#" class="page-top">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="39"
+          height="39"
+          viewBox="0 0 39 39"
+          fill="none"
+        >
+          <path
+            d="M1.53048 5.01172L37.9471 5.01172L37.9471 9.39633L1.53048 9.39633L1.53048 5.01172ZM1.83526 31.6848L19.7388 15.1584L37.6424 31.6848L34.3055 34.765L19.7388 21.3188L5.17214 34.765L1.83526 31.6848Z"
+            fill="#0068B6"
+          />
+        </svg>
+      </a>
+    </div>
+    <!-- /.wrapper -->
+    <script src="assets/js/dtf.js"></script>
+  </body>
+</html>
