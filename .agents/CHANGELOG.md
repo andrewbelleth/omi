@@ -254,3 +254,4 @@
 2026-09-26：1.0.2：service head のマーカーを absolute 帯から span 囲み＋linear-gradient に変更（折り返し追従のため）
 2026-09-26：1.0.2：service head SP を Figma（1207:36115）準拠へ（画像327・gap32・本文15px/lh2.6・段落gap12）
 2026-09-26：1.0.2：page__service-content（service-item / sp-overlay / インラインJS / 関連画像）を削除（head＋リンク導線のみ残すため）
+2026-09-29：1.0.2：フチ付き見出しを SVG text で描く手順をナレッジ化（.cursor/rules/2026-09-29-svg-text-stroke.mdc。-webkit-text-stroke の角尖り回避）
