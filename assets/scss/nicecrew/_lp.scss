@@ -1,7 +1,566 @@
 @use "../global" as *;
 
-/* 
+/*
 lp-nicecrew
 ここにすべて書く。
 他のファイルを触らないでください。
 */
+
+/* メインビジュアル右下のNICE CREWラベル */
+.mv-02--nicecrew {
+  background-color: #eef1f4;
+  background-image: none;
+
+  .mv-02__img > .mv-02__deco {
+    position: absolute;
+    z-index: 1;
+    display: block;
+    object-fit: contain;
+    pointer-events: none;
+
+    &--tshirts {
+      top: rem(-10);
+      right: rem(0);
+      width: rem(250);
+      height: rem(214);
+    }
+
+    &--package {
+      top: rem(72);
+      right: rem(-13);
+      width: rem(153);
+      height: rem(129);
+      transform: rotate(-5.53deg);
+    }
+  }
+
+  .mv-02__lead {
+    width: rem(666);
+    height: rem(51);
+
+    .mv-02__lead-svg {
+      display: block;
+      width: 100%;
+      height: 100%;
+      overflow: visible;
+    }
+
+    text {
+      font-family: $font-noto-sans-jp;
+      font-size: rem(30);
+      font-weight: 700;
+      letter-spacing: 0.15em;
+      fill: $black;
+      stroke: #eef1f4;
+      stroke-width: rem(12);
+      stroke-linejoin: round;
+      stroke-linecap: round;
+      paint-order: stroke fill;
+
+      @include mq(tb) {
+        font-size: rem(18);
+      }
+    }
+  }
+
+  .mv-02__label {
+    isolation: isolate;
+    width: rem(650);
+
+    &::after {
+      position: absolute;
+      z-index: 0;
+      right: rem(-56);
+      bottom: rem(-60);
+      width: rem(268);
+      height: rem(264);
+      background: url("../images/nicecrew/nicecrew-fv-mark.svg") center / contain no-repeat;
+      content: "";
+    }
+
+    .mv-02__label-svg {
+      position: relative;
+      z-index: 1;
+    }
+
+    text {
+      font-family: $font-hind;
+      font-size: rem(86);
+      font-weight: 600;
+      line-height: 1;
+      letter-spacing: 0.1em;
+      fill: #0068b6;
+      stroke: #f7f8f9;
+      stroke-width: rem(20);
+      stroke-linejoin: round;
+      stroke-linecap: round;
+      paint-order: stroke fill;
+    }
+  }
+
+  @include mq(pc) {
+    .mv-02__label {
+      width: rem(470);
+
+      text {
+        font-size: rem(72);
+        stroke-width: rem(14);
+      }
+    }
+  }
+
+  @include mq(tb) {
+    overflow: hidden;
+
+    .mv-02__lead {
+      width: 100%;
+    }
+  }
+
+  @include mq(sp) {
+    .mv-02__label {
+      width: em(340);
+
+      text {
+        font-size: em(54);
+        stroke-width: em(11, 54);
+      }
+    }
+  }
+}
+
+/* 取り扱い商品下の画像付きCTA */
+.cta-02--nicecrew {
+  padding: 0 0 rem(64);
+
+  .cta-02__main-img {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    margin-bottom: rem(54);
+
+    picture,
+    img {
+      display: block;
+      width: 100%;
+    }
+
+    img {
+      height: auto;
+    }
+  }
+
+  .cta-02__inner {
+    padding-inline: rem(24);
+  }
+
+  @include mq(tb) {
+    padding-bottom: rem(40);
+
+    .cta-02__main-img {
+      margin-bottom: rem(32);
+    }
+  }
+}
+
+/* アクセス地図 */
+.nicecrew-access__map {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  overflow: hidden;
+
+  iframe {
+    display: block;
+    width: 100%;
+    height: 100%;
+    border: 0;
+  }
+}
+
+/* NICE CREWの4つの機能（PC） */
+@media screen and (min-width: 1025px) {
+  .lp-can--nicecrew {
+    padding-bottom: 0;
+  }
+
+  .nicecrew-feature {
+    padding-block: rem(88) rem(160);
+
+    .nicecrew-feature__inner {
+      max-width: rem(1120);
+      border-radius: rem(32);
+      padding-block: rem(80);
+      background-color: $white;
+    }
+
+    .nicecrew-feature__ttl {
+      font-family: $font-noto-sans-jp;
+      font-size: rem(34);
+      font-weight: 700;
+      line-height: 1.6;
+      letter-spacing: 0.15em;
+      text-align: center;
+      color: $black;
+    }
+
+    .nicecrew-feature__list {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: stretch;
+      gap: rem(24);
+      width: 100%;
+      max-width: rem(960);
+      margin-top: rem(40);
+      margin-inline: auto;
+      counter-reset: nicecrew-feature;
+    }
+
+    .nicecrew-feature__item {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: calc((100% - #{rem(48)}) / 3);
+      padding: rem(24) rem(32);
+      border-radius: rem(20);
+      background-color: #eef1f4;
+      counter-increment: nicecrew-feature;
+
+      &::before {
+        content: counter(nicecrew-feature, decimal-leading-zero);
+        position: absolute;
+        top: rem(22);
+        left: rem(24);
+        font-family: $font-hind;
+        font-size: rem(22);
+        font-weight: 700;
+        line-height: 1;
+        letter-spacing: 0.05em;
+        color: #0068b6;
+      }
+
+      &:first-child {
+        width: 100%;
+        padding: rem(28) rem(24);
+
+        .nicecrew-feature__item-ttl {
+          margin-top: rem(20);
+          font-size: rem(20);
+        }
+
+        .nicecrew-feature__item-text {
+          text-align: center;
+        }
+      }
+    }
+
+    .nicecrew-feature__item-img {
+      order: -1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: rem(80);
+      height: rem(80);
+      border-radius: 50%;
+      background-color: $white;
+
+      img {
+        display: block;
+        width: rem(52);
+        height: rem(52);
+        object-fit: contain;
+      }
+    }
+
+    .nicecrew-feature__item:first-child .nicecrew-feature__item-img img {
+      width: rem(56);
+      height: rem(56);
+    }
+
+    .nicecrew-feature__item-ttl {
+      width: 100%;
+      margin-top: rem(16);
+      font-family: $font-noto-sans-jp;
+      font-size: rem(20);
+      font-weight: 700;
+      line-height: 1.6;
+      letter-spacing: 0.05em;
+      text-align: center;
+      color: #0068b6;
+    }
+
+    .nicecrew-feature__item-text {
+      width: 100%;
+      margin-top: rem(12);
+      font-family: $font-noto-sans-jp;
+      font-size: rem(15);
+      font-weight: 500;
+      line-height: 1.8;
+      letter-spacing: 0.05em;
+      color: $black;
+    }
+  }
+
+  .nicecrew-message {
+    min-height: rem(857);
+    background-color: $white;
+    background-image: url("../images/nicecrew/nicecrew-message-img.png");
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-size: cover;
+
+    .nicecrew-message__inner {
+      padding-top: rem(160);
+      padding-bottom: rem(144);
+    }
+
+    .ttl-06 {
+      text-align: left;
+
+      .ttl-06__jp {
+        margin-top: rem(4);
+      }
+    }
+
+    .nicecrew-message__text {
+      margin-top: rem(56);
+      font-family: $font-noto-sans-jp;
+      font-size: rem(16);
+      font-weight: 500;
+      line-height: 2.8;
+      letter-spacing: 0.05em;
+      color: $black;
+    }
+  }
+
+  /* PRINTING METHOD */
+  .nicecrew-method {
+    background-color: $light-gray;
+
+    .nicecrew-method__text {
+      margin-bottom: rem(40);
+    }
+  }
+
+  /* PRODUCTS */
+  .nicecrew-products {
+    padding-block: rem(160);
+    background-color: $white;
+
+    .nicecrew-products__text {
+      margin-top: rem(48);
+      font-family: $font-noto-sans-jp;
+      font-size: rem(15);
+      font-weight: 500;
+      line-height: 2.2;
+      letter-spacing: 0.05em;
+      text-align: center;
+      color: $black;
+    }
+
+    .nicecrew-products__list {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: rem(64) rem(24);
+      margin-top: rem(64);
+    }
+
+    .nicecrew-products__item {
+      display: flex;
+      flex-direction: column;
+      gap: rem(16);
+      width: rem(258);
+      padding-bottom: rem(16);
+      overflow: hidden;
+      border-radius: rem(16);
+      background-color: $white;
+      box-shadow: 0 0 rem(8) rgba(40, 40, 40, 0.15);
+
+      > img {
+        order: -1;
+        display: block;
+        width: rem(258);
+        height: rem(176);
+        object-fit: cover;
+      }
+    }
+
+    .nicecrew-products__item-name {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      height: rem(58);
+      padding-inline: rem(8);
+      font-family: $font-noto-sans-jp;
+      font-size: rem(18);
+      font-weight: 700;
+      line-height: 1.5;
+      letter-spacing: 0.1em;
+      text-align: center;
+      color: $black;
+    }
+  }
+
+  /* ACCESS：店舗情報 */
+  .nicecrew-access {
+    padding-block: rem(160);
+    background-color: $light-blue;
+
+    .nicecrew-access__info-inner {
+      display: grid;
+      grid-template-columns: rem(376) rem(664);
+      grid-template-rows: auto auto;
+      column-gap: rem(80);
+      row-gap: rem(40);
+      max-width: rem(1120);
+    }
+
+    .ttl-06 {
+      grid-column: 1;
+      grid-row: 1;
+      text-align: left;
+
+      .ttl-06__jp {
+        margin-top: rem(4);
+      }
+    }
+
+    .nicecrew-access__shop {
+      margin-bottom: rem(96);
+    }
+
+    .nicecrew-access__info {
+      grid-column: 1;
+      grid-row: 2;
+    }
+
+    .nicecrew-access__name {
+      font-family: $font-noto-sans-jp;
+      font-size: rem(20);
+      font-weight: 700;
+      line-height: 1.8;
+      letter-spacing: 0.05em;
+      color: $blue;
+    }
+
+    .nicecrew-access__route {
+      margin-top: rem(12);
+      font-family: $font-noto-sans-jp;
+      font-size: rem(15);
+      font-weight: 500;
+      line-height: 1.8;
+      letter-spacing: 0.05em;
+      color: $black;
+    }
+
+    .nicecrew-access__address {
+      display: flex;
+      align-items: center;
+      gap: rem(1.5);
+      margin-top: rem(4);
+      font-family: $font-noto-sans-jp;
+      font-size: rem(15);
+      font-style: normal;
+      font-weight: 500;
+      line-height: 1.8;
+      letter-spacing: 0.05em;
+      color: $black;
+
+      img {
+        flex-shrink: 0;
+        width: rem(24);
+        height: rem(24);
+        object-fit: contain;
+      }
+    }
+
+    .nicecrew-access__landmark {
+      width: rem(349);
+      margin-top: rem(32);
+    }
+
+    .nicecrew-access__landmark > img {
+      display: block;
+      width: rem(349);
+      height: rem(226);
+      object-fit: cover;
+    }
+
+    .nicecrew-access__landmark-caption {
+      margin-top: rem(4);
+      font-family: $font-noto-sans-jp;
+      font-size: rem(13);
+      font-weight: 400;
+      line-height: 1.8;
+      letter-spacing: 0.05em;
+      color: $black;
+    }
+
+    .nicecrew-access__map {
+      grid-column: 2;
+      grid-row: 1 / span 2;
+      width: rem(664);
+      height: rem(568);
+      overflow: hidden;
+
+      iframe {
+        display: block;
+        width: 100%;
+        height: 100%;
+        border: 0;
+      }
+    }
+
+    .nicecrew-access__satellite-inner {
+      position: relative;
+      min-height: rem(343);
+      padding: rem(64) rem(80) rem(64) rem(307);
+      border-radius: rem(32);
+      background-color: $white;
+
+      &::before {
+        content: "";
+        position: absolute;
+        top: rem(64);
+        left: rem(80);
+        width: rem(179);
+        height: rem(215);
+        background-color: $blue;
+        background-image: url("../images/nicecrew/nicecrew-access-img02.webp");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+      }
+    }
+
+    .nicecrew-access__satellite-ttl {
+      font-family: $font-noto-sans-jp;
+      font-size: rem(28);
+      font-weight: 700;
+      line-height: 1.6;
+      letter-spacing: 0.15em;
+      color: $blue;
+    }
+
+    .nicecrew-access__satellite-text {
+      margin-top: rem(16);
+      font-family: $font-noto-sans-jp;
+      font-size: rem(16);
+      font-weight: 500;
+      line-height: 2.2;
+      letter-spacing: 0.1em;
+      color: $black;
+    }
+
+    .nicecrew-access__satellite-btn {
+      margin-top: rem(28);
+
+      .btn {
+        min-width: rem(280);
+      }
+    }
+  }
+}
