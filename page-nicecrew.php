@@ -6,20 +6,25 @@ Template Name: NICECREW LPページ
 ?>
 
 <?php get_template_part('template-parts/header'); ?>
+
 <main class="lp">
     <!-- メインビジュアル -->
     <section class="mv-02 mv-02--nicecrew">
         <div class="mv-02__img">
             <picture>
-                <source srcset="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/nicecrew/nicecrew-fv-img-main.webp" media="(max-width: 768px)" />
-                <img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/nicecrew/nicecrew-fv-img-main.webp" alt="オリジナルウェアやグッズが並ぶNICE CREWの店舗"
-                    width="1440" height="1152" />
+                <source
+                    srcset="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/nicecrew/nicecrew-fv-img-main.webp"
+                    media="(max-width: 768px)" />
+                <img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/nicecrew/nicecrew-fv-img-main.webp"
+                    alt="オリジナルウェアやグッズが並ぶNICE CREWの店舗" width="1440" height="1152" />
             </picture>
         </div>
-        <img class="mv-02__deco mv-02__deco--tshirts" src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/nicecrew/nicecrew-fv-img-tshirts.webp" alt=""
-            width="250" height="214" />
-        <img class="mv-02__deco mv-02__deco--package" src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/nicecrew/nicecrew-fv-img-paccage.webp" alt=""
-            width="153" height="129" />
+        <img class="mv-02__deco mv-02__deco--tshirts"
+            src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/nicecrew/nicecrew-fv-img-tshirts.webp"
+            alt="" width="250" height="214" />
+        <img class="mv-02__deco mv-02__deco--package"
+            src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/nicecrew/nicecrew-fv-img-paccage.webp"
+            alt="" width="153" height="129" />
         <div class="mv-02__inner">
             <p class="mv-02__lead">
                 <svg class="mv-02__lead-svg" role="img" aria-label="店舗で実際にさわって、相談して、確認できる！">
@@ -75,8 +80,8 @@ Template Name: NICECREW LPページ
                 <ul class="lp-case__list">
                     <li class="lp-case__item">
                         <div class="lp-case__item-img">
-                            <img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/nicecrew/nicecrew-problem-img02.webp" alt="オリジナルグッズについて悩む人"
-                                width="350" height="200" loading="lazy" />
+                            <img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/nicecrew/nicecrew-problem-img02.webp"
+                                alt="オリジナルグッズについて悩む人" width="350" height="200" loading="lazy" />
                         </div>
                         <p class="lp-case__item-text">
                             オリジナルグッズを作りたいけど、<br />どうやって形にしたらいいか<br class="desktop" />わからない…
@@ -84,8 +89,8 @@ Template Name: NICECREW LPページ
                     </li>
                     <li class="lp-case__item">
                         <div class="lp-case__item-img">
-                            <img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/nicecrew/nicecrew-problem-img01.webp" alt="オリジナルウェアについて悩む人"
-                                width="350" height="200" loading="lazy" />
+                            <img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/nicecrew/nicecrew-problem-img01.webp"
+                                alt="オリジナルウェアについて悩む人" width="350" height="200" loading="lazy" />
                         </div>
                         <p class="lp-case__item-text">
                             実際にサンプルを確認してから<br />オリジナルウェアを<br class="desktop" />作りたい…
@@ -93,8 +98,8 @@ Template Name: NICECREW LPページ
                     </li>
                     <li class="lp-case__item">
                         <div class="lp-case__item-img">
-                            <img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/nicecrew/nicecrew-problem-img03.webp" alt="グッズ制作の進め方について悩む人"
-                                width="350" height="200" loading="lazy" />
+                            <img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/nicecrew/nicecrew-problem-img03.webp"
+                                alt="グッズ制作の進め方について悩む人" width="350" height="200" loading="lazy" />
                         </div>
                         <p class="lp-case__item-text">
                             専門知識がなくて、<br />何から始めればいいのか<br class="desktop" />わからない…
@@ -113,8 +118,8 @@ Template Name: NICECREW LPページ
                 <ul class="lp-can__list">
                     <li class="lp-can__item">
                         <div class="lp-can__item-img">
-                            <img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/nicecrew/nicecrew-can-img01.webp" alt="色見本を見ながらデザインを相談する様子"
-                                width="350" height="200" loading="lazy" />
+                            <img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/nicecrew/nicecrew-can-img01.webp"
+                                alt="色見本を見ながらデザインを相談する様子" width="350" height="200" loading="lazy" />
                         </div>
                         <h3 class="lp-can__item-ttl">
                             その場でプロに相談・<wbr />注文できる！
@@ -125,8 +130,8 @@ Template Name: NICECREW LPページ
                     </li>
                     <li class="lp-can__item">
                         <div class="lp-can__item-img">
-                            <img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/nicecrew/nicecrew-can-img02.webp" alt="NICE CREWのロゴがプリントされた青と黒のTシャツ"
-                                width="350" height="200" loading="lazy" />
+                            <img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/nicecrew/nicecrew-can-img02.webp"
+                                alt="NICE CREWのロゴがプリントされた青と黒のTシャツ" width="350" height="200" loading="lazy" />
                         </div>
                         <h3 class="lp-can__item-ttl">実物を見て、さわって選べる！</h3>
                         <p class="lp-can__item-text">
@@ -135,8 +140,8 @@ Template Name: NICECREW LPページ
                     </li>
                     <li class="lp-can__item">
                         <div class="lp-can__item-img">
-                            <img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/nicecrew/nicecrew-can-img03.webp" alt="店内に展示されたオリジナルデザインのトートバッグやグッズ"
-                                width="350" height="200" loading="lazy" />
+                            <img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/nicecrew/nicecrew-can-img03.webp"
+                                alt="店内に展示されたオリジナルデザインのトートバッグやグッズ" width="350" height="200" loading="lazy" />
                         </div>
                         <h3 class="lp-can__item-ttl">幅広いアイテムに対応！</h3>
                         <p class="lp-can__item-text">
@@ -164,7 +169,8 @@ Template Name: NICECREW LPページ
                                 CREWにおまかせください。<br />実物サンプルを見ながら、その場でご相談いただけます。
                             </p>
                             <div class="nicecrew-feature__item-img">
-                                <img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/nicecrew/nicecrew-feature-icon01.webp" alt="" loading="lazy" />
+                                <img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/nicecrew/nicecrew-feature-icon01.webp"
+                                    alt="" loading="lazy" />
                             </div>
                         </li>
                         <li class="nicecrew-feature__item">
@@ -175,7 +181,8 @@ Template Name: NICECREW LPページ
                                 オーダーメイドのオリジナルグッズ制作を、企画からご相談いただけます。
                             </p>
                             <div class="nicecrew-feature__item-img">
-                                <img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/nicecrew/nicecrew-feature-icon02.webp" alt="" loading="lazy" />
+                                <img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/nicecrew/nicecrew-feature-icon02.webp"
+                                    alt="" loading="lazy" />
                             </div>
                         </li>
                         <li class="nicecrew-feature__item">
@@ -187,7 +194,8 @@ Template Name: NICECREW LPページ
                                 CREWオリジナルの商品を、店頭でそのままお買い求めいただけます。
                             </p>
                             <div class="nicecrew-feature__item-img">
-                                <img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/nicecrew/nicecrew-feature-icon03.webp" alt="" loading="lazy" />
+                                <img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/nicecrew/nicecrew-feature-icon03.webp"
+                                    alt="" loading="lazy" />
                             </div>
                         </li>
                         <li class="nicecrew-feature__item">
@@ -198,7 +206,8 @@ Template Name: NICECREW LPページ
                                 取材・広報のご相談窓口を兼ね、地域の皆さまが集まり何かを生み出せる場所を目指しています。
                             </p>
                             <div class="nicecrew-feature__item-img">
-                                <img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/nicecrew/nicecrew-feature-icon04.webp" alt="" loading="lazy" />
+                                <img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/nicecrew/nicecrew-feature-icon04.webp"
+                                    alt="" loading="lazy" />
                             </div>
                         </li>
                     </ol>
@@ -209,10 +218,12 @@ Template Name: NICECREW LPページ
 
     <!-- CTA -->
     <section class="cta-02">
-        <img class="cta-02__deco cta-02__deco--01" src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/dtf/cta-02-logo01.svg" alt="" width="835"
-            height="366" />
-        <img class="cta-02__deco cta-02__deco--02" src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/dtf/cta-02-logo02.svg" alt="" width="385"
-            height="200" />
+        <img class="cta-02__deco cta-02__deco--01"
+            src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/dtf/cta-02-logo01.svg" alt=""
+            width="835" height="366" />
+        <img class="cta-02__deco cta-02__deco--02"
+            src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/dtf/cta-02-logo02.svg" alt=""
+            width="385" height="200" />
         <div class="cta-02__inner lp-inner">
             <h2 class="cta-02__ttl">
                 お問い合わせ・<br class="mobile" />ご相談はこちら！
@@ -258,7 +269,8 @@ Template Name: NICECREW LPページ
                 <span class="ttl-06__en">MESSAGE</span>
                 <span class="ttl-06__jp">NICE CREWへの想い</span>
             </h2>
-            <img class="nicecrew-message__image" src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/nicecrew/nicecrew-message-img-sp.png"
+            <img class="nicecrew-message__image"
+                src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/nicecrew/nicecrew-message-img-sp.png"
                 alt="彦根駅から徒歩5分のNICE CREW周辺地図" width="750" height="800" />
             <p class="nicecrew-message__text">
                 素敵な仲間が集う場所、一人ではできないことでも、<br />みんなでなら想いをカタチにしていける、<br />それが店名の「NICE
@@ -277,8 +289,8 @@ Template Name: NICECREW LPページ
             <ul class="nicecrew-method__list dtf-quality__list">
                 <li class="nicecrew-method__item dtf-quality__item">
                     <div class="nicecrew-method__img dtf-quality__item-img">
-                        <img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/nicecrew/nicecrew-method-img01.webp" alt="ハイビスカスを高精細にプリントした生地"
-                            width="1096" height="664" loading="lazy" />
+                        <img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/nicecrew/nicecrew-method-img01.webp"
+                            alt="ハイビスカスを高精細にプリントした生地" width="1096" height="664" loading="lazy" />
                     </div>
                     <div class="nicecrew-method__body dtf-quality__item-body">
                         <h3 class="nicecrew-method__ttl dtf-quality__item-ttl">
@@ -324,27 +336,30 @@ Template Name: NICECREW LPページ
                     <p class="nicecrew-products__item-name">
                         オリジナルノート・<br />カード類
                     </p>
-                    <img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/nicecrew/nicecrew-products-img02.webp" alt="" loading="lazy" />
+                    <img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/nicecrew/nicecrew-products-img02.webp"
+                        alt="" loading="lazy" />
                 </li>
                 <li class="nicecrew-products__item">
                     <p class="nicecrew-products__item-name">
                         オリジナルTシャツ・<br />トートバッグ
                     </p>
-                    <img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/nicecrew/nicecrew-products-img02.webp" alt="" loading="lazy" />
+                    <img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/nicecrew/nicecrew-products-img02.webp"
+                        alt="" loading="lazy" />
                 </li>
                 <li class="nicecrew-products__item">
                     <p class="nicecrew-products__item-name">
                         地域クリエイター<br class="mobile" />との<br class="desktop" />コラボ雑貨
                     </p>
-                    <img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/nicecrew/nicecrew-products-img02.webp" alt="NICE CREWと書かれた白いTシャツと黒いTシャツ"
-                        loading="lazy" />
+                    <img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/nicecrew/nicecrew-products-img02.webp"
+                        alt="NICE CREWと書かれた白いTシャツと黒いTシャツ" loading="lazy" />
                 </li>
                 <li class="nicecrew-products__item">
                     <p class="nicecrew-products__item-name">
                         ZINE<br class="mobile" />
                         （自主制作物）
                     </p>
-                    <img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/nicecrew/nicecrew-products-img02.webp" alt="" loading="lazy" />
+                    <img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/nicecrew/nicecrew-products-img02.webp"
+                        alt="" loading="lazy" />
                 </li>
             </ul>
         </div>
@@ -354,15 +369,19 @@ Template Name: NICECREW LPページ
     <section class="cta-02 cta-02--nicecrew">
         <div class="cta-02__main-img">
             <picture>
-                <source srcset="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/nicecrew/nicecrew-cta-img01-sp.webp" media="(max-width: 768px)" />
-                <img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/nicecrew/nicecrew-cta-img01.webp" alt="NICE CREW店内に展示されたオリジナルウェアとグッズ"
-                    width="1440" height="748" loading="lazy" />
+                <source
+                    srcset="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/nicecrew/nicecrew-cta-img01-sp.webp"
+                    media="(max-width: 768px)" />
+                <img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/nicecrew/nicecrew-cta-img01.webp"
+                    alt="NICE CREW店内に展示されたオリジナルウェアとグッズ" width="1440" height="748" loading="lazy" />
             </picture>
         </div>
-        <img class="cta-02__deco cta-02__deco--01" src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/dtf/cta-02-logo01.svg" alt="" width="835"
-            height="366" />
-        <img class="cta-02__deco cta-02__deco--02" src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/dtf/cta-02-logo02.svg" alt="" width="385"
-            height="200" />
+        <img class="cta-02__deco cta-02__deco--01"
+            src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/dtf/cta-02-logo01.svg" alt=""
+            width="835" height="366" />
+        <img class="cta-02__deco cta-02__deco--02"
+            src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/dtf/cta-02-logo02.svg" alt=""
+            width="385" height="200" />
         <div class="cta-02__inner lp-inner">
             <h2 class="cta-02__ttl">
                 お問い合わせ・<br class="mobile" />ご相談はこちら！
@@ -415,13 +434,14 @@ Template Name: NICECREW LPページ
                         JR・近江鉄道彦根駅西口から徒歩6分
                     </p>
                     <address class="nicecrew-access__address">
-                        <img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/nicecrew/nicecrew-access-icon.webp" alt="" width="24" height="24" />
+                        <img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/nicecrew/nicecrew-access-icon.webp"
+                            alt="" width="24" height="24" />
                         <span>〒522-0075 <br class="mobile" />
                             滋賀県彦根市佐和町6-14 伊藤ビル1F</span>
                     </address>
                     <figure class="nicecrew-access__landmark">
-                        <img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/nicecrew/nicecrew-access-img01.webp" alt="NICE CREW店舗の看板" width="698"
-                            height="452" loading="lazy" />
+                        <img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/nicecrew/nicecrew-access-img01.webp"
+                            alt="NICE CREW店舗の看板" width="698" height="452" loading="lazy" />
                         <figcaption class="nicecrew-access__landmark-caption">
                             ↑この看板が目印です。
                         </figcaption>
@@ -468,7 +488,7 @@ Template Name: NICECREW LPページ
         <div class="component-box-item">
             <div class="link-01-component">
                 <div class="link-01-head">
-                    <h3 class="link-01-title">PRINTING</h3>
+                    <h3 class="link-01-title">SERVICE</h3>
                     <a href="<?php echo esc_url(home_url('/service')); ?>" class="link-01-link">
                         <?php get_template_part('template-parts/parts/link-01-link-icon'); ?>
                         <span class="link-01-link-text">サービストップへ戻る</span>
@@ -476,19 +496,23 @@ Template Name: NICECREW LPページ
                 </div>
                 <div class="btn-list-01">
                     <a href="<?php echo esc_url(home_url('/service/printing')); ?>" class="btn-02">
-                        <span class="btn__text">印刷</span>
+                        <span class="btn__text btn__text--branding">印刷</span>
                         <?php get_template_part('template-parts/parts/btn-icon--blue'); ?>
                     </a>
-                    <a href="<?php echo esc_url(home_url('/service/printing/products')); ?>" class="btn-02">
-                        <span class="btn__text btn__text--newspaper">取扱品目</span>
+                    <a href="<?php echo esc_url(home_url('/service/degital')); ?>" class="btn-02">
+                        <span class="btn__text">デジタル</span>
                         <?php get_template_part('template-parts/parts/btn-icon--blue'); ?>
                     </a>
-                    <a href="<?php echo esc_url(home_url('/service/printing/processing')); ?>" class="btn-02">
-                        <span class="btn__text">加工</span>
+                    <a href="<?php echo esc_url(home_url('/service/newspaper')); ?>" class="btn-02">
+                        <span class="btn__text">彦根経済新聞</span>
                         <?php get_template_part('template-parts/parts/btn-icon--blue'); ?>
                     </a>
-                    <a href="<?php echo esc_url(home_url('/service/printing/bookbinding')); ?>" class="btn-02">
-                        <span class="btn__text btn__text--newspaper">製本</span>
+                    <a href="<?php echo esc_url(home_url('/service/branding')); ?>" class="btn-02">
+                        <span class="btn__text btn__text--newspaper">ブランディング</span>
+                        <?php get_template_part('template-parts/parts/btn-icon--blue'); ?>
+                    </a>
+                    <a href="<?php echo esc_url(home_url('/promotion/')); ?>" class="btn-02">
+                        <span class="btn__text">プロモーション</span>
                         <?php get_template_part('template-parts/parts/btn-icon--blue'); ?>
                     </a>
                 </div>

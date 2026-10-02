@@ -2,9 +2,17 @@
 
 /*
 lp-nicecrew
-ここにすべて書く。
-他のファイルを触らないでください。
+
 */
+
+body.page-nicecrew {
+  .component-box {
+    margin-top: calc(rem(136) + rem(24));
+    @include mq(tb) {
+      margin-top: calc(rem(88) + rem(16));
+    }
+  }
+}
 
 .nicecrew-page-root,
 .nicecrew-page,
