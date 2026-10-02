@@ -194,7 +194,7 @@ PCカンプ：1440px
 
   .lp-can__item-text {
     margin-top: rem(16);
-    font-size: rem(15);
+    font-size: max(rem(15), 12px);
     font-weight: 500;
     line-height: 1.8;
     letter-spacing: 0.05em;

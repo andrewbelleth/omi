@@ -55,7 +55,9 @@ lp-nicecrew
     bottom: auto;
     width: rem(736);
     height: rem(570);
-
+    @media (768px < width < 1024px) {
+      right: rem(15);
+    }
     > picture,
     > picture img {
       display: block;
@@ -898,7 +900,7 @@ lp-nicecrew
     width: 100%;
     margin-top: rem(12);
     font-family: $font-noto-sans-jp;
-    font-size: rem(15);
+    font-size: max(rem(15), 12px);
     font-weight: 500;
     line-height: 1.8;
     letter-spacing: 0.05em;
@@ -942,6 +944,12 @@ lp-nicecrew
 .nicecrew-method {
   .nicecrew-method__text {
     margin-bottom: rem(40);
+  }
+  &__btn {
+    margin-top: rem(40);
+    @include mq(tb) {
+      margin-top: rem(56);
+    }
   }
 }
 
@@ -1161,6 +1169,12 @@ lp-nicecrew
 
     .btn {
       min-width: rem(280);
+    }
+  }
+  &__btn {
+    margin-top: rem(28);
+    @include mq(tb) {
+      margin-top: rem(32);
     }
   }
 }
