@@ -203,6 +203,8 @@ PCカンプ：1440px
 
   .lp-can__btn {
     margin-top: rem(56);
+    margin-inline: auto;
+    width: fit-content;
   }
 
   @include mq(tb) {

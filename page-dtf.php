@@ -11,7 +11,8 @@ Template Name: DTF印刷 LPページ
     <section class="mv-02">
         <div class="mv-02__img">
             <picture>
-                <source srcset="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/dtf/dtf-mv-img-sp.webp"
+                <source
+                    srcset="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/dtf/dtf-mv-img-sp.webp"
                     media="(max-width: 768px)">
                 <img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/dtf/dtf-mv-img.webp"
                     alt="DTF印刷で作ったTシャツ・トートバッグ・パーカーなどのオリジナルグッズ" width="849" height="732" />
@@ -140,8 +141,18 @@ Template Name: DTF印刷 LPページ
                         </p>
                     </li>
                 </ul>
-                <!-- NICE CREWボタン：中身は後から入れる -->
-                <!-- <div class="lp-can__btn"></div> -->
+                <div class="lp-can__btn">
+                    <a href="<?php echo esc_url(home_url('/nicecrew')); ?>" class="btn btn--white">
+                        <span class="btn__text">NICE CREWについて<br class="mobile" />詳しく見る</span>
+                        <span class="btn__icon">
+                            <svg viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M13.5386 18.7793L12.0893 17.2881L17.3408 12.0366H0.6875V9.9741H17.3408L12.0893 4.72263L13.5386 3.23145L21.3125 11.0054L13.5386 18.7793Z"
+                                    fill="white"></path>
+                            </svg>
+                        </span>
+                    </a>
+                </div>
             </div>
         </section>
     </div>
