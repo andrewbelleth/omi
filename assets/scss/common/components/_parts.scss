@@ -1,2650 +1,2632 @@
-@use '../../global/' as *;
+@use "../../global/" as *;
 
 .mobile {
-    display: none;
+  display: none;
 
-    @include mq(tb) {
-        display: block;
-    }
+  @include mq(tb) {
+    display: block;
+  }
 }
 
 .mobile-sp {
-    display: none;
+  display: none;
 
-    @include mq(sp) {
-        display: block;
-    }
+  @include mq(sp) {
+    display: block;
+  }
 }
 
-
 .desktop {
-    display: block;
+  display: block;
 
-    @include mq(tb) {
-        display: none;
-    }
+  @include mq(tb) {
+    display: none;
+  }
 }
 
 .colorBlue {
-    color: $blue;
+  color: $blue;
 }
 
 .bgLightBlue {
-    background-color: $light-blue !important;
+  background-color: $light-blue !important;
 }
 
 .fsz13 {
-    font-size: rem(13);
-    line-height: 1.8;
-    letter-spacing: .04em;
+  font-size: rem(13);
+  line-height: 1.8;
+  letter-spacing: 0.04em;
 }
 
 .fsz13--sp12 {
-    font-size: rem(13);
-    line-height: 1.8;
-    letter-spacing: .04em;
+  font-size: rem(13);
+  line-height: 1.8;
+  letter-spacing: 0.04em;
 
-    @include mq(tb) {
-        font-size: rem(12);
-        letter-spacing: .05em;
-    }
+  @include mq(tb) {
+    font-size: rem(12);
+    letter-spacing: 0.05em;
+  }
 }
 
 .fsz14 {
-    font-size: rem(14);
-    line-height: 1.8;
-    letter-spacing: .05em;
+  font-size: rem(14);
+  line-height: 1.8;
+  letter-spacing: 0.05em;
 }
 
 .fsz15--sp14 {
-    font-size: rem(15);
-    line-height: 1.8;
-    letter-spacing: .05em;
+  font-size: rem(15);
+  line-height: 1.8;
+  letter-spacing: 0.05em;
 
-    @include mq(tb) {
-        font-size: rem(14);
-    }
+  @include mq(tb) {
+    font-size: rem(14);
+  }
 }
 
 .fsz15--sp13 {
-    font-size: rem(15);
-    line-height: 1.8;
-    letter-spacing: .05em;
+  font-size: rem(15);
+  line-height: 1.8;
+  letter-spacing: 0.05em;
 
-    @include mq(tb) {
-        font-size: rem(13);
-    }
+  @include mq(tb) {
+    font-size: rem(13);
+  }
 }
 
 .fsz18 {
-    font-size: rem(18) !important;
-    line-height: 1.8;
-    letter-spacing: .05em;
+  font-size: rem(18) !important;
+  line-height: 1.8;
+  letter-spacing: 0.05em;
 }
 
 .fsz18--sp17 {
-    font-size: rem(18) !important;
-    line-height: 1.8;
-    letter-spacing: .05em;
+  font-size: rem(18) !important;
+  line-height: 1.8;
+  letter-spacing: 0.05em;
 
-    @include mq(tb) {
-        font-size: rem(17) !important;
-    }
+  @include mq(tb) {
+    font-size: rem(17) !important;
+  }
 }
 
 .fsz18--sp16 {
-    font-size: rem(18);
-    line-height: 1.8;
-    letter-spacing: .05em;
+  font-size: rem(18);
+  line-height: 1.8;
+  letter-spacing: 0.05em;
 
-    @include mq(tb) {
-        font-size: rem(16);
-        letter-spacing: .025em;
-    }
+  @include mq(tb) {
+    font-size: rem(16);
+    letter-spacing: 0.025em;
+  }
 }
 
 .fsz20--sp18 {
-    font-size: rem(20) !important;
-    letter-spacing: .05em;
+  font-size: rem(20) !important;
+  letter-spacing: 0.05em;
 
-    @include mq(tb) {
-        font-size: rem(18) !important;
-    }
+  @include mq(tb) {
+    font-size: rem(18) !important;
+  }
 }
 
 .fsz24 {
-    font-size: rem(24);
-    line-height: 1.8;
-    letter-spacing: .05em;
+  font-size: rem(24);
+  line-height: 1.8;
+  letter-spacing: 0.05em;
 }
 
 .fw500 {
-    font-weight: 500;
+  font-weight: 500;
 }
 
 .fw700 {
-    font-weight: 700;
+  font-weight: 700;
 }
 
 .lh2--sp1_8 {
-    line-height: 2;
+  line-height: 2;
 
-    @include mq(tb) {
-        line-height: 1.8;
-    }
+  @include mq(tb) {
+    line-height: 1.8;
+  }
 }
 
 .ltsp05em {
-    letter-spacing: .05em;
+  letter-spacing: 0.05em;
 }
 
 .mt0--sp12 {
-    margin-top: 0;
+  margin-top: 0;
 
-    @include mq(tb) {
-        margin-top: rem(12);
-    }
+  @include mq(tb) {
+    margin-top: rem(12);
+  }
 }
 
 .mt8 {
-    margin-top: rem(8);
+  margin-top: rem(8);
 }
 
 .mt2--sp6 {
-    margin-top: rem(2);
+  margin-top: rem(2);
 
-    @include mq(tb) {
-        margin-top: rem(6);
-    }
+  @include mq(tb) {
+    margin-top: rem(6);
+  }
 }
 
 .mt8--sp12 {
-    margin-top: rem(8);
+  margin-top: rem(8);
 
-    @include mq(tb) {
-        margin-top: rem(12);
-    }
+  @include mq(tb) {
+    margin-top: rem(12);
+  }
 }
 
 .mt12--sp8 {
-    margin-top: rem(12);
+  margin-top: rem(12);
 
-    @include mq(tb) {
-        margin-top: rem(8);
-    }
+  @include mq(tb) {
+    margin-top: rem(8);
+  }
 }
 
 .mt8--sp20 {
-    margin-top: rem(8);
+  margin-top: rem(8);
 
-    @include mq(tb) {
-        margin-top: rem(20);
-    }
+  @include mq(tb) {
+    margin-top: rem(20);
+  }
 }
 
 .mt16 {
-    margin-top: rem(16);
+  margin-top: rem(16);
 }
 
 .mt16--sp10 {
-    margin-top: rem(16);
+  margin-top: rem(16);
 
-    @include mq(tb) {
-        margin-top: rem(10);
-    }
+  @include mq(tb) {
+    margin-top: rem(10);
+  }
 }
 
 .mt16--sp12 {
-    margin-top: rem(16);
+  margin-top: rem(16);
 
-    @include mq(tb) {
-        margin-top: rem(12);
-    }
+  @include mq(tb) {
+    margin-top: rem(12);
+  }
 }
 
 .mt20 {
-    margin-top: rem(20);
+  margin-top: rem(20);
 }
 
 .mt20--sp24 {
-    margin-top: rem(20);
+  margin-top: rem(20);
 
-    @include mq(tb) {
-        margin-top: rem(12);
-    }
+  @include mq(tb) {
+    margin-top: rem(12);
+  }
 }
 
 .mt20--sp24 {
-    margin-top: rem(20);
+  margin-top: rem(20);
 
-    @include mq(tb) {
-        margin-top: rem(24);
-    }
+  @include mq(tb) {
+    margin-top: rem(24);
+  }
 }
 
 .mt20--sp16 {
-    margin-top: rem(20);
+  margin-top: rem(20);
 
-    @include mq(tb) {
-        margin-top: rem(16);
-    }
+  @include mq(tb) {
+    margin-top: rem(16);
+  }
 }
 
 .mt20--sp24 {
-    margin-top: rem(20);
+  margin-top: rem(20);
 
-    @include mq(tb) {
-        margin-top: rem(24);
-    }
+  @include mq(tb) {
+    margin-top: rem(24);
+  }
 }
 
 .pt0--sp16 {
-    padding-top: 0;
+  padding-top: 0;
 
-    @include mq(tb) {
-        padding-top: rem(16);
-    }
+  @include mq(tb) {
+    padding-top: rem(16);
+  }
 }
 
 .pt20pl20 {
-    margin-top: rem(20);
-    padding-left: rem(20);
+  margin-top: rem(20);
+  padding-left: rem(20);
 }
 
 .pl22--sp0 {
-    padding-left: rem(22);
+  padding-left: rem(22);
 
-    @include mq(tb) {
-        padding-left: 0;
-    }
+  @include mq(tb) {
+    padding-left: 0;
+  }
 }
 
 .pl21--sp0 {
-    padding-left: rem(21);
+  padding-left: rem(21);
 
-    @include mq(tb) {
-        padding-left: 0;
-    }
+  @include mq(tb) {
+    padding-left: 0;
+  }
 }
 
 .pl48--sp0 {
-    padding-left: rem(48);
+  padding-left: rem(48);
 
-    @include mq(tb) {
-        padding-left: 0;
-    }
+  @include mq(tb) {
+    padding-left: 0;
+  }
 }
 
 .pt32--sp40 {
-    padding-top: rem(32);
+  padding-top: rem(32);
 
-    @include mq(tb) {
-        padding-top: rem(40);
-    }
+  @include mq(tb) {
+    padding-top: rem(40);
+  }
 }
 
 .pt48 {
-    padding-top: rem(48);
+  padding-top: rem(48);
 }
 
 .pt120--sp96 {
-    padding-top: rem(120);
+  padding-top: rem(120);
 
-    @include mq(tb) {
-        padding-top: rem(96);
-    }
+  @include mq(tb) {
+    padding-top: rem(96);
+  }
 }
 
 .pt160--sp96 {
-    padding-top: rem(160);
+  padding-top: rem(160);
 
-    @include mq(tb) {
-        padding-top: rem(96);
-    }
+  @include mq(tb) {
+    padding-top: rem(96);
+  }
 }
 
 .pt8--sp0 {
-    padding-top: rem(8);
+  padding-top: rem(8);
 
-    @include mq(tb) {
-        padding-top: 0;
-    }
+  @include mq(tb) {
+    padding-top: 0;
+  }
 }
 
 .pt14--sp20 {
-    padding-top: rem(14) !important;
+  padding-top: rem(14) !important;
 
-    @include mq(tb) {
-        padding-top: rem(20) !important;
-    }
+  @include mq(tb) {
+    padding-top: rem(20) !important;
+  }
 }
 
 .pt20 {
-    padding-top: rem(20);
+  padding-top: rem(20);
 }
 
 .pl20 {
-    padding-left: rem(20);
+  padding-left: rem(20);
 }
 
 .m0 {
-    margin: 0 !important;
+  margin: 0 !important;
 }
 
 .mt0 {
-    margin-top: 0 !important;
+  margin-top: 0 !important;
 }
 
 .mt2--sp6 {
-    margin-top: rem(2);
+  margin-top: rem(2);
 
-    @include mq(tb) {
-        margin-top: rem(6);
-    }
+  @include mq(tb) {
+    margin-top: rem(6);
+  }
 }
 
 .mt4 {
-    margin-top: rem(4);
+  margin-top: rem(4);
 }
 
 .mt4--sp8 {
-    margin-top: rem(4);
+  margin-top: rem(4);
 
-    @include mq(tb) {
-        margin-top: rem(8);
-    }
+  @include mq(tb) {
+    margin-top: rem(8);
+  }
 }
 
 .mt8 {
-    margin-top: rem(8);
+  margin-top: rem(8);
 }
 
 .mt8--sp12 {
-    margin-top: rem(8);
+  margin-top: rem(8);
 
-    @include mq(tb) {
-        margin-top: rem(12);
-    }
+  @include mq(tb) {
+    margin-top: rem(12);
+  }
 }
 
 .mt8--sp20 {
-    margin-top: rem(8);
+  margin-top: rem(8);
 
-    @include mq(tb) {
-        margin-top: rem(20);
-    }
+  @include mq(tb) {
+    margin-top: rem(20);
+  }
 }
 
 .mt10 {
-    margin-top: rem(10);
+  margin-top: rem(10);
 }
 
 .mt12 {
-    margin-top: rem(12);
+  margin-top: rem(12);
 }
 
 .mt12--sp8 {
-    margin-top: rem(12);
+  margin-top: rem(12);
 
-    @include mq(tb) {
-        margin-top: rem(8);
-    }
+  @include mq(tb) {
+    margin-top: rem(8);
+  }
 }
 
 .mt12--sp14 {
-    margin-top: rem(12);
+  margin-top: rem(12);
 
-    @include mq(tb) {
-        margin-top: rem(14);
-    }
+  @include mq(tb) {
+    margin-top: rem(14);
+  }
 }
 
 .mt12--sp16 {
-    margin-top: rem(12);
+  margin-top: rem(12);
 
-    @include mq(tb) {
-        margin-top: rem(16);
-    }
+  @include mq(tb) {
+    margin-top: rem(16);
+  }
 }
 
 .mt16 {
-    margin-top: rem(16);
+  margin-top: rem(16);
 }
 
 .mt16--sp10 {
-    margin-top: rem(16);
+  margin-top: rem(16);
 
-    @include mq(tb) {
-        margin-top: rem(10);
-    }
+  @include mq(tb) {
+    margin-top: rem(10);
+  }
 }
 
 .mt20 {
-    margin-top: rem(20);
+  margin-top: rem(20);
 }
 
 .mt20--12 {
-    margin-top: rem(20);
+  margin-top: rem(20);
 
-    @include mq(tb) {
-        margin-top: rem(12);
-    }
+  @include mq(tb) {
+    margin-top: rem(12);
+  }
 }
 
 .mt20--sp16 {
-    margin-top: rem(20);
+  margin-top: rem(20);
 
-    @include mq(tb) {
-        margin-top: rem(16);
-    }
+  @include mq(tb) {
+    margin-top: rem(16);
+  }
 }
 
 .mt20--sp24 {
-    margin-top: rem(20);
+  margin-top: rem(20);
 
-    @include mq(tb) {
-        margin-top: rem(24);
-    }
+  @include mq(tb) {
+    margin-top: rem(24);
+  }
 }
 
 .mt20--sp24 {
-    margin-top: rem(20);
+  margin-top: rem(20);
 
-    @include mq(tb) {
-        margin-top: rem(24);
-    }
+  @include mq(tb) {
+    margin-top: rem(24);
+  }
 }
 
 .mt24 {
-    margin-top: rem(24);
+  margin-top: rem(24);
 }
 
 .mt24--sp32 {
-    margin-top: rem(24);
+  margin-top: rem(24);
 
-    @include mq(tb) {
-        margin-top: rem(32);
-    }
+  @include mq(tb) {
+    margin-top: rem(32);
+  }
 }
 
 .mt24--sp16 {
-    margin-top: rem(24);
+  margin-top: rem(24);
 
-    @include mq(tb) {
-        margin-top: rem(16);
-    }
+  @include mq(tb) {
+    margin-top: rem(16);
+  }
 }
 
 .mt24--sp20 {
-    margin-top: rem(24);
+  margin-top: rem(24);
 
-    @include mq(tb) {
-        margin-top: rem(20);
-    }
+  @include mq(tb) {
+    margin-top: rem(20);
+  }
 }
 
 .mt32 {
-    margin-top: rem(32);
+  margin-top: rem(32);
 }
 
 .mt32--sp10 {
-    margin-top: rem(32);
+  margin-top: rem(32);
 
-    @include mq(tb) {
-        margin-top: rem(10);
-    }
+  @include mq(tb) {
+    margin-top: rem(10);
+  }
 }
 
 .mt32--sp16 {
-    margin-top: rem(32);
+  margin-top: rem(32);
 
-    @include mq(tb) {
-        margin-top: rem(16);
-    }
+  @include mq(tb) {
+    margin-top: rem(16);
+  }
 }
 
 .mt32--sp20 {
-    margin-top: rem(32);
+  margin-top: rem(32);
 
-    @include mq(tb) {
-        margin-top: rem(20);
-    }
+  @include mq(tb) {
+    margin-top: rem(20);
+  }
 }
 
 .mt32--sp24 {
-    margin-top: rem(32);
+  margin-top: rem(32);
 
-    @include mq(tb) {
-        margin-top: rem(24);
-    }
+  @include mq(tb) {
+    margin-top: rem(24);
+  }
 }
 
 .mt32--sp40 {
-    margin-top: rem(32);
+  margin-top: rem(32);
 
-    @include mq(tb) {
-        margin-top: rem(40);
-    }
+  @include mq(tb) {
+    margin-top: rem(40);
+  }
 }
 
 .mt32--sp36 {
-    margin-top: rem(32);
+  margin-top: rem(32);
 
-    @include mq(tb) {
-        margin-top: rem(36);
-    }
+  @include mq(tb) {
+    margin-top: rem(36);
+  }
 }
 
 .mt40--sp20 {
-    margin-top: rem(40);
+  margin-top: rem(40);
 
-    @include mq(tb) {
-        margin-top: rem(20);
-    }
+  @include mq(tb) {
+    margin-top: rem(20);
+  }
 }
 
 .mt40--sp24 {
-    margin-top: rem(40);
+  margin-top: rem(40);
 
-    @include mq(tb) {
-        margin-top: rem(24);
-    }
+  @include mq(tb) {
+    margin-top: rem(24);
+  }
 }
 
 .mt40 {
-    margin-top: rem(40);
+  margin-top: rem(40);
 }
 
 .mt40--sp32 {
-    margin-top: rem(40);
+  margin-top: rem(40);
 
-    @include mq(tb) {
-        margin-top: rem(32);
-    }
+  @include mq(tb) {
+    margin-top: rem(32);
+  }
 }
 
 .mt40--sp48 {
-    margin-top: rem(40);
+  margin-top: rem(40);
 
-    @include mq(tb) {
-        margin-top: rem(48);
-    }
+  @include mq(tb) {
+    margin-top: rem(48);
+  }
 }
 
 .mt48 {
-    margin-top: rem(48);
+  margin-top: rem(48);
 }
 
 .mt48--sp40 {
-    margin-top: rem(48);
+  margin-top: rem(48);
 
-    @include mq(tb) {
-        margin-top: rem(40);
-    }
+  @include mq(tb) {
+    margin-top: rem(40);
+  }
 }
 
 .mt56--sp40 {
-    margin-top: rem(56);
+  margin-top: rem(56);
 
-    @include mq(tb) {
-        margin-top: rem(40);
-    }
+  @include mq(tb) {
+    margin-top: rem(40);
+  }
 }
 
 .mt64--sp40 {
-    margin-top: rem(64);
+  margin-top: rem(64);
 
-    @include mq(tb) {
-        margin-top: rem(40);
-    }
+  @include mq(tb) {
+    margin-top: rem(40);
+  }
 }
 
 .mt72 {
-    margin-top: rem(72);
+  margin-top: rem(72);
 }
 
 .mt72--sp56 {
-    margin-top: rem(72);
+  margin-top: rem(72);
 
-    @include mq(tb) {
-        margin-top: rem(56);
-    }
+  @include mq(tb) {
+    margin-top: rem(56);
+  }
 }
 
 .mt72--sp64 {
-    margin-top: rem(72);
+  margin-top: rem(72);
 
-    @include mq(tb) {
-        margin-top: rem(64);
-    }
+  @include mq(tb) {
+    margin-top: rem(64);
+  }
 }
 
 .mt80--sp64 {
-    margin-top: rem(80);
+  margin-top: rem(80);
 
-    @include mq(tb) {
-        margin-top: rem(64);
-    }
+  @include mq(tb) {
+    margin-top: rem(64);
+  }
 }
 
 .mt160--sp96 {
-    margin-top: rem(160);
+  margin-top: rem(160);
 
-    @include mq(tb) {
-        margin-top: rem(96);
-    }
+  @include mq(tb) {
+    margin-top: rem(96);
+  }
 }
 
-
 .mt40 {
-    margin-top: rem(40);
+  margin-top: rem(40);
 }
 
 .mt40--sp24 {
-    margin-top: rem(40);
+  margin-top: rem(40);
 
-    @include mq(tb) {
-        margin-top: rem(24);
-    }
+  @include mq(tb) {
+    margin-top: rem(24);
+  }
 }
 
 .mt64--sp40 {
-    margin-top: rem(64);
+  margin-top: rem(64);
 
-    @include mq(tb) {
-        margin-top: rem(40);
-    }
+  @include mq(tb) {
+    margin-top: rem(40);
+  }
 }
 
 .mt64--sp48 {
-    margin-top: rem(64);
+  margin-top: rem(64);
 
-    @include mq(tb) {
-        margin-top: rem(48);
-    }
+  @include mq(tb) {
+    margin-top: rem(48);
+  }
 }
 
 .mt126--sp80 {
-    margin-top: rem(126);
+  margin-top: rem(126);
 
-    @include mq(tb) {
-        margin-top: rem(80);
-    }
+  @include mq(tb) {
+    margin-top: rem(80);
+  }
 }
 
 .mt128--sp72 {
-    margin-top: rem(128);
+  margin-top: rem(128);
 
-    @include mq(tb) {
-        margin-top: rem(72);
-    }
+  @include mq(tb) {
+    margin-top: rem(72);
+  }
 }
 
 .mb24 {
-    margin-bottom: rem(24);
+  margin-bottom: rem(24);
 }
 
 .mb48 {
-    margin-bottom: rem(48);
+  margin-bottom: rem(48);
 }
 
 .mt120--sp96 {
-    margin-top: rem(120);
+  margin-top: rem(120);
 
-    @include mq(tb) {
-        margin-top: rem(96);
-    }
+  @include mq(tb) {
+    margin-top: rem(96);
+  }
 }
 
 .mt160--sp120 {
-    margin-top: rem(160);
+  margin-top: rem(160);
 
-    @include mq(tb) {
-        margin-top: rem(120);
-    }
+  @include mq(tb) {
+    margin-top: rem(120);
+  }
 }
 
 .mb160--sp120 {
-    margin-bottom: rem(160);
+  margin-bottom: rem(160);
 
-    @include mq(tb) {
-        margin-bottom: rem(120);
-    }
+  @include mq(tb) {
+    margin-bottom: rem(120);
+  }
 }
 
 .pt24pl21 {
-    padding-top: rem(24);
-    padding-left: rem(21);
+  padding-top: rem(24);
+  padding-left: rem(21);
 
-    @include mq(tb) {
-        padding-top: rem(20);
-        padding-left: rem(20);
-    }
+  @include mq(tb) {
+    padding-top: rem(20);
+    padding-left: rem(20);
+  }
 }
 
 .pi40--sp24 {
-    padding-inline: rem(40) !important;
+  padding-inline: rem(40) !important;
 
-    @include mq(tb) {
-        padding-inline: rem(24) !important;
-    }
+  @include mq(tb) {
+    padding-inline: rem(24) !important;
+  }
 }
 
 .pi32--sp24 {
-    padding-inline: rem(32) !important;
+  padding-inline: rem(32) !important;
 
-    @include mq(tb) {
-        padding-inline: rem(24) !important;
-    }
+  @include mq(tb) {
+    padding-inline: rem(24) !important;
+  }
 }
 
 .pk28--sp24 {
-    padding-block: rem(28) !important;
+  padding-block: rem(28) !important;
 
-    @include mq(tb) {
-        padding-block: rem(24) !important;
-    }
+  @include mq(tb) {
+    padding-block: rem(24) !important;
+  }
 }
 
 .pt8--sp10 {
-    padding-top: rem(8);
+  padding-top: rem(8);
 
-    @include mq(tb) {
-        padding-top: rem(10);
-    }
+  @include mq(tb) {
+    padding-top: rem(10);
+  }
 }
 
 .pt10--sp0 {
-    padding-top: rem(10);
+  padding-top: rem(10);
 
-    @include mq(tb) {
-        padding-top: 0;
-    }
+  @include mq(tb) {
+    padding-top: 0;
+  }
 }
 
 .pt16--sp12 {
-    padding-top: rem(16);
+  padding-top: rem(16);
 
-    @include mq(tb) {
-        padding-top: rem(12);
-    }
+  @include mq(tb) {
+    padding-top: rem(12);
+  }
 }
 
 .pt16--sp20 {
-    padding-top: rem(16);
+  padding-top: rem(16);
 
-    @include mq(tb) {
-        padding-top: rem(20);
-    }
+  @include mq(tb) {
+    padding-top: rem(20);
+  }
 }
 
 .pt24 {
-    padding-top: rem(24);
+  padding-top: rem(24);
 }
 
 .pt24--sp20 {
-    padding-top: rem(24);
+  padding-top: rem(24);
 
-    @include mq(tb) {
-        padding-top: rem(20);
-    }
+  @include mq(tb) {
+    padding-top: rem(20);
+  }
 }
 
 .pt8--sp10 {
-    padding-top: rem(8);
+  padding-top: rem(8);
 
-    @include mq(tb) {
-        padding-top: rem(10);
-    }
+  @include mq(tb) {
+    padding-top: rem(10);
+  }
 }
 
 .pl21--sp0 {
-    padding-left: rem(21);
+  padding-left: rem(21);
 
-    @include mq(tb) {
-        padding-left: 0;
-    }
+  @include mq(tb) {
+    padding-left: 0;
+  }
 }
 
 .pt80--sp56 {
-    padding-top: rem(80);
+  padding-top: rem(80);
 
-    @include mq(tb) {
-        padding-top: rem(56);
-    }
+  @include mq(tb) {
+    padding-top: rem(56);
+  }
 }
 
 .pt126--sp80 {
-    padding-top: rem(126);
+  padding-top: rem(126);
 
-    @include mq(tb) {
-        padding-top: rem(80);
-    }
+  @include mq(tb) {
+    padding-top: rem(80);
+  }
 }
 
 .pl21--sp20 {
-    padding-left: rem(21);
+  padding-left: rem(21);
 
-    @include mq(tb) {
-        padding-left: rem(20);
-    }
+  @include mq(tb) {
+    padding-left: rem(20);
+  }
 }
 
 .pl46 {
-    padding-left: rem(46);
+  padding-left: rem(46);
 }
 
 .pl46--sp44 {
-    padding-left: rem(46);
+  padding-left: rem(46);
 
-    @include mq(tb) {
-        padding-left: rem(44);
-    }
+  @include mq(tb) {
+    padding-left: rem(44);
+  }
 }
 
 .pb14--sp16 {
-    padding-bottom: rem(14) !important;
+  padding-bottom: rem(14) !important;
 
-    @include mq(tb) {
-        padding-bottom: rem(16) !important;
-    }
+  @include mq(tb) {
+    padding-bottom: rem(16) !important;
+  }
 }
 
 @include mq(tb) {
-    .spmt32 {
-        margin-top: rem(32);
-    }
+  .spmt32 {
+    margin-top: rem(32);
+  }
 
-    .spmt48 {
-        margin-top: rem(48);
-    }
+  .spmt48 {
+    margin-top: rem(48);
+  }
 
-    .sppl20 {
-        padding-left: rem(20);
-    }
-
+  .sppl20 {
+    padding-left: rem(20);
+  }
 }
 
 .row-gap20--sp12 {
-    row-gap: rem(20) !important;
+  row-gap: rem(20) !important;
 
-    @include mq(tb) {
-        row-gap: rem(12) !important;
-    }
+  @include mq(tb) {
+    row-gap: rem(12) !important;
+  }
 }
 
 .row-gap20--sp16 {
-    row-gap: rem(20) !important;
+  row-gap: rem(20) !important;
 
-    @include mq(tb) {
-        row-gap: rem(16) !important;
-    }
+  @include mq(tb) {
+    row-gap: rem(16) !important;
+  }
 }
 
 .column-gap23--sp15 {
-    column-gap: rem(23) !important;
+  column-gap: rem(23) !important;
 
-    @include mq(tb) {
-        column-gap: rem(15) !important;
-    }
+  @include mq(tb) {
+    column-gap: rem(15) !important;
+  }
 }
 
 .gap20--sp16 {
-    gap: rem(20) !important;
+  gap: rem(20) !important;
 
-    @include mq(tb) {
-        gap: rem(16) !important;
-    }
+  @include mq(tb) {
+    gap: rem(16) !important;
+  }
 }
 
 .gap24 {
-    gap: rem(24) !important;
+  gap: rem(24) !important;
 }
 
 .gap64--sp24 {
-    gap: rem(64) !important;
+  gap: rem(64) !important;
 
-    @include mq(tb) {
-        gap: rem(24) !important;
-    }
+  @include mq(tb) {
+    gap: rem(24) !important;
+  }
 }
 
 .w146--sp100p {
-    width: rem(146);
+  width: rem(146);
 
-    @include mq(tb) {
-        width: 100%;
-    }
+  @include mq(tb) {
+    width: 100%;
+  }
 }
 
 .w245--sp238 {
-    width: rem(245);
+  width: rem(245);
 
-    @include mq(tb) {
-        width: rem(238);
-    }
+  @include mq(tb) {
+    width: rem(238);
+  }
 }
 
 .w108--sp100p {
-    width: rem(108);
+  width: rem(108);
 
-    @include mq(tb) {
-        width: 100%;
-    }
+  @include mq(tb) {
+    width: 100%;
+  }
 }
 
 .minw108--spauto {
-    min-width: rem(108) !important;
+  min-width: rem(108) !important;
 
-    @include mq(tb) {
-        min-width: auto !important;
-    }
+  @include mq(tb) {
+    min-width: auto !important;
+  }
 }
 
 .minw146--spauto {
-    min-width: rem(146) !important;
+  min-width: rem(146) !important;
 
-    @include mq(tb) {
-        min-width: auto !important;
-    }
+  @include mq(tb) {
+    min-width: auto !important;
+  }
 }
 
 .ltsp0--sp10 {
-    letter-spacing: 0 !important;
+  letter-spacing: 0 !important;
 
-    @include mq(tb) {
-        letter-spacing: .1em !important;
-    }
+  @include mq(tb) {
+    letter-spacing: 0.1em !important;
+  }
 }
 
 .dib {
-    display: inline-block;
+  display: inline-block;
 }
 
 .number-list {
-    list-style: number;
-    padding-left: rem(20);
+  list-style: number;
+  padding-left: rem(20);
 }
 
 .disc-list {
-    li {
-        position: relative;
-        padding-left: rem(19.7);
+  li {
+    position: relative;
+    padding-left: rem(19.7);
 
-        &::before {
-            content: '・';
-            position: absolute;
-            top: 0;
-            left: 0;
-            display: inline-block;
-            padding-inline: rem(6);
-        }
+    &::before {
+      content: "・";
+      position: absolute;
+      top: 0;
+      left: 0;
+      display: inline-block;
+      padding-inline: rem(6);
     }
+  }
 }
 
 .col {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 
-    &.col-gap4 {
-        gap: rem(4);
+  &.col-gap4 {
+    gap: rem(4);
 
-        @include mq(tb) {
-            gap: rem(2);
-        }
+    @include mq(tb) {
+      gap: rem(2);
     }
+  }
 }
 
 .ttl-01 {
-    display: block;
-    width: 100%;
-    font-size: rem(28);
-    font-weight: 700;
-    line-height: 1.6;
-    letter-spacing: .1em;
-    color: $blue;
-    padding-bottom: rem(24);
-    border-bottom: 1px solid $blue;
+  display: block;
+  width: 100%;
+  font-size: rem(28);
+  font-weight: 700;
+  line-height: 1.6;
+  letter-spacing: 0.1em;
+  color: $blue;
+  padding-bottom: rem(24);
+  border-bottom: 1px solid $blue;
 
-    @include mq(tb) {
-        font-size: rem(20);
-    }
+  @include mq(tb) {
+    font-size: rem(20);
+  }
 }
 
 .ttl-02 {
-    position: relative;
-    font-size: rem(18);
-    font-weight: 700;
-    line-height: 1.8;
-    letter-spacing: .05em;
-    color: $black;
-    width: 100%;
-    display: flex;
-    align-items: flex-start;
-    gap: rem(8);
+  position: relative;
+  font-size: rem(18);
+  font-weight: 700;
+  line-height: 1.8;
+  letter-spacing: 0.05em;
+  color: $black;
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  gap: rem(8);
+
+  &.ttl-02--fsz16 {
+    font-size: rem(16);
+    line-height: calc(29 / 16);
+  }
+
+  &.ttl-02--triangle::before {
+    content: "";
+    width: rem(13);
+    height: rem(15);
+    flex-shrink: 0;
+    display: block;
+    background-image: url(../images/common/polygon-right-blue.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-top: rem(2 + 7.5);
+  }
+
+  &.ttl-02--round::before {
+    content: "";
+    left: 0;
+    width: rem(13);
+    height: rem(13);
+    display: block;
+    background-color: $blue;
+    border-radius: 50%;
+    margin-top: rem(2 + 7.5);
+  }
+
+  @include mq(tb) {
+    font-size: rem(17);
 
     &.ttl-02--fsz16 {
-        font-size: rem(16);
-        line-height: calc(29 / 16);
+      font-size: rem(15);
+      line-height: calc(27 / 15);
     }
 
     &.ttl-02--triangle::before {
-        content: '';
-        width: rem(13);
-        height: rem(15);
-        flex-shrink: 0;
-        display: block;
-        background-image: url(../images/common/polygon-right-blue.svg);
-        background-size: contain;
-        background-repeat: no-repeat;
-        background-position: center;
-        margin-top: rem(2 + 7.5);
+      width: rem(12);
+      height: rem(14);
+      margin-top: rem(9);
     }
 
     &.ttl-02--round::before {
-        content: '';
-        left: 0;
-        width: rem(13);
-        height: rem(13);
-        display: block;
-        background-color: $blue;
-        border-radius: 50%;
-        margin-top: rem(2 + 7.5);
+      width: rem(12);
+      height: rem(12);
+      margin-top: rem(9);
     }
-
-    @include mq(tb) {
-        font-size: rem(17);
-
-        &.ttl-02--fsz16 {
-            font-size: rem(15);
-            line-height: calc(27 / 15);
-        }
-
-
-        &.ttl-02--triangle::before {
-            width: rem(12);
-            height: rem(14);
-            margin-top: rem(9);
-        }
-
-        &.ttl-02--round::before {
-            width: rem(12);
-            height: rem(12);
-            margin-top: rem(9);
-        }
-    }
+  }
 }
 
 .ttl-03 {
-    display: block;
-    width: 100%;
-    font-size: rem(28);
-    font-weight: 700;
-    line-height: 160%;
-    letter-spacing: lts-em(2.8, 28);
-    color: $blue;
-    padding-bottom: rem(28);
+  display: block;
+  width: 100%;
+  font-size: rem(28);
+  font-weight: 700;
+  line-height: 160%;
+  letter-spacing: lts-em(2.8, 28);
+  color: $blue;
+  padding-bottom: rem(28);
 
-    @include mq(tb) {
-        font-size: rem(20);
-        padding-bottom: rem(24);
-        letter-spacing: lts-em(2, 20);
-    }
+  @include mq(tb) {
+    font-size: rem(20);
+    padding-bottom: rem(24);
+    letter-spacing: lts-em(2, 20);
+  }
 }
 
 .ttl-04 {
-    font-size: rem(17);
-    font-weight: 700;
-    line-height: 1.8;
-    letter-spacing: .05em;
-    color: $black;
+  font-size: rem(17);
+  font-weight: 700;
+  line-height: 1.8;
+  letter-spacing: 0.05em;
+  color: $black;
 
-    &.ttl-04--fsz18 {
-        font-size: rem(18);
-        line-height: 1.7;
-        letter-spacing: 0em;
-    }
+  &.ttl-04--fsz18 {
+    font-size: rem(18);
+    line-height: 1.7;
+    letter-spacing: 0em;
+  }
 }
 
 .ttl-05 {
-    font-size: rem(16);
-    font-weight: 500;
-    line-height: 180%;
-    letter-spacing: lts-em(0.8, 16);
-    color: $black;
+  font-size: rem(16);
+  font-weight: 500;
+  line-height: 180%;
+  letter-spacing: lts-em(0.8, 16);
+  color: $black;
 
-    @include mq(tb) {
-        font-size: rem(14);
-        line-height: 180%;
-        letter-spacing: lts-em(0.75, 14);
-    }
+  @include mq(tb) {
+    font-size: rem(14);
+    line-height: 180%;
+    letter-spacing: lts-em(0.75, 14);
+  }
 }
 
 .tac {
-    text-align: center;
+  text-align: center;
 }
 
 .txt {
+  p,
+  li {
+    font-size: rem(15);
+    font-weight: 400;
+    line-height: 1.8;
+    letter-spacing: 0.05em;
+    color: $black;
+  }
 
+  &.txt--blue {
     p,
     li {
-        font-size: rem(15);
-        font-weight: 400;
-        line-height: 1.8;
-        letter-spacing: .05em;
-        color: $black;
+      color: $blue;
     }
+  }
 
-    &.txt--blue {
+  &.txt--mt32 {
+    margin-top: rem(32);
+  }
 
-        p,
-        li {
-            color: $blue;
-        }
+  &.txt--fw500 {
+    p,
+    li {
+      font-weight: 500;
+    }
+  }
+
+  &.txt--small {
+    p,
+    li {
+      font-size: rem(13);
+      line-height: calc(23 / 13);
+      letter-spacing: 0.05em;
+    }
+  }
+
+  .marker {
+    background: linear-gradient(
+      to bottom,
+      transparent 0 4.4%,
+      $yellow 4.4% calc(100% - 4.4%),
+      transparent 100%
+    );
+  }
+
+  @include mq(tb) {
+    p,
+    li {
+      font-size: rem(14);
+      letter-spacing: 0.045em;
     }
 
     &.txt--mt32 {
-        margin-top: rem(32);
+      margin-top: rem(20);
     }
-
-    &.txt--fw500 {
-
-        p,
-        li {
-            font-weight: 500;
-        }
-    }
-
-    &.txt--small {
-
-        p,
-        li {
-            font-size: rem(13);
-            line-height: calc(23 / 13);
-            letter-spacing: .05em;
-        }
-    }
-
-    .marker {
-        background: linear-gradient(to bottom, transparent 0 4.4%, $yellow 4.4% calc(100% - 4.4%), transparent 100%);
-    }
-
-    @include mq(tb) {
-
-        p,
-        li {
-            font-size: rem(14);
-            letter-spacing: .045em;
-        }
-
-        &.txt--mt32 {
-            margin-top: rem(20);
-        }
-    }
+  }
 }
 
-
 .txt-01 {
-    padding-top: rem(8);
-    padding-left: rem(21);
+  padding-top: rem(8);
+  padding-left: rem(21);
+
+  p,
+  li {
+    font-size: rem(15);
+    font-weight: 400;
+    line-height: 1.8;
+    letter-spacing: 0.05em;
+    color: $black;
+  }
+
+  &.txt-01--with-img {
+    display: flex;
+    align-items: flex-start;
+    gap: rem(20);
+    padding-top: 0;
 
     p,
     li {
-        font-size: rem(15);
-        font-weight: 400;
-        line-height: 1.8;
-        letter-spacing: .05em;
-        color: $black;
+      flex: 1;
+    }
+
+    .txt-01-img {
+      margin-top: rem(4);
+      width: rem(220);
+      aspect-ratio: 220 / 138;
+      background: $gray;
+      display: block;
+    }
+  }
+
+  @include mq(tb) {
+    padding-top: rem(10);
+    padding-left: rem(20);
+
+    p,
+    li {
+      font-size: rem(14);
     }
 
     &.txt-01--with-img {
-        display: flex;
-        align-items: flex-start;
-        gap: rem(20);
-        padding-top: 0;
+      flex-direction: column;
+      gap: rem(16);
 
-        p,
-        li {
-            flex: 1;
-        }
+      p,
+      li {
+        flex: none;
+        width: 100%;
+      }
 
-        .txt-01-img {
-            margin-top: rem(4);
-            width: rem(220);
-            aspect-ratio: 220 / 138;
-            background: $gray;
-            display: block;
-        }
+      .txt-01-img {
+        width: 100%;
+      }
     }
-
-    @include mq(tb) {
-        padding-top: rem(10);
-        padding-left: rem(20);
-
-        p,
-        li {
-            font-size: rem(14);
-        }
-
-        &.txt-01--with-img {
-            flex-direction: column;
-            gap: rem(16);
-
-            p,
-            li {
-                flex: none;
-                width: 100%;
-            }
-
-            .txt-01-img {
-                width: 100%;
-            }
-        }
-
-    }
+  }
 }
 
 .btn-list {
-    display: flex;
-    align-items: flex-start;
-    justify-content: flex-start;
-    flex-wrap: wrap;
-    gap: rem(24);
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  gap: rem(24);
 
-    @include mq(tb) {
-        flex-direction: column;
-        gap: rem(16);
-        align-items: center;
-        justify-content: center;
-    }
+  @include mq(tb) {
+    flex-direction: column;
+    gap: rem(16);
+    align-items: center;
+    justify-content: center;
+  }
 }
 
 .btn-02 {
-    position: relative;
-    width: rem(360);
-    height: rem(128);
+  position: relative;
+  width: rem(360);
+  height: rem(128);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-inline: rem(40);
+  border: 1px solid $gray;
+  border-radius: rem(8);
+  color: $black;
+  transition: 0.3s;
+
+  .btn__text {
+    font-size: rem(18);
+    letter-spacing: 0.15em;
+    line-height: 1.7;
+    font-weight: 500;
+    flex: 1;
+    font-feature-settings: "palt";
+  }
+
+  .btn__icon {
+    width: rem(32);
+    height: rem(32);
+    background-color: $blue;
+    flex-shrink: 0;
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    padding-inline: rem(40);
-    border: 1px solid $gray;
-    border-radius: rem(8);
-    color: $black;
-    transition: .3s;
+    justify-content: center;
+    border-radius: 50%;
+    transition: 0.3s;
 
+    svg {
+      width: rem(20);
+      height: rem(20);
+
+      path {
+        transition: 0.3s;
+      }
+
+      circle {
+        transition: 0.3s;
+      }
+    }
+  }
+
+  &:hover {
+    background-color: $blue;
+    color: $white;
 
     .btn__text {
-        font-size: rem(18);
-        letter-spacing: .15em;
-        line-height: 1.7;
-        font-weight: 500;
-        flex: 1;
-        font-feature-settings: "palt";
+      color: $white;
     }
 
     .btn__icon {
-        width: rem(32);
-        height: rem(32);
-        background-color: $blue;
+      transform: translateX(rem(10));
+      background-color: $white;
+
+      path {
+        fill: $blue;
+      }
+    }
+  }
+
+  @include mq(tb) {
+    width: rem(158);
+    height: rem(70);
+    padding-inline: rem(15);
+
+    .btn__text {
+      font-size: rem(14);
+      letter-spacing: 0.1em;
+      line-height: 135%;
+
+      &.btn__text--branding {
+        letter-spacing: 0.05em;
+      }
+
+      &.btn__text--promotion {
+        letter-spacing: 0em;
+      }
+    }
+
+    .btn__icon {
+      width: rem(23);
+      height: rem(23);
+
+      svg {
+        width: rem(13);
+        height: rem(13);
+      }
+    }
+
+    &:hover {
+      .btn__icon {
+        transform: translateX(rem(5));
+      }
+    }
+  }
+}
+
+.btn-list-01 {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  gap: rem(20);
+
+  .btn-02 {
+    width: calc(100% / 3 - rem(20 * 2 / 3));
+  }
+
+  @include mq(tb) {
+    gap: rem(12) rem(9);
+
+    .btn-02 {
+      width: calc(100% / 2 - rem(9 / 2));
+    }
+  }
+}
+
+.link-01-component {
+  display: flex;
+  flex-direction: column;
+  gap: rem(32);
+
+  .link-01-head {
+    display: flex;
+    align-items: center;
+    gap: rem(48);
+
+    .link-01-title {
+      font-size: rem(56);
+      font-weight: 600;
+      line-height: 1;
+      letter-spacing: 0.05em;
+      color: $blue;
+      font-family: $font-hind;
+    }
+
+    .link-01-link {
+      display: flex;
+      align-items: center;
+      gap: rem(12);
+      padding-bottom: rem(8);
+
+      .link-01-link-icon {
+        width: rem(28);
+        height: rem(28);
+        border-radius: 50%;
+        background: $white;
+        border: rem(1) solid $blue;
+        display: block;
+        transition: 0.3s;
         flex-shrink: 0;
         display: flex;
         align-items: center;
         justify-content: center;
-        border-radius: 50%;
-        transition: 0.3s;
 
         svg {
-            width: rem(20);
-            height: rem(20);
-
-            path {
-                transition: .3s;
-            }
-
-            circle {
-                transition: .3s;
-            }
+          width: rem(18);
+          height: rem(18);
         }
+      }
+
+      .link-01-link-text {
+        font-size: rem(16);
+        font-weight: 500;
+        line-height: 1.7;
+        letter-spacing: 0.1em;
+        color: $black;
+      }
     }
+  }
 
-    &:hover {
-        background-color: $blue;
-        color: $white;
-
-        .btn__text {
-            color: $white;
-        }
-
-        .btn__icon {
-            transform: translateX(rem(10));
-            background-color: $white;
-
-            path {
-                fill: $blue;
-            }
-        }
-
-    }
-
-    @include mq(tb) {
-        width: rem(158);
-        height: rem(70);
-        padding-inline: rem(15);
-
-        .btn__text {
-            font-size: rem(14);
-            letter-spacing: .1em;
-            line-height: 135%;
-
-            &.btn__text--branding {
-                letter-spacing: .05em;
-            }
-
-            &.btn__text--promotion {
-                letter-spacing: .0em;
-            }
-        }
-
-        .btn__icon {
-            width: rem(23);
-            height: rem(23);
-
-            svg {
-                width: rem(13);
-                height: rem(13);
-            }
-        }
-
-        &:hover {
-            .btn__icon {
-                transform: translateX(rem(5));
-            }
-        }
-    }
-}
-
-.btn-list-01 {
-    display: flex;
-    align-items: flex-start;
-    justify-content: flex-start;
-    flex-wrap: wrap;
-    gap: rem(20);
-
-    .btn-02 {
-        width: calc(100% / 3 - rem(20 * 2 / 3));
-    }
-
-    @include mq(tb) {
-        gap: rem(12) rem(9);
-
-        .btn-02 {
-            width: calc(100% / 2 - rem(9 / 2));
-        }
-    }
-}
-
-.link-01-component {
-    display: flex;
-    flex-direction: column;
-    gap: rem(32);
-
+  @include mq(tb) {
     .link-01-head {
-        display: flex;
-        align-items: center;
-        gap: rem(48);
+      flex-direction: column;
+      align-items: flex-start;
+      gap: rem(8);
 
-        .link-01-title {
-            font-size: rem(56);
-            font-weight: 600;
-            line-height: 1;
-            letter-spacing: .05em;
-            color: $blue;
-            font-family: $font-hind;
+      .link-01-title {
+        font-size: rem(42);
+      }
+
+      .link-01-link {
+        gap: rem(12);
+        padding-bottom: rem(0);
+
+        .link-01-link-icon {
+          width: rem(23);
+          height: rem(23);
+
+          svg {
+            width: rem(13);
+            height: rem(13);
+          }
         }
 
-        .link-01-link {
-            display: flex;
-            align-items: center;
-            gap: rem(12);
-            padding-bottom: rem(8);
-
-            .link-01-link-icon {
-                width: rem(28);
-                height: rem(28);
-                border-radius: 50%;
-                background: $white;
-                border: rem(1) solid $blue;
-                display: block;
-                transition: .3s;
-                flex-shrink: 0;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-
-                svg {
-                    width: rem(18);
-                    height: rem(18);
-                }
-            }
-
-            .link-01-link-text {
-                font-size: rem(16);
-                font-weight: 500;
-                line-height: 1.7;
-                letter-spacing: .1em;
-                color: $black;
-            }
-
+        .link-01-link-text {
+          font-size: rem(14);
+          line-height: calc(24 / 14);
         }
+      }
     }
-
-    @include mq(tb) {
-        .link-01-head {
-            flex-direction: column;
-            align-items: flex-start;
-            gap: rem(8);
-
-            .link-01-title {
-                font-size: rem(42);
-            }
-
-            .link-01-link {
-                gap: rem(12);
-                padding-bottom: rem(0);
-
-                .link-01-link-icon {
-                    width: rem(23);
-                    height: rem(23);
-
-                    svg {
-                        width: rem(13);
-                        height: rem(13);
-                    }
-                }
-
-                .link-01-link-text {
-                    font-size: rem(14);
-                    line-height: calc(24 / 14);
-                }
-
-            }
-        }
-    }
+  }
 }
 
 .img-list {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: flex-start;
-    gap: rem(24);
-    width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  gap: rem(24);
+  width: 100%;
 
-    a {
-        img {
-            transition: .3s;
-        }
-
-        &:hover {
-
-            img {
-                opacity: 0.5;
-            }
-        }
+  a {
+    img {
+      transition: 0.3s;
     }
 
+    &:hover {
+      img {
+        opacity: 0.5;
+      }
+    }
+  }
+
+  &.img-list--mt32 {
+    margin-top: rem(32);
+  }
+
+  &.img-list--3column {
+    gap: rem(20) rem(23);
+
+    .img-list__item {
+      width: calc(100% / 3 - rem(23 * 2 / 3));
+    }
+  }
+
+  &__item {
+    width: calc(100% / 2 - rem(24 / 2));
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+    .img-list__item-img {
+      width: 100%;
+      display: block;
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+
+    .img-list__item-ttl {
+      font-size: rem(15);
+      font-weight: 700;
+      line-height: 1.5;
+      letter-spacing: 0.05em;
+      color: $black;
+      text-align: center;
+    }
+  }
+
+  // レスポンシブ対応
+  @include mq(tb) {
+    flex-direction: column;
+    gap: rem(16);
+
     &.img-list--mt32 {
-        margin-top: rem(32);
+      margin-top: rem(24);
     }
 
     &.img-list--3column {
-        gap: rem(20) rem(23);
+      gap: rem(20);
 
-        .img-list__item {
-            width: calc(100% / 3 - rem(23 * 2 / 3));
-        }
+      .img-list__item {
+        width: 100%;
+      }
+    }
+
+    &.img-list--sp2column {
+      flex-direction: row;
+      // gap: rem(20);
+
+      .img-list__item {
+        width: calc(100% / 2 - rem(15 / 2));
+      }
     }
 
     &__item {
-        width: calc(100% / 2 - rem(24 / 2));
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-
-        .img-list__item-img {
-            width: 100%;
-            display: block;
-
-            img {
-                width: 100%;
-                height: 100%;
-                object-fit: cover;
-            }
-        }
-
-
-        .img-list__item-ttl {
-            font-size: rem(15);
-            font-weight: 700;
-            line-height: 1.5;
-            letter-spacing: .05em;
-            color: $black;
-            text-align: center;
-        }
+      width: 100%;
     }
-
-    // レスポンシブ対応
-    @include mq(tb) {
-        flex-direction: column;
-        gap: rem(16);
-
-        &.img-list--mt32 {
-            margin-top: rem(24);
-        }
-
-        &.img-list--3column {
-            gap: rem(20);
-
-            .img-list__item {
-                width: 100%;
-            }
-        }
-
-        &.img-list--sp2column {
-            flex-direction: row;
-            // gap: rem(20);
-
-            .img-list__item {
-                width: calc(100% / 2 - rem(15 / 2));
-            }
-        }
-
-        &__item {
-            width: 100%;
-        }
-    }
+  }
 }
 
 .light-blue-box-wrap {
-    position: relative;
+  position: relative;
 
-    &.light-blue-box-wrap--mt40 {
-        margin-top: rem(40);
-    }
+  &.light-blue-box-wrap--mt40 {
+    margin-top: rem(40);
+  }
 }
 
 .light-blue-box {
-    position: relative;
-    background-color: $light-blue;
-    padding: rem(28) rem(40);
+  position: relative;
+  background-color: $light-blue;
+  padding: rem(28) rem(40);
 
-    .light-blue-box-flex {
-        position: relative;
+  .light-blue-box-flex {
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+    gap: rem(64);
+    padding-bottom: rem(4);
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 1px;
+      height: 100%;
+      background-color: $white;
+    }
+
+    .light-blue-box-flex__item {
+      flex: 1;
+
+      .light-blue-box-flex__item-title {
+        width: 100%;
+        font-size: rem(17);
+        font-weight: 700;
+        line-height: calc(29 / 17);
+        letter-spacing: 0;
+        background: $blue;
+        color: $white;
+        padding-inline: rem(16);
+      }
+
+      .light-blue-box-flex__item-body {
         display: flex;
         align-items: flex-start;
-        gap: rem(64);
-        padding-bottom: rem(4);
+        gap: rem(30);
+        padding-left: rem(12);
 
-        &::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 50%;
-            transform: translateX(-50%);
-            width: 1px;
-            height: 100%;
-            background-color: $white;
-        }
+        ul {
+          display: flex;
+          flex-direction: column;
 
-        .light-blue-box-flex__item {
-            flex: 1;
-
-            .light-blue-box-flex__item-title {
-                width: 100%;
-                font-size: rem(17);
-                font-weight: 700;
-                line-height: calc(29 / 17);
-                letter-spacing: 0;
-                background: $blue;
-                color: $white;
-                padding-inline: rem(16);
-            }
-
-            .light-blue-box-flex__item-body {
-                display: flex;
-                align-items: flex-start;
-                gap: rem(30);
-                padding-left: rem(12);
-
-                ul {
-                    display: flex;
-                    flex-direction: column;
-
-                    li {
-                        padding-left: rem(18);
-
-                        &::before {
-                            color: $blue;
-                            padding-inline: rem(5);
-                        }
-
-                        p {
-                            color: $blue;
-                            font-weight: 500;
-                        }
-                    }
-                }
-            }
-        }
-    }
-
-    @include mq(tb) {
-        padding: rem(28) rem(24);
-
-        .light-blue-box-flex {
-            flex-direction: column;
-            gap: rem(16);
-            padding-bottom: rem(0);
+          li {
+            padding-left: rem(18);
 
             &::before {
-                display: none;
+              color: $blue;
+              padding-inline: rem(5);
             }
 
-            .light-blue-box-flex__item {
-                width: 100%;
-                flex: none;
-
-                .light-blue-box-flex__item-title {
-                    font-size: rem(16);
-                    line-height: calc(35 / 16);
-                }
+            p {
+              color: $blue;
+              font-weight: 500;
             }
+          }
         }
+      }
     }
+  }
+
+  @include mq(tb) {
+    padding: rem(28) rem(24);
+
+    .light-blue-box-flex {
+      flex-direction: column;
+      gap: rem(16);
+      padding-bottom: rem(0);
+
+      &::before {
+        display: none;
+      }
+
+      .light-blue-box-flex__item {
+        width: 100%;
+        flex: none;
+
+        .light-blue-box-flex__item-title {
+          font-size: rem(16);
+          line-height: calc(35 / 16);
+        }
+      }
+    }
+  }
 }
 
 .img-list--2column {
-    gap: rem(24);
+  gap: rem(24);
+
+  li {
+    width: calc(100% / 2 - rem(24 / 2));
+  }
+
+  @include mq(tb) {
+    gap: rem(8);
+    flex-direction: row;
 
     li {
-        width: calc(100% / 2 - rem(24 / 2));
+      width: calc(100% / 2 - rem(8 / 2));
     }
-
-    @include mq(tb) {
-        gap: rem(8);
-        flex-direction: row;
-
-        li {
-            width: calc(100% / 2 - rem(8 / 2));
-
-        }
-    }
+  }
 }
 
 .img-list--2column-sp1 {
-    gap: rem(24);
+  gap: rem(24);
+
+  li {
+    width: calc(100% / 2 - rem(24 / 2));
+  }
+
+  p {
+    font-size: rem(15);
+    font-weight: 700;
+    line-height: calc(22.5 / 15);
+    letter-spacing: lts-em(0.75, 15);
+    color: $black;
+    text-align: center;
+    margin-top: rem(8);
+  }
+
+  @include mq(tb) {
+    gap: rem(16);
+    flex-direction: row;
 
     li {
-        width: calc(100% / 2 - rem(24 / 2));
+      /*  width: calc(100% / 2 - rem(8 / 2)); */
+      width: 100%;
     }
-
-    p {
-        font-size: rem(15);
-        font-weight: 700;
-        line-height: calc(22.5 / 15);
-        letter-spacing: lts-em(0.75, 15);
-        color: $black;
-        text-align: center;
-        margin-top: rem(8);
-    }
-
-    @include mq(tb) {
-        gap: rem(16);
-        flex-direction: row;
-
-        li {
-            /*  width: calc(100% / 2 - rem(8 / 2)); */
-            width: 100%;
-
-        }
-    }
+  }
 }
 
 .img-list--3column-sp1 {
-    gap: rem(23);
+  gap: rem(23);
+
+  li {
+    width: calc(100% / 3 - rem(46 / 3));
+  }
+
+  p {
+    font-size: rem(15);
+    font-weight: 700;
+    line-height: calc(22.5 / 15);
+    letter-spacing: lts-em(0.75, 15);
+    color: $black;
+    text-align: center;
+    margin-top: rem(8);
+  }
+
+  @include mq(tb) {
+    gap: rem(20);
+    flex-direction: row;
 
     li {
-        width: calc(100% / 3 - rem(46 / 3));
+      width: 100%;
     }
-
-    p {
-        font-size: rem(15);
-        font-weight: 700;
-        line-height: calc(22.5 / 15);
-        letter-spacing: lts-em(0.75, 15);
-        color: $black;
-        text-align: center;
-        margin-top: rem(8);
-
-    }
-
-    @include mq(tb) {
-        gap: rem(20);
-        flex-direction: row;
-
-        li {
-            width: 100%;
-
-        }
-    }
+  }
 }
 
-
 .component-item-column-g10 {
-    display: flex;
-    flex-direction: column;
-    gap: rem(10);
+  display: flex;
+  flex-direction: column;
+  gap: rem(10);
 
-    @include mq(tb) {
-        gap: rem(0);
-    }
+  @include mq(tb) {
+    gap: rem(0);
+  }
 }
 
 .component-item-column-g8 {
-    display: flex;
-    flex-direction: column;
-    gap: rem(8);
+  display: flex;
+  flex-direction: column;
+  gap: rem(8);
 
-    @include mq(tb) {
-        gap: rem(0);
-    }
+  @include mq(tb) {
+    gap: rem(0);
+  }
 }
 
 .wrapper-1120 {
-    max-width: min(90%, rem(1120));
-    width: 100%;
-    margin-inline: auto;
+  max-width: min(90%, rem(1120));
+  width: 100%;
+  margin-inline: auto;
 }
 
 .br-1050 {
-    display: none;
+  display: none;
 
-    @media (max-width: 1050px) {
-        display: block;
-    }
+  @media (max-width: 1050px) {
+    display: block;
+  }
 }
 
 .omito-logo {
-    padding-bottom: rem(4);
-    padding-top: rem(24);
-    padding-left: rem(21);
+  padding-bottom: rem(4);
+  padding-top: rem(24);
+  padding-left: rem(21);
+
+  img {
+    width: rem(199);
+  }
+
+  @include mq(tb) {
+    padding-bottom: rem(8);
+    padding-top: 1.5rem;
+    padding-left: 0;
+    display: flex;
+    align-items: center;
 
     img {
-        width: rem(199);
+      width: rem(199);
+      margin-inline: auto;
     }
-
-    @include mq(tb) {
-        padding-bottom: rem(8);
-        padding-top: 1.5rem;
-        padding-left: 0;
-        display: flex;
-        align-items: center;
-
-        img {
-            width: rem(199);
-            margin-inline: auto;
-        }
-    }
+  }
 }
 
 .component-box-btn {
-    &--col3 {
-        display: flex;
-        flex-wrap: wrap;
-        gap: rem(15);
+  &--col3 {
+    display: flex;
+    flex-wrap: wrap;
+    gap: rem(15);
 
-        .btn {
-            width: calc(100% / 3 - rem(15 * 2 / 3));
-            min-width: fit-content;
-        }
-
-        @include mq(tb) {
-            flex-direction: column;
-            gap: rem(16);
-
-            .btn {
-                // width: inherit;
-                width: 17.5rem;
-
-                &--onlyspanimation {
-                    &:hover {
-                        width: calc(17.5rem + 1.25rem);
-                    }
-                }
-            }
-        }
+    .btn {
+      width: calc(100% / 3 - rem(15 * 2 / 3));
+      min-width: fit-content;
     }
+
+    @include mq(tb) {
+      flex-direction: column;
+      gap: rem(16);
+
+      .btn {
+        // width: inherit;
+        width: 17.5rem;
+
+        &--onlyspanimation {
+          &:hover {
+            width: calc(17.5rem + 1.25rem);
+          }
+        }
+      }
+    }
+  }
 }
 
 .component-box-item {
-    margin-top: rem(-136);
-    padding-top: rem(136);
+  margin-top: rem(-136);
+  padding-top: rem(136);
 
-    @include mq(tb) {
-        margin-top: rem(-88);
-        padding-top: rem(88);
-    }
+  @include mq(tb) {
+    margin-top: rem(-88);
+    padding-top: rem(88);
+  }
 }
 
-
 .js-pallax-target {
-    position: relative;
-    z-index: 1;
-    overflow: hidden;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
 }
 
 .pallax-bg {
-    display: block;
+  display: block;
 }
 
 .recruit {
-    position: relative;
-    z-index: 2;
+  position: relative;
+  z-index: 2;
 }
 
-
 .recruit {
-    position: relative;
-    z-index: 2;
+  position: relative;
+  z-index: 2;
 }
 
 .tar {
-    text-align: right;
+  text-align: right;
 }
 
 .jcc {
-    justify-content: center;
+  justify-content: center;
 }
 
 .fw-400 {
-    font-weight: 400;
+  font-weight: 400;
 }
 
 .fw700 {
-    font-weight: 700;
+  font-weight: 700;
 }
 
 .fz13--sp12 {
-    font-size: rem(13);
-    letter-spacing: lts-em(0.65, 13);
-    line-height: 180%;
+  font-size: rem(13);
+  letter-spacing: lts-em(0.65, 13);
+  line-height: 180%;
 
-    @include mq(tb) {
-        font-size: rem(12);
-        letter-spacing: lts-em(0.6, 12);
-    }
+  @include mq(tb) {
+    font-size: rem(12);
+    letter-spacing: lts-em(0.6, 12);
+  }
 }
 
 .fz13 {
-    font-size: rem(13);
-    /* line-height: calc(21 / 13);
+  font-size: rem(13);
+  /* line-height: calc(21 / 13);
     letter-spacing: lts-em(0.65, 13); */
 }
 
 @mixin fz13--sp12 {
-    font-size: rem(13);
+  font-size: rem(13);
 
-    @include mq(tb) {
-        font-size: rem(12);
-    }
+  @include mq(tb) {
+    font-size: rem(12);
+  }
 }
 
 .fz22--sp16 {
-    font-size: rem(22);
+  font-size: rem(22);
 
-    @include mq(tb) {
-        font-size: rem(16);
-    }
+  @include mq(tb) {
+    font-size: rem(16);
+  }
 }
 
 @mixin fz10 {
-    font-size: rem(10);
-    font-weight: 400;
-    line-height: 140%;
-    letter-spacing: lts-em(0.5, 10);
+  font-size: rem(10);
+  font-weight: 400;
+  line-height: 140%;
+  letter-spacing: lts-em(0.5, 10);
 }
 
 @mixin fz12 {
-    font-size: rem(12);
-    font-weight: 600;
-    line-height: 180%;
+  font-size: rem(12);
+  font-weight: 600;
+  line-height: 180%;
 }
 
 @mixin fz12-blue {
-    font-size: rem(12);
-    font-weight: 500;
-    line-height: 170%;
-    letter-spacing: lts-em(1.2, 12);
+  font-size: rem(12);
+  font-weight: 500;
+  line-height: 170%;
+  letter-spacing: lts-em(1.2, 12);
 }
 
 .fz13--sp12 {
-    font-size: rem(13);
-    line-height: 180%;
-    letter-spacing: lts-em(0.65, 13);
+  font-size: rem(13);
+  line-height: 180%;
+  letter-spacing: lts-em(0.65, 13);
 
-    @include mq(tb) {
-        font-size: rem(12);
-        letter-spacing: lts-em(0.6, 12);
-    }
+  @include mq(tb) {
+    font-size: rem(12);
+    letter-spacing: lts-em(0.6, 12);
+  }
 }
 
 .link-blue {
-    color: $blue;
-    text-decoration: underline;
-    font-weight: 500;
+  color: $blue;
+  text-decoration: underline;
+  font-weight: 500;
 
-    &:hover {
-        text-decoration: none;
-    }
+  &:hover {
+    text-decoration: none;
+  }
 }
 
 .db {
-    display: block;
+  display: block;
 }
 
 .mr2 {
-    margin-right: rem(2);
+  margin-right: rem(2);
 }
 
 .mr7 {
-    margin-right: rem(7);
+  margin-right: rem(7);
 }
 
 .mr8 {
-    margin-right: rem(8);
+  margin-right: rem(8);
 }
 
 .g12 {
-    gap: rem(12);
+  gap: rem(12);
 }
 
 .blue-circle {
-    color: $blue;
+  color: $blue;
 }
 
 .white-tag {
-    padding-inline: rem(16);
-    background: $white;
-    color: $blue;
-    border-radius: rem(100);
+  padding-inline: rem(16);
+  background: $white;
+  color: $blue;
+  border-radius: rem(100);
 
-    @include mq(tb) {
-        padding-inline: rem(10);
-    }
+  @include mq(tb) {
+    padding-inline: rem(10);
+  }
 }
 
 .u-flex {
-    display: flex;
+  display: flex;
 }
 
 .u-flex-aic {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 .txt-blue {
-    color: $blue;
+  color: $blue;
 }
 
 .color-red {
-    color: $red !important;
+  color: $red !important;
 }
 
 a[href^="tel:"] {
-    pointer-events: none;
-    cursor: default;
+  pointer-events: none;
+  cursor: default;
 
-    @include mq(tb) {
-        pointer-events: auto;
-        cursor: pointer;
-    }
+  @include mq(tb) {
+    pointer-events: auto;
+    cursor: pointer;
+  }
 }
 
 /* 見出し06（英大文字＋日本語）※DTF印刷LP・NICE CREW LP など */
 .ttl-06 {
-    text-align: center;
+  text-align: center;
 
+  .ttl-06__en {
+    display: block;
+    font-family: $font-hind;
+    font-size: rem(88);
+    font-weight: 600;
+    line-height: 1;
+    letter-spacing: 0.1em;
+    color: $blue;
+  }
+
+  .ttl-06__jp {
+    display: block;
+    margin-top: rem(12);
+    font-size: rem(28);
+    font-weight: 700;
+    line-height: 1.6;
+    letter-spacing: 0.05em;
+    color: $black;
+  }
+
+  @include mq(tb) {
     .ttl-06__en {
-        display: block;
-        font-family: $font-hind;
-        font-size: rem(88);
-        font-weight: 600;
-        line-height: 1;
-        letter-spacing: 0.1em;
-        color: $blue;
+      font-size: rem(48);
     }
 
     .ttl-06__jp {
-        display: block;
-        margin-top: rem(12);
-        font-size: rem(28);
-        font-weight: 700;
-        line-height: 1.6;
-        letter-spacing: 0.05em;
-        color: $black;
+      margin-top: rem(8);
+      font-size: rem(20);
     }
-
-    @include mq(tb) {
-        .ttl-06__en {
-            font-size: rem(48);
-        }
-
-        .ttl-06__jp {
-            margin-top: rem(8);
-            font-size: rem(20);
-        }
-    }
+  }
 }
 
 /* ボタン03（矢印アイコン付き）※DTF印刷LP・NICE CREW LP など */
 .btn-03 {
-    display: inline-flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: rem(20);
-    padding: rem(16) rem(28) rem(16) rem(34);
-    background: $orange;
-    border-radius: rem(100);
-    color: $white;
-    transition: .3s;
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: rem(20);
+  padding: rem(16) rem(28) rem(16) rem(34);
+  background: $orange;
+  border-radius: rem(100);
+  color: $white;
+  transition: 0.3s;
 
-    .btn-03__text {
-        flex: 1;
-        font-size: rem(20);
-        font-weight: 700;
-        line-height: 1.5;
-        letter-spacing: 0.1em;
-        text-align: center;
+  .btn-03__text {
+    flex: 1;
+    font-size: rem(20);
+    font-weight: 700;
+    line-height: 1.5;
+    letter-spacing: 0.1em;
+    text-align: center;
+  }
+
+  .btn-03__icon {
+    flex-shrink: 0;
+    width: rem(38);
+    height: rem(38);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: $white;
+    border-radius: 50%;
+    transition: 0.3s;
+
+    svg {
+      width: rem(22);
+      height: rem(22);
+
+      /* カンプは塗りと同色の線（22px枠に対して1px）付き */
+      path {
+        fill: $orange-dark;
+        stroke: $orange-dark;
+        stroke-width: 1;
+      }
     }
+  }
+
+  &:hover {
+    opacity: 0.8;
 
     .btn-03__icon {
-        flex-shrink: 0;
-        width: rem(38);
-        height: rem(38);
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        background: $white;
-        border-radius: 50%;
-        transition: .3s;
-
-        svg {
-            width: rem(22);
-            height: rem(22);
-
-            /* カンプは塗りと同色の線（22px枠に対して1px）付き */
-            path {
-                fill: $orange-dark;
-                stroke: $orange-dark;
-                stroke-width: 1;
-            }
-        }
+      transform: translateX(rem(6));
     }
+  }
 
-    &:hover {
-        opacity: .8;
+  /* 公式LINE */
+  &.btn-03--line {
+    background: $green;
 
-        .btn-03__icon {
-            transform: translateX(rem(6));
-        }
+    .btn-03__icon svg path {
+      fill: $green-dark;
+      stroke: $green-dark;
     }
+  }
 
-    /* 公式LINE */
-    &.btn-03--line {
-        background: $green;
+  @include mq(tb) {
+    gap: rem(8);
+    padding: rem(12) rem(12) rem(12) rem(20);
 
-        .btn-03__icon svg path {
-            fill: $green-dark;
-            stroke: $green-dark;
-        }
+    .btn-03__text {
+      font-size: rem(15);
+      line-height: 1.4;
     }
-
-    @include mq(tb) {
-        gap: rem(8);
-        padding: rem(12) rem(12) rem(12) rem(20);
-
-        .btn-03__text {
-            font-size: rem(15);
-            line-height: 1.4;
-        }
-    }
+  }
 }
 
 /* メインビジュアル02（下層・LP用）*/
 .mv-02 {
+  position: relative;
+  height: rem(732);
+  background-color: $pale-blue;
+  background-image: url(../images/dtf/dtf-mv-bg.svg);
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-size: cover;
+
+  .mv-02__img {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: rem(849);
+
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  .mv-02__inner {
     position: relative;
-    height: rem(732);
-    background-color: $pale-blue;
-    background-image: url(../images/dtf/dtf-mv-bg.svg);
-    background-repeat: no-repeat;
-    background-position: center bottom;
-    background-size: cover;
+    z-index: 1;
+    /* 1440カンプでは左右100pxアキ。狭い幅でも左右24pxは確保する */
+    width: min(100% - #{rem(48)}, 86.1111111111vw);
+    height: 100%;
+    margin-inline: auto;
+    padding-top: rem(155);
+  }
+
+  /* 1枚から注文OK（吹き出し）*/
+  .mv-02__balloon {
+    position: relative;
+    width: fit-content;
+    height: rem(68);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* 内側線なので、フチ2px分をパディングから引く */
+    padding-inline: rem(42);
+    background: $off-white;
+    border: rem(2) solid $blue;
+    border-radius: rem(999);
+    font-size: rem(28);
+    font-weight: 700;
+    line-height: 1;
+    letter-spacing: 0.1em;
+    color: $blue;
+
+    /* しっぽもフチつきなので、青い三角に地色の三角を重ねて作る。
+           内側は同じ三角を3px上にずらしたもの。斜辺のフチは垂直方向のズレより細くなり、
+           この三角（30×14）では約2pxとなって本体のフチと揃う */
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      left: 50%;
+      width: rem(30);
+      height: rem(14);
+      transform: translateX(-50%);
+      clip-path: polygon(0 0, 100% 0, 50% 100%);
+    }
+
+    /* 外側（線）。本体の外周に続けるため、下線の分だけ下げる */
+    &::before {
+      top: calc(100% + #{rem(2)});
+      background: $blue;
+    }
+
+    /* 内側（地）。本体の下線も覆うので、しっぽの口だけ線が消える */
+    &::after {
+      top: calc(100% - #{rem(1)});
+      background: $off-white;
+    }
+
+    /* 「1」と「枚から」はベースラインを揃える（同じインラインフォーマット内に置く） */
+    .mv-02__balloon-num {
+      font-size: rem(40);
+    }
+  }
+
+  .mv-02__lead {
+    /* 17（吹き出し下の余白）＋ 14（三角の高さ） */
+    margin-top: rem(31);
+    font-size: rem(34);
+    font-weight: 700;
+    line-height: 1.7;
+    letter-spacing: 0.12em;
+    color: $black;
+
+    .mv-02__lead-sm {
+      font-size: rem(28);
+    }
+  }
+
+  .mv-02__ttl {
+    /* 白帯の上端をカンプに合わせる。line-height: 2 の行送りのうち
+           上側の余白（ハーフリーディング約13.5px）から padding-top 6px を引いた
+           約7px ぶん、行ボックスは白帯より上にはみ出しているので詰める */
+    margin-top: rem(13);
+
+    /* 改行ごとに白背景が付く（PC/SPで改行位置が変わるためインラインで組む） */
+    > span {
+      display: inline;
+      padding: rem(6) rem(20) rem(10);
+      white-space: nowrap;
+      background: $white;
+      box-decoration-break: clone;
+      -webkit-box-decoration-break: clone;
+      font-size: rem(50);
+      font-weight: 700;
+      line-height: 2;
+      letter-spacing: 0.12em;
+      color: $black;
+    }
+
+    .colorBlue {
+      color: $blue;
+    }
+  }
+
+  .mv-02__btn {
+    /* 見出しの行ボックスは白帯より下にも約3pxはみ出しているので、その分を引く */
+    margin-top: rem(61);
+    display: flex;
+    gap: rem(16);
+
+    /* カンプではMVのボタンのみ白フチあり（内側線なので、フチ2px分をパディングから引く）。
+           幅はカンプどおり2つとも同じにする */
+    .btn-03 {
+      width: rem(353);
+      /* ブラウザの字幅では「公式LINEからお気軽に！」が1行に収まらないため、
+               文字と矢印のアキをカンプの20pxから16pxに詰める */
+      gap: rem(16);
+      padding: rem(14) rem(26) rem(14) rem(32);
+      border: rem(2) solid $white;
+    }
+
+    /* 指定した位置（brタグ）以外で折り返さない */
+    .btn-03__text {
+      white-space: nowrap;
+    }
+  }
+
+  /* DTF印刷
+       -webkit-text-stroke はフチの角が尖る（マイター結合）ので、角を丸くできるSVGテキストで描く。
+       箱は幅0・高さ0の「基準点」だけにして、SVGのテキストを右揃え・ベースライン合わせで置く */
+  .mv-02__label {
+    position: absolute;
+    /* 末尾の1文字の右にできる字送りのアキ（84px × 0.1em = 8.4）を引いて右端を合わせる */
+    right: rem(31.6);
+    /* カンプは文字のベースラインがMV下端の6px上。
+           テキストは箱の右下（x=100% / y=100%）を基準に右揃えで描くので、
+           箱の下端＝ベースラインになる */
+    bottom: rem(6);
+    /* 幅・高さが0のSVGは描画されない（SVGの仕様）ので、文字が収まる大きさを持たせる。
+           中身は透明なので、下の要素をクリックできるよう当たり判定は切る */
+    width: rem(420);
+    height: rem(120);
+    pointer-events: none;
+
+    .mv-02__label-svg {
+      display: block;
+      width: 100%;
+      height: 100%;
+      /* フチが箱からはみ出しても切らない */
+      overflow: visible;
+    }
+
+    text {
+      font-family: $font-hind;
+      font-size: rem(99);
+      font-weight: 600;
+      letter-spacing: 0.1em;
+      fill: $blue;
+      stroke: var(--off-white);
+      /* 中心揃えの線なので、カンプの外側10pxに対して倍の20pxを指定する */
+      stroke-width: rem(20);
+      stroke-linejoin: round;
+      stroke-linecap: round;
+      paint-order: stroke fill;
+    }
+
+    .mv-02__label-jp {
+      font-family: $font-noto-sans-jp;
+      font-size: rem(84);
+      /* em は継承すると親の文字サイズのまま固定されるので、自分の84pxで計算し直す */
+      letter-spacing: 0.1em;
+    }
+  }
+
+  /* タブレット：カンプなし。1024/1440 の比率でPC値を縮めた中間指定 */
+  @include mq(pc) {
+    height: rem(560);
 
     .mv-02__img {
-        position: absolute;
-        right: 0;
-        bottom: 0;
-        width: rem(849);
-
-        img {
-            width: 100%;
-            height: auto;
-        }
+      width: rem(620);
     }
 
     .mv-02__inner {
-        position: relative;
-        z-index: 1;
-        /* 1440カンプでは左右100pxアキ。狭い幅でも左右24pxは確保する */
-        width: min(100% - #{rem(48)}, 86.1111111111vw); 
-        height: 100%;
-        margin-inline: auto;
-        padding-top: rem(155);
+      padding-top: rem(116);
+      width: 92%;
     }
 
-    /* 1枚から注文OK（吹き出し）*/
     .mv-02__balloon {
-        position: relative;
-        width: fit-content;
-        height: rem(68);
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        /* 内側線なので、フチ2px分をパディングから引く */
-        padding-inline: rem(42);
-        background: $off-white;
-        border: rem(2) solid $blue;
-        border-radius: rem(999);
+      height: rem(50);
+      padding-inline: rem(30);
+      font-size: rem(20);
+
+      &::before,
+      &::after {
+        width: rem(22);
+        height: rem(10);
+      }
+
+      .mv-02__balloon-num {
         font-size: rem(28);
-        font-weight: 700;
-        line-height: 1;
-        letter-spacing: 0.1em;
-        color: $blue;
-
-        /* しっぽもフチつきなので、青い三角に地色の三角を重ねて作る。
-           内側は同じ三角を3px上にずらしたもの。斜辺のフチは垂直方向のズレより細くなり、
-           この三角（30×14）では約2pxとなって本体のフチと揃う */
-        &::before,
-        &::after {
-            content: "";
-            position: absolute;
-            left: 50%;
-            width: rem(30);
-            height: rem(14);
-            transform: translateX(-50%);
-            clip-path: polygon(0 0, 100% 0, 50% 100%);
-        }
-
-        /* 外側（線）。本体の外周に続けるため、下線の分だけ下げる */
-        &::before {
-            top: calc(100% + #{rem(2)});
-            background: $blue;
-        }
-
-        /* 内側（地）。本体の下線も覆うので、しっぽの口だけ線が消える */
-        &::after {
-            top: calc(100% - #{rem(1)});
-            background: $off-white;
-        }
-
-        /* 「1」と「枚から」はベースラインを揃える（同じインラインフォーマット内に置く） */
-        .mv-02__balloon-num {
-            font-size: rem(40);
-        }
+      }
     }
 
     .mv-02__lead {
-        /* 17（吹き出し下の余白）＋ 14（三角の高さ） */
-        margin-top: rem(31);
-        font-size: rem(34);
-        font-weight: 700;
-        line-height: 1.7;
-        letter-spacing: 0.12em;
-        color: $black;
+      /* 12（吹き出し下の余白）＋ 10（三角の高さ） */
+      margin-top: rem(22);
+      font-size: rem(25);
 
-        .mv-02__lead-sm {
-            font-size: rem(28);
-        }
+      .mv-02__lead-sm {
+        font-size: rem(20);
+      }
     }
 
     .mv-02__ttl {
-        /* 白帯の上端をカンプに合わせる。line-height: 2 の行送りのうち
-           上側の余白（ハーフリーディング約13.5px）から padding-top 6px を引いた
-           約7px ぶん、行ボックスは白帯より上にはみ出しているので詰める */
-        margin-top: rem(13);
+      margin-top: rem(9);
 
-        /* 改行ごとに白背景が付く（PC/SPで改行位置が変わるためインラインで組む） */
-        >span {
-            display: inline;
-            padding: rem(6) rem(20) rem(10);
-            white-space: nowrap;
-            background: $white;
-            box-decoration-break: clone;
-            -webkit-box-decoration-break: clone;
-            font-size: rem(50);
-            font-weight: 700;
-            line-height: 2;
-            letter-spacing: 0.12em;
-            color: $black;
-        }
-
-        .colorBlue {
-            color: $blue;
-        }
+      > span {
+        padding: rem(4) rem(14) rem(7);
+        font-size: rem(36);
+      }
     }
 
     .mv-02__btn {
-        /* 見出しの行ボックスは白帯より下にも約3pxはみ出しているので、その分を引く */
-        margin-top: rem(61);
-        display: flex;
-        gap: rem(16);
+      margin-top: rem(38);
+      gap: rem(12);
 
-        /* カンプではMVのボタンのみ白フチあり（内側線なので、フチ2px分をパディングから引く）。
-           幅はカンプどおり2つとも同じにする */
-        .btn-03 {
-            width: rem(353);
-            /* ブラウザの字幅では「公式LINEからお気軽に！」が1行に収まらないため、
-               文字と矢印のアキをカンプの20pxから16pxに詰める */
-            gap: rem(16);
-            padding: rem(14) rem(26) rem(14) rem(32);
-            border: rem(2) solid $white;
-        }
+      .btn-03 {
+        padding: rem(12) rem(20) rem(12) rem(24);
+      }
 
-        /* 指定した位置（brタグ）以外で折り返さない */
-        .btn-03__text {
-            white-space: nowrap;
+      .btn-03__text {
+        font-size: rem(16);
+      }
+
+      .btn-03__icon {
+        width: rem(30);
+        height: rem(30);
+
+        svg {
+          width: rem(18);
+          height: rem(18);
         }
+      }
     }
 
-    /* DTF印刷
-       -webkit-text-stroke はフチの角が尖る（マイター結合）ので、角を丸くできるSVGテキストで描く。
-       箱は幅0・高さ0の「基準点」だけにして、SVGのテキストを右揃え・ベースライン合わせで置く */
     .mv-02__label {
-        position: absolute;
-        /* 末尾の1文字の右にできる字送りのアキ（84px × 0.1em = 8.4）を引いて右端を合わせる */
-        right: rem(31.6);
-        /* カンプは文字のベースラインがMV下端の6px上。
-           テキストは箱の右下（x=100% / y=100%）を基準に右揃えで描くので、
-           箱の下端＝ベースラインになる */
-        bottom: rem(6);
-        /* 幅・高さが0のSVGは描画されない（SVGの仕様）ので、文字が収まる大きさを持たせる。
-           中身は透明なので、下の要素をクリックできるよう当たり判定は切る */
-        width: rem(420);
-        height: rem(120);
-        pointer-events: none;
+      /* 61px × 0.1em = 6.1 を引く */
+      right: rem(17.9);
+      bottom: rem(4);
+      width: rem(310);
+      height: rem(90);
 
-        .mv-02__label-svg {
-            display: block;
-            width: 100%;
-            height: 100%;
-            /* フチが箱からはみ出しても切らない */
-            overflow: visible;
-        }
+      text {
+        font-size: rem(72);
+        stroke-width: rem(14);
+      }
 
-        text {
-            font-family: $font-hind;
-            font-size: rem(99);
-            font-weight: 600;
-            letter-spacing: 0.1em;
-            fill: $blue;
-            stroke: var(--off-white);
-            /* 中心揃えの線なので、カンプの外側10pxに対して倍の20pxを指定する */
-            stroke-width: rem(20);
-            stroke-linejoin: round;
-            stroke-linecap: round;
-            paint-order: stroke fill;
-        }
-
-        .mv-02__label-jp {
-            font-family: $font-noto-sans-jp;
-            font-size: rem(84);
-            /* em は継承すると親の文字サイズのまま固定されるので、自分の84pxで計算し直す */
-            letter-spacing: 0.1em;
-        }
+      .mv-02__label-jp {
+        font-size: rem(61);
+      }
     }
+  }
 
-    /* タブレット：カンプなし。1024/1440 の比率でPC値を縮めた中間指定 */
-    @include mq(pc) {
-        height: rem(560);
-
-        .mv-02__img {
-            width: rem(620);
-        }
-
-        .mv-02__inner {
-            padding-top: rem(116);
-        }
-
-        .mv-02__balloon {
-            height: rem(50);
-            padding-inline: rem(30);
-            font-size: rem(20);
-
-            &::before,
-            &::after {
-                width: rem(22);
-                height: rem(10);
-            }
-
-            .mv-02__balloon-num {
-                font-size: rem(28);
-            }
-        }
-
-        .mv-02__lead {
-            /* 12（吹き出し下の余白）＋ 10（三角の高さ） */
-            margin-top: rem(22);
-            font-size: rem(25);
-
-            .mv-02__lead-sm {
-                font-size: rem(20);
-            }
-        }
-
-        .mv-02__ttl {
-            margin-top: rem(9);
-
-            >span {
-                padding: rem(4) rem(14) rem(7);
-                font-size: rem(36);
-            }
-        }
-
-        .mv-02__btn {
-            margin-top: rem(38);
-            gap: rem(12);
-
-            .btn-03 {
-                padding: rem(12) rem(20) rem(12) rem(24);
-            }
-
-            .btn-03__text {
-                font-size: rem(16);
-            }
-
-            .btn-03__icon {
-                width: rem(30);
-                height: rem(30);
-
-                svg {
-                    width: rem(18);
-                    height: rem(18);
-                }
-            }
-        }
-
-        .mv-02__label {
-            /* 61px × 0.1em = 6.1 を引く */
-            right: rem(17.9);
-            bottom: rem(4);
-            width: rem(310);
-            height: rem(90);
-
-            text {
-                font-size: rem(72);
-                stroke-width: rem(14);
-            }
-
-            .mv-02__label-jp {
-                font-size: rem(61);
-            }
-        }
-    }
-
-    /* SP：641〜768pxでも640px以下と同じ構成のまま画面幅いっぱいに伸縮させる。
+  /* SP：641〜768pxでも640px以下と同じ構成のまま画面幅いっぱいに伸縮させる。
        トップページのMV（_top.scss .mv__gallery）と同じく、親の font-size を375px基準の vw にして中身を em() で指定。
        em は要素自身の文字サイズが基準なので、文字サイズを持つ要素は em(値, 文字サイズ) で書く */
-    @include mq(tb) {
-        height: em(644);
-        font-size: calc(16 / (375 / 100) * 1vw);
-        background-image: none;
+  @include mq(tb) {
+    height: em(644);
+    font-size: calc(16 / (375 / 100) * 1vw);
+    background-image: none;
 
-        /* SPはカンプの並びがPCと違うため、専用画像に差し替える（375×343）*/
-        .mv-02__img {
-            left: 0;
-            right: auto;
-            width: em(375);
+    /* SPはカンプの並びがPCと違うため、専用画像に差し替える（375×343）*/
+    .mv-02__img {
+      left: 0;
+      right: auto;
+      width: em(375);
 
-            img {
-                aspect-ratio: 375 / 343;
-            }
-        }
-
-        .mv-02__inner {
-            width: 100%;
-            padding-top: em(78);
-            padding-inline: em(24);
-        }
-
-        .mv-02__balloon {
-            height: em(46, 18);
-            padding-inline: em(23, 18);
-            border-width: em(1, 18);
-            font-size: em(18);
-
-            /* フチが1pxになるぶん、しっぽの位置も内側の三角のずらし幅も半分にする */
-            &::before,
-            &::after {
-                width: em(20, 18);
-                height: em(10, 18);
-            }
-
-            &::before {
-                top: calc(100% + #{em(1, 18)});
-            }
-
-            &::after {
-                top: calc(100% - #{em(0.5, 18)});
-            }
-
-            .mv-02__balloon-num {
-                font-size: em(24, 18);
-            }
-        }
-
-        .mv-02__lead {
-            /* 8（吹き出し下の余白）＋ 10（三角の高さ） */
-            margin-top: em(18, 19);
-            font-size: em(19);
-
-            .mv-02__lead-sm {
-                font-size: em(15, 19);
-                letter-spacing: 0.08em;
-            }
-        }
-
-        .mv-02__ttl {
-            margin-top: em(8);
-
-            >span {
-                padding: em(3, 28) em(10, 28) em(5, 28);
-                /* カンプは29pxだが、ブラウザの字幅では2行に収まらないため28pxに調整 */
-                font-size: em(28);
-                line-height: 1.95;
-                letter-spacing: 0.05em;
-            }
-        }
-
-        .mv-02__btn {
-            margin-top: em(24);
-            justify-content: space-between;
-            gap: em(7);
-
-            .btn-03 {
-                width: em(160);
-                justify-content: center;
-                gap: em(8);
-                /* カンプ（上下12・右12・左20）から、内側線の白フチ2px分を引いた値 */
-                padding: em(10) em(10) em(10) em(18);
-                border-width: em(2);
-            }
-
-            /* 指定した位置（brタグ）以外で折り返さない */
-            .btn-03__text {
-                flex: none;
-                font-size: em(15);
-                letter-spacing: 0.05em;
-                white-space: nowrap;
-            }
-
-            .btn-03__icon {
-                width: em(24);
-                height: em(24);
-
-                svg {
-                    width: em(14);
-                    height: em(14);
-                }
-            }
-        }
-
-        .mv-02__label {
-            /* 46px × 0.1em = 4.6 を引く */
-            right: em(-4.6);
-            bottom: em(4);
-            width: em(230);
-            height: em(70);
-
-            text {
-                font-size: em(54);
-                /* stroke-width の em は自分の文字サイズ基準なので 54 で計算する */
-                stroke-width: em(11, 54);
-            }
-
-            .mv-02__label-jp {
-                font-size: em(46, 54);
-            }
-        }
+      img {
+        aspect-ratio: 375 / 343;
+      }
     }
+
+    .mv-02__inner {
+      width: 100%;
+      padding-top: em(78);
+      padding-inline: em(24);
+    }
+
+    .mv-02__balloon {
+      height: em(46, 18);
+      padding-inline: em(23, 18);
+      border-width: em(1, 18);
+      font-size: em(18);
+
+      /* フチが1pxになるぶん、しっぽの位置も内側の三角のずらし幅も半分にする */
+      &::before,
+      &::after {
+        width: em(20, 18);
+        height: em(10, 18);
+      }
+
+      &::before {
+        top: calc(100% + #{em(1, 18)});
+      }
+
+      &::after {
+        top: calc(100% - #{em(0.5, 18)});
+      }
+
+      .mv-02__balloon-num {
+        font-size: em(24, 18);
+      }
+    }
+
+    .mv-02__lead {
+      /* 8（吹き出し下の余白）＋ 10（三角の高さ） */
+      margin-top: em(18, 19);
+      font-size: em(19);
+
+      .mv-02__lead-sm {
+        font-size: em(15, 19);
+        letter-spacing: 0.08em;
+      }
+    }
+
+    .mv-02__ttl {
+      margin-top: em(8);
+
+      > span {
+        padding: em(3, 28) em(10, 28) em(5, 28);
+        /* カンプは29pxだが、ブラウザの字幅では2行に収まらないため28pxに調整 */
+        font-size: em(28);
+        line-height: 1.95;
+        letter-spacing: 0.05em;
+      }
+    }
+
+    .mv-02__btn {
+      margin-top: em(24);
+      justify-content: space-between;
+      gap: em(7);
+
+      .btn-03 {
+        width: em(160);
+        justify-content: center;
+        gap: em(8);
+        /* カンプ（上下12・右12・左20）から、内側線の白フチ2px分を引いた値 */
+        padding: em(10) em(10) em(10) em(18);
+        border-width: em(2);
+      }
+
+      /* 指定した位置（brタグ）以外で折り返さない */
+      .btn-03__text {
+        flex: none;
+        font-size: em(15);
+        letter-spacing: 0.05em;
+        white-space: nowrap;
+      }
+
+      .btn-03__icon {
+        width: em(24);
+        height: em(24);
+
+        svg {
+          width: em(14);
+          height: em(14);
+        }
+      }
+    }
+
+    .mv-02__label {
+      /* 46px × 0.1em = 4.6 を引く */
+      right: em(-4.6);
+      bottom: em(4);
+      width: em(230);
+      height: em(70);
+
+      text {
+        font-size: em(54);
+        /* stroke-width の em は自分の文字サイズ基準なので 54 で計算する */
+        stroke-width: em(11, 54);
+      }
+
+      .mv-02__label-jp {
+        font-size: em(46, 54);
+      }
+    }
+  }
 }
 
 /* CTA02（青背景・フォーム／公式LINE）*/
 .cta-02 {
-    position: relative;
-    padding: rem(54) rem(24) rem(64);
-    background: $blue;
-    overflow: hidden;
+  position: relative;
+  padding: rem(54) rem(24) rem(64);
+  background: $blue;
+  overflow: hidden;
 
-    .cta-02__deco {
-        position: absolute;
-        z-index: 0;
-        pointer-events: none;
+  .cta-02__deco {
+    position: absolute;
+    z-index: 0;
+    pointer-events: none;
+  }
+
+  .cta-02__deco--01 {
+    left: 0;
+    bottom: 0;
+    width: rem(835);
+  }
+
+  .cta-02__deco--02 {
+    right: 0;
+    top: 0;
+    width: rem(385);
+  }
+
+  .cta-02__inner {
+    position: relative;
+    z-index: 1;
+  }
+
+  .cta-02__ttl {
+    font-size: rem(32);
+    font-weight: 700;
+    line-height: 1.5;
+    letter-spacing: 0.1em;
+    color: $white;
+    text-align: center;
+  }
+
+  .cta-02__list {
+    margin-top: rem(32);
+    display: flex;
+    gap: rem(24);
+  }
+
+  .cta-02__item {
+    width: calc((100% - #{rem(24)}) / 2);
+    padding: rem(32) 0;
+    background: $white;
+    border-radius: rem(8);
+    text-align: center;
+  }
+
+  .cta-02__item-ttl {
+    font-size: rem(24);
+    font-weight: 700;
+    line-height: 1.45;
+    letter-spacing: 0.1em;
+    color: $black;
+  }
+
+  .cta-02__item-btn {
+    margin-top: rem(20);
+
+    .btn-03 {
+      width: rem(400);
+      max-width: calc(100% - #{rem(48)});
+      padding: rem(20) rem(30) rem(20) rem(40);
+
+      .btn-03__text {
+        font-size: rem(22);
+      }
     }
+  }
+
+  @include mq(tb) {
+    padding: rem(32) rem(24) rem(40);
 
     .cta-02__deco--01 {
-        left: 0;
-        bottom: 0;
-        width: rem(835);
+      bottom: 0;
+      width: rem(231);
     }
 
     .cta-02__deco--02 {
-        right: 0;
-        top: 0;
-        width: rem(385);
-    }
-
-    .cta-02__inner {
-        position: relative;
-        z-index: 1;
+      width: rem(200);
     }
 
     .cta-02__ttl {
-        font-size: rem(32);
-        font-weight: 700;
-        line-height: 1.5;
-        letter-spacing: 0.1em;
-        color: $white;
-        text-align: center;
+      font-size: rem(22);
     }
 
     .cta-02__list {
-        margin-top: rem(32);
-        display: flex;
-        gap: rem(24);
+      margin-top: rem(20);
+      flex-direction: column;
+      gap: rem(16);
     }
 
     .cta-02__item {
-        width: calc((100% - #{rem(24)}) / 2);
-        padding: rem(32) 0;
-        background: $white;
-        border-radius: rem(8);
-        text-align: center;
+      width: 100%;
+      padding: rem(24) 0;
     }
 
     .cta-02__item-ttl {
-        font-size: rem(24);
-        font-weight: 700;
-        line-height: 1.45;
-        letter-spacing: 0.1em;
-        color: $black;
+      font-size: rem(18);
     }
 
     .cta-02__item-btn {
-        margin-top: rem(20);
+      margin-top: rem(12);
 
-        .btn-03 {
-            width: rem(400);
-            max-width: calc(100% - #{rem(48)});
-            padding: rem(20) rem(30) rem(20) rem(40);
+      .btn-03 {
+        width: rem(279);
+        padding: rem(12) rem(12) rem(12) rem(20);
 
-            .btn-03__text {
-                font-size: rem(22);
-            }
+        .btn-03__text {
+          font-size: rem(17);
+          line-height: 1.5;
         }
+      }
     }
-
-    @include mq(tb) {
-        padding: rem(32) rem(24) rem(40);
-
-        .cta-02__deco--01 {
-            bottom: 0;
-            width: rem(231);
-        }
-
-        .cta-02__deco--02 {
-            width: rem(200);
-        }
-
-        .cta-02__ttl {
-            font-size: rem(22);
-        }
-
-        .cta-02__list {
-            margin-top: rem(20);
-            flex-direction: column;
-            gap: rem(16);
-        }
-
-        .cta-02__item {
-            width: 100%;
-            padding: rem(24) 0;
-        }
-
-        .cta-02__item-ttl {
-            font-size: rem(18);
-        }
-
-        .cta-02__item-btn {
-            margin-top: rem(12);
-
-            .btn-03 {
-                width: rem(279);
-                padding: rem(12) rem(12) rem(12) rem(20);
-
-                .btn-03__text {
-                    font-size: rem(17);
-                    line-height: 1.5;
-                }
-            }
-        }
-    }
+  }
 }

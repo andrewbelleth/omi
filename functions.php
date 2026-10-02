@@ -12,6 +12,16 @@ function mytheme_enqueue_styles()
 }
 add_action('wp_enqueue_scripts', 'mytheme_enqueue_styles');
 
+// 静的 nicecrew.html と同じ .nicecrew-page を body に付与（SPの ACCESS 等はこの親セレクタ前提）
+function omi_nicecrew_body_class($classes)
+{
+  if (is_page_template('page-nicecrew.php') || is_page(array('nice-crew', 'nicecrew'))) {
+    $classes[] = 'nicecrew-page';
+  }
+  return $classes;
+}
+add_filter('body_class', 'omi_nicecrew_body_class');
+
 // スラッグの日本語禁止
 function auto_post_slug($slug, $post_ID, $post_status, $post_type)
 {

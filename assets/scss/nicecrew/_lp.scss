@@ -2,9 +2,17 @@
 
 /*
 lp-nicecrew
-ここにすべて書く。
-他のファイルを触らないでください。
+
 */
+
+body.page-nicecrew {
+  .component-box {
+    margin-top: calc(rem(136) + rem(24));
+    @include mq(tb) {
+      margin-top: calc(rem(88) + rem(16));
+    }
+  }
+}
 
 .nicecrew-page-root,
 .nicecrew-page,
@@ -55,7 +63,9 @@ lp-nicecrew
     bottom: auto;
     width: rem(736);
     height: rem(570);
-
+    @media (768px < width < 1024px) {
+      right: rem(15);
+    }
     > picture,
     > picture img {
       display: block;
@@ -290,6 +300,10 @@ lp-nicecrew
 @include mq(tb) {
   .nicecrew-page .lp-can--nicecrew {
     padding-bottom: rem(104);
+
+    .lp-can__item-text {
+      font-size: max(12px, min(3.7333vw, 14px));
+    }
   }
 
   .nicecrew-page .nicecrew-feature {
@@ -400,7 +414,7 @@ lp-nicecrew
       width: 100%;
       margin-top: rem(8);
       font-family: $font-noto-sans-jp;
-      font-size: rem(14);
+      font-size: max(12px, min(3.7333vw, 14px));
       font-weight: 500;
       line-height: 1.8;
       letter-spacing: 0.05em;
@@ -507,7 +521,7 @@ lp-nicecrew
     .nicecrew-products__list {
       display: grid;
       grid-template-columns: repeat(2, minmax(0, 1fr));
-      gap: rem(28) rem(15);
+      gap: rem(16) rem(11);
       margin-top: rem(40);
     }
 
@@ -778,6 +792,10 @@ lp-nicecrew
 
 .lp-can--nicecrew {
   padding-bottom: 0;
+
+  .lp-can__item-ttl {
+    word-break: keep-all;
+  }
 }
 
 .nicecrew-feature {
@@ -890,7 +908,7 @@ lp-nicecrew
     width: 100%;
     margin-top: rem(12);
     font-family: $font-noto-sans-jp;
-    font-size: rem(15);
+    font-size: max(rem(15), 12px);
     font-weight: 500;
     line-height: 1.8;
     letter-spacing: 0.05em;
@@ -935,6 +953,12 @@ lp-nicecrew
   .nicecrew-method__text {
     margin-bottom: rem(40);
   }
+  &__btn {
+    margin-top: rem(40);
+    @include mq(tb) {
+      margin-top: rem(56);
+    }
+  }
 }
 
 /* PRODUCTS */
@@ -946,7 +970,7 @@ lp-nicecrew
     display: flex;
     flex-wrap: wrap;
     align-items: stretch;
-    justify-content: space-between;
+    justify-content: flex-start;
     gap: rem(64) rem(24);
     margin-top: rem(64);
   }
@@ -983,6 +1007,15 @@ lp-nicecrew
     letter-spacing: 0.1em;
     text-align: center;
     color: $black;
+  }
+}
+
+@media (min-width: 769px) {
+  .nicecrew-products .nicecrew-products__list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, rem(258));
+    justify-content: center;
+    gap: rem(29);
   }
 }
 
@@ -1146,6 +1179,12 @@ lp-nicecrew
       min-width: rem(280);
     }
   }
+  &__btn {
+    margin-top: rem(28);
+    @include mq(tb) {
+      margin-top: rem(32);
+    }
+  }
 }
 
 @include mq(mdpc) {
@@ -1184,18 +1223,20 @@ lp-nicecrew
       height: auto;
       aspect-ratio: 664 / 568;
     }
+  }
+}
 
-    .nicecrew-access__satellite-wrap {
-      width: 100vw;
-      max-width: none;
-      margin-inline: calc(50% - 50vw);
-      padding-inline: 0;
-    }
+@media (min-width: 769px) and (max-width: 1024px) {
+  .nicecrew-access__satellite-wrap {
+    padding-inline: rem(24);
+  }
 
-    .nicecrew-access__satellite-inner {
-      width: 100%;
-      max-width: none;
-      border-radius: 0;
+  .nicecrew-message {
+    background-position: 50% center;
+    background-size: 110% auto;
+
+    .nicecrew-message__text {
+      max-width: 60%;
     }
   }
 }

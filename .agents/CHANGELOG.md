@@ -258,3 +258,5 @@
 2026-09-26：1.0.2：service head SP を Figma（1207:36115）準拠へ（画像327・gap32・本文15px/lh2.6・段落gap12）
 2026-09-26：1.0.2：page__service-content（service-item / sp-overlay / インラインJS / 関連画像）を削除（head＋リンク導線のみ残すため）
 2026-09-29：1.0.2：フチ付き見出しを SVG text で描く手順をナレッジ化（.cursor/rules/2026-09-29-svg-text-stroke.mdc。-webkit-text-stroke の角尖り回避）
+2026-10-03：1.0.2：page-nicecrew.php の静的パスを WP 関数へ置換（画像は get_template_directory_uri、問い合わせは /service/contact、DTF/彦経ボタンは各サービスURL。公式LINEはURL未確定のため # のまま）
+2026-10-03：1.0.2：NICE CREW固定ページの body に nicecrew-page を付与（SPの ACCESS/satellite が .nicecrew-page 配下専用で、WP の page-nice-crew だけだと当たらず崩れるため）
