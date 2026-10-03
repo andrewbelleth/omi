@@ -142,7 +142,7 @@ Template Name: DTF印刷 LPページ
                     </li>
                 </ul>
                 <div class="lp-can__btn">
-                    <a href="<?php echo esc_url(home_url('/nicecrew')); ?>" class="btn btn--white">
+                    <a href="<?php echo esc_url(home_url('/service/nicecrew')); ?>" class="btn btn--white">
                         <span class="btn__text">NICE CREWについて<br class="mobile" />詳しく見る</span>
                         <span class="btn__icon">
                             <svg viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">

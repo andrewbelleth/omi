@@ -76,7 +76,7 @@ Template Name: フッター
                 <li><a href="<?php echo esc_url(home_url('/service/newspaper')); ?>">彦根経済新聞</a></li>
                 <li><a href="<?php echo esc_url(home_url('/service/branding')); ?>">ブランディング</a></li>
                 <li><a href="<?php echo esc_url(home_url('/service/promotion')); ?>">プロモーション</a></li>
-                <li><a href="<?php echo esc_url(home_url('/service/nice-crew')); ?>">NICE CREW</a></li>
+                <li><a href="<?php echo esc_url(home_url('/service/nicecrew')); ?>">NICE CREW</a></li>
               </ul>
             </div>
             <div class="footer__nav-item">

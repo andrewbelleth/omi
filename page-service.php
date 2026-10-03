@@ -144,7 +144,7 @@ if (! defined('ABSPATH')) exit;
                 'DTF転写プリントによるオリジナルウェア・グッズの制作・販売、広報のご相談に対応。彦根経済新聞のサテライト拠点も兼ねています。',
             ],
             'tags' => 'オリジナルウェア・オリジナルグッズの制作 / オリジナルグッズ販売 / 広報・PR支援業務（相談） / 彦根経済新聞サテライトなど',
-            'url' => home_url('/service/nice-crew'),
+            'url' => home_url('/service/nicecrew'),
         ],
     ];
     ?>
@@ -237,7 +237,7 @@ if (! defined('ABSPATH')) exit;
                     <span class="btn__text btn__text--promotion">プロモーション</span>
                     <?php get_template_part('template-parts/parts/btn-icon--blue'); ?>
                 </a>
-                <a href="<?php echo esc_url(home_url('/service/nice-crew')); ?>" class="btn-02">
+                <a href="<?php echo esc_url(home_url('/service/nicecrew')); ?>" class="btn-02">
                     <span class="btn__text">NICE CREW</span>
                     <?php get_template_part('template-parts/parts/btn-icon--blue'); ?>
                 </a>

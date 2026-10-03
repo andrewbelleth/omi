@@ -55,7 +55,7 @@ if (!$is_first_visit) {
             ),
             'img_05' => array(
                 'img' => 'slider-bnr-dtf.webp',
-                'link' => home_url() . '/service/dtf/',
+                'link' => home_url() . '/service/printing/dtf/',
             ),
             'img_06' => array(
                 'img' => 'slider-bnr-nicecrew.webp',

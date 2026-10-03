@@ -116,7 +116,7 @@
                 </span>
             </div>
         </a>
-        <a href="<?php echo home_url(); ?>/service/nice-crew" class="top-service__item inview">
+        <a href="<?php echo home_url(); ?>/service/nicecrew" class="top-service__item inview">
             <div class="top-service__item-img">
                 <picture>
                     <source srcset="<?php echo get_template_directory_uri(); ?>/assets/images/sp/top-service-image-06-sp.webp" media="(max-width: 768px)">
