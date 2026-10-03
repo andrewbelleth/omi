@@ -307,7 +307,7 @@ body.page-nicecrew {
   }
 
   .nicecrew-page .nicecrew-feature {
-    padding: 0;
+    padding: 0 rem(12) rem(104) rem(12);
 
     .nicecrew-feature__inner {
       width: 100%;
@@ -335,6 +335,7 @@ body.page-nicecrew {
       max-width: none;
       margin-top: rem(32);
       counter-reset: nicecrew-feature;
+      padding-inline: 0;
     }
 
     .nicecrew-feature__item {
