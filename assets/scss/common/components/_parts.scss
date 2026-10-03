@@ -2104,7 +2104,7 @@ a[href^="tel:"] {
 .mv-02 {
   position: relative;
   height: rem(732);
-  background-color: $pale-blue;
+  background-color: #eef1f4;
   background-image: url(../images/dtf/dtf-mv-bg.svg);
   background-repeat: no-repeat;
   background-position: center bottom;
@@ -2388,7 +2388,7 @@ a[href^="tel:"] {
   @include mq(tb) {
     height: em(644);
     font-size: calc(16 / (375 / 100) * 1vw);
-    background-image: none;
+    background-image: url(../images/dtf/dtf-mv-bg-sp.webp);
 
     /* SPはカンプの並びがPCと違うため、専用画像に差し替える（375×343）*/
     .mv-02__img {
