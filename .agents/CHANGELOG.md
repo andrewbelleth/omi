@@ -261,3 +261,4 @@
 2026-10-03：1.0.2：page-nicecrew.php の静的パスを WP 関数へ置換（画像は get_template_directory_uri、問い合わせは /service/contact、DTF/彦経ボタンは各サービスURL。公式LINEはURL未確定のため # のまま）
 2026-10-03：1.0.2：NICE CREW固定ページの body に nicecrew-page を付与（SPの ACCESS/satellite が .nicecrew-page 配下専用で、WP の page-nice-crew だけだと当たらず崩れるため）
 2026-10-03：1.0.2：NICE CREW「4つの機能」の mq(pc) 縦並びを解除（b6eeebf の 1024px 以下カラム変更を一旦戻し、スタイルを当て直すため）
+2026-10-03：1.0.2：サービスページ content の下余白を削除（PC padding-bottom 160→0、SP inner の 120 を削除）

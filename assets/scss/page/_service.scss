@@ -130,7 +130,7 @@
     display: flex;
     flex-direction: column;
     gap: rem(140);
-    padding-bottom: rem(160);
+    padding-bottom: rem(0);
   }
 }
 
@@ -494,7 +494,6 @@
 
     &-inner {
       gap: 0;
-      padding-bottom: rem(120);
     }
   }
 }
