@@ -38,7 +38,7 @@ Template Name: DTF印刷 LPページ
                     </span>
                 </a>
                 <!-- TODO: 公式LINEのURLが決まり次第差し替え -->
-                <a href="#" class="btn-03 btn-03--line">
+                <a href="https://lin.ee/8xNK86v" target="_blank" class="btn-03 btn-03--line">
                     <span class="btn-03__text">公式LINEから<br class="mobile" />お気軽に！</span>
                     <span class="btn-03__icon">
                         <svg viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -231,7 +231,7 @@ Template Name: DTF印刷 LPページ
                     <p class="cta-02__item-ttl">公式LINEからお気軽に！</p>
                     <div class="cta-02__item-btn">
                         <!-- TODO: 公式LINEのURLが決まり次第差し替え -->
-                        <a href="#" class="btn-03 btn-03--line">
+                        <a href="https://lin.ee/8xNK86v" target="_blank" class="btn-03 btn-03--line">
                             <span class="btn-03__text">公式LINEはこちら</span>
                             <span class="btn-03__icon">
                                 <svg viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -463,7 +463,7 @@ Template Name: DTF印刷 LPページ
                     <p class="cta-02__item-ttl">公式LINEからお気軽に！</p>
                     <div class="cta-02__item-btn">
                         <!-- TODO: 公式LINEのURLが決まり次第差し替え -->
-                        <a href="#" class="btn-03 btn-03--line">
+                        <a href="https://lin.ee/8xNK86v" target="_blank" class="btn-03 btn-03--line">
                             <span class="btn-03__text">公式LINEはこちら</span>
                             <span class="btn-03__icon">
                                 <svg viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -501,7 +501,7 @@ Template Name: DTF印刷 LPページ
                                 href="<?php echo esc_url(home_url('/service/contact')); ?>"><span
                                     class="dtf-flow__item-text-word">お問い合わせ</span><span
                                     class="dtf-flow__item-text-word">フォーム</span></a>または<a
-                                href="#">公式LINE</a>からお気軽にご相談ください。
+                                href="https://lin.ee/8xNK86v" target="_blank">公式LINE</a>からお気軽にご相談ください。
                         </p>
                     </div>
                 </li>
