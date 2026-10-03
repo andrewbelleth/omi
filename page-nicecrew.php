@@ -150,7 +150,7 @@ Template Name: NICECREW LPページ
                     </li>
                 </ul>
                 <!-- NICE CREWボタン：中身は後から入れる -->
-                <div class="lp-can__btn"></div>
+                <!-- <div class="lp-can__btn"></div> -->
             </div>
         </section>
         <!-- NICE CREWの4つの機能 -->
