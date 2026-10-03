@@ -307,7 +307,7 @@ body.page-nicecrew {
   }
 
   .nicecrew-page .nicecrew-feature {
-    padding: 0;
+    padding: 0 rem(12) rem(104) rem(12);
 
     .nicecrew-feature__inner {
       width: 100%;
@@ -335,6 +335,7 @@ body.page-nicecrew {
       max-width: none;
       margin-top: rem(32);
       counter-reset: nicecrew-feature;
+      padding-inline: 0;
     }
 
     .nicecrew-feature__item {
@@ -404,10 +405,6 @@ body.page-nicecrew {
     .nicecrew-feature__item:first-child .nicecrew-feature__item-ttl {
       margin-top: rem(20);
       font-size: rem(19);
-    }
-
-    .nicecrew-feature__item:first-child .nicecrew-feature__item-text {
-      text-align: left;
     }
 
     .nicecrew-feature__item-text {
@@ -800,7 +797,7 @@ body.page-nicecrew {
 
 .nicecrew-feature {
   padding-block: rem(88) rem(160);
-
+  padding-inline: rem(24);
   .nicecrew-feature__inner {
     max-width: rem(1120);
     border-radius: rem(32);
@@ -823,11 +820,12 @@ body.page-nicecrew {
     flex-wrap: wrap;
     align-items: stretch;
     gap: rem(24);
-    width: 100%;
+    width: calc(100% - rem(20));
     max-width: rem(960);
     margin-top: rem(40);
     margin-inline: auto;
     counter-reset: nicecrew-feature;
+    padding-inline: 10px;
   }
 
   .nicecrew-feature__item {
@@ -840,7 +838,9 @@ body.page-nicecrew {
     border-radius: rem(20);
     background-color: #eef1f4;
     counter-increment: nicecrew-feature;
-
+    @include mq(pc) {
+      padding-inline: rem(24);
+    }
     &::before {
       content: counter(nicecrew-feature, decimal-leading-zero);
       position: absolute;
@@ -913,6 +913,8 @@ body.page-nicecrew {
     line-height: 1.8;
     letter-spacing: 0.05em;
     color: $black;
+  }
+  @include mq(pc) {
   }
 }
 

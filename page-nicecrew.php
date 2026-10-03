@@ -152,68 +152,68 @@ Template Name: NICECREW LPページ
                 <!-- NICE CREWボタン：中身は後から入れる -->
                 <div class="lp-can__btn"></div>
             </div>
-
-            <!-- NICE CREWの4つの機能 -->
-            <section class="nicecrew-feature">
-                <div class="nicecrew-feature__inner lp-inner">
-                    <h3 class="nicecrew-feature__ttl">
-                        NICE CREWの<br class="mobile" />4つの機能
-                    </h3>
-                    <ol class="nicecrew-feature__list">
-                        <li class="nicecrew-feature__item">
-                            <h4 class="nicecrew-feature__item-ttl">
-                                オリジナルウェア印刷
-                            </h4>
-                            <p class="nicecrew-feature__item-text">
-                                オリジナルウェアへのDTF転写プリントのご相談・ご注文はNICE
-                                CREWにおまかせください。<br />実物サンプルを見ながら、その場でご相談いただけます。
-                            </p>
-                            <div class="nicecrew-feature__item-img">
-                                <img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/nicecrew/nicecrew-feature-icon01.webp"
-                                    alt="" loading="lazy" />
-                            </div>
-                        </li>
-                        <li class="nicecrew-feature__item">
-                            <h4 class="nicecrew-feature__item-ttl">
-                                お客さまのグッズ制作を<br />受注
-                            </h4>
-                            <p class="nicecrew-feature__item-text">
-                                オーダーメイドのオリジナルグッズ制作を、企画からご相談いただけます。
-                            </p>
-                            <div class="nicecrew-feature__item-img">
-                                <img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/nicecrew/nicecrew-feature-icon02.webp"
-                                    alt="" loading="lazy" />
-                            </div>
-                        </li>
-                        <li class="nicecrew-feature__item">
-                            <h4 class="nicecrew-feature__item-ttl">
-                                NICE CREW<br />オリジナル商品の販売
-                            </h4>
-                            <p class="nicecrew-feature__item-text">
-                                NICE
-                                CREWオリジナルの商品を、店頭でそのままお買い求めいただけます。
-                            </p>
-                            <div class="nicecrew-feature__item-img">
-                                <img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/nicecrew/nicecrew-feature-icon03.webp"
-                                    alt="" loading="lazy" />
-                            </div>
-                        </li>
-                        <li class="nicecrew-feature__item">
-                            <h4 class="nicecrew-feature__item-ttl">
-                                彦根経済新聞サテライト・<br />地域の拠点
-                            </h4>
-                            <p class="nicecrew-feature__item-text">
-                                取材・広報のご相談窓口を兼ね、地域の皆さまが集まり何かを生み出せる場所を目指しています。
-                            </p>
-                            <div class="nicecrew-feature__item-img">
-                                <img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/nicecrew/nicecrew-feature-icon04.webp"
-                                    alt="" loading="lazy" />
-                            </div>
-                        </li>
-                    </ol>
-                </div>
-            </section>
         </section>
+        <!-- NICE CREWの4つの機能 -->
+        <section class="nicecrew-feature">
+            <div class="nicecrew-feature__inner lp-inner">
+                <h3 class="nicecrew-feature__ttl">
+                    NICE CREWの<br class="mobile" />4つの機能
+                </h3>
+                <ol class="nicecrew-feature__list">
+                    <li class="nicecrew-feature__item">
+                        <h4 class="nicecrew-feature__item-ttl">
+                            オリジナルウェア印刷
+                        </h4>
+                        <p class="nicecrew-feature__item-text">
+                            オリジナルウェアへのDTF転写プリントのご相談・ご注文はNICE
+                            CREWにおまかせください。<br />実物サンプルを見ながら、その場でご相談いただけます。
+                        </p>
+                        <div class="nicecrew-feature__item-img">
+                            <img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/nicecrew/nicecrew-feature-icon01.webp"
+                                alt="" loading="lazy" />
+                        </div>
+                    </li>
+                    <li class="nicecrew-feature__item">
+                        <h4 class="nicecrew-feature__item-ttl">
+                            お客さまのグッズ制作を<br />受注
+                        </h4>
+                        <p class="nicecrew-feature__item-text">
+                            オーダーメイドのオリジナルグッズ制作を、企画からご相談いただけます。
+                        </p>
+                        <div class="nicecrew-feature__item-img">
+                            <img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/nicecrew/nicecrew-feature-icon02.webp"
+                                alt="" loading="lazy" />
+                        </div>
+                    </li>
+                    <li class="nicecrew-feature__item">
+                        <h4 class="nicecrew-feature__item-ttl">
+                            NICE CREW<br />オリジナル商品の販売
+                        </h4>
+                        <p class="nicecrew-feature__item-text">
+                            NICE
+                            CREWオリジナルの商品を、店頭でそのままお買い求めいただけます。
+                        </p>
+                        <div class="nicecrew-feature__item-img">
+                            <img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/nicecrew/nicecrew-feature-icon03.webp"
+                                alt="" loading="lazy" />
+                        </div>
+                    </li>
+                    <li class="nicecrew-feature__item">
+                        <h4 class="nicecrew-feature__item-ttl">
+                            彦根経済新聞サテライト・<br />地域の拠点
+                        </h4>
+                        <p class="nicecrew-feature__item-text">
+                            取材・広報のご相談窓口を兼ね、地域の皆さまが集まり何かを生み出せる場所を目指しています。
+                        </p>
+                        <div class="nicecrew-feature__item-img">
+                            <img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/nicecrew/nicecrew-feature-icon04.webp"
+                                alt="" loading="lazy" />
+                        </div>
+                    </li>
+                </ol>
+            </div>
+        </section>
+
     </div>
 
     <!-- CTA -->
