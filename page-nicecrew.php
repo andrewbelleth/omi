@@ -149,8 +149,7 @@ Template Name: NICECREW LPページ
                         </p>
                     </li>
                 </ul>
-                <!-- NICE CREWボタン：中身は後から入れる -->
-                <!-- <div class="lp-can__btn"></div> -->
+
             </div>
         </section>
         <!-- NICE CREWの4つの機能 -->
@@ -273,8 +272,11 @@ Template Name: NICECREW LPページ
                 src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/nicecrew/nicecrew-message-img-sp.png"
                 alt="彦根駅から徒歩5分のNICE CREW周辺地図" width="750" height="800" />
             <p class="nicecrew-message__text">
-                素敵な仲間が集う場所、一人ではできないことでも、<br />みんなでなら想いをカタチにしていける、<br />それが店名の「NICE
-                CREW」への想いです。<br />学生の皆さまも、おしゃれを楽しむ大人の方々も年齢問わず、<br />「こんなデザイン作れる?」というご相談はもちろん、<br />店舗ブランディングなどの目的に応じて、<br />仲間の証にもなるオリジナルウェアを作成します。<br />皆さんの日常を少しだけおもしろくするお手伝いをさせてください。
+                素敵な仲間が集う場所、一人ではできないことでも、<br class="pc-only" />みんなでなら想いをカタチにしていける、<br
+                    class="pc-only" />それが店名の「NICECREW」への想いです。<br />
+                学生の皆さまも、おしゃれを楽しむ大人の方々も年齢問わず、<br class="pc-only" />「こんなデザイン作れる?」というご相談はもちろん、<br
+                    class="pc-only" />店舗ブランディングなどの目的に応じて、<br class="pc-only" />仲間の証にもなるオリジナルウェアを作成します。<br />
+                皆さんの日常を少しだけおもしろくするお手伝いをさせてください。
             </p>
         </div>
     </section>
