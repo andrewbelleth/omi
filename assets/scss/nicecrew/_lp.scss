@@ -442,13 +442,15 @@ body.page-nicecrew {
 
     .nicecrew-message__image {
       display: block !important;
-      width: 100%;
+      width: 100dvw;
+      max-width: auto;
+      margin-inline: calc(50% - 50dvw);
       height: auto;
-      margin-top: rem(40);
+      margin-top: rem(12);
     }
 
     .nicecrew-message__text {
-      margin-top: rem(40);
+      margin-top: rem(12);
       font-family: $font-noto-sans-jp;
       font-size: rem(15);
       font-weight: 500;

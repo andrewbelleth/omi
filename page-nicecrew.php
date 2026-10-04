@@ -338,21 +338,21 @@ Template Name: NICECREW LPページ
                     <p class="nicecrew-products__item-name">
                         オリジナルノート・<br />カード類
                     </p>
-                    <img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/nicecrew/nicecrew-products-img02.webp"
+                    <img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/nicecrew/nicecrew-product-01.webp"
                         alt="" loading="lazy" />
                 </li>
                 <li class="nicecrew-products__item">
                     <p class="nicecrew-products__item-name">
                         オリジナルTシャツ・<br />トートバッグ
                     </p>
-                    <img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/nicecrew/nicecrew-products-img02.webp"
+                    <img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/nicecrew/nicecrew-product-02.webp"
                         alt="" loading="lazy" />
                 </li>
                 <li class="nicecrew-products__item">
                     <p class="nicecrew-products__item-name">
                         地域クリエイター<br class="mobile" />との<br class="desktop" />コラボ雑貨
                     </p>
-                    <img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/nicecrew/nicecrew-products-img02.webp"
+                    <img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/nicecrew/nicecrew-product-03.webp"
                         alt="NICE CREWと書かれた白いTシャツと黒いTシャツ" loading="lazy" />
                 </li>
                 <li class="nicecrew-products__item">
@@ -360,7 +360,7 @@ Template Name: NICECREW LPページ
                         ZINE<br class="mobile" />
                         （自主制作物）
                     </p>
-                    <img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/nicecrew/nicecrew-products-img02.webp"
+                    <img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/nicecrew/nicecrew-product-04.webp"
                         alt="" loading="lazy" />
                 </li>
             </ul>
