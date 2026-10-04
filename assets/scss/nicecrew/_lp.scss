@@ -204,6 +204,7 @@ body.page-nicecrew {
       text {
         font-size: 1em;
         letter-spacing: inherit;
+        stroke: transparent;
       }
     }
 
@@ -864,6 +865,9 @@ body.page-nicecrew {
 
       .nicecrew-feature__item-text {
         text-align: center;
+        @include mq(tb) {
+          text-align: left;
+        }
       }
     }
   }
