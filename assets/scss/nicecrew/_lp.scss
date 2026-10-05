@@ -443,7 +443,7 @@ body.page-nicecrew {
     .nicecrew-message__image {
       display: block !important;
       width: 100dvw;
-      max-width: auto;
+      max-width: none;
       margin-inline: calc(50% - 50dvw);
       height: auto;
       margin-top: rem(12);

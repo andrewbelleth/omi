@@ -2142,9 +2142,6 @@ a[href^="tel:"] {
     justify-content: center;
     /* 内側線なので、フチ2px分をパディングから引く */
     padding-inline: rem(42);
-    background: $off-white;
-    border: rem(2) solid $blue;
-    border-radius: rem(999);
     font-size: rem(28);
     font-weight: 700;
     line-height: 1;
@@ -2154,27 +2151,18 @@ a[href^="tel:"] {
     /* しっぽもフチつきなので、青い三角に地色の三角を重ねて作る。
            内側は同じ三角を3px上にずらしたもの。斜辺のフチは垂直方向のズレより細くなり、
            この三角（30×14）では約2pxとなって本体のフチと揃う */
-    &::before,
-    &::after {
+    &::before {
       content: "";
       position: absolute;
-      left: 50%;
-      width: rem(30);
-      height: rem(14);
-      transform: translateX(-50%);
-      clip-path: polygon(0 0, 100% 0, 50% 100%);
-    }
-
-    /* 外側（線）。本体の外周に続けるため、下線の分だけ下げる */
-    &::before {
-      top: calc(100% + #{rem(2)});
-      background: $blue;
-    }
-
-    /* 内側（地）。本体の下線も覆うので、しっぽの口だけ線が消える */
-    &::after {
-      top: calc(100% - #{rem(1)});
-      background: $off-white;
+      top: 0;
+      left: 0;
+      background-image: url(../images/dtf/dtf-balloon-tail.webp);
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      width: 100%;
+      aspect-ratio: 310 / 82;
+      z-index: -1;
     }
 
     /* 「1」と「枚から」はベースラインを揃える（同じインラインフォーマット内に置く） */
@@ -2311,12 +2299,6 @@ a[href^="tel:"] {
       padding-inline: rem(30);
       font-size: rem(20);
 
-      &::before,
-      &::after {
-        width: rem(22);
-        height: rem(10);
-      }
-
       .mv-02__balloon-num {
         font-size: rem(28);
       }
@@ -2412,21 +2394,6 @@ a[href^="tel:"] {
       padding-inline: em(23, 18);
       border-width: em(1, 18);
       font-size: em(18);
-
-      /* フチが1pxになるぶん、しっぽの位置も内側の三角のずらし幅も半分にする */
-      &::before,
-      &::after {
-        width: em(20, 18);
-        height: em(10, 18);
-      }
-
-      &::before {
-        top: calc(100% + #{em(1, 18)});
-      }
-
-      &::after {
-        top: calc(100% - #{em(0.5, 18)});
-      }
 
       .mv-02__balloon-num {
         font-size: em(24, 18);
