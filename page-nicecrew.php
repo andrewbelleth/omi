@@ -269,7 +269,7 @@ Template Name: NICECREW LPページ
                 <span class="ttl-06__jp">NICE CREWへの想い</span>
             </h2>
             <img class="nicecrew-message__image"
-                src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/nicecrew/nicecrew-message-img-sp.png"
+                src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/nicecrew/nicecrew-message-img-sp.webp"
                 alt="彦根駅から徒歩5分のNICE CREW周辺地図" width="750" height="800" />
             <p class="nicecrew-message__text">
                 素敵な仲間が集う場所、一人ではできないことでも、<br class="pc-only" />みんなでなら想いをカタチにしていける、<br
